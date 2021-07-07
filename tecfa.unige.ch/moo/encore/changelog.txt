@@ -1,0 +1,408 @@
+     __    __ __ ______  __    __    __      __ __ _____    ______ _____ 
+    / /   / // // ____/ / /   / /   / /     / // // ___ \  / ____// ___ \
+   / /___/ // // /____ / /___/ /   / / __  / // // /__/ / / /_   / /  / /
+  / ____  // // //_  // ____  /   / / / / / // // _  __/ / __/  / /  / /
+ / /   / // // /__/ // / __/_/__ / /_/ /_/ // // / \ \  / /___ / /__/ /
+/_/   /_//_/ \_____//_/ / _____/ \________//_//_/   \_\/_____//______/
+       ______ __    __ / /      ________ _____    ______
+      / ____// /   / // /      / ____  // ___ \  / ____/
+     / /_   /  \  / // /      / /   / // /__/ / / /_
+    / __/  / /\ \/ // /      / /   / // _  __/ / __/       
+   / /___ / /  \  // /_____ / /___/ // / \ \  / /___     
+  /_____//_/   /_//_______//_______//_/   \_\/_____/     
+                                                        =================
+                                                        C H A N G E L O G
+                                                        =================
+
+May 16, 1999, High Wired enCore version 2.0b12 Released
+
+Patchfile
+Lines of code: 2631
+Code size: 104K
+
+- Added new routine, $encore_web_utils:is_HTTP09_accessible, for determining whether web pages from the MOO is to be authenticated or not.
+- Fixed bugs in $httpd:execute_http_request and $httpd:authenticate introduced in beta 11.
+- Fixed a bug in $who_browser:main_html
+- Fixed a bug in $xpress_client:menu_html
+- Fixed a bug in $xpress_client.checkClient Javascript
+- Rewrote $help_browser:help_contents_html to sort help items alphabetically.
+- Fixed bugs in $xpress_moo_mailer:folders_html and contents_html
+- Reorganized the text in $xpress_client:display_login_page
+- Fixed a bug in $moderated_room:look_self
+- Modified the object editor to allow new users to connect their first room to a pre-defined room_connection_point. Valid connection points should be stored in #0.room_connection_points
+- Rewrote the MOO administration module to allow for easy multiple account creation.
+- Fixed a bug in $xpress_verb_editor:edit_html
+- Modified $xpress_property_editor:set_property_html so that it returns the page a user was working on after save.
+- Updated help texts $encore_help.macintosh_troubleshooting and $bot.help_msg
+- Fixed several outstanding bugs in $administration_module:core_preferences_html
+- Modified $player:quick_edit to allow users to specify link, visited link and active link colors.
+
+Thanks to Jill Walker, Dene Grigar and Jason Nolan for bug reports and comments.
+
+
+April 23, 1999, High Wired enCore version 2.0b11 Released
+
+Patchfile
+Lines of code: 2118
+Code size: 86K
+
+- Added a check to $wiz:@configure to make sure the Xpress base URL ends with a forward slash. Thanks for Jason Nolan for pointing this out.
+- Fixed a bug in the Xpress MOO mailer that caused the mail reader window to be drawn incorrectly
+- Fixed bugs in $administration_module that prevented character info to be modified.
+- Fixed a bug in the $administration_module core configuration page so certain login properties are set correctly. Thanks to Ken Tompkins.
+- Fixed a bug in $guest:do_reset so that the display_drawings property is reset correctly. Thanks to Matthew Campbell for pointing this out.
+- Fixed a bug in $xpress_client:java_html so MOOtcan will display different font sizes. Thanks to Sindre Sørensen.
+- Reorganized the Login Page to clarify system requirements.
+- Reorganized the way icons are set and displayed. Allowed for users to specify custom icons in the object editor.
+- Added controls for image/embedded content and icon heights and widths to the object editor.
+- Fixed a bug in $recorder:play
+- Added new help item, Collaborative Web Browsing
+- Made it possible not to display of ascii graphics in Xpress if images are present.
+- Added enCore Xpress copyright notice to menubar.
+
+
+April 15, 1999, High Wired enCore version 2.0b10 Released
+
+Patch File
+Lines of code: 8309
+Code size: 309K
+
+- Wrote and installed the new enCore Xpress web server and MOO client system. The system consists of the following new objects:
+- $encore_web_class
+	- $encore_web_object 
+	- $encore_web_application
+		- $Xpress_client
+		- $MOO_info
+		- $encore_help
+		- $help_browser
+		- $who_browser
+		- $Xpress_MOO_mailer
+		- $Xpress_property_editor
+		- $Xpress_object_editor
+		- $Xpress_verb_editor
+		- $administration_module
+		- $search_engine
+		- $options_manager
+		- $MOOtcan
+		- $Xpress_navigator
+
+- Wrote new set of help texts for $encore_help. Distributed in separate file
+- Complete re-write of $httpd to make it HTTP/1.0 compliant
+- Wrote several new utility verbs on $encore_web_utilities
+- Completely overhauled existing enCore 1.1 web code.
+- Designed whole new set of icons and buttons to be used with enCore Xpress
+- Sindre Sørensen wrote a new telnet applet for Xpress named MOOtcan
+
+Special thanks to Sindre Sørensen for invaluable contributions to this version of enCore.
+
+
+October 19, 1998, High Wired enCore version 1.1, Released
+
+- Installed support code for the MCP/2.1 protocol. The following objects were
+created and installed: Generic message dispatch object, Generic MCP package,
+mcp-negotiate, mcp-cord, MCP 2.1 parser, MCP 2.1 session, MCP package registry,
+and MCP 2.1. Thanks to Ken Fox and Andrew Wilson for the contribution of this
+code.
+- Updated $player:@about with new information on MCP if installed.
+- Fixed bugs in $wiz:@configure
+- Added new verb $player:@doing and modified $code_utils:show_who_listing to 
+include new information in @who listings. $player:"name title" was also updated
+
+
+April 15, 1998, High Wired enCore version 1.0, Released
+
+Patch File
+Lines of code: 1956
+Code Size    : 73K
+
+- Updated $player_start.core_description
+- Updated core welcome screen
+- Added property #0.nowhere and moved $character_request_room there
+- Initialized properties on enCore web class, and added new prop table width
+- Moved property .time from $news_item to $note, and added new property .author_name on note.
+- Updated $note:set_text to timestamp notes and record author name
+- Fixed bug in $character_request_room:init_for_core
+- Updated $player:page to add support for enhanced page and remote emote options as well as quick reply
+- Updated $encore_web_utils:generate_head
+- Updated $httpd:_html
+- Rewrote $encore_web_class:_html
+- Rewrote $room:_html to use new table function
+- Updated $container:_html
+- Fixed missing font and size in $player:_html, and $note:_html
+- Added _html verb to $news
+- Added _html verb to $recorder
+- Added verb insert_line_breaks to $encore_web_utils
+- Completely rewrote $encore_web_utils:generate_table to make it more flexible
+- Updated $encore_utils:make_table
+- Added verb read to $encore_utils
+- Wrote new verb $encore_web_class:@webpreferences to make it simple for users to set web preferences for their objects
+- Renamed $wiz:@core-setup to @configure-core and updated it with options for new guest name system
+- Added Rui Miguel Barbosa Pinto's verb @generic-kids to $prog
+- Fixed bug in $channel_fo:@xswitch
+- Fixed bug in $webpage:description
+- Updated $builder:@create with an easy to use creation menu. Type @create without arguments to use the menu instead of the command line
+- Wrote new verb on $note called "copy paste". This verb was written to simplify editing of notes.
+- Updated $player:@about
+- Wrote and corified new Generic Note Board object. This new note noard will accept real notes that may also be read from the web via the enCore web interface. This new generic replaces the old note board in enCore 1.0.
+- Wrote new system that will allow guests to select their own names instead of using the predefined names. System is off by default and must be enabeled with the @configure-core command. 
+- For new guest system #0:user_connected and $guest:do_reset was modified, and new verb $guest:set_guest_name was added. The following properties was also added: #0.real_guest_names, #0.guest_name_suffix, $guest.default_name, and $guest.default_aliases
+- Renamed $guide to MOOniversity Lite
+- Updated the in-MOO homepage ($homepage)
+- Updated the High Wired enCore administrator's guide ($readme), and renamed it to enCore Administrators Guide.
+
+
+
+February 7, 1998, High Wired enCore BETA 4, Released
+
+Patch File
+Lines of code: 5671
+Code Size    : 182K
+
+- Updated the MOO User Guide ($guide), the Administrators Guide ($readme) and the MOO homepage ($homepage).
+- Created new utilities packages, $encore_utils and $encore_web_utils.
+- Created new class $encore_web_class for web related verbs and properties
+- Inserted a call to $command_utils:suspend_if_needed in $object_utils:decendents to prevent it from running out of ticks
+- Added new utility verbs @mvprop and @renprop on $wiz. Thanks to Rui Miguel Barbosa Pinto (a.k.a. Dominus@Atlantis)
+- Rewrote the enCore web inteface to v 2.0 to add more functionality such as completely user-customizable HTML layout of objects, support for sound, streamed audio and video, graphics, animations,  java, page header and footer, object icons and more. Web interface specific changes:
+   - Chparented $player, $room, $thing, and $exit to $enCore_web_class
+   - Moved property #1.url_address to $encore_web_class
+   - Moved _html, view, display and connect from #1 to $encore_web_class
+   - Added a number of layout properties to $encore_web_class, $room, and
+     $httpd. Please see @display $encore_web_class., @d $room., and 
+     @d $httpd. for details.  
+   - Renamed $httpd:get to generate_html
+   - Rewrote all _html verbs on $encore_web_class, $thing, $room, $note,
+     $container, $webpage for new functionality and flexibility.
+   - Wrote several new verbs web utility verbs on $enCore_web_utils:
+     Please see @d $encore_web_utils: for details
+- Installed SR Porter v 4.6 (MOO code porting feature) by Michael Thompson
+  Corified at $SR_porter
+- Installed IRC-style in-MOO chat channel features. Corified as $channel and 
+  $channel_FO. Wrote help for both objects. Thanks to Mark Blanchard for code
+  contribution.
+- Installed Generic Gopher Slate, Generic Web Slate, and Webslate Utilities,
+  corified as $gopher_slate, $web_slate, and $webslate_utils. Thanks to Nils 
+  McCarthy
+- Updated $recorder:stop_recorder to take advantage of the new auto HTML markup
+  features in the enCore web interface.
+- Wrote and installed new verb @preferences on $player. This verb will make it
+  easier for users to set all their preferences at once with an easy to use 
+  interface.
+- Rewrote @core-setup on $wiz to allow users to change core settings after it
+  has been customized.
+- Renamed $player:time to "time date" and added time zone information
+- Updated $classroom:look_self to show drawings properly
+- Updated $player:@uptime to include checkpoint information
+- Wrote new verb on $wiz @make-mail-list to make creation of in-MOO mailing
+  lists easier to handle.
+- Wrote new command $player:@about that display vital server and database
+  information.
+- Wrote new user account administration feature for wizards. $account_admin_FO
+- Wrote and installed $public_writable_note, which will let anybody write on
+  it. Authors can be anonymous or identified.
+- Added call to $command_utils:suspend_if_needed() in $room:announce,
+  $room:announce_all, and $room:announce_all_but to prevent them from
+  running out of ticks when there are many people in a room.
+- Wrote and installed Generic Room Directory, corified as $room_directory
+- Renamed $stage_talk:to to "`* to". Dash, -, no longer works for directed
+  speech.
+- Renamed $player:page to "page -* '* +*". This was done to add quickpage -
+  and ', and remote emote +.
+- Added verb $time_utils:short format
+- Changed $player:titlec to tell if a player is asleep or how long he or she
+  has been idle.
+- Wrote new verbs $player:"@kn*ock @inv*ite @busy"
+- Added $builder:@histogram, verb for graphical display of quota usage.
+  Thanks to Jorge Barrios for code contribution.
+- Added $lag_meter, $census_FO, $SR_porter, $account_adm_FO as default features 
+  for $wiz
+- Added init_for_core verbs to the following objects: $wiz, $lag_meter, 
+  $census_FO, $account_admin_FO, $SR_porter, $gopher_slate, $web_slate,
+  $public_writable_note, $room_directory, $channel, and $channel_FO.
+
+
+December 17, 1997, High Wired enCore BETA 3C, Released
+
+- Added verb $biglist:_call
+- Updated $biglist:find_ord
+- Updated $biglist:_find_ord
+- Updated $biglist:_skill
+
+November 4, 1997. High Wired enCore BETA 3B Released
+
+- Added alias who to $player:@who
+- Added calls to $room:tell_exits in $moderated_room and $classroom. All
+generic rooms will now report exits if the property tell_exits on the room is
+set to 1 which it is by default.
+- Fixed bug in $frand_class:@go
+- Fixed a bug that caused trace backs from $moderated_room:tell_contents
+- Changed default player class to $frand_class
+- Updated $wiz:@core-setup to ask for personal info and force the player to set
+a password for #2
+- Modified $classroom:`* to accept the verbs `*, -*, and to
+- Removed $stage_talk:` and renamed it to $stage_talk:"`* -* to". This was done
+in order to avoid confusion among users with regard to output.
+
+
+October 26, 1997. High Wired enCore BETA 3A Released
+
+Note: Version BETA 3A is identical to version BETA 3, with the exception
+that the BioGate System is no longer included in the core.
+
+- Wrote new @core-setup verb that will guide new administrators through
+the initialization of the MOO database.
+- Added properties, core_version, core_name, core_copyright, and core_
+homepage to #0.
+- Removed $frand_class:@join
+- Renamed @htmlview verb on $player to @htmlcode
+- Updated $room:_html
+- Modified $player:@set-note-text.
+- Added new verb @email to $wiz. Will let administrators send $note objects
+as email from the MOO.
+- Modified $network:return_address_for to return real name and email address
+if !$anonymous_users
+- Added verb @code to $prog. Will list verb code without line numbers
+- Added verb @properties to $prog. List all properties on an object
+- Fixed a bug in $build_options:"parse_dig_room parse_dig_exit"
+- Fixed a bug in $frand_class:@go. Thanks to Craig Struble
+- Added $stage_talk:to
+- Added $stage_talk:bb
+- Added $stage_talk:think
+- Fixed bug in $wiz:@make-guest
+- Installed Outsput Suspension and Delimiter system by John Towell and
+Gustavo Glusman. By adding the following verbs #0:do_command, $player:>>
+$code_utils:queued_tasks_matching, $player:"say emote", and $player:@delimiter
+and by modifying $player:notify
+- Modified $player:@version
+- Added lag meter as feature object
+- Added Gustavo Glusman's Census Feature
+- Added Juli Burk's Aloha/Lei verbs to $soc_verbs
+- Added and corified Box of Educational Tools, useful for storing edu tools in.
+- Added new $guest:@request system with $guest_request_list and $guest_
+request_room.
+- Added init_for_core verbs to the following objects: $tool_box, $news, $news_
+item, $readme, $guide, $recording_system, $intercom, $moderated_room, $bot,
+$classroom, $slide_projector, $camera, $vcr, $tv, $tape, $tape_library,
+$prog_tutorial, $recitable_note, $lecture, $webpage, $homepage, $recoder,
+$web_projector, $note_board, $guest_request_list, and $guest_request_room.
+- Updated the High Wired ReadMe file and Beginners Guide to MOOing.
+
+
+August 18, 1997. High Wired enCore-BETA 2 Released
+
+- Renamed the following core properties: $sysobj.tape-library to 
+tape_library $sysobj.news-item to news_item, and $sysobj.prog-tutorial 
+to prog_tutorial.
+- Removed the verbs $builtin_function_help:init_for_core and
+$server_options:www
+- Modified $login:init_for_core so that automatic character creation is
+now disabled.
+- Added social verbs feature to $guest
+- Installed the High Wired Beginner's Guide to MOOing, corified as $guide
+- Updated the enCore readme file
+- Updated the in-MOO homepage
+- Added room database and fixed @go to work with room names.
+- Wrote and installed @boot command on $wiz.
+- Added new look_self verb on guest that tells people where the guest is
+logging in from
+- Updated $wiz_utils:do_register to include real name information.
+- Rewrote $wiz_utils:send_new_player_mail to include more information,
+and to have the Beginner's Guide to MOOing ($guide) sent to
+all new players along with their username and password.
+- Installed @find-name command on $player. Will let you search for people's
+real names.
+- Added verb start_server to $httpd. (This verb was formerly
+$server_options:www)
+ Thanks to Matthew Campbell for his suggestion to move this verb.
+- Updated $httpd:index to include a hits counter on the $homepage.
+- Wrote and installed the following init_for_core verbs: $guest:init_for_core,
+$httpd:init_for_core, $guide:init_for_core, $room_db:init_for_core,
+$recording_system:init_for_core, $intercom:init_for_core,
+$moderated_room:init_for_core, $recorder:init_for_core, and
+$note_board:init_for_core 
+- Installed the following verbs written by Matthew Campbell:
+$object_utils:"fertile_objects fertile_objects_suspended",
+$root_class:init_for_core, $player:init_for_core, $login:init_for_core,
+$building_utils:init_for_core, $new_prog_log:init_for_core,
+$quota_log:init_for_core, $mail_recipient_class:init_for_core,
+$feature:init_for_core, $frand_class:init_for_core, #0:server_started,
+$news:init_for_core, $vcr:init_for_core, $tv:init_for_core,
+$tape_library:init_for_core, $login_watcher:init_for_core,
+$soc_verbs:init_for_core, and $readme:init_for_core.
+
+
+August 10, 1997. High Wired enCore-BETA 1 Released
+
+- Fixed problem with the help system. (Thanks to Kristian Fuglevik for 
+pointing this out)
+- Fixed problem with features on $player
+- Moved High Wired enCore Readme to $news
+- Wrote new welcome screen
+- Updated and expanded the MOO homepage ($homepage)
+
+
+July 31, 1997. Changed name from eduCore to High Wired enCore.
+
+
+July 25, 1997. High Wired enCore-BETA Released. First Public Release
+
+- The High Wired enCore is built on the Feb 02 version of LambdaCore
+- Wrote new core login screen
+- Added #0:checkpoint_started and #0:checkpoint_finished
+- Removed Mr. Spell (#32) and replaced it with the WWW System Object
+- Added _html verbs to #1, $note, $container, $room, and $player
+- Added the verb www to $server_options
+- Installed Generic Web Page and added the verb @html to $player so 
+that s/he can toggle between  html source code view and normal view.
+- Wrote and installed MOO home page. Corified as $homepage
+- Updated #0:server_started to call $server_options:www
+- Installed and moved to container-based News system
+- Added verb $room:tell_exits, and updated $room:look_self so that 
+exits show up in room descriptions
+- Updated $builder:@recycle to better protect against accidental 
+recycling of objects
+- Added $player:"@join join" and $player:"@time time"
+- Installed Generic Recording System with Intercom Device
+- Installed Generic Moderated Room (Auditorium)
+- Installed Generic Classroom
+- Installed Generic Bot
+- Installed Generic Slide Projector
+- Installed Generic Camera, VCR, TV, Tape, Tape Library and Ken's 
+Programming Tutorial Part 1
+- Installed Generic Recitable Note
+- Installed Generic Lecture Device
+- Installed Login Watching Feature
+- Installed Amy Bruckman's MacMOOSE_utils version 1.0b1MOO 
+- Installed Generic Web Projector
+- Installed Support for Ken Schweller's Surf and Turf Java-based MOO 
+client. 
+- Modified #1:description to integrate Surf and Turf with the MOO's Web
+interface.
+- Wrote $player:"@research @interests" verb
+- Modified $wiz_utils:make_player to record real name information if given
+- Added property anonymous_users to #0 to allow administrators to choose
+whether users in the MOO should be anonymous or not. In non-anonymous mode
+users can use the verbs finger, @whois, or @info to get information on other
+users.
+- Changed the use of the word player to name and person in the @who and @@who
+listings.
+- Installed Social Verbs Feature and Login Watcher and made these features
+along with Stage Talk and Pasting Feature default for all new characters
+- Modified #1:look_self to allow for ascii maps and drawings to be stored in
+a separate property, #1.drawing.
+- Added time-stamping of verbs.
+- Wrote and installed recording and playback device.
+- Wrote and implemented new command @search on $player.
+- Wrote and installed simple Generic Note Board.
+- Wrote enCore-README file with installation instructions and other info.
+- Added manners properties to $help.
+
+===========================================================================
+Jan Rune Holmevik                                            Cynthia Haynes
+Dept. of Humanistic Informatics               School of Arts and Humanities
+University of Bergen                          University of Texas at Dallas
+Sydnesplass 7 HF-bygget                                  PO.Box 830688-JO31
+N-5007 Bergen, Norway                             Richardson, TX 75083-0688
+Email: jan.holmevik@hedb.uib.no                Email: cynthiah@utdallas.edu
+===========================================================================
+

@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>$web:do_url</TITLE>
+<META NAME="description" CONTENT="$web:do_url">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2498" HREF="node141.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2496" HREF="node136.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2492" HREF="node139.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2500" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2501" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2499" HREF="node141.html">14.2 Summary of important </A>
+<B>Up:</B> <A NAME="tex2html2497" HREF="node136.html">14.1 The Low Level </A>
+<B> Previous:</B> <A NAME="tex2html2493" HREF="node139.html">$web:get_htext</A>
+<BR> <P>
+<H2><A NAME="SECTION04714000000000000000">$web:do_url</A></H2>
+<P>
+<EM>$web:do_url</EM> returns the actual htext that will be displayed
+by $web:hdisplay. It expects the following arguments:
+<P>
+<SMALL CLASS=SMALL><PRE> arg1 (url)      = URL, e.g. something like
+
+       {&quot;/1324&quot;}     or
+       {&quot;/1324:page_web&quot;, &quot;/hello young man&quot;}
+
+ arg2 (valid_key) = a flag if key is valid, e.g. 1
+
+
+ arg3 (extra)     = referer/client information (see above), e.g.
+       {&quot;Referer: http://tecfamoo.unige.ch:7777.....  }
+
+ arg4 (fetch)     = defining whether the actual htext of only the header
+                    is to be retrieved.</PRE></SMALL>
+<P>
+Let's examine headers only vs. actual htext first:
+The fetch tag specifies whether the actual htext of the document needs 
+to be retrieved, or only the headers.  This is important because we use 
+<code>$web:do_url</code> to route requests both for the server header information and 
+for the html of the document.
+<P>
+See the lines in $login:get (MOOtiny's version of Sept 25 95)
+<SMALL CLASS=SMALL><PRE>  38:  fork (0)
+  39:    $web:headdisplay($web:get_htext(req, rc, player, 0));
+  40:  endfork
+  41:  suspend(3);
+  42:  keep web:hdisplay($web:get_htext(req, rc, player, 1));</PRE></SMALL>
+<P>
+$web:headdisplay is the verb that displays the server headers wheras 
+$web:hdisplay displays the htext to the user.  We want the headers to be 
+displayed before anything else, so we fork that off and get it calling 
+:do_url and so on before anything else.  We have a suspend(3); to make 
+sure that the headers get there before the html, even if the html takes 
+a very short time to be constructed.<BR> 
+Notice that the only difference between the arguments is the 4th 
+argument, which is the one that gets passed as 'fetch' to <code>$web:do_url</code>.
+In the first case, we don't want to bother with fetching the html, in 
+the second case, we do.
+<P>
+<code>$web:do_url</code> first builds a html server header information that
+tells the client what server we are and what kind of document is retrieved,
+ i.e. something like this:
+<SMALL CLASS=SMALL><PRE>{&quot;HTTP/1.0 200 Document follows&quot;, &quot;MIME-Version: 1.0&quot;, &quot;Server: WOOM/1.0&quot;,
+&quot;Date: Thursday, 21-Sep-95 20:23:00 1995&quot;, &quot;Content-type: text/html&quot;, &quot;&quot;}</PRE></SMALL>
+<P>
+One important thing is the Date: because clients use this to tell whether they can just reload something they have in their cache, or have to go and grab it all again.
+<P>
+Then, it generates the html (head of the page, htext ....).
+<P>
+:do_url can parse three types of url.
+<P>
+<OL>
+<LI> It looks to see if there isn't a url at all, in which case it returns
+the home page.
+<LI> It looks to see if the first argument in the URL is specifying a
+property (it probably has a ``.'' in it, and the thing before the
+``.'' is specifying an object somehow).
+<LI> If these aren't the cases, it looks for:
+<OL>
+<LI> if the first thing is a number which can be translated as a valid
+      object number (e.g. http://.../123).
+<LI>  if it looks like a verb reference (has a : in it).  Since these 
+      are common types of urls (all _web verbs and header verbs (those
+      in the menu on the top left) use it), these are checked quite
+      carefully to make sure none are missed.
+<LI> if it is the name of a verb used in the header verbs, $web_root
+      the $web_root:verb is used.
+<LI> if the reference looks like anything else, even just the name of
+      an object the player is holding.
+<P>
+</OL></OL>
+<P>
+Using this information, it gets headers and htext and parses them to
+return a list of htext, headers, keep, where keep specifies whether
+the connection will be kept open for the sakes of server push.
+<P>
+<HR><A NAME="tex2html2498" HREF="node141.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2496" HREF="node136.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2492" HREF="node139.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2500" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2501" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html2499" HREF="node141.html">14.2 Summary of important </A>
+<B>Up:</B> <A NAME="tex2html2497" HREF="node136.html">14.1 The Low Level </A>
+<B> Previous:</B> <A NAME="tex2html2493" HREF="node139.html">$web:get_htext</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

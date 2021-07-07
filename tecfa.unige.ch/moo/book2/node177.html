@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>htext verbs</TITLE>
+<META NAME="description" CONTENT="htext verbs">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="http://tecfa.unige.ch/moo/book2/tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html1" HREF="http://tecfa.unige.ch/"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/gif/icon-tecfa-unit-small.gif"  > </A> <A NAME="tex2html2769" HREF="node178.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2767" HREF="node175.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2761" HREF="node176.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2771" HREF="http://tecfa.unige.ch/moo/book2/node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <BR>
+<B> Next:</B> <A NAME="tex2html2770" HREF="node178.html">The $www_utils package</A>
+<B>Up:</B> <A NAME="tex2html2768" HREF="node175.html">10.3 The Basic Applications </A>
+<B> Previous:</B> <A NAME="tex2html2762" HREF="node176.html">Webby verbs</A>
+<BR> <P>
+<H2><A NAME="SECTION04532000000000000000">htext verbs</A></H2>
+<P>
+<A NAME="sechtextverbs">&#160;</A>
+<P>
+Each time you click on a object on the WWW interface (or when you navigate
+into a new room) the ``:text'' verb is called (normally it is inherited
+from core objects like #1, #3 ($room), #5 ($thing), #6 ($player)
+etc. So if you feel confident in code reading you might
+want to have a glance at those verbs sometimes. Type
+<code>@d &lt;any object&gt;:htext</code> to see from where the verb is inherited.
+<P>
+Bascially the ``:htext'' verbs generate 
+the items for a full HTML page that are returned
+in a flat list of strings, generally the following:
+<P>
+<OL>
+<LI> An HTML header + the global menu on top of the page
++ the big title, i.e. something like:
+<P>
+<PRE> &lt;html&gt;
+ &lt;head&gt;
+ &lt;title&gt;island&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;form method=&quot;GET http://tecfamoo.unige.ch:7777/&quot;&gt;&lt;select name=&quot;verb&quot;&gt;
+ &lt;option&gt;help&lt;option&gt;browse&lt;option&gt;who&lt;option&gt;uptime&lt;option&gt;location
+ &lt;option&gt;body&lt;option&gt;home&lt;option&gt;news&lt;option&gt;mail&lt;option&gt;sendmail&lt;/select&gt;
+ &lt;input name=&quot;do&quot; type=submit value=&quot;Do it!&quot;&gt; 
+ &lt;input name=&quot;command&quot; size=50&gt;&lt;/form&gt;&lt;p align=center&gt;
+ &lt;hr&gt;
+ &lt;h1 align=&quot;center&quot;&gt;island&lt;/h1&gt;</PRE>
+Note that all those elements are comma separated ``STRINGS'' returned in
+a list!
+<LI> The description of the object
+<LI> The contents of its .htext property
+<LI> Object specfic items, e.g.
+<P>
+<UL>
+<LI> Location for Objects
+<LI> Contents and obvious exists for locations
+</UL>
+<LI> ``webby verbs'' attached to each object, e.g. something like:
+<P>
+<PRE> &lt;form method=GET action=http://tecfamoo.unige.ch:7777/key=209189437/1429&gt;
+ &lt;input name=&quot;web_verb&quot; type=submit value=&quot;help&quot;&gt;
+ This link will show you help and verb comments on this object
+ &lt;/form&gt;</PRE>
+<LI> A footer, i.e. something like:
+<PRE>  &lt;/BODY&gt;
+  &lt;/HTML&gt;</PRE>
+</OL>
+<P>
+So if you decide to write your own :htext verb for an object or
+a generic, try to reproduce something along the same lines.
+Copy the generic verb that comes closest to your needs and adapt!
+<P>
+Also, make sure not to forget the ``webby verbs'' if there are some.
+``Webby'' verbs by definition have a <code>_web</code> suffix in their name.
+(e.g. <code>help_web</code> is a webby verb, see section <A HREF="node176.html#secwebbyverbs">10.3.1</A>
+). The :htext verb must display those verbs.
+It uses the <code>:list_web_verbs</code> for that.
+<P>
+The text below is from MOOtiny's help system (dated oct 19 1995).
+Alternatively, you can directly access it
+<A NAME="tex2html92" HREF="http://spsyc.nott.ac.uk:8888/help/web">at MOOtiny</A>
+It may not totally fit what we have here at Tecfa.
+<P>
+<PRE>&gt;help htext-verbs
+
+To have almost complete control over what is returned when an object
+is viewed over the web, you should program the :htext verb on the
+object.
+
+:htext verbs are passed two arguments:  
+
+The first (and most commonly used) is a list of strings which make up
+the url, as they are on other woos.
+
+The second is the information sent by the client to the MOO, containing
+information about what version browser it is, what type of information
+it will accept and so on.
+
+:htext verbs are *not* passed any 'key' information (as they are on
+most other woos), as you can use 'player' to know who is accessing the
+verb.
+
+:htext verbs should be +x, return html, and can refer to 'player' as
+the object number of the person who is accessing the moo.  Remember,
+though that any messages that you :tell to player will not be seen
+by them over the web, so it's good to return them in the html as well.
+
+Good html should be returned by the :htext verb.  As an aid to this,
+there are two $www_utils verbs:  :do_html_header and :do_html_footer,
+which may be useful.  To include _web verbs (see help web-verbs) in
+your html, use object:list_web_verbs.  You can change which _web verbs
+are shown by altering object:obvious_web_verbs.
+
+The $www_utils are meant to aid the construction of :htext verbs.
+Have a look at 'help $www_utils' for more information.
+
+If you are interested in returning extra information for inclusion in
+the headers (such as Content-type or Location), you may return two
+arguments from the :htext verb rather than simply returning a list
+of strings.  The first argument will contain the html as usual.  The
+second argument is a list which contains header information such as
+the mime type and so on.  There are utilities for creating these
+headers in the $www_utils package.</PRE>
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Wed Oct 23 21:55:28 MET DST 1996</I>
+</ADDRESS>
+</BODY>
+</HTML>

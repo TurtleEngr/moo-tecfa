@@ -1,0 +1,161 @@
+<HTML>
+<BODY>
+<H1>WWW5 Workshops Sessions</H1>
+[<A HREF="abstracts.html.text">Old</A>page updated in order to kill the dead links - DKS 9/97]
+
+This is the official participants list we sent to the organizers.
+
+<H2>Virtual Environments and the WWW</H2>
+
+<H3>Chairman</H3>
+
+Jenifer Tennison, Department of Psychology, University of Nottingham, <A
+HREF="mailto:jft@psyc.nott.ac.uk">jft@psyc.nott.ac.uk</A>
+
+<H3>List of Participants</H3>
+
+<!-- Ordered list, please sort in alphabetic order of lastnames -->
+
+<OL>
+<LI>David Anderson, Mitsubishi Electric Research Labs, <A HREF="mailto:anderson@merl.com">anderson@merl.com</A>
+<LI>Yoshaki Araki,  SONY Music Entertainment, <A HREF="mailto:aly@sme.co.jp">aly@sme.co.jp</A>
+<LI>Jean-Francis Balaguer, CERN, CN Division, <A HREF="mailto:balaguer@cern.ch">balaguer@cern.ch</A>
+<LI>Gavin Bell, Department of Psychology, University of Nottingham, <A HREF="mailto:grb@psyc.nott.ac.uk">grb@psyc.nott.ac.uk</A>
+<LI>Kees van den Bergh, KPN Research, The Netherlands, <A HREF="mailto:C.A.A.vandenBergh@research.kpn.com">C.A.A.vandenBergh@research.kpn.com</A>
+<LI>Seth Chaiklin, University of Aarhus, <A HREF="mailto:seth@psy.aau.dk">seth@psy.aau.dk</A>
+<LI>Jeff Vander Clute, Tripod Tech, <A HREF="mailto:jeff@tripod.com">jeff@tripod.com</A>
+<LI>Luc Girardin, Graduate Institute of International Studies, Geneva, <A HREF="mailto:girardin@hei.unige.ch">girardin@hei.unige.ch</A>
+<LI>Rob van der Haar, Philips Research, <A HREF="mailto:rob@prl.research.philips.com">rob@prl.research.philips.com</A>
+<LI>Chris Hand, MOO Research Group, De Montfort University, <A HREF="mailto:cph@dmu.ac.uk">cph@dmu.ac.uk</A>
+<LI>Anny Koh, Department of Computer Science, City University, <A HREF="mailto:anny@soi.city.ac.uk">anny@soi.city.ac.uk</A>
+<LI>Daniel Schneider, TECFA, University of Geneva, <A HREF="mailto:Daniel.Schneider@tecfa.unige.ch">Daniel.Schneider@tecfa.unige.ch</A>
+<LI>Doree Duncan Seligmann, Multimedia Communication Research Department, Bell Labs, <A HREF="mailto:doree@research.att.com">doree@research.att.com</A>
+<LI>Kim Stephenson, Software Development Group, NCSA, <A HREF="mailto:kims@ncsa.uiuc.edu">kims@ncsa.uiuc.edu</A>
+<LI>Jolanda Tromp, Communications Research Group, University of Nottingham, <A HREF="mailto:jgr@cs.nott.ac.uk">jgt@cs.nott.ac.uk</A>
+<LI>Nakhshon Tsouk, School of Education, University of Haifa, <A HREF="mailto:nakhshon@construct.haifa.ac.il">nakhshon@construct.haifa.ac.il</A>
+</OL>
+
+<H3>Position papers</H3>
+
+Postscript versions will be made available at
+<A HREF="http://tecfa.unige.ch/pub/documentation/VE/WWW5/ori/">ftp://tecfa.unige.ch/pub/documentation/VE/WWW5/LDS/</A> (sometimes on Friday May 3).
+<!-- Ordered list, please sort in alphabetic order of Authors lastnames -->
+
+<OL>
+<LI>David Anderson, VEs and the WWW, <A HREF="http://spsyc.nott.ac.uk:5555/245/565">http://spsyc.nott.ac.uk:5555/245/565</A><BR>
+For the past twelve years or so my research has been in the general areas
+of distributed and real-time systems, with a focus on developing middleware
+and toollkits to enable applications with person-to-person communication.
+<LI>Yoshiaki Araki, An internet based, large scale virtual environment, <A HREF="http://spsyc.nott.ac.uk:5555/245/591">http://spsyc.nott.ac.uk:5555/245/591</A><BR>
+Sony have been invetigating a large scale, shared virtual environment
+suitable for use in the Internet.  The key focus of the project is the open
+environment, suited to supporting large numbers of participants in a highly
+interactive environment.
+<LI>Jean-Francis Balaguer, Virtual Environment and WWW for Engineering, <A HREF="http://spsyc.nott.ac.uk:5555/245/579">http://spsyc.nott.ac.uk:5555/245/579</A><BR>
+In this paper we present how, by combining into a single tool the 3D input
+and high-performance rendering capabilities of high-end VR systems with the
+data-fetching capabilities of network browsers, we are able to handle the
+distributed nature of the LHC (Large Hadron Collider) project and address
+some of its information management issues.
+<LI>Gavin Bell, Virtual environments from a hypermedia perspective, can
+they become
+personalised information spaces, <A HREF="http://spsyc.nott.ac.uk:5555/245/271">http://spsyc.nott.ac.uk:5555/245/271</A><BR>
+Hypermedia and virtual environments have a common goal, to share the nodes
+and links through which different people move.  Thus we have common
+information systems which are being used for multiple purposes. Creation of
+personal views of this space will allow us to adapt the resource to fit new
+uses.  This paper explores the possible synergy between these two
+approaches and techniques for this adaption.
+<LI>Kees van den Bergh, VEs and the WWW, <A HREF="http://spsyc.nott.ac.uk:5555/245/651">http://spsyc.nott.ac.uk:5555/245/651</A><BR>
+I'd like to present a set of commonly shared characteristics of shared
+virtual environments.  These &quot;telepresence elements&quot; are believed
+to be responsible for the telepresence experienced in the reviewed SVEs.
+<LI>Seth Chaiklin, Educational Applications of VEs, <A HREF="http://spsyc.nott.ac.uk:5555/245/606">http://spsyc.nott.ac.uk:5555/245/606</A><BR>
+My primary interest in VEs is to explore their use in educational contexts,
+especially at the university level.  I would like to use them as (a)
+devices to supplement student/teacher interaction and collaboration beyond
+the face-to-face classroom teaching, (b) devices to present materials that
+could be used in educational contexts (e.g., museums), and (c) devices to
+support distance learning or collaboration between remote sites.
+<LI>Jeff Vander Clute,  VEs and the WWW, <A HREF="http://spsyc.nott.ac.uk:5555/245/686">http://spsyc.nott.ac.uk:5555/245/686</A><BR>
+As a content provider, we're not interested in simply having a web MOO.
+We'd like to turn web pages into web spaces where users can interact while
+viewing the same content.  In fact, we believe strongly that static content
+is better in a book than on a monitor unless some value is added along the
+lines of page annotation and real time chat.
+<LI>Luc Girardin, Virtual Environments and the WWW, <A HREF="http://spsyc.nott.ac.uk:5555/245/622">http://spsyc.nott.ac.uk:5555/245/622</A><BR>
+For almost one year now, I have been doing research on the navigability in
+cyberspace.  In this context, I have developed a framework to present
+information about virtual locations to the World-Wide Web users in order to
+overcome the lost-in-cyberspace syndrome.  This research, entitled
+'cyberspace geography visualisation', has led to prototyping including an
+integration a Webbed MOO (TecfaMOO).
+<LI>Rob van der Haar, Virtual Environments and the WWW, <A HREF="http://spsyc.nott.ac.uk:5555/245/599">http://spsyc.nott.ac.uk:5555/245/599</A><BR>
+My main reason for participating in the workshop on Virtual Environments
+and the World Wide Web is to share experiences, ideas, worries and visions
+on Social Creative Virtual Environments with other people working in the
+field.  I am especially interested in the role and effect of design issues
+concerning these environments.
+<LI>Chris Hand, Some User Interface Issues for Hypermedia Virtual
+Environments, <A HREF="http://spsyc.nott.ac.uk:5555/245/564">http://spsyc.nott.ac.uk:5555/245/564</A><BR>
+This paper outlines some issues to be considered in the development of
+hypermedia virtual environments, in particular user interfaces and
+supporting architectures.  Taking webbed MOOs as a starting point, the
+potential for using Java to increase interactivity is discussed, followed
+by spatial issues, subjectivity and interoperability.
+<LI>Anny Koh, VEs and the WWW, <A HREF="http://spsyc.nott.ac.uk:5555/245/144">http://spsyc.nott.ac.uk:5555/245/144</A><BR>
+It has proven very difficult to provide adequate and &quot;realistic&quot;
+training in Requirements Engineering (RE).  Hence, our key interest in VEs
+and the WWW comes from our motivation in exploring a
+&quot;virtually-simulated&quot; training environment for RE.  This paper
+aims to highlight out current considerations of VEs and the WWW for RE
+training, and some issues on what a webbed-MOO might offer.
+<LI>Daniel Schneider, Virtual Environments for Education, Research and
+Life, <A HREF="http://spsyc.nott.ac.uk:5555/245/270">http://spsyc.nott.ac.uk:5555/245/270</A><BR>
+Virtual Environments for Education, Research and Life are interactive
+cyberspaces where many users can communicate and collaborate in various
+ways.  They also can build virtual like offices, books, blackboards,
+artificial persons and more.  VEs should also provide optimal support for
+information storage, retrieval and manipulation.
+<LI>Doree Duncan Seligmann, WWW5 Virtual Environments, <A HREF="http://spsyc.nott.ac.uk:5555/245/563">http://spsyc.nott.ac.uk:5555/245/563</A><BR>
+My interest in virtual environments originates in work on 3D intelligent
+systems [IBIS, COMET, KARMA] and multimedia systems [Rapport, MR, N-ICE].
+My current research and testbed system [Archways] is directed at finding
+new ways to make complex multimedia systems as transparent to use as the
+telephone has become.
+<LI>Kim Stephenson, Virtual Environments and the WWW, <A HREF="http://spsyc.nott.ac.uk:5555/245/597">http://spsyc.nott.ac.uk:5555/245/597</A><BR>
+An important next step in the web's evolution is the ability to do more
+than just surf.  In other words, how can a group accomplish their tasks
+utilizing the web as a medium?  This requires both asynchronous and
+synchronous tools as well as a space to work in.  One way to organize all
+the tools, information and resources is build a virtual environment to
+house them.
+<LI>Jenifer Tennison, Collaborative Information Environments, <A HREF="http://spsyc.nott.ac.uk:5555/245/237">http://spsyc.nott.ac.uk:5555/245/237</A><BR>
+This paper outlines my present work on webbed MOOs as a basis for adaptive,
+collaborative information systems.  The combination of VEs with the WWW may
+alleviate some of th enavigation problems experienced within hypermedia,
+but offers problems of its own, both technically and due to its low
+usability.
+<LI>Jolanda Tromp, Criteria of Credibility: Creating the Illusion of Space
+and Motion in Virtual Environments, <A HREF="http://spsyc.nott.ac.uk:5555/245/583">http://spsyc.nott.ac.uk:5555/245/583</A><BR>
+The World Wide Web is essentially a 2D space, which we are trying to turn
+into actual 3D collaborative spaces for people.  In my work on navigation
+and perception of virtual spaces I have come across a set of criteria for
+credibility for the construction of spaces in textual and 2D media.
+<LI>Nakhshon Tsouk, VEs as a Tool for Integrating Faculty and Students in a
+Learning Community, <A HREF="http://spsyc.nott.ac.uk:5555/245/619">http://spsyc.nott.ac.uk:5555/245/619</A><BR>
+CMC is used as an extension of the common research model, which is
+generally based on surveying existing knowledge, contemplating and
+discussiong it with others, and then putting one's ideas into writing and
+distributing them.  VEs can enhance usual CMC tools by integrating them
+inside a new 3D metaphor, which replaces the widely used 'Desktop' 2D
+metaphor.
+</OL>
+<hr>
+<A HREF="welcome.html">UP to workshop page</A>
+<ADDRESS> <A Name=Signature HREF="http://tecfa.unige.ch/tecfa/general/tecfa-people/schneider.html">D.K.S.</A></ADDRESS>
+</BODY>
+</HTML>
+
+
+

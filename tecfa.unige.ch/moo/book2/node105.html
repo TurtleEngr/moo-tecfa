@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Adding security to the holder</TITLE>
+<META NAME="description" CONTENT="Adding security to the holder">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2056" HREF="node106.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2054" HREF="node102.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2050" HREF="node104.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2058" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2059" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2057" HREF="node106.html">8.11 MOO softwareLevel0 </A>
+<B>Up:</B> <A NAME="tex2html2055" HREF="node102.html">8.10 Permissions and Generic </A>
+<B> Previous:</B> <A NAME="tex2html2051" HREF="node104.html">A generic ``holder''</A>
+<BR> <P>
+<H2><A NAME="SECTION041103000000000000000">Adding security to the holder</A></H2>
+<P>
+<A NAME="secholdersecure">&#160;</A>
+<P>
+Another problem is security, as you can see anybody will be able
+to write something onto your ``holder'' or worse, erase it.
+This is something else you will have to learn if you feel
+getting into serious MOO programming.
+At some point you also should read the section on security (<A HREF="node125.html#secsecurity">11.2</A> on page <A HREF="node125.html#secsecurity"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>).
+<P>
+Verbs on objects need security if the verb could alter either the state of
+the object or if information should remain confidential. In the list
+of verbs you have on your ``holder'', the following ones are strong candidates
+for security:
+<SMALL CLASS=SMALL><PRE> #2108:add                   MooBoy (#1324)       r d 
+ #2108:clear                 MooBoy (#1324)       r d
+ #2108:erase                 MooBoy (#1324)       r d</PRE></SMALL>
+<P>
+Those need only securtiy if you don't want other people to show its contents:
+<SMALL CLASS=SMALL><PRE> #2108:dump                  MooBoy (#1324)       r d
+ #2108:show                  MooBoy (#1324)       r d</PRE></SMALL>
+<P>
+Basically as explained in section <A HREF="node125.html#secsecurity">11.2</A> security differs
+from command verbs (typically ``<code>rd</code>'' permissions) and verbs that are callable
+by other verbs (typically ``<code>rxd</code>'' permissions)
+<P>
+In the holder we only have command verbs (i.e. no verb calls any other verb
+on the same object), to make a verb secure from execution by other
+people we only have to add the following lines at the <em>beginning of your verb</em>:
+<SMALL CLASS=SMALL><PRE>if (!$perm_utils:controls(player, this))
+  player:tell(&quot;Sorry you are not the owner of this
+               object and can't clear it&quot;);
+return;</PRE></SMALL>
+The <code>$perm_utils:control(&lt;user&gt;,&lt;object&gt;)</code> function returns true if
+the user is the person owning the object.
+The <code>(!$perm_utils:controls(player, this))</code> returns true if the
+user does <em>not</em> control the object, i.e. the ``!'' negates the
+previous expressions. So if we are in the situation where a non-owner
+activates the verb, we simply exit from the function and before that
+print out a message to the user.
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

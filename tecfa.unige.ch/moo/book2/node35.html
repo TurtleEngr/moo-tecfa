@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>[TECFAMOO] Nicknames</TITLE>
+<META NAME="description" CONTENT="[TECFAMOO] Nicknames">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1099" HREF="node36.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1097" HREF="node33.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1093" HREF="node34.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1101" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1102" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1100" HREF="node36.html">Organization of MOO events</A>
+<B>Up:</B> <A NAME="tex2html1098" HREF="node33.html">2.5 Remembering and finding </A>
+<B> Previous:</B> <A NAME="tex2html1094" HREF="node34.html">Remembering Rooms</A>
+<BR> <P>
+<H2><A NAME="SECTION02252000000000000000">[<B>TECFA</B><TT>MOO</TT>] Nicknames</A></H2>
+<P>
+<A NAME="secnick">&#160;</A>
+<P>
+Nicknames allow you to give nicknames to objects.
+Unlike aliases, nicknames are only valid for you and you can
+add nicknames to objects that you don't own. Nicknames should be also
+be matched before regular names and aliases.
+<A NAME=367>&#160;</A>
+<P>
+The following commands are obsolete at <B>TECFA</B><TT>MOO</TT> and are going to be deleted:
+@rooms, @addroom, and @rmroom; if you had a db of rooms, it has been
+converted to nicknames.
+<P>
+Basic commands needed:
+<P>
+<SMALL CLASS=SMALL><PRE>@nickname*s &lt;object&gt; - displays the nicknames assignes to an object
+@nickname            - displays the usage
+@nickname everything - list all the nicknames you assigned
+
+@addnickname*s &lt;nickname&gt; [, &lt;nickname&gt;, ..., &lt;nickname&gt;] to &lt;object&gt; 
+@rmnickname*s  &lt;nickname&gt; [, &lt;nickname&gt;, ..., &lt;nickname&gt;] from &lt;object&gt;</PRE></SMALL>
+<P>
+Example:
+<P>
+<SMALL CLASS=SMALL><PRE>@nickname
+Usage:  @nicknames &lt;object&gt;  
+        =&gt; list the nicknames you assigned to &lt;object&gt;.
+        @nicknames everything  
+        =&gt; list all the nicknames you assigned and the associated objects.
+&gt;@nickname me
+You have not assigned any nicknames to MooBoy [offline] (#1324) &lt;~MooBoy&gt;
+&gt;@nickname everything
+Foyer (#258) has the nickname Foyer.
+&gt;@addnickname stag to #3522
+Now The Old Stag (#3522) has the nickname stag.
+&gt;@nicknames everything
+Foyer (#258) has the nickname Foyer.
+The Old Stag (#3522) has the nickname stag.
+&gt;@go stag
+The Old Stag
+ [.....]
+&gt;@nickname here
+The Old Stag (#3522) has the nickname stag.</PRE></SMALL>
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,106 @@
+<HTML>
+<HEAD>
+<TITLE>WWW5 Workshop on VEs and the WWW</TITLE>
+<!-- Changed by: D.K.S., 29-Feb-1996 -->
+<!-- Changed by: Jeni, 1-Mar-1996 -->
+<!-- Changed by: D.K.S., 23-May-1996 -->
+</HEAD>
+<BODY>
+<H1>WWW5 Workshop on VEs and the WWW</H1>
+
+at the
+<A HREF="http://www5conf.inria.fr/">Fifth International World Wide Web
+Conference</A>.
+<P>
+<img src="/ico/bars/art/cowbar.gif" alt="----------------">
+
+<H3>1. Discussion Server <IMG ALIGN=BOTTOM SRC="/ico/symbols/idea.gif" ALT="***"></H3>
+A <STRONG>WWW-based discussion/annotation forum</STRONG> at
+<a href="http://spsyc.nott.ac.uk:5555/">
+<STRONG>http://spsyc.nott.ac.uk:5555</STRONG></a> has been used to
+prepare the workshop and to organize activities after the workshop.
+Original papers prepared by the participants are integrated into
+its "Living Document System".
+<P>
+This Forum is open for everybody interested in Virtual Environments.
+
+<img src="/ico/bars/art/cowbar.gif" alt="----------------">
+
+<H3><A HREF="papers/">2. Accepted papers</A> (including printables)</H3>
+Includes: Home pages of some participants, a list of guest,
+original papers, pointers to "Living Document System" versions
+of papers, link to a FTP directories with Postscript files.
+
+<H3><A HREF="abstracts.html">3. Participants and Abstracts</A></H3>
+A copy of the page sent to the organizers
+(Yes we just might merge the 2 lists after the workshop).
+
+<H3>4. Issues extracted from the position papers</H3>
+Issues can be viewed in various ways in the Living Document System.
+E.g. they can be found by looking at the
+<A HREF="http://spsyc.nott.ac.uk:5555/296">Position Paper List</A>
+or via 
+<A HREF="http://spsyc.nott.ac.uk:5555/671">the issue overview.</A>
+
+<H3>5. Discussion Material</H3>
+Discussion Material for the 9 group discussions can be produced
+from the <A HREF="http://spsyc.nott.ac.uk:5555/757/">Group Discussion Page</A>
+or from the above issues list. Participants did receive the printed version
+(see the list below) as handouts.
+<DL>
+
+<DT>A-1: <a href="http://spsyc.nott.ac.uk:5555/757/747/print">Information Representation</a>, 
+chaired by 
+<a href="http://spsyc.nott.ac.uk:5555/245/237">Jenifer Tennison</a>
+
+
+<DT>A-2: <a href="http://spsyc.nott.ac.uk:5555/757/748/print">User Interfaces and Clients</a>, chaired by 
+<a href="http://spsyc.nott.ac.uk:5555/245/271">Gavin Bell</a>
+
+<DT>A-3: <a href="http://spsyc.nott.ac.uk:5555/757/748/print">Integration of the 'real world'</a>, chaired by 
+<a href="http://spsyc.nott.ac.uk:5555/245/563">Doree Duncan Seligmann</a>
+
+<DT>B-1: <a href="http://spsyc.nott.ac.uk:5555/757/750/print">Spatial Organisation and Navigability</a>, chaired by 
+<a href="http://spsyc.nott.ac.uk:5555/245/583">Jolanda Tromp</a>
+
+<DT>B-2: <a href="http://spsyc.nott.ac.uk:5555/757/751/print">Collaboration and CSCW in VEs</a>, chaired by 
+<a href="http://spsyc.nott.ac.uk:5555/245/270">Daniel Schneider</a>
+
+<DT>B-3: <a href="http://spsyc.nott.ac.uk:5555/757/752/print">Large Scale systems and distributed architectures</a>, chaired by 
+<a href="http://spsyc.nott.ac.uk:5555/245/591">Yoshiaki Araki</a>
+
+<DT>C-1: <a href="http://spsyc.nott.ac.uk:5555/757/753/print">Community (Users, Social Aspects, Evolution etc)</a>, chaired by 
+<a href="http://spsyc.nott.ac.uk:5555/245/599">Rob van der Haar</a>
+
+<DT>C-2: <a href="http://spsyc.nott.ac.uk:5555/757/754/print">Integration of the WWW</a>, chaired by 
+<a href="http://spsyc.nott.ac.uk:5555/245/564">Chris Hand</a>
+
+<DT>C-3: <a href="http://spsyc.nott.ac.uk:5555/757/755/print">Objects in collaborative Work</a>, chaired by 
+chaired by Jay M. Williams
+</dL>
+
+<img src="/ico/bars/art/cowbar.gif" alt="----------------">
+<H3>6. Workshop Results</H3><IMG SRC="/ico/new/new01.gif" ALT="***">
+
+Workshop results are not available yet (May 20 1996), but some transcripts
+are:
+<UL>
+<LI><A HREF="wsday/warmup.html">Warming up discussion</A> 
+<li><A HREF="wsday/discussions.html">"Result" slides from the group discussions</A>. The most interesting transcript page to look at !
+<LI><A HREF="wsday/closing.html">Closing discussion</A>
+</UL>
+
+<hr>
+<H3>Obsolete stuff</H3>
+<UL>
+<LI><A HREF="call.html">Call for Papers</A>
+<li><A HREF="schedule.html">Workshop Schedule</A>
+<LI><A HREF="practical.html">Practical Information</A>
+<LI><A HREF="announce.html">Announcements</A> ("sent to" list)
+</UL>
+
+<hr>
+<A HREF="../tecfamoo.html">UP to TecfaMOO project</A>
+<ADDRESS> <A Name=Signature HREF="http://tecfa.unige.ch/tecfa/general/tecfa-people/schneider.html">D.K.S.</A></ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,1 @@
+htmltoc -inline -tocmap journals-map -toclabel "<strong>Contents</strong><p>" journals.html

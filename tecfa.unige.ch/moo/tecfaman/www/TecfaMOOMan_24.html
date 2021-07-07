@@ -1,0 +1,82 @@
+<!-- Generated with CERN WebMaker 1.4 -->
+<HTML>
+<HEAD>
+<TITLE>6-5  Description plus avanc&eacute;e de "rooms" et sorties</TITLE>
+</HEAD>
+<BODY>
+<A NAME=HEADING28>
+<A HREF="TecfaMOOMan_25.html">[Next] </A><A HREF="TecfaMOOMan_23.html">[Previous] </A><A HREF="TecfaMOOMan_19.html">[Up] </A><A HREF="TecfaMOOMan_1.html">[Top] </A><P>
+6.  La construction (Building)<P>
+<H1>6-5  Description plus avanc&eacute;e de "rooms" et sorties</H1>
+<HR>
+En r&egrave;gle g&eacute;n&eacute;rale, on attache un certain nombre de messages aux entr&eacute;es et sorties pour rendre le passage plus int&eacute;ressant.<P>
+<UL>
+<LI>@messages  imprime les messages attachables &agrave; un objet<P>
+<UL>
+<LI>Exemple:<P>
+<LI>(1) @messages me<P>
+<LI>Indique la liste des messages attach&eacute;s &agrave; votre personnage<P>
+<LI>(2) @messages &lt;exit&gt;<P>
+<LI>Indique la liste des messages attach&eacute;s &agrave; un "exit"<P>
+</UL>
+<LI>&lt;@message-name&gt; &lt;object&gt; is &lt;"message ......."&gt;<P>
+<UL>
+<LI>Exemple:<P>
+<LI>(1) @leave n is "Vous vous promenez vers le nord ..... "<P>
+<LI>Ce message est vu par la personne qui emprunte une sortie. Utilis&eacute; &agrave; divers raisons, par exemple pour d&eacute;crire une marche plus longue (par ex. "vous prenez le bus et .....") ou encore pour rendre la sortie int&eacute;ressante (par ex "vous &eacute;vitez de justesse de vous cogner en sortant...").<P>
+<LI>(2) @oleave n is "struggles towards the north"<P>
+<LI>Message destin&eacute; aux gens qui restent dans la m&ecirc;me salle.<P>
+</UL>
+</UL>
+<A NAME=HEADING29>
+<H3> Mise en page de messages</H3>
+<OL>
+<LI>Tous les noms des messages commen&ccedil;ant par un "o" produisent un message qui met le nom de l'utilisateur au d&eacute;but du message<P>
+<LI>Utilisation de variables: Dans un string vous mettre des variables qui seront substitu&eacute;s par des noms d'objets ou des promons (en Anglais). Faites un "help messages" pour des d&eacute;tails, ici juste le r&eacute;sum&eacute; en Anglais:<P>
+</OL>
+<PRE>
+
+        %% =&gt; `%'  (just in case you actually want to talk about percentages).
+    Names:
+        %n =&gt; the player
+        %t =&gt; this object (i.e., the object issuing the message,... usually)
+        %d =&gt; the direct object from the command line
+        %i =&gt; the indirect object from the command line
+        %l =&gt; the location of the player
+    Pronouns:
+        %s =&gt; subject pronoun:          either `he',  `she', or `it'
+        %o =&gt; object pronoun:           either `him', `her', or `it'
+        %p =&gt; posessive pronoun (adj):  either `his', `her', or `its'  
+        %q =&gt; posessive pronoun (noun): either `his', `hers', or `its'
+        %r =&gt; reflexive pronoun:  either `himself', `herself', or `itself'
+    General properties:
+        %(foo) =&gt; player.foo 
+        %[tfoo], %[dfoo], %[ifoo], %[lfoo]
+               =&gt; this.foo, dobj.foo, iobj.foo, and player.location.foo
+    Object numbers:
+        %#  =&gt; player's object number
+        %[#t], %[#d], %[#i], %[#l]
+            =&gt; object numbers for this, direct obj, indirect obj, and location.
+
+In addition there is a set of capitalized substitutions for use at the 
+beginning of sentences.  These are, respectively, 
+
+   %N, %T, %D, %I, %L for object names, 
+   %S, %O, %P, %Q, %R for pronouns, and
+   %(Foo), %[dFoo] (== %[Dfoo] == %[DFoo]),... for general properties
+
+</PRE>
+<UL>
+<LI>Exemples:<P>
+<LI>(1) <P>
+</UL>
+<DL>
+<DT><A HREF="TecfaMOOMan_24.html#HEADING29"><B></B>  Mise en page de messages</A><DD>
+</DL>
+
+<HR>
+<ADDRESS>TecfaMOO Manuel - 02 FEB 95</ADDRESS>
+<A HREF="TecfaMOOMan_25.html">[Next] </A><A HREF="TecfaMOOMan_23.html">[Previous] </A><A HREF="TecfaMOOMan_19.html">[Up] </A><A HREF="TecfaMOOMan_1.html">[Top] </A><P>
+Generated with <A HREF="AboutWebMaker.html">CERN WebMaker</A>
+</BODY>
+</HTML>

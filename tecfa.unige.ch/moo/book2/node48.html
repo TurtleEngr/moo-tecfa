@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>4.4 Setting messages on things, exits and yourself</TITLE>
+<META NAME="description" CONTENT="4.4 Setting messages on things, exits and yourself">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1278" HREF="node49.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1276" HREF="node40.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1272" HREF="node47.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1280" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1281" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1279" HREF="node49.html">Customizing your character</A>
+<B>Up:</B> <A NAME="tex2html1277" HREF="node40.html">Introduction to Building and </A>
+<B> Previous:</B> <A NAME="tex2html1273" HREF="node47.html">4.3 Construction with @create</A>
+<BR> <P>
+<H1><A NAME="SECTION03140000000000000000">4.4 Setting messages on things, exits and yourself</A></H1>
+<P>
+<A NAME="seccustommsg">&#160;</A>
+<P>
+This section is a slightly modified version of the in MOO
+<A NAME="tex2html83" HREF="http://tecfa.unige.ch:7777/help/messages">'help messages'</A> command.
+<P>
+Most objects have messages that are printed when a player succeeds or
+fails in manipulating the object in some way.  Of course, the kinds of
+messages printed are specific to the kinds of manipulations and those,
+in turn, are specific to the kind of object.  Regardless of the kind
+of object, though, there is a uniform means for listing the kinds of
+messages that can be set and then for setting them.
+<P>
+The '@messages' command prints out all of the messages you can set on
+any object you own.  Type 'help @messages' for details.
+<P>
+To set a particular message on one of your objects use a command with
+this form:
+<SMALL CLASS=SMALL><PRE>     @&lt;message-name&gt; &lt;object&gt; is &quot;&lt;message&gt;&quot;</PRE></SMALL>
+<P>
+where <code>'&lt;message-name&gt;'</code> is the name of the message being set,
+&lt;object&gt; is the name or number of the object on which you want to set
+that message, and <code>&lt;message&gt;</code> is the actual text.
+<P>
+For example, consider the 'leave' message on an exit; it is printed to a player when they successfully use the exit to leave a room.  To set the 'leave' message on the exit 'north' from the current room, use the command
+<SMALL CLASS=SMALL><PRE>        @leave north is &quot;You wander in a northerly way out of the room.&quot;</PRE></SMALL>
+<P>
+Within the MOO, more help is available on:
+<UL>
+<LI> 
+<A NAME="tex2html84" HREF="http://tecfa.unige.ch:7777/help/container-messages">'help container-messages'</A> command: the messages on objects that can contain other
+<LI> 
+<A NAME="tex2html85" HREF="http://tecfa.unige.ch:7777/help/exit-messages">'help exit-messages'</A> command: the messages on exit objects thing-messages
+<LI> 
+<A NAME="tex2html86" HREF="http://tecfa.unige.ch:7777/help/thing-messages">'help thing-messages'</A> command: the messages on objects that can be taken and dropped
+</UL><BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

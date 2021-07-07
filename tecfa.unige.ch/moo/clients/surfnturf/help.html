@@ -1,0 +1,120 @@
+<title>'Surf_and_Turf' Moo client</title>
+<body background="http://www.bvu.edu/backgrounds/sandstone.gif">
+<center><h2>'Surf_and_Turf' Help Page</h2></center>
+<h3>Here's How</h3>
+<ul>
+<li><a href="help.html#objects">To Create and View Web Objects</a>
+<li><a href="help.html#projector">To Build a Web Projector</a>
+<li><a href="help.html#display">To Lock your Web Display</a>
+<li><a href="help.html#notes">To Edit Notes</a>
+<li><a href="help.html#maps">To create ASCII Room Maps</a>
+<li><a href="help.html#verbs">To Edit Verbs</a>
+<li><a href="help.html#paste">To @Paste to Other Users</a>
+</ul>
+
+<h3><a name="objects">To Create and View Web Objects</a></h3>
+
+<pre>
+Suppose you have a picture of your new puppy on a web page somewhere and you want 
+to look at that picture from inside the MOO. Just type:
+    @create $thing named ZeldaPicture
+    connect ZeldaPicture to http://www.bvu.edu/faculty/schweller/zelda.jpg
+Then
+    view ZeldaPicture
+and Bingo! Zelda's cute little picture pops right up on the web part of the
+screen. If you want to show Zelda's picture to everyone in the room just
+type:
+    drop ZeldaPicture
+    display ZeldaPicture
+and everyone in the room using this client will see the little pup! 
+You can make MOO objects and link them to all sorts of things.  Here are some ideas:
+    MobyDick      - linked to text of Melville's great work
+    BVU_homepage  - linked to Buena Vista University's Home Page
+    AltaVista     - linked to that great web search engine
+    Syllabus      - linked to your online reading list</pre>
+<h3><a name="projector">To Build a Web Projector</a></h3>
+<pre>
+Another fun thing to do is to create a Web Projector to hold a whole set of web slides
+ for viewing or display.  To do this type:
+    @create $webprojector named MyWebProjector
+Then use @notedit MyWebProjector.slides to create your slide set like this:
+        @notedit MyWebProjector.slides 
+        enter
+        http://www.bvu.edu
+        http://www.gamelan.com
+          etc.
+        .
+        save
+        q
+To show slides to everyone in the room type:
+    display 4 on MyWebProjector   or
+    display next on MyWebProjector
+To view a slide by yourself 'view 3 on MyWebProjector'
+To peek at your slide list at any time type 'peek MyWebProjector'. </pre>
+<h3><a name="display">To Lock your Web Display</a></h3>
+
+<pre>    
+If you wish to lock the Web Screen so other pages are not loaded in on top of it just
+select the 'Lock Window' button from the 'Options' menu on the Client screen. If you 
+would like the Web Screen to display the rooms you enter as you move about select 
+'Auto Room View' from the 'Options' menu, or simply use the MOO command:
+    @client on/off</pre>
+
+<h3><a name="notes">To Edit Notes</a></h3>
+<pre>
+Any text you see on the MOO Screen above the Command Line can be edited. 
+For example, if you had a $note called ShoppingList you could type:
+   read ShoppingList
+and you might see
+    loaf of bread
+    jug of wine
+    Thou
+To add 'Gummy bears' to the list just move your cursor into the MOO Screen and 
+edit as you normally would. The Edit_MOO_Screen menu gives you access to the 
+customary CUT, COPY, and PASTE commands.  When you are done editing select the section 
+you wish to save. Go back to the command line and type:
+    @notedit ShoppingList        (to edit the contents)
+    del 1-$                      (to delete current contents)
+    enter                        (to get ready for new stuff)
+Then click on 'Paste to Command Line' from the edit menu. Move your cursor back to
+the Command Line and press Return. Type a single period and Return to terminate the
+'enter' session. Finally, type 'save' and 'q' and your editing is complete.</pre>
+<h3><a name="maps">To create ASCII Room Maps</a></h3>
+<pre>
+To add a new ASCII map describing your room walk about in the MOO and find a
+room that is roughly about the size and shape you are looking for. Move your cursor
+to the MOO Screen and modify that picture to suit your tastes.  Then return to 
+your own room that you wish to describe.  Just as before, type:
+     @notedit here.description
+     del 1-$
+     enter
+Then 'Paste to Command Line' and finish your editing session as before.</pre>
+<h3><a name="verbs">To Edit Verbs</a></h3>
+<pre>
+This general technique can be used any time you wish to do any sort of text
+editing of a moo object. It is also very useful for debugging code.
+     @display toy:play without numbers
+Then edit the code in the MOO Screen, select and copy it. Then type:
+     @program toy:play
+Click on 'Paste to Command Line', hit return in the command line, and type a single 
+period to complete the entry.</pre>
+
+<h3><a name="paste">To @Paste to Other Users</a></h3>
+<pre>
+If you have the @paste feature on your character you can simply use your mouse to 
+select a portion of the MOO Screen (or write your own message there to be selected) 
+and then Copy it. Type:
+     @Paste
+and then use the 'Paste to Command Line' command as before and end your pasting 
+by typing a single period on a line by itself.</pre>
+
+<hr><hr>
+Please send additional ideas, comments or bug reports to
+<a href="http://www.bvu.edu/faculty/schweller">schweller</a>@bvu.edu
+<hr>
+'Surf_and_Turf' Web-MOO client was developed by the <a href="http://www.bvu.edu:
+7000/">CollegeTown</a> Development Team of Schweller, Blanchard, Goodrich, and 
+Schaecher
+<hr>
+
+

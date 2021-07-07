@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Adding webby verbs</TITLE>
+<META NAME="description" CONTENT="Adding webby verbs">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1997" HREF="node101.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1995" HREF="node98.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1989" HREF="node99.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1999" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2000" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1998" HREF="node101.html">Customizing the :htext verb</A>
+<B>Up:</B> <A NAME="tex2html1996" HREF="node98.html">8.9 [TECFAMOO] ``WOO'' Tutorial</A>
+<B> Previous:</B> <A NAME="tex2html1990" HREF="node99.html">Adding a webby description</A>
+<BR> <P>
+<H2><A NAME="SECTION04192000000000000000">Adding webby verbs</A></H2>
+<P>
+<A NAME="secaddingwebby">&#160;</A>
+<P>
+``Webby verbs'' are verbs displayed as buttons at the bottom of the
+page and that allow you to manipulate the object.
+If you wonder what a ``webby verb'' is click on the help button on the ``holder''
+page. This verb will display the standard help message plus all the
+comment strings it finds on top of the objects verbs.
+<P>
+``Webby'' Verbs are by convention all verbs whose name terminates by ``_web''.
+E.g. the inherited help verb on each object is <code>#1:help_web</code>.
+You should have a look at it sometimes. Why do webby verbs work? 
+Have a glance at sections <A HREF="node143.html#secwebbyverbs">14.3.1</A> and <A HREF="node144.html#sechtextverbs">14.3.2</A>!
+<P>
+<H4><A NAME="SECTION04192010000000000000">A simple web verb:</A></H4>
+<P>
+Let's program a simple verb that will show the contents of the holder.
+In order to do that we have to introduce a new type of verbs, i.e.
+verbs that are called by other verbs.
+Such  verbs (i.e. ones not typed in by the user as commands) are by
+convention <b>``this none this''</b> verbs. Therefore we create our verb
+like this:
+<P>
+<SMALL CLASS=SMALL><PRE>   &gt;@verb holder:show_web this none this</PRE></SMALL>
+<P>
+Now please display the verb argument specifiers and the permissions
+by typing: <code>'@d holder:show_web'</code>. In case you forgot the ``this
+non this'' you got to do the following thing (use 'help ...' if you
+want to know more right now):
+<P>
+<SMALL CLASS=SMALL><PRE>  @args holder:show_web this non this
+  @chmod holder:show_web +x</PRE></SMALL>
+<P>
+Programming simple ``webby'' verbs without buttons is quite simple as
+you can see in the example below. The only really new thing here is
+that we use verbs as functions. Functions are cool for letting application
+programmers use complex software packages such as the Web interface.
+You may want to read section <A HREF="node77.html#secfunctionalprog">8.2.4</A> to see why.
+In section <A HREF="node80.html#sectutorial1">8.4</A> we
+used verbs as procedures, i.e. algorithms that that work on data-structures
+but do not return values for other use. Note, however that builtin-in
+functions exactly did that. So what we ask from now is to write
+function verbs according to some specifications, i.e. they must
+return a certain type of value and they will accept certain arguments
+as input. You must follow those specifications, else nothing will work.
+<P>
+The show verb has the following specifications:
+<P>
+<OL>
+<LI> It does not take any argument (note that ``_web'' verbs may
+take, but here we decided to program a simple button on which you
+can click)
+<LI> It MUST return a FLAT list of strings, each representing
+some HTML code.
+</OL>
+<P>
+Now, copy the verb onto your holder object and check if it works over
+the www interface.
+<P>
+<SMALL CLASS=SMALL><PRE>&gt;@l holder:show_web
+#2108:&quot;show_web&quot;   this none this
+ 1:  &quot;This link will show you the contents of holder&quot;;
+ 2:  header = &quot;Show contents of&quot; + this:title();
+ 3:  item_list = {};
+ 4:  for item in (this.holding)
+ 5:    item_list = {@item_list, &quot;&lt;li&gt;&quot;, item};
+ 6:  endfor
+ 7:  return {@$www_utils:do_html_header(header), tostr(&quot;&lt;h1 align=\"center\&quot;&gt;&quot;,
+     header, &quot;&lt;/h1&gt;&quot;), &quot;&lt;ol&gt;&quot;, @item_list, &quot;&lt;/ol&gt;&quot;, 
+     @$www_utils:do_html_footer()};
+--</PRE></SMALL>
+<P>
+Now let's examine line 7. This line returns a list to a verb that
+has called this function. The list is the HTML code that will be displayed
+in the body of the page which will be generated in reply to activation
+of this webby verb. This list must be a FLAT list of strings representing
+HTML code.
+<P>
+Note that the top of all html pages should stay the same
+by convention (well you might decide otherwise). Now let's see in detail
+what kind of list the return statement returns:
+<P>
+<DL ><DT><STRONG>building the header</STRONG>
+<DD> <code>@y\$www_utils:do_html_header(header)</code> will build:
+<P>
+  <UL>
+<LI> the header of the page, e.g. something like<code> &lt;html&gt; &lt;head&gt; &lt;title&gt; .... &lt;/title&gt;  &lt;/head&gt; &lt;body&gt; ...</code>.
+<LI> the menu that appears normally on top of each woo page.
+<LI> the main heading (see below)
+  </UL>
+<P>
+<DT><STRONG>building the main heading</STRONG>
+<DD> <code>tostr(&quot;&lt;h1 align=\"center\&quot;&gt;&quot;, header, &quot;&lt;/h1&gt;&quot;)</code> will build the main title (h1) of the page
+<P>
+<DT><STRONG>generating the list of information bits</STRONG>
+<DD> <code>&quot;&lt;ol&gt;&quot;, @item_list, &quot;&lt;/ol&gt;&quot;</code> will build an <code>&lt;ol&gt; ... &lt;/ol&gt;</code>
+type of list, and insert in the middle the elements of the item_list we built
+above.
+<P>
+<DT><STRONG>adding the footer</STRONG>
+<DD> <code> @\$www_utils:do_html_footer()}</code> will add a footer to the html page,
+e.g. things like <code>&lt;\body&gt; &lt;\html&gt;</code>.
+<P>
+ </DL><H4><A NAME="SECTION04192020000000000000">A Web verb with a text box</A></H4>
+<P>
+``Webby'' verbs with arguments are more trickier. Arguments to displayed in
+the web are specified in comment lines at the beginning of the verb.
+(See section
+<P>
+<SMALL CLASS=SMALL><PRE>&gt;@l holder:add_web
+#2108:&quot;add_web&quot;   this none this
+ 1:  &quot;text to add: ?txt70?.&quot;;
+ 2:  player:report(args);
+ 3:  header = &quot;Add element to &quot; + this:title();
+ 4:  text_to_add = args[1][1];
+ 5:  player:report(text_to_add);
+ 6:  this.holding = {@this.holding, text_to_add};
+ 7:  return {@$www_utils:do_html_header(header),
+     tostr(&quot;&lt;h1 align=\"center\&quot;&gt;&quot;, header, &quot;&lt;/h1&gt;&quot;), &quot;&lt;ol&gt;&quot;,
+     &quot;done ...&quot;, &quot;&lt;/ol&gt;&quot;, @$www_utils:do_html_footer()};
+--
+.</PRE></SMALL>
+<P>
+<HR><A NAME="tex2html1997" HREF="node101.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1995" HREF="node98.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1989" HREF="node99.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1999" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2000" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html1998" HREF="node101.html">Customizing the :htext verb</A>
+<B>Up:</B> <A NAME="tex2html1996" HREF="node98.html">8.9 [TECFAMOO] ``WOO'' Tutorial</A>
+<B> Previous:</B> <A NAME="tex2html1990" HREF="node99.html">Adding a webby description</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

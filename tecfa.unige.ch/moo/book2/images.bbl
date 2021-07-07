@@ -1,0 +1,13 @@
+\begin{thebibliography}{}
+
+\bibitem[ABELSON, 1985]{Abelson85}
+ABELSON, H.~SUSSMAN, G. (1985).
+\newblock {\em Structure and Interpretation of Computer Programs}.
+\newblock The MIT Press, Cambridge, Ma.
+
+\bibitem[Curtis, 1993]{CURTIS93b}
+Curtis, P. (1993).
+\newblock LambdaMOO Programmer's Manual.
+\newblock Xerox Parc.
+
+\end{thebibliography}

@@ -1,0 +1,82 @@
+<!-- Generated with CERN WebMaker 1.4 -->
+<HTML>
+<HEAD>
+<TITLE>6-2  Commandes de base pour construire</TITLE>
+</HEAD>
+<BODY>
+<A NAME=HEADING25>
+<A HREF="TecfaMOOMan_22.html">[Next] </A><A HREF="TecfaMOOMan_20.html">[Previous] </A><A HREF="TecfaMOOMan_19.html">[Up] </A><A HREF="TecfaMOOMan_1.html">[Top] </A><P>
+6.  La construction (Building)<P>
+<H1>6-2  Commandes de base pour construire</H1>
+<HR>
+<UL>
+<LI>@dig construction d'un "room"<P>
+<UL>
+<LI>Exemples:<P>
+<LI>(1) @dig palace<P>
+<LI>"Creuse" un "room" nomm&eacute; "palace<P>
+<LI>(2) @dig n,north|s,south to "maison &agrave; c&ocirc;t&eacute;"<P>
+<LI>Cr&eacute;e d'abord un nouveau room "maison &agrave; c&ocirc;t&eacute;", puis rajoute une sortie ("exit") nomm&eacute; "n" (avec l'alias "north") depuis le room courant vers le room nouveau, et une sortie "s" depuis le nouveau room vers le room depuis lequel vous "creusez". Cette commande est pratique pour construire rapidement une zone.<P>
+<LI>(3) @dig out to #312<P>
+<LI>Cr&eacute;e une sortie vers le room poss&eacute;dant le No. #312. Notez que vous devez poss&eacute;der l'objet #312. Sinon il faut utiliser les commandes @add-exit et @add-entrance.<P>
+</UL>
+<LI>@add-exit<P>
+<UL>
+<LI>Exemple:<P>
+<LI>@add-exit #315<P>
+<LI>Rajoute l' "exit" #315 comme "sortie" du "room" courant. Utilis&eacute; pour permettre &agrave; qq de lier votre "room" vers le sien en passant par un "exit" que l'autre personne &agrave; cr&eacute;e.<P>
+</UL>
+<LI>@add-entrance<P>
+<UL>
+<LI>Exemple:<P>
+<LI>@add-entrance #316<P>
+<LI>Rajoute l' "exit" #316 comme "entr&eacute;e du "room courant. Utilis&eacute; pour permettre &agrave; qq de lier son "room" vers le votre en passant par un exit que l'autre personne &agrave; cr&eacute;e.<P>
+</UL>
+<LI>@remove-exit<P>
+<UL>
+<LI>Exemple:<P>
+<LI>@remove-exit #316<P>
+<LI>Enl&egrave;ve la sortie #316 de la salle courante.<P>
+</UL>
+<LI>@remove-entrance<P>
+<UL>
+<LI>Exemple:<P>
+<LI>@remove-entrance #316<P>
+<LI>Enl&egrave;ve l'entr&eacute;e #316 de la salle courante.<P>
+</UL>
+<LI>@sethome D&eacute;finit votre "home"<P>
+<UL>
+<LI>Exemple:<P>
+<LI>@sethome <P>
+<LI>D&eacute;finit le home dans le "room" courant. Notez que vous devez avoir l'autorisation de faire un home ici par le propri&eacute;taire du "room". Il peut le faire avec la commande "@resident &lt;personne". On vous voit dans votre home (asleep) lorsque vous &ecirc;tes d&eacute;connect&eacute;s. La commande "home" vous t&eacute;l&eacute;porte chez "vous" en cas de n&eacute;cessit&eacute;.<P>
+</UL>
+<LI>@def  Acc&egrave;s au dictionnaire (US Anglais) pour v&eacute;rifier un mot, cf "help me:@def"<P>
+<UL>
+<LI>Exemple:<P>
+<LI>(1) @def Rumpelstielzkin<P>
+</UL>
+</UL>
+Dans TecfaMOO, les sorties d'une salle sont automatiquement affich&eacute;es. Pour emp&ecirc;cher ce m&eacute;canisme il faut utiliser la techniques suivante: "@set &lt;exit&gt;.obvious is 0". Obtenez d'abord le No d'objet de la sortie en question (par exemple avec la commande "@examine &lt;exit&gt;, ensuite, par exemple @set #1001.obvious=0.<P>
+<UL>
+<LI>@describe  D&eacute;crire un objet<P>
+<UL>
+<LI>Exemple:<P>
+<LI>(1) @describe here as "A lovely park with thousands of pink flowers"<P>
+<LI>D&eacute;crit le "room" courant (&agrave; condition qu'il vous appartient), Avec la commande `@notedit here' vous pouvez faire la m&ecirc;me chose avec l'&eacute;diteur de texte interne au MOO.<P>
+</UL>
+<LI>@rename  Donner un autre nom &agrave; un objet<P>
+<UL>
+<LI>Exemple:<P>
+<LI>(1) @rename me to "d&eacute;butant"<P>
+<LI>Vous transforme en d&eacute;butant ...<P>
+<LI>(2) @rename #500 to "Porte rouge", sortie, exit<P>
+<LI>Renomme la sortie #500 (si elle existe) en "Porte rouge" avec 2 alias.<P>
+</UL>
+</UL>
+
+<HR>
+<ADDRESS>TecfaMOO Manuel - 02 FEB 95</ADDRESS>
+<A HREF="TecfaMOOMan_22.html">[Next] </A><A HREF="TecfaMOOMan_20.html">[Previous] </A><A HREF="TecfaMOOMan_19.html">[Up] </A><A HREF="TecfaMOOMan_1.html">[Top] </A><P>
+Generated with <A HREF="AboutWebMaker.html">CERN WebMaker</A>
+</BODY>
+</HTML>

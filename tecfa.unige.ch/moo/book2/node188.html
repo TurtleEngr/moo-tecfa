@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Porting Algorithm</TITLE>
+<META NAME="description" CONTENT="Porting Algorithm">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="http://tecfa.unige.ch/moo/book2/tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html1" HREF="http://tecfa.unige.ch/"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/gif/icon-tecfa-unit-small.gif"  > </A> <A NAME="tex2html2924" HREF="node189.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2922" HREF="node186.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2918" HREF="node187.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2926" HREF="http://tecfa.unige.ch/moo/book2/node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <BR>
+<B> Next:</B> <A NAME="tex2html2925" HREF="node189.html">11.4 Hunting down code </A>
+<B>Up:</B> <A NAME="tex2html2923" HREF="node186.html">11.3 Porting Code from </A>
+<B> Previous:</B> <A NAME="tex2html2919" HREF="node187.html">Who do I ask </A>
+<BR> <P>
+<H4><A NAME="SECTION05130020000000000000">Porting Algorithm</A></H4>
+<P>
+<OL>
+<LI> Make sure that your client doesn't wrap lines (<code>@wrap off</code>)
+<LI> Try to figure out exactly what to port and how much work it might
+involve, then dump the objects you need.
+<UL>
+<LI> First glance at the parents of the object you want to port:
+Type: <code>@parents &lt;object&gt;</code>. If the parents don't exist on your
+MOO you have to port them too. Reconsider porting or start porting
+the parents first.
+<LI> Check if the parents needed are the same. Often parents that
+have the same name are slightly different. In this case, either fix
+the parent (or ask a wizards help if you are not allowed to). A quick
+way to compare the parents is to compare the number of slots and verbs.
+(See section <A HREF="node185.html#seccomparingcode">11.2.2</A>). Also note that some extra
+slots inherited from very high level objects (e.g. #1 alias <code>$root_class</code>
+may not be needed on your moo).
+<LI> Finally, try to find out if the object you want to port needs
+other objects (not parents) to work with. E.g. a ``video camera'' might
+need a ``recorder'' and a ``tape'' in order to be really useful.
+If you can't figure it out by reading the help or the description,
+dump the object as below. In any case, plan to port those objects too
+and even some parents of those.
+<LI> Apply the instructions below iteratively for each object you
+want to port. Starting porting the parents first (if needed) and then
+port the more important objects first.
+</UL>
+<LI> Next, create an object with the right parent on your own MOO
+using the <code>@create</code> command.
+E.g. if you want to port a fancy room with parent $room (#3) type:
+<code>@create $room named ``Mike's Fancy Noisy Room''</code> or something
+like that. Write down the number, you will need it in the next step.
+<LI> Next, dump the object on the MOO from which you port:
+  <UL>
+<LI> Type: <code>@dump #obj with create id=#new-obj</code>
+<LI> <code>#obj</code> is the object you want to dump and <code>#new-obj</code> is the empty
+new object number you just created before.
+<LI> Now save the code (if you can) on your local machine. 
+  </UL>
+<LI> Edit the code (dump) you recorded (good luck with a bad MOO client!):
+  <UL>
+<LI> Remove the create from the first line of the dump since you
+allready created the object
+<LI> Now scan the code for references to other objects (see above).
+Replace all the hard-coded numbers <code>#...</code> by correct ones on your MOO.
+The same applies for MOO using ``local cores'', e.g. the ``<code>&amp;</code>''
+objects on TecfaMOO.
+<LI> Scan the dump for junk that is unwanted, e.g. inserted page or
+shout messages, truncated lines etc etc. and fix those.
+<LI> Important: Fix things that won't work on your MOO. Consult your
+local documentation!
+E.g. on TecfaMOO we use (a non-LambdaCore compatible) multi-ownership scheme.
+Please have a look at chapter <A HREF="http://tecfa.unige.ch/moo/book2/node162.html#chatecfaprog">9</A> for details on what
+is really different at TecfaMOO.
+<LI> If you feel that most of the code is more or less acceptable
+go to the next step.
+  </UL>
+<LI> Uploading code to your MOO:
+  <UL>
+<LI> First of all you need to decide whether uploading the whole
+code or doing it piece by piece. I prefer doing it as a whole first and
+then fix things that didn't go well.
+<LI> Consult the documentation of your MOO client on how to upload.
+Uploading basically means dumping text into the moo.
+With the rmoo/emacs clients, you just copy the code you want to upload and then
+you type ctrl-c ctrl-y or under X-Windows you can also select the code
+and then use ``Send X-Selection'' from the menu. Some clients also
+may have an ``upload file'' button or command (E.g. on Tinyfugue read
+<code>/help upload</code>. In the worst case you may try to
+connect to the MOO via a simple telnet and somewhat paste your code into
+it.
+<LI> Now careful ! DON'T UPLOAD TWICE verb definitions, or you will
+have 2 definitions of the same verb! (guess that applies to most MOOs).
+To avoid defining verbs twice while uploading the same code several times
+comment out all those lines after your first uploading: e.g.
+change <code>@verb #xxxx:&quot;a_verb'' this none this</code> to 
+<code>&quot;@verb #xxxx:&quot;a_verb'' this none this</code>, i.e. add a &quot; in front
+of the line.
+  </UL></OL>
+<P>
+A word of warning: Some objects (e.g. small social features or
+some kind of pets) can
+be ported quite easily, others do need good understanding of MOO
+programming. Still others need at least some wizard permission,
+though many objects that run under wizard permissions actually
+would run without if programmed in the right way.
+<P>
+<HR><A NAME="tex2html2924" HREF="node189.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2922" HREF="node186.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2918" HREF="node187.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2926" HREF="http://tecfa.unige.ch/moo/book2/node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A>  <A NAME="tex2html1" HREF="http://tecfa.unige.ch/"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/gif/icon-tecfa-unit-small.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html2925" HREF="node189.html">11.4 Hunting down code </A>
+<B>Up:</B> <A NAME="tex2html2923" HREF="node186.html">11.3 Porting Code from </A>
+<B> Previous:</B> <A NAME="tex2html2919" HREF="node187.html">Who do I ask </A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Wed Oct 23 21:55:28 MET DST 1996</I>
+</ADDRESS>
+</BODY>
+</HTML>

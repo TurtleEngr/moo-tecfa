@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>8.4 MOO tutorial, Level 1 (``holder'')</TITLE>
+<META NAME="description" CONTENT="8.4 MOO tutorial, Level 1 (``holder'')">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1747" HREF="node81.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1745" HREF="node70.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1739" HREF="node79.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1749" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1750" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1748" HREF="node81.html">Creating an object</A>
+<B>Up:</B> <A NAME="tex2html1746" HREF="node70.html">Basic MOO Programming Tutorial</A>
+<B> Previous:</B> <A NAME="tex2html1740" HREF="node79.html">8.3 MOO tutorialLevel </A>
+<BR> <P>
+<H1><A NAME="SECTION04140000000000000000">8.4 MOO tutorial, Level 1 (``holder'')</A></H1>
+<P>
+<A NAME="sectutorial1">&#160;</A>
+<P>
+The MOO programming language is object-based (and object-oriented in
+the sense that permanent data and procedures are all attached to objects).
+So if you want to program anything, you foremost deal with objects.
+MOO programming is a bit different from ordinary programming as
+ you interact directly with the MOO database. Everything
+you program will be stored there. In this sense you can consider
+your MOO client as a data base interface.
+<P>
+This will be shown in a simple example, a tool that will allow you:
+<OL>
+<LI> to store short bits of information
+<LI> to edit those bits
+<LI> to show those bits to other people
+</OL>
+<P>
+The product you will program has just educational purpose,
+but actually might want to use it for real. Carry it around
+and use it to remember important things to do in the MOO
+for example. The following transcript shows some interactions
+with a a tool that allready has been programmed. DON'T try out
+those commands now, since you first have to program something
+like this first ! Note that commands entered after the <code>&gt;</code>
+are entered by the user, the rest is feedback from the MOO.
+<P>
+<SMALL CLASS=SMALL><PRE>----------------------------------------------------------------------
+&gt;help holder
+holder (#2108):
+----
+This is an exercice left for the reader!
+Type @examine in the meantime....
+
+&gt;@examine holder
+holder (#2108) is owned by MooBoy (#1324).
+Aliases:  holder and memo
+Information Holder
+Key:  (None.)
+Obvious Verbs:
+  add &lt;anything&gt; to holder
+  dump holder
+  show &lt;anything&gt; on holder
+  clear holder
+  erase &lt;anything&gt; from holder
+  g*et/t*ake holder
+  d*rop/th*row holder
+  gi*ve/ha*nd holder to &lt;anything&gt;
+
+&gt;dump holder
+
+&gt;add Improve MOO tutorial
+I don't understand that.
+
+&gt;add Improve MOO tutorial to holder
+Inserted ''Improve MOO tutorial'' to holder
+
+&gt;dump holder
+1: Improve MOO tutorial
+
+&gt;add changer le dump verb (feedback si le holder est vide) to holder
+Inserted ''changer le dump verb (feedback si le holder est vide)'' to holder
+
+&gt;show 2 on holder
+MooBoy shows item 2 on holder: changer le dump verb
+feedback si le holder est vide)
+
+&gt;add test to holder
+Inserted ''test'' to holder
+
+&gt;dump holder
+1: Improve MOO tutorial
+2: changer le dump verb (feedback si le holder est vide)
+3: test
+
+&gt;erase 3 from holder
+You erased element 3: &quot;test&quot; from holder
+
+&gt;clear holder
+Do you really want to erase all information bits? [Enter `yes' or `no']
+&gt;no
+OK, information onholder was too important for erasing
+----------------------------------------------------------------------</PRE></SMALL>
+<P>
+Remember the goals we want to achieve in order to understand why
+we are programming all the following features. The tutorial in
+this section will <b>take some time</b> (count four hours at least and
+<b>more</b> if you never did any programming before).
+Also note that you maybe will not understand everything in a first
+go. To really understand what you did you should add new functionalities
+to this objects once are done with the tutorial (or else program
+something else). So let's start:
+<P>
+<BR> <HR>
+<UL><A NAME="CHILD_LINKS">&#160;</A>
+<LI> <A NAME="tex2html1751" HREF="node81.html#SECTION04141000000000000000">Creating an object</A>
+<LI> <A NAME="tex2html1752" HREF="node82.html#SECTION04142000000000000000">Creating a property &quot;holding&quot;</A>
+<LI> <A NAME="tex2html1753" HREF="node83.html#SECTION04143000000000000000">The first verb ``add'':</A>
+<LI> <A NAME="tex2html1754" HREF="node84.html#SECTION04144000000000000000">The second verb ``dump'':</A>
+<LI> <A NAME="tex2html1755" HREF="node85.html#SECTION04145000000000000000">The show verb</A>
+<LI> <A NAME="tex2html1756" HREF="node86.html#SECTION04146000000000000000">Cleaning up</A>
+<LI> <A NAME="tex2html1757" HREF="node87.html#SECTION04147000000000000000">Adding help</A>
+<LI> <A NAME="tex2html1758" HREF="node88.html#SECTION04148000000000000000">What is missing?</A>
+<LI> <A NAME="tex2html1759" HREF="node89.html#SECTION04149000000000000000">La morale de l'histoire</A>
+</UL>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>11.6 Debugging Code</TITLE>
+<META NAME="description" CONTENT="11.6 Debugging Code">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="http://tecfa.unige.ch/moo/book2/tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html1" HREF="http://tecfa.unige.ch/"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/gif/icon-tecfa-unit-small.gif"  > </A> <A NAME="tex2html3010" HREF="node197.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html3008" HREF="node180.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html3004" HREF="node195.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html3012" HREF="http://tecfa.unige.ch/moo/book2/node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <BR>
+<B> Next:</B> <A NAME="tex2html3011" HREF="node197.html">A few debugging tricks/common </A>
+<B>Up:</B> <A NAME="tex2html3009" HREF="node180.html">Development and Porting Hints</A>
+<B> Previous:</B> <A NAME="tex2html3005" HREF="node195.html">Eval Options (by Thwarted </A>
+<BR> <P>
+<H1><A NAME="SECTION05160000000000000000">11.6 Debugging Code</A></H1>
+<P>
+<A NAME="secdebuggingcode">&#160;</A>
+<P>
+... is not easy in the MOO [more to come!!!]
+<P>
+The most important tricks are:
+<P>
+<UL>
+<LI> set verbs to +d ('@chmod #xxx:verb +d'). This will produce a
+trace when an errour is enountered.
+<LI> Print out the arguments of verbs. Since lists or recursive lists
+are not printed you need a procedure for that: At TecfaMOO, use
+:report() with a single argument, .e.g. '@args'. Remember that
+errors (both syntax and logical) ocur because of non-anticipated or
+badly constructed data-structures !!<BR> 
+You canOn every Lambda Core MOO you can also use this:
+&lt;you&gt;:tell($string_utils:from_value(args, 1, 10));
+<P>
+</UL><BR> <HR>
+<UL><A NAME="CHILD_LINKS">&#160;</A>
+<LI> <A NAME="tex2html3013" HREF="node197.html#SECTION05161000000000000000">A few debugging tricks/common errors</A>
+<UL>
+<LI> <A NAME="tex2html3014" HREF="node199.html#SECTION05161200000000000000"> I set a prop +c that should have been !c, now what?</A>
+<LI> <A NAME="tex2html3015" HREF="node200.html#SECTION05161300000000000000">My FO doesn't work</A>
+</UL>
+</UL>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Wed Oct 23 21:55:28 MET DST 1996</I>
+</ADDRESS>
+</BODY>
+</HTML>

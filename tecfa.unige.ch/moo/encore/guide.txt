@@ -1,0 +1,130 @@
+==========================
+MOONIVERSITY LITE
+BEGINNER'S GUIDE TO MOOING
+==========================
+
+MOO (Multi-User Domain Object Oriented) is a computer program that allows multiple users to connect via the Internet to a shared database of rooms and other objects and interact with each other and the database in synchronous time.
+
+This guide is designed to get you started with MOOing. Some of the basic MOO commands are explained two different ways because some users will be using TELNET programs to access the MOO, and some users will be using the new enCore Xpress MOO client. We have written the guide to benefit all users. 
+
+Once you have connected type 'help' to get an index of help topics, or click on the HELP button on your Xpress toolbar. To get specific help on communication, for example, you can type 'help communication' or select the topic you want in the Xpress Help Browser search box. For more in-depth information about use of educational MOOs we refer you to our book _High Wired: On the Design, Use, and Theory of Educational MOOs_ (http://www.press.umich.edu/titles/09665.html)
+
+
+A FEW BASIC COMMANDS 
+-------------------- 
+
+To see how the room you're in looks like, just type 'look'. To get information about the objects around you, including yourself and other users, you can type:
+
+look object 
+Example: look news - to see the description of that object
+
+examine object 
+Example: examine news - to see the description, and additional information, like the owner of the object, and some commands on how to use it.
+
+If you are using Xpress, simply click on the object link in the right-hand window to see the description or graphic image of the object if it has one, then click on the BACK button to return.
+
+If you have a player account (i.e., you are not a guest), one of the first things you should do after you connect is to set your personal preferences such as gender, description and so on. To do this simply type:
+
+@preferences
+
+If you are using Xpress, click on the Options button. Fill in the information as desired. If you have questions about the fields to fill in, click on the lightbulb for HELP.
+
+COMMUNICATING WITH OTHER PEOPLE 
+------------------------------- 
+To talk to someone in the same room as you are, you type a quotation mark '"' followed by what you want to say, like this:
+
+"Hello there!
+
+You see: You say, "Hello there!" 
+Everyone else in the room sees: Ann says "Hello there!"
+
+You can use body language, also known as emoting, by typing a colon followed by text like this:
+
+:smiles
+
+You see: Ann smiles.
+Everyone else in the room sees: Ann smiles
+
+Often, when several people are in the same room, you may want to address a particular person. To do that type 'to' followed by the name of the person you want to talk to, and then what you want to say.
+
+to John Good to see you again :-).
+
+John, you, and everyone else sees: Ann [to John]: Good to see you again
+
+To communicate with people who are not in the same place you are, you can 'page' them:
+
+page John Do you have time for a question? 
+
+The 'page' command can be shortened to '-' like this:
+
+-john Hi, may I come over?
+
+You can also 'remote emote' by typing:
+
++john smiles and waves
+
+
+MOVING AROUND 
+------------- 
+In every room exits or entrances are listed either at the bottom of your screen, or if there is a map, perhaps marked by a letter code on the map itself, or directional words like in, out, up, down. To move in a given direction simply type the name of the direction or exit. For example, if you see an exit named 'west', you type 'west' to go there. If a code on the map says 'LIB', you type LIB to go there. If you are using Xpress, the exits or entrances will appear as links, so you simply click on the link.
+
+If you get lost you can always get back to where you started by typing 'home'. A fast and convenient way to move around is to '@join' other users. To see who is in the MOO type 
+
+@who
+
+If you are using Xpress, click on the WHO button.
+
+If you see another user online named John, you can join him by typing:
+
+@join John
+
+Or click on the link in the location column of the Xpress Who window.
+
+Another way to move quickly between locations in the MOO is to use the '@go' command if you know the name of the place. If, for example, you want to go to a place called 'Classroom', you type:
+
+@go Classroom
+
+People come to the MOO for many different reasons, some come to work, others to hang out or visit with friends. Out of courtesy, you should always ask before you join someone. For example, if you want to talk to John, you should type 
+
+@knock John
+
+If he wants to talk to you he can reply with 
+
+@invite person 
+
+Depending on the configuration of the MOO, real names and email addresses of users may be available. For more information about a given user you can type:
+
+@whois name 
+
+Or, if you are using Xpress, click on the WHO button, then the person¹s name link.
+
+PRIVACY AND SAFETY 
+------------------ 
+An occasional problem on MOOs is harassment from anonymous guests or other users. To deal with this problem there are certain commands that you can use.
+
+@gag person - This will effectively filter out anything the person says or pages until you type @ungag person.
+
+@eject! person - Use this command to expell someone from a room you own.
+
+@lock here with me - Will lock the room so nobody can come in. @unlock here will unlock your room.
+
+You can also contact the wizards and ask them for help
+
+@wizards - Will tell you the name or names of wizards who are online.
+
+MOO CLIENTS 
+----------- 
+If you are using telnet to connect to the MOO, the text you type in may get disrupted and broken up by the output from the MOO. This can be very confusing and frustrating, and the best way to deal with it is to use the enCore Xpress client. But there are also other MOO clients available at http://www.eng.usf.edu/~wnelson/muclient.html. If, for various reasons, you cannot use a MOO client, you can still use the built-in output control system to prevent your input from being broken up by the output from the MOO. Just type a quotation mark '"' and hit enter. You will be prompted to enter your text, and you can now type your input without interruptions. The MOO's output will be suspended until you hit enter again. In addition you can use an 'output delimiter' to separate your output from others¹ output. Type '@delimiter on' to activate the output delimiter system. Œ@delimiter off' de-activates it.
+
+If you don't have a client program, and are having trouble with text scrolling off your screen, or if you receive only the beginning of the lines, you might try the following commands:
+
+@linelen 40 - Set desired linelength to 40 characters
+@wrap on - to make the MOO wrap long lines at 40 characters
+@pagelength 24 - to set page length to 24 lines
+
+To log out type: @quit (or click on the QUIT button in Xpress)
+
+Finally, remember that one of the most useful help commands in MOO is this one: say Hi, I'm new here. Do you have a minute for a question?
+
+Good luck and happy MOOing. 
+Cynthia Haynes and Jan Rune Holmevik

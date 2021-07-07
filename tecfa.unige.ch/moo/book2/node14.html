@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Tiny Fugue (Unix)</TITLE>
+<META NAME="description" CONTENT="Tiny Fugue (Unix)">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html838" HREF="node15.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html836" HREF="node12.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html830" HREF="node13.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html840" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html841" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html839" HREF="node15.html">Emacs clients (Unix)</A>
+<B>Up:</B> <A NAME="tex2html837" HREF="node12.html">1.4 SelectionInstallation and </A>
+<B> Previous:</B> <A NAME="tex2html831" HREF="node13.html">tkMOO light (UnixMac, </A>
+<BR> <P>
+<H2><A NAME="SECTION02142000000000000000">Tiny Fugue (Unix)</A></H2>
+<P>
+<A NAME="secTinyFugue">&#160;</A>
+<P>
+Runs on BSD or Sys V. Latest version is 3.2beta4. Commonly known as
+'tf'. Designed primarily for TinyMUD-style muds, although will run on
+LPMUDs and Dikus. Features include regexp hilites and gags,
+auto-login, macros, line editing, screen mode, triggers, cyberportals,
+logging, file and command uploading, shells, and multiple connects.
+<P>
+``tf'' seems to be the client of choice for most MOO programmers (specially
+those who work over remote connections). TF is easy to install (as
+far as Unix goes. At Tecfa it runs on Solaris 2.4 (and ran under SunOS 4.1).
+<P>
+Distribution: <A NAME="tex2html41" HREF="ftp://ftp.math.okstate.edu/pub/muds/clients/UnixClients/tf/">ftp://ftp.math.okstate.edu/pub/muds/clients/UnixClients/tf/</A> or
+<A NAME="tex2html42" HREF="ftp://ftp.tcp.com/pub/mud/Clients/tinyfugue/">ftp://ftp.tcp.com/pub/mud/Clients/tinyfugue/</A> (latest versions)
+<P>
+<H5><A NAME="SECTION02142001000000000000">11.1 Features</A></H5>
+<P>
+tf has many advanced features (e.g. a very powerful macro/triggers
+package) that will not be discussed here.
+<P>
+<DL ><DT><STRONG>Ease of Use:</STRONG>
+<DD>Relatively easy, good on-line documentation, type '/help'
+<P>
+<DT><STRONG>Copy/Paste to other applications:</STRONG>
+<DD> ??
+<P>
+<DT><STRONG>Multiple Connections:</STRONG>
+<DD> Yes
+<P>
+<DT><STRONG>Command Repetition:</STRONG>
+<DD> Yes (c-p)
+<P>
+<DT><STRONG>Local Editing:</STRONG>
+<DD> not builtin. However, people wrote macros that can do that (see one of them below).
+<P>
+<DT><STRONG>Session Logs:</STRONG>
+<DD> Yes
+<P>
+<DT><STRONG>Overall judgment:</STRONG>
+<DD> Very powerful client, but learning
+its advanced features needs some investment.
+<P>
+ </DL>
+<P>
+Local editing with can be done in principle (we did not test it)
+The following has been taken from the MOO case:
+<P>
+<SMALL CLASS=SMALL><PRE>/def -mregexp -t&quot;^\\.$&quot; do_localedit = \
+        /if /test %{shipping} %;\
+           /then /set shipping 0 %;\
+           /log -w off %;\
+           /sys echo . &gt;&gt; %loced_doc %;\
+           /sh %editor %loced_doc %;\
+           /quote '%loced_doc %;\
+           /sys rm %loced_doc %{loced_doc}\~ %;\
+        /endif
+
+; if you want backups, move the document somewhere instead of deleting it
+
+/def -mregexp -t&quot;^#\\$# edit name: (.*) upload: (.*)$&quot; localedit_trigger = \
+        /substitute %P2%;\
+        /set shipping 1 %;\
+        /set loced_doc %{loced_basedir}/tf_edit.doc %;\
+        /log -w %loced_doc %;</PRE></SMALL>
+<P>
+Here is another solution:
+<P>
+<SMALL CLASS=SMALL><PRE>----------------------------------------------------------------------
+&gt;@read 1 on *clients [at river.honors.indiana.edu 8888]
+
+Message 1 on *Clients (\#11431):
+Date:     Tue May 23 17:06:27 1995 EST
+From:     Iluvatar (\#1635)
+To:       *Clients (\#11431)
+
+; LOCALEDIT.TF --- Local editing support for MOO editors.
+; 
+; By Kirlan@LambdaMOO
+; This code is freely distributable.  Please notify the author of
+; any major modifications made.
+;
+; The author assumes no responsibility, period.
+; Meaning that I assume no liability for any damages of any sort
+; incurred by using this code.
+;
+; Also meaning that I'll support this code when I feel like it
+;
+; Simplified version for accounts that can't do terminal multipexing
+; Just shells out to the editor
+;
+/require tools.tf
+/set shipping 0
+/set editor pico
+
+; set this to an absolute path.  /sys does not do tilde completion
+/eval /set loced_basedir %{HOME}
+
+; trigger to finish local editing
+; this should really be defined _within_ the start macro but, ugh.
+----------------------------------------------------------------------</PRE></SMALL>
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

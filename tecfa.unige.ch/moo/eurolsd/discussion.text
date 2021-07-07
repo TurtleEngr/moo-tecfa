@@ -1,0 +1,124 @@
+
+Draft stages:
+
+----------------------------------------------------------------------
+1.0 Daniel:
+
+>Advanced educational uses of Cyberspace: How can we design and
+>implement innovative learning systems on the Internet and particularly
+>on the WWW and in MUDs?  Areas covered: Interactive many-user
+>collaborative learning environments; Intelligent agents on the net and
+>over the net; Adaptive information systems.
+
+----------------------------------------------------------------------
+1.1 Jeni:
+
+All the hyped catch phrases there ;)  Why use Cyberspace rather than 'The
+Internet'?  Also, I'd suggest using 'effective' or 'beneficial' rather than
+'innovative' (which just suggests something new and exciting rather than
+something that actually is good for anything to me).  And 'multiuser'
+rather than 'many-user'.  Apart from that, it looks super to me.
+
+----------------------------------------------------------------------
+1.2 Paolo:
+
+My (somewhat verbose) pennies:
+
+1   While I also have reservations against the term 'Cyberspace', I'd
+    think that 'The Internet' could in turn be too restrictive (I am
+    thinking of projects such as e.g. "Zircus" (MERL) and similar
+    'Habitat-derived' efforts, the infamous Bob on the Microsoft
+    Network, or training programmes on private/corporate networks...).
+    Then again, the original working session 14 clearly confines the
+    topic to 'just the Internet' ("What does AI research have to
+    contribute to educational users of the Internet and WWW").
+
+    So what _is_ the intended scope of this session?
+
+2   I guess we all agree on the 'effective'...
+
+3   Assuming the 'The Internet' is not mentioned in the first phrase, it
+    could stay in the 2nd phrase, with an 'e.g.' tacked on front.  As
+    for the 'interactive many-user': aren't BOTH adjectives already
+    implied by the 'collaborative learning environments' (i.e. how
+    could they be otherwise?) - then again, maybe for 'marketing/
+    advertising' reasons it might be a good idea to keep
+    'interactive multiuser'...
+
+4   How about inserting a sentence in front of the 'e.g. on the Internet,
+    ...WWW...MUD' mentioning something like 'support for higher levels
+    of learning' (the learning taxonomy (?)), such as problem solving
+    (vs. reproduction of knowledge)
+
+5   The conference title is on _learning_ systems design: While
+    "education" doubtlessly is an important area, I wonder if we should
+    not also mention the area of "training" in the description of the
+    working session (or 'just-in-time learning' - i.e. "catch phrases
+    for industry")?
+    (This question is similar to #1, as the draft announcement text
+     again explicitly mentions "educational users"...)
+    
+----------------------------------------------------------------------
+
+Jeni 2.0
+
+>My (somewhat verbose) pennies:
+>
+>1   While I also have reservations against the term 'Cyberspace', I'd
+>    think that 'The Internet' could in turn be too restrictive (I am
+>    thinking of projects such as e.g. "Zircus" (MERL) and similar
+>    'Habitat-derived' efforts, the infamous Bob on the Microsoft
+>    Network, or training programmes on private/corporate networks...).
+>    Then again, the original working session 14 clearly confines the
+>    topic to 'just the Internet' ("What does AI research have to
+>    contribute to educational users of the Internet and WWW").
+>
+>    So what _is_ the intended scope of this session?
+
+It seems we're focussing somewhere in the range that flows from 'computers'
+through 'computer networks' through 'the internet' to 'the WWW'.  'The WWW'
+is clearly too restrictive since we want to talk about MOOs, and
+'computers' far too general.  Perhaps 'computer networks'?
+
+>3   Assuming the 'The Internet' is not mentioned in the first phrase, it
+>    could stay in the 2nd phrase, with an 'e.g.' tacked on front.  As
+>    for the 'interactive many-user': aren't BOTH adjectives already
+>    implied by the 'collaborative learning environments' (i.e. how
+>    could they be otherwise?) - then again, maybe for 'marketing/
+>    advertising' reasons it might be a good idea to keep
+>    'interactive multiuser'...
+
+What about changing the 'Adaptive information systems' to 'Interactive
+multiuser information systems', that way retaining the advertising pull of
+'interactive multiuser' while avoiding the otherwise tautological phrase?
+
+>5   The conference title is on _learning_ systems design: While
+>    "education" doubtlessly is an important area, I wonder if we should
+>    not also mention the area of "training" in the description of the
+>    working session (or 'just-in-time learning' - i.e. "catch phrases
+>    for industry")?
+>    (This question is similar to #1, as the draft announcement text
+>     again explicitly mentions "educational users"...)
+
+I agree.  I think it's probably outside the remit of the conference, but
+'interactive multiuser information systems' could also support learning by
+organisations: corporate knowledge being kept for future use by new members
+rather than being lost when employees leave.  This is done by supporting
+learning while work is undertaken rather than during a specific training
+period.  I don't know if this is what is meant by 'just-in-time learning',
+since I'm still unsure about that phrase.
+
+Trying to bring some of these comments together, we get this rather muddled
+summary, which still doesn't include all the aspects we've mentioned:
+
+-------------------
+Advanced educational uses of computer networks: Effective learning systems
+need to support the higher levels of learning, such as problem solving.
+How can we design and implement such systems on, for example, the Internet,
+and particularly on the WWW and in MUDs?  Areas covered:  Collaborative
+learning environments; Intelligent agents on the net and over the net;
+Interactive multiuser information systems.
+-------------------
+
+----------------------------------------------------------------------
+

@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>The HTTP 1.0 Protocol</TITLE>
+<META NAME="description" CONTENT="The HTTP 1.0 Protocol">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1912" HREF="node94.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1910" HREF="node92.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1904" HREF="node92.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1914" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1915" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1913" HREF="node94.html">Introduction to CGI</A>
+<B>Up:</B> <A NAME="tex2html1911" HREF="node92.html">8.7 A crash course </A>
+<B> Previous:</B> <A NAME="tex2html1905" HREF="node92.html">8.7 A crash course </A>
+<BR> <P>
+<H2><A NAME="SECTION04171000000000000000">The HTTP 1.0 Protocol</A></H2>
+<P>
+<A NAME="sechttpprot">&#160;</A>
+<P>
+HTTP defines communication by a client and a WWW server.
+All HTTP 1.0 transactions follow a similar general format:
+<OL>
+<LI> There is a first request line (from the client) or response line
+(from the server)
+<LI> Then there are a few header lines (e.g. to give information about
+the client or server, to indicate following contents). The header always
+ends with a blank line.
+<LI> Finally there can be a ``body'' section containing contents
+(user data from the client or response from the server).
+</OL><H4><A NAME="SECTION04171010000000000000">Client requests:</A></H4>
+<P>
+The client contacts the server at a designated port number (by default
+this port number is 80, at <B>TECFA</B><TT>MOO</TT> it is 7778 (for <B>E</B><TT>_Web</TT>) or 7777
+(for WOO). Next it sends a <b>document request</b> with
+a <b>method</b> indicating which document (or program) to fetch
+and with which protocol.
+HTTP 1.0 defines three main methods:
+<OL>
+<LI> GET is a request for information located at a specific place
+(i.e. a Universal Ressource Identifier, URI). URIs are basically
+URLs.
+<LI> The POST method allows client request data to be sent to the server.
+Note that a client can also send data to the server by appending it
+to the URL of a GET request (you will see that later).
+<LI> The HEAD method works like GET but is only used to retrieve
+document or ressource header information (e.g. contents inside 
+the <code>&lt;HEAD&gt;....&lt;/HEAD&gt;</code> of a HTML document.
+</OL>
+<P>
+Here is a typical example of a GET file request to a standard
+www server
+<PRE>   GET /tecfamoo/welcome.html HTTP/1.0</PRE>
+and here the same to our <B>E</B><TT>_Web</TT> interface:
+<PRE>   GET /4848 HTTP/1.0</PRE>
+<P>
+Next, the client will send optional header information to tell
+the server more about its configuration, the server's internet
+machine host name or number, the document formats
+it will accept, etc.
+Here is a typical request from a client with the ``GET method'':
+<PRE>GET /4848 HTTP/1.0
+Connection: Keep-Alive
+User-Agent: Mozilla/3.01 (X11; I; SunOS 5.4 sun4m)
+Pragma: no-cache
+Host: tecfa.unige.ch:7778
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, */*</PRE>
+<P>
+A typical request from a client with the ``POST method'':
+<PRE>POST /cgi/4848 HTTP/1.0
+Referer: http://tecfa.unige.ch:7778/4848
+Connection: Keep-Alive
+User-Agent: Mozilla/3.01 (X11; I; SunOS 5.4 sun4m)
+Host: tecfa.unige.ch:7778
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, */*
+Content-type: application/x-www-form-urlencoded
+Content-length: 42
+
+name=Daniel&amp;age=old&amp;string=Hello+there+%21</PRE>
+In section <A HREF="node94.html#secintocgi">8.7.2</A> you will see how user data is
+encoded with CGI.
+<P>
+<H4><A NAME="SECTION04171020000000000000">Server response:</A></H4>
+<P>
+The server also replies by first sending a status line
+, header information about itself and the contents, follwed
+by a blank line and the contents.
+<P>
+The status line contains three fields: HTTP version, status code,
+and a more human readable description.
+Status code is a 3 digit number and there exist
+a lot of them. Here are a few examples:
+<P>
+<P><A NAME="1145">&#160;</A>
+<P>
+<TABLE COLS=2 BORDER FRAME=BOX RULES=GROUPS>
+<COLGROUP><COL ALIGN=RIGHT><COLGROUP><COL ALIGN=LEFT>
+<TBODY>
+<TR><TD VALIGN=BASELINE ALIGN=RIGHT NOWRAP>
+200 OK </TD><TD VALIGN=BASELINE ALIGN=LEFT NOWRAP> The client's request was successful</TD></TR>
+<TR><TD VALIGN=BASELINE ALIGN=RIGHT NOWRAP>  and server's response contains the requested data </TD><TD VALIGN=BASELINE ALIGN=LEFT NOWRAP></TD></TR>
+</TBODY><TBODY>
+<TR><TD VALIGN=BASELINE ALIGN=RIGHT NOWRAP>302 Moved Temporarily </TD><TD VALIGN=BASELINE ALIGN=LEFT NOWRAP> The requested URI must be taken as indicated in the ``Location'' header,</TD></TR>
+<TR><TD VALIGN=BASELINE ALIGN=RIGHT NOWRAP>  but the URL is fine for reuse </TD><TD VALIGN=BASELINE ALIGN=LEFT NOWRAP></TD></TR>
+</TBODY><TBODY>
+<TR><TD VALIGN=BASELINE ALIGN=RIGHT NOWRAP>404 Not Found </TD><TD VALIGN=BASELINE ALIGN=LEFT NOWRAP> The requested document was not found </TD></TR>
+</TBODY><TBODY>
+<TR><TD VALIGN=BASELINE ALIGN=RIGHT NOWRAP>500 Internal Server Error </TD><TD VALIGN=BASELINE ALIGN=LEFT NOWRAP> You wrote some bad CGI that breaks:) </TD></TR>
+</TBODY>
+<CAPTION ALIGN=BOTTOM><STRONG>Table 8.1:</STRONG> Some HTTP status codes</CAPTION></TABLE>
+<P>
+<P>
+Here is a typical reply from the <B>E</B><TT>_Web</TT> interface:
+<PRE>HTTP/1.0 200 ok
+Date: Wed, 16 Apr 97 22:54:42 GMT
+Server: E_WEB (E_MOO-Web-Server/1.2d - Not WOO) (LambdaMOO 1.8.0p5)
+Content-type: text/html
+
+&lt;title&gt;Query results&lt;/title&gt;
+&lt;h1&gt;Query results&lt;/h1&gt;
+ ......</PRE>
+<P>
+Here is another one from <B>E</B><TT>_Web</TT> that shows a 500 status internal error.
+It also shows that debugging CGI code is quite easy with <B>E</B><TT>_Web</TT>.
+<PRE>HTTP/1.0 500 internal error
+Server: E_WEB (E_MOO-Web-Server/1.2d - Not WOO) (LambdaMOO 1.8.0p5)
+Date: Thu, 17 Apr 97 11:06:09 GMT
+MIME-version: 1.0
+Content-type: text/html
+
+&lt;title&gt;Error #500 internal error
+ (http://tecfamoo.unige.ch:7778/cgi/4848)&lt;/title&gt;
+&lt;h1&gt;Error #500 internal error&lt;/h1&gt;&quot;
+...........</PRE>
+<P>
+The formated content as seen by the user will be like the following
+(references to moo verbs are links!)
+<P>
+<PRE>Error #500 internal error
+
+URL requested: http://tecfamoo.unige.ch:7778/cgi/4848 
+Reference code: #-6034:861271377 
+
+If you feel that you shouldn't have gotten this error, please report it to WebMaster.
+
+POST attempt tracebacked with:
+4848:cgi_query, line 9: Variable not found (E_VARNF)
+... called from 4361:html_cgi, line 23
+... called from 4361:http_request, line 6
+... called from $ehttpd:POST, line 19
+... called from $ehttpd:handle_request, line 22
+(End of traceback for task 1285009894)</PRE>
+After completing the request, the server will close the connection.
+<P>
+Now in order to write dynamic responses to user requests you need
+to learn how to write CGI programs.
+<P>
+<HR><A NAME="tex2html1912" HREF="node94.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1910" HREF="node92.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1904" HREF="node92.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1914" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1915" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html1913" HREF="node94.html">Introduction to CGI</A>
+<B>Up:</B> <A NAME="tex2html1911" HREF="node92.html">8.7 A crash course </A>
+<B> Previous:</B> <A NAME="tex2html1905" HREF="node92.html">8.7 A crash course </A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

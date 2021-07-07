@@ -1,0 +1,179 @@
+
+FILE: `tm.html'
+  ERROR: Name in reference to file: `node35.html' name: `LATEX'does not exist.
+  ERROR: In file `tm.html' the name `tex2html50' is repeated
+  ERROR: In file `tm.html' the name `tex2html52' is repeated
+  ERROR: In file `tm.html' the name `tex2html51' is repeated
+  ERROR: In file `tm.html' the name `tex2html1' is repeated
+  ERROR: In file `tm.html' the name `tex2html2' is repeated
+  ERROR: In file `tm.html' the name `tex2html3' is repeated
+  ERROR: In file `tm.html' the name `tex2html4' is repeated
+  ERROR: In file `tm.html' the name `tex2html5' is repeated
+  ERROR: In file `tm.html' the name `tex2html6' is repeated
+  ERROR: In file `tm.html' the name `tex2html7' is repeated
+  ERROR: In file `tm.html' the name `tex2html8' is repeated
+  ERROR: In file `tm.html' the name `tex2html9' is repeated
+  ERROR: In file `tm.html' the name `tex2html10' is repeated
+  ERROR: In file `tm.html' the name `36' is repeated
+  ERROR: In file `tm.html' the name `tex2html12' is repeated
+  ERROR: In file `tm.html' the name `tex2html13' is repeated
+  ERROR: In file `tm.html' the name `tex2html14' is repeated
+  ERROR: In file `tm.html' the name `tex2html15' is repeated
+  ERROR: In file `tm.html' the name `tex2html16' is repeated
+  ERROR: In file `tm.html' the name `tex2html53' is repeated
+  ERROR: In file `tm.html' the name `tex2html54' is repeated
+  ERROR: In file `tm.html' the name `tex2html55' is repeated
+  ERROR: In file `tm.html' the name `tex2html56' is repeated
+  ERROR: In file `tm.html' the name `tex2html57' is repeated
+  ERROR: In file `tm.html' the name `tex2html58' is repeated
+  ERROR: In file `tm.html' the name `tex2html59' is repeated
+  ERROR: In file `tm.html' the name `tex2html60' is repeated
+  ERROR: In file `tm.html' the name `tex2html61' is repeated
+  ERROR: In file `tm.html' the name `tex2html62' is repeated
+  ERROR: In file `tm.html' the name `tex2html63' is repeated
+  ERROR: In file `tm.html' the name `tex2html64' is repeated
+  ERROR: In file `tm.html' the name `tex2html65' is repeated
+  ERROR: In file `tm.html' the name `tex2html66' is repeated
+  ERROR: In file `tm.html' the name `tex2html67' is repeated
+  ERROR: In file `tm.html' the name `tex2html68' is repeated
+  ERROR: In file `tm.html' the name `tex2html69' is repeated
+  ERROR: In file `tm.html' the name `tex2html70' is repeated
+  ERROR: In file `tm.html' the name `tex2html71' is repeated
+  ERROR: In file `tm.html' the name `tex2html72' is repeated
+  ERROR: In file `tm.html' the name `tex2html73' is repeated
+  ERROR: In file `tm.html' the name `tex2html74' is repeated
+  ERROR: In file `tm.html' the name `tex2html75' is repeated
+  ERROR: In file `tm.html' the name `tex2html76' is repeated
+  ERROR: In file `tm.html' the name `tex2html77' is repeated
+  ERROR: In file `tm.html' the name `tex2html78' is repeated
+  ERROR: In file `tm.html' the name `tex2html79' is repeated
+  ERROR: In file `tm.html' the name `tex2html80' is repeated
+  ERROR: In file `tm.html' the name `tex2html81' is repeated
+  ERROR: In file `tm.html' the name `tex2html82' is repeated
+  ERROR: In file `tm.html' the name `tex2html83' is repeated
+  ERROR: In file `tm.html' the name `tex2html84' is repeated
+  ERROR: In file `tm.html' the name `tex2html85' is repeated
+  ERROR: In file `tm.html' the name `tex2html86' is repeated
+  ERROR: In file `tm.html' the name `tex2html87' is repeated
+  ERROR: In file `tm.html' the name `tex2html88' is repeated
+
+----------------
+
+
+File: node35.html
+  name: `LATEX'  NAME DOES NOT EXIST
+    referenced by: `tm.html' (after name: `tex2html10')
+
+File: tm.html
+  name: `tex2html50'
+  name: `tex2html52'
+  name: `tex2html51'
+  name: `tex2html1'
+  name: `tex2html2'
+  name: `tex2html3'
+  name: `tex2html4'
+  name: `tex2html5'
+  name: `tex2html6'
+  name: `tex2html7'
+  name: `tex2html8'
+  name: `tex2html9'
+  name: `tex2html10'
+  ref to file: `node35.html' name: `LATEX'  NAME DOES NOT EXIST
+  name: `36'
+  name: `tex2html12'
+  name: `tex2html13'
+  name: `tex2html14'
+  name: `tex2html15'
+  name: `tex2html16'
+  name: `tex2html53'
+  name: `tex2html54'
+  name: `tex2html55'
+  name: `tex2html56'
+  name: `tex2html57'
+  name: `tex2html58'
+  name: `tex2html59'
+  name: `tex2html60'
+  name: `tex2html61'
+  name: `tex2html62'
+  name: `tex2html63'
+  name: `tex2html64'
+  name: `tex2html65'
+  name: `tex2html66'
+  name: `tex2html67'
+  name: `tex2html68'
+  name: `tex2html69'
+  name: `tex2html70'
+  name: `tex2html71'
+  name: `tex2html72'
+  name: `tex2html73'
+  name: `tex2html74'
+  name: `tex2html75'
+  name: `tex2html76'
+  name: `tex2html77'
+  name: `tex2html78'
+  name: `tex2html79'
+  name: `tex2html80'
+  name: `tex2html81'
+  name: `tex2html82'
+  name: `tex2html83'
+  name: `tex2html84'
+  name: `tex2html85'
+  name: `tex2html86'
+  name: `tex2html87'
+  name: `tex2html88'
+  name: `tex2html50'  IS REPEATED
+  name: `tex2html52'  IS REPEATED
+  name: `tex2html51'  IS REPEATED
+  name: `tex2html1'  IS REPEATED
+  name: `tex2html2'  IS REPEATED
+  name: `tex2html3'  IS REPEATED
+  name: `tex2html4'  IS REPEATED
+  name: `tex2html5'  IS REPEATED
+  name: `tex2html6'  IS REPEATED
+  name: `tex2html7'  IS REPEATED
+  name: `tex2html8'  IS REPEATED
+  name: `tex2html9'  IS REPEATED
+  name: `tex2html10'  IS REPEATED
+  ref to file: `node35.html' name: `LATEX'
+  name: `36'  IS REPEATED
+  name: `tex2html12'  IS REPEATED
+  name: `tex2html13'  IS REPEATED
+  name: `tex2html14'  IS REPEATED
+  name: `tex2html15'  IS REPEATED
+  name: `tex2html16'  IS REPEATED
+  name: `tex2html53'  IS REPEATED
+  name: `tex2html54'  IS REPEATED
+  name: `tex2html55'  IS REPEATED
+  name: `tex2html56'  IS REPEATED
+  name: `tex2html57'  IS REPEATED
+  name: `tex2html58'  IS REPEATED
+  name: `tex2html59'  IS REPEATED
+  name: `tex2html60'  IS REPEATED
+  name: `tex2html61'  IS REPEATED
+  name: `tex2html62'  IS REPEATED
+  name: `tex2html63'  IS REPEATED
+  name: `tex2html64'  IS REPEATED
+  name: `tex2html65'  IS REPEATED
+  name: `tex2html66'  IS REPEATED
+  name: `tex2html67'  IS REPEATED
+  name: `tex2html68'  IS REPEATED
+  name: `tex2html69'  IS REPEATED
+  name: `tex2html70'  IS REPEATED
+  name: `tex2html71'  IS REPEATED
+  name: `tex2html72'  IS REPEATED
+  name: `tex2html73'  IS REPEATED
+  name: `tex2html74'  IS REPEATED
+  name: `tex2html75'  IS REPEATED
+  name: `tex2html76'  IS REPEATED
+  name: `tex2html77'  IS REPEATED
+  name: `tex2html78'  IS REPEATED
+  name: `tex2html79'  IS REPEATED
+  name: `tex2html80'  IS REPEATED
+  name: `tex2html81'  IS REPEATED
+  name: `tex2html82'  IS REPEATED
+  name: `tex2html83'  IS REPEATED
+  name: `tex2html84'  IS REPEATED
+  name: `tex2html85'  IS REPEATED
+  name: `tex2html86'  IS REPEATED
+  name: `tex2html87'  IS REPEATED
+  name: `tex2html88'  IS REPEATED

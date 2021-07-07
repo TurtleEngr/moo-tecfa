@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>[TECFAMOO] The World-Wide Web E_WEB Interface on port 7778</TITLE>
+<META NAME="description" CONTENT="[TECFAMOO] The World-Wide Web E_WEB Interface on port 7778">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2414" HREF="node135.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2412" HREF="node69.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2406" HREF="node133.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2416" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2417" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2415" HREF="node135.html">[TECFAMOO] The World-Wide Web </A>
+<B>Up:</B> <A NAME="tex2html2413" HREF="node69.html">INTRODUCTION TO MOO PROGRAMMING</A>
+<B> Previous:</B> <A NAME="tex2html2407" HREF="node133.html">12.4 [TECFAMOO] Multiownership and </A>
+<BR> <P>
+<H1><A NAME="SECTION04600000000000000000">[<B>TECFA</B><TT>MOO</TT>] The World-Wide Web E_WEB Interface on port 7778</A></H1>
+<P>
+<A NAME="chaeweb">&#160;</A>
+<P>
+under construction, for the moment see:
+<P>
+<UL>
+<LI> see section <A HREF="node156.html#secewebobjbrowse">16.3</A> on page <A HREF="node156.html#secewebobjbrowse"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A> for the using the E_WEB browser.
+<LI> Check out <A NAME="tex2html292" HREF="http://tecfa.unige.ch:4243/project_docs/httpd">E_WEB Documentation</A> at <A NAME="tex2html293" HREF="http://tecfa.unige.ch:4243/">E_MOO</A>
+<LI> Look at the <A NAME="tex2html294" HREF="http://tecfa.unige.ch:7778/">E_WEB Server at Tecfa</A>
+<LI> Check out <A NAME="tex2html295" HREF="http://tecfa.unige.ch:7778/&amp;eweb_room">the E_WEB Room</A>
+<P>
+</UL>
+<P>
+Here is a trace for a ``normal'' request:
+<SMALL CLASS=SMALL><PRE>EWEB&gt;&gt;$ehttpd:do_login_command(): &quot;******************** 6 read lines&quot;
+EWEB&gt;&gt;$ehttpd:parse_url(): &quot;/4026/&quot;
+EWEB&gt;&gt;$ehttpd:parse_url(): &quot;/4026/&quot;
+EWEB&gt;&gt;$ehttpd:handle_request(): {
+ &quot;GET /4026/ HTTP/1.0&quot;,
+ &quot;Referer: http://tecfa.unige.ch:7778/&amp;eweb_room&quot;,
+ &quot;Connection: Keep-Alive&quot;,
+ &quot;User-Agent: Mozilla/3.01 (X11; I; SunOS 5.4 sun4m)&quot;,
+ &quot;Host: tecfa.unige.ch:7778&quot;,
+ &quot;Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, */*&quot;}
+EWEB&gt;&gt;$ehttpd:handle_request(): &quot;GET&quot;
+EWEB&gt;&gt;$ehttpd:handle_request(): {&quot;/4026&quot;, &quot;/&quot;}
+EWEB&gt;&gt;$ehttpd:GET(): {#-1 &lt;$nothing&gt;, &quot;http://tecfamoo.unige.ch:7778/4026/&quot;}
+EWEB&gt;&gt;$ehttpd:GET(): {#-22175 &lt;invalid&gt;, &quot;URL=&quot;, {&quot;/4026&quot;, &quot;/&quot;}}
+EWEB&gt;&gt;$ehttpd:match_object(): {&quot;object=&quot;, #4026 (e_thing Test) &lt;#4026&gt;}
+EWEB&gt;&gt;$ehttpd:notify_connection(): {33, 917}
+EWEB&gt;&gt;$ehttpd:notify_connection(): &quot;terminated: 2092828703 booted: #-22175&quot;</PRE></SMALL>
+<P>
+Here is a trace of what happens for a /cgi/ Url:
+<SMALL CLASS=SMALL><PRE>EWEB&gt;&gt;$ehttpd:do_login_command(): &quot;******************** 8 read lines&quot;
+EWEB&gt;&gt;$ehttpd:parse_url(): &quot;/cgi/&amp;e_thing&quot;
+EWEB&gt;&gt;$ehttpd:handle_request(): {
+ &quot;POST /cgi/&amp;e_thing HTTP/1.0&quot;,
+ &quot;Referer: http://tecfa.unige.ch/tecfa/tecfa-teaching/staf14/files/moo-form.html&quot;, 
+&quot;Connection: Keep-Alive&quot;,
+ &quot;User-Agent: Mozilla/3.01 (X11; I; SunOS 5.4 sun4m)&quot;,
+ &quot;Host: tecfa.unige.ch:7778&quot;,
+ &quot;Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, */*&quot;,
+ &quot;Content-type: application/x-www-form-urlencoded&quot;,
+ &quot;Content-length: 179&quot;}
+EWEB&gt;&gt;$ehttpd:handle_request(): &quot;POST&quot;
+EWEB&gt;&gt;$ehttpd:handle_request(): {&quot;/cgi&quot;, &quot;/&amp;e_thing&quot;}
+EWEB&gt;&gt;$ehttpd:POST(): {&quot;Input line=&quot;, &quot;Edu-Comp=&amp;name=&amp;first_name=
+&amp;institution=&amp;site-url=&amp;personal-url=&amp;e-mail=&amp;activity=Education
+&amp;hours=under5&amp;archive=CICA&amp;Color=fluo
+&amp;Comments=%E9jhl%E9kjh%0D%0ASLKshS&amp;Rating=Dix+MILLE&quot;}
+EWEB&gt;&gt;#4361:http_request(): {&quot;/cgi&quot;, &quot;/&amp;e_thing&quot;, &quot;.....&quot;}
+EWEB&gt;&gt;#4361:http_request(): &quot;method=html_cgi&quot;
+EWEB&gt;&gt;#4361:html_cgi(): {&quot;args=&quot;, {&quot;/cgi&quot;, &quot;/&amp;e_thing&quot;, &quot;Edu-Comp=
+&amp;name=&amp;first_name=&amp;institution....
+EWEB&gt;&gt;#4361:html_cgi(): {&quot;Found object=&quot;, #4152 (Generic E_Webbed Thing) &lt;#4152&gt;}
+EWEB&gt;&gt;$ehttpd:notify_connection(): {35, 1012}
+EWEB&gt;&gt;$ehttpd:notify_connection(): &quot;terminated: 37780356 booted: #-22172&quot;</PRE></SMALL>
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

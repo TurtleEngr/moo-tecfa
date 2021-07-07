@@ -1,0 +1,102 @@
+=========================================================================
+Date:         Thu, 19 Jan 1995 10:44:27 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      Building Tools for Education
+
+@Copyright DUJVRE and Ken Schweller  schweller@bvc.edu 1994
+
+        Ken Schweller  schweller@bvc.edu                      49
+
+
+                     Building Tools for Education
+                      -Ken (aka Ken Schweller)
+
+  Over the past few years I have enjoyed building a variety of MOO
+tools which are presently being used here and about for instructional
+and educational purposes. These tools include the following Generics:
+  - video camera, tape, vcr, tv
+  - slide projector, lecture
+  - conversational robot
+  - classroom, and theater
+
+  The cameras, tapes, vcrs and tv were built on mediaMOO as part of
+a Television Station. I had originally intended to broadcast live
+shows from the TV Studio but it turned out that folks were more
+interested in creating their own documentaries and sharing them with
+their friends, so I created a Tape Library. Tapes deposited in the
+library could be viewed on a demand basis by any and all players.
+Since that time tapes and tvs are being widely used for tutorials,
+interviews, film making, and class  presentations.
+
+  The slide projector was built to effect the swift presentation of
+bulky text and graphic material to large groups. This tool has seen
+wide use in seminars and colloquia.
+
+  The Generic Lecture was built to help students present multiline
+material without the necessity of typing at break neck speed.  The
+text is entered ahead of time line by line and given in any chosen
+order and speed. I found that students who were generally nervous
+giving class presentations were much more relaxed when they didn't
+have to type in their speech in real time.
+
+  The Generic Classroom and Theater were designed to address unique
+MOO communication problems.  Consider the problem of 'too much noise
+in one room'.  The approach I used in the Generic Classroom was to
+divide the room itself up into subareas in the form of tables, sofas,
+chairs, rugs etc.  Folks in a subarea formed their own local
+conversation group without disturbing others yet they could still
+'hear' the teacher or anyone standing up. I took the opposite approach
+in designing the Theater.  This time I interconnected 6 separate rooms
+allowing folks to see and hear folks in other rooms under varying
+degrees of communication control.  The theater was intended to be much
+more than just a place to watch movies or see plays.  It was designed
+as a presentation forum where the level of speaker/audience
+interaction could be subtly controlled on a sliding scale of absolute
+quiet to full 6 room interaction
+
+  The Conversational Robot was originally designed as a toy. Since
+then it has seen serious educational use as a 'drill and kill'
+vocabulary tester, tutor, room guide, and information assistant. This
+is the tool kids have the most fun working with.
+
+
+        Ken Schweller  schweller@bvc.edu                      50
+
+  I have thought a lot about what constitutes a really good MOO
+educational tool  Here's the list of tool characteristics I've come up
+with. A good tool for MOO education must be:
+
+   *Useful*      - must serve a REAL pressing need. A clever tool
+                   that serves no important need is best recycled.
+
+   *Easy*        - must be VERY easy to use. A tool should have a
+                   familiar look and heft. The verbs should be
+                   easily guessable without using @exam and the
+                   consequences should be predictable.
+
+   *Fun*         - must be a bit whimsical. If folks don't enjoy
+                   using the tool, they won't. But not cute.
+
+   *Powerful*    - must be powerful enough for kids and professional
+                   researchers/educators. A tool must 'grow' with
+                   you as your moo experience increases.
+
+   *Adaptable*   - must be capable of use in many different unforseen
+                   ways.  No one can predict what uses a clever person
+                   will find for a good tool.
+
+   *Evocative*   - must be a catalyst to evoke new ideas in users.
+                   Simply using a tool should suggest to the user
+                   new possibilities.
+
+  I am still actively engaged in Tool making and welcome any
+suggestions from my colleagues on the design of the latest greatest
+tool. :)
+
+
+Author: Ken Schweller
+        schweller@bvc.edu

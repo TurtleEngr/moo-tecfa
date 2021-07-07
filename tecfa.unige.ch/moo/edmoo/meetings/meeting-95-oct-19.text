@@ -1,0 +1,389 @@
+From hawaii.edu!burk Fri Oct 27 23:04:24 1995
+Received: from UNI2B.UNIGE.CH (uni2b.unige.ch [129.194.4.32]) by mime.unige.ch (8.6.10/8.6.10) with ESMTP id XAA16455 for <schneide@mime.unige.ch>; Fri, 27 Oct 1995 23:05:13 +0100
+Received: from DIRECTORY-DAEMON by uni2b.unige.ch (PMDF V5.0-5 #10385)
+ id <01HWYA9NAKCG004C9T@uni2b.unige.ch> for schneide@mime.unige.ch; Fri,
+ 27 Oct 1995 23:04:54 +0200 (WET-DST)
+Received: from mailun2a.unige.ch by uni2b.unige.ch (PMDF V5.0-5 #10385)
+ id <01HWYA9ESVC00042L8@uni2b.unige.ch> for Daniel.Schneider@tecfa.unige.ch;
+ Fri, 27 Oct 1995 23:04:42 +0200 (WET-DST)
+Date: Fri, 27 Oct 1995 23:04:24 +0100
+From: Juli Burk <burk@hawaii.edu>
+Subject: Minutes of 10-19-95 Meeting (long)
+Sender: owner-moo-ed@ucet.ufl.edu
+To: moo-ed <moo-ed@ucet.ufl.edu>
+Cc: Juli Burk <burk@hawaii.edu>
+Message-id: <Pine.SV4.3.91.951026170547.9832K-100000@uhunix3>
+MIME-version: 1.0
+Content-transfer-encoding: 7BIT
+Precedence: bulk
+X400-Content-type: P2-1984 (2)
+X400-MTS-identifier: [/PRMD=switch/ADMD=400net/C=ch/;951027230424]
+X400-Originator: postmaster@divsun.unige.ch
+X400-Recipients: Daniel.Schneider@tecfa.unige.ch
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Content-Length: 18126
+Status: OR
+
+
+EDU-MOO MEETING HELD AT ATHEMOO THURSDAY 19 OCT, 1995
+EDITED TRANSCRIPTION OF MINUTES
+submitted by Juli Burk
+
+Suggested Agenda:
+	2:00  Coffee, Welcome to ATHEMOO - Juli
+	2:10  Short self-introductions
+	2:20  Announcements
+	2:25  Funding Sources, Funding Needs for Educational MOOs
+		Let's begin with reports from any of us receiving funding 
+			for MOO activity (external or internal).  
+		Then let's make a list of funding sources (if you know of 
+			one, please bring the address with you)
+		Finally, let's break into small groups to come up with a 
+			list of funding needs and/or projects
+
+Attending were: Juli Burk, Donald Chan (idd), Isabel Danforth (Ringer), 
+Anthony Finkelstein, Cynthia Haynes-Burton, Jan Holmevik, Paolo Petta
+
+-- Start: Thursday, October 19, 1995 2:08:10 am ATHEMOO time (HST) --
+
+Juli turns Kaos Recording Machine on.
+Juli says, "Aloha All and welcome to ATHEMOO"
+Juli says, "I'd like to call this meeting to order"
+Juli says, "let's begin introductions :-)"
+
+*** INTRODUCTIONS ***
+
+PaoloP says, "I am a computer scientist. I participated in a number of 
+   'computer-based/aided-learning' projects in the past years. One main 
+   interest in the present context lies in identifying 
+   shortcomings/needs/... and devising "solutions" for successful deployment 
+   of this technology."
+CynthiaH [to PaoloP]: What MOO are you associated with?
+AnthonyF says, "My name is Anthony Finkelstein, I work at City 
+   University, London. I am researching in the area of software engineering 
+   and ami interested in the applications of MOOS in that setting."
+PaoloP [to CynthiaH]: "I first got involved with MediaMOO when it opened, 
+   not too surprisingly I attend more 'technically oriented places' such as 
+   Jayshouse or BioMOO...
+Jan says, "I am Jan, a happy fellow from Norway :)  admin at LinguaMOO 
+   and trying to do his RL job oin the side ;)"
+CynthiaH says, "Cynthia, here...I am the other admin at LinguaMOO and I 
+   teach at UT-Dallas"
+Ringer is Isabel Danforth, Librarian ... administing Librarians' Online 
+   Support Team on DU .. with a virtual home on BayMOO
+Juli says, "I am a theatre professor at the Univ of Hawaii and created 
+   ATHEMOO for my professional association, the Association for  
+   Theatre in Higher Education"
+idd  id Donald, editor of DU journal of VR Ed. and teacher of a 	
+   couple of .courses at DU.
+Juli says, "Are there any announcements?"
+
+*** ANNOUNCEMENTS ***
+
+#1   CynthiaH says, "LinguaMOO tee-shirts are in :)"
+
+#2   Ringer says, "oh.. Jan and I are co-authoring - editing a book 	
+     on MOO .design .and construction.. "
+
+Ringer says, "with  a team of 11 authors total"
+PaoloP [to Ringer]: when will it be published? where? how much?
+Ringer says, "we need to get a publishesr "
+Ringer says, "putting together our proposal today.. hopefully"
+Jan says, "we're working on it now, hope to have it out sometime 	
+   next fall"
+Jan says, "the book that is"
+Juli says, "it will be wonderful to have a book just on MOO"
+Jan [to CynthiaH]: yes you had a question?
+CynthiaH says, "I just wanted to add that I am writing the chapter on 
+   educational MOOs and for the record (and to those who aren't here, but 
+   will read this transcript later), I may be calling on you for information 
+   and insights about your particular educational MOO :)...it was really 
+   more of a comment :)"
+Jan says, "the point of this book is to make it a realk collaborative 	
+   effotrt"
+Jan says, "and I think that will be one of it's greatest strengths"
+PaoloP [to Jan]: will there be anything online?
+Ringer says, "we hope to have that.. depends on the publisher"
+PaoloP [to Jan]: or is it more of a "commercial effort"?
+Jan says, "depends on what the publisher wants "
+Jan says, "we hope to have an associated website"
+Juli fears that the publisher won't want it there, sales and all
+Ringer says, "there are a number of publisiheres with web sites for books"
+Ringer says, "giving table of contents, a chapter.. software  and 	
+   pointers "
+Ringer says, "First we have to sell it to a publisher"
+AnthonyF says, "that should be very easy"
+Ringer smiles .. we hope so 
+Jan grins true
+Ringer says, "should we give you a list.. "
+Ringer says, "and the names of people to call?"
+AnthonyF says, "if you have any problems I have some good contacts"
+idd says, "get a good agent perhaps, then rest is their job :)."
+Ringer [to AnthonyF]: thanks 
+CynthiaH wants it noted for the record that Ringer laughes :)
+CynthiaH smiles over at Ringer :)
+Juli [to Ringer]: Thanks for your announcement, we all wish you 	
+   the very best on this and can't wait for it to be in print!
+
+
+#3   idd says, "DU is holding its conference next month, 16-19 I think,  
+     but I leave Jeanne to announce that, in Wheeling W.V. this time."
+
+Ringer says, "yes nove 16-18"
+AnthonyF says, "how can I ensure I get the details"
+Ringer says, "details on the conference?"
+AnthonyF says, "yes"
+Ringer says, "do you have characters on DU?"
+Ringer says, "read *conf there "
+idd says, " oh ok, will get Jeanne or Cindy Lou to email this list "
+Juli says, "that's a wonderful idea, I hope we can all get in the habit 	
+   of using this list to announce things"
+Juli says, "this = moo-ed"
+
+
+*** TOPIC OF THE DAY : FUNDING ***
+
+Juli says, "Can we begin by reporting funding, institutional or 	
+   otherwise, that our moos receive"
+CynthiaH says, "Jan and I have discussed writing a grant for a 	
+   stand-alone machine for our MOO..."
+CynthiaH says, "and it just occurred to me that maybe more than 	
+   one MOO could get involved in that grant..."
+Juli puts her name on the lsit
+CynthiaH says, "since one machine could certainly handle several 	
+   MOOS perhaps..."
+CynthiaH says, "and it would perhaps be more justifiable?"
+Ringer says, "We have 2 moos on the BayMOO machine"
+Ringer says, "We have a NISTS grant .. "
+Juli wonders what NISTS stands for
+Ringer says, "The R & D moo and dBayMOO are on there "
+Ringer says, "NIST  is national institute for ? science  and technology"
+Ringer says, "the other moo is for distributed manufacturing"
+AnthonyF says, "just before the meeting started we discussed the 
+   geographical spread of people. perhaps we should start with international 
+   money sources"
+Jan [to Ringer]: could you say something about the annanberg grant that DU has+?
+PaoloP  . o ( NIST: Standards & Tech)
+CynthiaH wonders if corporations could be tapped...like MCI or 	
+   Sprint...who have become involved in the Internet backbone in the States
+CynthiaH says, "since Xerox supports Lamda and all"
+Ringer says, "well Xerox is also involved with Pueblo MOO "
+Jan [to AnthonyF]: I know that Kaspar et al have aplied to the EU 	
+   4th framework programme
+PaoloP says, "does anybody happen to know if  there is  a 'moo 	group' at 
+   Xerox EuroPARC?"
+AnthonyF says, "How about an EU grant for the EU people with money for 
+   the US thru the EU-NSF framework?"
+PaoloP [to Jan]: which is intriguing in a way because switzerland is 	
+   NOT in the EU ... :-)
+AnthonyF says, "under what component of the F4 programme"
+Jan says, "I'm not sure, have to ask him"
+PaoloP [to AnthonyF]: "there should be quite bit allotted to 	
+   'educational telemedia' or something like that - I can check that out...
+Jan says, "I believe the GNA and BioMOO was involved in it too"
+AnthonyF says, "Switzerland can be covered (Group B I think)"
+Jan says, "You have the RACE and ESPRTI...ESPRIT programs"
+AnthonyF says, "Better bet is funding through applications rather 	
+   than generic educational telemedia"
+PaoloP [to Jan]: "that was precisely the kind of info I was hoping 	
+   to get
+AnthonyF says, "actually I am not sure I know how to do that"
+Jan says, "problem with EU grant is that you have to put up %0%...50% 
+   of the money yourself"
+Jan says, "and it involves quite a bit of administration, reports to 	
+   the commission in Brussels etc "
+AnthonyF says, "depends on funding rules - I can explain off line"
+Ringer says, "there are a number of grants out there .. "
+Ringer says, "But most will support research in new directions, and 	
+   not ongoing maintenance"
+AnthonyF says, "we ought to assemble a proper list"
+idd [to Jan]: well there is no free lunch, you get free money, you 	
+   probably have to report how you spend it :).
+Ringer says, "oh.. NIST was actually announced in Moo-cows"
+Jan [to idd]: true, :)
+Ringer says, "they want a place to display screens that would be 	
+   found in the normal factory databse applications."
+Ringer says, "but allow formen from physically separate places to 	
+   communicate about them"
+AnthonyF says, "I will receive 1 Mecu from the EU for a network 	
+   of Excellence in RE - this type of funding supports research 	
+   infra-structure"
+Jan says, "another think ...thing about EU programes is that you 	
+   really need to have a consortium of group of participants"
+Ringer says, "I took a 2 day course in grant writing for libraries 	
+   this summer"
+Ringer says, "can the consortium include Americans"
+idd says, "Has anyone approached the phone company, I recall BT 	
+   was an early supporter of MUDS, with good reason of course! 	they make 
+   money on phone calls :)."
+Ringer says, "well you need to look at resources such as Grant Encyclopeida"
+Ringer says, "that tells what kinds of grants, how much they hve given"
+CynthiaH says, "I think one thing this group can do to support this 
+   effort would be to compose a list of rationales for funding a MOO (or 
+   several MOOs)...Ringer's idea that they fund things that go in new 
+   directions is right...ongoing maintenance needs to be more solidly 
+   justified and this group could produce a set of guidelines and post to 
+   our website for those of us to use when writing grants"
+Ringer says, "the BayMOO grant went thru the SFSU grants office"
+AnthonyF says, "Complicated - Australia, Canada  & Israel can participate 
+   as full partners. Oz & Israel will receive reciprocol funding. There is a 
+   joint NSF-EU funding scheme"
+Ringer says, "It paid for a Sparc20 and funds for some stipends for 	
+   folks who worked on it"
+Juli says, "Shall we turn to cynthia's idea and start a list of rationales?"
+CynthiaH says, "we could use the moo-ed list to generate a discussion of 
+   these guidelines and rationales and then someone can compile them into a 
+   web document?"
+Ringer says, "DU has the funds from the Annenberg grant paying 	for 2 
+   full time and 2 part time wizards "
+AnthonyF says, "BT have a call out for proposals - I have the paper 	
+   under a pile on my desk"
+CynthiaH says, "I'm not suggesting we start brainstorming this right 
+   now, though we could if you all want to"
+Ringer thinks we need to have an idea of what we want to fund
+Juli [to CynthiaH]: we could begin and then when i post the log of 	
+   this meeting it could get folks on that list started
+Ringer says, "I think that you need to know what you want.. "
+AnthonyF says, "machines are cheap...people are expensive"
+CynthiaH [to Ringer]: Yes...things like machines, software, salaries 
+   for techonlogical support, etc
+Ringer says, "and then look thru lists of grantors to find those who 	
+   might fund it"
+idd [to AnthonyF]: send me a copy of that if you can, thats one 	
+   direction that can come back easily. profit motive is always viable.
+Ringer says, "You can usually get either a machine.. or people, but 	
+   not both.. And Not ongoing support"
+Ringer says, "At the DU conference, we will be having a workshop 	
+   on grants I believe"
+Ringer says, "the physical conference :)"
+idd says, " that does not make sense, a machine or people,  if only 	
+   one, it won't work very well . something wrong there :)."
+Ringer says, "well the grant provides funds for very specific purpose 
+.. "
+AnthonyF says, "I think funding SOURCES are not quite the 	
+   issue....assembling a viable and coherent consortium with an 	
+   application focus (thats where the money is)...is a firts step"
+Juli says, "a good place to start, though, would be a machine for 	
+   several moos to live on"
+CynthiaH says, "usually a grant will fund the startup funds for the 
+   technology and people, and often the funding source expects a matching 
+   grant for subsequent funding to be obtained or committed by the 
+   institution housing the MOO, I would think"
+Ringer says, "but you need to have a purpose for having those MOOs"
+CynthiaH says, "yes, I agree a list of rationales and focus for 	
+   applications is the 	most important first step that this group 	
+   could compose"
+Jan [to Juli]: yeah, like a Cray for all the GNA-net MOOs ;)
+CynthiaH says, "so I say we generate a discussion on moo-ed soon"
+Ringer says, "And are we really looking for one machine.. to serve 	
+   all the moos"
+CynthiaH says, "not one machine..."
+CynthiaH says, "but perhaps several MOOs could go in together..."
+Ringer says, "better to have a physically distributed network"
+Juli says, "well, if there is a machine, or a network, then that begs 	
+   the questions of location"
+Ringer says, "GNA is now a 501(c)  so it could participate"
+idd says, " well the machine is less costly than the internet 	
+   connection presently. there are running costs for some places."
+CynthiaH says, "MOOs that are logically related in terms of research 
+   and theme"
+Juli says, "that 501c is very important in most grant apps"
+Ringer nods. .DU is working on that now
+Juli says, "by housing the machines at an institution, say a 	
+   university, the internet connection would not be a problem until 	
+   it gets privatized"
+Ringer says, "but if you are with a university you are covered"
+Ringer says, "The BayMOO grant went thru SFSU for example"
+Ringer says, "Although the machine is in Yea's office"
+Ringer says, "he is the project director "
+Juli says, "perhaps we might look at the application for some pointers?"
+idd [to Juli]: well, its not been a problem but what if it goes 	
+   multimedia, and eats bandwidth, then Univ. may get back to more 
+   serious purposes like email :).
+Jan says, "I suggest that say DU writes something to moo-ed about 	
+   how you got the grant you have now, and the rest of us can start to 
+   post on other possible sources of funds, like the EU for 	example"
+Ringer says, "I am not the one to do that.. you need to talk to Jeanne "
+Ringer says, "and visit the grant center on DU .. "
+idd says, " oh I have a copy of Leslie article, I should post that soon."
+Jan says, "that weould be a good start, yes"
+Ringer [to idd]: do you have his permission to do that ?
+idd says, "Leslie directs the Annenberg grant I believe.  "
+Ringer says, "yes he does "
+idd says, " its for DU journal, I just have to get it out.  yes, I believe so."
+AnthonyF says, "perhaps all us Europeans ought to get together and give 
+   serious thought to an F4 consortium"
+Ringer says, "okay.. if for DU journal  yes ."
+Juli [to Ringer]: could you elaborate on the annenberg grant just a bit?
+CynthiaH says, "we should also encourage a spirit of collaboration on 
+   this...it could be seen as competitive to go after limited funding 
+   sources...but if this group bands together and shares information about 
+   how they got grants, ie their rationales, their funding sources, etc, we 
+   could all benefit"
+Ringer says, "the annenberg grant is for teaching writing "
+Jan says, "Kaspar already has some experience there that will help 	
+   get us started"
+Ringer says, "What leslie did that helped get the fundinig .. "
+Ringer says, "was to have done pre and post testing of classes he 	
+   taught .. on and off the moo"
+Ringer says, "and show that the classes that had used the moo, had 	
+   gained more "
+Ringer says, "and then this grant it to enhance the use of moo for 	
+   teaching writing
+Ringer says, "So it has allowed lots of user friendly enhancemnts to DU "
+Juli [to Ringer]: does it pay for the personnel?
+Ringer says, "yes.. "
+Juli [to Ringer]: what is the duration?
+Ringer says, "Riche, Ulf, Jeanne and Dave"
+Ringer says, "1  year or 18 months"
+Juli [to Ringer]: renewable?
+Ringer says, "no"
+Ringer says, "there was another proposal that did not make it"
+Ringer says, "FIPSE  that was to provide a full college freshman 	
+   curriculum for students from 4 or 5 different colleges"
+Ringer says, "that made it to the last cut, and then lost "
+CynthiaH says, "As a director of a writing program I can heartily agree 
+   with the MOO as a way of teaching writing...another rationale, and one 
+   that LinguaMOO fosters, is using the MOO as a space for research ABOUT 
+   this space, and as a space in which researchers can create their own work"
+AnthonyF says, "last word before I go to give a lecture...in this part 	
+   of the world TRAINING gets more funding than EDUCATION!"
+Ringer says, "I have been thinking about L.O.S.T  does training workshops. 
+   continuing education"
+Ringer says, "One thing to remember in the moo.. "
+Ringer says, "you need to have people to maintian the technical side.. do 
+   admin work, and then the 'teachers'"
+Ringer says, "and the grant has to support all of those roles"
+Juli wonders if we need to set the next location?
+Ringer says, "what about DU "
+Ringer says, "I have the librarians center there "
+CynthiaH says, "sounds good to me...will you be setting the date and time 
+   and announcing it on moo-ed?"
+Ringer says, "but after thanksgiving"
+idd says, "when is thanksgiving?"
+Ringer says, "I will make arrangement"
+Ringer says, "nov 23 "
+Ringer says, "can it be nov 30"
+Ringer says, "noon EDT again"
+Ringer says, "okay.. nov 30 noon.. I will announce it.. "
+
+-- End: Thursday, October 19, 1995 3:06:18 am ATHEMOO time (HST)
+
+These minutes were edited in the spirit of saving space.  The full 
+transcript of the meeting is available at athemoo in the Kaos Seminar 
+Room, the object name is 10-19-95.  Thanks to all in attendance, to those 
+who weren't with us, we missed you!  :-))
+
+
+
+===============================================================================
+Juli Burk
+University of Hawaii - Dept. of Theatre and Dance 
+
+   phone: (808) 956-2600
+     fax: (808) 956-4234
+internet: burk@uhunix.uhcc.hawaii.edu
+===============================================================================
+
+
+

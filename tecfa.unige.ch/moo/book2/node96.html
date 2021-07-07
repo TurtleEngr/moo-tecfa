@@ -1,0 +1,245 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Dealing with cgi queries via the /cgi URL</TITLE>
+<META NAME="description" CONTENT="Dealing with cgi queries via the /cgi URL">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1948" HREF="node97.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1946" HREF="node95.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1940" HREF="node95.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1950" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1951" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1949" HREF="node97.html">Dealing with cgi via </A>
+<B>Up:</B> <A NAME="tex2html1947" HREF="node95.html">8.8 [TECFAMOO] ``E_WEB'' Tutorial</A>
+<B> Previous:</B> <A NAME="tex2html1941" HREF="node95.html">8.8 [TECFAMOO] ``E_WEB'' Tutorial</A>
+<BR> <P>
+<H2><A NAME="SECTION04181000000000000000">Dealing with cgi queries via the /cgi URL</A></H2>
+<P>
+<A NAME="sectutorialcgi">&#160;</A>
+<P>
+At <B>TECFA</B><TT>MOO</TT> the are 2 ways to deal with cgi queries. Either you
+deal within the <code>:http_request</code> verb with a query or you
+use un URL like:
+<PRE>             http://tecfa.unige.ch:7778/cgi/object</PRE>
+We shall first consider this latter case which will not
+work on other <B>E</B><TT>_Web</TT> MOOs than <B>TECFA</B><TT>MOO</TT>.
+<P>
+Here are two examples of of a typical ``/cgi'' URL.
+<P>
+<SMALL CLASS=SMALL><PRE>&lt;FORM METHOD=&quot;POST&quot; ACTION=&quot;http://tecfa.unige.ch:7778/cgi/&amp;e_thing&quot;&gt;
+                       or
+&lt;FORM METHOD=&quot;POST&quot; ACTION=&quot;http://tecfa.unige.ch:7778/cgi/4026&quot;&gt;</PRE></SMALL>
+<P>
+In order to deal with a query you need to produce one. Here you will
+learn how to do it with an html form and the POST method.
+You don't need to produce this form with <B>E</B><TT>_Web</TT>, you can deal
+with cgi queries from any web page (sitting on an ordinary web server),
+as shown
+<A NAME="tex2html185" HREF="http://tecfa.unige.ch/tecfa/tecfa-teaching/staf14/files/moo-form.html">here</A> for example.
+Ususally if you use ``canned'' forms, i.e. forms that don't change its contents, it
+is faster to serve them from your standard www server.
+<P>
+Now let's look at a simple example.
+It queries two strings from a user and then
+gives some feedback.
+You can have a 
+<A NAME="tex2html186" HREF="http://tecfa.unige.ch:7778/4848">look at it</A>
+before you move on.
+<P>
+When you create the form with <B>E</B><TT>_Web</TT>,
+you have the choice between creating the form dynamically or
+using a canned form. 
+In our example, the form is simply inserted in the .htext property
+whose contents will be inserted automatically into the web page by
+objects like the
+<A NAME="tex2html187" HREF="http://tecfa.unige.ch:7778/objbrowse/4152">Generic E_WEBbed thing</A> as explained in section
+<A HREF="node91.html#secwebytutorial0">8.6</A> above. Note that if you want to change the looks
+of the generated page you will have to modify the
+<code>http_request</code> verb (e.g. by copying it from the parent).
+<P>
+So, we first create an object:
+<PRE>         @create &amp;e_thing named Hello CGI example, helloex</PRE>
+<P>
+Next, we add a form into the <code>.htext</code> property:
+<PRE>@set-note-text #4848.htext
+&lt;FORM METHOD=&quot;POST&quot; ACTION=&quot;http://tecfa.unige.ch:7778/cgi/4848&quot;&gt;
+&lt;CENTER&gt;&lt;H1&gt;Simple Hello Example&lt;/H1&gt;&lt;/CENTER&gt;
+&lt;br&gt;
+What is your name:
+&lt;input type=&quot;text&quot; size=20 name=name&gt;&lt;br&gt;
+
+Your age:
+&lt;input type=&quot;radio&quot; name=age value=&quot;young&quot; checked&gt; &amp;lt; 30
+&lt;input type=&quot;radio&quot; name=age value=&quot;old&quot;&gt; &amp;gt; 30
+&lt;p&gt;
+Input something please:&lt;br&gt;
+&lt;input type=&quot;text&quot; name=string size=60&gt;&lt;br&gt;
+
+&lt;HR width=250&gt;&lt;BR&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Alors / Let's see !?!&quot;&gt;
+&lt;/FORM&gt;
+.</PRE>
+Note that we post the forms content to the same object (which is #4848
+here).
+<P>
+Now to compute the form input,
+all you need to program is a verb called <code>cgi_query</code> on the
+object addressed by the /cgi/ URL. (Note that the object serving the form
+and computing the query is the same here, but this does not need to be
+the case).
+<UL>
+<LI> This verb will receive the cgi query-string in one argument.
+<LI> It must return a list of html strings (like the <code>http_request</code> verb)containing the feedback to the user.
+</UL>
+In order to generate interesting html it is a good idea to learn
+how to use the verbs in the
+<A NAME="tex2html188" HREF="http://tecfa.unige.ch:7778/objbrowse/$ehtml_utils">$ehtml_utils</A>.
+All the rest is taken care off by the server.
+<P>
+Here is the
+<A NAME="tex2html189" HREF="http://tecfa.unige.ch:7778/code/4848:cgi_query">code of the cgi_query</A> verb:
+<P>
+<PRE>@program #4848:cgi_query   this none this
+ 1:  &quot;This script will process a query from http://tecfa.unige.ch:7778/4848&quot;;
+ 2:  &quot;e.g. return some simple feedback&quot;;
+ 3:  //
+ 4:  query_string = args[1];
+ 5:  //
+ 6:  //            BUILD TITLE OF THE PAGE
+ 7:  //
+ 8:  title = &quot;Query results&quot;;
+ 9:  result = {$ehtml_utils:title(title), $ehtml_utils:h1(title)};
+10:  //
+11:  //            COMPUTE FORM (query string) and build USER FEEDBACK
+12:  //
+13:  age = $ehtml_utils:form_urldecode_value(&quot;age&quot;, query_string);
+14:  name = $ehtml_utils:form_urldecode_value(&quot;name&quot;, query_string);
+15:  string = $ehtml_utils:form_urldecode_value(&quot;string&quot;, query_string);
+16:  result = {@result, &quot;Bonjour/Hello &quot;, age, &quot; &quot;, name, &quot;. &quot;, $ehtml_utils:p()};
+17:  result = {@result, &quot;You said: &quot;, $ehtml_utils:b(string), &quot;&lt;p&gt;&lt;hr&gt;&quot;};
+18:  result = {@result, &quot;Just for your info: the query string was: &quot;, query_string};
+19:  //
+20:  //            RETURN RESULTS
+21:  //
+22:  return {@result};</PRE>
+<P>
+Let's first see how we decode the query string:
+The <code>query_string</code> is the first argument handed to the verb.
+In order to make the code more understandable we put it into
+the <code>query_string</code> variable on line 3.
+In the
+<A NAME="tex2html190" HREF="http://tecfa.unige.ch:7778/objbrowse/$ehtml_utils">$e_html_utils</A>
+we have a <code>form_url_decode_value</code> verb that will give us the
+value for a given html tag name. Look at lines 13 to 15.
+<P>
+Once we have stored away the information we want in some variables,
+we can compute them. In our case we simply print them back.
+I.e. in lines 16 and 17 we add their contents to the result
+that will be returned by this function.
+Just FYI we also output the raw query string in line 18.
+<P>
+Not let's look at a more complex example
+of a ``canned'' form (in french) served
+by <B>E</B><TT>_Web</TT>. <A NAME="tex2html191" HREF="http://tecfa.unige.ch:7778/4198/">Try it out first!</A>!
+It will compute the maintenance cost of a car according to several
+critera, and also store the information (each query) on some object.
+Look at the code and try to understand it (yes I know, explanations
+are under construction):
+<P>
+<SMALL CLASS=SMALL><PRE>@program #4198:cgi_query   this none this
+ 1:  &quot;This script will get a query from http://tecfa.unige.ch:7778/cgi/4198&quot;;
+ 2:  &quot;do some computation on the data, keep the data, and report results&quot;;
+ 3:  &quot;NOTE that you should make verbs and writable properties unreadable&quot;;
+ 4:  &quot;if you wish to have some security.&quot;;
+ 5:  hu = $ehtml_utils;
+ 6:  query_string = args[1];
+ 7:  flag = hu:form_urldecode_value(&quot;summary&quot;, query_string) == &quot;on&quot; ? 1 | 0;
+ 8:  //
+ 9:  //            BUILD TITLE OF THE PAGE
+10:  //
+11:  title = &quot;R&amp;eacute;sultats du calcul&quot;;
+12:  result = {hu:title(title), hu:h1(title)};
+13:  if (!flag)
+14:    //
+15:    //            COMPUTE FORM (query string) and build USER FEEDBACK
+16:    //            (only if summary == &quot;off&quot;)
+17:    //
+18:    nom = hu:form_urldecode_value(&quot;nom&quot;, query_string);
+19:    result = {@result, &quot;Bonjour/Hello &quot;, nom, &quot;. &quot;, hu:p()};
+20:    assurance = hu:form_urldecode_num_value(&quot;assurance&quot;, query_string);
+21:    accidents = hu:form_urldecode_num_value(&quot;accidents&quot;, query_string);
+22:    consokilo = hu:form_urldecode_num_value(&quot;consokilo&quot;, query_string);
+23:    prixcarbu = hu:form_urldecode_num_value(&quot;prixcarbu&quot;, query_string);
+24:    kilomois = hu:form_urldecode_num_value(&quot;kilomois&quot;, query_string);
+25:    vignette = hu:form_urldecode_num_value(&quot;vignette&quot;, query_string);
+26:    tcs = hu:form_urldecode_num_value(&quot;tcs&quot;, query_string);
+27:    autoroutes = hu:form_urldecode_num_value(&quot;autoroutes&quot;, query_string);
+28:    entretien = hu:form_urldecode_num_value(&quot;entretien&quot;, query_string);
+29:    amendes = hu:form_urldecode_num_value(&quot;amendes&quot;, query_string);
+30:    // Attention aux floating point numbers ici !
+31:    cost = floor((accidents + assurance + consokilo / 100.0 * kilomois * prixcarbu * 12.0 + vignette + tcs + autoroutes + entretien + amendes) / 12.0);
+32:    result = {@result, &quot;Votre bagnole vous coutera environ &quot;, cost, &quot; francs par mois / Your car costs about &quot;, cost, &quot; Swiss francs/month.&lt;br&gt;&quot;};
+33:    if (cost &lt; 400.0)
+34:      evaluation = &quot;Vous en sortez bien / This is fine&quot;;
+35:    else
+36:      evaluation = &quot;Vous ne vous en sortez pas bien, pensez aux transports communs / You pay quite a lot!&quot;;
+37:    endif
+38:    result = {@result, hu:b(evaluation)};
+39:    //
+40:    //                      REGISTER DATA
+41:    //
+42:    this.data_size = this.data_size + 1;
+43:    date = $time_utils:ddmmyy(time());
+44:    time = $time_utils:hms(time());
+45:    this.all_data = {@this.all_data, {this.data_size, nom, assurance, accidents, consokilo, prixcarbu, kilomois, vignette, tcs, autoroutes, entretien, amendes, cost, date, time}};
+46:  endif
+47:  //
+48:  //                       COMPUTE GLOBAL RESULTS
+49:  //
+50:  totresult = {hu:h2(&quot;Ensemble des requetes&quot;)};
+51:  table = hu:table_header({&quot;no&quot;, &quot;nom&quot;, &quot;assu-&lt;br&gt;rance&quot;, &quot;accidents&quot;, &quot;conskilo&quot;, &quot;prix&lt;br&gt;carbu&quot;, &quot;kilomois&quot;, &quot;vignette&quot;, &quot;tcs&quot;, &quot;auto-&lt;br&gt;routes&quot;, &quot;entretien&quot;, &quot;amendes&quot;, &quot;cost&quot;, &quot;date&quot;, &quot;time&quot;});
+52:  means = $list_utils:make(11, 0.0);
+53:  for line in (this.all_data)
+54:    table = {@table, hu:table_row(line)};
+55:    &quot; ---- do some statistics at the same time&quot;;
+56:    for element in [1..length(line) - 4]
+57:      means[element] = means[element] + line[element + 2];
+58:    endfor
+59:  endfor
+60:  for el in [1..length(means)]
+61:    means[el] = floatstr(means[el] / tofloat(this.data_size), 1);
+62:  endfor
+63:  table = {@table, hu:table_row({&quot;&quot;, &quot;Moyenne&quot;, @means})};
+64:  table = hu:table(table, 1);
+65:  totresult = {@totresult, @table};
+66:  //
+67:  //                       INFORMATION ON CGI QUERY STRING
+68:  //
+69:  info = hu:form_urldecode_all(query_string);
+70:  debug = {};
+71:  debug = {@debug, hu:hr(3, 500), hu:h2(&quot;Pour information&quot;)};
+72:  debug = {@debug, &quot;Your query to &quot;, this.name, &quot; &lt;&quot;, &amp;object_browser:object_anchor(this), &quot;&gt; &quot;, &quot;contained the following:&lt;P&gt;&quot;};
+73:  debug = {@debug, &quot;Query string was =&quot;, query_string, &quot;&lt;hr&gt;'$ehtml_utils:form_urldecode_all' returned: &lt;br&gt;{&quot;};
+74:  for x in (info)
+75:    debug = {@debug, tostr(&quot;{&quot;, x[1], length(x) &gt; 1 ? tostr(&quot; , &quot;, x[2]) | &quot;&quot;, &quot;},&quot;)};
+76:  endfor
+77:  debug = {@debug, &quot;}&quot;, &quot;&lt;hr&gt;&quot;, &quot;See: &quot;, &amp;object_browser:object_anchor($ehtml_utils), &quot;&lt;hr&gt;&quot;};
+78:  //debug = {@debug, $cgi:(&quot;html_test-cgi&quot;)()};
+79:  //
+80:  //                      RETURN THE RESULTS
+81:  //
+82:  return {@result, @totresult, @debug};
+83:  /* Last edited on Wed Jan 15 17:05:44 1997 GMT+1 by Kaspar (#85). */</PRE></SMALL>
+<P>
+<HR><A NAME="tex2html1948" HREF="node97.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1946" HREF="node95.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1940" HREF="node95.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1950" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1951" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html1949" HREF="node97.html">Dealing with cgi via </A>
+<B>Up:</B> <A NAME="tex2html1947" HREF="node95.html">8.8 [TECFAMOO] ``E_WEB'' Tutorial</A>
+<B> Previous:</B> <A NAME="tex2html1941" HREF="node95.html">8.8 [TECFAMOO] ``E_WEB'' Tutorial</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

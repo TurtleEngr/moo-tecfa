@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>The @find verb</TITLE>
+<META NAME="description" CONTENT="The @find verb">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="http://tecfa.unige.ch/moo/book2/tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html1" HREF="http://tecfa.unige.ch/"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/gif/icon-tecfa-unit-small.gif"  > </A> <A NAME="tex2html2959" HREF="node192.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2957" HREF="node190.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2953" HREF="node190.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2961" HREF="http://tecfa.unige.ch/moo/book2/node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <BR>
+<B> Next:</B> <A NAME="tex2html2960" HREF="node192.html">Verb calling sequences</A>
+<B>Up:</B> <A NAME="tex2html2958" HREF="node190.html">Finding things</A>
+<B> Previous:</B> <A NAME="tex2html2954" HREF="node190.html">Finding things</A>
+<BR> <P>
+<H4><A NAME="SECTION05141010000000000000">The @find verb</A></H4>
+<P>
+@find is not a standard MOO server (or Lambda MOO db) verb, however
+it should be available on most MOOs. Ask around, maybe there is
+another verb that does the ``trick''.
+<P>
+<PRE>'@find #&lt;object&gt;', '@find &lt;player&gt;', '@find :&lt;verb&gt;' '@find .&lt;property&gt;'</PRE>
+<P>
+Attempts to locate things. Verbs and properties are found on any object in the player's vicinity, and some other places.
+<P>
+E.g. @find ``player name'' will identify a player and his location:
+<P>
+<PRE> &gt;@find Daniel
+ Daniel (#111) is at Daniel's Office (#139).
+
+ &gt;@find :@find
+ The verb :@find is on   Kaspar(#85)--Frand's Player Class(#130)   Daniel(#111)
+ --Frand's Player Class(#130)
+
+ &gt;@find :kiss
+ The verb :kiss is on   Not a Silly Social FO(#248)   AMCSA(#1371)</PRE>
+<P>
+(... more to come, include programmer's FO that float around)
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Wed Oct 23 21:55:28 MET DST 1996</I>
+</ADDRESS>
+</BODY>
+</HTML>

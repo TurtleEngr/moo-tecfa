@@ -1,0 +1,4227 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 5.0, for use with Frame 5.0 products
+% This ps_prolog file is Copyright (c) 1986-1995 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameMaker/SGML and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% FrameMaker users specify the proper paper size for each print job in the
+% "Print" dialog's "Printer Paper Size" "Width" and "Height~ fields.  If the
+% printer that the PS file is sent to does not support the requested paper
+% size, or if there is no paper tray of the proper size currently installed, 
+% then the job will not be printed.  The following flag, if set to true, will
+% cause the job to print on the default paper in such cases.
+/FMAllowPaperSizeMismatch            false def
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to true, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% The following is a set of predefined optimal frequencies and angles for various
+% common dpi settings. This is taken from "Advances in Color Separation Using
+% PostScript Software Technology," from Adobe Systems (3/13/89 P.N. LPS 0043)
+% and corrolated with information which is in various PPD (4.0) files.
+%
+% The "dpiranges" figure is the minimum dots per inch device resolution which
+% can support this setting. The "low" and "high" values are controlled by the
+% setting of the FMUseHighFrequencyScreens flag above. The "TDot" flags control
+% the use of the "Yellow Triple Dot" feature whereby the frequency id divided by
+% three, but the dot function is "trippled" giving a block of 3x3 dots per cell.
+%
+% PatFreq is a compromise pattern frequency for ps Level 2 printers which is close
+% to the ideal WYSIWYG pattern frequency of 9 repetitions/inch but does not beat
+% (too badly) against the screen frequencies of any separations for that DPI.
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (5.0) def 
+/fMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	fMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto show
+	72 220 moveto show
+	FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!  Check installation;)
+		(also check ~/fminit and ./fminit for old versions) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(Adobe's PostScript Language Reference Manual, 2nd Edition, section H.2.4)
+	(says your EPS file is not valid, as it calls X              )
+	dup dup (X) search pop exch pop exch pop length 
+	5 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/fmConcatProcs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin [
+	/ALDsave
+	/FMdicttop
+	/FMoptop
+	/FMpointsize
+	/FMsaveobject
+	/b
+	/bitmapsave
+	/blut
+	/bpside
+	/bs
+	/bstring
+	/bwidth
+	/c
+	/cf
+	/cs
+	/cynu
+	/depth
+	/edown
+	/fh
+	/fillvals
+	/fw
+	/fx
+	/fy
+	/g
+	/gfile
+	/gindex
+	/grnt
+	/gryt
+	/gstring
+	/height
+	/hh
+	/i
+	/im
+	/indx
+	/is
+	/k
+	/kk
+	/landscape
+	/lb
+	/len
+	/llx
+	/lly
+	/m
+	/magu
+	/manualfeed
+	/n
+	/offbits
+	/onbits
+	/organgle
+	/orgbangle
+	/orgbfreq
+	/orgbproc
+	/orgbxfer
+	/orgfreq
+	/orggangle
+	/orggfreq
+	/orggproc
+	/orggxfer
+	/orgmatrix
+	/orgproc
+	/orgrangle
+	/orgrfreq
+	/orgrproc
+	/orgrxfer
+	/orgxfer
+	/pagesave
+	/paperheight
+	/papersizedict
+	/paperwidth
+	/pos
+	/pwid
+	/r
+	/rad
+	/redt
+	/sl
+	/str
+	/tran
+	/u
+	/urx
+	/ury
+	/val
+	/width
+	/width
+	/ws
+	/ww
+	/x
+	/x1
+	/x2
+	/xindex
+	/xpoint
+	/xscale
+	/xx
+	/y
+	/y1
+	/y2
+	/yelu
+	/yindex
+	/ypoint
+	/yscale
+	/yy
+] { 0 def } forall
+/FmBD {bind def} bind def
+systemdict /pdfmark known {
+	/fMAcrobat true def
+	
+	/FmPD /pdfmark load def
+	
+	
+	/FmPT /show load def
+	
+	
+	currentdistillerparams /CoreDistVersion get 2000 ge {
+	
+		
+		/FmPD2 /pdfmark load def
+		
+		
+		
+		
+		
+		/FmPA { mark exch /Dest exch 5 3 roll 
+				/View [ /XYZ null 6 -2 roll FmDC exch pop null] /DEST FmPD 
+		}FmBD
+	} {
+		
+		/FmPD2 /cleartomark load def
+		/FmPA {pop pop pop}FmBD
+	} ifelse
+} {
+	
+	/fMAcrobat false def
+	/FmPD /cleartomark load def
+	/FmPD2 /cleartomark load def
+	/FmPT /pop load def
+	/FmPA {pop pop pop}FmBD
+} ifelse
+/FmDC {
+	transform fMDefaultMatrix itransform cvi exch cvi exch
+}FmBD
+/FmBx {
+	dup 3 index lt {3 1 roll exch} if 
+	1 index 4 index lt {4 -1 roll 3 1 roll exch 4 1 roll} if
+}FmBD
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/fMNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		RealSetrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+fMLevel1 { 
+	
+	
+	
+	/patScreenDict 7 dict dup begin
+		<0f1e3c78f0e1c387> [ 45  { pop } {exch pop} 		.5   2 sqrt] FmBD
+		<0f87c3e1f0783c1e> [ 135 { pop } {exch pop}			.5   2 sqrt] FmBD
+		<cccccccccccccccc> [ 0   { pop } dup				.5   2	   ] FmBD
+		<ffff0000ffff0000> [ 90  { pop } dup				.5   2	   ] FmBD
+		<8142241818244281> [ 45  { 2 copy lt {exch} if pop}	dup .75  2 sqrt] FmBD
+		<03060c183060c081> [ 45  { pop } {exch pop}			.875 2 sqrt] FmBD
+		<8040201008040201> [ 135 { pop } {exch pop}			.875 2 sqrt] FmBD
+	end def
+} { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} ifelse
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				fMAcrobat not FMPColor graymode and and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not fMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/fMDefaultMatrix matrix defaultmatrix def
+/fMatrix2 matrix def
+/dpi    72 0 fMDefaultMatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 fMDefaultMatrix dtransform exch atan def
+	sangle fMatrix2 rotate 
+	fMDefaultMatrix fMatrix2 concatmatrix 
+	dup 0 get /sflipx exch def
+	    3 get /sflipy exch def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	fMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /fMNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	fMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{papersizefailure} if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{2 dict
+		 dup /PageSize [paperwidth paperheight] put
+		 manualfeed {dup /ManualFeed manualfeed put} if
+		 {setpagedevice} stopped {papersizefailure} if
+		}
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			fMNegative {
+				1 1 4 { 
+					pop { 1 exch sub } fmConcatProcs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		fMNegative {
+			{ 1 exch sub } fmConcatProcs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/papersizefailure {
+	FMAllowPaperSizeMismatch not
+		{
+(The requested paper size is not available in any currently-installed tray)
+(Edit the PS file to "FMAllowPaperSizeMismatch true" to use default tray)
+		 FMFAILURE } if
+	} def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYK } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYKGRAY } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+fMLevel1 {
+	/fmGetFlip {
+		fMatrix2 exch get mul 0 lt { -1 } { 1 } ifelse
+	} FmBD
+} if
+/setPatternMode {
+	fMLevel1 {
+		2 index patScreenDict exch known {
+			pop pop
+			patScreenDict exch get aload pop 
+			freq 								
+			mul									
+			5 2 roll							
+			fMatrix2 currentmatrix 1 get 0 ne {
+				3 -1 roll 90 add 3 1 roll 		
+				sflipx 1 fmGetFlip sflipy 2 fmGetFlip neg mul
+			} {  								
+				sflipx 0 fmGetFlip sflipy 3 fmGetFlip mul 
+			} ifelse
+			0 lt {exch pop} {pop} ifelse 		
+			fMNegative { 
+				{neg} fmConcatProcs 			
+			} if
+			bind
+			
+			
+			
+			systemdict /setscreen get exec		
+			/FrameCurGray exch def
+		} {
+			/bwidth  exch def
+			/bpside  exch def
+			/bstring exch def
+			/onbits 0 def  /offbits 0 def
+			freq sangle landscape {90 add} if 
+				{/ypoint exch def
+				 /xpoint exch def
+				 /xindex xpoint 1 add 2 div bpside mul cvi def
+				 /yindex ypoint 1 add 2 div bpside mul cvi def
+				 bstring yindex bwidth mul xindex 8 idiv add get
+				 1 7 xindex 8 mod sub bitshift and 0 ne fMNegative {not} if
+				 {/onbits  onbits  1 add def 1}
+				 {/offbits offbits 1 add def 0}
+				 ifelse
+				}
+				setscreen
+			offbits offbits onbits add div fMNegative {1.0 exch sub} if
+			/FrameCurGray exch def
+		} ifelse
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		fMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode fMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode fMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/rip4 { 
+	   
+	  
+	  kis cis copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  cis mis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  mis yis copy pop 
+	  dup dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  yis kis copy pop 
+	  3 mul is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+/wbytes { 
+      dup dup
+      8 gt { pop 8 idiv mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	cvtProc                
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def 
+	cvtProc              
+	/is width depth wbytes string def
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+fMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/kk cynu magu min yelu min def
+		/u kk currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 kk currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch fmConcatProcs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def
+	fMLevel1 {	
+		colorsetup
+		/is width depth wbytes string def
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is width depth wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	fMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {ip} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/depth 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip pop ris} {gis} {bis} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCMYKc { 
+	/depth 32 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip4 pop cis} {mis} {yis} {kis} true 4 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYK { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /mis width string def
+        /yis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf mis readhexstring pop } 
+        { cf yis readhexstring pop } 
+        { cf kis readhexstring pop } 
+        true 4 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/depth 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop ris gis bis width gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAYc { 
+	/depth 32 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop cis mis yis kis width cgray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/cgray { 
+        /ww exch def
+        /k exch def
+        /y exch def
+        /m exch def
+        /c exch def
+        0 1 ww 1 sub { /i exch def c i get m i get y i get k i get CMYKtoRGB
+				.144 mul 3 1 roll .587 mul 3 1 roll .299 mul add add
+				c i 3 -1 roll floor cvi put } for
+        c
+ 		} bind def
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop width gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /yis width string def
+        /mis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf mis readhexstring pop 
+          cf yis readhexstring pop 
+          cf kis readhexstring pop width cgray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(5.0) FMVERSION
+1 1 0 0 612 792 0 1 6 FMDOCUMENT
+0 0 /Times-Roman FMFONTDEFINE
+1 0 /Helvetica-Bold FMFONTDEFINE
+2 0 /Times-Bold FMFONTDEFINE
+3 0 /Times-Italic FMFONTDEFINE
+4 0 /Helvetica-BoldOblique FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "8" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0.5 0.5 0 0.5 0 0 0.5]
+[ 0.5 0 0 0.5 0 0.5 0.5]
+[ 0.5 0 0.5 0.5 0 0.5 0]
+[ 0 0.5 0 0.5 0.5 0 0.5]
+[ 0 0.5 0.5 0.5 0.5 0 0]
+[ 0 0 0.5 0.5 0.5 0.5 0]
+[ 0 0 0 0.5 0.5 0.5 0.5]
+[ 0 0 0 0.25 0.75 0.75 0.75]
+[ 0 0 0 0 1 1 1]
+[ 0 0 0 1 0 0 0]
+[ 0.5 0 0.5 0.5 0 0.5 0]
+[ 0 0 0.5 0.5 0.5 0.5 0]
+[ 0.5 0.5 0 0.5 0 0 0.5]
+[ 0 0.5 0 0.5 0.5 0 0.5]
+[ 0.5 0 0 0.5 0 0.5 0.5]
+[ 0 0 0 0.5 0.5 0.5 0.5]
+[ 0 0 0 0.25 0.75 0.75 0.75]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 0 0 1 0 1 1 0]
+[ 1 1 0 0 0 0 1]
+[ 0 1 0 0 1 0 1]
+[ 1 0 0 0 0 1 1]
+ 30 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(8) 79.22 25.78 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The experiment is aimed at studying interaction in the MOO. You) 79.22 727.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(will be asked to play a fun game where you could show your talent in) 79.22 715.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(collaboratively solving a murder mystery -- discovering crucial) 79.22 703.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(details and a solving difficult problem with a partner detective.) 79.22 691.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Whoever is interested in playing the game with us, please send an) 79.22 667.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(email messagge to Ligorio@fapse.unige.ch with a subject line "Call for) 79.22 655.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Subjects", and we will set up a time and partner and give you) 79.22 643.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(instructions. Alternatively, you can connect to TECFAMOO) 79.22 631.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\050tecfamoo.unige.ch 7777\051 as guest, and contact or send moo mail to kalimero) 79.22 619.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\050#2460\051.) 79.22 607.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "8" 1
+%%Page: "7" 2
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0.5 0.5 0 0.5 0 0 0.5]
+[ 0.5 0 0 0.5 0 0.5 0.5]
+[ 0.5 0 0.5 0.5 0 0.5 0]
+[ 0 0.5 0 0.5 0.5 0 0.5]
+[ 0 0.5 0.5 0.5 0.5 0 0]
+[ 0 0 0.5 0.5 0.5 0.5 0]
+[ 0 0 0 0.5 0.5 0.5 0.5]
+[ 0 0 0 0.25 0.75 0.75 0.75]
+[ 0 0 0 0 1 1 1]
+[ 0 0 0 1 0 0 0]
+[ 0.5 0 0.5 0.5 0 0.5 0]
+[ 0 0 0.5 0.5 0.5 0.5 0]
+[ 0.5 0.5 0 0.5 0 0 0.5]
+[ 0 0.5 0 0.5 0.5 0 0.5]
+[ 0.5 0 0 0.5 0 0.5 0.5]
+[ 0 0 0 0.5 0.5 0.5 0.5]
+[ 0 0 0 0.25 0.75 0.75 0.75]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 0 0 1 0 1 1 0]
+[ 1 1 0 0 0 0 1]
+[ 0 1 0 0 1 0 1]
+[ 1 0 0 0 0 1 1]
+ 30 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(7) 79.22 25.78 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 14 Q
+(APPENDIX B: Q) 79.22 721.77 T
+(UESTIONNAIRE) 184.1 721.77 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+0.21 (At the end of the experiment, before to leave the MOO session, the subject will be requested to answer to) 79.22 684.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the following questionnaire:) 79.22 672.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(1\051 Where did you read the \253) 79.22 624.43 T
+(Call for Subjects) 192.24 624.43 T
+(\273?) 261.96 624.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(______________________________________________________) 79.22 612.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(2\051 In which MOOS did you already play?) 79.22 576.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(a\051________________ b\051________________ c\051________________ d\051________________) 79.22 564.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3\051 For statistical reasons we would like to know some of your personal data.) 79.22 528.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Age _______   Gender   F___  M___) 79.22 516.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(4\051 Could you please give an estimation of the level of difficulty of the game?) 79.22 480.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(From 1 \050very eays\051 to 7 \050very difficult\051) 79.22 468.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(5\051 Please, give an estimation of how much your partner has been collaborating with you?) 79.22 432.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(From 1 \050not at all\051 to 7 \050very much\051) 79.22 408.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(6\051 Please, give an estimation of how much your PARTNER has been competitive?) 79.22 384.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(From 1 \050not at all\051 to 7 \050very much\051) 79.22 360.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(7\051 Could you say, approsimatively, how much was YOUR contribute to the solution of the task?) 79.22 336.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(From 1 \050not at all\051 to 7 \050very much\051) 79.22 312.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.03 (8\051 Could you say, approsimatively, how much was the contribute of your PARTNER to the solution of the) 79.22 288.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(task?) 79.22 276.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(From 1 \050not at all\051 to 7 \050very much\051) 79.22 252.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(9\051 How much do you think was YOUR competence in this task?) 79.22 228.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(From 1 \050not at all\051 to 7 \050very much\051) 79.22 204.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(10\051 How much do you think your PARTNER was competente in this task?) 79.22 180.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(From 1 \050not at all\051 to 7 \050very much\051) 79.22 156.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 14 Q
+(APPENDIX C: CALL FOR SUBJECTS) 79.22 126.77 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+(The Psychology and Science of Education Faculty at the University of) 79.22 89.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Geneva is looking for 18-30 years old graduate and undergraduate) 79.22 77.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(students in any discipline to participate in a ~40-minute experiment) 79.22 65.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(on a MOO.) 79.22 53.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "7" 2
+%%Page: "6" 3
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0.5 0.5 0 0.5 0 0 0.5]
+[ 0.5 0 0 0.5 0 0.5 0.5]
+[ 0.5 0 0.5 0.5 0 0.5 0]
+[ 0 0.5 0 0.5 0.5 0 0.5]
+[ 0 0.5 0.5 0.5 0.5 0 0]
+[ 0 0 0.5 0.5 0.5 0.5 0]
+[ 0 0 0 0.5 0.5 0.5 0.5]
+[ 0 0 0 0.25 0.75 0.75 0.75]
+[ 0 0 0 0 1 1 1]
+[ 0 0 0 1 0 0 0]
+[ 0.5 0 0.5 0.5 0 0.5 0]
+[ 0 0 0.5 0.5 0.5 0.5 0]
+[ 0.5 0.5 0 0.5 0 0 0.5]
+[ 0 0.5 0 0.5 0.5 0 0.5]
+[ 0.5 0 0 0.5 0 0.5 0.5]
+[ 0 0 0 0.5 0.5 0.5 0.5]
+[ 0 0 0 0.25 0.75 0.75 0.75]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 0 0 1 0 1 1 0]
+[ 1 1 0 0 0 0 1]
+[ 0 1 0 0 1 0 1]
+[ 1 0 0 0 0 1 1]
+ 30 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(6) 79.22 25.78 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(-- Will be misured when the subject contact again the confederated ---) 224.27 739.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(b\051 - The subject doesn\325t take any initiative and let the confederare make decision! In this case) 121.78 715.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.14 (the) 121.78 703.43 P
+2 F
+0.14 (Confederate) 136.64 703.43 P
+0 F
+0.14 (will check for alibis \050talk to Rolf Loretan and/or to Lisa Jones\051 IF this has) 192.04 703.43 P
+0.14 (not) 491.7 703.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(already done in the previouse phase and IF the subject is going something else OR check) 79.22 691.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.26 (the painting and) 437.51 691.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the insurance.) 79.22 679.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( Then the question a1\051 will be asked.) 79.22 655.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(--------------------------------------after 35 minutes \050more o less\051 ------------------------------------) 79.22 631.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(*  Collaborative Work.) 79.22 607.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-0.37 (Confederate) 79.22 595.43 P
+0 F
+-0.37 ( asks the subject again about the notes if any declaration has been made already by the subject.) 131.99 595.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The) 79.22 583.43 T
+2 F
+(Confederate) 97.28 583.43 T
+0 F
+( asks:) 150.04 583.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(\253) 79.22 559.43 T
+(How about the notes?) 85.06 559.43 T
+(\273) 175.05 559.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(3 possible answers are possible:) 79.22 535.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(b1\051 The subject looks up the confederated notes.) 199.73 523.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(In this case the) 199.73 511.43 T
+2 F
+(Confederate) 261.93 511.43 T
+0 F
+(will ask:) 317.2 511.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(\253) 263.52 499.43 T
+(Can I look at) 269.36 499.43 T
+(your) 326.86 499.43 T
+(notes) 347.68 499.43 T
+0 F
+(?) 368.8 499.43 T
+(\273) 375.73 499.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(b2\051 The subject looks up his own notes.) 199.73 475.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(In this case the) 199.73 463.43 T
+2 F
+(Confederate) 261.93 463.43 T
+0 F
+( doesn\325t do anything) 314.7 463.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(b3\051 The subject doesn\325t want to use the notes.) 199.73 439.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(In this case the) 199.73 427.43 T
+2 F
+(Confederate) 261.93 427.43 T
+0 F
+( doesn\325t do anything) 314.7 427.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(------------------------------------------ after 40 minutes -------------------------------------------------) 79.22 403.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Researcher) 79.22 379.43 T
+0 F
+( says:) 127.54 379.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(\253) 79.22 367.43 T
+(40 minutes are over! Please tell  me who do you think is guilty and why?) 85.06 367.43 T
+(\273) 378.36 367.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "6" 3
+%%Page: "5" 4
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0.5 0.5 0 0.5 0 0 0.5]
+[ 0.5 0 0 0.5 0 0.5 0.5]
+[ 0.5 0 0.5 0.5 0 0.5 0]
+[ 0 0.5 0 0.5 0.5 0 0.5]
+[ 0 0.5 0.5 0.5 0.5 0 0]
+[ 0 0 0.5 0.5 0.5 0.5 0]
+[ 0 0 0 0.5 0.5 0.5 0.5]
+[ 0 0 0 0.25 0.75 0.75 0.75]
+[ 0 0 0 0 1 1 1]
+[ 0 0 0 1 0 0 0]
+[ 0.5 0 0.5 0.5 0 0.5 0]
+[ 0 0 0.5 0.5 0.5 0.5 0]
+[ 0.5 0.5 0 0.5 0 0 0.5]
+[ 0 0.5 0 0.5 0.5 0 0.5]
+[ 0.5 0 0 0.5 0 0.5 0.5]
+[ 0 0 0 0.5 0.5 0.5 0.5]
+[ 0 0 0 0.25 0.75 0.75 0.75]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 0 0 1 0 1 1 0]
+[ 1 1 0 0 0 0 1]
+[ 0 1 0 0 1 0 1]
+[ 1 0 0 0 0 1 1]
+ 30 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(5) 79.22 25.78 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Then the question a1\051 will be asked.) 79.22 727.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(------------after 25 minutes \050more o less\051 ---------------) 182.74 703.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(*  Collaborative Work.) 79.22 679.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.26 (The) 79.22 667.43 P
+2 F
+0.26 ( Confederate) 94.78 667.43 P
+0 F
+0.26 ( asks the subject again about the notes if any decision about procedures is already taken) 150.3 667.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(by the subject. The) 79.22 655.43 T
+2 F
+(Confederate) 157.82 655.43 T
+0 F
+(asks:) 213.09 655.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(\253) 79.22 643.43 T
+(What do we want to do with the notes) 85.06 643.43 T
+(now?) 237.57 643.43 T
+(\273) 261.73 643.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(3 possible answers are possible:) 150.12 619.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(b1\051 The subject looks up the confederated notes.) 199.73 607.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(In this case the) 199.73 595.43 T
+2 F
+(Confederate) 261.93 595.43 T
+0 F
+(will ask:) 317.2 595.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(\253) 263.52 583.43 T
+(Can I look at) 269.36 583.43 T
+(your) 326.86 583.43 T
+(notes) 347.68 583.43 T
+0 F
+(?) 368.8 583.43 T
+(\273) 375.73 583.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(b2\051 The subject looks up his own notes.) 199.73 559.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(In this case the) 199.73 547.43 T
+2 F
+(Confederate) 261.93 547.43 T
+0 F
+( doesn\325t do anything) 314.7 547.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(b3\051 The subject doesn\325t want to use the notes.) 199.73 523.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(In this case the) 199.73 511.43 T
+2 F
+(Confederate) 261.93 511.43 T
+0 F
+( doesn\325t do anything) 314.7 511.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(_______________________________________________________________________________) 79.22 499.43 T
+0 0 0 1 0 0 0 K
+4 F
+(Conlict Phase) 79.22 484.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(The) 79.22 448.43 T
+2 F
+(researcher) 97.28 448.43 T
+0 F
+( asks the subject to give a first personal guess about who killed Mona Lisa.) 142.8 448.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The researcher says:) 79.22 436.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(\253) 79.22 424.43 T
+(Sorry, to interrupt you, but I need your first personal guess. Who do you think killed Mona Lisa?) 85.06 424.43 T
+(\273) 474.77 424.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(When the subject answers, the) 79.22 400.43 T
+2 F
+(researcher) 203.09 400.43 T
+0 F
+( says:) 248.62 400.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+0.71 (\253) 79.22 388.43 P
+0.71 (Thank you for your guess. Your partner thinks is ........ Now please, go ahead because time is going to) 85.06 388.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(finish!) 79.22 376.43 T
+(\273) 107.29 376.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(__________________________________________________________________________________) 79.22 364.43 T
+0 0 0 1 0 0 0 K
+4 F
+(Interaction Phase 3   ------------------ after 30 minutes \050more o less\051 -------------------------------) 79.22 349.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(* Initiative Taken.) 79.22 313.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The confederate asks the subject again  how to proced. The) 79.22 301.43 T
+2 F
+(Confederate) 318.61 301.43 T
+0 F
+( asks:) 371.36 301.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(\253) 79.22 289.43 T
+(Well, what do we want to do now?) 85.06 289.43 T
+(\273) 225.35 289.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(- again 2 responses are possible:) 79.22 265.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(a\051 - The subject takes the initiative giving a suggestion.) 121.78 253.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(In this case) 121.78 241.43 T
+2 F
+(Confederate) 169.26 241.43 T
+0 F
+( asks:) 222.02 241.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(\253) 121.78 217.43 T
+(We\325ll do it/go there together or separated?\273) 127.61 217.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(- 3 responses are possible:) 220.98 205.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(a1\051 to go together. Then the) 121.78 193.43 T
+2 F
+(Confederate) 235.37 193.43 T
+0 F
+( asks:) 288.12 193.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(\253Who goes /does it first?) 291.88 181.43 T
+(\273) 392.15 181.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(a2\051 to split. Then) 79.22 157.43 T
+2 F
+(Confederate) 150.05 157.43 T
+0 F
+( can:) 202.82 157.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.31 (- check for alibis \050talk to Rolf Loretan and/or to Lisa Jones\051 IF this has) 79.22 145.43 P
+-0.31 (   not already done in the previouse) 366.41 145.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(phase and IF the subject is going) 79.22 133.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(   something else and IF it is not done during the previous phase.) 79.22 121.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(OR if the subject does the action descrideb above:) 79.22 109.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(- check the painting and the insurance) 121.78 97.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.65 (a3\051 I don\325t know. In this case the confederate forces the subject to) 121.78 73.43 P
+0.65 (make a decision by asking) 396.32 73.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(again \050using different words\051 the question) 79.22 61.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "5" 4
+%%Page: "4" 5
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0.5 0.5 0 0.5 0 0 0.5]
+[ 0.5 0 0 0.5 0 0.5 0.5]
+[ 0.5 0 0.5 0.5 0 0.5 0]
+[ 0 0.5 0 0.5 0.5 0 0.5]
+[ 0 0.5 0.5 0.5 0.5 0 0]
+[ 0 0 0.5 0.5 0.5 0.5 0]
+[ 0 0 0 0.5 0.5 0.5 0.5]
+[ 0 0 0 0.25 0.75 0.75 0.75]
+[ 0 0 0 0 1 1 1]
+[ 0 0 0 1 0 0 0]
+[ 0.5 0 0.5 0.5 0 0.5 0]
+[ 0 0 0.5 0.5 0.5 0.5 0]
+[ 0.5 0.5 0 0.5 0 0 0.5]
+[ 0 0.5 0 0.5 0.5 0 0.5]
+[ 0.5 0 0 0.5 0 0.5 0.5]
+[ 0 0 0 0.5 0.5 0.5 0.5]
+[ 0 0 0 0.25 0.75 0.75 0.75]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 0 0 1 0 1 1 0]
+[ 1 1 0 0 0 0 1]
+[ 0 1 0 0 1 0 1]
+[ 1 0 0 0 0 1 1]
+ 30 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(4) 79.22 25.78 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.47 (b\051 - The subject doesn\325t take any initiative and let the confederare make decision! The) 79.22 739.43 P
+2 F
+0.47 (Confederate) 433.18 739.43 P
+0 F
+0.47 (will) 488.92 739.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(suggest to look at the body and the gun and ask the kolonel \050which is the) 79.22 727.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(owner of the gun\051 about the gun. In this way it will find out when the gun has been stoled.) 79.22 715.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Then the question a1\051 will be asked.) 79.22 691.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(---------- after 10 minutes \050more o less\051 ---------------) 184.82 655.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(*  Collaborative Work.) 79.22 631.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.13 (The) 79.22 619.43 P
+2 F
+0.13 ( Confederate) 94.78 619.43 P
+0 F
+0.13 ( asks the subject to make clear what to do with the notebooks, if any previouse action or) 150.16 619.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(declaration has already been made by the subject in regard to this. The) 79.22 607.43 T
+2 F
+(Confederate) 363.61 607.43 T
+0 F
+( asks:) 416.36 607.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+( \253) 79.22 583.43 T
+(What do we want to do with the notes) 87.56 583.43 T
+(?) 240.07 583.43 T
+(\273) 247.57 583.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(3 possible answers are possible:) 150.12 559.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(b1\051 The subject looks up the confederate\325s notes.) 199.73 547.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(In this case the) 199.73 535.43 T
+2 F
+(Confederate) 261.93 535.43 T
+0 F
+(will ask:) 317.2 535.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(\253) 263.52 511.43 T
+(Can I look at) 269.36 511.43 T
+(your) 326.86 511.43 T
+(notes) 347.68 511.43 T
+0 F
+(?) 368.8 511.43 T
+(\273) 375.73 511.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(b2\051 The subject looks up his own notes.) 199.73 487.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(In this case the) 199.73 475.43 T
+2 F
+(Confederate) 261.93 475.43 T
+0 F
+( doesn\325t do anything) 314.7 475.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(b3\051 The subject doesn\325t want to use the notes.) 199.73 451.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(In this case the) 199.73 439.43 T
+2 F
+(Confederate) 261.93 439.43 T
+0 F
+( doesn\325t do anything) 314.7 439.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(___________________________________________________________________________________) 79.22 415.43 T
+0 0 0 1 0 0 0 K
+4 F
+(Interaction Phase 2   ------------- after 20 minutes \050more o less\051 ------------------------) 79.22 400.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(* Initiative Taken.) 79.22 364.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The confederate asks the subject again  how to proced. The) 79.22 352.43 T
+2 F
+(Confederate) 318.61 352.43 T
+0 F
+( asks:) 371.36 352.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(\253) 79.22 340.43 T
+(What we want to do next?) 85.06 340.43 T
+(\273) 191.16 340.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(- again 2 responses are possible:) 79.22 328.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(a\051 - The subject takes the initiative giving a suggestion.) 121.78 316.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(In this case the) 121.78 304.43 T
+2 F
+(Confederate) 183.99 304.43 T
+0 F
+( asks:) 236.74 304.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(\253) 121.78 280.43 T
+(Do we want split or should we go further together??) 127.61 280.43 T
+(\273) 342.89 280.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(- 3 responses are possible:) 121.78 268.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(a1\051 to go together. Then the) 171.38 244.43 T
+2 F
+(Confederate) 284.96 244.43 T
+0 F
+( asks:) 337.73 244.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(\253Do you want to go ahead?) 121.78 232.43 T
+(\273) 233.43 232.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(a2\051 to split. The) 79.22 208.43 T
+2 F
+(Confederate) 145.05 208.43 T
+0 F
+( can:) 197.82 208.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.47 (- question people in order to find out the exact time of the) 79.22 196.43 P
+-0.47 (murder IF this is not already done in the previouse) 306.75 196.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(phase and IF the) 79.22 184.43 T
+(subject is doing something else.) 147.54 184.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(OR if the subject does the action described above:) 79.22 172.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(- check for alibis \050talk to Rolf Loretan and/or to Lisa Jones\051) 121.78 160.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.69 (a3\051 I don\325t know. In this case the confederate forces the subject to) 121.78 136.43 P
+0.69 (make a decision ba asking) 396.75 136.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(again \050using different words\051 the question) 79.22 124.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(------Again will be measured when the subject contacts the confederate-------) 197.09 112.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(b\051 - The subject doesn\325t take any initiative and let the confederare make the decision! The) 121.78 88.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(Confederate) 121.78 76.43 T
+0 F
+(will suggest to question people in order to find out the exact time of the murder) 177.04 76.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\050IF this is not already done in the previouse phase and IF the subject is going something else\051) 121.78 64.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( otherwaise to check for alibis \050talk to Rolf Loretan and/or to Lisa Jones\051) 121.78 52.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "4" 5
+%%Page: "3" 6
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0.5 0.5 0 0.5 0 0 0.5]
+[ 0.5 0 0 0.5 0 0.5 0.5]
+[ 0.5 0 0.5 0.5 0 0.5 0]
+[ 0 0.5 0 0.5 0.5 0 0.5]
+[ 0 0.5 0.5 0.5 0.5 0 0]
+[ 0 0 0.5 0.5 0.5 0.5 0]
+[ 0 0 0 0.5 0.5 0.5 0.5]
+[ 0 0 0 0.25 0.75 0.75 0.75]
+[ 0 0 0 0 1 1 1]
+[ 0 0 0 1 0 0 0]
+[ 0.5 0 0.5 0.5 0 0.5 0]
+[ 0 0 0.5 0.5 0.5 0.5 0]
+[ 0.5 0.5 0 0.5 0 0 0.5]
+[ 0 0.5 0 0.5 0.5 0 0.5]
+[ 0.5 0 0 0.5 0 0.5 0.5]
+[ 0 0 0 0.5 0.5 0.5 0.5]
+[ 0 0 0 0.25 0.75 0.75 0.75]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 0 0 1 0 1 1 0]
+[ 1 1 0 0 0 0 1]
+[ 0 1 0 0 1 0 1]
+[ 1 0 0 0 0 1 1]
+ 30 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(3) 79.22 25.78 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+(DATA) 79.22 724.43 T
+0 0 0 1 0 0 0 K
+0 F
+(This study will use both quantitative \0505 subjects for each case\051 and qualitative data.) 79.22 700.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.59 (Quantitative data: the reactions to the confederate\325s questions will be observed; the number of orders; taking) 79.22 688.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(initiatives; affirmations; reponses to the questionnaire \050see appendix B\051.) 79.22 676.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.25 (Qualitative data: the flow of the interaction will be described, along with specific and peculiar features of) 79.22 664.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(each interaction, and the style of interaction.) 79.22 652.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 14 Q
+(B) 79.22 622.77 T
+(ASIC    REFERENCES) 88.91 622.77 T
+0 0 0 1 0 0 0 K
+0 10 Q
+-0.48 ( Curtis, P., \0501992\051 \253) 79.22 597.43 P
+-0.48 (Mudding) 157.3 597.43 P
+-0.48 (: Social phenomena in text-based Virtual Realities, in Proceedings of the 1992) 196.47 597.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+386.54 584.43 100.53 584.43 2 L
+V
+0.5 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.78 (Conference on Directions and Implications of Advanced Computing) 100.53 585.43 P
+1.78 (, Berkeley, May 1992. Also) 386.54 585.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(available as Xerox Parc Technical Report CSL-92-4.) 100.53 573.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.41 (Fulk, J., Schmitz, J.A., Schwarz, D. \0501992\051 The dynamics of context-behaviour interactions in computer-) 79.22 561.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.4 (mediated communication. In Lea M. \050Ed.\051) 100.53 549.43 P
+0 0 0 1 0 0 0 K
+472.42 548.43 274.28 548.43 2 L
+V
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.4 (Contexts of Computer-Mediated Communication) 274.28 549.43 P
+0.4 (, Hemel) 472.42 549.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Hempstead, Harvester Wheatsheaf, pp. 7-29.) 100.53 537.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Mantovani, G. \0501995\051) 79.22 525.43 T
+0 0 0 1 0 0 0 K
+272.26 524.43 168.93 524.43 2 L
+V
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Comunicazione e Identit\340) 168.93 525.43 T
+(.  Il Mulino, Bologna.) 272.26 525.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.07 (Mugny, G., P\351rez, J.A. \0501994\051 Strategies d\325influence soicla et de persuasion: la theorie de l\325elaboration du) 79.22 513.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.69 (conflict. In G. Guingouain & F. La Pou\351tier \050eds) 100.53 501.43 P
+0 0 0 1 0 0 0 K
+504.48 500.43 302.44 500.43 2 L
+V
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.69 (.\051 A quoi sert aujourd\325hui la psychologie sociale?) 302.44 501.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Rennes: Presses Universitaires de Rennes.) 100.53 489.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.11 ( Spears, R., Lea, M. \0501992\051 Social influence and the influence of the \253) 79.22 477.43 P
+0.11 (social) 361.97 477.43 P
+0.11 (\273 in computer-mediated com-) 387.8 477.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.04 (munication. In Lea M. \050Ed.\051) 100.53 465.43 P
+0 0 0 1 0 0 0 K
+420.75 464.43 220.7 464.43 2 L
+V
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.04 (Contexts of Computer-Mediated Communication) 220.7 465.43 P
+1.04 (, Hemel Hempstead,) 420.75 465.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Harvester Wheatsheaf, pp. 30-65) 100.53 453.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 14 Q
+-0.48 (APPENDIX A : SCRIPT OF THE THREE  INTERA) 79.22 423.77 P
+-0.48 (CTIONS PHASES) 390.61 423.77 P
+(AND THE CONFLICT PHASE) 79.22 407.77 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 10 Q
+(Interaction Phase 1) 79.22 355.43 T
+0 0 0 1 0 0 0 K
+0 F
+(* Initiative Taken.) 79.22 331.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The confederate asks the subject how are they going to proced. The) 79.22 319.43 T
+2 F
+(Confederate) 351.65 319.43 T
+0 F
+( asks:) 404.42 319.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\253) 79.22 295.43 T
+3 F
+(So, what\325s the plan?) 85.06 295.43 T
+0 F
+(\273) 169.23 295.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(- 2 responses are possible:) 79.22 283.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(a\051 - The subject takes the initiative giving a suggestion.) 121.78 271.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(In this case the) 121.78 259.43 T
+2 F
+(Confederate) 183.99 259.43 T
+0 F
+( asks:) 236.74 259.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(\253) 121.78 235.43 T
+(Do we want to go/do it together or do we want to split?) 127.61 235.43 T
+(\273) 354.3 235.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(- 3 responses are possible:) 220.98 223.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(a1\051 to go together. Then the) 121.78 211.43 T
+2 F
+(Confederate) 235.37 211.43 T
+0 F
+( asks:) 288.12 211.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(\253Who goes /does it first?) 291.88 199.43 T
+(\273) 392.15 199.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(a2\051 to split. Then) 79.22 175.43 T
+2 F
+(Confederate) 150.05 175.43 T
+0 F
+( can:) 202.82 175.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(- look at the body/gun/ask the kolonel about the gun) 79.22 163.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(  in such way it will find out finding the time the gun has been stolen) 79.22 151.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(OR if the subject does the action descrideb above:) 79.22 139.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.15 (-look at the resto \050sign\051/ask Hans about MonaLisa in such way it will) 121.78 127.43 P
+0.15 (find out the exact time of) 402.89 127.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the murder) 79.22 115.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.69 (a3\051 I don\325t know. In this case the confederate forces the subject to) 121.78 91.43 P
+0.69 (make a decision ba asking) 396.75 91.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(again \050using different words\051 the question.) 79.22 79.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(----Here will be measured) 121.78 67.43 T
+2 F
+(when) 227.85 67.43 T
+0 F
+( the subject contacts again the confederate----) 250.62 67.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "3" 6
+%%Page: "2" 7
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0.5 0.5 0 0.5 0 0 0.5]
+[ 0.5 0 0 0.5 0 0.5 0.5]
+[ 0.5 0 0.5 0.5 0 0.5 0]
+[ 0 0.5 0 0.5 0.5 0 0.5]
+[ 0 0.5 0.5 0.5 0.5 0 0]
+[ 0 0 0.5 0.5 0.5 0.5 0]
+[ 0 0 0 0.5 0.5 0.5 0.5]
+[ 0 0 0 0.25 0.75 0.75 0.75]
+[ 0 0 0 0 1 1 1]
+[ 0 0 0 1 0 0 0]
+[ 0.5 0 0.5 0.5 0 0.5 0]
+[ 0 0 0.5 0.5 0.5 0.5 0]
+[ 0.5 0.5 0 0.5 0 0 0.5]
+[ 0 0.5 0 0.5 0.5 0 0.5]
+[ 0.5 0 0 0.5 0 0.5 0.5]
+[ 0 0 0 0.5 0.5 0.5 0.5]
+[ 0 0 0 0.25 0.75 0.75 0.75]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 0 0 1 0 1 1 0]
+[ 1 1 0 0 0 0 1]
+[ 0 1 0 0 1 0 1]
+[ 1 0 0 0 0 1 1]
+ 30 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(2) 79.22 25.78 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 14 Q
+(DEPENDENTS V) 79.22 721.77 T
+(ARIABLES) 187.01 721.77 T
+4 10 Q
+( * Leadership.) 79.22 696.43 T
+0 0 0 1 0 0 0 K
+0 F
+(Leadership of the interaction is mesured by two indicators:) 79.22 672.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.67 (- the use of the navigation Moo commands: \253) 79.22 660.43 P
+0.67 (follow) 267.07 660.43 P
+0.67 (\273, \253) 295.67 660.43 P
+0.67 (dont_follow) 309.93 660.43 P
+0.67 (\273, \253) 361.33 660.43 P
+0.67 (lead) 375.58 660.43 P
+0.67 (\273, \253) 394.74 660.43 P
+0.67 (dont_lead) 409.01 660.43 P
+0.67 (\273 \050these com-) 450.95 660.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(mands are specially made for this game\051, \253go) 79.22 648.43 T
+(\273, \253) 261.68 648.43 T
+(join) 275.27 648.43 T
+(\273 and \253) 293.33 648.43 T
+(walk to) 321.36 648.43 T
+(\273.) 353.58 648.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.14 (- by content analysis of the communication. Whenever a suggestion appears about where to go and what to) 79.22 636.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.01 (do, it is considered as taking initiative. Also it is observed whether the confederate\325s suggestions are taken) 79.22 624.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(into consideration or not.) 79.22 612.43 T
+0 0 0 1 0 0 0 K
+4 F
+( * Collaborative Work) 79.22 597.43 T
+0 0 0 1 0 0 0 K
+0 F
+0.29 (Collaborative Work is studied by looking at the use of the notes taken during the interaction: whether the) 79.22 573.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(subject is  willing to share the information, ideas, and comments with the confederate or not.) 79.22 561.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.08 (This variable is mesured by the contents of communication commands \050\253) 79.22 549.43 P
+-0.08 (say) 372.54 549.43 P
+-0.08 (\273, \253) 388.37 549.43 P
+-0.08 (page) 401.88 549.43 P
+-0.08 (\273\051, and the use of ac-) 423.26 549.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(tion commands as: \253) 79.22 537.43 T
+(give) 162.55 537.43 T
+(\273, \253) 182.27 537.43 T
+(show) 195.87 537.43 T
+(\273, \253) 219.48 537.43 T
+(read) 233.07 537.43 T
+(\273, \253) 252.77 537.43 T
+(show to) 266.36 537.43 T
+(\273, \253) 300.26 537.43 T
+(read to) 313.85 537.43 T
+(\273, and \253) 343.83 537.43 T
+(take) 374.36 537.43 T
+(\273.) 393.52 537.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 14 Q
+(EXPERIMENT) 79.22 507.77 T
+(AL  HYPHO) 168.98 507.77 T
+(TESIS) 244.65 507.77 T
+0 0 0 1 0 0 0 K
+0 10 Q
+0.11 (It is hyphothesised that Social status will affect the collaboration between the confederate and the subject:) 79.22 482.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the subject will be more available to collaborate with a confederate with an higher social status.) 79.22 470.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.26 (Moo skill will affect leadership: the subject will take the leadership when works with a confederate that de-) 79.22 458.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(clares a lower Moo skill.) 79.22 446.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 14 Q
+(EXPERIMENT) 79.22 416.77 T
+(AL DESIGN) 168.98 416.77 T
+4 10 Q
+(The Task) 79.22 391.43 T
+0 0 0 1 0 0 0 K
+0 8 Q
+0.03 (The t) 79.22 367.43 P
+0 10 Q
+0.04 (ask has been designed during a previous research run by Pierre Dillenbourg. It is presented as a game,) 95.92 367.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.03 (but it is actually a problem-solving. This type of task is defined, in the framework of the theory of conflict) 79.22 355.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(elaboration, as an aptitude task \050Mugny & P\351rez, 1994\051.) 79.22 343.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.01 (Mona Lisa has been killed in a hotel and the two partners have to interact to find the killer, the motive and) 79.22 331.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the access to the weapon. The environments is composed by 13 rooms and 11 suspects \050little robots\051.) 79.22 319.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+(Interaction Agenda) 79.22 292.43 T
+0 0 0 1 0 0 0 K
+0 F
+-0.31 (The subject and the confederate are supposed to work together to solve a mystery. The interaction is guided) 79.22 268.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.33 (by a script composed by 1 Instruction Phase, 3 Interaction Phases with 2 repeated steps, 1 Conflict Phase) 79.22 256.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(introduced  between the second and the third Interaction Phase.) 79.22 244.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.35 (*  Instruction Phase. Instructions and Commands are posted on Netscape. Subjects, contacted by e.mail, are) 79.22 232.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.22 (request to print them out and to use them during the experiment. At the fixed date and time the subject con-) 79.22 220.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.15 (nects to tecfamoo.unige.ch 7777 with a special login and password.  In this way he/she logs in directly into) 79.22 208.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.49 (the setting of the experiment \050the hotel\051. Subjects are requested to declare their MOO skilland the Social) 79.22 196.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.03 (Status \050always student\051. The partner /confederate describes his social status and MOO skillas well. The re-) 79.22 184.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.62 (searcher makes sure the subject pays attention on the MOO advanced commands, available only for this) 79.22 172.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(game \050Follow, lead, dont_follow, dont_lead, and ask\051, and starts interaction.) 79.22 160.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.03 (* Interaction Phases. During the three phases the role of the confederate is to activate certain type of beha-) 79.22 148.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.11 (viour, relative to the dependent variables, in others words to take or not the initiative and to collaborate or) 79.22 136.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.05 (not.  At the first step the confederate asks what to do and then if to do it together or not; at the second step) 79.22 124.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(he/she asks how to use the notebooks.) 79.22 112.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+(*Conflict Phase.) 79.22 85.43 T
+0 0 0 1 0 0 0 K
+0 F
+-0.12 (During this phase the researcher generates a conflict between the subject and the confederete by asking the) 79.22 61.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(first one who he/she thinks killed Mona Lisa, and telling him that his partner thinks differently.) 79.22 49.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "2" 7
+%%Page: "1" 8
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0.5 0.5 0 0.5 0 0 0.5]
+[ 0.5 0 0 0.5 0 0.5 0.5]
+[ 0.5 0 0.5 0.5 0 0.5 0]
+[ 0 0.5 0 0.5 0.5 0 0.5]
+[ 0 0.5 0.5 0.5 0.5 0 0]
+[ 0 0 0.5 0.5 0.5 0.5 0]
+[ 0 0 0 0.5 0.5 0.5 0.5]
+[ 0 0 0 0.25 0.75 0.75 0.75]
+[ 0 0 0 0 1 1 1]
+[ 0 0 0 1 0 0 0]
+[ 0.5 0 0.5 0.5 0 0.5 0]
+[ 0 0 0.5 0.5 0.5 0.5 0]
+[ 0.5 0.5 0 0.5 0 0 0.5]
+[ 0 0.5 0 0.5 0.5 0 0.5]
+[ 0.5 0 0 0.5 0 0.5 0.5]
+[ 0 0 0 0.5 0.5 0.5 0.5]
+[ 0 0 0 0.25 0.75 0.75 0.75]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 0 0 1 0 1 1 0]
+[ 1 1 0 0 0 0 1]
+[ 0 1 0 0 1 0 1]
+[ 1 0 0 0 0 1 1]
+ 30 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(1) 79.22 25.78 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(SOCIAL INFLUENCE  IN   A COLLABORATIVE WORK) 163.23 739.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(SUPPORTED BY MOO) 79.22 689.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(Maria Beatrice Ligorio) 79.22 665.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 14 Q
+(THEORETICAL  B) 79.22 635.77 T
+(A) 196.25 635.77 T
+(CKGR) 205.8 635.77 T
+(OUND) 246.74 635.77 T
+0 0 0 1 0 0 0 K
+0 10 Q
+0.7 (Does communication supported by computers keep the same rules as face to face communication? How) 79.22 610.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 (does social influence work in this new environment \050Spear & Lea, 1992\051? How is identity perceived when) 79.22 598.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(variables like gender, age, and physical features are not visible \050Mantovani, 1995\051?) 79.22 586.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.64 (These are interesting questions posed by the literature about communication supported by computer that) 79.22 574.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.03 (need to be studied with a psycho-social framework. This project is aimed to use this perspective   manipu-) 79.22 562.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.37 (lating both real life variables like social status, and computer related variables as technical skill in the frame) 79.22 550.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(of a collaborative work task.) 79.22 538.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 14 Q
+(TECHNOLOGICAL SETTING) 79.22 508.77 T
+0 0 0 1 0 0 0 K
+0 10 Q
+-0.52 (The computer environment used for this study is called MOO \050Multi-users Oriented Objects\051. This is a tech-) 79.22 483.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.38 (nological device supporting at the same time communication in real time and navigation through text-based) 79.22 471.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.47 (virtual space \050Curtis, 1992\051. Three types of actions are possible: a\051  navigation through virtual rooms, space,) 79.22 459.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.14 (etc...; b\051 communication with people both in the same room and far in other rooms; c\051construction and ma-) 79.22 447.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(nipulation of objects.) 79.22 435.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 14 Q
+(INDEPENDENTS  V) 79.22 405.77 T
+(ARIABLES) 204.9 405.77 T
+0 0 0 1 0 0 0 K
+0 10 Q
+(Subjects are matched with a conferederate described by a manipulation of two independent variables:) 79.22 380.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.61 (- attributed Moo skill, which can be equal \050the confederate declares a Moo skill equal to the subject\051, or) 79.22 368.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(lower \050the confederate declares a lower Moo skill\051) 79.22 356.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(- attributed Social status, which can be higher \050university professors\051, or lower \050high school students\051.) 79.22 344.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(- a conflict between the subject and the confederete will be introduced as controlled variables \050see below\051.) 79.22 332.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TABLE 1  - Experimental Settings) 218.38 308.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+0.35 (Subjects were all recruited through mailing-lists on the MOO and a \253) 79.22 74.43 P
+0.35 (Call for subjects) 360.81 74.43 P
+0.35 (\273 posted in MOOs,) 429.56 74.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.28 (for this reason they had at least a basic MOO knowledge. They are all university students since it was made) 79.22 62.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(as condition to participate in the experiment.) 79.22 50.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(Moo) 332.68 262.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(   Com petence) 359.12 262.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Equal) 283.73 247.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Lower) 406.38 247.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-1.05 (Social) 105.42 208.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Higher) 171.66 220.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\050University Professor\051) 139.43 208.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(1) 292.9 232.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(University Professor with) 244.01 220.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the same MOO skill as the) 242.21 208.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(confederate) 272.08 196.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3) 416.92 232.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.1 (University Professor with  one) 359.12 220.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(previous experience in the) 366.8 208.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(MOO) 407.76 196.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-1.61 (Status) 104.86 181.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Lower) 172.5 169.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\050High School Student\051) 139.43 157.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(2) 292.9 181.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.81 (High school student with the) 238.68 169.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(same MOO skill as the con-) 239.43 157.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(federate) 279.3 145.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(4) 416.92 181.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.65 (High school student with  one) 359.57 169.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(previous experience in the) 366.8 157.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(MOO) 407.76 145.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(5) 289.35 130.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(Control Group) 259.77 118.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(No variables manipulated) 240.47 106.43 T
+0 0 0 1 0 0 0 K
+100.47 241.73 100.47 101.48 2 L
+V
+0.75 H
+0 Z
+N
+135.93 242.48 135.93 139.73 2 L
+V
+N
+235.18 271.73 235.18 139.73 2 L
+V
+N
+355.62 257.48 355.62 139.73 2 L
+V
+N
+483.23 271.73 483.23 101.48 2 L
+V
+N
+234.8 272.1 483.6 272.1 2 L
+V
+N
+234.8 257.1 483.6 257.1 2 L
+V
+N
+100.1 242.1 483.6 242.1 2 L
+V
+N
+135.55 191.1 483.6 191.1 2 L
+V
+N
+100.1 140.1 483.6 140.1 2 L
+V
+N
+100.1 101.1 483.6 101.1 2 L
+V
+N
+278.85 698.1 304.85 724.1 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 X
+0 0 0 1 0 0 0 K
+%%BeginBinary:  2848     
+32 32 -24 24 0 302.85 700.1
+/red <
+FF00FF00FF00FFC08000800080008000FF00FF00FF00FFC08000800080008000
+FF00FF00FF00FFC08000800080008000FF00FF00FF00FFC08000800080008000
+FF00FF00FF00FFC08000800080008000FF00FF00FF00FFC08000800080008000
+FF00FF00FF00FFC08000800080008000FF00FF00FF00FFC08000800080008000
+FF00FF00FF00FFC08000800080008000FF00FF00FF00FFC08000800080008000
+FF00FF00FF00FFC08000800080008000FF00FF00FF00FFC08000800080008000
+FF00FF00FF00FFC08000800080008000FF00FF00FF00FFC08000800080008000
+FF00FF00FF00FFC08000800080008000FF00FF00FF00FFC08000800080008000
+> store
+/green <
+FFFF0000FFFF00C08080000080800000FFFF0000FFFF00C08080000080800000
+FFFF0000FFFF00C08080000080800000FFFF0000FFFF00C08080000080800000
+FFFF0000FFFF00C08080000080800000FFFF0000FFFF00C08080000080800000
+FFFF0000FFFF00C08080000080800000FFFF0000FFFF00C08080000080800000
+FFFF0000FFFF00C08080000080800000FFFF0000FFFF00C08080000080800000
+FFFF0000FFFF00C08080000080800000FFFF0000FFFF00C08080000080800000
+FFFF0000FFFF00C08080000080800000FFFF0000FFFF00C08080000080800000
+FFFF0000FFFF00C08080000080800000FFFF0000FFFF00C08080000080800000
+> store
+/blue <
+FFFFFFFF000000C08080808000000000FFFFFFFF000000C08080808000000000
+FFFFFFFF000000C08080808000000000FFFFFFFF000000C08080808000000000
+FFFFFFFF000000C08080808000000000FFFFFFFF000000C08080808000000000
+FFFFFFFF000000C08080808000000000FFFFFFFF000000C08080808000000000
+FFFFFFFF000000C08080808000000000FFFFFFFF000000C08080808000000000
+FFFFFFFF000000C08080808000000000FFFFFFFF000000C08080808000000000
+FFFFFFFF000000C08080808000000000FFFFFFFF000000C08080808000000000
+FFFFFFFF000000C08080808000000000FFFFFFFF000000C08080808000000000
+> store
+ BEGINBITMAPCOLORc
+
+8%<$8$<%
+F4F4F4F4F4F4F4F4F4F4F4F4F4F49%9-9%
+FFFFFFF4F4F4FFFFFFF4F4FFFFFFF4F4F4FFFFFF:"838"
+F4F4F4F4FFFFFCFCFCFFFFFCFCFCFFFFF4F4F4F4:)9#9)
+FFFCFFFFFFFFFCFCFCFCFCFCFFFFFFFFFCFF85
+<FFF4F4FFFFF7FFF8FFF8FFF8FFF8FFF8FFF8FFF8FFF8FFF7FFF4F4FF9"9'P)8"
+FFF8FFFFF8FFF8F8FFF8FFF8FFFFF5FF=4
+F7FFF8FFF8FFF0F8F0F0F0FFF8FFF8FFF8FFF7=):(
+F5F7FFF8FFF0F0F0FFF8FFF8FFF7F59'P:,
+F4FFFCFFF7F5F8FFFFF8FFFFF5F7FCFFF4=,8'
+F5F7FFF8FFF8FFFFF7F7F7F8FFF8FFF7F58$8(9"8+
+F4FFFCF7F5FFFFF8FFF8F8FFF8FFF7F5F7FCFCFFF4=+9'
+F5F7FFF8FFF8FFFFFFFFF8FFFFF5F7F5=4
+F7F5FFFFF8FFFFF7F7F7FFFFFFFFF8FFF7F5F78$85
+FFF4FF7F5F7FFF8FFFFF7FFFFF0F7F7FFF8FFFFF5F7F5FCFFF4FF="81
+F7FFFFF7F0F7F7FFF0F0FFFFF8FFF7F7F7@-
+F8FFF0F0FFFFF7F0F7FFF8FF@":#9#
+FFF7F0FFF88$:">%;$
+F4FFFCF7F0FFF8FFFCFFF4B+8"
+F7FFF7FFF7FFFFFFFFF8F1>#8+
+F1F1FFF0F0F7FFF7F7FFF8FF8$8#9"8$8&8$
+FFF4FFF1F7F7F0F7F0FFF8FFF1F7FFF4FF=%;"9&
+F7F1F1F7F0F4FFF8F7F19$8"9-8$
+FFF4FFF7FFF7F7F7F7F7FFFFFFFFF7F1FFF4FF=&R'
+F1F1F7F7F1F8FFF7F7F7F7>1
+F7F1F1F1F7FFF8FFF8FFF8FFF1F1F7F19"9Z8"
+F43F48%:w:%
+F4FFFFF4FCFCFFFFF4:)9#9)
+F4FFF4F4F4F4FFFFFFFFFFFFF4F4F4F4FFF4:"838"
+FFFFFFFFF4F4FFFFFFF4F4FFFFFFF4F4FFFFFFFF9%9-9%
+F4F4F4FFFFFFF4F4F4FFFFF4F4F4FFFFFFF4F4F48%<$8$<%
+FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+ENDBITMAP
+%%EndBinary
+278.85 700.1 302.85 724.1 R
+1 H
+2 Z
+N
+278.85 700.1 302.85 724.1 R
+0 Z
+N
+0 0 0 1 0 0 0 K
+8.32 -25 603.67 817 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "1" 8
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%PageOrder: Descend
+%%Pages: 8
+%%DocumentFonts: Times-Roman
+%%+ Helvetica-Bold
+%%+ Times-Bold
+%%+ Times-Italic
+%%+ Helvetica-BoldOblique
+%%EOF

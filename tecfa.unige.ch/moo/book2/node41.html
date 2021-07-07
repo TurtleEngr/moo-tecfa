@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>4.1 General information on building things</TITLE>
+<META NAME="description" CONTENT="4.1 General information on building things">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1194" HREF="node42.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1192" HREF="node40.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1186" HREF="node40.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1196" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1197" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1195" HREF="node42.html">4.2 Rooms and exits</A>
+<B>Up:</B> <A NAME="tex2html1193" HREF="node40.html">Introduction to Building and </A>
+<B> Previous:</B> <A NAME="tex2html1187" HREF="node40.html">Introduction to Building and </A>
+<BR> <P>
+<H1><A NAME="SECTION03110000000000000000">4.1 General information on building things</A></H1>
+<P>
+<A NAME="secgeninfobuild">&#160;</A>
+<P>
+It is useful to know what building implies at a more technical
+level, so you should read the next paragraph.
+However if it sounds to technical for you you may skip most
+information and come back to it later.
+However, you must know how to list and find things you own,
+so read the paragraph after the next one.
+<P>
+<H4><A NAME="SECTION03110010000000000000">What does ``building'' mean?</A></H4>
+<P>
+Building relies on the MOO's
+object-based architecture. When you create an object for your personal
+use you create a ``child'' of a generic object (a class) that allready
+exists. E.g. digging a room implies making a child of the object
+called <code>$room</code>. Except when you build rooms and exits you usually
+use the <code>@create</code> command to build objects
+(see section <A HREF="node47.html#seccreate">4.3</A> for details).
+Most of those objects
+can be customized as you will learn later. Usually you are least
+expected to add a description.
+<P>
+Most MOOs do have some place where generic objects are on display.
+E.g. at Tecfa we have a <A NAME="tex2html71" HREF="http://tecfamoo.unige.ch:7777/258">MOOseum</A> (<code>#258</code>). Other MOOs have implemented commands that
+will list the most important generic objects. Else, enquire!
+<A NAME=426>&#160;</A>
+<A NAME=427>&#160;</A>
+<P>
+The last important thing to know is the object naming and numbering
+scheme. Each objects on the MOO (including yourself) is an object
+that has a number. People with builders or programming permits can
+refer to objects as numbers, e.g. <code>#84</code>. Numbers are not always
+very practical, therefore there exist other ways to refer yourself
+to objects. In each standard MOO, each objects has:
+<UL>
+<LI> A name (which can be changed with the <code>@rename</code> command
+</UL>
+Usually you can only refer to objects by name if you are in the same
+room, or if you use some special commands that will go and find
+a name in some database. Take the <code>@who</code> command as an example.
+E.g. <code>'@who Kaspar'</code> will look up the ``kaspar'' string in the
+players data base and return some information. <B>TECFA</B><TT>MOO</TT> users also
+should have a look at section <A HREF="node33.html#secintrorem">2.5</A> on nicknames that
+allows you to specify your own aliases for any object you want to remember.
+<UL>
+<LI> Very important generic objects on MOOs are corified, i.e. you can
+  refer to them with a name preceded by the <code>$</code> sign, like
+  <code>$room</code>.
+</UL>
+Note that programmers never should directly refer to core objects
+by numbers. It will make their core much more portable.
+At <B>TECFA</B><TT>MOO</TT> (this is not standard) you have in addition the
+following conventions:
+<A NAME=433>&#160;</A>
+<P>
+<UL>
+<LI> You can refer to users (in programs) by using a <code>~</code> like
+in <code>~fred</code> (only programmers need to know this)
+<LI> Programmers can insert their own objects into the local core
+database and those objects are referred to with a <code>&amp;</code>, like
+for instance <code>&amp;channel_class</code>. Programmers, please local corify
+your stuff here!
+<P>
+</UL><H4><A NAME="SECTION03110020000000000000">Listing and killing objects you own</A></H4>
+<P>
+<A NAME=437>&#160;</A>
+<A NAME=438>&#160;</A>
+<P>
+Before you start building lot's of things it is a good idea to
+learn how you can keep track of them and how you delete them.
+First remember that any object you create (except rooms and exits)
+will be on you (in your inventory). Remember the 'inv' verb:
+<P>
+<SMALL CLASS=SMALL><PRE>inv     Lists all objects you are currently carrying</PRE></SMALL>
+<P>
+Here are a few useful verbs that help you keeping track of things
+(they should be available in most MOOs).
+Note that most <code>''@'' verbs</code> can take arguments for doing
+more sophisticated queries. Use 'help' in order to know more.
+<P>
+<SMALL CLASS=SMALL><PRE>@audit  Lists all objects in your possession. 
+        Audit is the most important verb you need to remember.
+
+@prospectus
+        like @audit, but lists more information
+
+@quota  Lists available quota
+@count  Counts the number of objects in your possession
+
+@location &lt;object&gt; 
+        will list the location of an object
+@move &lt;object&gt; to here
+        will move an object to the room you are in</PRE></SMALL>
+<P>
+At <B>TECFA</B><TT>MOO</TT> we also have a <code>Short Audit (#1419)</code> feature. Il will
+give a shorter listing than <code>@audit</code> or  <code>@prospectus</code> if
+you type:
+<SMALL CLASS=SMALL><PRE>  @sp</PRE></SMALL>
+Type <code>@addfeature #1419</code> to add this feature for your usage.
+<P>
+<HR><A NAME="tex2html1194" HREF="node42.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1192" HREF="node40.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1186" HREF="node40.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1196" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1197" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html1195" HREF="node42.html">4.2 Rooms and exits</A>
+<B>Up:</B> <A NAME="tex2html1193" HREF="node40.html">Introduction to Building and </A>
+<B> Previous:</B> <A NAME="tex2html1187" HREF="node40.html">Introduction to Building and </A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

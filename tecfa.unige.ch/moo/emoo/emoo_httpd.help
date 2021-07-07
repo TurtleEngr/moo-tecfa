@@ -1,0 +1,91 @@
+MOO HyperText Transfer Protocol Daemon
+--------------------------------------
+
+$httpd's purpose is to listen on a specified port (see 'help
+listen()') for connections, and then treat those connections as if
+they were HTTP requests made by a web client.  Using an internal
+matching scheme, it calls methods on other objects to get html
+documents from them.
+
+$httpd doesn't start listening on the specified port automaticly.  A
+call needs to be made to $httpd:start_listening (usually this is done
+from $sys:server_started).  Once that call has been made, $httpd
+writes a status message to the server log (see 'help server_log()').
+That port, and the MOO, are now ready to serve html documents.
+
+Upon a connection, $httpd:do_login_command is called, and it reads
+from the connection until a blank line is found.  It then goes to work
+parsing the requested URL, matching URL to an object and calling
+:http_request on that object.  Depending on what http method was
+requested (GET, POST, etc), $httpd then tells the html document that
+was it got from the object to the connection, then closes the
+connection.
+
+The only requirement that exists for objects to be "webbable" is that
+they have a method on them called :http_request.  This method should
+return a list of strings containing the html document.  There is no
+need to worry about HTTP status codes or document headers, that is
+taken care of by $httpd, but you can build your own.  $httpd supports
+a number of the standard http status codes, including redirection.
+
+In order to avoid having people learn the HTML and HTTP
+specifications, a number of methods exist on $httpd to aid in document
+creation.  For example, if you want to redirect an object's URL to
+another URL, you need only have one line in the :http_request code:
+
+ return $httpd:status_redirection("http://some.other.url/doc.html");
+
+$httpd will then take care of telling the connection about the
+redirection in a way that clients can understand. This frees up the
+html document designer to concentrate on the document than on specific
+standards necessary to have the document displayed correctly
+
+A http connection is handled in the following way:
+
+ 1. After the connection is initiated, $httpd:do_login_command reads
+ the method line, the accept line, and anything else the client wants
+ to send.
+ 2. $httpd:log_connection is called to handle connection logging.
+ :log_connection gets all the text that was set by the client,
+ including the Accept: and method lines.  By default, :log_connection
+ idents the connection and increments the access counter.
+ 3. $httpd:handle_request is called.  $httpd:handle_request parses out
+ the method (GET, POST, etc) and the requested object, then calls the
+ correct method on $httpd which will perform any necessary handling
+ for that method.
+ 4. GET (or POST, or the other method) does the necessary things to
+ implement that method.  For example, POST reads an extra line from
+ the connection, while GET doesn't.
+ 5. The root path on the URL is parsed out and then matched to an
+ object.  There is a special object, $web_objects, that's main purpose
+ is to hold string to object references.  Literal numbers are
+ interpreted as object numbers.  The :http_request method is called on
+ this object.
+ 6. :http_request should return a list containing an HTML document
+ that will be sent to the connection.  Using the methods named
+ $httpd:status_*, you can do redirection, or generate HTTP error
+ documents.
+ 7. :handle_request looks at the returned HTML and determines if it
+ needs a header.  If it doesn't already have a header, then it assumes
+ that the document was okay, and sticks an okay header on it.
+ 8. $httpd:notify_connection is called which handles piping the
+ document to the connection.  It takes into account the MOO's network
+ buffer size, and tries to compensate for slow connections.  Since
+ most of the documents are small, you'll get better performance on
+ slow connections, and the slow down won't be noticeable on faster
+ connections.
+ 9. :notify_connection forks a task to boot the connection, leaving
+ enough time for the network buffer to be cleared.
+
+$httpd also keeps logs of it's activity.  The method
+$httpd:log_connection does three things.  First, it determines what
+the set of enviroment variables should be (for use with the
+$httpd:get_env method), and stores them, things like the site address,
+the remote user, the referer, the client program, etc, in the database
+whose object number is in $httpd.env_db.  Second, it increments the
+counter for the requested URL in the database stored in $httpd.log_db.
+This database keeps a count of how many times each URL has been
+accessed.  Lastly, it writes a one line connection description to the
+log file (the complete FUP path stored in $httpd.log_file) which
+contains the user (if avaiable), the remote site, the method, the URL,
+the client, and the referer.

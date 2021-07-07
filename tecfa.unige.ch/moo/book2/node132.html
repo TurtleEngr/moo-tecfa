@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>12.3 [TECFAMOO] Blocked Verbs</TITLE>
+<META NAME="description" CONTENT="12.3 [TECFAMOO] Blocked Verbs">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2392" HREF="node133.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2390" HREF="node128.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2384" HREF="node131.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2394" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2395" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2393" HREF="node133.html">12.4 [TECFAMOO] Multiownership and </A>
+<B>Up:</B> <A NAME="tex2html2391" HREF="node128.html">[TECFAMOO] ProgrammingWhat's different </A>
+<B> Previous:</B> <A NAME="tex2html2385" HREF="node131.html">12.2 [TECFAMOO] Local Core</A>
+<BR> <P>
+<H1><A NAME="SECTION04530000000000000000">12.3 [<B>TECFA</B><TT>MOO</TT>] Blocked Verbs</A></H1>
+<P>
+<A NAME="secblockedverbs">&#160;</A>
+<A NAME=1670>&#160;</A>
+<P>
+Janus added support for blocked verbs (aka non-overridable verbs).
+A blocked verb is said to be '+b', a non-blocked (the default) is said
+to be '-b'.
+<P>
+You can change the b bit of a verb by using <code>@chmod</code> or
+<code>set_verb_info()</code>. You can check the b bit of a verb through
+<code>verb_info()</code>.
+<P>
+Basically when a verb is made +b, the following happens:
+<UL>
+<LI> 
+it prevents to add (on the object or its descendants) any verbs
+that have in their names one of the names of the verb you made +b.
+<LI>   
+it prevents to add (to verb on the object or its descendants)
+aliases that are one of the names of the verb you made +b.
+<LI>   
+it prevents objects to be chparented in the following situation.
+Any object (or a descendant of the object):
+<UL>
+<LI> 
+has a verb, of which one of its names is one of the names of the verb
+ you made +b (on the potential new parent)
+<LI>
+</UL></UL>
+<P>
+Technical note:
+The 'b' flag for verbs behave a bit like the 'c' for properties.
+<P>
+Also note:
+<UL>
+<LI> When you make a verb +b on an object, if that object (or its
+descendants) has a verb have which one of the names is one of the
+names of the verb you make +b, there will be no problem and no
+warning. It will NOT make any other verb (than the one one you make
++b) +b. If you want to be sure no descendants has a verb which names
+... you have to use 
+<SMALL CLASS=SMALL><PRE>@check-b*locked-verbs &lt;object&gt;:&lt;verb_I_want_to_make_+b&gt;.</PRE></SMALL>
+That means you can also make +b
+verbs on ancestors of objects that have those verbs +b.
+<LI> The support for the 'b' flag requires extensive checking when
+adding a verb, renaming a verb or chparenting an object. This
+overhead can cause lags in some cases.
+<LI> The support for blocked verbs is done COMPLETELY in-db without any
+server hack.
+</UL>
+<P>
+<code>E_NACC</code> (Move refused by destination) is raised by
+<code>chparent()</code>, <code>add_verb()</code> and <code>set_verb_info()</code> if
+chparenting an object, adding a verb or renaming a verb would cause to
+override some blocked verbs defined on the object or its ancestors.
+<P>
+<HR><A NAME="tex2html2392" HREF="node133.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2390" HREF="node128.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2384" HREF="node131.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2394" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2395" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html2393" HREF="node133.html">12.4 [TECFAMOO] Multiownership and </A>
+<B>Up:</B> <A NAME="tex2html2391" HREF="node128.html">[TECFAMOO] ProgrammingWhat's different </A>
+<B> Previous:</B> <A NAME="tex2html2385" HREF="node131.html">12.2 [TECFAMOO] Local Core</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

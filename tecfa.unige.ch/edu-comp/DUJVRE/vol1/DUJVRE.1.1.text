@@ -1,0 +1,4014 @@
+Date:         Thu, 19 Jan 1995 09:47:00 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      Cover Page and Table of Contents
+
+Diversity University Journal of Virtual Reality Education(DUJVRE)
+@Copyright DUJVRE, Diversity University Incorporated 1994
+
+ DU Journal of VR Education  Volume 1 Number 1 1994
+
+ Cover page shows a building on the campus of Diversity University.
+
+
+                                                               i
+ Virtual Editorial Board
+
+    Managing editor
+    Donald(idd@io.org)
+
+    Assistant managing editor
+    Meryl(future issues)
+
+ Area Editors for future issues:
+
+    MOO Teaching:
+    Donald, Jeanne
+
+    Accessibility and Beyond:
+    Dick, LenB
+
+    Health Care Issues:
+    Samantha
+
+    K-12:
+    Dr.Z, Jeanne
+
+    MOO Education Tools:
+    Ken, Richelieu, Ulf
+
+    Education MOOs:
+    Donald, Gustavo
+
+    Physical Life Meetings
+    Cathy, Cindy, Danford, Jeanne
+
+@Copyright DUJVRE 1994    DUJVRE Published 4 times a year.
+Individual articles may have copyright assigned to various authors.
+
+The Diversity University Journal of Virtual Reality Education
+is published by Diversity University Press (DU Press).
+
+
+
+                                                               1
+
+                        CONTENTS
+Volume 1                                            Number 1 1994
+
+ DU Administrator's Message and DU Mission Statement           3
+        Jeanne  gsswky@menudo.uh.edu
+
+ MOO TEACHING
+
+      Teaching Microbiology at Diversity University            6
+        Danford  facrept@nccvax.wvnet.edu
+
+      Towards Ordinary Teaching at Diversity University        8
+        Donald  idd@io.org
+
+      Teaching and Learning at Diversity University           17
+        Karen  mccomas@marshall.edu
+
+      A Virtual Programming Course using the MOO              21
+        Marcus  marcus@andersen.co.uk
+
+
+ ACCESSIBILITY AND BEYOND
+
+      Learning Disability and Education in the 21st Century   29
+        R. Zenhausern, A. Pemberton, and L. Elman
+        drz@sjuvm.stjohns.edu
+
+      How I lost 20 pounds on the New Moo Diet.               41
+        Samantha  samajane@mit.edu
+
+
+ K-12
+
+      Donut: Starknet Campus Of The Future.                   46
+        Suzi_j  s_john@sparc3.sparcc.ohio.gov
+
+
+ MOO EDUCATION TOOLS PROGRAMMING
+
+      Building Tools for Education                            49
+        Ken  schweller@bvc.edu
+
+
+ EDUCATION MOOs
+
+      Diversity University Grant Center                       52
+        Cathy  Libnm1@nccvax.wvnet.edu
+
+      Education MOOs                                          53
+        Donald idd@io.org
+
+      The Soul of a MOO Machine                               61
+        David Morris  bweaver@worf.infonet.net
+
+      Collaboratory                                           67
+        Margit Watts  watts@uhunix.uhcc.hawaii.edu
+        Ben Millard  bmillard@interaccess.com
+
+      MOO interviews
+        The Beginning of an Education MOO                     70
+          Lunar at DU
+
+        Ken at CollegeTown                                    73
+          Lunar at DU
+
+=========================================================================
+Date:         Thu, 19 Jan 1995 09:49:31 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      From the Founder of Diversity University
+
+@Copyright DUJVRE and Jeanne  gsswky@menudo.uh.edu  1994
+                                                               3
+DU Administrator's Message and DU Mission Statement
+        by Jeanne  gsswky@menudo.uh.edu
+
+        DIVERSTIY UNIVERSITY WELCOME MESSAGE
+
+Welcome to the Diversity University Journal of Virtual Reality
+Education(DUJVRE)!  I can't tell you how excited I am about Donald
+actually making this happen since it's been in my dreams ever since
+Diversity University(DU) was started.
+
+All of us who work on educational M**s(MOOs or MUDs, two types of
+real time text based conferencing systems) are painfully familiar
+with the accusatory phrase, hurled at us by some people that says,
+"M**s are just games! Dungeons and Dragons, with no redeeming value.".
+This journal will help dispell that myth.
+
+The DUJVRE will be a scholarly refereed journal which will present
+articles, research, observations, insights and dreams regarding the
+provision of education of all kinds via a VR environment.  Currently,
+we are primarily looking at the text-based environment called a MUD
+but do not intend to limit ourselves to this type. DUJVRE will provide
+information about other projects going on in this field thus bringing
+us all closer together and will allow individuals working on similar
+or parallel projects to collaborate if they wish.  DUJVRE also will
+contain articles on how this medium impacts on individuals.
+
+In future editions you will read how DU and other MUDs are being
+redesigned in sometimes apparently invisible ways to better serve
+people with disabilities and by people you might never expect. You
+will be touched as I was by Samantha's article "How I lost 20 pounds
+on the New MOO Diet", an account of how the ability of the MUD
+environment to provide accomodation had a vital impact on the physical
+life of a person.  Dr. Zenhausern's article in this issue sheds
+considerable light on a disability that many of use who swear by
+computers may even have and not realize.  Computers can be used as
+assistive devices in more ways than most of us realize.
+
+As within any academic community, there are differences between the
+approaches of individual VR educators.  Our journal intends to include
+as many of these as possible.  I hope we can focus on matching the
+approach to the medium, subject or learning style rather than
+declaring any one approach to be "the" solution. The variety of
+learning styles I have encountered only serves to reinforce my belief
+that there is no best approach to teaching or learning, only the best
+way to teach this subject to this learner.  In December I was
+privileged to attend a gathering of individuals in Boston who are also
+working towards using MUDs in education.  The purpose of the MUDshop,
+as it was called, was to bring together as a community, people who
+have been working, up to this point, in isolation from each other.
+It was interesting to note that of the many people the committee
+members recommended to attend, that only Pavel Curtis was mentioned by
+more than one person.  One thing that became crystal clear at this
+ARPA-sponsored workshop was the desperate need for statistical support
+for what we are doing.  To generate valid  and reliable data, research
+must be replicated and this is one reason to bring this community
+together.  It is our hope that this journal will be one way to do that.
+
+
+
+
+
+
+        Jeanne  gsswky@menudo.uh.edu                           4
+
+
+        DIVERSITY UNIVERSITY MISSION STATEMENT
+
+Our mission is to develop, support and maintain creative and
+innovative environments and tools for learning and research
+through the Internet and other distributed computing systems,
+and to guide and educate people in the use of these and other
+tools, to foster collaboration in a synergistic climate, and to
+explore and utilize applications of emerging technology to these
+ends in a manner friendly to people who are disabled,
+geographically isolated or technologically limited.
+
+
+Author: Jeanne McWhorter  gsswky@menudo.uh.edu
+        Chief Executive Diversity University
+=========================================================================
+Date:         Thu, 19 Jan 1995 09:52:08 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      Teaching Microbiology at Diversity University
+
+@Copyright DUJVRE and Danford  facrept@nccvax.wvnet.edu 1994
+
+        Danford  facrept@nccvax.wvnet.edu                     6
+
+        Teaching Microbiology at Diversity University
+
+Danford, Professor of Biology at West Virginia Northern Community
+College has been teaching his introductory microbiology course at DU
+on Tuesdays and Thursdays.  This class which meets 4 fours per week
+has been averaging 2 hours per week at the MOO.   Danford has included
+DU based activities as course requirements.  He is also using a vax
+Notes Conference to facilitate discussion of current topics.
+
+Danford is combining traditional classroom lecture approach with
+constructivist technology enhanced activities in this course.  The
+constructivist assignments include a student microscope slide set, an
+instructional object of some sort, and participation in a group
+project.  The group projects are separate rooms, each devoted to a
+specific disease or pathogen.  Students were divided into three
+member groups and the disease/organism was assigned in the beginning
+of the semester.  At the end of the term, each group will present its
+room and contents to the class.
+
+Danford's online classtime is usually spent in a variety of
+activities.  Usually he posts the assignments on a generic notice
+board so that students can progress at their own rate and in their own
+order.  For an hour's time at DU, he would post 3 or 4 chores.  There
+would be some information gathering and analysis, usually by use of an
+@detailed object (his favorite) or an individually  programmed object;
+next there could be one of two types of collaborative activities -
+either topic or group related; and finally he would pose a question or
+questions that students are expected to answer before leaving the class.
+
+Danford said, "What surprised me the most about integrating DU into my
+course was the reaction of the students.  They were captivated and
+motivated by DU.  A couple of weeks into the course, I asked on the
+Vax Notes Conference if learning microbiology could be fun.  The
+responses were overwhelmingly positive.  I can assure you that very
+few traditional microbiology students would evaluate their course as
+'fun'."  Danford continued, "The next real surprise to me was a hidden
+asset to MOO based learning:  the attention to detail.  Students
+quickly learn that precise typing and precise attention to details are
+a necessity.  This teaches the skills of observation, organization,
+and persistence (as in follow through).  These skills are sometimes
+hard to incorporate into traditional lecture environments but come
+as part of the package with DU. "
+
+To quote from the course syllabus: In addition to the traditional
+microbiology course objectives, this section will also:
+  1. introduce the student to electronic communication and information
+     storage/retrieval (EMail, VaxNotes, Internet, DU-MOO).
+  2. encourage the students to develop skills applicable to technology,
+     electronic communication, and information storage/retrieval.
+  3. emphasize the development of student critical thinking and
+     writing skills in the study of microbiology (applicable to all
+     other disciplines and life too).
+  4. explore some of the moral and ethical questions facing students
+     in the health sciences in the context of our global community.
+
+
+
+
+
+
+
+        Danford  facrept@nccvax.wvnet.edu                     7
+
+Danford's classroom, named Micro Lab, #4668, is open to the public
+whenever a class is not meeting there.  There are a number of
+informational objects available including: Prokaryote, Antibiotics,
+Antigen, Antibody, Antigen-antibody Reactions, HIV, HIV Disease
+Spectrum, Bacteriophage, Notifiable Diseases, Metabolism, and
+Virulence.  There are also some programmed objects:
+Streak_Plate (inoculate), _Streptomyces_fradiae_(grow), a basket of
+condoms (take condom).
+
+In future articles Danford indicated that he would write about the
+vax Notes Conference and about further MOO teaching experiences.
+
+
+Author: Thomas R. Danford  facrept@nccvax.wvnet.edu
+                           nc312011@vaxa.wvnet.edu
+
+Professor of Biology   WV Northern CC
+                       Wheeling, WV  26003   304-233-5900
+
+
+=========================================================================
+Date:         Thu, 19 Jan 1995 09:54:07 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      Towards Ordinary Teaching at Diversity University
+
+@COPYRIGHT DUJVRE and Donald  idd@io.org 1994
+
+        Donald  idd@io.org                                     8
+
+        Towards Ordinary Teaching at DU
+
+Abstract: Transforming a text based virtual reality conferencing
+system, i.e., a MOO, into an ordinary teaching environment.
+In the near future more and more classes will go online, a case
+is made for using MOOs as teaching environments. A tour of U. Can,
+a small virtual school, shows what can be done at DU MOO.
+
+               I) CLASSROOM OBSERVATIONS
+
+WHAT DOES A TYPICAL MOO STUDENT EXPERIENCE?:
+Non-virtual or real class experiences are very subjective and MOO ones
+are also. The discussions before and after classes are both revealing
+and informative. At first there is MOO consciousness as beginners,
+called newbies, adjust to the virtual environment. Newbies often feel
+they are in a strange country where the buildings and streets are not
+familiar. Usually veterans explain to the newer participants how to
+communicate on the MOO. This is a bit like pre-college orientation
+meetings. Once these communications basics are mastered, the dialog
+typically turns to personal questions or general everyday topics.
+By the end of the course, the conversations become quite comfortable,
+resembling ordinary ones.
+
+MOO CLASSES ARE NO LONGER EXPERIMENTAL:
+MOO classes do work!  As teachers gain experience in this environment,
+they can spend less time discussing teaching and more time doing it.
+Usually participants just need basic MOO orientation. The amount
+depends on the person's experience and the level of competence required.
+
+CURRENT TEACHING TOOLS:
+(MOO terms used are descriptive but to really understand what the text
+based tools do  try them)
+The use of teaching tools is very subjective and depends on the
+instructor. These include using 'lecture notes', 'slide shows',
+'notice boards' and 'Television tapes' [see Ken's article].
+Chalk is still the basic tool in many classrooms; the MOO
+equivalent is direct typing using a keyboard. The classrooms
+and meeting rooms developed by Ken and others allow varying
+degrees of control including moderated discussion. Courtesy and common
+sense allow any place to be used as a classroom. However, a clock,
+blackboard, tables and chairs are useful props.  They add a perception
+of learning environment in real life and in a MOO.
+
+POSITIVE ASPECTS OF MOO:
+The advantages of MOO over postal mail and email should be obvious.
+Spontaneity and real time interaction provides a rich learning
+experience. For people located in isolated areas this provides
+a sense of community. If you believe in learning from others,
+then MOO provides an opportunity to do that at great distances
+even across international boundaries. As with any education, it
+is an opportunity that must be seized.
+
+
+
+
+        Donald  idd@io.org                                     9
+
+               II) CONDUCTING CLASSES AT DU
+
+POSSIBLE NOW AT DU:
+People taking classes at DU have access to MOO objects there.
+A 'notebook','notice board', 'gopher slate',and 'WWW slate'
+are MOO versions of pencil, paper and laptop computer. How
+many regular classrooms give every student access to Gopher
+and the World Wide Web?  DU can do it now.
+
+MOO WARNINGS AND SUGGESTIONS:
+Prospective teachers should first master a few MOO basics before
+attempting to teach on a MOO. If this is not possible then having
+an experienced assistant is recommended. Know your environment;
+expect 'LAG'!  Lag is 'network' delay between typing something seeing
+it. If lag is big, you and/or students are essentially disconnected.
+Try to minimize excessive text on screen which is very distracting
+especially for beginners. Use notice board(DU) like MOO objects.
+These are wonderful text projectors for group viewing and text can
+also be reviewed, by those who are late or are just recovering from
+a brief amount of LAG, without disturbing class presentation flow.
+This partial solution was designed to reduce minor asynchonous
+'lag' problems which are still prevalent on the internet.
+
+Teaching tool selection is very subjective and depends on the
+individual. Some will prefer a line by line presentation using
+straight typing from a keyboard. Others will want to use a
+'Lecture' (#6140 at DU) which allows lines of text to be entered
+and recalled by number(DU is an Object Oriented world, numbers
+#nnnn are DU objects). There are various MOO objects like the
+'Notice board' (#5266 at DU) and 'Slide show' (#1650 at DU) which
+show a block of text all at once. There are also presentations which
+allow entered lines to appear on a time delayed basis (TV #907 at DU).
+
+
+HOW TO HOLD A COURSE (A Simple Teaching Guide):
+The following are simple steps for holding MOO classes.
+1. As with any course prepare an outline and fill it in.
+2. Get approvals so space, time, etc. fixed and covered.
+3. Place a few advertisements in appropriate places.
+4. Answer email personally, 'Pine' mailer does list also.
+5. Send materials, get them online and through orientation.
+6. Present and discuss materials, and do it your way.
+7. Learn from the class and rethink the next one.
+
+
+
+
+        Donald  idd@io.org                                    10
+
+                  III) THE FUTURE
+
+COMING THIS NEXT YEAR:
+There are several new extensions of MOO being tested that include
+graphics. BioMOO has been working on a World Wide Web(WWW) programming
+interface. Others also been working on a WWW interface include
+Sensemedia's World MOO. WWW capabilities include graphics, sound,
+and multimedia as well as text. Independent of these WWW extensions
+is the extension that almost every MOO user is waiting to hear about.
+Pavel Curtis at Xerox will release 'Jupiter' which is apparently more
+of a 'whiteboard' product. Users with special Jupiter client programs,
+either X-windows or Microsoft Windows for now, can use special graphics
+MOO objects. These objects will generate a window on the user's
+graphics screen.  Graphic icons and a mouse are available to draw
+simple lines, etc. even color even. A properly equipped local area
+network will allow images and sound locally. These will be described
+in a future article.
+
+
+FUTURE BY LINEAR EXTRAPOLATION.
+In 2001, $1,000 buys a laptop Silicon Graphics Workstation and
+you have change left over for a 28.8K clunker modem. Ordinary phones
+use 56K modems that cost less than $100. The Internet is world
+wide and you can talk to it through a small pocket computer and output
+shows up on your glasses. VR is almost affordable. Using high resolution
+stereographic glasses, gloves and a few body gloves people will be able to
+alter their virtual environments. Education can be done locally
+connecting to Universities located throughout the world. People will
+consult their computers. Almost everyone will have gigabytes of info:
+books, files etc. with them or available instantly through the 'skye-net'
+everywhere. People will be able to choose either information or
+entertainment. Most will choose entertainment. The remaining people
+will have incredible access to information and information services
+takes on new meanings.
+
+             IV) A TOUR OF U CAN
+
+U CAN:
+U Can was founded to deliver quality affordable classes using
+self selection principles with a 'you can do' attitude.
+Current development projects include 'Snowflake' involving
+DU MOO, Donut MOO, and BayMOO. This will be shown later.
+
+U Can is in Diversity University's 'Business School'. It's north of
+'Cratchet Hall 3-4' or type '@go #5029' from anywhere in DU.
+
+
+
+
+
+        Donald  idd@io.org                                    11
+
+#5029 is the U Can lounge, it centers a small complex of linked rooms.
+There is something in almost every direction:
+* North is 'Future parc' a residential area where students store things.
+* South is 'Cratchet Hall 3-4' of the 'DU Business School'.
+* East is 'WakeMOO', here michael holds Finnegan's Wake(Joyce) meetings.
+* West leads to the Internet classroom where Internet classes are held.
+* Down leads to 'UCCC' a new area where computer classes will be held.
+* Up leads to 'MOOland' a development planned for near future.
+
+UCCC:
+Unix classes and Tutorials will be held and stored here, along
+with HTML classes and tutorials in both English and Spanish.
+
+MOOland:
+An educational 'exposition' area with self paced learning and real
+time guidance. In particular 'Snowflake' tutorial project will be
+undertaken jointly with several MOOs: BayMOO, Donut, and DU.
+
+UCAN TOUR:
+The following are some screen captures of an online session at DU.
+The text scrolls onto the screen as one moves from room to room
+using mostly standard directions: N, S, E, W, Up and Down.
+The text is what a person who 'enters' the room would see on screen.
+
+NOTE:Screen captures are shown between dashed lines and are numbered.
+
+1) Snowflake
+-----------------------------------------------------------------
+Snowflake
+  Nov. 30, 1994  a few shovelfuls of dirt dug by idd and davem in
+their never ending quest for easy and simple.
+
+   This layout is like a snowflake. Each branch of knowledge and
+fun, sometimes called learning, branches off further.
+Adventure directions  N, S, E, W, Up and Down and the odd hidden NE, NW,
+SE, SW are used to find the really hidden treasures :).
+
+  East of here lies  MathTree the root of the Mathematics tree.
+Exits include: [north] to MOOland, [east] to MathTree
+-----------------------------------------------------------------
+
+Back to the lounge #5029 and then west to the classroom, the actual
+MOO command is shown in upper left as it appears on the screen.
+The room name appears just under the last movement command.
+The students are allowed to stay around the lounge and three
+are shown here.
+
+
+
+        Donald  idd@io.org                                     12
+
+
+2) U Can (DU #5029)
+-----------------------------------------------------------------
+
+@go #5029
+UCan
+
+ AiL  is a lounge to relax and chat with friends. TV and  Gopher here.
+
+Please look at 3,4, 5 and 7 on TV here. or RCA in IHL down below.
+
+to observe class in Aic while in session, @go #6982.
+
+ PLEASE look at the MOO exhibits here, DWI contains dwight's Butterfly.
+  Just  'enter dwi' and try to catch it,  'out' to exit.
+
+Exits include: [south] to Cratchet Hall 3-4, [Wake] to WakeMOO,
+[n] to FUTURE parc, [down] to UCCC, [up] to MOOland, [class] to IFT
+You see NOTICES, dunb2, ND, TV, g3, U_CAN, Dwi, VT, and Mork here.
+Reuben, Raman , and Porah are here.
+-----------------------------------------------------------------
+
+The room currently shows some basic MOO commands in its description.
+This classroom has many features including furniture to sit on, a
+clock that gives EST(Eastern Standard Time) and GMT(Greenwich Mean
+Time) times, a blackboard, a Desk and a Table. It can be closed
+allowing only registered students to enter.
+
+3) Enter 'Internet For Teachers' classroom IFT (DU #8880)
+----------------------------------------------------------------
+class
+IFT
+  This is a classroom designed by Ken. Look blackboard to see msgs.
+
+  Welcome to informal internet seminar.
+
+   To speak type:  say
+   To page someone type:   page
+   If stuck try typing help
+
+ Exits: [n] to Notice Board repository, [d] to lab, [office] to
+don's office, [west] to Tutorial room, [east] to UCan lounge.
+You see Teacher's Desk, Big Table, Barcelona_chair,
+Mackintosh_chair, LazyBoy, Log, and Rock.
+You see giar-ift standing about.
+You see AI_Gallery, REVOX, g1, g2, Homepage, HelpDaveM, MOOO,
+Watchman, DU-FAQ, Z1, Z2, Z3, mtl, ED, and ift.
+-------------------------------------------------------------
+
+
+
+
+        Donald  idd@io.org                                     13
+
+
+Next to the Tutorial storage room north of #8880.
+Each of these notice boards contains about 10-15 notices of 10-15
+lines or about seven thousand lines of text in total.
+
+4) A Notice board repository from  'Affordable Internet' course.
+-------------------------------------------------------------
+
+north
+Tutorial Room
+
+ First week of classes covered Internet timeline Z1, Z2, Z3, mtl,
+ FNTL, fw3, and Tnet. and finally FNG, aip, fn1, FNM, and OCM
+ Assignment #1: Read last on fn1, mostly exploration of freenets.
+
+ Second week covered FMP, Bruno, Uwasa. Read InterNIC
+ Assignment #2 read Usenet readings.
+
+  Third week read Unix and Hytelnet notes. Also FTP mail.
+  Assignment for Wk 3. Get the ftp info from cica.indiana.edu by
+  email and read.
+
+Exits include: [s] to IFT
+You see FNTL, fw3, Tnet, FNG, aip, fn1, FNM, OCM, WH, FMP, Bruno,
+MUwasa, InterNIC, Telnet_Names, Pico, Limited, UNIX, Usenet, HUNT2,
+Telnet, Ciao_Gopher1, Ciao_Gopher2, GH, Cica_Session, Mail_by_FTP, WAIS,
+ARCHIE, Archie_servers, FTP, Gopher_Session, WWW94_awards, HYTELNET1,
+HYTELNET2, HYTELNET3, WEBPOIS, TA, Hytelnet Libraries, Library Searches,
+HypermediaTL, ed2, NCF, NCFB, NCF94CF, NCFOF, NCFSoftwareProjects, wd,
+HowToStartFreeNet, Commerce, NCFPlanPublicAccess, and Hunt_Qns here.
+--------------------------------------------------------------
+
+Stopping the tour here to demonstrate the 'notice board' Bruno.
+A screen caputure shows what the participants see on their screens.
+'Project' shows text to everyone in the same room.  'Read' shows same
+material but only to the person reading it.
+Bruno is the Netfind server in Colorado used to find email addresses.
+
+5) Showing 1 of 2 slides on the  Notice board " Bruno."
+---------------------------------------------------------------
+
+project next on bruno
+Donald displays "BrunoS1" posted by Donald.
+---------------
+
+Top level choices:
+        1. Help
+        2. Search
+        3. Seed database lookup
+        4. Options
+        5. Quit (exit server)
+--> 2
+Enter person and keys (blank to exit) --> schwartz boulder colorado cs
+-------------------------------------------------------------
+
+
+
+
+        Donald  idd@io.org                                     14
+
+The next screen also shows easy it is to show text at DU.
+
+6) The second slide from the Notice board " Bruno."
+-------------------------------------------------------------
+
+project next on bruno
+Donald displays "BrunoS2" posted by Donald.
+---------------
+Please select at most 3 of the following domains to search:
+        0. cs.batman.net (boulder area atm network, boulder, colorado)
+        1. cs.colorado.edu (computer science department,university of
+colorado, boulder)
+Enter selection (e.g., 2 0 1) --> 1
+( 1) Look up And Fill In Dom Info: Got URL
+     'WP-PH://directory.colorado.edu/105'
+( 1) LookupAndFillInDomInfo: Got URL
+    'WP-SMTP-EXPN-Finger://mroe.cs.colorado.edu'
+( 1) Searching PH server as per white pages service pointer (URL)
+     for domain 'cs.colorado.edu'.
+PH Match(es):
+
+--------------------------------------------------------------
+
+There is a newer 'tutorial room' object that is still under
+development. It is 'west' from #8880 or @go #11952.
+This will be used in the 'Snowflake' project shown earlier.
+
+
+7) IFT1 (DU #11952)
+-------------------------------------------------------------
+@go #11952
+IFT1
+
+Type  'go'  to select a tutorial to view.  Then enter the selection number.
+Presently Basic is DU basics, MOOmail is DU moomail.
+TESP is a Spanish version of DU basics.  Testing still!
+
+This places you inside the tutorial, instructions are at bottom
+of each page; i.e., next, previous, look, quit  or just  n, p, l, q.
+
+Please send comments to Donald, we are testing now and need suggestions.
+Thanks for trying  out the Tutorial room here.
+
+Type 'help #11585' to find out how it operates.
+  To go back to Orientation:   @go #4133
+Exits include: [east] to IFT
+Text modules: Basic, MOOmail, Tutorial Help, and TESP.
+--------------------------------------------------------------
+
+
+
+        Donald  idd@io.org                                     15
+
+A brief note on current U Can activites:
+Initially DaveM conceived of his notice board to save quota and
+to present stories to children.  After many requests from various
+people he adapted it to the needs of teachers at DU. This latest
+reincarnation is an easy to use tutorial room aimed at K-12 users.
+With this accomplished MOOland and U Can are starting to evolve and
+develop rapidly.  The next step is hypertext.  Working with DaveM
+has been very enlightening and satisfying; things really move.
+
+That ends the Tour of U Can.
+
+
+Author: Donald
+Email: idd@io.org
+
+Teaching experience includes years in front of real classrooms and
+several MOO courses including 'Commodity Futures and Options'and
+'Affordable Internet' (notes are in #1287 and #8880 respectively).
+Currently putting this electronic journal together as the managing
+editor, sponsoring and giving an Internet for Teachers course at DU.
+
+A consultant for the GNA C++ course who helps maintain room #2000;
+other maintenance duties include writing and maintaining the text for
+DU's walk through @tutorial for beginners (@go #2350). A Spanish
+version (@go #11952) done by Felipe Contreras (fhca@labvis.unam) is
+now public. Current projects include 'Snowflake' and 'MOOland'.
+
+Academic MOOing at DU is still pleasant: teaching and learning both.
+MOO Credentials include attending Ulf's MOO programming sessions.
+
+As founder and Director of U Can Institute (along with Marcus)
+we hope to offer useful and affordable courses by using self selection
+principles. IF you believe in and want to hold quality courses subject
+to minimal bureaucracy don't give up.
+=========================================================================
+Date:         Thu, 19 Jan 1995 09:56:18 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      Teaching and Learning at Diversity University
+
+@Copyright DUJVRE and Karen L. McComas  mccomas@marshall.edu 1994
+
+        Karen L. McComas  mccomas@marshall.edu                17
+
+        TEACHING AND LEARNING AT DIVERSITY UNIVERSITY
+
+ Doing the Cha-Cha
+
+   The Grand Plan
+
+Students majoring in Communication Disorders at Marshall University
+are required to take 6 credit hours in the area of Audiology and Aural
+Rehabilitation.  This is typically done at the senior level, although
+additional coursework is offered at the graduate level.  I teach the
+basic audiology course, which requires that students master the basic
+concepts of acoustics, the anatomy and physiology of the auditory
+system, and the basic test battery.  While the first two areas can
+effectively and efficiently be taught in a traditional college course
+format, the basic test battery can only be conceptualized.  True
+learning can only take place with actual practice with the process of
+administering the basic test battery and screening protocol.
+
+
+Clinical practicum opportunities in the area of audiology are
+typically reserved for graduate students.  In addition, there is a
+limited amount of equipment available for use in either practice
+sessions or service provision.  These two factors prohibit students
+in the basic audiology course from having sufficient opportunities to
+practice and develop their skills in the process of administering the
+basic test battery and screening protocol.  In an effort to answer
+this dilemma, I created a virtual audiology lab to provide students
+with ample opportunities for practice.  It is in this virtual
+environment that students do not suffer from the typical real time
+deficiencies (lack of access to equipment and lack of patients).
+
+
+   The Cha-Cha
+
+Readers who are familiar with the cha-cha may quickly catch on to my
+analogy.  For those readers who spend more time on their computer
+than on a dance floor, let me enlighten you about the analogy I have
+chosen to use to describe my experiences thus far.
+
+The Cha-Cha is a Brazilian dance.  Described simply, it's one step
+forward and two steps back.  For my first step forward I spent hours
+learning to program and completing the audiology lab to my
+satisfaction. Eagerly I awaited the start of the Fall 1993 semester to
+unveil my efforts to my students.  Within the first week of classes I
+took my first step back.  Not a single student in a class of thirty
+had an account on the university's computer system and only one out of
+the thirty had any experience with a personal computer.  My second
+step back came shortly thereafter when my colleagues could only feign
+an interest since (1) only one other faculty member is an audiologist
+and would be capable of truly appreciating the potential of the
+virtual audiology lab, and (2) only one other faculty member (at that
+time) utilized the university's access to the internet.
+
+
+        Karen L. McComas  mccomas@marshall.edu                18
+
+   Taking Dance Lessons
+
+Encouraged by other individuals striving to use the virtual
+environment to facilitate teaching and learning, I adjusted my
+objectives and set my sights on taking another step forward.  First of
+all, I offered bonus points to any student who sent e-mail to me and
+asked for the bonus points.  [Fortunately for me, students will do
+just about anything for bonus points and not until the end of the
+semester did they realize that if everyone completed the task there
+really wasn't much of a bonus involved.]  While their simple e-mail
+message was most certainly a step forward, in most cases it was
+followed immediately by two steps back since only a few students
+logged in more than one time throughout the semester.
+
+In the meantime, I began planning for my spring courses with an eye
+to the development of computer literacy skills in my students.  Since
+I would have the same students that had fallen for the bonus point
+scam in the spring course, I had to be more creative and devious the
+second time around.  This time, I utilized another area which I felt
+certain  would motivate students.
+
+Throughout my teaching, I have always made every attempt to answer
+any question, any time, that a student may have regarding the material
+being covered in class.  I have freely offered class time, prior to an
+exam, for review and even accepted phone calls at home the night
+before a test or the night before an assignment was due.  I decided
+to continue that practice with a slightly different twist.
+
+First, I eliminated  the use of a class period for exam review.  My
+previous experiences had led me to the conclusion that what students
+really wanted from this period of time was either (1) the questions
+(or preferably) the answers or (2) all of the previous lectures given
+again.  I offered, instead, to conduct the review on-line, on the
+weekend before the exam.
+
+The second change that I made had to do with those questions that
+students ask, the ones when they stop you as you are about to enter
+the bathroom or are trying to get to another class.  I suggested to
+them that when they asked their questions in that manner, I was doing
+them an injustice trying to provide a quick answer without giving
+thoughtful consideration to the question.  I asked them to send their
+questions to me via e-mail.  That way I could devote the necessary
+time to considering their question and composing an answer that would
+do justice to the subject matter.  The questions and answers could
+then be distributed to all members of the class (via a mailing list
+on the local mail program).  In addition, when someone asked the same
+question for the tenth time, I could tell them that I had responded to
+that question and they could pick up the response via e-mail.
+
+
+        Karen L. McComas  mccomas@marshall.edu                19
+
+Only one student routinely sent messages.  I suspect that she was the
+only student who ever received the responses.  In spite of this
+limited success, I knew that I had at least one student who had
+learned a different dance.  Not only did she send e-mail relative to
+the course, she sent e-mail asking questions about different features
+available on the computer system, general messages just to make
+contact, and during a particularly stressful time of the semester for
+both students and myself, she sent a supportive note recognizing in
+it that she felt that students didn't realize how much we [teachers]
+actually did for them and that they tended to forget to thank us
+[teachers].   While I was highly encouraged by her success, my virtual
+audiology lab was getting dusty.
+
+
+   A New Dance Begins
+
+In the middle of the spring semester, I was offered a unique
+opportunity.  For some unknown reason, our department had extra funds
+for summer school and my department chair asked me if I would like to
+offer a computer course.  Immediately I responded in the affirmative,
+but I had to guarantee that the course would fill.  I developed some
+devious plans to ensure that the course would fill (at least through
+the census date) if I couldn't get it filled with our students.  As
+the registration process began, I had committments from several
+students, but few registrations.  As the spring semester ended, I was
+close, but still not full.  I made flyers and recruited for the class
+everywhere I went (including the softball field where my daughter
+plays on a Little League team).
+
+
+On the first day of class, I took another step forward.  With an
+enrollment of sixteen (I only needed 9), the course began.  By all
+accounts, the course was a success.  For me personally, the major
+success came as a result of the three students that continued to
+connect to MOO's even after the MOO assignment was completed.
+Currently there are about thirty students in the program that
+regularly utilize the computer resources available.  Within a year,
+we have moved from no students participating in the traffic on the
+internet to thirty travellers.
+
+
+        Karen L. McComas  mccomas@marshall.edu                20
+
+It's possible that we are no longer doing the cha-cha here at
+Marshall.  The computer course was such a success that the faculty
+included a recommendation in our curriculum review that the course be
+developed as a regular offering to fulfill the computer literacy
+requirement for graduation.  Each semester we have made gains in
+connecting students to the value of the internet.  This semester
+Marshall opened a World Wide Web server and student papers are being
+"published" on the web.  This has heightened their interest and
+encouraged several to start utilizing the resources available even
+when they don't get bonus points.  As student awareness grows, and
+the computer course is offered again in the spring, I plan to make
+participation at Diveristy University a course requirement for next
+fall.  In the meantime, I'll have to think of a clever name for a new
+dance.
+
+
+@Copyright 1994 Karen McComas mccomas@marshall.edu
+
+:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:
+
+Karen L. McComas
+Communication Disorders, Marshall University
+Huntington, WV  25755-2634
+More info?  finger mccomas@marshall.edu
+=========================================================================
+Date:         Thu, 19 Jan 1995 09:58:16 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      A Virtual Programming Course using the MOO (fwd)
+
+@Copyright DUJVRE and Marcus Speh  marcus@andersen.co.uk  1994
+
+        Marcus Speh  marcus@andersen.co.uk                    21
+
+A Virtual Programming Course Using the MOO
+******************************************
+
+Marcus Speh
+Andersen, London, U.K. and
+Globewide Network Academy, Inc., Austin, TX
+
+Submitted December 3, 1994
+---------------------------
+
+ABSTRACT
+~~~~~~~~
+
+The successful running of a fully virtual programming course using
+three internet tools, World-Wide Web, Email and MOO, is reported. The
+use of the MOO for realtime interaction of students and teachers is
+particularly emphasized. Setup, running and experiences made with the
+MOO during classes are explained and investigated. In May 1994 the
+Globewide Network Academy (GNA [1]), a consortium of online schools,
+organized its first fully virtual course "Introduction to
+Object-Oriented Programming Using C++", an introductory course for the
+C++ programming language. With 80 students and 10 consultants, it was
+successfully completed by August 1994, with all interactions taking
+place on the internet. At the 1st World- Wide Web conference in May
+1994, Geneva, this course won the award for "Best Educational Service
+on the Web '94" [2].
+
+1. COURSE SETUP.
+================
+
+During the course, a global network document retrieval system called
+the World - Wide Web [3] was the central static information
+resource. Electronic mail, archived on the Web, was also used,
+allowing for remote discussion between students and teachers. However,
+the essential real-time environment to create a classroom atmosphere
+for the students was a MOO, a multi-user environment with limited
+programming capabilities using the Object-Oriented MOO language.
+
+For the first course, all online sessions were held on Diversity
+University (DU [4]), a MOO founded by Jeanne Butler McWhorter, who is
+also a director of her own classroom, "The C++ Class", with the
+visionary object-number #2000 (see fig. 1). The classroom was an
+edited version of the standard classroom on DU, written by Ken
+Schweller. For the C++ course, this room was luxuriously equipped with
+additional help commands which would guide the MOO beginners through
+their first sessions. Fig. 2 shows a list of these commands, presented
+to any user who invoked the command "classhelp".
+
+
+Marcus Speh  marcus@andersen.co.uk                            22
+
+----------------------------------------------------------------------
+
+GNA C++ Class
+
+     You see the classroom for the GNA course 'Introduction to
+     Object-Oriented Programming Using C++, Type 'look
+     blackboard','look clock' to see these items.
+     You can type 'classhelp' for a list of helpful commands in this room.
+     For info on registration matters, type 'registration'.  For
+     announcements on the Bullet Board, please type 'look bb' now.
+
+     To look at the other items here 'exam <object>' for instructions.
+
+     Exits includes [out] to computer lab and [Lib] to Library.
+     GNA Forum meetings held on Saturdays.  @go #6490 to get to GNA forum.
+     You see Teacher's Desk, Shelf, Big Table, Wall, Blackboard, and Clock.
+
+
+[Fig. 1: Description of the C++ classroom.]
+----------------------------------------------------------------------
+
+With the standard room commands "@un/authorize", all course
+consultants were added to the list of authorized classroom
+personnel. This enables them to change most of the interesting room
+properties: with the "@sign on/off" command, they could make the
+status of the class visible as "on" or "off " in the informational
+"@who" list available to all MOO users. During sessions, entrance to
+the room could be enabled/disabled through the " door open/close"
+command: with the door "closed", only registered students and
+authorized persons were allowed to enter. Unlike other rooms, failed
+attempts to enter did not send a message to all session participants,
+so class could remain undisturbed.
+
+----------------------------------------------------------------------
+******* Useful Info for the C++ Classroom *******
+
+accounts        - how to get your account if you are registered
+classhelp       - read this help
+clients         - read about available MOO client programs
+coding          - how to get an introduction to MOO coding
+getting_started - first thing to do after you received your MOO account
+guide           - MOO guide for first-timers [or: mailme #3877]
+help here       - read help about valid commands in this room
+look list       - list with information on the C++ online consultants
+map             - a map of Diversity University (we are in the Tech Complex)
+MOOhelp         - list of students who may help with MOOing
+MOOmail         - how to get started using MOOmail
+objects         - longer help on details of this room and actions
+recording       - recording class sessions
+read US-clock   - read the US clock
+registration    - if you want to register for a GNA oop/c++ course
+schedule        - see when this room is staffed with a consultant
+
+(You finish reading the C++ Class help.)
+
+
+Marcus Speh  marcus@andersen.co.uk                            23
+
+Fig. 2: Helpful commands in the C++ classroom.
+----------------------------------------------------------------------
+
+Besides the standard setup, the room was equipped with a clock showing
+local MOO time as well as GMT. In addition, a "US-clock" was made
+available with the help commands displaying a map of the USA with its
+time zones and GMT (see fig. 3). Desks and tables could be set up by
+authorized players at leisure. By default, every session was recorded
+using a MOO recorder. Recorder, tapes and clock were hidden from
+direct view by storing them in a virtual "shelf" and a virtual "wall"
+in order not to overload the room with details.  Furthermore, two
+bulletin boards, labelled "for public posting" (by everyone in the
+room) were set up in the room: one was meant for general announcements
+by course consultants, the other was for notes and announcements about
+course-related programming projects which involved only a smaller
+number of all registered students.
+
+----------------------------------------------------------------------
+
+.
+
+   .           .            .            __
+   ________.___________._______     .           /  |
+   /        .           .       \____.          /   |
+   |         .           .            |  ___  __/   /
+   |         .           .            | /   \/     |
+   |         .           .            |_|         /
+   |  06:07   .  07:07   .    08:07   .   09:07  |    14:07
+   | Pacific .  Mountain .   Central   . Eastern |   GMT/CUT
+   |         .           .             .        _/
+   |         .           .               .     |
+   \        .         .                  .   /
+   \_______.______  .             ______.   \
+   .      \_.    _     __/      .\  \
+   .        .\__/ \   /         . \  |
+   .        .      \ |          . |  |
+   .        .       \|          .  \_/
+
+
+
+[Fig. 3: Frank's "US-clock" on DU. ]
+
+----------------------------------------------------------------------
+
+
+Marcus Speh  marcus@andersen.co.uk                            24
+
+2. GETTING STARTED & RUNNING MOO CLASSES .
+===========================================
+
+To solve the problem of registration for a greater number of temporary
+users during the course duration, the "Visiting Student Player Object"
+(VSPO, object #1939 on DU) was used.  This object class gives one or
+more owners wizard-like control over a fixed set of accounts.
+Passwords, player privileges and quota can be changed at request. The
+wizards are automatically notified of changes applied to a particular
+player of the VSPO. A fixed expiration date for the whole class is
+optional. To begin with, the total of 80 player accounts was
+distributed between two managing consultants. To actually become a
+player, the students were asked to login as guest users first during
+scheduled sessions where they would receive their password and user
+identity. For this experimental course, security was not an issue,
+which is why the consultants chose a method that also included a first
+real-time interaction with new students. As their first action,
+students were asked to change their password and set their
+self-description. Besides getting informed about basic MOO commands
+through a single info page, a TV for Ken Schweller's short MOO
+programming course was set up in another room. Though the default
+student only had the privileges of a "player", many of them
+subsequently used the chance to take a deeper look into MOO
+programming and wanted to receive "builder" and even "programmer"
+privileges.
+
+Before the course, most students had not used a MOO. They usually
+logged on with the simple "telnet" command, devoid of any more
+sophisticated client. To help with this, an FTP directory of common
+clients was created [5] and other more experienced MOO players helped
+writing short descriptions for each client. One consultant, Peter
+Murray-Rust, even wrote a prototype X-based client using the tk/tcl
+meta-language and offered it to the students [6]. Lots of additional
+material could be accessed by the students and the greater public
+through the Web pages, including classroom descriptions and sample
+sessions. Parts of these texts could successfully be re-used for
+another GNA course on the use of the internet.
+
+There were no lectures in class during this course, but consultants
+were available during fixed hours. The schedule, available on the MOO
+as well as on the Web, covered up to three sessions of two hours each
+every day of the week. In addition, the consultants held a public
+meeting every Sunday to plan the following week. Transcripts of
+interesting discussions were turned into hypertext using Laura
+Pearlman's converter tool [7] and made available on the Web pages to
+become a dynamical part of the whole hypertextbook.
+
+
+
+Marcus Speh  marcus@andersen.co.uk                            25
+
+About 80% of the students used the offer to meet and question
+consultants on the MOO at least once. However, not more than 30% of
+them became regular visitors during the course.  Consequently, some
+consultants decided to switch to "sessions on demand" - if a student
+wanted advice, he or she had to notify the consultant via MOOmail or
+email to come to the classroom. Since the consultants were kept busy
+preparing the hypertextbook and Web material and carrying out various
+administrative tasks, too little time remained to further explore all
+the possibilities of the MOO for this first programming course. In
+general, the time needed to prepare students for MOO interaction and
+guide them during their first days was underestimated. Also, threaded
+email discussions were a strong competitor for the MOO sessions which
+constituted the most experimental part of this prototype course.
+
+3. SUMMARY AND OUTLOOK.
+========================
+
+In spite of many shortcomings during this first course, the overall
+opinion of most students and consultants was that the MOO is a very
+promising resource. For a programming course trying to teach a
+relatively complex language such as C++, graphical help would be
+greatly appreciated. Both WWW and a gopher slate - which, in
+principle, would have made it possible to paste short programs to the
+MOO - were available, but not much used. Linking the MOO to the Web
+would avoid duplication of material and save MOO database space, and
+ongoing work of GNA people in this area will benefit future courses
+[8]. Most certainly, it will pay to have a subgroup of the consultants
+dedicated to MOO coursework, and similarly for WWW and Email
+interaction. By the same token, one cannot expect 100% enthusiasm for
+each part of this hybrid approach to online teaching. Since the
+present diverse structure of the student audience is undoubtedly here
+to stay, we will have to be diverse in the methods we can offer as
+well. The MOO is one with a great potential that has only barely been
+scratched.  It's full capababilities can only be realised through
+using it to teach many courses to many students.
+
+Results of the course and evaluations have been written up in various
+papers by the author of the present article, Sandra Burke, Daniel
+Perron and Tina Pitt. They are (or will be) available via FTP [2].
+
+
+
+Marcus Speh  marcus@andersen.co.uk                            26
+
+5. REFERENCES.
+==============
+
+[1] See e.g. "The Times Higher Education Supplement", London (UK),
+Sept. 16, 1994, page xii. On WWW, see
+"http://uu-gna.mit.edu:8001/uu-gna/".
+
+[2]</A> On WWW, see "http://uu-gna-mit.edu:8001/uu-gna/text/cc/".  A
+HTML version of this article is available in the directory "papers/"
+below this hierarchy, as well as other publications on the course and
+Tina Pitt's final evaluation. Via FTP, these papers are available at
+"ftp.desy.de" in " pub/uu-gna/html/cc/papers/" as well.
+
+[3] See K. Hughes "Entering Cyberspace - Introduction to the
+World-Wide Web", anonymous FTP to "ftp.eit.com" in "pub/www.guide", or
+the WWW section of the GNA Online Teaching Manual (in preparation,
+contact: Cindy Bartorillo <cindy@fred.net>)
+
+[4] See A. Dinsdale's WWW pages at "http://pass.wayne.edu/DU.html".
+
+[5] This collection of MOO clients is available via anonymous FTP to
+"ftp.desy.de" in "pub/uu-gna/moo/".
+
+[6] PeterMR's GUI for MOOs, called "exMOO" is available on the Web
+from " http://www.dl.ac.uk/CBMT/exMOO/HOME.html". He can be reached
+via Email at <pmr1716@ggr.co.uk>
+
+[7] This perl script is available via anonymous FTP to "ftp.desy.de"
+as "pub/uu-gna/moo/moo2html.pl".
+
+[8] An example is the moo/www discussion list maintained by Colman
+Reilly <creilly@maths.tcd.ie> - to particpate, you can email "
+moo-www-request@maths.tcd.ie"
+
+
+
+Marcus Speh  marcus@andersen.co.uk                            27
+
+ACKNOWLEDGEMENTS.
++++++++++++++++++
+
+The GNA and the author are indebted to Ken Schweller for designing and
+frequently debugging early versions of his marvellous classroom, to
+Laura Pearlman, a consultant to the course, for her moo2html converter
+of MOO recorder transcripts into hypertext markup language [6], to
+many students and consultants for their constructive critique and to
+the wizard team of DU for making this interaction possible in the
+first place. Thanks also to Carlye Dinnell, GNA's Press Officer in the
+UK, for careful proofreading.
+
+
+----------------------------------------------------------------------
+About the author: Marcus Speh is the chairman of the board of
+directors of the GNA . In his life off the net, he works for Andersen
+in London.  On the internet, his main interest is the development of
+online courses using the Web and the MOO. More about him is available
+on the Web, at the address http://www.desy.de/www/marcus.html
+=========================================================================
+Date:         Thu, 19 Jan 1995 10:38:45 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      Learning Disability and Education in , the 21 st Century
+
+@Copyright DUJVRE, Bob Zenhausern, Anne Pemberton, Lois Elman 1994
+
+        Zenhausern, Pemberton, Elman  drz@sjuvm.stjohns.edu   29
+
+       Learning Disability and Education in the 21st Century
+
+                Robert  Zenhausern
+                Anne Pemberton
+                Lois Elman
+
+
+The purpose of this article is two-fold.  To illustrate the kind of
+discrimination faced by the Learning Disabled child or adult in our
+society and to summarize some of the strategies and techniques that
+are currently in use with this group, with an emphasis on Education
+in the 21st Century.
+
+
+The Nature of the Problem
+
+In our culture, there is an underlying bias against all types of
+cognitive disabilities that does not exist for those with sensory
+disabilities.  The student who is blind is not blamed for being blind,
+but learning disability is somehow seen as the fault of the student.
+The child with learning disabilities is often accused of inattention
+or not working hard enough. The victim is held responsible for the
+problem and all would be well if he or she would "try harder".
+
+On the other hand, no one says to a blind person, "If you try harder
+you will be able to see." In the case of sensory and physical
+disability, we make accommodations in recognition of the specific
+disability and provide alternatives approaches.  We recognize the
+limitation imposed by the disability and teach them to reach the same
+goals as the non-handicapped using alternative approaches, e.g.
+Talking Books, Closed Caption, and Computers. The LD person, on the
+other hand, is often accused of laziness and inattention. Instead of
+rehabilitation and accomodations, the LD person is given remedial
+drills in what they have already demonstrated they cannot do.  Only
+recently has there has been grudging acceptance of the need to
+accommodate the LD individual.  On the elementary and secondary
+levels, for example, there have been flexibility in the timing of
+tests and acceptance of calculators and spell checker. Many of the
+accommodations used in Learning Disability, however, have not always
+served to improve the education of the LD, but seem more cosmetic.
+The aim seems to be to allow the students to "pass" by giving them
+lower goals rather than maximizing their potential.
+
+The bias may start in grade school, but it continues throughout life
+as this personal experience of Lois Elman illustrates most vividly.
+
+
+        Zenhausern, Pemberton, Elman  drz@sjuvm.stjohns.edu   30
+
+"In September 1993, I attended a national meeting, in Washington, for
+parent advocates of disabled children and their families.  In my
+conference packet was an application to be a grant reader for the
+Federal Department of Education in Washington, D.C. Since so many of
+these programs serviced people with disabilities, an effort was being
+made to give that population a voice in deciding which programs
+demonstrated merit to receive funding. Being the mother of two
+children with disabilities and learning disabled myself, I decided to
+give it a shot and apply.  As a school psychologist, I qualified on a
+professional as well as a personal level.  Several months after having
+filled out all the papers and senta detailed vita of my professional
+experience, a representative of the Department phoned and invited me
+to come to Washington. "After controlling my initial excitement, I
+proceeded to remind the caller that as a learning disabled person I
+had to cope with certain limitations.  I asked if I could use my
+portable computer to write out any documentation and was told that
+they didn't have a program which could be used with a Macintosh
+platform.  Since everyone hand wrote their comments on special forms,
+I was told that I had to do the same.  When I tried to explain, I was
+told that maybe I could be given a Department portable computer but
+there were people who were more needy than me attending the session.
+
+"I don't think that anyone at the Department of Education would be
+insensitive enough to arrange for a grant reader in a wheel chair to
+stay in a hotel room which is not adapted to accommodate the width
+of the chair through the bathroom door.  Just because a learning
+disability is not obvious on first glance, doesn't the individual
+deserve to be treated with dignity and regard for their difference?
+
+
+The story and plea of Lois Elman illustrates the bias continues
+throughout the lifespan.  Often the problem is not as blatant as that
+experienced by Lois.  A good example of this can be seen in a series
+of e-mail messages from young man in college.   Todd is a student with
+LD who fought his way through the special education hoops and hurdles
+to an Associate degree and is now enrolled in a 4 year college.
+
+Todd's first message: "School is fine. It is a lot harder then I
+thought it would be. I'm writing more papers then I did at my last
+college but I am learned alot more about writing papers so it's not to
+bad.  I'm only takeing 3 class, but I end up having to put a lot more
+time in each of my class then my roommates do just to get the same
+grades as they do.  Sometime it gets to me and I don't feel like going
+on but I just remind my self of how far I have come and push on.  My
+teachers are good this semester.  I go to them alot for help and they
+set down with me and help me.  I also go to the learning center ever
+day for help on writing.  They have helped me get better grades on my
+papers then if I just did then my self.
+
+
+        Zenhausern, Pemberton, Elman  drz@sjuvm.stjohns.edu   31
+
+A few days later, a second message:
+
+"Hi remmber when I said that I have trouble studing 5 chapters at once
+well I have to do it for my Tuesday class.  This is the class that I
+know what is going on but when it comes to takeing the test I don't do
+as well as I want. I know what the problem is.  I have trouble
+remmbering tec words. I can tell you what is going on but sometimes
+that does not help on a test because the teacher wants just the word.
+
+Todd has "dysnomia," which is characterized by an individual's
+inability to find the correct word or words to express himself.  Ask
+a dysnomic child "What is a steeple" and they will say, "The thing on
+top of a church".  Ask "What is the thing on the top of a church
+called?" and they cannot answer.  This child has difficulty reading
+since they cannot articulate the printed word and have what can be
+compared to a "tip of the tongue".  We have all probably experienced
+the frustration of having a word or name just beyond our ability to
+say it.  Such a child might read uncle for the word aunt.
+Comprehension without articulation.
+
+Fortunately for Todd, the teacher was a kind and patient man who gave
+his time to help prepare Todd for the exam and he ultimately  did
+very well.  The teacher was helping Todd by preparing him for the test
+in private sessions.  I would hope that all teachers showed the
+dedication of that man, but it is important to point out that he was
+using a remediation approach and not accommodation.  An accommodation
+to Todd's unique disability would have been to ask the questions in a
+different way.  Changing the evaluation procedure, rather than drill
+in passing a test would have been easier on both student and teacher.
+Prepare a test for the student rather than prepare the student for a
+test.  The whole experience had a very positive effect, as can be
+seen in this message from Todd after a talk he gave on LD for one of
+his classes.
+
+"This was the first time that I ever gave a speech on this problem
+and it made me feel special.  I liked the idea of telling people of a
+problem that not too many know about.  I also felt that after my
+speech my class mates treated me a little different. They never
+treated me bad before but sometimes when I read out loud or spelled
+something they would make fun of it.  Not really me just what I said
+or spelled.  But after, one person came up to me and said, "I gess I
+can't bother you about your spelling anymore.   I think if it is
+possible that people who have these problems should say something and
+teach other people about it so everyone can have a understanding of
+what a LD person must go threw to learn to make in life.  Since then
+Todd has found a pen pal in Virginia who has spina bifida and has
+volunteered to be a tutor for LD students who are part of the DO-IT
+project at the University of Washington.
+
+
+        Zenhausern, Pemberton, Elman  drz@sjuvm.stjohns.edu   32
+
+Even if this type of discrimination is eliminated, however, the
+original learning disability remains and the next section of the
+paper is a summary of how specific accomodations are being used.
+
+
+                     Solutions in Technology
+
+Low Technology
+
+The use of Adaptive technology in the education of those with
+learning disabilities has come a long way since the days of
+"perceptual training" when the learning disabled were trained to walk
+on balance beams in an effort to improve their reading skills.
+Notebooks, three-ring binders, index cards, xerox copies of someone
+else's notes, typewriters, color overlays, special colored glasses,
+and color-coding, highlighters, vcr's and video tapes, tape recorders,
+calculators, spell checkers, and personal computers are some of the
+various high and low technology options used by the learning disabled.
+
+Learning disabilities vary greatly from one individual to the next
+making it difficult for others to determine what the problem is and
+how to solve it.  Such a person must often diagnose and solve his or
+her own problems, often battling problems with low self-esteem or a
+sense they are "stupid" because others do not seem to have similar
+problems.  Embarrassment over having to use various crutches and
+adaptations often deter the learning disabled from sharing with
+others what "works" for them.
+
+There is a need for less drill and more alternative approaches to
+learning, evaluation, and productivity.  In the Altlearn Discussion
+Group (Altlearn@sjuvm.stjohns.edu,log9105) there was a debate on the
+nature of Learning Disabilities that was punctuated by some heated
+discussion.  There was considerable disagreement on many issues, but
+all participants agreed on one thing:  an LD student must be taught in
+the way he or she can learn and it was up to the educators to find
+that way.
+
+An interesting contrast can be seen in the use of technology in
+Accommodation for the Blind and Remediation for the Learning Disabled.
+Accommodation for the Blind can range Voice Box Synthesizers that
+allow the Blind to communicate internationally across the Computer
+Networks to a Guide Dog.  High Technology remediation for the LD child
+is all too often the substitution of computer drilling for the
+traditional workbook drills.  Low Technology Remediation is the
+workbook without the computer.
+
+
+        Zenhausern, Pemberton, Elman  drz@sjuvm.stjohns.edu   33
+
+The following series of approaches aimed at educational disabilities
+are based on actual research and classroom practices and illustrate
+the scope of accomodations that have been used.  Markman and
+Zenhausern (1989) found that about half the children in a mainstream
+class and 85% of LD children can not use verbal rehearsal to learn
+material.  They found that the classic "Cat, C- A-T, Cat" used for
+spelling or the typical verbal repetition of the arithmetic tables
+actually interfered with retention for these individuals.  The problem
+is compounded by the fact that this verbal repetition approach to rote
+learning is in such wide-spread use that individuals continue to use
+this counter-productive strategy beyond the K-12 school years. They
+question their own intellectual ability rather than the ineffectual
+strategies they have been taught to use.  An alternative strategy is
+for such individuals to learn rote material by imaging the letters or
+numbers.  When it come time to recall the material they can retrieve
+that image.  They must make a conscious effort not to repeat the
+material either out loud or silently.
+
+In contrast to this group, 15% of the individuals with the Learning
+Disabled label and 50% of mainstream children can make very effective
+use of a verbal repetition strategy. These are the people who learn
+best by putting the ideas into their own words and explaining it to
+someone else.  These are people who say they want to ask a question,
+but actually repeat what was just said in their own words.  There is
+an interesting distinction between the two groups of individuals:  one
+learns best by listening, the other learns best by speaking.  This
+distinction is not limited to those with LD but is manifested by
+everyone to some degree.
+
+Perhaps the most debilitating form of Learning Disability stems from a
+problem with reading.  Difficulty with reading is one of the earliest
+that appears in school and typically plagues individuals throughout
+their lifetimes.  At home and in school, reading all too often means
+the ability to translate verbatim the printed word into sound.
+Skipping words and substitutions are unacceptable even though they
+preserve the meaning of the text.  Individuals maintain that
+inadequate definition of "reading" after the K-12 school years, and
+thus maintain a self-image of reading disabled.
+
+Kalisky, Zenhausern, and Andrews, 1990 found that most children we
+have termed reading disabled do not learn to read because of the
+standard strategy used to teach reading.  They identified two types
+of reading disabled individuals.  The Phonetic Disabled group has
+difficulty with the first step of standard reading methods, converting
+a word to its sound.  This can be seen by their poor performance in
+matching two words on the basis of rhyme despite the fact that they
+can match on the basis of meaning.  These students struggle to
+pronounce every word and as a result, often lose continuity in the
+text.  They are dysnomic and suffer from chronic "tip of the tongue".
+
+
+        Zenhausern, Pemberton, Elman  drz@sjuvm.stjohns.edu   34
+
+The second type of child is the Semantic Disabled reader who has no
+problem with the matching of two words on the basis of rhyme, but
+shows many more deficits in matching two words on the basis of
+meaning.  These children will give a perfect word-for-word rendition
+of text, but have no comprehension of the meaning of that text.  The
+semantic disabled reader can convert words into their phonetic
+representation, but there is no conversion of this representation into
+its meaning.  Even non-reading disabled individuals have experienced
+"reading" text and suddenly realized that they were not comprehending
+the words that had been "read".  The Semantic Disabled reader does
+this on a chronic level.   These two deficits exhibited by the
+Phonetic and Semantic Reading Disabled Children can be directly
+related to the standard approaches used when teaching reading.
+Children come to school with auditory comprehension, that is, when
+the they hear the word "ball" they know it means "a round, bouncy
+thing".  Reading means that when children see the letters b-a-l-l they
+know it means "a round, bouncy thing".  Virtually every reading method
+is based on the strategy of converting the written word to its
+phonological counterpart so that meaning is derived from auditory
+comprehension.  This approach has been termed the indirect
+phonological route to meaning.  The child sees the word, says the
+word, and understands the word from its sound.  This can be most
+clearly seen in a phonetic approach, but holds equally well for a
+sight "look say" approach.
+
+An alternative approach that does not depend on the standard indirect
+phonological route to meaning has been termed Direct Access because it
+teaches reading by connecting the printed word to its meaning
+directly.  Direct Access at simplest level presents words and
+corresponding pictures are on separate index cards. As soon as the
+student learns to pair the words and pictures the student understands
+the word.  The accommodation for these individuals is simple:  allow
+the student to summarize what is read, or answer question about the
+text, but do not require him or her to read aloud word for word. In
+other words, the emphasis should be on comprehension rather than oral
+rendition.  The Semantic Disabled reader can "read" aloud fluently,
+but has no idea of what they have just read.  We all experience this
+from time to time, but these students have the problem on a chronic
+level.  They, especially have been called lazy or inattentive and
+punished for their handicap.  These people can learn to read using the
+Direct Access approach, but there is an instantaneous "cure" through
+the use of accommodation.  Let the person read aloud into a tape
+recorder and then listen to the recording to understand what was just
+read.  This is a strategy that may be especially effective for adults
+with semantic reading disability.  Incidentally, individuals who
+fall into this group also tend to learn by speaking.
+
+
+        Zenhausern, Pemberton, Elman  drz@sjuvm.stjohns.edu   35
+
+Tape recorders are also invaluable for recording lectures and meetings
+in order to accommodate difficulties with listening, comprehending and
+remembering. For learning disabled person who find it easier to
+concentrate with background noise, tape recorders or radios with small
+headphones can provide the accommodating without disturbing others
+nearby. VCR's, videos (including the many self-help and how-to videos
+now on the market) are also especially useful to many learning
+disabled persons.
+
+In addition to the problems of learning to read, LD adults often
+resort to the use a variety of solutions to everyday problems.
+Co-author Lois Elmore shares her experiences in buying a small
+business:
+
+"The seller knew I was learning disabled because she had received a
+detailed vita.  Yet, she wanted to negotiate the price of the business
+without having the benefit of any other professionals being involved.
+I realized that because I have gaps in my understanding of certain
+types of communications, I needed to bring in another person to listen
+and reflect back what was said.  I wound up bringing an accountant to
+assist me with negotiations."
+
+"Just as a person who is blind benefits from a scanner to input text
+into the computer, I need other people to help me get around my
+"blind spots".  In my way, I am using assistive technology.  I used to
+be ashamed to ask someone else to help me do what I thought I should
+be able to do for myself.  This feeling is constantly being reinforced
+by others.  I now feel differently. I realize that if its OK for an
+individual who is deaf to use a TDD or a person who can't type on a
+key board to use a text scanner and switch, then its OK for me to have
+other people assist me through those areas of difficulty.
+
+Individuals with learning differences need to have good insight into
+their own gaps in order to know when to ask for help, as well as why
+kind and amount of help then need.  Some other low-tech options
+include clear colored plastics overlays for printed material, index
+cards for note-taking, and pocket calendars or any of the "executive"
+organizer books and binders sold at many stationary stores.
+
+With the advent of the computer chip many low-tech paper and pencil
+aids have gone electronic.  Tiny spell checkers take the place of
+clumsy dictionaries, small calculators do mundane math chores, and
+electronic address books, calendars, and organizers take the place
+of their paper predecessors.  These items can be purchased alone, or
+incorporated into a multi-use computer, which can be a station at
+home, at work, or a "laptop" or Powerbook handily hung from a
+shoulder.  Software that anticipates the word from the first three
+letters typed, and spell checkers and grammar checkers on the most
+widely used word processors help tailor the computer to the specific
+needs of the learning disabled person.  Spreadsheets allow the use to
+"figure out" the formulae for every-day functions so that they are
+instantly available as needed.  Data bases, project planners,
+calendars, and similar software allow users to conquer those
+pervasive organizational problems.
+
+
+        Zenhausern, Pemberton, Elman  drz@sjuvm.stjohns.edu   36
+
+The Computer Networks
+
+The computer networks have been considered the "Great Equalizer" for
+disabled individuals and this holds true for learning disabled
+individuals of all ages.
+
+Electronic mail and mailing lists, real-time chat, and text-based
+virtual reality have become the motivating factors and students with
+learning disabilities are now motivated to write clearly and with no
+errors in spelling and grammar.  It is not uncommon to see these
+children cutting lunch to find a little more time on the networks.
+
+The Chatback Group provides an example of the use of mailing list for
+education of cognitively impaired children.  Chatback is a project,
+based in the United Kingdom and supported by IBM.  It was originally
+aimed at language impaired children, but has been expanded to include
+education in general with an emphasis on students with disabilities.
+The following are examples of what has been accomplished.
+
+Chatback is a project oriented list, designed to provide guidance and
+support for teachers who are using the computer networks in their
+classrooms.  During the past two years Chatback has introduced
+several projects including:
+
+Far Star where children responded to an Alien Being about the policy
+and practices of Earth.
+
+The Holiday Dinner, where children from all over the world described
+a holiday meal;
+
+Steel, where the 10 steel yachts, involved in a race around the world,
+posted latitude and longitude.  Children followed the race by plotting
+that information on maps.
+
+Memories tells the story of World War II in Europe through the eyes
+people who lived it.   A soldier who survived the Croatian Death
+March; a schoolboy who lived through the London Blitz, and a Holocaust
+survivor are just some of the people who are telling their stories.
+
+In addition to the Chatback discussion aimed at projects for the
+children, there are are other lists with different orientations.
+
+Autism provides a forum for those interested in Autism and other
+developmental disorders.  The subscribers include parents, relatives
+and friends of individuals with autistic individuals, teachers and
+researchers in the area, and individuals who are autistic themselves.
+
+
+        Zenhausern, Pemberton, Elman  drz@sjuvm.stjohns.edu   37
+
+Bicompal (Big Computer Pals) serves as the "classified ads" for
+individuals who are looking for network contacts for people with
+special needs.  The initial goal was to develop Big Brother/Sister or
+Mentor/Student relationships among those with similar disabilities.
+In practice peer relationships have developed in parallel with the
+mentor relationships. One example involves a group of blind college
+students in Austria who are planning to communicate with school
+children in the New York City Board of Education Visually Limited
+Program.
+
+There are many other lists available at varied locations on the
+Internet including those on ADD, Traumatic Brain Injury, and a list
+aimed at Deaf Children.
+
+Resources for education may be widely available on both gopher and
+World Wide Web but the location of these resources has been a problem
+until the development of lists like EdRes-L, Gopher Jewels, the NY
+State Department of Education gopher, and WWWEduc.
+
+The St. John's University Internet node has a special resource called
+Unibase. Unibase has been under constant development by Leigh Calnek
+of the University of Regina over the past 10 years and there are over
+30 systems currently in operation in Canada, New York, the
+Philippines, and Thailand. Unibase is a comprehensive system which
+encompasses the most important forms of electronic communications
+currently available on the for computers and the Internet.  These
+include: local and Internet email, discussion groups, access to FTP,
+telnet, and gopher, WWW and interactive conferencing.
+
+The Unibase system at rdz@sjuvm.stjohns.edu has been integrated into
+the Education and Rehabilitation network that is emerging at St.
+John's.  During the past six months Unibase has been used as a
+real-time conference center and recent conferences have included:
+    1) A panel on learning styles, with panelists from the US and Canada
+    2) On ongoing discussion group on violence in the schools
+    3) Olga Galkina, from Moscow, was available for several Broadnets
+       on Unibase where she was available to discuss her efforts to get
+       disabled children in Russia on the Networks.
+
+Note: A Broadnet is almost the opposite of a broadcast. A Broadcast
+sends all the information across the nets in all directions.  A
+Broadnet attracts those who telnet to participate; it is more like a
+fishing net.
+
+
+        Zenhausern, Pemberton, Elman  drz@sjuvm.stjohns.edu   38
+
+A Multiuser Object Oriented (MOO) environment is a text based virtual
+reality world in which the participants create their ideal
+surroundings.  They are an offshoot of the text based adventure games
+such as Zork except that the players have the power to create their
+own rooms and objects.  Jeanne McWhorter saw the educational potential
+of such an environment and created Diversity University, a virtual
+college campus that was meant to provide the tools for higher
+education.  At the present time, it is possible to walk through
+Dante's Inferno or take part in a simulated Battle of Agincourt.
+Diversity University Prep was created as a K-12 extension of DU and
+several projects have been developed for children in special
+education.  Learning disabled students from NY and VA are creating a
+virtual performance of Shakespeare's The Tempest.  Graduate students
+in School Psychology are involved in virtual externships with some of
+these students and are looking at their creations as possible
+protective instruments.  Learning styles are being measured, no on the
+basis of the scores on some instrument, but in terms of the
+environments the children actually create on the MOO.
+
+While the emphasis has been on the learning disabled child, the
+computer networks are effective tools for a person of any age.  For
+several years, husband of co-author Anne Pemberton, Steve, grumbled
+about her growing involvement with the networks even though he
+realized that much of her time online was necessary to provide good
+experiences for her Learning Disabled high school students. Finally,
+he gave in and decided it would be easier to join than to fight. A
+plumber and building systems technician by trade, his first time
+online included a lengthy chat with a building engineer in New York
+City. Soon after, he discovered and subscribed to a mailing list about
+the Civil War, which tied into his volunteer work at a local park. His
+initial trials of the gopher and World Wide Web systems yielded
+information useful to, and to be incorporated in the History Pavilion
+of the Virginia's PEN, to be used by Virginia students studying that
+period in history. Steve's learning disability is most obvious in his
+writing, which compares poorly to the rich language skills he has in
+speaking, listening and reading. Use of the keyboard has increased the
+quantity of words he generates, from single words and short phrases to
+paragraphs of 2-3 complex sentences.  As with many new users, he's too
+excited by the immediacy of electronic communications to do much
+offline writing (which can be "cleaned up" by spell checkers and such),
+so uses the "ask the wife" method of getting words down recognizably.
+
+
+        Zenhausern, Pemberton, Elman  drz@sjuvm.stjohns.edu   39
+
+Summary, Conclusions, and Implications
+
+One focus of this paper has been on the discrimination faced by
+individuals with cognitive disabilities.  In summary, there is an
+underlying bias against all types of cognitive disabilities that does
+not exist for those with sensory and physical disabilities.  The
+student who cannot see  is not blamed for being blind, but learning
+disability is somehow seen as the fault  of the student.  It is
+fortunate that the techniques that maximize the potential of a student
+we term learning disabled maximize the potential of all students.  We
+have to eliminate our teaching disabilities and learn how to teach
+more children.  Then we do not have to use the label Learning Disabled
+as frequently.
+
+A second point of this paper is based on the historical fact that the
+main emphasis of the 20th Century was to perfect and automate the 19th
+Century and the main emphasis of Education was to preserve the 19th
+Century.  During these past 200 years we have seen a growth from the
+quill pen to desk top publishing; from laborious hand calculations to
+calculators and spreadsheets; from hand drawing to CAD; from library
+card catalogs to World Wide Web.  Throughout this whole period,
+however, Education has stressed the importance of handwriting,
+arithmetic tables, and dated research techniques.  Why do we give
+closed book tests, with an arbitrary time limit, where the student
+does not have access to calculators and spell checkers?  This may be
+appropriate for the 19th Century workplace, but it does not reflect
+the tools essential for the 21st Century.  Our conception of the 3 R's
+must be expanded and modified and there must be a re-evaluation of
+what we mean by Elementary Education
+
+
+
+
+Reading
+
+Reading disability is one of the most serious problems in Education
+today since it is a basic tool of any century.  Much of that problem,
+however, has at its basis the rigid and standardized approaches in
+reading instruction.  An alternative approach, Direct Access has
+been summarized earlier, and this is just one instance of flexibility.
+There has been a constant debate as to whether a phonetic or sight
+approach is better for reading.  Researchers and theorticians on both
+sides supported their arguments with words and data. Unfortunately,
+with all this debate over the two ways of teaching reading, no one
+looked to see if there might be two different kinds of children.
+Reading and writing should not be taught, but expected of a child, the
+way listening and speaking are expected and not taught.
+
+
+        Zenhausern, Pemberton, Elman  drz@sjuvm.stjohns.edu   40
+
+Writing
+
+The complaint that students do not how to write is echoed from the
+Halls of the Third Grade and the halls of the University.  Pre School
+children want to "write letters" explain things, and tell stories and
+then they enter the First Grade.  Consider a 5 or 6 year old being
+taught to write.  He or she must complete 2 or 3 pages of filled with
+the letter "A" and is criticized for sloppiness.  As punishment
+children are forced to write repetitive statements.  The separation of
+penmanship and creative expression is evident in many programs where
+the children write and worry about spelling later or where the teacher
+takes dictation for the story the child tells.  I propose to let a
+child learn to write on a computer and let handwriting be taught later
+as an ancillary skill (much like we currently teach music an art).
+Separate creative writing from graphology.  Keyboarding skills are
+much more important in the workplace than handwriting.  This has a
+natural potential for integration into strategies to teach reading.
+
+Arithmetic
+
+Poor performance in Mathematics is one of the more serious problems
+faced by society today since Mathematics forms the basis of scientific
+work which underlies progress.  I think that what we call mathematics
+disability can be traced to an early problem in arithmetic.  Children
+who cannot master their tables, multiplication, long division, etc.
+are held back from advanced mathematics.  Given the widespread use of
+calculators in the workplace, an insistence on rote calculations is
+not a realistic preparation for the world after school.  I would like
+to suggest a program based a three-pronged approach to the teaching of
+mathematics: standard "paper and pencil"  calculations, intensive
+experience with approximations, and extensiveuse of electronic
+calculators and computers.  In the case of uneven development in these
+three areas, the child will be allowed to progress differentially so
+that difficulty in one prong does not interfere with growth in the
+other prongs.
+
+The final point of the paper is that we need to add an "I" for
+information to the Three R's.  To survive in the 21st Century, a
+person must know how to find information and know where to look for
+information.  In the 19th Century, the goal was to cram as much as
+possible into your memory.  In the 20th Century, the 19th Century was
+automated.  In the 21st Century, one goal is to cram as much data as
+possible into computer memory and still be able to find it.  The
+students have will then have time to convert the data into information
+and find creative uses for the information.
+
+Authors:  Robert  Zenhausern
+          Anne Pemberton
+          Lois Elman
+
+Email: drz@sjuvm.stjohns.edu
+=========================================================================
+Date:         Thu, 19 Jan 1995 10:40:27 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      How I lost 20 pounds on the New Moo Diet
+
+@Copyright DUJVRE and Samantha  samajane@mit.edu 1994
+
+        Samantha  samajane@mit.edu                            41
+
+Off the top of my head.....
+
+A series by Samantha J. Scolamiero (Samantha at DU) aka Brain Woman,
+listowner/creator "Brain Tumor Research / Support"
+BRAINTMR@mitvma.mit.edu
+http://www.mit.edu:8001/people/samajane/BRAINTMRad.html
+
+"How I lost 20 pounds on ### The New MOO Diet ###" *
+----------------------------------------------------------------------
+
+(* NO, this is not a tabloid article. MOOers have wonderful senses of
+humor and fun. You'll just have to get used to it. :-)
+
+I ask you to consider the Diversity University MOO -- a virtual
+college campus that exists partly in cyberspace and partly in the
+minds and collective imagination of those who visit there.  I ask you
+to consider it's power to change REAL lives.
+
+Take me for example:
+
+My disabilities are hidden. I have Acquired Brain Injury (ABI) as a
+result of a congenital brain tumor and subsequent surgery for its
+removal in 1990. I have spent the last five years trying to return
+to "normal".
+
+I have begun to realize that what I experience now, may BE "normal"
+for the rest of my life.  I have cognitive or sensory overload. Too
+much noise, light, or conversation can be overwhelming, tiring and
+even painful. This makes working, playing and navigating in real life
+difficult.
+
+Working in a traditional office environment is draining as the
+fluorescent lights, noise and activity add up quickly -- on many
+days a few hours of that is all my poor brain can manage to process
+before it just shuts down.
+
+Then there is playing. Until recently there was no energy left over
+for playing after coping with the added stresses of just trying to
+live with these new challenges that crept into my life as insidiously
+as the tumor grew.  I would often refuse invitations to social
+gatherings like parties or concerts because I knew they would be
+PHYSICALLY taxing.
+
+As for navigating, driving is difficult as my senses are dulled by
+scenery and cars whizzing by while split-second decisions should be
+made. After surgery, merely walking has become a task since I have
+vestibular damage which causes balance problems. Having to be
+conscious of keeping myself upright adds a challenge to the act of
+simply walking, which most everyone who can, takes for granted.
+
+
+        Samantha  samajane@mit.edu                            42
+
+However, besides just avoiding overloading situations there are some
+things I discovered I can do to ease the strain on my body. For
+example:  I often wear my sunglasses or a baseball cap indoors to
+reduce glare from fluorescent lighting.  I have been known to sit
+down in public places when I get dizzy (including taking advantage
+of the wide edge of the refrigerator cases in the grocery store. No
+kidding. :-)   I have even borrowed a wheelchair a few times at the
+shopping mall which helped a lot; it more than doubled the time I
+could spend there.
+
+One of the most frustrating and difficult aspects of having Acquired
+Brain Injury is that I appear perfectly healthy. I *LOOK* "fine". I
+know that some people therefore think I am odd or even exaggerating
+because I wear sunglasses indoors or use a wheel chair. (I wonder what
+goes through the mind of the shopping mall attendant when I mosey up
+to the counter, ask for a wheel chair, sit myself down and wheel off.)
+These preventative measures may seem odd, but I have noticed that
+using these strategies extends the time that I can DO things!
+
+Many people just can not comprehend brain injury because it is
+invisible.  Someone even suggested I was agoraphobic. A phobia is an
+inexplicable and illogical fear of something. My "fears" of being in
+large groups of noisy people, or malls full of noise and bright lights
+and chaos that cause my senses to overload (therefore decreasing my
+ability to function) are not inexplicable or illogical as a
+neuropsychologist or a fellow ABI survivor can confirm. Withdrawing
+in this way from social situations to prevent debilitating overload
+is not understood by people who think you *LOOK* just fine.
+
+Being "anti-social" does not fit my personality either. Being dictated
+by my body to limit my exposure to people and sensory stimuli, in
+order to pamper my damaged brain has been very frustrating and lonely
+if not devastating at times.
+
+I did not recognize that person, MYSELF, sitting on the couch day
+after day, numb from interacting with people, dizzy from standing too
+long, tired from just looking and listening....
+
+I used to be a person who thrived on interacting with people, running
+around half-crazed trying to get as much done as humanly possible
+every day. Again I say:
+
+I did not recognize *THAT PERSON* sitting on the couch day after day,
+numb from interacting with people, dizzy from standing too long,
+tired just from the simple effort of looking and listening. That just
+wasn't ME. It was my body there, but it wasn't ME.
+
+
+        Samantha  samajane@mit.edu                            43
+
+I will never forget my first "trip" to Div. U., one Friday night in
+March 1994. I was supposed to go out... to a party... that night, but
+I was too tired to deal with people. So I stayed home, turned on the
+computer and started surfing. I reached this place called Diversity
+University and went to a party there instead. I was overjoyed!  I went
+to a party and I didn't even have to leave the house. Best of all
+there were no side conversations, no radio in the background, in fact
+no noise at all, no sensory overload. I could sit quietly, socializing
+with people in an environment I could manage.
+
+Diversity University gave me my personality back. I can exercise the
+REAL me who is unfortunately trapped by a brain that doesn't work like
+it used to.  It gave me back real life capabilities. I can run around
+the campus meeting every one, talking and socializing, like the maniac
+that I am, but in silence. It is the social environment I desperately
+needed that is not physically debilitating or painful. (Hmmmmmmm, now
+if I could just get a JOB there.... :-)
+
+There are so many aspects of DU that are beneficial for me. I could
+write another article on that, but here are some examples.  I have
+trouble attending to real life conversations.  At DU I don't have to
+ask people to repeat themselves because I didn't hear what they said,
+it is captured in text on the screen. I can read it over 5 times if I
+need to. It is not as embarrassing as having to ask people to repeat
+themselves in real life. Also, I don't have to walk for miles across
+campus to attend classes or meet friends and professors. And when I
+am tired I can just turn off the computer. I don't have to worry about
+the commute home, because I am already there.
+
+"What about ### The New MOO Diet ### ?", you ask.
+
+Yes, I have lost 20 pounds since I discovered the DU MOO just a few
+months ago, and would directly correlate this pleasantly surprising
+change to my participation there. Diversity University lightened my
+MOOd (no pun originally intended) and lifted my spirits; it gave me
+something fun I could do, and there is no food allowed in the computer
+room :-).  But mainly it helped me to acknowledge and accept and
+overcome some of my limitations, at least "virtually."
+
+Using the MOO technology I saw my productivity increase. I saw the
+differences between trying to manage in real life and managing better
+with computer assistance. This realization gave me the confidence to
+try other "assistive" technology. I finally broke down and got a
+walking stick. (Don't call it a cane or I will bop you with it.)
+Now I can walk longer distances and therefore I get more exercise.
+THAT is how I lost 20 pounds on "The New MOO Diet."  :-)
+
+
+        Samantha  samajane@mit.edu                            44
+
+If you call *RIGHT NOW* you can order  ### The New MOO Diet ###
+Companion Cookbook.  Call 1-800-NEW-MOO-DIET... But WAIT!!!!...
+there's MORE! ~
+
+My disabilities are very subtle, and you would never guess anything
+was wrong if you met me; it is a blessing and a curse. I have had to
+struggle to define my limitations and accept them. While they are
+still VERY hard to accept in real life, Diversity University offers me
+an opportunity to forget them for awhile and to accomplish more and
+operate more efficiently while I am there. Sometimes I wish I could
+live and work full-time in cyberspace.
+
+Cyberspace empowers the disABLED. Those who cannot, CAN in cyberspace.
+Someone with cognitive overload can maintain an active social life
+because they can control their environment. A person who must always
+rely on a wheelchair in real life can run and jump and play at the
+MOO, just like everyone else. A person whose hearing is impaired can
+now "listen" to a group conversation in room full of talkative people.
+Can you imagine the impact these newfound freedoms have on people's
+perception of themselves and ultimately upon their lives???
+
+Cyberspace is a leveler. Technology is a powerful tool which is
+creating a new social structure where equality among individuals is
+more asymptotically approached than is possible in "real life"
+circumstances.
+
+My experience at Diversity University has enlightened me. I envision
+endless possibilities for enhancing people's quality of life. It has
+certainly improved mine.  I hope these simple words conveying my
+experiences may enlighten many more and inspire wider use of this
+incredible resource.
+
+MOO and other cyber applications must be acknowledged, advertised and
+fostered. The myth that this environment is just for game players must
+be destroyed.
+
+I challenge anyone who reads this to share it with at least one
+healthcare, medical or rehabilitation professional, to spread the
+word so that "cyberspace" may become an integral part of REAL LIFE for
+those who can benefit most from this new environment that has emerged
+using creative technology.
+
+The possibilities are VAST and definitely transcend cyberspace.
+
+The future is now.
+
+Just MOO it.
+
+
+Author:  Samantha J. Scolamiero (Samantha at DU)  samajane@mit.edu
+listowner "Brain Tumor Research / Support"  BRAINTMR@mitvma.mit.edu
+http://www.mit.edu:8001/people/samajane/BRAINTMRad.html
+=========================================================================
+Date:         Thu, 19 Jan 1995 10:42:57 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      Starknet Campus Of The Future
+
+@Copyright DUJVRE, Suzi John  S_john@sparc3.sparcc.ohio.gov  1994
+
+        Suzi John  S_john@sparc3.sparcc.ohio.gov              46
+
+
+        Donut - StarkNet Campus of the Future
+
+CANTON, OH- Donut was developed in August 1994 by four Stark County,
+Ohio middle and high school students as an experiment in cooperation
+with StarkNet, a division of the Stark County School District.
+Described as the "StarkNet Campus of the Future," Donut is an
+on-line interactive learning community focusing on students from
+Kindergarten through 12th grade.
+
+Shawn Arbogast (character name Turbo), from Osnaburg High School,
+Dave Robinson (Compuwiz) and Andrew Ertley (Q) from Lake High School
+and Justin Dobbs(Silence) from Lake Middle School are responsible
+for the concept and development of the Donut community.  Their
+combined programming expertise made their dream of a virtual on-line
+educational facility a reality.  System Operator, Bob Lukens (IDIC),
+and Internet Information Specialist Judy Birmingham (JudyB) are the
+adult technical advisors who assist the four talented students.  All
+of the aforementioned make up the core of Engineers (the Donut
+equivlent of wizards).  Arch Engineer, Suzi John (TecSec), computer
+technology secretary for the Massillon City Schools in Massillon,
+Ohio, manages, promotes and helps with furthering development of
+Donut.
+
+Students enter this virtual world initially as guests.  Eventually
+they are assigned character names and account passwords to link to
+the community.  The Bus Stop is the point of entry for all new
+players.  From there they can wander the promenades and streets to
+various classrooms, a guidance office and many business
+establishments.  Points of interest include the clothing store "You
+Wear it, We Sell It,"  The Donut Hole pastry shoppe, Donut Books,
+and the International Market complete with such food booths as La
+Vela Roja, Der Weinerschnitzel, Viva, The Taj Mahal and The Wok and
+exotic bills of fare.  Donut also has a medical center with attending
+physician Dr. Kolache, The Daily Planet newspaper office, and the
+CompuBank.  A sleep disorder center is being developed by a group of
+Marlington High School Students.
+
+While wandering throughout the community you might run into some of
+the regular Donut-ites.  Dave_E is from Virginia and has developed
+the clothing store and a beautiful central park.  Bluestreak,
+Mr.Data, Cally,  Blade, Elvis, Byrnes, Stephen, Philos, Silence,
+Jeremy, Gatsby, Quest and others will be wandering throughout Donut
+at any given time.  For entertainment you might even find them in the
+Rec Room or Blade's Roll-A-Rena, a complete roller blade and skate
+boarding arena managed by the colorful virtual bot, Rollin' Joe.
+
+The beautiful Cruller Tower dorms are south of the Bus Stop and
+presently are being occupied by nearly 50 residents.  Plans are in
+the works to construct Croissant Tower, a twin.
+
+
+
+        Suzi John  S_john@sparc3.sparcc.ohio.gov              47
+
+The Puget Sound Community School, lead by Distinguished_Prof, conducts
+classes online.  Orca, Bird_Boy, Sorcia, Gorath, Maji, Dipsquat,
+Pulp, Autumn_Rain, Red_Petal, Grunge and Smurf reside on the third
+and fourth floors of Cruller Tower.
+
+By going south of the Bus Stop and going Under the street you can
+embark on an adventure that will take you who knows where.  There are
+many rooms and corridors leading to various points of interest on
+Donut.
+
+The future of the Donut community looks bright as more and more
+students and staff members discover the benefits of on-line
+interactive learning.  Donut, created by students for students, is
+accessible at bigbird.stark.k12.oh.us 7777.  Development is being
+done now on classrooms  and, teachers are being recruited to bring
+their classes online.  Additional information can be obtained or
+comments can be addressed to S_John@sparc3.sparcc.ohio.gov.
+
+
+Author: Suzi John
+        S_john@sparc3.sparcc.ohio.gov
+=========================================================================
+Date:         Thu, 19 Jan 1995 10:44:27 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      Building Tools for Education
+
+@Copyright DUJVRE and Ken Schweller  schweller@bvc.edu 1994
+
+        Ken Schweller  schweller@bvc.edu                      49
+
+
+                     Building Tools for Education
+                      -Ken (aka Ken Schweller)
+
+  Over the past few years I have enjoyed building a variety of MOO
+tools which are presently being used here and about for instructional
+and educational purposes. These tools include the following Generics:
+  - video camera, tape, vcr, tv
+  - slide projector, lecture
+  - conversational robot
+  - classroom, and theater
+
+  The cameras, tapes, vcrs and tv were built on mediaMOO as part of
+a Television Station. I had originally intended to broadcast live
+shows from the TV Studio but it turned out that folks were more
+interested in creating their own documentaries and sharing them with
+their friends, so I created a Tape Library. Tapes deposited in the
+library could be viewed on a demand basis by any and all players.
+Since that time tapes and tvs are being widely used for tutorials,
+interviews, film making, and class  presentations.
+
+  The slide projector was built to effect the swift presentation of
+bulky text and graphic material to large groups. This tool has seen
+wide use in seminars and colloquia.
+
+  The Generic Lecture was built to help students present multiline
+material without the necessity of typing at break neck speed.  The
+text is entered ahead of time line by line and given in any chosen
+order and speed. I found that students who were generally nervous
+giving class presentations were much more relaxed when they didn't
+have to type in their speech in real time.
+
+  The Generic Classroom and Theater were designed to address unique
+MOO communication problems.  Consider the problem of 'too much noise
+in one room'.  The approach I used in the Generic Classroom was to
+divide the room itself up into subareas in the form of tables, sofas,
+chairs, rugs etc.  Folks in a subarea formed their own local
+conversation group without disturbing others yet they could still
+'hear' the teacher or anyone standing up. I took the opposite approach
+in designing the Theater.  This time I interconnected 6 separate rooms
+allowing folks to see and hear folks in other rooms under varying
+degrees of communication control.  The theater was intended to be much
+more than just a place to watch movies or see plays.  It was designed
+as a presentation forum where the level of speaker/audience
+interaction could be subtly controlled on a sliding scale of absolute
+quiet to full 6 room interaction
+
+  The Conversational Robot was originally designed as a toy. Since
+then it has seen serious educational use as a 'drill and kill'
+vocabulary tester, tutor, room guide, and information assistant. This
+is the tool kids have the most fun working with.
+
+
+        Ken Schweller  schweller@bvc.edu                      50
+
+  I have thought a lot about what constitutes a really good MOO
+educational tool  Here's the list of tool characteristics I've come up
+with. A good tool for MOO education must be:
+
+   *Useful*      - must serve a REAL pressing need. A clever tool
+                   that serves no important need is best recycled.
+
+   *Easy*        - must be VERY easy to use. A tool should have a
+                   familiar look and heft. The verbs should be
+                   easily guessable without using @exam and the
+                   consequences should be predictable.
+
+   *Fun*         - must be a bit whimsical. If folks don't enjoy
+                   using the tool, they won't. But not cute.
+
+   *Powerful*    - must be powerful enough for kids and professional
+                   researchers/educators. A tool must 'grow' with
+                   you as your moo experience increases.
+
+   *Adaptable*   - must be capable of use in many different unforseen
+                   ways.  No one can predict what uses a clever person
+                   will find for a good tool.
+
+   *Evocative*   - must be a catalyst to evoke new ideas in users.
+                   Simply using a tool should suggest to the user
+                   new possibilities.
+
+  I am still actively engaged in Tool making and welcome any
+suggestions from my colleagues on the design of the latest greatest
+tool. :)
+
+
+Author: Ken Schweller
+        schweller@bvc.edu
+=========================================================================
+Date:         Thu, 19 Jan 1995 10:45:59 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      Diversity University Grant Center
+
+@Copyright DUJVRE and Cathy Bennet Libnm1@nccvax.wvnet.edu   1994
+
+         Cathy Bennet Libnm1@nccvax.wvnet.edu                 52
+
+                Diversity University Grant Center
+
+Got a great idea for an innovative project but need funding and
+partners?  The Grant Center at DU may be the place to begin your
+search.  Set up as a central repository of information on funding
+agencies, grant listings and general grant writing information, the
+Center also  fosters collaboration between DU users from many
+different geographic areas and disciplines.
+
+A gopher slate titled Grant Opportunities lists many of the government
+Internet sites offering grant information.  These include such
+agencies as the National Science Foundation and the National Institute
+of Health.  Current funding opportunities are listed along with
+guidelines and submission criteria.
+
+A catalog of DU users is also available at the Grant Center and is
+keyword searchable.  Those individuals who have completed their @info
+with relevant information regarding their occupations and interests
+can be linked with others in the same interest area by searching for
+a particular keyword, such as history, English, music or K-12.  Once
+individual names are found the searcher can then contact the
+individual for collaboration on a project.
+
+The Grant Center is also the location for funding projects involving
+the incorporated, non-profit agency known as Diversity University.
+Support services and hardware require donations of time and equipment
+not always adequate to meet current user needs.  The Grant Center is
+the focus of the planning for and the solicitation of such current and
+future development funds.
+
+Can project and grant collaboration on DU MOO work?  Ask the three
+professors preparing to begin implementation of an Annenberg/CPB
+project that was developed at DU or the individuals involved with a
+recently submitted Department of Education grant.  Collaboration on DU
+can be very rewarding.
+
+Author: Cathy Bennet
+        Libnm1@nccvax.wvnet.edu
+=========================================================================
+Date:         Thu, 19 Jan 1995 10:48:10 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      Education MOOs
+
+copyright DUJVRE and Donald  idd@io.org  1994
+
+        Donald  idd@io.org                                    53
+
+
+                Education MOOs and Tools
+
+Contents:
+        1) Education MOOs
+        2) Education Tools
+        3) Education MOO list
+        4) Featured MOO: Diversity University
+        5) Education Tools: Generic objects at Diversity University
+
+1) Education MOOs
+   --------------
+This column is the first of a series of articles covering Education
+MOOs. As new moos are popping up steadily, we can only discuss a few
+typical examples now. We will try to cover as many Education MOOS as
+possible in future issues.
+
+
+
+2) Education Tools
+   ---------------
+One of our aims is to compile a comprehensive list of Educational Tools.
+Most of the Education MOOs have a 'gopher slate' but how many have a
+World Wide Web client like the 'WWW slate' developed at EON.
+
+A core set of Education Tools includes:
+* writing tools: '$note', 'MOO mail'
+* standard communications features: 'say', 'page', 'emote' and 'think'
+* exploration tools: 'look', 'read', and 'exam'
+* manipulation tools: 'get', 'grab', 'drop', 'move'
+
+Added to these, are 'generic' tools created by individual programmers,
+especially wizards. Every Education MOO needs dedicated wizards!
+
+
+
+3) Education MOO list
+   ------------------
+Apologies offered now for all errors, as we attempt to classify MOOs.
+
+
+ESTABLISHED EDUCATION MOOs: holding classes for six months or more.
+
+      * BioMOO: bioinfo.weizmann.ac.il 8888 or  132.76.55.12 8888
+                Contact Gustavo Glusman
+                Email: Gustavo@bioinformatics.weizmann.ac.il
+                Mostly for professional biologists, BioMOO's Web
+                interface development is very innovative.
+
+      * Diversity University: moo.du.org 8888 or 192.101.98.8 8888
+                Contact Jeanne McWhorter
+                Email: gsswky@menudo.uh.edu
+                The first dedicated Education MOO is branching out to
+                multiple servers.
+
+
+
+        Donald  idd@io.org                                    54
+
+      * Collegetown: next.cs.bvc.edu 7777
+                Contact Ken Schweller
+                Email: schweller@bvc.edu
+                Ken designed many existing Education Tools at various other
+                MOOs and runs this one.
+
+      * EON: mcmuse.mc.maricopa.edu 8888
+                Contact Greg Swan
+                Email: swan@mcmuse.mc.maricopa.edu
+                Shkoo and others developed the WWW slate here.
+                "MCCD must undertake serious exploration of
+                constructivism if it wishes to retain its position of
+                educational excellence in this country." Swan and Hughes.
+
+
+      * MOOville: rolfs-gw.ucet.ufl.edu 7777 or 128.227.140.215 7777
+                Contact Anthony True
+                Email true@ufl.edu
+                1500+ take English classes using a local area network
+                with 150 stations connected to a MOO. IBM is a sponsor.
+
+      * WriteMush: palmer.sacc.colostate.edu 6250 or 129.82.169.4 6250
+                Contact Maria or Jstrick
+                Email: Maria or Jstrick@netcom.com
+                Tari started holding English composition classes here
+                in Sept. 93.  This is technically a TinyMush.
+
+
+PIONEERS LIST: MOOs that played an important part with other themes.
+
+      * LambdaMOO: lambda.xerox.com 8888 or 13.2.116.36 8888
+                Contact Pavel Curtis
+                Email: pavel@parc.xerox.com
+                All current MOOs descend from this one.
+
+      * JaysHouseMOO: jhm.ccs.neu.edu 1709 or 129.10.111.77 1709
+                Contact jhm@ccs.neu.edu
+                'gopher slate', 'MOO networking', and an
+                'internal hypertext system' accessible from the
+                world wide web are early JaysHouseMOO developments.
+
+      * MediaMOO: mediamoo.media.mit.edu 8888 or 18.85.0.48 8888
+                Contact Amy Bruckman
+                Email: asb@media.mit.edu
+                "A MOO designed to be a professional community for
+                media researchers."
+
+      *GNALab: gnalab.uva.nl 7777 or 145.18.70.16 8888
+                Contact Gustavo Glusman
+                Email: Gustavo@bioinformatics.weizmann.ac.il
+                This is GNA's MOO programming testing lab.
+
+
+
+
+
+
+        Donald  idd@io.org                                    55
+
+K-12 LIST:
+
+      * Donut: bigbird.stark.k12.oh.us 7777 or 199.218.192.6 7777
+                Contact Suzie John
+                Email: john@sparc3.sparcc.ohio.gov
+                This K-12 MOO is in Stark County Ohio.
+                (See article by Suzie John in this section)
+
+      * MariMUSE Global Learning Collaboratory (No anonymous guests)
+                Contact Jim Walters and apply for character
+                Email: walters@pc2.pc.maricopa.edu
+                "A Global Learning Collaboratory serves learners
+                k through gray.  Many of the MariMUSE users are
+                elementary school students who MUSE as a part of
+                their daily learning activities.
+                All learners are welcome to join."
+                For more info, gopher pcef.pc.maricopa.edu or
+                http://pcinfo.pc.maricopa.edu/MariMUSE/MariMUSE.html
+
+      * MicroMUSE: micromuse.musenet.org 4201 or 18.43.0.102 4201
+                Contact Barry Kort
+                Email: bkort@musenet.org.
+                MicroMuse Mission Statement:"MicroMUSE is chartered as
+                an educational Multi-User Simulation Environment (MUSE)
+                and Virtual Community with preference toward educational
+                content of a scientific and cultural nature.  The
+                MicroMUSE Operations Council works towards the development
+                of MUSE technology to enhance the exchange of ideas, the
+                learning process, and the expression of creative writing
+                for individuals of all ages and backgrounds."
+                FTP: ftp.musenet.org,  Gopher or Web: web.musenet.org.
+
+
+WEB MOOs:
+
+      * BioMOO: http://bioinfo.weizmann.ac.il:8888
+                Contact Gustavo Glusman
+                Email: Gustavo@bioinformatics.weizmann.ac.il
+                Get webpass and instructions from BioMOO. Gustavo
+                Glusman runs this MOO for professional Biologists
+                and holds meetings using its WWW capabilites.
+
+      * Sprawl: http://world.sensemedia.net/
+                WorldMOO: world.sensemedia.net 1234
+                Contact S. Epstein
+                Email: sle@picosoft.com
+                Chiba's Sprawl is one of the earliest Web MOOs.
+                World, Tinker and Core MOOs are linked to Sprawl.
+
+
+
+
+
+        Donald  idd@io.org                                    56
+
+CULTURAL MOOs:
+
+      * Meridian: sky.bellcore.com 7777
+                Contact sky
+                Email: deanna@thumper.bellcore.com
+                The theme is understanding between countries through
+                virtual travel and cultural experiences.
+
+      * BayMOO: baymoo.sfsu.edu 8888 or 165.113.1.30 8888
+                Contact baymoo@worldbit.com
+                Their official statement is: "BayMOO is a virtual theater
+                for the creation of objects and the weaving of communities
+                and tribes. The overarching themes are the spirit of the
+                San Francisco Bay Area and the metaphor of water.
+                The only rule of conduct is: RESPECT."
+
+MOOs FEATURING LANGUAGES:
+
+      * French: logos.daedalus.com 8888
+                Contact Mark Horan
+                Email: horan@LCLARK.EDU
+                According to 'Henri': "The streets of Paris provide
+                the model for this French language MOO."
+
+      * Italian: Little Italy MOO ipo.tesi.dsi.unimi.it 4444
+                Contact brenna, carbone, aprile, riva, or veggiot
+                        @ghost.sm.dsi.unimi.it
+                Or Email: littleit@mora.usr.dsi.unimi.it
+                WWW: http://www.dsi.unimi.it/Users/aprile/HUG/LI.html
+                This is an Italian language MOO in Italy.
+
+      * Latin: MUGIT at PennMOO  ccat.sas.upenn.edu 7777
+                Contact Ellen
+                There is a Latin Club here called MUGIT.
+
+      * Multilingual: MOOsaico moo.di.uminho.pt 7777 or 193.136.20.102 7777
+                Contact  Oblivion
+                Email: pmoo@moo.di.uminho.pt
+                This is a multilingual language MOO in Portugal.
+
+      * Spanish: MundoHispanno kong.syr.edu 8888 or 128.230.1.200 8888
+                Contact  Colega or ThwartedEffort
+                Email: lmturbee@mailbox.syr.edu
+                "an academic MOO for native speakers and second language
+                learners of Spanish."
+
+      * ESL/EFL: schMOOze University arthur.rutgers.edu 8888
+                Contact Julie Falsetti
+                Email: jefhc@cunyvm.cuny.edu
+                "schMOOze U. was especially designed as a place where
+                non-native speakers of English could meet and interact."
+
+
+
+
+
+        Donald  idd@io.org                                    57
+
+NEW EDUCATION MOOs: holding classes for less than six months.
+
+      * NovaMOO: nova.edmonds.wednet.edu 8888
+                Contact Joel Thornton
+                Email: thorntoj@nova.edmonds.wednet.edu
+                This is recent startup in Edmonds school district.
+
+      * Global Village: tdg.uoguelph.ca 8888 or 131.104.228.200 8888
+                Contact Paul Graham or Greg Searle
+                Email: searle@tdg.uoguelph.ca
+                "Conspiratorium" and some Guelph classes use Global
+                for virtual classes and conferences.
+
+      * TecfaMOO: tecfamoo.unige.ch 7777
+                Contact Daniel
+                This Swiss MOO is in Geneva.
+
+      * VOU: coyote.csum.edu 7777
+                Contact Donnelly
+                Email: donnelly@coyote.csum.edu
+                Classes starting up in March 1995 have been announced.
+
+HELP WANTED:
+Pease help me to update and fill in this list! Email: idd@io.org, Thanks!
+
+
+
+4) Featured MOO: Diversity University
+   ----------------------------------
+
+NAME: Diversity University
+----
+
+ADDRESS:  moo.du.org 8888  or 192.101.98.8 8888
+-------
+
+CONTACTS: Jeanne McWhorter,  Email: gsswky@menudo.uh.edu
+--------
+
+Wizard-list: Jeanne, Richelieu, Ulf, Dr.Z, Scott and Ken.
+-----------
+
+INTERVIEW WITH ARCH WIZARD: (See article by Lunar in this section).
+--------------------------
+
+THEME:
+-----
+The Official Diversity University Mission Statement:
+"Our mission is to develop, support and maintain creative and
+innovative environments and tools for learning and research
+through the Internet and other distributed computing systems,
+and to guide and educate people in the use of these and other
+tools, to foster collaboration in a synergistic climate, and to
+explore and utilize applications of emerging technology to these
+ends in a manner friendly to people who are disabled,
+geographically isolated or technologically limited."
+
+
+
+        Donald  idd@io.org                                    58
+
+MOO DATA:
+--------
+
+* Guest Access: Yes
+
+* Guest login command: connect guest
+
+  Remark: also 'connect peasant peasant' that takes you into
+              Mogue's Agincourt simulation. One of several at DU.
+
+* Number of registered characters: 3,000+
+
+* Number of MOO objects: 12,500+
+
+* Size of MOO program in memory: 35 megabytes.
+
+* Sample Classes: ('#'numbers refer to DU MOO objects and locations)
+     DU has provided facilities for many classes including:
+     Jeanne's 'MOO 101', 'MOO classes for Teachers', and
+     'Internet for Teachers classes'.
+
+     Leslie and Cindy's 'English composition' class simultaneously
+     in Pennsylvania and Wyoming.
+
+     GNA's WWW94 award winning 'C++ class' @go #2000;
+     'Commodity Futures and Options', some notes are in #1287;
+     'Affordable Internet Course', archives are north of #8880.
+
+     'MOO Programming' sessions given by Ulf and Doppler at DU.
+     Finnegans Wake (Joyce) reading group held by Michael #7416.
+
+     Cynthia, Danford, JeanS, JoeW, Van*Faussien, and many others
+     have brought classes to DU.
+
+
+
+5) Education Tools: Generic objects at Diversity University
+   --------------------------------------------------------
+
+Some notable Educational Tools at Diversity University including
+ported ones, known affiliations do not imply development sites.
+NOTE: These lists are not complete but attempt to be accurate.
+
+* Larry and Joe@JaysHouseMOO (Grump and JoeFeedback)
+   - 'MOOGopher'(Copyright (c)1992, 1993, Larry Masinter and Erik Ostrom)
+     was implemented at JaysHouseMOO and is a useful tool found in most MOOs.
+
+* Ken or cdr (@Collegetown, @media, @DU)
+   - Media set 'TV', 'VCR', 'Camera', and 'Tape' showing text has an
+     'Editing room' to transform raw 'Tapes' into a polished product.
+   - 'Lecture note' lines can be prepared ahead of time.
+   - 'Slide shows' can display 15 lines of text at once.
+   - 'Classrooms' include 'blackboards', 'seats' and other features.
+   - Other Education objects include the 'Theatre complex',
+     a 'conversational robot' and introductory MOO Programming tapes.
+
+
+
+
+
+        Donald  idd@io.org                                    59
+
+* Michele (@JaysHouseMOO)
+   - Walk through '@Tutorial program' from JaysHouseMOO
+    is very easy to use, even for a beginner.
+
+* Gustavo (@BioMOO, @GNAlab, @DU, etc.)
+   - 'Generic Recording device' records activity in a room.
+   - 'InterMOO feature object' allows communications across MOOs.
+   - 'GNA forum' is a virtual conference room that straddles
+     BayMOO, BioMOO, CollegeTown, Diversity University, EON,
+     Global Village, GNAlab, MediaMOO, TecfaMOO and VOU
+     in five different countries.
+   - 'InterMOOwalk' moves characters from GNAlab to BioMOO or back.
+   - BioMOO/WWW interface developers include Eric Mercer, Paul Hansen,
+     Jaime Prilusky, and Gustavo Glusman.
+
+* Jeanne with programming by Richelieu(@DU)
+   - 'VSPO', the visting student character class allows teachers to
+     control class and handle some administrative work as well.
+
+* Mogue
+   - 'simulation rooms' like 'Agincourt' show 100 year war. Experience
+     history from the perspective of various period characters.
+
+* DaveM
+   - 'notice board' is an all purpose tool created to save 'quota'.
+     It finds use as a bulletin board, a note book, a variable slide
+     projector, and a tutorial and, now has its own mailing list even.
+   - 'Tutorial room' also saves quota and is easy to use.
+     Hypertext versions are in development.
+
+* Doppler
+   - 'slide show' stores presentations in a variable length format.
+
+* Richelieu
+   - 'Generic chaptered Book' (@copyright Richelieu) has chapters.
+
+* Shkoo@EON  (@BioMOO, nils@DU)
+   - 'WWW slate' is a World Wide Web text based browser. Shkoo first
+     implemented the WWW slate at EON, where the server is.
+
+
+
+PLEASE! : To 'port' the MOO programming code of any MOO object to another
+MOO, please contact and obtain permission of the original author.
+This is a courtesy that also helps the author to distribute upgrades.
+
+
+
+
+        Donald  idd@io.org                                    60
+
+NEXT ISSUE:
+-----------
+    The coming issue will contain reviews of Jupiter features.
+    Mostly a moo extension that allows moo object to generate
+    a window inside microsoft windows or X windows. The resulting
+    whiteboard allows for mouse driven events like lines to be
+    sent back to the moo and to other windows clients.
+
+    Featured MOO will be BioMOO: an active meeting place for
+    professional biologists, it has pioneered a different approach
+    to graphics using the World Wide Web. Other WWW moos will be
+    surveyed also.
+
+-------------------------------------------------------------
+
+Author: Donald
+        idd@io.org
+=========================================================================
+Date:         Thu, 19 Jan 1995 10:49:44 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      The Soul of a Moo Machine
+
+@Copyright DUVRE and David Morris  bweaver@worf.infonet.net 1994
+
+        David Morris  bweaver@worf.infonet.net                61
+
+                The Soul of a MOO Machine
+
+Abstract: In considering the attraction and future of Diversity
+University and other educational Virtual Realities, the author
+considers three aspects of the "Soul Factor" in people's connections
+to such environments. The author also maintains that this "Soul
+Factor" must be sustained for these environments to continue
+developing their fullest potential.
+
+Introduction:
+
+  Whenever I try to explain to people what Diversity University is
+and what I spend so much time doing there I find myself struggling
+with realities.
+
+    Well, my home computer uses the phone line and calls another
+    computer where I have an account. This more powerful computer
+    gives me access to the Internet. That computer connects
+    through fiber optic cables to another computer in Daytona Beach,
+    Florida. That computer has in it the MOO program and a database
+    called "Diversity University." One database record has my name
+    on it. When I connect I occupy that piece of the database. Other
+    parts of that database are described as rooms or as objects to
+    look at and use. Still other records are other people. And if
+    you are connected at the same time as other people your pieces
+    of the database can interact and it appears that you are talking.
+
+  It is usually at this point that I notice a glazed look forming in
+people's eyes, and I wonder why people don't understand. Yet while
+this description sounds a little outlandish it does reflect one view
+of the virtual reality environment we call DU Moo.
+
+However, this techno-view of reality can easily become a trap. It is
+sometimes tempting to think only of the wonders (or the
+frustrations) of the computer terminal we are using, or the awesome
+knowledge that our touch triggers electric signals that travel at
+the speed of light from Iowa or Alaska, or Texas, or Israel, or
+Germany, or Australia or wherever we come from to gather someplace
+in Florida only to be sent out to all those places again. Or some
+programming conundrum can so capture our attentions and imaginations
+that we see DU as some crazy place to program fun things; being
+virtual gods in total control over the very nature of that reality.
+Or, if we have experienced text adventure games or some of the more
+combative Muds and Moos on the Internet, we can view educational or
+social environments as wonderfully inviting for mischief and
+competition.
+
+  The techno-view is a trap, because when we are seduced by it, we
+fail to see what DU and other educational environments have that
+make them so different. Then even we who share a larger vision of
+those environments can end up messing up the future of such
+environments. For that not to happen we need to recognize and
+intentionally maintain what I call the "Soul Factor."
+
+
+
+        David Morris  bweaver@worf.infonet.net                62
+
+      "The Soul Factor"
+
+  There are many parts to our lives. There is our intellectual
+part -- the place for ideas and understanding. There is the emotional
+part -- the locale for our reactions to events and our judgments about
+ourselves and the world in which we live. There is the physical
+part -- the place where we sense our reality and where we actively
+respond to it. Finally, there is the soul. I see the soul as that
+aspect of our living that gives meaning and significance to all the
+other parts. One could think of the soul as the unifying web of our
+lives: everything we do affects our soul and in return is influenced
+by what we deem important and worthy.
+
+  We need to remember the "Soul Factor" in considering the present and
+future of virtual realities such as DU, because it was the soul of
+the place that encouraged our initial participation, and it is the
+soul of the place that either keeps us coming back or leads us away.
+Just as a human being needs an active soul to live a life of meaning
+and fullness, so does a place (even a virtual place) need a soul to
+continue to be vital to its participants.
+
+  As I reflect upon my involvement in and continued commitment to
+Diversity University and as I consider the prospects of future
+expansion of its mission, I can identify three aspects of DU's soul
+that must not be forgotten or neglected in order for DU's future and
+the future of other similar educational realities to be long and
+fruitful.
+
+
+        Soul Factor #1: Connected for Support
+
+  Since I identified myself as an ordained minister of a church and
+set myself up as unofficial Chaplain at DU, I have been amazed at
+how often people come to myself or to others for emotional and
+spiritual support in trying to handle the circumstances of their
+lives. There are many nights when I have found myself bleary-eyed at
+2 or 3 in the morning talking to someone who desperately needed to
+share their struggles with another human being who will listen. And
+I know that I am not the only one in that activity. I have even been
+in long-distance page conversations with people who need some advice
+on how to handle the stories they are hearing. There is an active
+'alanon' support group with 3 loyal participants. And I have been
+told that at least 2 people on the verge of suicide have been
+"talked down" through the Moo environment.
+
+  And it isn't only the negative parts of life that are shared here. I
+know of romances that have developed through the wires as well as
+friendships. I count as real friends a number of people whom I have
+never met physically, but with whom I have been connected through
+the words we type. Why is that? And more importantly, why SHOULD
+that be true?
+
+
+
+        David Morris  bweaver@worf.infonet.net                63
+
+This is an important first factor in considering the soul of a Moo,
+because it reminds us that on the other end of all those cables and
+electrical signals sits another human being with hopes and hurts,
+and with visions and disappointments. There sits another person who
+is searching for something more in their life. Maybe they log on out
+of loneliness or because they seek for knowledge. Or possibly when
+they connect they are stumbling toward compassion and relationships
+yet want to remain hidden behind the secure filter of the words and
+the signals. Whatever the issues are (and I know I have heard only a
+fraction of them) they come along with the character that logs on.
+
+  The danger of the filter is that people might interact as an
+altogether different character. On some Muds and Moos that sort of
+role playing is encouraged, but in an educational environment this
+sort of deception can be detrimental.
+
+  Learning and growing involves a certain level of risk and of trust.
+The risk in learning comes as we lower the defences around what we
+already know and open the way for some new ideas to be entertained.
+Most of these ideas represent re-adjustments to what we already know.
+But some ideas represent radical changes to one's world view -- the
+fundamental way we approach life, the universe and everything.
+When you are open to learn you do not know what type of ideas will
+come your way. In order for people to continue taking that risk in
+learning there must be maintained an environment of trust, honest
+interaction and genuine concern.
+
+  This is true in real life where one can see and touch and listen to
+the other person. Yet, when we come into a virtual reality situation
+where the only contact one has is through a set of words that appear
+on a computer screen, this environment of trust is more difficult to
+maintain. However, when the participants remember the need and
+intentionally foster and encourage supportive interactions, the
+learning environment will reinforce trust and allow people the
+opportunity to continue learning.
+
+
+        Soul Factor #2: Connected for Curiosity
+
+When I was growing up, (before the gas crunch), my families Sunday
+afternoon entertainment was to go out driving. To explore the
+community, looking at the houses and yards, seeing what things are
+out there to see. My Dad had a particular way he would approach
+these drives: he would never repeat a path. We would drive along the
+road and my Dad would comment on how he'd never seen THIS road
+before and then he would turn onto it. I think the game he was
+playing was the let's-get-lost-and-see-if-we-can-find-home-again
+game. We always did make it home and we always saw some interesting
+things along the way. I continue part of that tradition while
+driving on my real life journeys as well as when I journey through
+virtual reality.
+
+
+
+        David Morris  bweaver@worf.infonet.net                64
+
+  Every few days (or sometimes every couple weeks) I set my programs
+aside and leave my construction unfinished and just 'walk' around
+the Moo. On those 'walks,' I always try to go to parts that I have
+not seen in a while. And when I do, I will sometimes see what old
+friends have been doing lately, but am more likely to meet new
+friends and experience new learning experiences. Why is it important
+for me to do that? A drive for curiosity.
+
+  What makes an education institution (even a Virtual Reality one)
+continue is a genuine interest among its participants in the process
+of learning. Whether as a teacher or a wanderer, it is the prospect
+that through the next exit there might be an object, a room or a
+person that holds something new to learn or to think about. In
+talking with Jeanne McWhorter, one of the founders of Diversity
+University, she used the image of a "living encyclopedia" in
+referring to DU. I thought that image was both appropriate and
+intriguing in considering the future of educational realities.
+Through the diversity of people that participate and through the
+wide range of interests they represent it is not too far-fetched of
+an idea to see a virtual reality environment develop into just such
+a resource. And as more people have access to such educational
+environments it is ever more important for them to broaden those
+resources so that people's curiosity will continue to be captured
+and many more people will go out and "walk the moo."
+
+
+  Another aspect of text-based virtual realities that makes education
+there so interesting and accessible is that with creatively
+programmed objects and some description skills the journey of
+learning can be one of true discovery. Why just read about bones
+when you can walk through Yorick the human skeleton. Or imagine how
+you can discover pre-history by joining cave-people in fishing or
+hunting, or even rediscovering the spiritual joys of delighting in
+the world and in one's self by becoming a child in a playground of
+delight. One's imagination is the only limitation in how different
+ideas and facts can be taught and demonstrated.
+
+  And when the learning is fun, people will continue to explore. And
+as people continue to explore they will be inspired to share some of
+what they know and the cycle continues.
+
+        Soul Factor #3: Connected for Partnership
+
+  One of the objects that takes up a surprisingly large amount of my
+time is the "Generic Notice Board" on DU and Collegetown. It started
+out as my attempt to make a place where I could store interesting
+quotes without having to bother the wizards for quota for $note
+objects. It also provided a worthy first programming project. Well,
+I worked on the initial version for a couple weeks and set it up and
+convinced a couple friends to use it as part of its testing. It was
+simple and I was pleased with how it turned out.
+
+
+
+
+        David Morris  bweaver@worf.infonet.net                65
+
+  Then a couple people paged me one day. "I'm using your Notice Board
+and think it's really great, but have you thought about making it do
+this..." They both then shared with me their vision for how they
+could use the object much more efficiently if it did something more
+or different. Well, I guess I am a sucker for good ideas and they
+convinced me of their vision. So, I took out my code and looked at
+it with some new eyes and adapted the code to add the new options
+that were suggested. Not too long after that and then again and then
+again other people paged me or wrote me with their appreciation and
+then their suggestions for making it more useful in fitting into
+their vision for their participation in DU. Some of the suggestions
+have been easy, I can call up the verb in my editing window and work
+on it while we are talking and they can try it out right away.
+Others have been more far-reaching in the scope of the changes and
+take a couple days or even (as is the case in the last major change)
+a couple weeks. But the time and energy have not been an issue for
+me, because I have caught some piece of someone else's vision for
+using not just my object, but for using the environment.
+
+
+
+  This is one example of the type of partnership that is possible in a
+Moo environment. While some types of large group discussions are
+often confusing and difficult, the ability to have people from
+various locations interact in real time makes possible other types
+of cooperative endeavors. This exploration of ways of cooperation
+are important to the soul of the Moo. A shared vision for what we
+can do together in this place. As long as there is an attitude of
+co-creating the virtual world (with the freedom and responsibility
+that goes with co-creation) then the soul will be strong. But when
+either of those two polarities overpowers the other, the soul is in
+danger.
+
+  When freedom is abused and seen as freedom to do anything to anyone
+because the virtual world is not really real then people will choose
+to leave rather than face the offensive behavior. On the other hand
+if too much emphasis is placed on control, then anyone with an urge
+or desire to make something useful and interesting will not find
+support or encouragement and will go elsewhere with their gifts, or
+might even stop desiring to create and contribute from their unique
+experience and set of interests.
+
+
+        Conclusion
+
+These three pieces of the soul of the Moo need to be honored because
+they form an environment for growth and development. And even if we
+must continue to deal with people who come and trample on our
+flowers or insult the neighbors or even punch us in our virtual
+faces, when we remember our connections as human beings, our
+connections as learners and our connections as creators, the
+environments will continue to thrive and face the challenges and
+celebrations that come from our participation.
+
+
+
+        David Morris  bweaver@worf.infonet.net                66
+
+Author: David Morris is an ordained minister in the United Methodist
+        Church living in Green Mountain, Iowa. He has been a
+        participant in Diversity University Moo (DU) since April of
+        1994 where he is currently a Programmer. His major projects at
+        DU include the Interfaith Center and the Generic Notice Board.
+        DaveM on Diversity University and Collegetown
+
+        bweaver@worf.infonet.net
+=========================================================================
+Date:         Thu, 19 Jan 1995 10:51:14 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      Collaboratory
+
+@Copyright DUVJRE, Margit Watts and Ben Millard  1994
+
+Margit Watts and Ben Millard  watts@uhunix.uhcc.hawaii.edu    67
+
+                COLLABORATORY
+
+The University of Hawai'i at Manoa Rainbow Advantage Program has
+initiated a project called Collaboratory, a project that links
+together museums, universities, and secondary schools around the
+country.   Students are engaged in meaningful and integrated learning
+and through exploration, discovery, and manipulation, students work
+with exhibits to further their critical thinking skills, broaden their
+base of knowledge, and enhance their understanding of culture.  This
+project encourages intellectual curiosity by allowing students to
+choose from a wide range of topics as well as modes of expression.
+Museums offer places for learning which are not confined to the
+traditional school setting or time frame.
+
+Collaboratory will also move into making museums available to people
+not able to access their exhibits through the front door.  Technology
+has made it possible to recreate museum exhibits in many forms, making
+it possible for students across the world to interact with exhibits,
+explore them from many vantage points, and study them on numerous
+levels.  Thus, Collaboratory is a two strand project -- one has
+students studying exhibits all over the country, the other has
+students creating their own exhibits (their own interpretation of
+culture).  This project reaches a wide audience and is in line with
+the Goals 2000 mandate.
+
+TEAMS
+
+A team consists of university and high school students, as well as a
+museum or similar cultural institution.  The formation of the teams is
+determined by the unique contribution each part makes to the whole.
+The high school students perform much of the work of the team, while
+the university students provide both an academic direction and study
+of the project.
+
+The use of museums is the interesting addition to the project. It is
+an emerging theme amongst museums that they provide a learning
+environment that is quite different from the classroom.  They not only
+cover an unlimited range of subjects, they do so at the visitor's
+pace.  They provide teams with 'triggers for wonder'.  The major
+permanent exhibits -- a museum's icons -- act as both projects for the
+teams as well as models for works of their own generation.
+
+Museums provide yet another opportunity for students; they permit
+students to become the experts on these icons.  Since no museum can
+provide the Internet presence necessary to field all possible
+questions, the students can become the 'experts' for some of the
+first-level and most commonly asked questions.
+
+The results of the composition of these teams is a group of students
+who mutually benefit from working together and are given access to
+resources from a cultural institution with which they are familiar.
+Ultimately, all are working toward a project which is meaningful.
+
+
+
+Margit Watts and Ben Millard  watts@uhunix.uhcc.hawaii.edu    68
+
+PROJECTS
+
+The results of these collaborative efforts will be exhibits; in this
+context, the term exhibit is loosely defined.  Students will find
+expression for their work in multi-media, text, performance, music,
+and any other medium they find relevant to their project.
+
+An example of some of the work by current teams includes video
+documentary on the effects of hurricane Iniki on Kauai, an exhibit on
+ancient net fishing in Hawai'i, a modern day re-creation of Plato's
+Republic, and a display of a corner of Pittsburgh.  Each of these
+projects have called on the students to search for something important
+and determine how they want to present it.  It is through these
+projects that the students can work to make sense of their place in,
+and contribute to their culture.
+
+INTERNET
+
+The Internet plays a role in this as the medium for participation.
+It will provide the link between the members of a team, as well as
+across the teams.  The other value added by the Internet will be a
+place to 'store' or present the exhibits.  It is our intention to
+open a MOO for the teams to use text-based VR as one medium for their
+works.  Providing them with a place to met on-line as a haven will be
+one of the most important steps in our development.
+
+Amidst the discussion of the latest telecommunications,
+Collaboratory's model does not *require* connectivity beyond paper
+and mail.  It is this sclar approach to the student's resources that
+will allow Collaboratory to form teams in countries not part of the
+Internet.
+
+POSSIBILITIES
+
+Collaboratory exists under the auspices of the University of Hawaii
+and is directed by Dr. Margit Misangyi Watts.  The current structure
+consists of six teams among the islands of Hawai'i, as well as teams
+from California, Pennsylvania, and Western Canada.  In January new
+teams will be added from Illinois, Washington D.C., Missouri, Japan,
+Guam and Kenya.
+
+As we prepare our server for duty, we are also building the corporate
+support necessary to fuel Collaboratory.  We have some corporate
+connections in place and will also be seeking grants and equipment
+from other sources in order to support the teams with equipment.
+
+
+
+Margit Watts and Ben Millard  watts@uhunix.uhcc.hawaii.edu    69
+
+The future holds the expanded bandwidth modes mentioned above, as
+well as simply growing the reach of the teams in both geography and
+involvement.  Plans for involving museums is not limited to local
+ones, though we feel that it is within their own communities that the
+teams can make their biggest contributions.  Creation of national
+icons could become a project that joins multiple teams in
+illustrating a country's cultural context.
+
+As we seen to put our students at the center of their own education,
+Collaboratory tries to extend this to include putting the students in
+the center of their own cultures.  We welcome your comments and
+participation.  Please contact us by the means below.
+
+
+Authors:  Dr. Margit Misangyi Watts
+          (808) 956-4040
+          watts@uhunix.uhcc.hawaii.edu
+
+          Ben Millard
+          (808) 956-4040
+          bmillard@interaccess.com
+=========================================================================
+Date:         Thu, 19 Jan 1995 10:52:57 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      The Beginning of an Education MOO
+
+@copyright DUJVRE and Flora Moon  Lunar at DU  1994
+
+        Flora Moon  Lunar at DU                               70
+
+
+         The Beginning of an Education MOO
+
+The following excerpts are from an interview with Jeanne conducted
+by Lunar at DU. The full tapes are viewable at DU, please contact
+Lunar or Donald at Diversity University or email idd@io.org.
+Imagine the text scrolling up your screen, pausing every few seconds.
+
+[on projection screen]      Jeanne says, "first was a fellow called
+Sandoz, Billy Chambless, the fellow who brought up the blank MOO."
+
+[on projection screen]      Jeanne says, "he invited me to write on
+his tabla rasa"
+
+[on projection screen]      Jeanne says, "I had first just thought
+about doing a psychology/social work building"
+
+[on projection screen]      Lunar asks, "then what happened?"
+
+[on projection screen]      Jeanne says, "I loved the idea of all
+the things we could use the MOO to teach."
+
+[on projection screen]      Lunar asks, "So you decided to expand the idea?"
+
+[on projection screen]      Jeanne says, "but when he offered me an
+entire MOO, I decided it was too limv:iting to make it just one
+subject, so I figured why nookt create an entire university"
+
+[on projection screen]      Lunar asks, "who else did you enlist?"
+
+[on projection screen]      Jeanne says, "first was a young man
+from erau who kinda found us somehow, by using "who" on his unix
+account to see who was where"
+
+[on projection screen]      Lunar asks, "So you started DU in Miss?"
+
+[on projection screen]      Jeanne says, "thant was Mogue"
+
+[on projection screen]      Jeanne says, "yes, it was on a private
+account then, in Miss. and was called Chaos Theory"
+
+[on projection screen]      Jeanne did not like that name
+
+[on projection screen]      Lunar asks, "So what did Mogue do?"
+
+[on projection screen]      Jeanne says, "and there was another
+MOO named Chaos so I convinced they we had to change the name"
+
+
+
+        Flora Moon  Lunar at DU                               71
+
+[on projection screen]      Jeanne says, "Mogue was a MOO programmer type"
+
+[on projection screen]      Lunar asks, "what was his take on MOO's or
+did he follow your lead?"
+
+[on projection screen]      Jeanne says, "for some bizarre reason they
+all liked my vision"
+
+[on projection screen]      Jeanne says, "Ulf came next. I recruited him"
+
+[on projection screen]      Lunar asks, "Why Ulf? and how did you know him?"
+
+[on projection screen]      Jeanne says, "I used to hang out on MediaMOO and
+ lambda still while working on DU cause it was still pretty lonesome here"
+
+[on projection screen]      Jeanne says, I ran into this twit with the name
+ spitboy
+
+[on projection screen]      Lunar laughs
+
+[on projection screen]      Jeanne . o O ( Ulf will love that sentance )
+
+[on projection screen]      Jeanne says, "except when he explained the
+story behind the name, I found myself very touched"
+
+[on projection screen]      Lunar asks, "and?"
+
+[on projection screen]      Jeanne says, "he too liked the concept and
+came to help"
+
+[on projection screen]      Lunar asks, "are there others? who
+contributed to getting DU started?"
+
+[on projection screen]      Jeanne says, "at some point we realized
+that we all needed to be wizards here to really do anything, so he
+made us wizards"
+
+[on projection screen]      Jeanne says, "sandoz was the only wizard
+up to that point. I can't remember the order of wizing, but I know I
+was first, then Mogue"
+
+[on projection screen]      Lunar asks, "How long did it take to open DU?"
+
+[on projection screen]      Jeanne says, "oh, quite a while. I went
+massively recruiting for teachers, mostly on lambda and Media"
+
+[on projection screen]      Lunar asks, "a year, two years?"
+
+[on projection screen]      Jeanne says, "we are only just over a
+year old right now"
+
+[on projection screen]      Lunar exclaims, Oh that's significant.
+The level of organization and sophistication blows me away here!
+
+
+
+        Flora Moon  Lunar at DU                               72
+
+[on projection screen]      Jeanne says, "I handpicked most all the first ppl"
+
+[on projection screen]      Lunar asks, "Before we move on, any others
+you want to mention?"
+
+[on projection screen]      Jeanne thinks.  Richelieu, naturally, but
+he was not until January.  Leslie was one of our first teachres on DU,
+as was NikkiC, who is not really active here anymore.  Cindy came the
+same time leslie did
+
+[on projection screen]      Jeanne says, "SteveDF was among the first
+as well, and Andrew"
+
+[on projection screen]      Lunar says, "I'm glad you mentioned some
+women, I was beginning to wonder..."
+
+[on projection screen]      Lunar asks, "So when is the first anniversary?"
+
+[on projection screen]      Jeanne says, "it was last fall"
+
+[on projection screen]      Jeanne says, "they did the very first
+research on DU, with their two english classes, Leslie Harris and
+Cindy Wambeam. Les was a primary author of the proposal for the
+Annenberg grant we just received"
+
+[on projection screen]      Lunar asks, "Can you tell me a little
+about the research?"
+
+[on projection screen]      Jeanne says, "They both taught freshman
+english composition and universities across teh country from each ohter"
+
+[on projection screen]      Lunar asks, "how did DU come in?"
+
+[on projection screen]      Jeanne says, "the wanted to see if they
+could stimulate greater interest and enjoyment of writing in their
+students by using the MOO"
+
+[on projection screen]      Lunar asks, "can you explain how they used the MOO?"
+
+[on projection screen]      Jeanne says, "so they used a control
+group and then brought classes on to discuss the books they read and
+to write things on DU. The did a formal research project, using
+double bliind pretests and postests"
+
+
+
+Author:  Lunar at DU
+=========================================================================
+Date:         Thu, 19 Jan 1995 10:56:45 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      Lunar Ken at CollegeTown
+
+@copyright DUJVRE and Flora Moon  Lunar at DU  1994
+
+        Flora Moon  Lunar at DU                               73
+
+        Ken at CollegeTown
+
+Excerpts from interview of Ken at Collegetown by Lunar assisted by idd.
+Imagine the text scrolling up your screen, pausing every few seconds.
+
+
+[on TV]      . . .the camera zooms in on Ken. . .
+
+[on TV]      You see a middle-aged professor type who likes to fool
+around with computers and virtual worlds. He is one of the janitors
+here and is happy to help or chat.
+
+[on TV]      Lunar says, "First of all I want to say happy
+anniversary, Collegetown is one year old!"
+
+[on TV]      Ken says, "thankyou <beaming>"
+
+[on TV]      Lunar says, "How does it feel to be the father of all this?"
+
+[on TV]      Ken says, "I do indeed feel like a father at times, and
+like all fathers i hold in my heart a great love and tenderness for
+this moo which I have seen develop from a single room and a half dozen
+members to its present size and scope.."
+
+[on TV]      Lunar says, "What is its present size and scope?  "
+
+[on TV]      Ken says, "sorry for the delay, i was running some stats
+programs on our community.."
+
+[on TV]      Ken says, "the stats show we are presently at 306 members,
+of which 115 are from Buena Vista College.. either students or faculty.."
+
+[on TV]      Lunar says, "And who are the others?"
+
+[on TV]      Ken says, "The others include undergraduates, graduate
+students, faculty members, assorted folks from various communities
+and several children.."
+
+[on TV]      Lunar says, "Why did you build collegetown?"
+
+[on TV]      Ken says, "I have decided it is important to include
+members of all ages.."
+
+[on TV]      Ken says, "I built Collegetown as a platform for
+collaborative academic research and teaching.. with the intent
+that academicians of all ilk might meet here to exchange ideas,
+work together on projects , and hold seminars.. I also thought that.."
+
+[on TV]      Ken says, "having the theme be *only* academic was unduly
+restrictive.. so I have divided collegetown into 3 theme areas.."
+
+[on TV]      Lunar says, "Could you elaborate?"
+
+
+
+        Flora Moon  Lunar at DU                               74
+
+[on TV]      Ken says, "There is foremost the campus itself, then
+there is the 'city', and finally the outer wilderness and nature
+area lying all about.. here is where.."
+
+[on TV]      Ken says, "folks can build houses for themselves and do a
+bit of socializing.. It is my belief.."
+
+[on TV]      Ken says, "that much valuable research and thinking takes
+place 'outside' the classroom while folks talk and socialize so i believe.."
+
+[on TV]      Ken says, "it is important to provide open spaces like
+seashores, forest walks, mountains etc.. as stimulants to good
+conversation and the exchange of ideas.."
+
+[on TV]      Ken says, "After all, Socrates himself did his thinking
+on his feet strolling through the marketplace.. <grin>"
+
+[on TV]      Lunar grins
+
+[on TV]      Lunar says, "I was wondering if you would take us to a
+favorite place and we can return here if it is too crowded"
+
+[on TV]      Ken says, "i have many favorite places <grin> lets go!"
+
+[on TV]      Ken  heads for the South Quad...
+
+[on TV]      You are on a grassy quadrangle surrounded by ivy covered
+buildings.
+
+[on TV]      Lunar says, "What happens here?"
+
+[on TV]      Ken says, "this is just a quad.. a central hub connecting
+many academic buildings.. mostly people just socialize here on the lawn.."
+
+[on TV]      Lunar says, "I notice a lot of humor here, tell me about that"
+
+[on TV]      Ken says, "humor? such as?"
+
+[on TV]      Lunar says, "Robbo, for instance a wise cracking humble
+servant.."
+
+[on TV]      Ken laffs.. 'Every creation reflects in part the
+personlity of its creators.. Collegetown is no different...
+
+[on TV]      Ken says, "I find moos immensely enjoyable .."
+
+[on TV]      Lunar agrees
+
+[on TV]      idd says, "robbo may have been around earlier if I recall?"
+
+[on TV]      Ken says, "and I am pleased that my joy overflows into
+some of my objects.. appearing there as 'humor'  <grin>"
+
+
+
+        Flora Moon  Lunar at DU                               75
+
+[on TV]      Lunar says, "Who's idea was it to make the ascii
+representations of spaces like the quad here?"
+
+[on TV]      Ken says, "as i mentioned before, we have many middle
+school students working here and they contribute there own form of
+humor.. <laff>"
+
+[on TV]      Ken says, "ah, I believe this is one of the firs moos
+to be fully ascii mapped.. its not just the quad.. *everything* is
+mapped (or will be)... "
+
+[on TV]      Ken says, "I have chosen to do this because.."
+
+[on TV]      Ken says, "I believe that spatial orientation is a
+strong component of thinking..."
+
+[on TV]      Ken says, "we can use our innate proprioceptive skills
+to help orient ourselves in virtual space just as in physical space.."
+
+[on TV]      Ken says, "we are *used* to operating in physical space,
+we feel at home there.. my goal is to bring as many senses to play in
+VR as is possible.."
+
+[on TV]      Lunar says, "I feel *oriented* here because of the ascii
+mapping, an instant familiarity that the maps confer..."
+
+[on TV]      Ken smiles
+
+[on TV]      Ken says, "i am very interested in the interfacing of WWW
+and moos to show graphics and sound... I am following with keen
+interests the work of gustavo, pavel, and others in this area.."
+
+[on TV]      Ken says, "I feel that present moosters are much like the
+early pioneers heading West in coverd wagons.."
+
+[on TV]      Lunar nods vigrously in agreement
+
+[on TV]      Ken says, "Where we now go by foot over untracked deserts,
+future mooers will travel by jet plane.."
+
+[on TV]      Ken smiles
+
+[on TV]      idd says, "are there many classes held here at CT?"
+
+[on TV]      JeremyS  arrives from The Forum...
+
+[on TV]      JeremyS says, "ahem, could I ask you a question Dr. Schweller?"
+
+[on TV]      Ken [to idd]: DU holds many more classes than we do.. we
+hold small seminars and there are writing workshops and a few faculty
+meet with grad students here.. and a few regular classes have been
+held.. we look forward to doing much more in the future..
+
+
+
+        Flora Moon  Lunar at DU                               76
+
+[on TV]      . . .the camera zooms in on JeremyS. . .
+You see a student with glasses and dark hair
+
+[on TV]      Ken grins jeremyS, smile, you are on camera, i am being
+interviewd by these folks..
+
+[on TV]      JeremyS smiles, uh sorry...
+
+[on TV]      Ken says, "Jeremy is a new member of Collegetown,
+and a member of my 3 week cyberspace class.."
+
+[on TV]      JeremyS says, "Would you like me to leave?"
+
+[on TV]      Ken says, "you may ask him a question if you like <grin>"
+
+[on TV]      Ken grins jeremyS, of course not!
+
+[on TV]      Lunar says, "I'd like him to ask his question, if he
+swouldn't mind"
+
+[on TV]      JeremyS says, "Well, I was wondering if there was a way
+to erase keywords from our robots?"
+
+[on TV]      Ken [to JeremyS]: sure, just '@exam botname' and you
+will see how to use 'remove' to erase a keyword..
+
+[on TV]      JeremyS says, "alright, thanks"
+
+[on TV]      Ken says, "for example,  'remove 5 from robot'"
+
+[on TV]      JeremyS says, "ok, bye.."
+
+[on TV]      Ken says, "use the number of the word."
+
+[on TV]      Ken waves
+
+[on TV]      Lunar waves
+
+[on TV]      JeremyS waves back
+
+[on TV]      Ken says, "ok.. lets check out the downtown area.."
+
+[on TV]      Ken  heads for Main Street!
+
+[on TV]      Ken says, "This is the hub of the second theme.. we saw
+the 'Gown'.. this is the 'Town'"
+
+[on TV]      Lunar says, "And the statue of Pavel Curtis?"
+
+[on TV]      Ken says, "we have yet to see 'Country'  <grin>"
+
+[on TV]      Ken says, "in honor of the founding father of all Moos..
+<bows head in reverence..>"
+
+
+
+        Flora Moon  Lunar at DU                               77
+
+[on TV]      Ken says, "Collegetown is run by a council of 7 citizens.
+They meet every week or so in City Hall to decide matters of
+application, quota, and building.."
+
+[on TV]      Lunar says, "Do you sometimes bowl while you're meeting?"
+
+[on TV]      Ken laffs, the bowling alley was a project by one of my
+computer science students who wrote th longest single verb ive ever
+seen.. 8 pages!
+
+[on TV]      Ken says, "i had to give him a refresher course in
+modularity  <grin>"
+
+[on TV]      Lunar says, "One verb for strikes, spares and scratch?"
+
+[on TV]      Ken nods, laffs.. and ascii pictures..!
+
+[on TV]      Lunar says, "and scoring and shoes? "
+
+[on TV]      idd says, "did it work though the 8 pages?"
+
+[on TV]      Ken says, "yup, but then the moo crashed and he lost it
+all! he was heartbroken and i felt terrible.."
+
+[on TV]      Lunar says, "Life in cyberspace..."
+
+[on TV]      Ken says, "An important thing I've tried to accomplish
+here, btw, is to create a "
+
+[on TV]      Ken says, "feeling of community.... Each of our members
+is encouraged to build.."
+
+[on TV]      Ken says, "1) a house  and 2) an office.... and the
+houses are to be fully connected so"
+
+[on TV]      Ken says, "that we have residential communities and
+neighborhoods.."
+
+[on TV]      Ken says, "we can put in a hard days work at the office or at
+school and then retire to our communities neighborhoolds for relaxation.."
+
+[on TV]      Lunar says, "talk to me about the culture here at CT.
+There is a distinct one here isn't there?"
+
+[on TV]      Ken says, "Yes, I like to believe there is.. We are
+insistent on theme related building and we advertise ourselves as a
+serious academic community.."
+
+[on TV]      Ken says, "it is largely a matter of self selection..
+we purposedly chose to remain small and rather obscure.. I have"
+
+
+
+        Flora Moon  Lunar at DU                               78
+
+[on TV]      Ken says, "been very reticent to publish our address..
+Most of us know each other and we ahave a strong cadre of 'founding
+fathers and mothers'.. to instill our vision in the new folks.."
+
+[on TV]      Lunar says, "And what are the values engendered and
+exhibited here?"
+
+[on TV]      Ken says, "this is by no means the only or best way to
+run a moo.. I fully appreciate the naturally evolving social format.."
+
+[on TV]      Ken laffs, I would *like* to think that the shared values
+here are love of things scholarly, an appreciation for creative work,
+and a shared vision of utopian community buildintg.. but then again,
+maybe all thats just in my imagination ;)
+
+[on TV]      Ken says, "we have some strict rules here such as:
+No weapons, No harassment.. etc.."
+
+[on TV]      Ken says, "hi johnM, im being filmed for an interview.."
+
+[on TV]      JohnM says, "hello.  An interview for what?"
+
+[on TV]      Lunar says, "When I was visiting earlier I notices a lot
+of helping going on, a real comaraderie and desire to build somthing
+together"
+
+[on TV]      Ken says, "I do not wear blinders however, I realize that
+our good spirits here may be a simple accident"
+
+[on TV]      . . .the camera zooms in on JohnM. . .
+
+[on TV]      A cool, handsome, and fun guy to be around
+
+[on TV]      Ken says, "of our relative youth... I have personally
+lived through several of the crisis "
+
+[on TV]      Ken says, "fperiods that seem to fall on moos once they
+reach a certain size and popularity.."
+
+[on TV]      JohnM says, "What crisis?"
+
+[on TV]      idd says, "I have visited quite a few MOOs recently and
+do notice you are on quite a few of the Education ones, almost all,
+how long have you been Mooing? and which MOOs have influenced you?"
+
+[on TV]      Ken [to idd]: I am a wiz at mediaMOO, bayMOO, Diversity
+University, and Collegetown..
+
+[on TV]      Ken says, "I learned to program at Lambdamoo 2 years ago.."
+
+[on TV]      Ken says, "but i was unhappy at lambda.. I yearned to"
+
+[on TV]      Ringer wanders in. . .
+
+
+
+        Flora Moon  Lunar at DU                               79
+
+[on TV]      red_Guest wanders in. . .
+
+[on TV]      Ken says, "apply this great technology to some more
+persistent and glorious goal <grin>"
+
+[on TV]      JohnM says, "Hello everyone"
+
+[on TV]      red_Guest smiles
+
+[on TV]      Ringer waves hi
+
+[on TV]      Ken says, "thats when i heard of mediamoo.. I fell in
+love with mm at first sight.."
+
+[on TV]      Ken says, "i developed the cameras and other
+communication technology there and built a theater.. we had a great
+film fest last year with 15 art films entered.."
+
+[on TV]      Ringer says, "this is irradiate a friend from tecfa "
+
+[on TV]      Lunar says, "I love the cameras and other technology
+that you've built!  In RL I am a filmmaker and the camera gives me
+a way to mavigate this world much as I do the other one"
+
+[on TV]      Ken says, "but i yearned to have a moo of my own and
+experiment with my own ideas of ascii graphics, spatial orientation,
+and logical connectedness.."
+
+[on TV]      red_Guest smiles hello
+
+[on TV]      Ken [to Lunar]: thankyou! I have a friend and cowiz here
+PaulB aka ZenDream who is a film maker also..
+
+[on TV]      Ken greets red.. welcome, we are doing a filmed interview..
+
+[on TV]      red_Guest nods
+
+[on TV]      Ken says, "shall we visit some wildreness areas..?"
+
+[on TV]      Lunar says, "Maybe we should talk about your philosophy
+here.  Tools, roomws like the collaboratory?"
+
+[on TV]      Lunar says, "Or should we amove to the next place?"
+
+[on TV]      Ken says, "the collaboratory is the work of Mahina..."
+
+[on TV]      Ken says, "follow me, type UW to get to the underground
+walkway.."
+
+[on TV]      Ken says, "by the riverside.."
+
+
+
+        Flora Moon  Lunar at DU                               80
+
+[on TV]      Ken summons the Ferry Boat...
+
+[on TV]      . . . the camera pans left to right over Riverside Estates .  . .
+
+[on TV]      You are on the access road to Riverside Estates..
+All along the river you see houses being built. Summon Ferry for
+transportation to Babbage Island.
+
+[on TV]      Ferry Boat goes <<TooT Toot>>
+
+[on TV]      With a chug chug and a toot toot the Ferry Boat arrives...
+
+[on TV]      Ken says, "look ferry"
+
+[on TV]      Ken says, "enter ferry"
+
+[on TV]      Ken  hops onto the ferry...
+
+[on TV]      Lunar drops betacam.
+
+[on TV]      Ken says, "type out"
+
+[on TV]      Ken  hops off the ferry in true nautical fashion...
+
+[on TV]      Outside: JohnM  dives into the Turing River...
+
+[on TV]      Ringer  hops off the ferry in true nautical fashion...
+
+[on TV]      idd  hops off the ferry in true nautical fashion...
+
+[on TV]      Lunar drops betacam.
+
+[on TV]      Lunar turns on camera to begin recording. . .
+
+[on TV]      Ken says, "ok.."
+
+[on TV]      Ken drops Ascii Art.
+
+[on TV]      . . .the camera zooms in on Ringer. . .
+
+[on TV]      Ringer smiles ..
+
+[on TV]      . . . the camera pans left to right over The Waterfall .  . .
+
+[on TV]      You are at the foot of a roaring Waterfall. You see a
+shimmering rainbow over the misty spray o o o o o
+
+[on TV]      red_Guest says, "fun!"
+
+[on TV]      Lunar nods in agreement!
+
+
+
+
+        Flora Moon  Lunar at DU                               81
+
+[on TV]      Ringer grins and thinks of Yea's Crocko.
+
+[on TV]      Ken says, "we have an ascii art gallery on the West
+Quad.. this is just a photo album.. in the library we have a bout
+a 100 other books.. all gopher interfaces.. the complet works of
+Shakespeare for example.."
+
+[on TV]      idd says, "this is interesting you have a gopher here
+linked directly to CT?"
+
+[on TV]      Ken says, "many of the books were written by Buena
+Vista College students.."
+
+[on TV]      Park Ranger says, "[to idd] I hope you are enjoying
+your visit to our park areas!"
+
+[on TV]      Ken grins idd, yes and interfaces to WWW thanks to
+ringer.. shall we go to the library?
+
+[on TV]      Park Ranger says, "[to Ken] You are most welcome!"
+
+[on TV]      . . . the camera pans left to right over library .  . .
+
+
+[on TV]      Ken says, "type: whole catalog     to see our holdings.."
+
+[on TV]      Ringer  tiptoes in quietly from the Quad....
+[on TV]      red_Guest  tiptoes in quietly from the Quad....
+[on TV]      Ken says, "type: whole catalog     to see our holdings.."
+
+[on TV]      Lunar consults Card Catalog . . .
+
+[on TV]      idd consults Card Catalog . . .
+
+[on TV]      red_Guest consults Card Catalog . . .
+
+[on TV]      Ringer grins .. one of her favorite room.
+
+[on TV]      Ken removes King James Bible from Bookshelf1.
+
+[on TV]      Ken says, "we have to reset these books everynow and
+then, because when someone downloads Moby Dick to read it uses up
+quite a bit of data base storage.."
+
+[on TV]      idd says, "Ringer, you have a fuzzi logic tutorial of ken's ?"
+
+[on TV]      Ringer says, "oh.. yes.. "
+
+
+
+        Flora Moon  Lunar at DU                               82
+
+[on TV]      Ringer drops Fuzzy Logic Tutorial.
+
+[on TV]      Ringer says, "Actually i had mark retrieve it from lost
+and found .. "
+
+[on TV]      Ringer is lagging badly
+
+[on TV]      Ken drops Complete Works SHAKESPEARE.
+
+[on TV]      Ken lags too..
+
+[on TV]      Ringer [to Ken]: which shelf should it go on.
+
+[on TV]      Ken says, "we are checkpointing i think.."
+
+[on TV]      Ken shrugs ringer, dunno..
+
+[on TV]      Ringer smiles
+
+[on TV]      Ken says, "look complete works"
+
+[on TV]      Ken nods ringer
+
+[on TV]      Ringer thinks that CollegeTown is an InterMOOtional MOO
+
+[on TV]      Ken says, "just 'look fuzzy' to read the fuzzy logic
+tutorial.. or anything else.."
+
+[on TV]      idd says, "maybe this is also what we should do at other
+MOOs for beyond basic stuff"
+
+[on TV]      Ken grins ringer
+
+[on TV]      Ken consults Card Catalog . . .
+
+[on TV]      Ringer says, "Ken collects folks from all over."
+
+[on TV]      . . . the camera pans left to right over library .  . .
+
+[on TV]      idd says, " lagging here, forgot to ask you Ken about
+lambda and when you left for Media was that long ago, and were you
+there for a long time before starting Collegetown. well only 2 yrs,
+but many moos started in the same period I think."
+
+[on TV]      red_Guest is back
+
+[on TV]      idd says, "I guess I am looking for some chronology,
+and reasons. Was media started long before you got there?"
+
+
+
+        Flora Moon  Lunar at DU                               83
+
+[on TV]      Ken drops A Rape in CyberSpace.
+
+[on TV]      Ringer says, "may i reset fuzzy?"
+
+[on TV]      idd says, " oh the village voice article, it was at DU once. "
+
+[on TV]      Ken says, "we seem to be experienceing a sever lag problem..
+wonder whats happening.."
+
+[on TV]      Ken says, "i was at mediaMoo for about a year before
+starting collegetown.. i joined the wiz team there and learned a
+lot of valuable lessons in administration.."
+
+[on TV]      Ken says, "AT lambda previously i was a typical
+newbie.. i programmed all sorts of weird, even antisocial toys, and
+showed off a lot.. was frequently accused of spamming.. im not
+proud of my early moo days  <grin>"
+
+[on TV]      Ken says, "no, media when i joined only had a hundered or
+so players if I recall.. i was, i think, the first wizard not from mit.."
+
+------------------------------------------------------------------
+
+Author: Lunar at DU
+=========================================================================
+Date:         Sat, 21 Jan 1995 22:52:11 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      Late Subscribers
+
+Hi Everyone
+
+There have been a number of people subscribe AFTER the first edition of
+DU Journal of Virtual Educations was issued to the list.
+
+I thought I would give this group a command which will allow them to
+retrieve the Journal.  Here are the instructions.
+
+Send a mail message to listserv@sjuvm.stjohns.edu
+
+LEAVE THE SUBJECT LINE BLANK.  In the body of the mail message put this
+command on the first line and nothing else in the message.  No sigs etc.
+
+get jvre-all log9501
+
+You will have the journal in your mailbox in a short while.  Please be
+advised that this is a very large mail message.  The articles were sent
+one at a time at release, but this command will give you the ENTIRE
+journal in one file.
+
+Look for an announcement to the list about the journal being placed for
+gopher access and perhaps FTP as well.
+
+If anyone has problems getting the journal with the above command, please
+write me and I will send the journal to you.
+
+Good Luck!
+
+Dick
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\
+[ Dick Banks                          EASI Electronic Resource Manager       ]
+[ Adaptive Technologist - Consultant  List owner - Co-owner -Moderatrator    ]
+[ Library Learning Center             EASO - AXSLIB-L - ABLE-JOB  - ADVOCACY ]
+[ University of Wisconsin-Stout       ITD-JNL - ITD-TOC - JVRE-ALL & TOC]]   ]
+[      rbanks@uwstout.edu  rbanks@savvy.com  rbanks@rdz.stjohns.edu          ]
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\]

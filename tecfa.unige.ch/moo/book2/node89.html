@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>La morale de l'histoire</TITLE>
+<META NAME="description" CONTENT="La morale de l'histoire">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1862" HREF="node90.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1860" HREF="node80.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1856" HREF="node88.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1864" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1865" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1863" HREF="node90.html">8.5 Social verb tutorial</A>
+<B>Up:</B> <A NAME="tex2html1861" HREF="node80.html">8.4 MOO tutorialLevel </A>
+<B> Previous:</B> <A NAME="tex2html1857" HREF="node88.html">What is missing?</A>
+<BR> <P>
+<H2><A NAME="SECTION04149000000000000000">La morale de l'histoire</A></H2>
+<P>
+<A NAME="seclamorale">&#160;</A>
+<P>
+The little object we programmed respects quite well object-oriented
+programming style (well normally one does not program individual objectcs
+but rather generic ones, but would not change programming style).
+We respected:
+<P>
+<H4><A NAME="SECTION04149010000000000000">Modularity:</A></H4>
+<P>
+Modularity: Verbs only operate on slots of the object to which they
+belong.
+<P>
+Why is that important ? Let's assume a player wanted to know how much
+information he remembered and deleted in a given interval of time.
+<P>
+Now we could:
+<P>
+<UL>
+<LI> put a ``info_counter'' property on the player (on yourself you are allowed to do that),
+<LI> and then for example count changes like this in the holder's ``add'' and ``remove'' verbs:
+<P>
+<SMALL CLASS=SMALL><PRE>   player.info_counter = player.info_counter + 1;</PRE></SMALL>
+<P>
+</UL>
+<P>
+This is not a very flexible way of doing things. It is MUCH better to
+write a verb on the player called something like ``<code>update_info_counting</code>''
+that does the job. This way we could customize information counting
+for different players, or program a turn-on/off function.
+Don't try to program this for the moment, since it will only
+work on your own character. Rather go to the Generic Objects
+and Permission tutorial.
+<P>
+<H4><A NAME="SECTION04149020000000000000">Going further</A></H4>
+<P>
+The code you wrote is hopefully a good example on how to use the
+MOO programming language, but it is not a very example on how
+you should develop software. Things that are missing are:
+<P>
+<OL>
+<LI> This code can only be used for you, but by nobody else!
+In the MOO you have to write code that can be used by others.
+<LI> Abstraction of Code Segements.
+<LI> Generalization of function elements
+<LI> Specialized ``around'' verbs.
+<P>
+</OL>
+<P>
+[ok I have to say a bit more here]
+<P>
+Also, this tutorial does not really force you program a lot by yourself.
+So, once you are done with this tutorial, you can try to add functionalities
+to thes objects, or have it behave in different ways. As an example,
+look at Thora's flower (<code>#2783 @ TecfaMOO</code>) and figure out the differences.
+<P>
+<HR><A NAME="tex2html1862" HREF="node90.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1860" HREF="node80.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1856" HREF="node88.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1864" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1865" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html1863" HREF="node90.html">8.5 Social verb tutorial</A>
+<B>Up:</B> <A NAME="tex2html1861" HREF="node80.html">8.4 MOO tutorialLevel </A>
+<B> Previous:</B> <A NAME="tex2html1857" HREF="node88.html">What is missing?</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

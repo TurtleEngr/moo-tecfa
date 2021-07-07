@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>$web:get_htext</TITLE>
+<META NAME="description" CONTENT="$web:get_htext">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="http://tecfa.unige.ch/moo/book2/tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html1" HREF="http://tecfa.unige.ch/"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/gif/icon-tecfa-unit-small.gif"  > </A> <A NAME="tex2html2715" HREF="node173.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2713" HREF="node169.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2707" HREF="node171.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2717" HREF="http://tecfa.unige.ch/moo/book2/node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <BR>
+<B> Next:</B> <A NAME="tex2html2716" HREF="node173.html">$web:do_url</A>
+<B>Up:</B> <A NAME="tex2html2714" HREF="node169.html">10.1 The Low Level </A>
+<B> Previous:</B> <A NAME="tex2html2708" HREF="node171.html">$web: the core Woo </A>
+<BR> <P>
+<H2><A NAME="SECTION04513000000000000000">$web:get_htext</A></H2>
+<P>
+<EM>$web:get_htext</EM> is one of the 3 key verbs in this layer. 
+It is quite complex and a bit difficult to understand because many features
+have been added over time. It's task is to parse the URL and to
+hand a URL request in more ``MOO readable form'' to the <code>do_url</code> verb.
+<P>
+Click <A NAME="tex2html88" HREF="http://spsyc.nott.ac.uk:8888/auth?object_verb_prop=%24web%3Aget_htext&amp;options=desc&amp;options=aliases&amp;options=owner&amp;options=parent&amp;options=flags&amp;options=def_verbs&amp;options=verb_doc&amp;options=all_props">here</A> to see the current verb on MOOtiny.
+Note that you can inspect all verbs by using the object browser in the
+WWW interface.
+<P>
+$web:get_htext first does user authentication:
+<P>
+<UL>
+<LI> If the request allready contains a key it retrieves the key from the URL and verifies if it is valid in several ways.
+<LI> If the request is the /auth page it creates an authentication key
+and returns an html description of the place where to connect the
+player that will be displayed by :hdisplay
+<LI> In the ordinary case (either a request by an authenticated player or
+a direct unauthenticated access to a MOO object), 
+get_htext will synthesize the html code for display.
+<LI> It sets player to wooer.  Since this is a wiz-owned verb, it
+means that player can be used in all verbs from then on to reference
+the object number of the person authed in.  Without this setting of
+player, the variable player the has the object number of the connection
+that the web browser is using.
+<P>
+</UL>
+<P>
+Next, the URL of the request is parsed.
+<P>
+<EM>Special Cases:</EM>
+<P>
+There are two types of special cases.  In each case, $web:get_htext 
+changes the form request for the special case
+into a normal url request of the type that $web:do_url can handle.
+Note that the syntax used in the WOO for all requests is 
+always ``GET'' and not ``POST'', i.e. the total request is appended
+to the URL as in the examples below. See
+<A NAME="tex2html89" HREF="http://www.ncsa.uiuc.edu/SDG/Software/Mosaic/Docs/fill-out-forms/overview.html">NCSA'a documentation</A> for further details.
+<P>
+The first special case
+is verbs that are on $web_root.  These verbs appear in the 
+menu at the top right of all pages in the WWW interface.
+<P>
+The second are _web verbs, which appear automatically at the bottom of 
+most objects (lists are produced using &lt;object&gt;:list_web_verbs).  When 
+these are used, they produce a form.  The url they are converted to 
+consists of &lt;object&gt;:&lt;verb&gt;/arg1/arg2/ which is a standard way to get 
+the results of a specific verb on an object.
+<P>
+It also substitutes those weird html character codes (i.e. ``%7E'' into ``'' (using $www_utils:subst_hext)
+<P>
+So, most of the work of :get_htext is to figure out what type of object you
+want to access, i.e. it first hunts down ``?'' special requests, e.g.
+something like:
+<P>
+<UL>
+<LI> /key=527433505/174?verb=who&amp;do=Do+it%21&amp;command=<BR> (the who listing)
+<LI> /key=527433505/174?verb=body&amp;do=Do+it%21&amp;command=<BR> (the body command)
+<LI> /key=527433505/1403?web_verb=help<BR> (a verb that sits on an object)
+<LI> /key=527433505/1659?web_verb=drop<BR> (same kind of verb)
+<P>
+</UL>
+<P>
+If this is the case, then :get_htext calls itself with a string built of key, object:&lt;web_verb&gt;, arguments and next time proceeds like below.
+<P>
+<EM>The ``normal'' case:</EM>
+<P>
+If the the URL is non-''?'' then $web:do_url is called. Here are 2 examples
+of a calling sequence with the ``who'' $web_root verb and the page verb that
+appears when you click on a player. The second time :do_url gets called as you can see:
+<P>
+<PRE> ************ $web:get_htext
+{&quot;/key=628528948/1835?verb=who&amp;do=Do+it%21&amp;command=&quot;,
+ {&quot;Referer: http://tecfamoo.unige.ch:7777/key=628528948/1835&quot;,
+  &quot;User-Agent: Mozilla/1.1N (X11; I; SunOS 5.4 sun4m)&quot;, &quot;Accept: */*&quot;,
+  &quot;Accept: image/gif&quot;, &quot;Accept: image/x-xbitmap&quot;,
+  &quot;Accept: image/jpeg&quot;, &quot;&quot;},
+ #-452}
+ ************ $web:get_htext
+{&quot;/key=628528948/who&quot;,
+ {&quot;Referer: http://tecfamoo.unige.ch:7777/key=628528948/1835&quot;,......, &quot;&quot;}
+}
+
+ ----
+
+ ************ $web:get_htext
+{&quot;/key=628528948/1324?web_verb=page&amp;args1=hello+young+man&quot;,
+ {&quot;Referer: ........&quot;},
+#-454}
+ ************ $web:get_htext
+{&quot;/key=628528948/1324:page_web/hello%20young%20man&quot;,
+{&quot;Referer: ........ &quot;}
+}</PRE>
+<P>
+<HR><A NAME="tex2html2715" HREF="node173.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2713" HREF="node169.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2707" HREF="node171.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2717" HREF="http://tecfa.unige.ch/moo/book2/node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A>  <A NAME="tex2html1" HREF="http://tecfa.unige.ch/"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/gif/icon-tecfa-unit-small.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html2716" HREF="node173.html">$web:do_url</A>
+<B>Up:</B> <A NAME="tex2html2714" HREF="node169.html">10.1 The Low Level </A>
+<B> Previous:</B> <A NAME="tex2html2708" HREF="node171.html">$web: the core Woo </A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Wed Oct 23 21:55:28 MET DST 1996</I>
+</ADDRESS>
+</BODY>
+</HTML>

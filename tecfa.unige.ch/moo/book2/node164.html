@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>16.7 Debugging Code</TITLE>
+<META NAME="description" CONTENT="16.7 Debugging Code">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2801" HREF="node165.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2799" HREF="node150.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2795" HREF="node163.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2803" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2804" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2802" HREF="node165.html">A few debugging tricks/common </A>
+<B>Up:</B> <A NAME="tex2html2800" HREF="node150.html">Development and Porting Hints</A>
+<B> Previous:</B> <A NAME="tex2html2796" HREF="node163.html">Eval Options (by Andy </A>
+<BR> <P>
+<H1><A NAME="SECTION05170000000000000000">16.7 Debugging Code</A></H1>
+<P>
+<A NAME="secdebuggingcode">&#160;</A>
+<A NAME=1987>&#160;</A>
+<P>
+... is not easy in the MOO [more to come!!!]
+<P>
+The most important tricks are:
+<P>
+<UL>
+<LI> set verbs to +d ('@chmod #xxx:verb +d'). This will produce a
+trace when an errour is enountered.
+<LI> Print out the arguments of verbs. Since lists or recursive lists
+are not printed you need a procedure for that: At <B>TECFA</B><TT>MOO</TT>, use
+:report() with a single argument, .e.g. '@args'. Remember that
+errors (both syntax and logical) ocur because of non-anticipated or
+badly constructed data-structures !!<BR> 
+You canOn every Lambda Core MOO you can also use this:
+&lt;you&gt;:tell($string_utils:from_value(args, 1, 10));
+<P>
+</UL><BR> <HR>
+<UL><A NAME="CHILD_LINKS">&#160;</A>
+<LI> <A NAME="tex2html2805" HREF="node165.html#SECTION05171000000000000000">A few debugging tricks/common errors</A>
+</UL>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

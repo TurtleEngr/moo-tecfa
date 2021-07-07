@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Advanced building</TITLE>
+<META NAME="description" CONTENT="Advanced building">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1256" HREF="node47.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1254" HREF="node42.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1250" HREF="node45.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1258" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1259" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1257" HREF="node47.html">4.3 Construction with @create</A>
+<B>Up:</B> <A NAME="tex2html1255" HREF="node42.html">4.2 Rooms and exits</A>
+<B> Previous:</B> <A NAME="tex2html1251" HREF="node45.html">Customizing your room</A>
+<BR> <P>
+<H2><A NAME="SECTION03124000000000000000">Advanced building</A></H2>
+<P>
+<A NAME="secadvancedbuild">&#160;</A>
+<P>
+Advanced building basically means 2 things, you can:
+<P>
+<OL>
+<LI> Customize messages on rooms and exits, to make actions more lively
+<LI> Change the ``parent'' of your room (which is <code>$room</code> on
+most rooms into a more fancy kind of room. If you are inside the
+room you want to change, type: @chparent here to <code>#xxx</code>.
+See chapter <A HREF="node55.html#chabuilding">6</A> for details on some fancy available
+rooms at <B>TECFA</B><TT>MOO</TT>. We suggest that beginner should start using
+Ken's Generic Classroom (not just for building virtual classrooms).
+It is available in most ``serious'' MOOs and relatively easy to
+customize (see section <A HREF="node57.html#secbuildrooms">6.2</A>).
+<P>
+</OL><H4><A NAME="SECTION03124010000000000000">Customizing messages</A></H4>
+<P>
+(ok this section needs some better writing, I know!!)
+<P>
+By customizing messages (not just on rooms and exits) you can create
+your scenery much more ``lively''. Here is an example:
+<P>
+<SMALL CLASS=SMALL><PRE>&gt;g17
+ You stumble over some open boxes into Daniel Schneider's Office</PRE></SMALL>
+<P>
+Other persons in the room would have seen:
+<P>
+<SMALL CLASS=SMALL><PRE> MooBoy makes a shrieking sound when he enters office #17</PRE></SMALL>
+<P>
+To learn more about messages, consult the internal MOO help, e.g.
+type:
+<P>
+<SMALL CLASS=SMALL><PRE>help @messages
+help messages
+
+container-messages 
+          the messages on objects that can contain other objects
+exit-messages 
+          the messages on exit objects
+thing-messages
+          the messages on objects that can be taken and dropped</PRE></SMALL>
+<P>
+<H4><A NAME="SECTION03124020000000000000">Pronouns and other substitutions</A></H4>
+<P>
+Since help about using pronouns is quite long, we include the
+in-MOO help about that topic here. Pronouns are useful for
+referring in more natural way to people in messages. You
+can use pronouns in a lot of situations, e.g. to customize
+messages on yourself, on your rooms and on exits.
+<A NAME=500>&#160;</A>
+<A NAME=501>&#160;</A>
+<P>
+<SMALL CLASS=SMALL><PRE>&gt;help pronouns
+
+Some kinds of messages are not printed directly to players; they are
+allowed to contain special characters marking places to include the
+appropriate pronoun for some player.  For example, a builder might
+have a doorway that's very short, so that people have to crawl to get
+through it.  When they do so, the builder wants a little message like
+this to be printed:
+
+        Balthazar crawls through the little doorway, bruising his knee.
+
+The problem is the use of 'his' in the message; what if the player in
+question is female?  The correct setting of the 'oleave' message on
+that doorway is as follows:
+
+        &quot;crawls through the little doorway, bruising %p knee.&quot;
+
+The '%p' in the message will be replaced by either 'his', 'her', or 'its',
+depending upon the gender of the player.  
+
+As it happens, you can also refer to elements of the command line
+(e.g., direct and indirect objects) the object issuing the message,
+and the location where this is all happening.  In addition one can
+refer to arbitrary string properties on these objects, or get the
+object numbers themselves.
+
+The complete set of substitutions is as follows:
+
+        %% =&gt; `%'  (just in case you actually want to talk about percentages).
+    Names:
+        %n =&gt; the player
+        %t =&gt; this object (i.e., the object issuing the message,... usually)
+        %d =&gt; the direct object from the command line
+        %i =&gt; the indirect object from the command line
+        %l =&gt; the location of the player
+    Pronouns:
+        %s =&gt; subject pronoun:          either `he',  `she', or `it'
+        %o =&gt; object pronoun:           either `him', `her', or `it'
+        %p =&gt; posessive pronoun (adj):  either `his', `her', or `its'  
+        %q =&gt; posessive pronoun (noun): either `his', `hers', or `its'
+        %r =&gt; reflexive pronoun:  either `himself', `herself', or `itself'
+    General properties:
+        %(foo) =&gt; player.foo 
+        %[tfoo], %[dfoo], %[ifoo], %[lfoo]
+               =&gt; this.foo, dobj.foo, iobj.foo, and player.location.foo
+    Object numbers:
+        %#  =&gt; player's object number
+        %[#t], %[#d], %[#i], %[#l]
+           =&gt; object numbers for this, direct obj, indirect obj, and location.
+
+In addition there is a set of capitalized substitutions for use at the 
+beginning of sentences.  These are, respectively, 
+
+   %N, %T, %D, %I, %L for object names, 
+   %S, %O, %P, %Q, %R for pronouns, and
+   %(Foo), %[dFoo] (== %[Dfoo] == %[DFoo]),... for general properties
+
+Note: there is a special exception for player .name's which are assumed to
+already be capitalized as desired.
+
+There may be situations where the standard algorithm, i.e., upcasing
+the first letter, yields something incorrect, in which case a
+&quot;capitalization&quot; for a particular string property can be specified
+explicitly.  If your object has a &quot;.foo&quot; property that is like this,
+you need merely add a &quot;.fooc&quot; (in general .(propertyname+&quot;c&quot;))
+specifying the correct capitalization.  This will also work for player
+.name's if you want to specify a capitalization that is different from
+your usual .name
+
+Example:  
+Rog makes a hand-grenade with a customizable explode message.
+Suppose someone sets grenade.explode_msg to:
+
+  &quot;%N(%#) drops %t on %p foot.  %T explodes.  
+   %L is engulfed in flames.&quot;
+
+If the current location happens to be #3443 (&quot;yduJ's Hairdressing Salon&quot;),
+the resulting substitution may produce, eg.,
+
+  &quot;Rog(#4292) drops grenade on his foot.  Grenade explodes.  
+   YduJ's Hairdressing Salon is engulfed in flames.&quot;
+
+which contains an incorrect capitalization.  
+yduJ may remedy this by setting #3443.namec=&quot;yduJ's Hairdressing Salon&quot;.
+
+Note for programmers:  
+ In programs, use $string_utils:pronoun_sub().
+ %n actually calls player:title() while %(name) refers to player.name directly.</PRE></SMALL>
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

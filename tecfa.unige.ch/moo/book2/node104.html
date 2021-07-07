@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>A generic ``holder''</TITLE>
+<META NAME="description" CONTENT="A generic ``holder''">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2046" HREF="node105.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2044" HREF="node102.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2038" HREF="node103.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2048" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2049" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2047" HREF="node105.html">Adding security to the </A>
+<B>Up:</B> <A NAME="tex2html2045" HREF="node102.html">8.10 Permissions and Generic </A>
+<B> Previous:</B> <A NAME="tex2html2039" HREF="node103.html">A short look at </A>
+<BR> <P>
+<H2><A NAME="SECTION041102000000000000000">A generic ``holder''</A></H2>
+<P>
+<A NAME="secgenericholder">&#160;</A>
+<P>
+The first an easy step in creating a generic object is to change
+permissions to make it fertile. Do that now !
+<P>
+Now we have to mention a somewhat tricker issue: the ``c'' permissions.
+Here are the ground rules:
+<P>
+<OL>
+<LI> If you have a c permission set on a property, the owner
+of the kid will own this property, meaning they can set it to
+any value they wish, but the verbs you programmed won't be able
+to change the value of a such a property.
+<LI> If you remove the c permission on a property, then you will
+be the owner of the property on the kids. This means that
+the owner can't change them, but the verbs you programmed can.
+<LI> The trouble is that all inherited verbs run with permissions
+on YOU. This means that those verbs can not change properties
+on kids. Yes and verbs are NOT copied onto kids.
+</OL>
+<P>
+Now let's look at the holder example. You now should have it fertile,
+if not, do that. Now TELL SOMEBODY ELSE to create a kid of holder
+(give the person the object number or bring him to the room where
+your holder sits on the floor.
+<SMALL CLASS=SMALL><PRE>   @create #... named test</PRE></SMALL>
+<P>
+Now tell him to 'add ...' something, but it won't work as you
+can see in the transcript below
+<SMALL CLASS=SMALL><PRE>   &gt;add this to test
+   #2108:add (this == #2263), line 1:  Permission denied
+   (End of traceback)</PRE></SMALL>
+<P>
+Now your friend should recycle the object, i.e. kill it because it
+is useless, i.e. he should type:
+<P>
+<SMALL CLASS=SMALL><PRE>   @recycle test</PRE></SMALL>
+<P>
+Note that YOU could create kids that work, since the owner of the generic
+and the owner of the kid is yourself.
+<P>
+The solution to the problem is to <b>change permission
+of all properties whose values
+are set by a verb on the generic to ``-c''</b>.
+Now type something like this:
+<P>
+<SMALL CLASS=SMALL><PRE>  @chmod holder.holding -c</PRE></SMALL>
+<P>
+Now your friends could create kids of your holder that work. The trouble
+now is that they can't change those properties by hand (as some
+persons might be tempted to do, i.e. for them, something like:
+<P>
+<SMALL CLASS=SMALL><PRE>  ;#12347.holding = {}
+      or
+  @set test.holding to {}</PRE></SMALL>
+<P>
+would not work. If you want to allow that, there are 2 solutions both
+of which are not great:
+<P>
+<OL>
+<LI> You can change permissions on holder-holding to +w. This way both
+your verbs work and the owner can change the ``.holding'' property.
+BUT, anybody could do that too.
+<LI> You can tell people to copy the verbs from you. But this is
+a waste of MOO space (unless they create a new and better generic
+object layer for the holding.
+</OL>
+<P>
+Without doubt, there is still more to be said about permissions, but
+for simple projects, you should be all set.
+<P>
+Further reading on permissions:
+<P>
+<UL>
+<LI> The section on Permissions (<A HREF="node120.html#secpermissions">10.7</A>)
+<P>
+</UL><HR><A NAME="tex2html2046" HREF="node105.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2044" HREF="node102.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2038" HREF="node103.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2048" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2049" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html2047" HREF="node105.html">Adding security to the </A>
+<B>Up:</B> <A NAME="tex2html2045" HREF="node102.html">8.10 Permissions and Generic </A>
+<B> Previous:</B> <A NAME="tex2html2039" HREF="node103.html">A short look at </A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

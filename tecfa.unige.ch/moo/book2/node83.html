@@ -1,0 +1,254 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>The first verb ``add'':</TITLE>
+<META NAME="description" CONTENT="The first verb ``add'':">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1792" HREF="node84.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1790" HREF="node80.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1784" HREF="node82.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1794" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1795" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1793" HREF="node84.html">The second verb ``dump'':</A>
+<B>Up:</B> <A NAME="tex2html1791" HREF="node80.html">8.4 MOO tutorialLevel </A>
+<B> Previous:</B> <A NAME="tex2html1785" HREF="node82.html">Creating a property &quot;holding&quot;</A>
+<BR> <P>
+<H2><A NAME="SECTION04143000000000000000">The first verb ``add'':</A></H2>
+<P>
+<A NAME="level1firstverb">&#160;</A>
+<P>
+Now let's create a verb that will allow you to add an information bit to this
+object. There are basically 2 uses for verbs. Either one uses them
+as user commands or as procedures called by other procedures
+(or user commands).
+User commands are a more tricky matter because you have to specify
+verb argument types that will allow the command parser to work correctly.
+Here we basically will create a
+verb called ``add'' that could be used in the following way (don't
+enter that command now, it won't work yet!)
+<P>
+<SMALL CLASS=SMALL><PRE>   &gt;add &quot;The MOO is great&quot; to holder</PRE></SMALL>
+<P>
+You may now have a glance at section <A HREF="node113.html#secverbs">10.4</A> on page
+<A HREF="node113.html#secverbs"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A> to see how
+command parsing works. Otherwise do that later and just type in the
+following without understanding details. It is important to type
+``@verb ....'' <b>only once for each given verb</b> you want
+to program. Else you will wind
+up with several verb definitions and the MOO (and yourself) will get 
+confused! In case you want to kill a verb (including its definition)
+type <code>@rmverb &lt;your object&gt;:verb</code>, e.g. <code>@rmverb holder:add</code>
+in this case. Now, proceed with entering the verb definition:
+<SMALL CLASS=SMALL><PRE>   &gt;@verb holder:add any to this
+
+   Verb added (0).</PRE></SMALL>
+What we did here was to
+define a <b>verb argument specification</b> for a verb called ``add''
+that will be attached to the ``holder'' object. The verb will be
+activated if it encounters a command like 'add ``the moo is great'' to holder'.
+The ``any'' keyword means that any kind of input could be entered.
+The ``to'' keyword means that the ``to'' preposition has to typed.
+The ``this'' keyword means that the indirect object should match the
+object to which the verb belongs (or as you will learn later some
+generic object from which an object inherits the verb).
+<P>
+Warning: <b>if you forgot to enter the right verb specifications</b>
+e.g. ``<code>any to this</code>'', do not add another verb with the @verb
+command but change the argument specification with the <code>@args</code>
+command, e.g. type: <code>@args holder:add any to this</code>.
+<P>
+Now let's program the verb itself. Note that we assume here that you know
+how to use the in-MOO text editor, or that you use a client
+that can ship editing to a local editor (see section <A HREF="node12.html#secClients">1.4</A>). 
+In the latter case, make sure to have local editing set.
+('@edito +l will do that).
+<P>
+Now type <code>'@edit holder:add'</code>.
+<P>
+(1) If (and only if) you ship <b>editing to a local client</b>, you will see this in your editing buffer:
+<SMALL CLASS=SMALL><PRE>----------------------------------------------------------------------
+@program #2108:add
+.
+----------------------------------------------------------------------</PRE></SMALL>
+DON'T delete the first and the last line and insert all programming lines
+in between those! To ship the text back to the MOO in the <b>rmoo client</b>,
+type <code>ctrl-c ctrl-s</code>. In other MOO clients, the command may be
+different. Note that you can reuse the same buffer as many times as
+you like. In other words, once you are editing a verb you can make as
+many modifications as you like and ship them back to the MOO each time.
+<P>
+(2) Alternatively,
+<b>if you use the in-MOO Verb editor</b> (discouraged but sometimes you have
+to) you have to learn how to use it (type 'look' and 'help'
+and you will see something like this:
+<SMALL CLASS=SMALL><PRE>----------------------------------------------------------------------
+Verb Editor
+
+Do a 'look' to get the list of commands, or 'help' for assistance.
+
+Now editing #111:test (any any any).
+----------------------------------------------------------------------</PRE></SMALL>
+<P>
+Now back to programming.
+The ``add'' verb needs to do 2 basic things: (1) add the ``information bit''
+to the ``holding'' property and (2) inform you that it did so. To do that
+we need to program the following lines:
+<P>
+<SMALL CLASS=SMALL><PRE>  --------------------------------------------------------------------
+  this.holding = {@this.holding, dobjstr};
+  player:tell(&quot;Inserted ''&quot;, dobjstr, &quot;'' to &quot;, this.name);
+  --------------------------------------------------------------------</PRE></SMALL>
+If you are using a MOO client that does local editing (tkMOO lite or
+emacs for instance, you should produce something like this
+in your editing window (the object number will be different of course):
+<SMALL CLASS=SMALL><PRE>--------------------------------------------------------------------
+@program #2108:add
+  this.holding = {@this.holding, dobjstr};
+  player:tell(&quot;Inserted ''&quot;, dobjstr, &quot;'' to &quot;, this.name);
+.
+--------------------------------------------------------------------</PRE></SMALL>
+<P>
+Those two lines already contain several features of the MOO programming
+language. If the MOO complains about bad syntax, like in the following
+example, you mistyped something:
+<SMALL CLASS=SMALL><PRE>   Line 2:  parse error
+   1 error(s).
+   Verb not programmed.</PRE></SMALL>
+<P>
+Be sure to type in those 2 lines as above. Note that statements in the
+MOO language need to separated by ``;'' so don't forget them!
+Errors are usually due to:
+<OL>
+<LI> Missing ``;''
+<LI> Misspelling of builtin functions or verbs
+<LI> Unmatched parenthesis or quotes
+<P>
+</OL>
+<P>
+You can now try out your new verb. Use it as in the specification
+above (e.g. type 'add ``anything you like'' to holder' to the MOO).
+If you want to be sure that it worked, examine the object ``holder''.
+E.g. type:
+<P>
+<SMALL CLASS=SMALL><PRE>   @d holder.
+     - or -
+   ;#&lt;object&gt;.holding</PRE></SMALL>
+<P>
+The ``;'' lets you evaluate simple expressions directly in the MOO
+without really programming a verb.
+Now let's look at the first line (reproduced below)
+in the ``add'' verb you started programming.
+<P>
+<SMALL CLASS=SMALL><PRE>  this.holding = {@this.holding, dobjstr};</PRE></SMALL>
+<P>
+<OL>
+<LI> It assigns a value to the slot ``holding'' on the object on which
+the verb runs (the object named ``holder'' in our case). Assignments
+are done with a ``='' assignment statement. So permanent assignment
+statements are done in the following way:
+<P>
+<SMALL CLASS=SMALL><PRE>       &lt;object&gt;.&lt;property&gt; = &lt;something...&gt;
+
+       Examples:
+
+       Player.name = &quot;Animal&quot; ;
+       this.holding = {&quot;not very much&quot;, &quot;a lot more''} ;
+       #237.xxx = 123+7-a ;</PRE></SMALL>
+<P>
+The value of the expression to the <b>right</b> of the ``='' sign is
+set as value of the property addressed to the left. To access the
+``holding'' property on the ``holder'' object, we can use a construction
+like <code>this.holding</code>. ``this'' is a built-in variable that represents
+the object on which the verb runs. Those built-in variables allow you
+to write code that can be used by a whole class of objects.
+<LI> On the right hand side of the ``='' we find a list construction
+expression: <code>{@this.holding, dobjstr}</code> which does the following
+thing:
+<P>
+<UL>
+<LI> the <code>{ ...}</code> builds a list out of the comma-separated elements.
+<LI>  In this context, the ``@'' is a splicing operator that instructs 
+the server to take not the list itself but its elements.
+<LI> I.e. what we do here is telling the server to build a list from
+the elements which are already set to the property 
+in the list (<code>@this.holding</code>) and to add the new element ``dobjstr''.
+<LI> ``dojbstr'' is another built-in variable that a verb can access
+and it corresponds to the ``direct object representation'' the parser
+found when a command was entered. In other words, if a user will
+type <code>'add &quot;rdv demain avec Chris&quot; to holder'</code>, the builtin
+variable <code>dbjstr</code> will have the value <code>&quot;rdv demain avec Chris&quot;</code>
+and the MOO will hand this value to the verb you are programming now.
+See section <A HREF="node118.html#secmoovariables">10.5.2</A> on page <A HREF="node118.html#secmoovariables"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>
+if you want to know more about those right now. Else go on!
+<P>
+</UL></OL>
+<P>
+If you don't understand the concept of splicing consider the following
+cases. In the first case we use an <code>@a</code> and the list created
+is a flat list. In the second case we don't use the <code>@</code> and
+we produce a list within a list, something we do not want here.
+<P>
+<SMALL CLASS=SMALL><PRE>&gt;;;a={&quot;a&quot;,&quot;b&quot;,&quot;c&quot;}; a={@a,&quot;d&quot;}; return(a)
+=&gt; {&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;}
+
+&gt;;;a={&quot;a&quot;,&quot;b&quot;,&quot;c&quot;}; a={a,&quot;d&quot;}; return(a)
+=&gt; {{&quot;a&quot;, &quot;b&quot;, &quot;c&quot;}, &quot;d&quot;}</PRE></SMALL>
+<P>
+Note that we did not program a verb here
+but we used the <b>evaluator functionality</b> of the moo, which allows
+you to test simple things without writing a procedure.
+Please read section <A HREF="node162.html#secbasiceval">16.6.1</A> on page <A HREF="node162.html#secbasiceval"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>
+if you want to know more about playing around with the evaluator.
+But now, let's examine line 2:
+<P>
+<SMALL CLASS=SMALL><PRE>   player:tell(&quot;Inserted ''&quot;, dobjstr, &quot;'' to &quot;, this.name);</PRE></SMALL>
+<P>
+It runs the ``tell'' verb that (this time) is attached
+to the player, i.e. the person who typed the command.
+This line shows how to call other verbs from within a verb you are programming.
+The general syntax for verb calls is the following:
+<SMALL CLASS=SMALL><PRE>&lt;verb&gt;(&lt;argument 1&gt;, &lt;argument 2&gt;, &lt;argument 3&gt;, ...);
+          e.g. 
+player:tell(&quot;Inserted &quot;, dobjstr, &quot;  to &quot;, this.name);</PRE></SMALL>
+i.e. arguments are given in parenthesis, separated by commas.
+<A NAME="tex2html157" HREF="http://tecfa.unige.ch/moo/book2//footnode.html#981"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//foot_motif.gif"></A>
+``:tell'' accepts an arbitrary number of arguments, you can either
+use values or literals (e.g. strings in our case).
+<P>
+Be sure to put commas between EACH argument and watch out for
+quotes (&quot;) to be displayed to the player! Since <code>&quot;</code> are
+used to delimit a string, you can't just have some <code>&quot;</code>
+inside the string.
+Therefore, either use some other character
+to put quotes around words (e.g. <code>''</code> (2 simple quotes)
+or better use <b>escaped</b> quotes: <code>\"</code>. The following
+expressions are conceptually equivalent:
+<P>
+<SMALL CLASS=SMALL><PRE>                &quot;escaping&quot; the quotes:
+
+  player:tell(&quot;Inserted \&quot;&quot;, dobjstr, &quot;\" to &quot;, this.name);
+
+                or using any kind other character(s):
+
+  player:tell(&quot;Inserted ''&quot;, dobjstr, &quot;'' to &quot;, this.name);
+  player:tell(&quot;Inserted `&quot;, dobjstr, &quot;' to &quot;, this.name);
+  player:tell(&quot;Inserted &lt;&lt;&quot;, dobjstr, &quot;&gt;&gt; to &quot;, this.name);</PRE></SMALL>
+<P>
+It is left as an exercise to the reader to figure out what each
+argument to the ``:tell'' verb will print. Play around with
+the MOO evaluator if you want, however the dobjstr variable
+will be empty, but something like this would work:
+<SMALL CLASS=SMALL><PRE>      ;player:tell(&quot;this is my &quot;, player.name)</PRE></SMALL>
+<P>
+<HR><A NAME="tex2html1792" HREF="node84.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1790" HREF="node80.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1784" HREF="node82.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1794" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1795" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html1793" HREF="node84.html">The second verb ``dump'':</A>
+<B>Up:</B> <A NAME="tex2html1791" HREF="node80.html">8.4 MOO tutorialLevel </A>
+<B> Previous:</B> <A NAME="tex2html1785" HREF="node82.html">Creating a property &quot;holding&quot;</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

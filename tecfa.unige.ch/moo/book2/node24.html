@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Basic Communication</TITLE>
+<META NAME="description" CONTENT="Basic Communication">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html969" HREF="node25.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html967" HREF="node23.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html961" HREF="node23.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html971" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html972" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html970" HREF="node25.html">Basic Navigation</A>
+<B>Up:</B> <A NAME="tex2html968" HREF="node23.html">2.1 Basic standard MOO </A>
+<B> Previous:</B> <A NAME="tex2html962" HREF="node23.html">2.1 Basic standard MOO </A>
+<BR> <P>
+<H2><A NAME="SECTION02211000000000000000">Basic Communication</A></H2>
+<P>
+<A NAME="secBasicCommunication">&#160;</A>
+<P>
+MOOs posses a sophisticated set of communication commands. The
+basic commands are shared among MOOs.
+<P>
+In order to list connected players:
+<SMALL CLASS=SMALL><PRE>@who    Lists  connected persons
+@who    &lt;name&gt; lists connect time information for a given person</PRE></SMALL>
+<P>
+Within a MOO: type 'help communication' for more help on this topic.
+<P>
+<H4><A NAME="SECTION02211010000000000000">'say' - Say anything out ``loud'' to everybody in a room</A></H4>
+<P>
+'say' is probably the command most frequently used. Note however, that
+on most MOOs you can find a ``stage talk'' feature that allows you
+to address yourself directly to a person.
+<P>
+<SMALL CLASS=SMALL><PRE>Syntax:    say &lt;text&gt;
+           &quot; &lt;text&gt;
+
+    &lt;text&gt; = any kind of text
+
+Exemples:
+
+  &gt;&quot;hello
+  You say, &quot;hello&quot;
+  &gt;say this is wonderful
+  You say, &quot;this is wonderful&quot;
+
+Others will see for example:
+
+  Daniel says &quot;hello&quot;
+  Daniel says &quot;this is wonderful&quot;</PRE></SMALL>
+<P>
+<H4><A NAME="SECTION02211020000000000000">'emote' -  Non-verbal expressions</A></H4>
+<P>
+<SMALL CLASS=SMALL><PRE>Syntax:      emote &lt;text&gt;
+             : &lt;text&gt;
+
+Exemples:
+
+  &gt;emote smiles
+  Kaspar smiles
+  &gt;:laughs
+  Kaspar laughs
+  &gt;:thinks it is time to go home
+  Kaspar thinks it is time to go home</PRE></SMALL>
+<P>
+<H4><A NAME="SECTION02211030000000000000">'whisper' - private communication</A></H4>
+<P>
+<SMALL CLASS=SMALL><PRE>Syntax:     whisper &quot;&lt;text&gt;&quot; to &lt;user&gt;
+
+     &lt;user&gt; must be somebody in the same room
+
+Note: You must type the quotes around your text, also: the page command
+has more or less the same effect. On some MOOs people in the room can see
+that you whisper something to somebody.
+
+Examples:
+
+  &gt;whisper &quot;now this is a secret&quot; to Daniel
+  You whisper, &quot;now this is a secret&quot; to Daniel.
+
+The other will see something like:
+
+  Kaspar whispers, &quot;now this is a secret&quot;</PRE></SMALL>
+<P>
+<H4><A NAME="SECTION02211040000000000000">'page' - Communication over distance</A></H4>
+<P>
+'page' is being used to send messages in real time to users which
+are not in the same room. Note that standard
+information displaying the effects of this command are often
+different from MOO to MOO. Some users customize this command very
+much, so don't be surprised !
+<P>
+<SMALL CLASS=SMALL><PRE>Syntax:     page &lt;user&gt; &lt;text&gt;
+
+
+Examples:
+
+  &gt;page MooBoy Hi, have you got a moment ?
+  Your message has been sent.
+
+The other will see:
+
+  You sense that Daniel is looking for you in Daniel's Office.
+  He pages, &quot;Hi, have you got a moment ?&quot;</PRE></SMALL>
+<P>
+Now look at a more customized version of that pageing mechanism:
+<P>
+<SMALL CLASS=SMALL><PRE>  &gt;page MooBoy Hi, have you got a moment ?
+  Your message has been sent.
+  &gt;
+
+The other person will see:
+
+  Kaspar [at Daniel's Office] tells his big dog to head for your place.
+  He pages, &quot;Hi, have you got a moment ?&quot;
+
+And when he pages back:
+
+  &gt;page Kaspar sure !
+  The big dog gently grabs the message and heads for Kaspar
+  &gt;</PRE></SMALL>
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

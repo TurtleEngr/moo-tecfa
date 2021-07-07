@@ -1,0 +1,49 @@
+Sender: owner-moo-ed@ucet.ufl.edu
+Precedence: bulk
+
+This is the info needed to arrive at the GNA Forum on the 16 linked MOOs:
+
+  Room  MOO name                 Address               Port
+
+  #444 ATHEMOO                  moo.hawaii.edu         9999 ** Changed address
+ #7981 BayMOO                   baymoo.sfsu.edu        8888
+ #2150 BioMOO                   bioinfo.weizmann.ac.il 8888
+ #2487 CollegeTown              patty.bvu.edu          7777
+ #1493 CPDEE MOO                moo.cpdee.ufmg.br      7777 ** New!
+ #6490 Diversity University     moo.du.org             8888
+  #453 Eon                      mcmuse.mc.maricopa.edu 8888
+  #192 GNA-Lab                  gnalab.uva.nl          7777
+  #269 Internet Public Library  ipl.sils.umich.edu     8888
+  #528 LinguaMOO                lingua.utdallas.edu    8888
+ #9839 MediaMOO                 mediamoo.media.mit.edu 8888
+ #5031 Meridian                 sky.bellcore.com       7777
+  #280 Open Forum               info.ic.gc.ca          8888 ** New!
+#12852 PostModernCulture-2   hero.village.virginia.edu 7777 ** New!
+  #313 TecfaMOO                 tecfamoo.unige.ch      7777
+ #1380 VOU                      athena.edu             8888 ** New alias
+
+
+  #640 FredNet MOO              fred.net               8888 ** Off the net,
+will be
+                                                               relinked as
+Prism MOO
+  #611 Global Village           info.ic.gc.ca          7777 ** Off the net
+for the
+                                                               time being
+
+
+
+Telnet to <address> <port>,
+type connect guest or connect <username> <password>,
+and try one of:
+ - @go <room number>            (should work on most)
+ - @move me to <room number>    (works on most, may be restricted for guests)
+ - go to the GNA Forum          (BioMOO specific ;)
+
+-------------------------------------------------------------
+Gustavo Glusman               Founder/administrator of BioMOO
+-- Gustavo@bioinformatics.weizmann.ac.il
+-- http://bioinformatics.weizmann.ac.il/Gustavo
+-- BioMOO: telnet bioinformatics.weizmann.ac.il 8888
+           WWW:   http://bioinfo.weizmann.ac.il:8888
+

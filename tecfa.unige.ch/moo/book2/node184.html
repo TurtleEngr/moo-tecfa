@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Listing code</TITLE>
+<META NAME="description" CONTENT="Listing code">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="http://tecfa.unige.ch/moo/book2/tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html1" HREF="http://tecfa.unige.ch/"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/gif/icon-tecfa-unit-small.gif"  > </A> <A NAME="tex2html2882" HREF="node185.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2880" HREF="node183.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2874" HREF="node183.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2884" HREF="http://tecfa.unige.ch/moo/book2/node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <BR>
+<B> Next:</B> <A NAME="tex2html2883" HREF="node185.html">Comparing Code</A>
+<B>Up:</B> <A NAME="tex2html2881" HREF="node183.html">11.2 Displaying and comparing </A>
+<B> Previous:</B> <A NAME="tex2html2875" HREF="node183.html">11.2 Displaying and comparing </A>
+<BR> <P>
+<H2><A NAME="SECTION05121000000000000000">Listing code</A></H2>
+<P>
+<A NAME="seclistingcode">&#160;</A>
+<P>
+<OL>
+<LI> <EM>'@show'</EM>: useful for getting an ``overview''
+  <UL>
+<LI> '@show &lt;obj&gt;' shows the defined verbs and properties on an
+    object
+<LI> '@show &lt;obj&gt;:&lt;verb&gt;' shows some information about a
+    verb
+<LI> etc...
+  </UL>
+<LI> '@dump &lt;obj&gt; will dump the code for an object including its
+  verbs.  This is useful for porting, but read the
+  <A NAME="tex2html93" HREF="gopher://gsep.pepperdine.edu/00/gsep/technical/mud-moo/new-archwiz-faq.txt">Newbie MOO Wiz
+    FAQ</A>
+  for details, and don't forget to port the parents too (and be
+  prepared to adjust YOUR parent objects).
+<LI> <EM>@list</EM>
+<UL>
+<LI> '@list &lt;obj&gt;:&lt;verb&gt;' will list a verb for a given
+  object. On some MOOs, the abbreviation '@l ...' will work.
+<LI> '@list &lt;obj&gt;:&lt;verb&gt; wo numbers' will list a verb for a
+  given object without line numbers, useful for just porting a verb
+  (Type in ``wo numbers'' just like that)
+</UL>
+<LI> <EM>@display</EM>:is more fancy than @show. It allows you list
+  various pieces of code attached to an object.
+<P>
+  <UL>
+<LI> Syntax:
+<P>
+ <PRE>        @display &lt;object&gt;.[property]
+                         ,[inherited_property]
+                         :[verb]
+                         ;[inherited_verb]</PRE>
+<LI> E.g. '@display &lt;obj&gt;:' or the alias '@d &lt;obj&gt;:' will
+    display the verbs of an object.  In the following example we list
+    all the verbs of object #5 (alias <code>$thing</code>):
+<P>
+ <PRE>&gt;@d #5:
+generic thing (#5) [ readable fertile ]
+  Owned by Mother (#2).
+  Child of Root Class (#1).
+    #5:&quot;g*et t*ake&quot;             Mother (#2)       rxd    this none none
+    #5:&quot;d*rop th*row&quot;           Mother (#2)       rxd    this none none
+    #5:moveto                   Mother (#2)       rxd    this none this
+    #5:&quot;take_failed_msg take_succeeded_msg otake_failed_msg 
+        otake_succeeded_msg drop_failed_msg 
+        drop_succeeded_msg odrop_failed_msg odrop_succeeded_msg&quot;
+                                Mother (#2)       rxd    this none this
+    #5:&quot;gi*ve ha*nd&quot;            Mother (#2)       rxd    this at/to any
+    #5:examine_key              Mother (#2)       rxd    this none this
+    #5:take_web                 Irradiate (#226)  rxd    this none this
+    #5:give_web                 Irradiate (#226)  rxd    this none this
+    #5:obvious_web_verbs        Irradiate (#226)  rxd    this none this
+    #5:drop_web                 Irradiate (#226)  rxd    this none this
+-------------------------------- finished -----------------------------</PRE>
+<LI> '<code>@display &lt;$obj$&gt;.</code>' or the alias '<code>@d &lt;obj&gt;.</code>'
+    will display the properties of and object and so forth.
+<LI> If you are just interested in a single property or verb, type
+    something like in the following examples.  Note that the ``,'' in
+    ``,aliases'' or ``,name'' means that the property is inherited
+    from above (``aliases'' from #2) or a built-in property
+    (``name'').
+<P>
+ <PRE> &gt;@d #5.aliases
+ ,aliases                 Mother (#2)           r c    {&quot;generic thing&quot;}
+ ----------------------------- finished ------------------------------
+
+ &gt;@d #5.name
+ ,name                    Built in property            &quot;generic thing&quot;
+ ----------------------------- finished ------------------------------</PRE>
+<P>
+</UL>
+<LI> An other way for looking at code, is of course to load a verb or
+  a propriety into the editor (especially if you can ship it to a
+  client), but be careful not to destry anything if you have the
+  permission to do so !!
+<LI> At TECFAMOO, you can use the following commands to ship listings
+  into an editor window: @@dump, @@list and @@d*isplay. So instead of
+  listing things in the buffer in which you talk you can get it in
+  another Window. Use it, it is cool!
+<P>
+</OL><HR><A NAME="tex2html2882" HREF="node185.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2880" HREF="node183.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2874" HREF="node183.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2884" HREF="http://tecfa.unige.ch/moo/book2/node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A>  <A NAME="tex2html1" HREF="http://tecfa.unige.ch/"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/gif/icon-tecfa-unit-small.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html2883" HREF="node185.html">Comparing Code</A>
+<B>Up:</B> <A NAME="tex2html2881" HREF="node183.html">11.2 Displaying and comparing </A>
+<B> Previous:</B> <A NAME="tex2html2875" HREF="node183.html">11.2 Displaying and comparing </A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Wed Oct 23 21:55:28 MET DST 1996</I>
+</ADDRESS>
+</BODY>
+</HTML>

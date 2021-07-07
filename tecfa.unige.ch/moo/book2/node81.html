@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Creating an object</TITLE>
+<META NAME="description" CONTENT="Creating an object">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1768" HREF="node82.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1766" HREF="node80.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1760" HREF="node80.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1770" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1771" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1769" HREF="node82.html">Creating a property &quot;holding&quot;</A>
+<B>Up:</B> <A NAME="tex2html1767" HREF="node80.html">8.4 MOO tutorialLevel </A>
+<B> Previous:</B> <A NAME="tex2html1761" HREF="node80.html">8.4 MOO tutorialLevel </A>
+<BR> <P>
+<H2><A NAME="SECTION04141000000000000000">Creating an object</A></H2>
+<P>
+Let's assume that you don't want to modify the behavior of an
+existing object but work on a new one. The first thing you need to
+do is to create an object and give it a name. We we call this
+object ``holder'' because it holds information. Choose any other
+name if you don't like it. However, for ease of use go for
+a simple name, not something like ``My favorite ToDo List tool''.
+<P>
+You can create an object from any <b>fertile generic object</b>.
+Generic objects are some kind prototypes containing 
+a set of properties (some having default values) and a set of verbs.
+If you don't want to profit from the already existing features of
+a more sophisticated object you make a child of $thing (aka #5):
+Now type:
+<P>
+<SMALL CLASS=SMALL><PRE>    @create $thing named holder</PRE></SMALL>
+<P>
+The MOO will reply with something like:
+<P>
+<SMALL CLASS=SMALL><PRE>   You now have holder with object number #2108
+   and parent generic thing (#5).</PRE></SMALL>
+<P>
+By typeing 'inv' you can see that you carry this new object. Keep it on
+you or drop it to the floor (but don't forget to pick it up when you
+walk away). If you loose track of this object '@audit' will always
+show you what you own and you can retrieve it by typing
+'<code>@move &lt;object&gt; to me</code>'. If the object is not with you or in the same
+room you have to refer to it by its number (e.g. #2108). Each
+object has a unique number.
+<P>
+Now as we said, this object has already a few inherited
+properties and verbs. Some of those properties you bf own and you
+can modify their values. You don't own the inherited verbs, but
+you may bf use them. If you are curious about details you may
+inspect your object from several angles (see section <A HREF="node153.html#secdisplayingcode">16.2</A>
+on how to do that.
+For now let's just describe your object (something you should know how to do),
+i.e. type:
+<P>
+<SMALL CLASS=SMALL><PRE>   @describe holder as Information Holder</PRE></SMALL>
+Now you can look at your object as the following transcript shows:
+<SMALL CLASS=SMALL><PRE>   &gt;look holder
+   Information Holder</PRE></SMALL>
+<P>
+Not a very good description and you may want to change that sometimes!
+<P>
+<HR><A NAME="tex2html1768" HREF="node82.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1766" HREF="node80.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1760" HREF="node80.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1770" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1771" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html1769" HREF="node82.html">Creating a property &quot;holding&quot;</A>
+<B>Up:</B> <A NAME="tex2html1767" HREF="node80.html">8.4 MOO tutorialLevel </A>
+<B> Previous:</B> <A NAME="tex2html1761" HREF="node80.html">8.4 MOO tutorialLevel </A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

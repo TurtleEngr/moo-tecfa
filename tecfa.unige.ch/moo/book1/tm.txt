@@ -1,0 +1,2534 @@
+
+
+
+
+                                    The  evolving  TecfaMOO  Book
+                                            Part  I:  Concepts
+
+
+
+   Daniel  K.  Schneider  1             Terrence  M.  Drozdowski,  2               Gustavo  Glusman  3
+               Richard  Godard  4              K.Block  5           Jenifer  Tennison6  7
+
+
+
+                                               May  19,  1995
+
+
+
+    1TECFA,  School  of  Psychology  and  Educational  Sciences  University  of
+
+Geneva,  <schneide@divsun.unige.ch>
+    2Arizona  State  University,  Phoenix  (aka  xymox).
+    3Weizmann  Institute  of  Science,  Rehovot,  Israel,
+
+<Gustavo@bioinfo.weizmann.ac.il>
+    4Swiss  Federal  Institute  of  Technology,  <rgodard@di.epfl.ch>
+    5Computer  Consultant,  Los  Angeles
+    7Psychology  Department,  University  of  Nottingham
+
+                                                                                                             1
+
+
+
+VERY  Rough  and  quite  empty  Draft  -  better  wait  until  end  of  May  95.   Parts
+of  it  has  been  presented  at  the  MOO  Workshop1  at  FLISH  95.   At  this  stage,
+actual  writing  is  ``the  crime''  of  D.S.  and  has  not  yet  been  approved  or
+modifyed  by  the  co-authors.   Sorry  for  spelling  and  grammar  !
+The   TECFAMOO  is  a  text-based  virtual  reality2.   It  is  a  Virtual  Space  for
+Educational  Technology,  Education,  Research  and  Life  at  TECFA,  School  of
+Psychology  and  Education,  University  of  Geneva,  Switzerland.
+In  this  ``evolving  book''  we  state  the  initial  mission  of  this  MOO  as
+related  to  our  research3  in  computer  mediated  communication4,  to  its  use  as
+communication  tool  for  our  diploma  in  educational  technology5  and  to
+student  projects  in  the  STAF-146  course.
+The  main  purpose  of  ``book''  is  to  look  at  a  certain  number  of
+``interesting''  topics.   Note  that  this  ``book''  is  not  meant  to  be  a
+finished  product,  but  rather  a  collection  of  thoughts,  observations  that
+can  be  reused  in  the  future  as  a  resource.   Note  that  screen  dumps  from
+various  MOO  may  have  changed.   They  are  here  to  illustrate  principles.
+This  book  can  bee  seen  as  complement  to  TECFA's  WWW  page  on  educational
+MUDs7.
+
+
+
+                    ________________________________________________________________
+    1http://tecfa.unige.ch/edu-comp/flish95/workshop.html
+    2http://tecfa.unige.ch/edu-comp/WWW-VL/eduVR-page.html
+    3http://tecfa.unige.ch/tecfa/tecfa-research/CMC/CMC-overview.html
+    4http://www.rpi.edu/Internet/Guides/decemj/icmc/top.html
+    5http://tecfa.unige.ch/tecfa/tecfa-teaching/teaching-overview.html#postgrad
+    6http://tecfa.unige.ch/tecfa/tecfa-teaching/staf14/staf14-overview.html
+    7http://tecfa.unige.ch/edu-comp/WWW-VL/eduVR-page.html
+
+2
+
+
+
+
+Contents
+
+
+
+1   Introduction                                                                                       9
+    1.1    The  birth  of  TECFAMOO   : : : : : : : : : : : : : : : : : : : : : : : : : : : : :   9
+    1.2    A  List  of  ``Questions''  : : : : : : : : : : : : : : : : : : : : : : : : : : : :   9
+    1.3    This  is  *not*  an  article!   : : : : : : : : : : : : : : : : : : : : : : : : : :  10
+
+
+2   On  Building  a  MOO                                                                              11
+    2.1    First  Time  Users  and/or  Beginners   : : : : : : : : : : : : : : : : : : : : :  11
+           2.1.1     The  Welcome  Screen  : : : : : : : : : : : : : : : : : : : : : : : : : : :  11
+           2.1.2     The  Welcome  Area   : : : : : : : : : : : : : : : : : : : : : : : : : : : :  13
+           2.1.3     Work  in  progress   : : : : : : : : : : : : : : : : : : : : : : : : : : : :  16
+    2.2    Communication  and  Navigation  on  the  MOO  : : : : : : : : : : : : : : : : :  17
+    2.3    Topology  and  Navigation  : : : : : : : : : : : : : : : : : : : : : : : : : : : :  17
+           2.3.1     Building  on  CollegeTown : : : : : : : : : : : : : : : : : : : : : : : :  17
+           2.3.2     Building  Rules  on  TECFAMOO   : : : : : : : : : : : : : : : : : : : : :  18
+
+
+3   MOOs  for  Research  Work                                                                       21
+    3.1    Virtual  Meeting  Spaces : : : : : : : : : : : : : : : : : : : : : : : : : : : : :  21
+           3.1.1     A  look  at  other  MOOs : : : : : : : : : : : : : : : : : : : : : : : : : :  21
+           3.1.2     Meeting  Spaces  at  TECFAMOO   : : : : : : : : : : : : : : : : : : : : :  23
+
+
+4   MOOs  for  Education                                                                             25
+    4.1    Virtual  Classrooms   : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :  25
+           4.1.1     Education  Tools  at  Diversity  University  : : : : : : : : : : : : :  25
+           4.1.2     Ken's  generic  classroom : : : : : : : : : : : : : : : : : : : : : : : :  27
+           4.1.3     Please  don't  disturb!  : : : : : : : : : : : : : : : : : : : : : : : : :  28
+           4.1.4     So  what  is  new  ?   : : : : : : : : : : : : : : : : : : : : : : : : : : : :  30
+    4.2    MOO  Learning  Environments   : : : : : : : : : : : : : : : : : : : : : : : : : :  31
+           4.2.1     The  Ohlone  Village  : : : : : : : : : : : : : : : : : : : : : : : : : : :  31
+           4.2.2     The  Ticinese  Village : : : : : : : : : : : : : : : : : : : : : : : : : :  34
+           4.2.3     Social-Psychological  Experimentation  : : : : : : : : : : : : : : :  35
+           4.2.4     The  MOO  as  Learning  Environment:   The  case  of  EON  : : : : : :  35
+    4.3    Private  Immersion  in  the  MOO   : : : : : : : : : : : : : : : : : : : : : : : :  37
+
+
+5   Social  Issues                                                                                    39
+    5.1    On  ruling  a  MUD   : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :  39
+    5.2    Manners  : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :  40
+           5.2.1     Examples  from  social  MOOs   : : : : : : : : : : : : : : : : : : : : : :  40
+           5.2.2     Examples  from  educational  and  research  MOOs  : : : : : : : : : :  41
+    5.3    Social  Identities  on  MUDs   : : : : : : : : : : : : : : : : : : : : : : : : : :  46
+           5.3.1     Should  "serious"  MOOs  allow  anonymity  ?  : : : : : : : : : : : : :  46
+    5.4    wizards  : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :  48
+           5.4.1     A  story  from  the  MOO  Cows   : : : : : : : : : : : : : : : : : : : : : :  48
+
+
+
+                                                       3
+
+4                                                                                                 CONTENTS
+
+
+
+
+List  of  Figures
+
+
+
+    2.1    The  Welcome  screen  of  CollegeTown   : : : : : : : : : : : : : : : : : : : : :  14
+
+
+
+                                                       5
+
+6                                                                                       LIST  OF  FIGURES
+
+
+
+
+List  of  Tables
+
+
+
+                                                       7
+
+8                                                                                        LIST  OF  TABLES
+
+
+
+
+Chapter  1
+
+
+
+Introduction
+
+
+
+1.1    The  birth  of   TECFAMOO
+
+
+The   TECFAMOO  project  has  been  started  as  a  small  informal  project  in  the
+fall  of  1994.   Currently  we  have  been  using  MOO  technology  as  CMC  tool  for
+our  own  teaching  and  research.   Since  April  1st  1995  our  MOO  has  become  the
+main  technical  vector  in  an  effort  to  create  a  virtual  space  for  European
+researchers  and  practitioners  in  Educational  Technology.   This  project  is
+supported  partly  by  the  European  VMDL  (``Virtual  Mobility  and  Distance
+Learning''  project.   MOO  technology  also  plays  a  major  role  in  three
+European  4th  framework  bids  (LEARN-NETT,  European  University  Network  for
+Trainers,  VORTEX,  Distributed  European  Research  Laboratories  EUCOSITY,  An
+European  Collaborative  Tele-University)
+Since  April  24  (!)   the   TECFAMOO  has  an  experimental  World-Wide  Web
+interface  allowing  to  take  increased  benefits  from  both  technologies.   This
+latest  development  will  increase  our  commitment  to  MOO  technology
+TECFAMOO  is  largely  an  international  project.   Its  main  contributors  are
+the  authors  of  this  report.
+
+
+1.2    A  List  of  ``Questions''
+
+
+Creation  of   TECFAMOO  has  been  started  in  fall  1994  without  precise
+purpose.   It  seemed  to  us  that  MOO  technology  had  a  promise  for  several
+purposes  and  and  it  seemed  appropriate  to  have  a  MOO  handy  that  could  be
+used  whenever  needed.   Since  TECFA's  mission  is  research  and  education  in
+Educational  Technology  such  an  ``exploratory  stance''  could  easily  justify
+the  investment  needed.
+What  could  we  use  our  MOO  for  ?
+
+
+    o  The  MOO  as  internal  communication  tool.   See  for  instance
+       [EVARD,  1993    ].
+
+    o  Support  for  international  exchange  Research  and  Development:   A
+       project  (see  3.1.2)  on  using   TECFAMOO  for  various  research  groups  in
+       Education  Technology  has  started  in  April  95.
+
+
+        --   Virtual  Cafes,  i.e.   place  where  people  from  various  fields  can
+             meet  in  an  informal  way.
+
+        --   Collaborative  work
+
+
+    o  Education
+
+        --   Tutorial  support  for  semi-distance  class-room  teaching:   This  item
+             is  of  interest  for  our  diploma  in  educational  technology.
+
+
+                                                       9
+
+10                                                                       CHAPTER  1.     INTRODUCTION
+
+
+
+        --   Tutorial  support  for  distance  teaching
+
+        --   Environments  for  ``Just-in-Time-Open  Learning'',  e.g.   resource
+             centers.
+
+        --   Educational  Environments  (Learning  by  doing)
+
+    o  The  MOO  as  information  tool
+
+
+        --   A  Spatial  Integrator  for  Information  Retrieval  and  Exchange:   This
+             becomes  a  very  ``hot''  topic  for  ``webbed''  MOOs.   See  for
+             instance  one  of  Dieberger's1  articles  (e.g.
+             [DIEBERGER  et  TROMP,  1993        ],  [DIEBERGER,  1994a      ]  and
+             [DIEBERGER,  1994b      ])  for  a  general  discussion  of  ``spatial''  hyper
+             media.
+
+        --   ``Exhibition  of  activities'',  related  to  the  previous  item  this
+             means  that  organizations  can  build  virtual  information  centers  on
+             the  MOO.
+
+
+    o  Interesting  other  issues
+
+    o  Dynamics  of  interactions  in  a  virtual  space
+
+    o  Social  and  Political  issues  in  virtual  worlds
+
+
+[...   more  to  come]
+
+
+1.3    This  is  *not*  an  article!
+
+
+As  stated  in  the  abstract,  this  report  is  not  meant  to  be  an  ``article''
+but  rather  a  collection  of  thoughts,  observations  that  can  be  reused  in  the
+future.   Note  that  screen  dumps  from  various  MOO  may  have  changed  and
+postings  to  various  MOO  mailing  lists  may  have  disappeared.   They  are  here
+to  illustrate  principles.
+We  took  the  liberty  to  quote  in  length  descriptions,  postings  and  so  forth
+found  in  various  public  MOOs.   We  feel  that  those  quotes  illustrate  the
+richness  of  text-based  virtual  realities  and  they  constitute  an  an
+important  source  for  discussing  or  building  up  ``serious''  MOOs.   Readers,
+please  note  that  some  of  those  quotes  do  not  come  from  ``polished''
+articles  and  they  have  to  be  interpreted  as  contributions  to  on-going
+discussions.
+Quotations  allow  to  find  the  original.   Excerpts  from  mailing  lists  use  the
+following  syntax:   <MOO  mailing  list>@<name  of  the  MOO>  (article  number,
+date).
+
+
+
+                    ________________________________________________________________
+    1http://www.gatech.edu/lcc/idt/Faculty/andreas_dieberger/A.Dieberger.home.html
+
+
+
+
+Chapter  2
+
+
+
+On  Building  a  MOO
+
+
+
+2.1    First  Time  Users  and/or  Beginners
+
+
+Several  places  and  features  are  important  for  first  time  users:
+
+  1.   The  ``Welcome  Screen''  which  is  displayed  before  connecting  with  a
+       character  to  the  MOO
+
+  2.   The  ``Welcome  Area''  where  people  land  when  they  connect  (unless  they
+       built  a  ``home''.
+
+  3.   Tools  for  assistance  and  visitor  centers  around  the  welcome  area
+
+  4.   General  information  tools  such  as  mailing  lists,  maps  and  so  on
+
+  5.   ``Tour  buses''  or  equivalent  that  give  people  a  guided  tour  to
+       interesting  places
+
+  6.   Tutorials  and  guidelines  for  using  the  MOO  and  building  rooms  and
+       objects
+
+This  section  is  based  partly  on  an  assignment  in  the  STAF-141  class.   We
+gave  a  short  introduction  to  our  students  on  how  to  navigate  in  the  MOO
+world  and  then  asked  them  to  visit  a  few  MOOs  and  evaluate  it  among  a  few
+criteria,  among  which  ``how  beginners  are  handled''.
+
+
+2.1.1     The  Welcome  Screen
+
+The  welcome  screen  should  give  some  information  on  the  purpose  of  the  MOO
+and  tell  people  (including  guests)  how  to  connect  (or  how  to  obtain  a
+character).   Most  MOOs  have  a  set  of  standard  commands  enabled  like  ``who''
+displaying  who  is  on  the  MOO.
+Let's  look  a  few  of  those  screens:
+
+-------------------------------------------------------  CollegeTown  4/95
+
+
+                   _______________________________________________
+                 /                                                                     "
+                 _                  EDUCATION  FOR  SERVICE                      _
+                 __________________________________________________
+                       _      __         /                "  _      _         _
+                       _   ___     _   /                   "   __   _   __  _
+                       _  _   _  _     /                      "_   ______   _
+                       __  _   _     __      WELCOME        _  _         _  _     PLEASE  REMEMBER:
+                    ________________________________________________________________
+    1http://tecfa.unige.ch/tecfa/tecfa-teaching/staf14/staf14-overview.html
+
+
+
+                                                      11
+
+12                                                                 CHAPTER  2.   ON  BUILDING  A  MOO
+
+
+
+                       _   __     _   _         TO            _  _PLAQUE_  _
+                       _        _      _   COLLEGETOWN     _  ________  _  THIS  IS  AN  ACADEMIC
+                       _  _  _     _   _                       _      _        _  ENVIRONMENT  *NOT*  A
+                       ____________                       ____________      <<  GAME  >>
+
+
+ COLLEGETOWN  is  a  text  based  virtual  ACADEMIC  community  running  on  a  NeXT
+ computer  at  Buena  Vista  College  in  Storm  Lake,  IA.  Users  who  appreciate  our
+ educational  mission  are  welcome  to  participate  in  COLLEGETOWN  events.
+
+
+             connect  name  password                                   PLEASE  TYPE
+             connect  guest                                             'HELP  MANNERS'.
+             @quit
+
+
+---------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------  DU  4/95
+
+
+                                                WELCOME  TO
+                                         DIVERSITY  UNIVERSITY
+                                             (East   Campus)
+                      Running  version  1.7.8p4  of  the  LambdaMOO  server
+                          Address:  MOO.DU.ORG  (192.101.98.5)  8888
+
+
+   Diversity  University  MOO  campuses  are  Internet  locations  for  serious
+experimentation  in  network-based,  interactive  teaching,  learning  and  social
+services.   Those  wishing  to  further  this  community  development  are  welcome!
+
+
+The  DU  administration  would  like  to  thank  the  many  volunteers  contributing
+time  and  effort  to  further  this  vision.   We  would  also  like  to  thank  the
+Internet  Multicasting  Service,  Embry-Riddle  Aeronautical  University  (ERAU),
+and  the  Annenberg/CPB  Project  for  their  support  in  this  venture.
+
+
+Supporters  of  this  project  are  not  responsible  for  the  content  of  any  material
+which  may  be  found  on  this  system.
+
+
+                 connect  guest               _  to  have  a  look  around
+                 @who                            _  to  see  who  is  online
+                 @quit                          _  to  exit  Diversity  University
+
+
+---------------------------------------------------------------------------
+
+
+------------------------------------------------------------     BioMOO  4/95
+
+
+"%HHH!*%nx.      HM                "4HHH:         :HHHH"      .xH*""tx.          .xH*""tx.
+   MMM     `MMM     `"                   MMMM:        MXMMX      MMM        #MM.      MMM        #MM.
+   MMM      MM"   +nn     .n*%x.      M`MMM      M  XMMX     MMM          MMM,   MMM          MMM,
+   MMM!**MX.      MM   MM     4Mh     M  ?MMM   X"  XMMX   'MMM          MMMX  'MMM          MMMX
+   MMM      MMM:   MM   MM     'MM     M   ?MMMd"   XMMX   'MMM          MMM'  'MMM          MMM'
+   MMM      MMMf   MM   MM     'MM     M     MMMf     XMMX     `MMk        :MM#     `MMk        :MM#
+..MMMk..HM*"   .MM.  `MX..M*   .:M..   MM     .MMMM.      "Mh...xM"'         "Mh...xM"'
+
+
+                                                  ...the  virtual  meeting  place  for  biologists.
+
+
+Type:
+
+2.1.   FIRST  TIME  USERS  AND/OR  BEGINNERS                                                   13
+
+
+
+'purpose'                               to  read  a  statement  on  BioMOO's  purpose
+'connect  (userid)  (password)'  to  connect,  for  example:  connect  Elmer  stu888ph
+'guest  (name)  (any-password)'  to  connect  as  a  named  guest,
+'connect  Guest'                      to  connect  as  an  anonymous  guest,
+'create'                                for  information  on  how  to  get  your  own  userid,
+'who'                                     just  to  see  who's  logged  in  right  now,
+'@quit'                                  to  disconnect,  either  now  or  later.
+
+
+Multimedia  interface  (WWW):  http://bioinfo.weizmann.ac.il:8888
+For  human  help  please  email  to  Gustavo@bioinformatics.weizmann.ac.il.
+
+
+---------------------------------------------------------------------------
+
+
+2.1.2     The  Welcome  Area
+
+We  could  observe  several  models  for  the  welcome  area:
+
+  1.   Most  educational  MOOs  have  people  land  in  area  which  gives  access  to  a
+       lot  of  information.   Sometimes  (as  in  Collegetown  shown  in  figure  2.1)
+       this  area  is  also  a  central  room  of  the  MOO.
+
+  2.   Culture  and  leisure  MOOs  more  often  tend  to  let  people  arrive  in  a
+       ``closet''  or  other  room  devoid  of  interest.   A  visitors  is  center  is
+       sometimes  adjacent  sometimes  not  and  it  has  to  be  found.
+
+  3.   Others  like  Diversity  University  MOO  and  more  so  EON  have  a  ``stage''
+       approach.
+
+Let's  now  have  a  closer  look  a  Diversity  University  MOO  (DUM).  DUM  is
+interesting  because  of  its  size  and  solutions  found  there  may  be  of  general
+interest.   At  DUM  one  lands  first  in  a  general  welcome  room  which  has  been
+rather  designed  to  keep  certain  behavior  or  people  from  this  MOO.
+
+
+-------------------------------------------------------------------  DU  4/95
+
+
+                       *****  DIVERSITY  UNIVERSITY  IS  NOT  A  GAME  *****
+
+
+It  is  a  place  where  many  people  from  various  backgrounds  come  to  do  work  and
+interact  in  a  mature  and  responsible  environment,  and  as  a  visitor  you  are
+expected  to  behave  in  an  appropriate  manner.
+
+
+    Swearing,  offensive  language,  obscenity,  harassment,  and  rudeness  will
+    not  be  tolerated  here.   If  you  must  do  that,  do  it  somewhere  else.
+
+
+ If  you're  not  sure  if  something  is  ok  or  not,  ASK  FIRST.   If  someone  asks
+ you  to  stop  doing  something  they  find  objectionable,  STOP.   For  a  more
+ complete  list  of  what  behavior  is  and  is  not  considered  appropriate  here,
+ type  'help  manners'  once  connected.
+
+
+NOTE:   You  can  and  will  be  booted  off  the  system  and  barred  further  access  to
+          this  MOO  if  you  cannot  behave  responsibly.   Under  some  circumstances
+          your  actions  on  this  system  can  be  logged  or  monitored  as  well.  Your
+          connection  site  is  being  displayed  in  your  description;  anyone  can
+          see  where  you  are  connected  from.
+
+
+If  you  do  not  wish  to  agree  to  these  conditions,  type  @quit  to  leave  the  MOO.
+
+14                                                                 CHAPTER  2.   ON  BUILDING  A  MOO
+
+
+
+------------------------------------------------------  CollegeTown  4/95
+
+
+The  Forum
+You  are  standing  on  the  Granite
+floor  of  a  large  Hall.                   North      __________        ____________
+          ___________________________  Quad  _____  Seminar_______   Newbie   _
+          _  Ken's   _                         _      _      _   Room   _      NH      Hall   _
+          _  Office     K                          N         ____   ____          ___   _____
+          __________                                             SR                _  Guest   _
+ WEST  __                                                                          G     Lounge  _
+ QUAD__   W                                                     ------             __________
+          _________               <<  THE  FORUM  >>         Pool               _  PaulB's_
+          _  KBVC     _                                          ------          P     Office  _
+          _  Radio      KB                                                            __________
+          __________                                                               /             _
+          _     TV     _                                                          CL     Coffee   _
+          _  Studio     TV      UW               S               -  up  -        /     Lounge   _
+          ________________/-/_________     _________stairs__________________
+                          Underground        SOUTH
+                             Walkway          QUAD
+
+
+You  see  a  newspaper,  Reflecting  Pool,  CollegeTown  Flag,  Clock,  Map  of  Collegetown,  Buzzword  Generator,  Public  Bulletin  Board,  INTERESTS  DIRECTORY,  BANNER@
+
+
+---------------------------------------------------------------------------
+
+
+
+                      Figure  2.1:   The  Welcome  screen  of  CollegeTown
+
+2.1.     FIRST  TIME  USERS  AND/OR  BEGINNERS                                                 15
+
+
+
+[Press  return  to  continue  or  type  '@quit'  to  disconnect]
+Orientation  Room
+
+
+Welcome  to  Diversity  University!   This  is  the  Orientation  room  and  is
+ deliberately  quiet  to  allow  new  users  to  read  the  helps.   This  room  is  in  the
+ Student  Union  so  when  you  are  ready  to  explore,  just  leave  by  the  exit  to  the
+ hall  or  read  the  help  on  @rooms.
+
+
+ATTENTION  Teachers!  -  Please  do  not  bring  your  students  onto  DU  as  guests.
+ Please  ask  a  wizard  about  our  VSPO  system  for  bringing  on  groups.
+
+
+      help  newbie   -   Basic  help  for  those  new  to  this
+       help  theme   -   Describes  the  purpose  of  Diversity  Univ.
+                 map   -   Displays  a  map  of  Diversity  Univ.  You  are  currently
+                             located  in  the  sw  corner  of  the  Student  Union
+
+
+To  see  this  room  description  again,  type:     look
+
+
+Exits  include:  [out]  to  Learning  Hall  (3-4)
+You  see  Application  Folder,  DU  manners  (look  manners),  MOOTutorials,  A  map  of
+ Diversity  University,  and  Social  and  other  MOOs  List  (read  sml)  here.
+
+
+---------------------------------------------------------------------------
+
+Next,  people  land  in  a  room  where  they  are  given  a  chance  to  look  at  basic
+MOO  commands  and  are  also  pointed  to  further  information.
+
+-------------------------------------------------------------------  DU  4/95
+
+
+Learning  Hall  (3-4)
+This  is  one  segment  of  the  hall  leading  off  the  Main  Foyer  of  the  Student
+ Union.   To  reach  the  Student  Union,  travel  east.
+
+
+Type:     tutorial          to  enter  a  walk-through  tutorial  of  MOO  basic  commands.
+Type:  @go  edu   then     southeast   to  get  to  more  tutorials  and  helps  in  the
+ MOOteach  learning  center.
+
+
+Exits  include:  [east]  to  Learning  Hall  (1-2),  [south]  to  Orientation  Room,
+ [tutorial]  to  An  Introduction
+You  see  MOOing  Services  Board  (Type  -->  Look  board)  (3  notes)  here.
+
+
+---------------------------------------------------------------------------
+
+Next  people  can  enter  a  corridor  ...
+
+-------------------------------------------------------------------  DU  4/95
+
+
+Learning  Hall  (1-2)
+A  long,  quiet  hallway.  A  door  leads  east  back  to  the  main  entry.
+This  hall  leads  to  rooms  that  will  teach  basics  about  many  things,  such  as  how
+ to  navigate  and  use  a  MOO  as  well  as  how  to  study  better.   Feel  free  to
+ explore  the  rooms.
+Exits  include:  [east]  to  Student  Union  Center,  [west]  to  Learning  Hall  (3-4),
+ [south]  to  study  aids  (public)
+
+
+---------------------------------------------------------------------------
+
+16                                                                CHAPTER  2.     ON  BUILDING  A  MOO
+
+
+
+...   which  leads  to  the  Student  Union  Center  which  contains  all  the
+information  a  regular  user  of  this  MOO  is  interested  in.
+
+
+
+-------------------------------------------------------------------  DU  4/95
+
+
+Student  Union  Center
+--------------------
+You  are  standing  in  the  Student  Union  of  Diversity  University.   There  is  an
+old  red  couch  in  the  corner,  usually  occupied  by  sleeping  students.   Several
+halls  lead  from  the  room,  and  large  glass  doors  on  the  southern  wall  lead
+outside.
+Warning:  Anything  said  in  this  room  is  subject  to  being  logged  for  research
+ purposes.   Research  is  vital  to  the  continued  survival  of  DU  so  we  hope  you
+ will  understand.
+
+
+Exits  include:  [west]  to  Learning  Hall  (1-2),  [south]  to  LSU  Street  (200
+ block),  [east]  to  Underground  corridor  (SU  <->  Admin),  [north]  to
+ Entertainment  Hall,  [northeast]  to  Student  Union  Elevator,  [northwest]  to
+ Universities  Room,  [Up]  to  Help  Desk
+SPrince  (asleep),  JackieC  (asleep),  RayJ  (asleep),  Jason_J  (Always  keeping  one
+ eye  open!),  and  Kaspar  (idling)  are  standing  here.
+You  see  Transporter  Booth,  DU  Places  of  Interest  (poi),  Test  Survey,  DU
+ Directory,  EVENTS  (8  notes),  Yellow  Pages!,  Aquarium,  and  Diversity  Survey
+ here.
+
+
+---------------------------------------------------------------------------
+
+
+
+Diversity  University  is  currently  the  biggest  Educational  MOO  and  several
+information  and  navigation  tools  had  to  be  created.   Of  particular
+interests  are:
+
+
+    o  DU  Places  of  interest  (poi):   An  index  of  major  educational  activities
+       allowing  to  jump  to  the  location  in  question.
+
+
+
+    o  The  yellow  pages:   A  directory  of  people,  places  and  things
+
+
+
+2.1.3     Work  in  progress
+
+
+When  we  sent  out  our  students  to  look  at  MOOs  in  December  1994  after  a  2
+hour  MOO  training  session  most  students  found  that  handling  of  beginners
+and  more  so  of  first  time  users  was  insufficient.   Despite  having  pointed
+out  ``Diversity  University''  as  the  primary  educational  MOO,  our  students
+were  somewhat  ``afraid''  of  it.   Since  then,  a  lot  of  improvement  could  be
+observed  on  this  MOO  (see:   section  2.1.2).
+
+Collegetown  (among  the  MOOs  studied)  overally  got  the  best  marks,  also  for
+its  general  ergonomics.   Since  some  of  out  students  were  psychology
+students  EON's  stage  model  (see  section  4.2.4)  was  found  to  be  interesting.
+However,  it  was  noted  that  EON  needs  a  lot  of  involvement  and  one  student
+who  tried  to  learn  something  about  Unix  by  looking  at  an  ``aircraft
+carrier''  complained  about  feeling  really  lost.
+
+[more  to  come]
+
+2.2.   COMMUNICATION  AND  NAVIGATION  ON  THE  MOO                                          17
+
+
+
+2.2    Communication  and  Navigation  on  the  MOO
+
+
+2.3    Topology  and  Navigation
+
+
+``Topology''  is  very  important  issue  since  the  MOO  has  a  spatial
+orientation  and  since  ``places''  in  real  life  always  have  certain  ``uses''.
+By  defining  a  global  topology  rooster  and  building  rules  in  a  MOO  one
+addresses  several  related  questions:
+
+
+  1.   User  Interface  issues
+
+  2.   Navigational  Issues  (how  do  we  want  people  to  move)
+
+  3.   ``Urban  planning''  issues:   What  activities  where
+
+  4.   ``Social  and  political  Issues'':   What  can  be  built?
+
+  5.   .....
+
+
+Among  educational  MOOs  one  can  find  several  kinds  of  topologies.
+
+
+The  ``Campus''  Model         The  best  known  example  is  the  Diversity  University
+       MOO.  It  is  modeled  after  a  typical  American  Campus.   Another  example
+       is  the  Bio  MOO.
+
+The  ``Chamber''  Model         Certain  activities  are  confined  to  areas.   At  EON  for
+       example,  those  areas  are  reachable  by  a  train  and  access  is
+       controlled.
+
+The  ``City  or  World''  Model          This  is  the  model  adopted  by   TECFAMOO  .  There
+       are  reserved  areas  for  academic  work  (both  teaching  and  research)  but
+       the  MOO  is  also  designed  to  be  a  social  space.   We  fully  agree  with
+       this  quote  from  College  Town:
+
+                 [...]   Recognizing  that  a  great  deal  of  real  research  and
+             learning  goes  on  'outside  the  classroom'  we  are  augmenting  the
+             classrooms  with  a  realistic  nurturant  community.   Creative
+             thinking  may  find  its  freeest  play  while  walking  on  a  beach
+             and  a  small  seminar  may  become  much  more  meaningful  if  hosted
+             at  a  colleague's  home  in  the  woods...
+
+A  combined  Campus  and  City  Model
+
+
+2.3.1     Building  on  CollegeTown
+
+Among  all  educational  MOOs,  College  Town  probably  comes  closest  to
+TECFAMOO  .  There  are  differences,  e.g.   building  rules  at  TECFA  are  (and
+will  probably  remain)  less  strict  (e.g.   geography  can  spread  out  of
+Geneva,  and  even  known  space  and  time)  and  we  do  not  plan  make  available
+our  MOO  to  very  young  kids.
+Here  are  CollegeTown's  building  rules  as  of  March  27  1995:
+
+-----------------------------------------------------------------  CT  4/95
+
+
+>look  building
+   1)  All  rooms  and  objects  must  comply  with  our  overall  theme.  We  are  a
+       small  college  town  situated  in  the  scenic  countryside.  Our  mission  is
+       to  provide  a  platform  for  academic  research  and  learning.  Recognizing
+
+18                                                                CHAPTER  2.     ON  BUILDING  A  MOO
+
+
+
+       that  a  great  deal  of  real  research  and  learning  goes  on  'outside  the
+       classroom'  we  are  augmenting  the  classrooms  with  a  realistic  nurturant
+       community.  Creative  thinking  may  find  its  freeest  play  while  walking
+       on  a  beach  and  a  small  seminar  may  become  much  more  meaningful  if
+       hosted  at  a  colleague's  home  in  the  woods...
+   2)  All  rooms  must  be  connected.  (Ask  any  wiz  for  assistance.)
+       Every  exit  should  be  listed/shown.   Hidden  exits  are  discouraged.
+       'Leave',  'oleave',  and  'oarrive'  messages  should  be  set  on  each  exit.
+   3)  Room  descriptions  should  be  a  combination  of  text/graphics  not  to
+       exceed  20  lines.  Rationale:  The  average  screen  holds  24  lines  of  text.
+       One  line  is  used  for  the  name  of  the  room  and  at  least  3  lines  should  be
+       reserved  for  listing  contents  and  occupants.
+   4)  The  spatial  integrity  of  the  moo  *must*  be  respected.  If  your  house  is
+       in  the   Primeval  Forest  you  cannot  logically  have  an  exit  to  the
+       Western  Shore  <grin>.  Fantastical  teleport  type  exits  are  discouraged.
+   5)  Generally  one  room  is  sufficient  for  a  house.
+       Use  'out'  to  leave  your  house.
+       Housing  Sites  are  listed  in  the  HOUSING  INFO  bulletin.
+   6)  Please  remember  that  this  MOO  serves  children  as  well  as  adults.  Do
+       not  build  anything  you  would  not  want  your  own  child  to  encounter.  Rooms
+       have  a  special  toggle  that  you  can  set  to  keep  kids  out  if  there  is  any
+       question.
+   7)  Because  of  our  realistic  environment  we  encourage  REAL  NAMES,  common
+       nicknames,  or  real  name  variants.  We  are  not  a  phantasy  moo.
+   8)  The  building  of  weapons  is  expressly  forbidden.
+   9)  Additional  quota  may  be  requested  for  building  rooms  and  objects  in  the
+       public  interest,  subject  to  wiz/council  review.
+
+
+---------------------------------------------------------------------------
+
+
+2.3.2     Building  Rules  on   TECFAMOO
+
+There  are  a  few  basic  rules  for  building  in  the   TECFAMOO  which  builders
+should  follow:
+
+  1.   The  topology  of  Geneva  has  to  be  vaguely  respected.
+
+  2.   Certain  types  of  activities  should  be  restricted  to  certain  areas.
+       The  major  focus  of  this  MOO  is  exchange  in  educational  technology,
+       education  and  research.   However  other  activities  are  welcome  too.
+
+  3.   All  major  education  and  research  activities  should  take  place  in  the
+       virtual  "Geneva  Basin"  (see  the  next  page).   They  will  be  connected
+       with  a  room  (currently  the  "underground  corridor")  or  a  similar
+       ``direct  access''  artifact.
+
+  4.   Strange  stuff  can  be  added,  but  preferrably  "outside"  of  Geneva.   An
+       airport,  a  trainstation  and  such  will  be  provided.
+
+Education  and  Research  Activities  in  the   TECFAMOO  are  centered  around  a
+few  areas.   Currently,  there  are  several  sites  planned  for  such  activities:
+
+    o  People  form  the  U  of  Geneva  (including  TECFA)  should  use  the  locations
+       of  their  real  buildings  (although  they  may  be  enhanced).
+
+    o  All  teaching  on  MOO  using/building/programming  etc.   should  go  to  the
+       MOOseum  area.
+
+2.3.     TOPOLOGY  AND  NAVIGATION                                                                19
+
+
+
+    o  Educational  Technology,  i.e.   our  domain",  is  in  and  behind  TECFA.  see
+       the  EduTech  exit  in  the  underground  corridor
+
+    o  The  Forest  Campus.   Meet  Dave_E  for  more  information!
+
+    o  Space  for  an  International  Virtual  University  is  provided  at  IVC  (in
+       Archamps,  a  place  over  the  border  in  France).   You  can  build  as  you
+       like  (maybe  we  should  fix  a  few  rules  for  that  place).
+
+    o  Other  stuff  can  be  negotiated  of  course.
+
+20                                                                CHAPTER  2.     ON  BUILDING  A  MOO
+
+
+
+
+Chapter  3
+
+
+
+MOOs  for  Research  Work
+
+
+
+3.1    Virtual  Meeting  Spaces
+
+
+The  concept  of  ``Virtual  Meeting  Space''  covers  several  possible  setups  for
+synchronous  communication  among  communities:
+
+    o  ``Virtual  Cafes''  are  places  where  people  can  hang  out  and  meet  in
+       very  informal  ways  in  a  similar  fashion  as  in  corridors  of  a
+       conference  or  in  the  cafeteria  of  a  university.   Since  on  most
+       ``serious  MUDS''  people  have  descriptions  of  their  research  interests
+       which  can  be  accessed  either  by  ``looking''  at  a  person  or  by  using  a
+       command  like  ``whois  xxx'',  ``finger  xxx''  contacts  of  persons  sharing
+       the  similar  interest  are  even  easier  than  in  real  life.
+
+    o  ``Virtual  Lobbies''  or  similar  ``rooms''  can  be  used  to  display
+       information  about  an  organization.   A  good  example  is  ``GNA  Central''
+       (#4156)  at  Diversity  University  MOO.
+
+    o  A  similar  function  is  fulfilled  by  ``Resource  Centers''.   A  good
+       example  is  the  Ed-Tech  Resource  Center  (#15169)  on  Diversity
+       University  MOO.
+
+    o  ``Meetings  Rooms''  fulfill  the  same  function  as  real  ones,  i.e.
+       provide  space  for  regular  meetings.   Such  rooms  can  be  structured  by
+       adding  ``tables''  (a  device  for  group  discussion),  white-boards,
+       projection  devices  and  such.
+
+    o  ``Offices''  can  be  used  for  meeting  persons  in  a  private  space,  ``idle
+       quietly'',  or  for  providing  more  information  about  a  person.   An
+       office  also  adds  an  anthropological  touch  by  providing  a  ``home''
+       where  characters  can  connect  to  and  ``sleep''.
+
+
+3.1.1     A  look  at  other  MOOs
+
+MOOs  as  virtual  meeting  spaces  for  professional  communities  are  becoming
+increasingly  popular.   Well  known  examples  are  the  MediaMOO1  (Media
+Researchers),  AstroMOO2  (Astronomers),  BioMOO3  (Biologists)  and  PMCMOO4
+(Post  Modern  Culture).
+Let's  have  a  look  at  the  purpose  of  MediaMOO  (obtained  by  typing  ``help
+purpose''):
+                    ________________________________________________________________
+    1telnet://purple-crayon.media.mit.edu:8888/
+    2telnet://brando.ipac.caltech.edu:8888/
+    3http://bioinfo.weizmann.ac.il:8000/
+    4http://jefferson.village.virginia.edu/pmc/pmc-moo.html
+
+
+
+                                                      21
+
+22                                                          CHAPTER  3.   MOOS  FOR  RESEARCH  WORK
+
+
+
+--------------------------------------------------------------  Media  MOO  4/95
+
+
+>help  purpose
+
+
+MediaMOO  is  a  professional  community  for  media  researchers.   It  is  a  place  to
+come  meet  colleagues  in  media  studies  and  related  fields  and  brainstorm,  to
+hold  colloquia  and  conferences,  to  explore  the  serious  side  of  this  new
+medium.
+
+
+Unlike  other  MUDs,  characters  on  MediaMOO  are  identified.   You  can  find  out
+who  anyone  is  with  the  @whois  command  (except  for  a  few  early  members  who  are
+still  anonymous)  so  that  you  can  contact  them  to  continue  professional
+discussions.
+
+
+To  become  a  member  of  MediaMOO  you  must  be  doing  media  research.   We  are  more
+interested  in  knowing  about  what  you  are  doing  than  what  you  are  interested
+in.  Most  college  and  pre-college  students  who  apply  are  not  really  doing  media
+research.
+
+
+If  you're  looking  for  a  place  to  hang  out  with  interesting  people,  LambdaMOO
+is  at  lambda.parc.xerox.com  8888.   In  fact,  if  you  read  the  USENET  newsgroup
+rec.games.mud.announce,  you'll  find  a  list  of  hundreds  of  MUDs  and  MOOs,
+almost  all  of  which  have  no  requirements  for  membership.
+
+
+A  note  to  teachers:
+Unfortunately,  we  must  discourage  you  from  bringing  classes  of  students  here.
+Although  these  experiments  are  interesting,  this  is  not  the  appropriate  place.
+MediaMOO  would  become  a  very  different  place  if  it  were  filled  with,  for
+example,  hundreds  of  freshman  composition  students.
+
+
+Welcome!
+
+
+Sincerely,
+
+
+Amy  Bruckman
+September  1993
+
+
+---------------------------------------------------------------------------
+
+This  message  written  in  1993  clearly  tries  to  emphasize  distinction  between
+a  place  dedicated  to  one  specific  task  (being  a  place  for  a  community)  and
+multi-purpose  MOOs  such  as   TECFAMOO  .
+BioMOO  shows  a  similar  statement,  but  is  also  used  for  educational
+purposes.
+
+
+
+-------------------------------------------------------------  Bio  MOO  4  /95
+>help  purpose
+----------------------------------------------------------------------------
+BioMOO  is  a  virtual  meeting  place  for  biologists,  connected  to  the  Globe-wide
+Network  Academy.  The  main  physical  part  of  the  BioMOO  is  located  at  the
+Bioinformatics  Unit  of  the  Weizmann  Institute  of  Science,  Israel.
+
+
+BioMOO  is  a  professional  community  of  Biology  researchers.   It  is  a
+
+3.1.     VIRTUAL  MEETING  SPACES                                                                 23
+
+
+
+place  to  come  meet  colleagues  in  Biology  studies  and  related  fields  and
+brainstorm,  to  hold  colloquia  and  conferences,  to  explore  the  serious
+side  of  this  new  medium.
+
+
+All  characters  on  BioMOO  are  identified.   You  can  find  out  who  anyone  is
+by  using  the  @whois  command,  so  that  you  can  contact  them  to  continue
+professional  discussions.
+
+
+BioMOO  is  continuously  growing  and  changing.  Your  ideas  for  new  additions
+and  modifications  are  welcome.  Please  contact  Gustavo  by  email  to
+Gustavo@bioinformatics.weizmann.ac.il
+
+
+If  you're  looking  for  a  place  to  hang  out  with  interesting  people,
+LambdaMOO  is  at  lambda.parc.xerox.com  8888.   In  fact,  if  you  read  the
+USENET  newsgroup  rec.games.mud.announce,  you'll  find  a  list  of  hundreds
+of  MUDs  and  MOOs,  almost  all  of  which  have  no  requirements  for
+membership.
+
+
+---------------------------------------------------------------------------
+
+
+3.1.2     Meeting  Spaces  at   TECFAMOO
+
+One  of  the  motivations  for  creating   TECFAMOO  has  been  the  creation  of  a
+virtual  space  for  researchers  and  practitioners  in  Educational  Technology.
+This  project  is  supported  partly  by  the  VMDL  (``Virtual  Mobility  and
+Distance  Learning''  project.
+[More  to  come:   Sandrine  Tognotti5  will  work  on  this]
+We  plan  to  let  organizations  such  as  GNA  build  campuses.
+
+
+
+                    ________________________________________________________________
+    5http://tecfa.unige.ch/%7Etognotti/
+
+24                                                        CHAPTER  3.     MOOS  FOR  RESEARCH  WORK
+
+
+
+
+Chapter  4
+
+
+
+MOOs  for  Education
+
+
+
+4.1    Virtual  Classrooms
+
+
+Virtual  Classrooms  are  probably  the  theme  best  developed  in  the  Educational
+MOO  community.   Based  on  earlier  work  at  Lambda-MOO  and  other  almost
+mythical  MOOs,  a  certain  number  of  people  like  Ken  Schweller1  or  DaveM  []
+have  developed  very  interesting  artifacts  for  teaching  and  tutoring  in  the
+MOO.  Most  of  those  objects  can  be  found  on  DU  4.1.1  but  many  have  also
+found  their  way  into  other  MOOs.   Also,  consult  the  *MOOteach  mailing  list
+on  DU.
+At   TECFAMOO  we  made  enthusiastic  use  of  the  Tutorial  Room  and  a  Generic
+Classroom  which  are  put  up  on  display  in  our  MOOseum.
+A  very  useful  tool  not  just  in  virtual  class-  and  tutoring  rooms  are  the
+www-slates  (by  shkoo@eon)  which  allow  accessing  www  pages  from  within  the
+MOO.  Those  slates  can  be  ``pretuned''  (or  book-marked)  to  a  set  of  pages,
+so  that  teachers  can  put  on  display  somewhat  preconfigured  www-boxes  in
+certain  areas  of  the  MOO.
+Note  that  virtual  classrooms  and  similar  artifacts  are  not  *the*  only  way
+to  use  a  MOO.  After  all  they  just  replicate  more  or  less  traditional
+teaching  via  distance.   See  section  4.2  for  a  start  on  other  directions.
+
+
+4.1.1     Education  Tools  at  Diversity  University
+
+Donald,  in  his  Education  MOOs  and  Tools2  article  quotes  a  number
+educational  artifacts  available  at  DU:
+
+
+
+   5)  Education  Tools:  Generic  objects  at  Diversity  University
+    --------------------------------------------------------
+
+
+Some  notable  Educational  Tools  at  Diversity  University  including
+ported  ones,  known  affiliations  do  not  imply  development  sites.
+NOTE:  These  lists  are  not  complete  but  attempt  to  be  accurate.
+
+
+*  Larry  and  Joe@JaysHouseMOO  (Grump  and  JoeFeedback)
+    -  'MOOGopher'(Copyright  (c)1992,  1993,  Larry  Masinter  and  Erik  Ostrom)
+       was  implemented  at  JaysHouseMOO  and  is  a  useful  tool  found  in  most  MOOs.
+
+
+*  Ken  or  cdr  (@Collegetown,  @media,  @DU)
+    -  Media  set  'TV',  'VCR',  'Camera',  and  'Tape'  showing  text  has  an
+       'Editing  room'  to  transform  raw  'Tapes'  into  a  polished  product.
+                    ________________________________________________________________
+    1http://othmar.bvc.edu/faculty/schweller.html
+    2http://tecfa.unige.ch/edu-comp/DUJVRE/vol1/no1/education_MOOs.text
+
+
+
+                                                      25
+
+26                                                              CHAPTER  4.     MOOS  FOR  EDUCATION
+
+
+
+    -  'Lecture  note'  lines  can  be  prepared  ahead  of  time.
+    -  'Slide  shows'  can  display  15  lines  of  text  at  once.
+    -  'Classrooms'  include  'blackboards',  'seats'  and  other  features.
+    -  Other  Education  objects  include  the  'Theatre  complex',
+       a  'conversational  robot'  and  introductory  MOO  Programming  tapes.
+
+
+*  Michele  (@JaysHouseMOO)
+    -  Walk  through  '@Tutorial  program'  from  JaysHouseMOO
+      is  very  easy  to  use,  even  for  a  beginner.
+
+
+*  Gustavo  (@BioMOO,  @GNAlab,  @DU,  etc.)
+    -  'Generic  Recording  device'  records  activity  in  a  room.
+    -  'InterMOO  feature  object'  allows  communications  across  MOOs.
+    -  'GNA  forum'  is  a  virtual  conference  room  that  straddles
+       BayMOO,  BioMOO,  CollegeTown,  Diversity  University,  EON,
+       Global  Village,  GNAlab,  MediaMOO,  TecfaMOO  and  VOU
+       in  five  different  countries.
+    -  'InterMOOwalk'  moves  characters  from  GNAlab  to  BioMOO  or  back.
+    -  BioMOO/WWW  interface  developers  include  Eric  Mercer,  Paul  Hansen,
+       Jaime  Prilusky,  and  Gustavo  Glusman.
+
+
+*  Jeanne  with  programming  by  Richelieu(@DU)
+    -  'VSPO',  the  visiting  student  character  class  allows  teachers  to
+       control  class  and  handle  some  administrative  work  as  well.
+
+
+*  Mogue
+    -  'simulation  rooms'  like  'Agincourt'  show  100  year  war.  Experience
+       history  from  the  perspective  of  various  period  characters.
+
+
+*  DaveM
+    -  'notice  board'  is  an  all  purpose  tool  created  to  save  'quota'.
+       It  finds  use  as  a  bulletin  board,  a  note  book,  a  variable  slide
+       projector,  and  a  tutorial  and,  now  has  its  own  mailing  list  even.
+    -  'Tutorial  room'  also  saves  quota  and  is  easy  to  use.
+       Hypertext  versions  are  in  development.
+
+
+*  Doppler
+    -  'slide  show'  stores  presentations  in  a  variable  length  format.
+
+
+*  Richelieu
+    -  'Generic  chaptered  Book'  (@copyright  Richelieu)  has  chapters.
+
+
+*  Shkoo@EON   (@BioMOO,  nils@DU)
+    -  'WWW  slate'  is  a  World  Wide  Web  text  based  browser.  Shkoo  first
+       implemented  the  WWW  slate  at  EON,  where  the  server  is.
+
+
+PLEASE!  :  To  'port'  the  MOO  programming  code  of  any  MOO  object  to  another
+MOO,  please  contact  and  obtain  permission  of  the  original  author.
+This  is  a  courtesy  that  also  helps  the  author  to  distribute  upgrades.
+
+4.1.   VIRTUAL  CLASSROOMS                                                                        27
+
+
+
+4.1.2     Ken's  generic  classroom
+
+Todays  (April  95)  probably  best  tested,  liked  and  known  classroom  has  been
+built  by  Ken  Schweller3.
+Upon  creation  of  a  classroom  a  short  tutorial  and  help  is  available:
+
+
+---------------------------------------------------------------------------
+
+
+>@tutorial
+*  *  *  *  *  *     Using  the  GENERIC  CLASSROOM  :  A  Brief  Tutorial     *  *  *  *  *  *  *
+       The  Generic  Classroom  was  created  to  give  teachers  greater  flexibility,
+ creativity  and  control  in  conducting  MOO  classes.   Here  are  the  basics  of
+classroom  use.  You  may  type  'help  here'  at  any  time  for  a  brief  summary  of
+the  room  commands.
+DESIGNING  THE  CLASSROOM:
+       You  may  create  your  own  desks,  tables,  shelves,  bulletin  boards,  walls
+or  whatever  using  the  @addfurniture  command.  Let's  suppose  you  wished  to
+add  a  Lab  Table  to  the  room.   After  typing  '@addfurniture  Lab  Table'  you
+would  be  asked  to  describe  the  table  and  indicate  whether  it  is  'sit-able'
+or  not.  While  most  furniture  is  'sit-table'  some  things  like  walls  and
+bulletin  boards  are  clearly  not.   Students  can  'sit  Lab  Table',  'put
+<anything>  on  Lab  Table',  'get  <anything>',  or  'look  Lab  Table'.   Objects  on
+the  Lab  Table  will  only  be  seen  by  persons  sitting  there  or  persons  who  look
+at  the  table.   Walls,  shelves,  and  bulletin  boards  are  obvious  places  to
+'put'  things  like  calendars,  lab  equipment,  or  notes.  To  remove  furniture
+type  '@rmfurniture  <object>'.  Note  that  each  room  has  a  built  in  blackboard
+and  a  clock.   Just  'look  blackboard'  or  'look  clock'.   You  can  write  on  the
+blackboard  by  typing  'writeb  hello  class!'.
+SETTING  UP  A  CLASS  ROSTER:
+       To  set  up  an  'Intro  to  Theater'  class  type  '@mkclass  Intro  to  Theater'.
+This  creates  a  class  roster  for  registering  your  students.   If  you  would  like
+Ken  to  be  able  to  teach  a  different  class  in  your  room  you  must  '@authorize
+Ken'.   This  enables  Ken  to  use  the  @mkclass  and  other  commands  to  create  his
+own  class.  You  can  now  register  your  students.   Type  '@setup  Intro'  to
+activate  Intro  to  Theater  as  the  'current'  class  and  then  type   'register
+Bill',  'register  Mary',  and  so  on.  Students  registered  in  the  'current'  class
+can   enter  the  classroom  even  when  the  door  is  closed.  To  allow  only
+authorized  persons  to  make  furniture,  register  students  or  setup  classes  just
+type  '@restrictions  on'.  You  may  type  '@status'  at  any  time  to  see  which  class
+is  'current',  who  is  registered  or  authorized,  and  whether  restrictions  are  in
+place.
+MODERATING  THE  CLASS:
+       One  of  the  main  advantages  of  using  the  Generic  Classroom  is  to  moderate
+extraneous  talking  and  emoting.   Have  the  students  'sit  Lab  Table'  or
+wherever.   While  they  are  seated  they  can  only  be  heard  by  others  sitting
+with  them.   This  enables  students  to  talk  with  each  other  or  carry  on  small
+group  discussions  without  disturbing  others.   Students  who  wish  to  be  heard
+throughout  the  room  need  only  'speakup  <anything>',  or  'stand'  to  be  heard.
+Emoting  can  be  limited  to  tablemates  only  or  made  visible  to  the  entire  room
+through  the  use  of  '@stifle  on/off'.
+It  is  a  good  idea  to  type  'door  close'  and  '@sign  on'  when  you  begin  a  class
+so  folks  not  registered  in  the  'current'  class  cannot  drop  in  uninvited.  The
+@sign  command  informs  others  that  your  class  is  '(in  session)'  when  they  do
+                    ________________________________________________________________
+    3http://othmar.bvc.edu/faculty/schweller.html
+
+28                                                              CHAPTER  4.     MOOS  FOR  EDUCATION
+
+
+
+an  @who  listing.
+MISC:
+       There  are  numerous  additional  commands  that  can  be  used  in  the  Generic
+Classroom.  Type  'help  here'  for  examples  of  their  use.
+AN  INVITATION:
+       The  Generic  Classroom  was  designed  to  incorporate  the  ideas  and  wishes  of
+many  MOO  teachers.   It  will  continue  to  evolve  as  we  all  make  new  teaching
+discoveries.  We  invite  *you*  to  participate  in  the  development  of  this
+experimental  teaching  technology  by  bringing  forward  your  critiques  and
+suggestions.  They  are  most  welcome!   -ken/cdr
+<end  of  tutorial>
+
+
+>help  here
+Seminar  Room  (#184):
+----
+                                   How  To  Use  This  Room
+       To  create  new  tables,  desks,  shelves,  bulletin  boards  etc.  use  the
+'@addfurniture'  command.  You  can  'look',  'sit',  or  'put'  things  on  most
+objects  you  create.  While  sitting  you  are  heard  only  by  others  sitting
+with  you.  If  you  'stand'  or  'speakup'  everyone  can  hear  you.  'Look'  at
+objects  to  see  what's  on  them.
+GENERAL
+    look  blackboard            sit  Big  Desk                   @status
+    writeb  Hi  There!          stand                             put  map  on  Bulletin
+    eraseb  4                      speakup  I  think  that..     get  map
+    to  Ken  Hi  there!          look  clock                      look  Big  Desk
+SPECIAL
+    cleanb                            -  erase  entire  blackboard
+    register/unregister  Ken   -  add/rm  Ken  from  *current*  class
+    @addfurn/@rmfurn  Desk      -  add/remove  a  piece  of  describable  furniture
+    door  open/closed             -  restrict  entry  to  persons  in  *current*  class
+    @mkclass/@rmclass  Math     -  add  'Math'  to  list  of  classes  taught  here
+    @setup  Math                     -  makes  'Math'  the  *current*  class
+    @stifle  on/off                -  disable  seated  persons  emoting  to  everyone
+    @sign  on/off                   -  show  'this.session_msg'  at  @who  command
+    @authorize/@unauth  Ken     -  add/rm  Ken  from  list  of  authorized  users
+    @restrictions  on/off        -  restrict  Special  verbs  to  authorized  users
+    @tutorial                       -  view  a  short  tutorial  on  using  classroom
+    @fix                               -  correct  seating  mixups  if  they  occur
+
+
+---------------------------------------------------------------------------
+
+
+Ken's  generic  classroom  has  been  developed  in  tight  interaction  with
+teachers  on  DU  and  other  MOOs.
+
+
+
+4.1.3     Please  don't  disturb!
+
+A  major  problem  on  giving  classes  on  the  MOO  is  to  insure  that  other  users
+on  a  MOO  don't  disturb.   xFirst  of  all  users  of  a  ``serious''  MOO  (as  well
+as  on  other  MOOs  can  be  trained  to  respect  certain  rules,  i.e.   to  knock
+before  entering  a  ``closed''  room.
+Furthermore,  certain  types  of  rooms  such  as  the  ``Generic  Classroom''  can
+be  closed  by  the  authorized  instructor  or  he  can  expel  people  if  needed.
+Also,  as  Marcus  Speh  (posting  on  *General@DU)  noticed:   ``As  a  first  step
+
+4.1.   VIRTUAL  CLASSROOMS                                                                        29
+
+
+
+towards  a  better  'indoor  policy',  people  should  check  their  own
+'arrive msg'  and  '______________join_msg'  properties,  some  of  which  are  excessive.''
+MOO  Teachers  need  to  be  trained  both  in  using  educational  artifacts  and  MOO
+netiquette.   Tari  Fanderclai  (University  of  Louisville)  has  been  recruited
+on  DU  to  help  organize  the  business  of  coming  up  with  policies  for  teachers
+and  their  classes  who  use  DU,  and  a  program  for  orienting  and  preparing
+those  teachers.   See  the  *MOOteaching  list  and  Zak'  MOOteach  Learning
+Center  (@go  #1578)  both  on  DU  for  further  details.
+Tari  Fanderclai  in  *MOOteach@DU(5,  Dec  16  94)  listed  some  things  needed  in
+order  to  avoid  problems  with  MOO  classes:
+
+---------------------------------------------------------------------------
+
+
+[...]
+
+
+``---Require  that  teachers  be  familiar  with  MOOetiquette  and  basic
+MOOcommands,  plus  whatever  more  advanced  MOOoperations  they  might
+require  their  students  to  use.
+---Require  that  teachers  provide  their  students  with  documents  on
+MOOmanners  and  the  MOOcommands  they  need  (they  should  have  a  way  to
+print  these,  esp.  the  commands;  new  users  usually  work  better  with
+printed  info);  perhaps  also  an  easy  way  to  get  the  MOO  programming
+manual--e.g.,  a  copy  on-line  locally  or  FTP  instructs  for  getting  it.
+           Requirements  like  the  above  can't  really  be  enforced,  but  can
+    be  made  known  as  responsibilities  teachers  are  assumed  to  take  on.
+---If  we  decide  to  have  special  teacher  commands  and/or  special
+classrooms,  teachers  could  be  required  to  complete  a  tutorial  in
+ZAK's  MOOteach  center  that  teaches  use  of  those.
+---One  way  to  make  sure  that  teachers  have  a  thought-out  plan  (in  my
+experience,  students  sent  onto  M*s  without  directions/something  to
+accomplish  are  generally  disruptive  and  not  only  to  their  own  class)
+would  be  to  ask  that  they  submit  a  short  description  of  what  their
+students  will  be  asked  to  do  in  their  first  couple  of  visits.   While
+we  can't  exactly  judge  a  lesson  plan,  asking  to  see  that  one  exists
+should  be  sufficient.''
+
+
+[...]
+
+
+---------------------------------------------------------------------------
+
+After  discussion  the  following  statement  was  published  by  Tari  Fanderclai
+on  the  same  list  (*MOOteach@DU  23,  Jan  14  94):
+
+
+---------------------------------------------------------------------------
+
+
+****************************************
+DU  welcomes  classes  of  all  kinds,  and  does  its  best  to  accommodate
+a  wide  variety  of  teachers'  methods  and  philosophies.   It  is
+assumed  that  a  teacher  who  wishes  to  bring  classes  to  DU  will
+spend  time  getting  to  know  the  social,  political,  and  technical
+environment  here  her/himself  before  leading  students  in.
+Teachers  who  bring  classes  to  DU  have  these  responsibilities:
+---To  familiarize  their  students  with  the  etiquette  of  DU  and
+to  make  sure  the  students  understand  that  they  are  responsible
+to  behave  appropriately  or  suffer  the  consequences  outlined
+
+30                                                              CHAPTER  4.     MOOS  FOR  EDUCATION
+
+
+
+by  the  wizards.
+---To  teach  their  students  the  "MOOoperations"  the
+students  will  need  to  use  for  their  class,  and  to
+provide  those  students  who  want  it  information  beyond  what
+the  class  is  actually  using.   For  example,  even  if  the  students
+are  not  being  asked  to  build  or  program,  they  should  know  how
+to  use  the  help  screens  and  where  to  get  the  programmers
+manual  and  all  the  other  help  sources  available.
+---To  check  news  and  other  information  sources  frequently  so
+that  they  are  aware  of  new  DU  procedures,  events,  and  other
+important  information.
+---To  comply  with  policies  and  procedures  set  by  the  wizards,
+and  to  see  that  their  students  do  also.   Where  a  student  becomes
+a  problem  to  the  DU  community,  the  student's  teacher  is  expected  to
+cooperate  with  the  wizards  in  their  decisions  about  the  problem.
+
+
+We  also  hope  that  each  teacher  who  uses  DU  will  make  a  contribution
+to  the  DU  community  as  a  whole.   For  example,  they  could  bring
+useful  ideas  to  teachers'  meetings;  volunteer  for  projects;
+agree  to  be  an  Official  Helpful  Person;  build  or  program  an  object
+that  becomes  a  permanent  part  of  DU,  etc.   We  believe  that  it  is
+important  that  each  teacher  becomes  a  part  of  the  DU  community.
+*****************************************************
+
+
+---------------------------------------------------------------------------
+
+
+4.1.4     So  what  is  new  ?
+
+Educational  activities  on  MOOs  can  be  broadly  distinguished  among  those
+who:
+
+    o  try  to  replicate  traditional  class-room  setups
+
+
+    o  tend  to  use  the  MOO  for  new  ways  of  teaching  and  learning  (and
+       therefore  get  away  from  the  ``class-room''  metaphor
+
+However,  one  can  ask  the  question  how  virtual  classrooms  are  different  from
+real  ones  and  how  they  could  exploit  extra-potential  from  the  MOOs.   This
+latter  question  is  very  important  since  virtual  ``MOO''  classrooms  clearly
+have  disadvantages.
+Now  several  advantages  of  the  virtual  class  room  could  be  cited,  like  the
+following  ones:
+(1)  Virtual  Classrooms  in  a  MOO  allow  for  ``layered  communication''  over
+different  channels.   This  allows  for  instance  students  to  discuss  among
+themselves  without  disturbing  the  class  or  to  isolate  tutor-one  student
+interactions  which  are  not  of  general  interest.   More  sophisticated
+classrooms  can  be  furnished  with  ``tables''  suited  for  group-work  (a  setup
+that  can  be  found  often  in  real  primary  school).
+(2)  Provided  that  a  good  Mud  client  is  available  to  the  student,  class-room
+teaching  (an  specially  lecturing)  looses  some  of  its  not  always  desired
+linearity.   At  anytime  a  student  can  scroll  back  and  (provided  he  can  split
+the  screen)  still  monitor  what  is  going  on.
+(3)  Along  the  same  lines,  a  virtual  class-room  has  a  ``memory''.   Teachers
+do  not  have  to  repeat  things  as  frequently  and  at  the  same  time  things  said
+before  can  be  pasted  back  into  the  discussion.
+
+4.2.   MOO  LEARNING  ENVIRONMENTS                                                              31
+
+
+
+(4)  Students  may  have  better  access  to  ``external  sources''  such  as  other
+tutors,  on-line  books  and  so  during  a  class.
+Of  course  there  is  a  limit  to  all  that.   It  is  well  known  that  human
+processing  power  is  very  limited  for  structured  cognitive  tasks.   We  can  do
+only  a  small  amount  of  things  at  the  same  time.   So  MOO  teachers  whish  to
+exploit  those  and  other  extra-functionalities  they  will  have  to  take  into
+account  those  limits  and  ``slow  down'',  but  make  sure  that  students  don't
+get  bored  or  involved  into  other  activities  at  the  same  time.
+In  any  case,  in  most  situations  it  is  probably  best  to  avoid  using  the  MOO
+for  lecturing  (that  can  be  done  by  providing  a  text  over  the  WWW)  and  use
+those  classrooms  for  more  interactive  tutoring  instead.
+Interested  readers  may  want  to  look  at  those  transcripts  from  a
+MOO-programming  lesson:   [retrieve  the  thing  from  colin]
+
+
+
+4.2    MOO  Learning  Environments
+
+
+Moos  can  be  used  to  implement  various  sorts  of  interactive  learning
+environments,  not  just  sophisticated  text-based  virtual  classrooms.
+[FANDERCLAI,  1995      ]  for  instance  makes  this  point  very  clear:   ``I  am
+hopeful,  therefore,  that  the  near  future  holds  more  of  these  changes.   MUDs
+are  places  for  self-directed  learning,  learning  that  blends  work  and  play,
+that  often  looks  chaotic  but  that  is  uniquely  effective.   A  MUD  is  not  an
+environment  that  can  be  controlled;  to  use  MUDs  effectively,  educators  must
+replace  control  with  structure.''
+In  the   TECFAMOO  ,  several  persons  started  building  more  ``theme  oriented''
+places  like  the  ``Ticinese''  4.2.2  village  and  the  Social-Psychological
+Experiments  4.2.3  within  a  setup  for  an  on-line  class.
+Several  examples  of  interactive  exhibits  can  be  found  at  Diversity  MOO.  A
+few  of  them  are  related  to  anthropology  (see  for  instance  The  Physical
+Anthropology  Hall  (5-6)  #10375).   An  other  nice  example  is  the  interactive
+simulation  of  Agincourt  battle  (#3300).   It  allows  users  to  navigate  a
+historical  area  and  to  interact  with  objects  and  artificial  people.   Also
+interesting  is  the  Rain  Forest  (#8134)  located  off  the  Biology  Hall.
+The  Ohlone  Village  at  BayMOO  (see  section  4.2.1)  hanging  off  the  ``Past
+Revisited  Room''  also  leading  to  to  ``Gold  Rush  San  Francisco'',  ``Hippie
+Haight'',  and  ``City  Lights'',  this  simulation  teaches  the  culture  and  some
+of  the  words  of  the  Ohlone  Tribe  that  was  located  in  the  Bay  area.
+Interactive  exhibits  are  one  direction  to  go.   More  interesting  are
+structures  activities  where  students  have  to  do  something,  cooperatively.
+First  of  all,  one  could  consider  every  MOO  as  an  environment  which  teaches
+about  itself.   Some  do  it  better  than  others.   One  good  example  is  EON
+4.2.4  who  acts  as  a  holistic  environment  to  learn  ``MOOing''  and  ``MOO
+programming''.   Hopefully,  MOOs  will  grow  into  more  than  self-centered
+constructivism.
+
+
+4.2.1     The  Ohlone  Village
+
+The  Ohlone  village  (visited  on  5/95)  is  another  interesting  example  of  a
+historical  simulation  (Type  'go  ohlone  village'  on  BayMOO  to  get  there).
+
+
+
+----------------------------------------------------------------  Bay  MOO  5/95
+
+
+>village
+
+32                                                                CHAPTER  4.   MOOS  FOR  EDUCATION
+
+
+
+Ohlone  Village
+
+
+A  village  of  12  reed  dwellings  at  the  tip  of  the  San  Francisco  peninsula.  In
+ the  center  of  the  village,  two  women  are  scooping  acorns  from  their  tule  reed
+ baskets.  A  group  of  young  men  hesitate  before  entering  into  the  sweathouse  to
+ be  instructed  by  the  tribal  shaman.
+
+
+ Type   ENTER  to  learn  the  lessons  of  Coyote,  Eagle,  Hummingbird  and  Gismen.
+
+
+Obvious  exits:  NOONO  to  Ohlone  Language  Pit  House,  PAST  to  The  Past  Revisited,
+ and  ENTER  to  Sweathouse
+
+
+---------------------------------------------------------------------------
+
+
+The  Ohlone  visage  is  designed  both  as  a  puzzle  and  an  exhibit.   To  enter
+certain  rooms,  objects  have  to  be  found  and  carried  by  ``understanding''
+and  typing  words  of  the  Ohlone  language.   A  specially  designed
+``translation  room''  does  word  to  word  translation  of  some  short  English
+sentences.   Look  at  the  next  transcript  for  an  illustation  of  this
+principle.
+
+
+
+----------------------------------------------------------------  Bay  MOO  5/95
+
+
+>ENTER
+Sweathouse
+
+
+The  intense  heat  and  thick  redwood  smoke  make  the  interior  of  the  sweathouse
+ almost  unbearable.  Through  the  haze  you  can  make  out  bows,  arrows,  clubs  and
+ knives  stacked  against  the  earthen  walls.
+
+
+In  one  corner,  two  hunters  are  conversing  in  Ramaytush,  the  local  Ohlone
+ dialect.  One  boasts  that,  in  preparation  for  the  coming  hunt,  he  has  neither
+ touched  nor  nor  looked  directly  at  his  wife  for  three  days.  His  friend
+ confirms  that,  for  his  part,  he  has  eaten  no  meat  or  salt  for  the  same  period.
+
+
+The  the  far  corner  of  the  room,  her  eyes  closed,  sits  the  ancient  shaman.  She
+ clutches  her  medicine  pouch  in  one  hand  and  a  cooking  basket  in  the  other.
+ The  other  occupants  of  the  sweathouse  keep  a  respectful  distance  from  her.
+
+
+You  see  an  opening  that  leads  to  the  Coyote's  den.  Type  COYOTE  to  get  there.
+
+
+Obvious  exits:  VILLAGE  to  Ohlone  Village
+You  see  Sharkeen  here.
+
+
+>activate  sharkeen
+Kaspar  activates  Sharkeen.
+Sharkeen  exclaims,  "Aue!"
+Sharkeen  says,  "[to  Kaspar]  cahnah  roote  ratichma  maato  roote  xiwej  Ohlone
+ muwekma."
+
+
+[......]
+
+
+>noono
+
+4.2.   MOO  LEARNING  ENVIRONMENTS                                                              33
+
+
+
+Ohlone  Language  Pit  House
+A  place  to  turn  English  words  into  Ohlone,  and  Ohlone  into  English.  The
+ vocabulary  is  derived  from  several  of  the  local  Ohlone  dialects.
+Obvious  exits:  VILLAGE  to  Ohlone  Village  and  WORD  to  -Word  St.  North-
+>"cahnah  roote  ratichma  maato  roote  xiwej  Ohlone  muwekma
+
+
+You  say,  "I  be  woman  who  be  shaman  Ohlone  people"
+>@go  sweathouse
+
+
+[....]
+
+
+>coyote
+You  must  possess  the  Coyote's  Tooth  before  you  can  enter  his  den.  Ask  the
+ shaman  Sharkeen  about  Coyote,  and  she  will  tell  you  the  room  that  holds  the
+ Coyote's  tooth.
+
+
+>"majan
+You  say,  "majan"
+>"coyote
+You  say,  "coyote"
+Sharkeen  says,  "[to  Kaspar]  To  enter  the  Coyote's  Den  you  must  possess  the
+ Coyote  Tooth!  Seek  his  tooth  in  room  Kapapan  iwesse  kapapaniwesh  utcahin.  Go
+ to  the  Ohlone  Language  Pit  House  if  you  need  to  translate  my  words."
+
+
+[....]
+
+
+---------------------------------------------------------------------------
+
+
+By  looking  at  objects  and  manipulating  them,  more  things  about  the  ohlone
+culture  can  be  found  out  as  the  following  transcript  shows:
+
+
+
+----------------------------------------------------------------  Bay  MOO  5/95
+[....]
+
+
+>coyote
+The  smoke  around  you  dissipates  as  you  are  transported  from  the   Sweathouse  to
+ the  domain  of  Coyote.
+Coyote's  Den
+Water  covers  the  earth  as  far  as  the  eyes  can  see  --  except  for  the  distant
+ peak  of  Mount  Diabolo.  From  your  perch  atop  Mount  Tamalpais,  you  look  down
+ the  mountainside  toward  the  encroaching  ocean.  You  see  a  furtive  movement
+ within  a  manzanita  bush.  Slowly,  cautiously,  a  bedraggled  coyote  emerges.  It
+ eyes  you  briefly,  then  begins  to  slink  away.
+Obvious  exits:  EAGLE  to  Aerie
+You  see  Coyote  here.
+                                             _
+                                            /  "         _-'
+                                         _/_   "-''-  _  /
+                                  __-'  -  _               "
+                                         /                   "
+                                       /          "o.   _o  "
+                                       _                   ";
+                                                             ',
+
+34                                                              CHAPTER  4.     MOOS  FOR  EDUCATION
+
+
+
+                                            "_               __"
+                                               ''-_        ".//
+                                                  /  '-____'
+                                                /
+                                             _'
+                                          _-'
+
+
+_________                                __            /"            ________
+"_     ___  "   ____  ___.__.  _____/   __   ____)/  ______  "______  "     ____     ____
+/      "   "/  /   _  <     _   _/   _  "     __"/  __  "  /   ___/   _      _   "_/  __  "  /      "
+"        "___(   <_>  )___   (   <_>  )   _  "   ___/  "___  "     _      `     "   ___/_     _   "
+ "______   /"____//  _____"____/____   "___   >____   >  /_______   /"___   >____   /
+           "/          "/                               "/        "/               "/        "/        "/
+
+
+
+>l  coyote
+A  sharp  and  shifty  beast.  Type  STORY1  COYOTE  to  hear  a  tale  about  him,  and
+ type  INVOKE  COYOTE  to  hear  what  he  has  to  say.
+>INVOKE  COYOTE
+Kaspar,  in  search  of  the  Ohlone  way  of  wisdom,  invokes  the  Coyote  spirit!
+
+
+ So  you've  come  to  me  for  advice?  My  friend,  you  couldn't  have  done  better.
+ Brother  Eagle  and  Sister  hummingbird  have  their  own  ideas  about  life,  of
+ course.  But  my  wisdom  is  seasoned  by  generations  of  living  on  the  ground,  as
+ you  do.  Life  with  dirt  underfoot  is  treacherous,  seeker,  as  you  well  know
+ already.  Not  strength  nor  love  will  get  you  your  heart's  desire.  But  cunning
+ will.  So  heed  me.
+                +------------------------------+
+                _Coyote  fixes  you  with  a  stare._
+                +------------------------------+
+
+
+[more  cut....]
+---------------------------------------------------------------------------
+
+
+
+Animals  found  in  the  ``rooms''  will  tell  stories  illustrating  the  culture.
+They  are  displayed  in  ``VCR  mode'',  e.g.   displayed  paragaph  by  paragraph
+including  breaks  so  that  people  can  read  them  at  a  usual  pace.
+Alltogether  the  Ohlone  village  offers  shows  a  nice  example  of  what  can  be
+done  with  MOO  technology.   The  simulation  is  probably  not  polished  enough
+for  real  use  (on  5/95).   For  example,  entering  the  ``coyote  lesson''  was
+not  really  ergonomic:   Reading  the  message  ``Ask  the  shaman  Sharkeen  about
+Coyote,  and  she  will  tell  you  the  room  that  holds  the  Coyote's  tooth...''
+in  the  sweathouse  does  not  really  tell  the  user  that  he  has  to  type  ``say
+coyote''  in  order  to  cross  the  exit  to  ``Coyote's  den''.
+
+
+
+4.2.2     The  Ticinese  Village
+
+
+Utilization  de  differents  services  Internet  pour  une  simulation  historique4
+by  Eric  Sciolli5
+
+                    ________________________________________________________________
+    4http://tecfa.unige.ch/%7Esciolli/staf14/villaggio-ticinese/welcome.moo.html
+    5http://tecfa.unige.ch/%7Esciolli/
+
+4.2.   MOO  LEARNING  ENVIRONMENTS                                                              35
+
+
+
+4.2.3     Social-Psychological  Experimentation
+
+Within  the  framework  of  ``Teaching  the  Religion  and  Methodology  of  C.G.
+Jung'',  Patrick  Jermann6  uses  a  psycho-social  setup7  to  improve  learning.
+
+
+
+4.2.4     The  MOO  as  Learning  Environment:   The  case  of  EON
+
+This  section  is  largely  based  on  course-assignment  work  of  two  TECFA  STAF
+students:   Virtual  Education  Environment:the  case  of  EON8  by  Eric  Berthoud9
+and  Analyse  d'une  activite epdagogique  dans  un  MOO10  by  Patrick  Jermann11
+TECFA  has  a  special  relation  to  EON  in  several  ways.   When  D.S.12  decided  to
+introduce  MOO-technology  in  our  unit  he  became  interested  in  EONs
+constructivist  approach  towards  virtual  educational  environments  and  its
+progressive  ``chamber  system''.   Furthermore,  TECFA  was  very  lucky  to  able
+to  recruit  xymox13  as  its  first  ``wizard''.   14
+The  goals  of  the  EON  Virtual  Educational  Environment15  can  be  found  by
+typing  'help  goals'  in  the  EON  MOO16 :
+
+
+---------------------------------------------------------------------------
+
+
+>help  goals
+1.   Create  an  environment  where  students  can  learn  and  receive  college
+credit  through  self  paced  study.   Such  an  environment:
+      a.   Is  social,  supporting  collaborative  learning  (e.g.,  synchronous
+           communication)
+      b.   Teaches  learners  how  to  use  it  without  requiring  separate  "manuals"
+           or  "instructions"  external  to  the  environment.
+      c.   Allows  learners  to  prepare  and  share  cognitive  maps  of  what  they've
+           learned.
+      d.   Is  not  a  closed  system.   That  is,  provides  collaborative  access
+           to  all  Internet  resources  within  the  environment  itself.
+      e.   Is  as  schema-friendly  as  possible.   That  is,  the  methods  of
+           interaction  seem  familiar  to  the  learner.
+      f.   Supports  a  variety  of  interface  technology:  vt100  (e.g.,  lynx),
+           gui  (e.g.,  mosaic)  and  potentially  interface  virtual  reality
+      g.   Allows  for  extension  of  the  environment.   That  is,  learners  may
+           democratically  add  to  and  modify  Internet  resources.
+      h.   Makes  learning  fun.
+
+                    ________________________________________________________________
+    6http://tecfa.unige.ch/%7Ejermann/
+    7http://tecfa.unige.ch/%7Ejermann/staf14/projet-14-main.html#loge
+    8http://tecfa.unige.ch/%7Eberthoud/staf14/eon_overview.html
+    9http://tecfa.unige.ch/%7Eberthoud/
+   10http://tecfa.unige.ch/%7Ejermann/moo_01.html
+   11http://tecfa.unige.ch/%7Ejermann/
+   12http://tecfa.unige.ch/tecfa-people/schneider.html
+   13http://mcmuse.mc.maricopa.edu/%7Exymox/
+   14He  spontaneously  agreed  participating  in  an  informal  international
+
+exploratory  project.   This  spontaneous  enthusiasm  for  cooperation  is  also
+characteristic  of  many  other  persons  in  the  ``MOO''  space.   Without  his
+initial  help,  our  project  maybe  would  never  have  ``gotten  of  the  ground''
+in  the  first  place.
+   15gopher://mcmuse.mc.maricopa.edu/11/courseinfo
+   16telnet://mcmuse.mc.maricopa.edu:8888
+
+36                                                              CHAPTER  4.     MOOS  FOR  EDUCATION
+
+
+
+For  information  on  the  theoretical  basis  (constructivism)  for  Eon,  type:
+help  theory
+
+
+---------------------------------------------------------------------------
+
+
+This  clearly  indicates  a  tendency  also  observed  in  some  educational
+technology  to  move  away  from  producing  ``teaching  systems''  towards
+producing  ``learning  environments''  centered  on  exploration  and  ``active
+doing''.
+
+
+Learning  by  Immersion  at  EON
+
+Most  ``Immersion-based''  learning  at  EON  is  related  to  the  MOO  itself
+(learning  how  ``to  MOO'')  and  to  MOO  programming.
+
+
+           The  new  player,  called  learner  in  EON  (this  goes  with  the
+       ideology  of  EON:  everybody  connected  on  EON  is  a  learner),  is
+       placed  in  a  tutorial  environment  (Chamber  1).   The  first  virtual
+       room  the  learner  is  entering  in  is  a  metal  cube.   (Answer  will
+       come  to  know  whether  in  the  conception  of  EON,  that  room  was  so
+       designed  in  order  to  figurate  the  box  of  knowledge,  see:   2001
+       Space  Odyssey  directed  by  Stanley  Kubrick).
+           The  learner  has  to  find  his  way,  moving,  looking  at  signs  and
+       notes  and  interpreting  them  correctly  in  order  to  find  oneself  in
+       the  "Science  Compounds"  of  EON.  Wise,  the  learner  will  move  to
+       "Information  Center"  and  gain  some  information:   an  index  of  basic
+       commands  (newbie  help)  as  well  as  the  set  of  goals  of  EON.
+       Information  is  also  provided  on  the  fact  that  there  is  a  hierarchy
+       among  EON's  learners.   Learners  carry  badges:   red  is  for  guests,
+       yellow  is  for  registered  learners,  green  is  for  programmers.
+           In  order  to  receive  a  "official  character"  on  EON,  the  player
+       must  register.   If  a  learner  can  obtain  this  character,  it  is
+       assumed  that  the  learner  knows  "the  rudimentary  commands  for
+       moving  around"  EON,  as  stated  in  a  description  of  chamber  one17
+
+
+           Once  an  official  character,  the  learner  wishes  to  know  more
+       about  EON.  Passing  through  to  chamber  2  is  allowed.   That  is  where
+       the  learner  will  find  parts  of  a  city  with  streets,  buildings  and
+       so  on.
+           Here  the  learner  will  learn  more  ways  to  move  about  and  to
+       communicate.   Opportunity  will  be  given  to  meet  other  learners,  to
+       find  the  "Green  Badge  Distribution  Cubicle"  and  to  be  made  a
+       programmer.   An  example  of  this  ceremony  is  available  here18
+           Many  other  rooms  are  built  in  Chamber  two.   Let  me  mention  a
+       hotel,  where  a  room  can  be  made  available,  shops,  bars,  etc.   But
+       the  most  important  site  of  chamber  two  is  evidently  the  Convention
+       Centre  .   There,  the  learner  finds  a  room  where  the  "Unix  people"
+       meet,  usually,  most  of  the  wizards  spend  some  of  their  time  on  EON
+       there.   <P>  Just  next  door  is  the  Internet  room  allowing  for
+       tutorial,  grading  and  Internet  connections.   Adjacent  are  located
+       the  Internet  Exploratorium  -leading  to  a  room  meant  to  allow
+       connection  to  the  WEB  and  Gopher-  as  well  as  The  Reporting  Room.
+                    ________________________________________________________________
+   17http://tecfa.unige.ch/%7Eberthoud/eon_chamber1.html
+   18http://tecfa.unige.ch/%7Eberthoud/eon_gbcer.html
+
+4.3.     PRIVATE  IMMERSION  IN  THE  MOO                                                        37
+
+
+
+           A  learner  going  into  the  Reporting  Room  will  be  expected  to  use
+       it  to  report  of  the  experiences  gained  using  Internet  and  to  ask
+       for  grading  on  the  report.   This  room  has  mainly  been  built  as  a
+       check  point  for  the  Internet  classes  of  Greg  Swan.
+           Linked  to  the  Convention  Center  Corridor,  the  InterVVE
+       Communication  room  offers  a  mean  to  see  who  is  connected  to  EON
+       via  others  VEE  like  BayMOO,  DU,   TECFAMOO  ,  etc.
+           [...]
+           Once  entitled  to  a  green  badge,  a  learner  may  venture  to  others
+       parts  of  the  world  (EON's).
+
+
+(Quotations  from  Virtual  Education  Environment:the  case  of  EON19  by  Eric
+Berthoud20
+
+
+4.3    Private  Immersion  in  the  MOO
+
+
+Most  regular  MOO  users  are  strongly  involved  with  those  virtual  worlds.
+Education  can  take  benefit  from  that  phenomenon.   As  states
+[ACKERMANN,  1994      ,  p.   13],  ``interactivity  is  a  key  to  learning''  and  ``An
+increasing  number  of  software  designers,  cognitive  scientists  and  educators
+have  come  to  the  view  that  experience  is  actively  constructed  and
+reconstructed  through  direct  interaction  with  the  world,  and  that,  indeed,
+knowledge  is  experience''.
+The  fact  that  users  can  create  their  identities  and/or  habitats  and  share
+them  with  others  augments  this  ``heads-in''  effect.   In  a  very  broad  sense
+MUDs  are  ``Virtual  Realities''  because  they  form  a  habitat  or  micro-world
+in  which  many  users  can  play-out  some  imagined  scenario  onto  a  tangible  and
+responsive  support  (see  [ACKERMANN,  1994      ,  p.   13]  again).
+
+
+
+                    ________________________________________________________________
+   19http://tecfa.unige.ch/%7Eberthoud/staf14/eon_overview.html
+   20http://tecfa.unige.ch/%7Eberthoud/
+
+38                                                              CHAPTER  4.     MOOS  FOR  EDUCATION
+
+
+
+
+Chapter  5
+
+
+
+Social  Issues
+
+
+
+5.1    On  ruling  a  MUD
+
+
+Many  forms  of  ``government''  can  be  observed.   Roughly  there  are  several
+levels  on  which  users  can  participate  in  various  ways:
+
+
+  1.   The  ``theme  level''  or  ``purpose  level''  of  the  MOO.
+
+
+  2.   The  infrastructure  level
+
+
+          o
+
+          o  The  ``topology  level''  defining  what  can  be  built  and  where
+
+          o  The  ``communications''  and  ``transportation  level''  defining  how
+             people  can  interact  and  move
+
+
+  3.   The  social  level:   What  manners  are  encouraged  or/and  allowed
+
+
+On  most  MOOs  there  are  several  social  classes  and  institutions  fulfilling
+different  functions:
+At  the  technical  level  we  can  distinguish:
+
+
+  1.   The  archwizard  (or  owner)
+
+
+  2.   The  wizards  (or  janitors)
+
+
+  3.   The  programmers
+
+
+  4.   The  builders
+
+
+  5.   The  players  (or  basic  users)
+
+
+  6.   The  guests
+
+
+On  most  MOOs  different  kinds  of  democratic  rights  are  given  to  those
+classes  since  they  have  different  technical  ``powers''.   The  most  powerful
+figures  are  the  wizards.   On  some  MOOs  they  have  almost  godly  powers,  on
+others  they  rather  have  system  (and  accessorily  police)  duties  like  any
+system  administrator  on  large  systems.   In  addition,  most  do  a  lot  of
+programming  too.
+[better  stuff  to  come]
+
+
+                                                      39
+
+40                                                                       CHAPTER  5.   SOCIAL  ISSUES
+
+
+
+5.2    Manners
+
+
+Virtually  every  MOO  tries  to  impose  a  minimal  set  of  manners  to  its  users.
+First  of  all  respect  of  the  theme  is  important,  not  just  in  research  and
+education  MOOs  as  the  following  quote  from  BayMOO  shows:
+
+
+---------------------------------------------------------------------------
+
+
+>go  theme
+You  step  through  the  opening  into  the  module  named  Theme  of  BayMOO.
+Intro  to  BayMOO  [Theme  of  BayMOO:  Theme  :  Overview]
+There  are  two  major  themes  that  make  BayMOO  unique  among  the  all-text  virtual
+realities  on  the  NET:
+          1)  The  Humanities  of  the  San  Francisco  Bay  Area  and
+          2)  The  Meanings  of  Water.
+   These  are  available  to  all  who  want  to  explore  their  uses,  and  the
+janitors  of  BayMOO  urge  you  to  use  them.  But  those  who  feel  called  to
+other  frontiers  are  also  welcome  to  help  build  BayMOO.
+    BayMOO  has  a  one-word  code  of  ethics:  RESPECT
+    As  long  as  characters  respect  each  others'  feelings,  BayMOO  is  a
+wide-open  textual  terrain  for  the  imagination.
+
+
+---------------------------------------------------------------------------
+
+
+The  theme  (and  encouragement  to  respect  it)  is  often  shown  in  the  Welcome
+Screen  (see  section  2.1.1).   A  lot  of  MOOs  also  provide  a  'help  manners'
+command  or  equivalent.
+By  looking  at  several  MOOs  (see:   5.2.1  and  5.2.2)  one  can  kind  find
+several  major  topics:
+
+
+  1.   Politeness
+
+  2.   Use  of  resources
+
+  3.   Respect  for  property
+
+
+Basically  manners  look  at  lot  like  manners  expected  in  a  real  society.   As
+in  the  real  world  different  manners  apply  for  different  contexts.
+
+
+5.2.1     Examples  from  social  MOOs
+
+Manners  at  Bay  MOO:
+
+-----------------------------------------------------     BayMOO  May  5/95
+
+
+>go  manners
+You  step  through  the  opening  into  the  module  named  Manners.
+Intro  to  BayMOO  [Manners:  Manners]
+                      ***          A  Guide  to  Manners         ***
+
+
+Welcome  to  BAYMOO.   As  a  member  of  this  community  or  as  a  guest,  we  invite  you
+to  join  with  us  in  supporting  the  following  social  interaction  guidelines:
+
+
+1.  RESPECT  OTHER  PEOPLE.   Citizens  here  are  of  all  ages  and  come  from
+           many  different  parts  of  the  world.   Please  do  not  offend
+           others  with  your  language  or  actions.
+
+5.2.   MANNERS                                                                                        41
+
+
+
+2.  DON'T  WALK  OFF  WITH  OBJECTS  THAT  DON'T  BELONG  TO  YOU.
+           BayMOO  is  based  on  trust.   Put  things  back  where  you
+           found  them.
+3.  DON'T  SPOOF.   Don't  make  it  appear  that  other  persons  are
+           saying  or  doing  something  they  aren't.
+4.  ONLY  TELEPORT  YOUR  OWN  THINGS.
+5.  DON'T  SPY.
+6.  ALWAYS  BE  POLITE.   It  is  always  polite  to  to  ask  permission
+           before  entering  someone  else's  home.
+7.  NO  WEAPONS.   This  is  an  cooperative  environment.
+8.  NO  HARASSMENT.
+[  <l>ook;  <q>uit  ]
+
+
+---------------------------------------------------------------------------
+
+
+Manners  at  College  Town:   Interestingly  College  Town  (A  Educational  MOO)
+has  very  similar  rules:
+
+---------------------------------------------------------  CollegeTown  5/95
+
+
+>help  manners
+                      ***        A  Guide  to  Manners     ***
+
+
+Welcome  to  COLLEGETOWN.   As  a  member  of  this  community  or  as
+a  guest  we  invite  you  to  join  with  us  in  supporting  the  following
+social  interaction  guidelines:
+
+
+1.  RESPECT  OTHER  PEOPLE.  Citizens  here  are  of  all  ages  and
+       range  from  first  grade  students  to  college  professors.
+       They  come  from  many  different  parts  of  the  world.  Please
+       do  not  offend  others  with  your  language  or  actions.  It
+       is  polite  to  ask  permission  before  visiting  someone
+       else's  home.
+2.  DON'T  WALK  OFF  WITH  OBJECTS  THAT  DON'T  BELONG  TO  YOU.
+       CollegeTown  is  based  on  trust.  Put  things  back  where  you
+       found  them.
+3.  DON'T  SPOOF.  Don't  make  it  appear  that  other  persons  are
+       saying  or  doing  something  they  aren't.
+4.  ONLY  TELEPORT  YOUR  OWN  THINGS.
+5.  DON'T  SPY.
+6.  DON'T  SPAM.  Don't  annoy  others  by  overloading  the  screen.
+7.  NO  WEAPONS.  This  is  an  academic  environment.
+8.  NO  HARASSMENT.
+
+
+---------------------------------------------------------------------------
+
+
+5.2.2     Examples  from  educational  and  research  MOOs
+
+Some  educational  and  research  MOOs  such  as  Diversity  University  are  more
+precise.   It  can  be  asked  whether  such  long  messages  (especially  on  a  small
+tty  screen)  are  really  read.   But  then  basic  manners  also  are  addressed  in
+some  ways  on  the  welcome  screen.
+
+
+
+----------------------------------------------------------------  DU  May  4  /95
+
+42                                                                       CHAPTER  5.   SOCIAL  ISSUES
+
+
+
+>help  manners
+             Expected  Behavior  and  Manners  for  Diversity  University  MOO
+             ==========================================================
+
+
+This  document  describes  the  guidelines  and  expectations  for  acceptable
+behavior  on  Diversity  University  MOO,  as  well  as  some  general
+suggestions  for  how  to  interact  with  others  on  the  MOO.   Users  are
+expected  to  behave  in  a  reasonable  and  responsible  manner  at  all
+times,  as  laid  out  by  this  document,  and  failure  to  do  so  can  result
+in  disciplininary  action  by  the  wizards  of  the  MOO.
+
+
+General  security  issues  and  matters  which  involve  the  functional
+integrity  of  the  MOO,  access  to  unauthorized  abilities  or  areas,  or
+real-world  legal  concerns  are  not  covered  in  this  document.   For
+information  on  these  policies,  please  see  'help  terms'.
+
+
+Social  Interaction
+------------------
+
+
+The  MOO  is  not  a  game.   It  is  a  real  social  environment  with  people  of
+all  ages,  from  all  walks  of  life,  from  all  over  the  globe.   Citizens
+of  Diversity  University  are  expected  to  act  accordingly.   This  means
+the  following:
+
+
+1.   Harassment  of  other  users  will  not  be  tolerated.   This  includes,
+but  is  not  limited  to,  spamming  (filling  their  screen  with  unwanted
+text),  teleporting  them  or  their  objects  without  their  permission,
+repeated  paging  or  following  them  after  they  have  expressed  a  desire
+to  be  left  alone,  broadcasting  messages  to  everyone  on  the  MOO,  or
+actions  done  with  the  specific  intent  of  causing  another  person
+annoyance  or  discomfort.
+
+
+2.   While  freedom  of  speech  is  an  important  part  of  Diversity
+University,  obscene  language,  violence,  unwanted  sexual  acts,  or  other
+blatantly  offensive  behavior  will  also  not  be  tolerated.
+
+
+3.   Spoofing  (displaying  text  that  is  not  obviously  attributed  to  your
+character)  to  deceive  others  or  avoid  responsibility  for  one's  actions
+is  traceable  and  is  not  allowed.   Moreover,  programming  or  making
+available  verbs  designed  specifically  to  display  text  without
+attribution  or  misattributed  text  is  also  not  allowed.
+
+
+4.   Spying  on  others  is  expressly  prohibited.   All  objects  which  relay
+messages  heard  in  a  room  to  another  person  or  location  must  clearly
+state  that  they  do  so.   Silent  teleportation  is  also  a  form  of  spying,
+as  is  any  mechanism  intended  to  intercept  messages  not  intended  for
+you  through  unanticipated  loopholes  (this  last  is  also  a  security
+issue,  see  'help  terms').
+
+
+5.   Common  courtesy  is  expected  from  all  users  toward  others  on  the
+MOO.   In  addition  to  the  above  points,  this  means  paging  others  before
+joining  them  in  a  non-public  space  (a  private  room,  a  classroom,  etc),
+asking  before  taking  or  using  objects  that  do  not  belong  to  you,
+
+5.2.   MANNERS                                                                                        43
+
+
+
+leaving  objects  where  you  find  them,  and  all  of  the  other  courtesies
+you  would  follow  when  visiting  someone  else's  house  or  place  of
+business.
+
+
+Users  should  also  attempt  to  respect  other  people's  sensibilities.
+Inhabitants  of  Diversity  University  come  from  a  wide  range  of
+cultural,  religious,  and  racial  backgrounds  which  should  be
+acknowledged  and  respected.   Not  everyone  has  the  same  feelings  of
+acceptable  speech  and  behavior,  and  consideration  of  others'  feelings
+is  an  essential  part  of  reasonable  behavior  on  Diversity  University.
+
+
+Diversity  University  is  also  a  family  environment  with  participants  of
+all  ages,  and  actions  and  statements  made  in  this  environment  should
+reflect  this.   Public  use  of  language  or  actions  which  are  not
+suitable  for  children  will  not  be  tolerated  on  this  system.
+
+
+Should  you  have  problems  with  another  user  who  is  not  following  these
+requirements,  please  report  their  actions  to  a  wizard  or  other
+designated  authority.   If  none  are  immediately  available,  some
+commands  for  temporary  sanctuary  are  available.   For  more  information
+see  help  on  @gag,  @refuse,  and  @eject.
+
+
+For  tips  on  contacting  wizards  and  other  busy  people,  see  'help  wizards'.
+
+
+Polite  Use  of  MOO  Resources
+---------------------------
+
+
+Be  considerate  when  designing  verbs  and  objects  to  perform  tasks  on
+the  MOO.   MOO  resources  are  shared  amongst  all  the  inhabitants,  and
+badly  designed  systems  can  affect  the  performance  of  the  entire  MOO.
+Do  not  design  code  or  create  systems  that  consume  inordinate  amounts
+of  processing  time  or  resources  without  consultation  with  the  wizards
+first,  and  always  design  code  in  such  a  way  as  to  be  as  efficient  and
+server-friendly  as  possible.
+
+
+Help  keep  database  size  down.   Use  verbs  such  as  @copy  only  when
+absolutely  necessary.   Do  not  copy  nifty  verbs  someone  else  has  made
+to  yourself  so  you  can  use  them.   Ask  them  or  a  wizard  to  put  the  verb
+on  a  feature  object  instead.   Use  @rmm  to  remove  personal  mail
+messages  once  you  are  done  with  them,  and  keep  cross-posting  (sending
+the  same  mail  messages  to  multiple  recipients)  to  a  minimum.
+
+
+When  copying  or  modifying  other  people's  code,  be  sure  to  ask
+permission  first,  and  comply  with  any  requests  they  have  regarding  the
+use  of  their  code.   Simply  because  something  is  readable  does  not  give
+you  the  right  to  use  or  copy  it,  and  use  of  another  person's  code
+against  their  wishes  is  both  illegal  and  not  allowed  on  this  MOO.
+
+
+Another  limited  resource  of  the  MOO  is  player  names.   Player  names  and
+aliases,  unlike  the  names  and  aliases  of  other  types  of  objects,  are
+required  to  be  unique.   This  means  that  if  you  have  taken  a  certain
+name  as  your  name  or  one  of  your  aliases,  nobody  else  can  have  a
+character  with  that  name.   For  this  reason,  please  keep  the  number  of
+your  aliases,  particularly  common  ones,  to  a  minimum.   Users  should
+
+44                                                                       CHAPTER  5.   SOCIAL  ISSUES
+
+
+
+only  have  aliases  that  relate  directly  to  their  character's  name,  and
+possibly  one  (reasonable)  nickname.
+
+
+---------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------  Media  MOO  5/95
+>help  manners
+The  MOO,  like  other  MUDs,  is  a  social  community;  it  is  populated  by  real
+ people  that  you  interact  with  via  network  connections.   Like  other
+ communities  of  human  beings,  the  members  of  this  one  have  evolved  certain
+ guidelines  for  the  behavior  of  the  participants.   This  article  lays  out  what
+ the  wizards  believe  to  be  the  general  consensus  concerning  these  `rules  of
+ courteous  behavior,'  or  `manners,'  on  the  MOO.
+
+
+Many  of  the  rules  that  follow  are  by  no  means  `obvious'  or  even  related  to
+ similar  rules  in  the  real  world.   The  MOO  is  not  the  real  world;  it  has  its
+ own  special  properties  that  require  new  kinds  of  rules.   These  rules  have
+ been  worked  out  through  our  experiences  with  the  MOO;  they  reflect  what  we've
+ learned  about  what  make  the  MOO  an  enjoyable  place.
+
+
+           >>  Be  polite.   Avoid  being  rude.  <<
+The  MOO  is  worth  participating  in  because  it  is  a  pleasant  place  for  people  to
+ be.   When  people  are  rude  or  nasty  to  one  another,  it  stops  being  so  pleasant.
+
+
+           >>  Turn  the  other  cheek.  <<
+If  someone  is  nasty  to  you,  please  either  ignore  it  or  tell  a  janitor  about
+ it  if  you  must.   Please  *don't*  try  to  take  revenge  on  the  person;  this  just
+ escalates  the  level  of  rudeness  and  makes  the  MOO  a  less  pleasant  place
+ for  everyone  involved.
+
+
+           >>  Respect  other  players'  sensibilities.  <<
+The  participants  on  the  MOO  come  from  a  wide  range  of  cultures  and
+ backgrounds.   Your  ideas  about  what  constitutes  offensive  speech  or
+ descriptions  are  likely  to  differ  from  those  of  other  players.   Please  keep
+ the  text  that  players  can  casually  run  across  as  free  of  potentially-offensive
+ material  as  you  can.   If  you  want  to  build  objects  or  areas  that  are  likely
+ to  offend  some  segment  of  the  community,  please  give  sufficient  warning  to
+ the  casual  explorer  so  that  they  can  choose  to  avoid  those  objects  or  areas.
+
+
+           >>  Don't  spoof.  <<
+Spoofing  is  loosely  defined  as  `causing  misleading  output  to  be  printed  to
+ other  players.'   For  example,  it  would  be  spoofing  for  anyone  but  Munchkin  to
+ print  out  a  message  like  `Munchkin  sticks  out  his  tongue  at  Potrzebie.'   This
+ makes  it  look  like  Munchkin  is  unhappy  with  Potrzebie  even  though  that  may
+ not  be  the  case  at  all.   Please  be  aware  that,  while  it  is  easy  to  write  MOO
+ programs  that  spoof,  it  is  also  easy  to  detect  such  spoofing  and  correctly
+ trace  it  to  its  source.   See  `help  spoofing'  for  more  details.
+
+
+           >>  Don't  shout.  <<
+It  is  easy  to  write  a  MOO  command  that  prints  a  message  to  every  connected
+ player  in  the  MOO.   Please  don't.   It  is  generally  annoying  to  receive  such
+ messages;  such  shouting  should  be  reserved  for  really  important  uses,  like
+ wizards  telling  everyone  that  the  server  is  about  to  be  shut  down.
+
+5.2.   MANNERS                                                                                        45
+
+
+
+ Non-wizards  never  have  a  good  enough  reason  to  shout.   Use  `page'  instead.
+
+
+           >>  Only  teleport  your  own  things.  <<
+By  default,  most  objects  (including  other  players)  allow  themselves  to  be
+ moved  freely  from  place  to  place  within  the  MOO.   This  fact  makes  it  easier
+ to  build  useful  objects  like  exits  and  magic  rings  that  move  things  as  a  part
+ of  their  normal  role  in  the  virtual  reality.   Unfortunately,  it  also  makes  it
+ easy  to  move  other  players  from  place  to  place  without  their  permission,  or
+ to  move  objects  in  and  out  of  other  players'  possession.   Please  don't  do
+ this;  it's  annoying  (at  the  least)  to  the  poor  victim  and  can  only  cause  bad
+ feelings.
+EXCEPTION:   Room  owners  should  feel  free  to  eject  unwanted  objects/players
+ from  their  own  rooms  or  to  divert  unwanted  objects/players  trying  to  enter
+ their  rooms.
+
+
+           >>  Don't  teleport  silently.  <<
+It  is  easy  to  write  MOO  commands  that  move  you  instantly  from  place  to  place.
+ In  writing  such  programs,  please  remember  to  print  a  message  to  all  players
+ both  in  the  place  you're  moving  from  and  in  the  place  you're  moving  to.   It
+ is  disconcerting  and  otherwise  unpleasant  for  someone  to  suddenly  say
+ something  in  a  room  without  there  ever  having  been  a  notice  that  that  person
+ had  arrived.   Similarly,  it  is  annoying  to  discover  that  you've  been  talking
+ for  some  time  to  a  person  who  has  left  the  room  without  a  sound.
+
+
+           >>  Don't  hog  the  server.  <<
+The  server  is  carefully  shared  among  all  of  the  connected  players  so  that
+ everyone  gets  a  chance  to  execute  their  commands.   This  sharing  is,  by
+ necessity,  somewhat  approximate  however;  while  players  cannot  completely  shut
+ out  others,  they  can  significantly  degrade  the  server's  overall  performance.
+ The  most  annoying  way  to  do  this  is  to  run  MOO  programs  that  loop  forever  (or
+ for  a  long  time)  using  `fork  (0)'  or  `suspend(0)'  occasionally  to  keep  from
+ running  out  of  ticks.   If  you  are  writing  a  program  that  will  run  for  a  long
+ time,  please  make  it  wait  at  least  five  seconds  between  iterations.   That  is,
+ if  your  task  will  run  continuously,  use  `fork  (n)'  or  `suspend(n)'  where  `n'
+ is  at  least  five.
+
+
+           >>  Don't  waste  object  numbers.  <<
+Some  people,  in  a  quest  to  own  objects  with  what  they  consider  `interesting'
+ object  numbers  (e.g.,  #17000,  #18000,  etc.)  have  written  MOO  programs  that
+ simply  loop,  creating  and  recycling  objects  until  the  `good'  numbers  come  up.
+   Please  don't  do  this;  it  artificially  inflates  all  object  numbers  and
+ increases  the  disk  space  used  by  the  server  unnecessarily.
+
+
+        >>  Don't  Crack  <<
+It  should  go  without  saying:  attempting  to  break  into  the  system  to  obtain
+ more  quota,  power,  other  player's  site  information,  etc.  is  *very*  rude.  See
+ 'help  cracking'  for  more  on  this  topic.
+
+
+           ==============================
+
+
+The  wizards  are  always  interested  in  hearing  players'  feedback  on  these  rules
+ of  behavior.   The  rules  were  developed  by  the  consensus  of  players  and  can  be
+ expected  to  evolve  that  way,  too.
+
+46                                                                       CHAPTER  5.   SOCIAL  ISSUES
+
+
+
+---------------------------------------------------------------------------
+
+
+
+5.3    Social  Identities  on  MUDs
+
+
+5.3.1     Should  "serious"  MOOs  allow  anonymity  ?
+
+At   TECFAMOO  we  probably  will  take  the  option  of  making  available  a  persons
+e-mail  address.   This  insures  in  the  owners  opinion  accountability  of  users
+acts  and  more  importantly  it  reduces  the  amount  of  monitoring  needed.
+A  different  stance  can  be  taken  as  shown  by  a  message  posted  by  Richelieu
+on  *MOOteach@DU  (21  and  24,  Jan  14  94):
+
+
+---------------------------------------------------------------------------
+
+
+To  tell  the  truth,  I  don't  really  like  the  idea  of  a  student  player
+class  at  all  (except  maybe  for  young  students),  and  I  really  don't
+like  the  idea  that  teachers  should  have  absolute  control  over  what
+their  students  can  and  can't  do  here.   This  place  isn't  just  a
+teaching  environment,  it  should  be  a  learning  environment  too,  and  the
+more  you  restrict  what  a  student  can  do,  the  less  likely  they  are  to
+want  to  learn  what  you're  trying  to  teach  them,  and  the  less  able  they
+are  to  learn  anything  else.
+
+
+This  is  a  brave  new  world,  and  I  find  it  really  distressing  that
+people  seem  to  be  falling  back  into  RL  preconceptions  and  ideas  about
+control.   Having  lived  in  MOOs  for  a  long  time  now,  I've  found  that
+even  the  more  unruly  people  can  usually  be  dealt  with  in  much  more
+effectively  if  not  simply  grouped  into  one  big  category  of
+"troublemakers"  and  locked  in  shackles.   And  I  also  don't  believe  the
+point  of  Diversity  University  should  not  be  to  allow  a  captive
+audience  for  someone  because  they  can't  control  their  students  in  RL.
+
+
+Now,  I  do  believe  that  some  things  are  good  ideas.   There  should  be
+the  ability  for  a  teacher  to  make  their  classroom  page-proof,  and
+prevent  similar  disruptive  influences  from  outside,  and  to  be  able  to
+identify  anyone  they  are  responsible  for  (this  does  not  necessarily
+mean  all  their  students.   By  responsibility  I  mean  primarily  all
+characters  with  a  group  RL  email  account,  since  registered  email
+addresses  are  the  primary  form  of  responsibility  enforceable  by  the
+wizards).   It  must  also,  of  course,  be  possible  for  a  teacher  to
+ensure  that  they're  dealing  with  who  they  think  they're  dealing  with
+when  it  comes  to  grades  and  such.
+
+
+Beyond  this,  I  am  strongly  in  favor  of  anonymity  for  anyone  who
+desires  it  (please  keep  in  mind  that  the  wizards  always  have  access  to
+the  information,  and  if  there  are  problems,  they  are  the  ones  who
+should  be  handling  it  anyway,  so  irresponsibility  is  not  an  issue
+here).   The  ability  to  be  anonymous  often  results  in  people  who  are
+more  likely  to  try  new  things,  voice  their  opinions,  ask  questions,
+and  generally  experiment,  particularly  in  the  areas  of  social
+interaction,  ideological  preconceptions,  psychological  issues,  and
+other  things  that  they  wouldn't  necessarily  feel  comfortable  dealing
+with  in  a  RL  environment,  and  I  don't  think  that  we  should  be  so
+limited  in  our  goals  as  to  ignore  this  as  a  valuable  potential  part  of
+
+5.3.   SOCIAL  IDENTITIES  ON  MUDS                                                              47
+
+
+
+D.U.s  environment.   I  speak  from  experience  in  this  respect,  not  only
+regarding  others  I  have  known  but  regarding  myself  as  well.
+
+
+Moreover,  lack  of  anonymity  has  a  significant  effect  on  how  people
+perceive  this  virtual  space  that  they're  in.   If  user  information  is
+available,  people  inevitably  use  it,  and  this  place  simply  becomes  a
+bunch  of  people  with  masks  on,  not  real  at  all.   With  anonymity  comes
+a  much  more  real  social  structure  and  a  feeling  that  one  is  part  of
+something  that  isn't  simply  a  game  or  a  computer  program  somewhere,
+but  a  real  society,  which  often  leads  to  a  very  real  sense  of
+belonging  (often,  in  the  case  of  people  who  are  normally
+troublemakers,  for  people  who  otherwise  don't  feel  that  they  belong
+very  much  of  anywhere),  and  a  feeling  of  social  responsibility  to
+_their_  society.
+
+
+While  it  is  inevitably  true  that  we  will  get  our  share  of
+troublemakers  and  problem  people,  this  will,  for  the  most  part,  be
+unaffected  by  whether  people  are  anonymous  or  not,  and  the  treatment
+of  real  problem  people  will  not  be  significantly  improved  by  lack  of
+anonymity  anyway.   I  strongly  believe  that  the  ability  of  the
+individual  to  choose  can  not  only  significantly  improve  the  academic
+atmosphere,  but  can  lead  to  a  better  understanding  of  this  new
+environment,  and  a  much  more  mature  attitude  towards  the  MOO  and  the
+people  in  it.
+
+
+[...]
+
+
+[...]  my  point  comes  down  to  this:  I  have  been  in  places  that  have
+complete  anonymity  and  places  that  have  very  little.   I  have  found
+almost  exclusively  that  the  places  with  anonymity  are  more
+interesting,  have  more  discussion  on  a  wider  range  of  issues,  and  have
+a  wider  range  of  people  and  experiences  available.   It  is  my  belief
+that  this  is  the  type  of  place  that  Diversity  University  should  be,
+and  it  is  my  belief  that  a  lack  of  anonymity  is  an  unnecessary  measure
+that  would  only  serve  to  hinder  this.
+
+
+---------------------------------------------------------------------------
+
+
+In  some  cases  anonymity  has  clear  advantages.   Like  ceejay  notes  on
+*MOOteach@DU  (27,  Jan  14  94)  there  are  cases  where  anonymity  is  necessary
+or  an  advantage:
+
+
+---------------------------------------------------------------------------
+
+
+[...]
+an  example  might  be  a  group  of  students  for  a  class  on  human  sexuality.   in
+an  ideal  society  i  should  be  able  to  walk  into  this  class  and  say  that  i
+am  bisexual  without  having  to  worry  about  the  other  students.   however,
+i  have  been  in  classes  where  i  was  told  that  bisexuals  were  untrustworthy.
+i  could  not  reveal  my  sexuality  in  this  class  without  having  my  opinions
+of  everything  else  colored  by  it.
+
+
+another  argument  for  anonymity  would  be  so  that  another  student  is  not
+prejudiced  by  what  obvious  characteristics  make  up  who  i  am.   for  example
+
+48                                                                      CHAPTER  5.     SOCIAL  ISSUES
+
+
+
+on  a  mud  i  can  play  a  male  or  female  character,  or  a  character  with  no
+gender  that  corresponds  to  genders  in  real  life.   like  it  or  not,  there
+is  a  great  deal  of  stereotyping  by  gender  in  life.   my  field  experience
+instructor  appears  to  believe  that  females  decide  to  stop  liking  math
+in  junior  high  because  they  (the  students)  don't  think  it  will  make
+them  appear  feminine  enough.   in  my  women's  studies  class,  it  was
+believed  that  men  could  not  discuss  the  topic  because  they  just  couldn't
+understand.
+[...]
+
+
+---------------------------------------------------------------------------
+
+
+5.4    wizards
+
+
+[under  construction]
+Wizards  are  the  organizational  backbone  of  a  MOO,  as  it  is  shown  also  in
+the  discussion  in  section  5.1.   We  would  like  to  address  several  questions
+here:
+
+    o  The  Wizard  culture
+
+    o  Owners  and  Wizards
+
+    o  Programming  vs.   Ruling  vs.   Administrating
+
+
+5.4.1     A  story  from  the  MOO  Cows
+
+In  May  95  a  kid  posted  the  following  message  to  the  MOO-Cows  mailing  list:
+
+
+
+Hi  my  name  is  Bryan  Snyder  and  i  would  like  to  apply  to  be  a  wizard  on  any
+MOO  that  is  in  need.Please  write  back  at  bjs1os@wizard.stark.k12.oh.us.  I'm
+an  experienced  at  programming  $features  and  $things.
+                                                                                   Thanks,
+                                                                                   Bryan  Snyder
+
+
+
+This  question  led  to  an  interesting  exchange  on  this  list  revealing  a  lot
+on  the  ``wizard  culture''.   Appearently  the  kid  who  posted  the  message  is  a
+``real''  7th  grader,  very  enthousiastic  about  computers  and  MOOing,  but
+quite  unaware  of  what  it  takes  to  be  a  ``real  wizard''.   In  the  first  place
+he  mostly  got  friendly,  but  ironic  remarks.   Taking  them  badly  he  reposted
+short  and  socially  inappropriate  messages  also  badly  lacking  grammar.   This
+lead  to  increasingly  nasty  messages  by  others  but  also  to  some  who  thought
+one  should  give  the  kid  a  break  and  more  who  reiterated  friendly  advice  on
+how  to  become  a  ``real  wizard''.
+Anyhow  the  interesting  thing  was  not  the  evolution  of  this  particular
+exchange,  but  some  of  detailed  remarks  he  got  back  from  real  wizards
+showing  their  understanding  of  their  role  and  the  of  the  path(es)  leading
+to  wizard  function.   In  the  following  section  we  refer  to  this  material  as
+``Brian's  request  to  be  a  wiz''.
+
+
+
+
+Bibliography
+
+
+
+[ACKERMANN,  1994]        ACKERMANN,  E.  (1994).  Direct  and  Mediated  Experience:
+    Their  Role  in  Learning.  In  LEWIS,  R.  et  MENDELSOHN,  P.,  (eds.),  Lessons
+    from  Learning.  North-Holland,  Amsterdam.
+
+[DIEBERGER,  1994a]         DIEBERGER,  A.  (1994a).  On  Navigation  in  Textual  Virtual
+    Environments  and  Hypertext.  PhD  thesis,  Vienna  Universtiy  of  Technology.
+
+[DIEBERGER,  1994b]         DIEBERGER,  A.  (1994b).  Spacial  environments  to  organize
+    and  navigate  information  and  to  communicate  about  this  organization.  In
+    Position  Paper  for  the  Workshop  at  the  European  Conference  on  Hypermedia
+    Technology,  Edinburgh.  HTTP:
+    http://www.gatech.edu/lcc/idt/Faculty/andreas_dieberger/A.Dieberger.home.html.
+
+[DIEBERGER  et  TROMP,  1993]          DIEBERGER,  A.  et  TROMP,  J.  (1993).  The
+    Information  City  project  -  a  virtual  reality  user  interface  for
+    navigation  in  information  systems.  In  Proc.  fo  the  Symposium  Virtual
+    Reality,  Vienna.  HTTP:
+    http://www.gatech.edu/lcc/idt/Faculty/andreas_dieberger/A.Dieberger.home.html.
+
+[EVARD,  1993]       EVARD,  R.  (1993).  Collaborative  Networked  Communication:
+    MUDs  as  Systems  Tools.  In  LISA,  Monterey,  CA.
+
+[FANDERCLAI,  1995]         FANDERCLAI,  T.  L.  (1995).  MUDs  in  Education:   New
+    Environments,  New  Pedagoguies.  CMC  Magazine,  2(1).  HTTP:
+    http://www.rpi.edu/%7Edecemj/cmc/mag/1995/jan/fanderclai.html.
+
+
+
+                                                      49

@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>A short look at Permissions</TITLE>
+<META NAME="description" CONTENT="A short look at Permissions">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2034" HREF="node104.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2032" HREF="node102.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2026" HREF="node102.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2036" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2037" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2035" HREF="node104.html">A generic ``holder''</A>
+<B>Up:</B> <A NAME="tex2html2033" HREF="node102.html">8.10 Permissions and Generic </A>
+<B> Previous:</B> <A NAME="tex2html2027" HREF="node102.html">8.10 Permissions and Generic </A>
+<BR> <P>
+<H2><A NAME="SECTION041101000000000000000">A short look at Permissions</A></H2>
+<P>
+<A NAME="secpermlook">&#160;</A>
+<P>
+<OL>
+<LI> Every object, property, an verb has a set of permissions
+<LI> If you own an object, it does not necessarily mean that you
+own all the properties and all the verbs. To convince yourself,
+look at an object, e.g. type '<code> @d me.</code>', this will list
+the properties of your character.
+<P>
+</OL>
+<P>
+The table below gives a short and dirty overview on existing permissions:
+<P>
+<P><A NAME="1253">&#160;</A><TABLE COLS=4 BORDER FRAME=BOX RULES=GROUPS>
+<COLGROUP><COL ALIGN=RIGHT><COLGROUP><COLGROUP><COL ALIGN=JUSTIFY WIDTH="3.5cm"><COLGROUP><COL ALIGN=JUSTIFY WIDTH="3.5cm"><COLGROUP><COL ALIGN=JUSTIFY WIDTH="3.5cm">
+<TBODY>
+<TR><TD VALIGN=BASELINE ALIGN=RIGHT NOWRAP>
+</TD><TD VALIGN=BASELINE ALIGN=CENTER NOWRAP COLSPAN=3> Suggestions for each kind</TD></TR>
+</TBODY><TBODY>
+<TR><TD VALIGN=BASELINE ALIGN=RIGHT NOWRAP>Permission </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> Objects </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> Properties </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> Verbs </TD></TR>
+</TBODY><TBODY>
+<TR><TD VALIGN=BASELINE ALIGN=RIGHT NOWRAP>r (read) </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> ok </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> ok </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99">ok </TD></TR>
+</TBODY><TBODY>
+<TR><TD VALIGN=BASELINE ALIGN=RIGHT NOWRAP>w (write) </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> never </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> almost never </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> never</TD></TR>
+</TBODY><TBODY>
+<TR><TD VALIGN=BASELINE ALIGN=RIGHT NOWRAP>x (executable) </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> - </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> - </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> use for ``this none this'' verbs </TD></TR>
+</TBODY><TBODY>
+<TR><TD VALIGN=BASELINE ALIGN=RIGHT NOWRAP>f (fertile) </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> use for generics </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> - </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> - </TD></TR>
+</TBODY><TBODY>
+<TR><TD VALIGN=BASELINE ALIGN=RIGHT NOWRAP>d (debug) </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> - </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> - </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> mostly </TD></TR>
+</TBODY><TBODY>
+<TR><TD VALIGN=BASELINE ALIGN=RIGHT NOWRAP>c (create) </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> - </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> sometimes in generic objects </TD><TD VALIGN=BASELINE ALIGN=LEFT WIDTH="99"> - </TD></TR>
+</TBODY>
+<CAPTION ALIGN=BOTTOM><STRONG>Table 8.2:</STRONG> A short summary on permissions</CAPTION></TABLE>
+<P>
+<P>
+Let's point out the highlights first and look into ``f'' and ``c''
+permissions in the next section.
+<P>
+<UL>
+<LI> General:
+<P>
+<OL>
+<LI> It is good custom to set read permissions on everything, because
+then people can look at your code, and decide whether it is safe
+to use it. ``r'' is default at <B>TECFA</B><TT>MOO</TT>.
+<LI> Write permissions, means that EVERYBODY could:
+<UL>
+<LI> add components to your object (object=w)
+<LI> reprogram a verb (verb=w)
+<LI> change the contents of properties (property=w).
+</UL>
+<P>
+Only sometimes it can be useful to set a property to ``w'', i.e.
+if want people to set a slot representing information or so.
+</OL>
+<LI> Verbs
+<P>
+<OL>
+<LI> ``x'' permissions are NEEDED for all verbs that are called by
+other verbs. If you create a ``this none this'' verb, x is added
+by default (but not if you change the argument specifiers of a verb
+with the '@arg' command! You can set command verbs to ``x'', if
+you wish to test them with the ';' (eval) or if you want to call them
+from other verbs.
+<LI> ``d'' permissions on verbs are recommended because if the verb
+breaks on an error it will print out ``feedback''.
+<P>
+</OL></UL><H4><A NAME="SECTION041101010000000000000">Inspecting and Manipulating Permissions:</A></H4>
+<P>
+You can look at permissions by using the @display ('@d) command like
+in the following transcripts:
+<P>
+<SMALL CLASS=SMALL><PRE>   &gt;@d holder
+   holder (#2108) [ readable fertile ]
+     Child of generic thing (#5).
+     Location island (#1429).
+-------------------------------- finished -----------------------------</PRE></SMALL>
+The object holder is readable and fertile
+<P>
+<SMALL CLASS=SMALL><PRE>   &gt;@d holder:show
+    #2108:show      MooBoy (#1324)   r d    any on top of/on/onto/upon this
+-------------------------------- finished -----------------------------</PRE></SMALL>
+<P>
+The :show verb is ``r'' and ``d'': readable and debug
+<P>
+<SMALL CLASS=SMALL><PRE>&gt;@d holder.holding
+.holding         MooBoy (#1324)        r      {}
+-------------------------------- finished -----------------------------</PRE></SMALL>
+<P>
+The ``.holding'' property is just readable. Now compare that to your
+holder. If you did not change anything since you worked last on your
+holding object, permissions should not be the same as above.
+<P>
+To change permissions, use the '@chmod' command (type 'help @chmod'
+in the MOO). E.g.
+<P>
+<SMALL CLASS=SMALL><PRE>   @chmod holder +f</PRE></SMALL>
+will make it fertile.
+<P>
+<SMALL CLASS=SMALL><PRE>   @chmod holder +w
+   @chmod holder -w</PRE></SMALL>
+<P>
+will make it writable (don't do that) first and then lock it for
+writing again.
+<P>
+<HR><A NAME="tex2html2034" HREF="node104.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2032" HREF="node102.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2026" HREF="node102.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2036" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2037" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html2035" HREF="node104.html">A generic ``holder''</A>
+<B>Up:</B> <A NAME="tex2html2033" HREF="node102.html">8.10 Permissions and Generic </A>
+<B> Previous:</B> <A NAME="tex2html2027" HREF="node102.html">8.10 Permissions and Generic </A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

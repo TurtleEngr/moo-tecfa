@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>What happens first to a &quot;GET&quot; request from a www client?</TITLE>
+<META NAME="description" CONTENT="What happens first to a &quot;GET&quot; request from a www client?">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2464" HREF="node138.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2462" HREF="node136.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2456" HREF="node136.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2466" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2467" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2465" HREF="node138.html">$web: the core Woo </A>
+<B>Up:</B> <A NAME="tex2html2463" HREF="node136.html">14.1 The Low Level </A>
+<B> Previous:</B> <A NAME="tex2html2457" HREF="node136.html">14.1 The Low Level </A>
+<BR> <P>
+<H2><A NAME="SECTION04711000000000000000">What happens first to a &quot;GET&quot; request from a www client?</A></H2>
+<P>
+<A NAME="secwhathappens">&#160;</A>
+<P>
+The <code>#0:do_login_command</code> is called whatever commands are
+used before connection as a character (or guest).  So if you telnet to
+the moo, there are certain commands (like help, welcome, @who,
+connect), which you can use and which are all defined on the $login
+object as ``any none any'' verbs.
+As an example, the <code>#0:do_login_command</code> calls the $login:connect
+verb after a user entered 'connect xxx yyy'. Before
+authentication the user is assigned a negative number and after
+connection his client connection will be ``attached'' to his own character
+and further things not discussed here will happen.
+<P>
+So each ``GET'' request to the moo (i.e. a www client requesting an URL)
+also goes first through the <code>#0:do_login_command</code>. Command parsing
+is all done by $login(#10) verbs as you can see here:
+<SMALL CLASS=SMALL><PRE> #0:&quot;do_login_command&quot;   this none this
+ ......
+ 19: args = $login:parse_command(@args);
+ 20: return $login:(args[1])(@listdelete(args, 1));</PRE></SMALL>
+<P>
+In principle, other http requests could also be parsed and answered
+(such as post etc) by putting verbs of that name on $login. (Post is
+being developed experimentally at the moment at MOOtiny by Jeny 25/9/95).
+<P>
+In the case of a ``GET'' http request the $login:get verb will be executed.
+This verb rebuilds the URL in some ways (more later ...)
+and passes the contents of 'GET ....' command to the www layer.
+It calls $web:hdisplay like this:
+<SMALL CLASS=SMALL><PRE>keep = $web:hdisplay($web:get_htext(req, rc, player));
+
+  where:                             
+  req is the URL, e.g.
+      /key=628528948/1835
+
+  rc is the headers received (client/referer information), e.g.
+      {&quot;Referer: http://tecfamoo.unige.ch:7777/key=628528948/1834&quot;,
+       &quot;User-Agent: Mozilla/1.1N (X11; I; SunOS 5.4 sun4m)&quot;,
+       &quot;Accept: */*&quot;, &quot;Accept: image/gif&quot;, &quot;Accept: image/x-xbitmap&quot;, 
+       &quot;Accept: image/jpeg&quot;, &quot;&quot;}
+
+  player is player no, e.g. #-451</PRE></SMALL>
+<P>
+A note about client headers:  As well as the request for a certain 
+page, the web client also sends headers such as identifying what the client 
+is, sometimes asking the server to only send the page if it's been modified 
+since the last time it got it, and so on. See the documentation on the
+offical
+<A NAME="tex2html303" HREF="http://www.ics.uci.edu/pub/ietf/http/">http protocol</A>
+page for more details (e.g. study the
+<A NAME="tex2html304" HREF="http://www.ics.uci.edu/pub/ietf/http/draft-ietf-http-v10-spec-03.html">HTTP/1.0 Internet Draft</A>.
+<P>
+If :hdisplay doesn't do a server push (returning a positive value)
+the connection is closed as expected from a ordinary http server.
+<P>
+<HR><A NAME="tex2html2464" HREF="node138.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2462" HREF="node136.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2456" HREF="node136.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2466" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2467" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html2465" HREF="node138.html">$web: the core Woo </A>
+<B>Up:</B> <A NAME="tex2html2463" HREF="node136.html">14.1 The Low Level </A>
+<B> Previous:</B> <A NAME="tex2html2457" HREF="node136.html">14.1 The Low Level </A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

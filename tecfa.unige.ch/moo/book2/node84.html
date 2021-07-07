@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>The second verb ``dump'':</TITLE>
+<META NAME="description" CONTENT="The second verb ``dump'':">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1804" HREF="node85.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1802" HREF="node80.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1796" HREF="node83.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1806" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1807" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1805" HREF="node85.html">The show verb</A>
+<B>Up:</B> <A NAME="tex2html1803" HREF="node80.html">8.4 MOO tutorialLevel </A>
+<B> Previous:</B> <A NAME="tex2html1797" HREF="node83.html">The first verb ``add'':</A>
+<BR> <P>
+<H2><A NAME="SECTION04144000000000000000">The second verb ``dump'':</A></H2>
+<P>
+Now we want you to be able to show what information is stored in
+the object. So we want to be able to say something like: 'show 1 on
+holder' to display the first element or 'show all on holder' to
+display all elements to everybody in the same room.
+<P>
+Before we do that, let's program a simple ``dump'' verb that
+will dump the contents of the object to yourself only. If
+we want a verb that works like 'dump holder' we first must
+create a simple verb like this:
+<P>
+<SMALL CLASS=SMALL><PRE>  &gt;@verb holder:dump this none none</PRE></SMALL>
+<P>
+Now you have two verb specifications as you can see with the @d command
+(be sure to type the ``<code>:</code>'' after ``holder''):
+<SMALL CLASS=SMALL><PRE>&gt;@d holder:
+holder (#2108) [ readable ]
+  Child of generic thing (#5).
+  Location island (#1429).
+ #2108:add      MooBoy (#1324)       r d    any at/to this
+ #2108:dump     MooBoy (#1324)       r d    this none none</PRE></SMALL>
+<P>
+Note, that if you don't know the <code>@d</code> command yet
+you can go and read
+section <A HREF="node154.html#seclistingcode">16.2.1</A> on page <A HREF="node154.html#seclistingcode"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>.
+Below is the code for the ``dump'' verb. Enter it now and read the
+explanation of what it does below:
+<P>
+<SMALL CLASS=SMALL><PRE>----------------------------------------------------------------------
+for item in (this.holding)
+  player:tell(item);
+endfor;
+----------------------------------------------------------------------</PRE></SMALL>
+<P>
+Here we use an iteration construct,
+i.e. the ``for looping statement''. (See also
+<A NAME="tex2html158" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_32.html#SEC32">Iteration Section</A> in the
+<A NAME="tex2html159" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_toc.html">MOO Programming Manuel</A> if you want to know more about iteration).
+<P>
+In the above case the ``for'' statement does the following thing:
+<P>
+<OL>
+<LI> It evaluates the expression <code>(this.holding)</code> which must
+return a list. Luckily we know that the ``holding'' property is a list.
+<LI> Then it cycles  <b>once for each item</b> through every statement
+between the ``for ....'' and the ``endfor;'' keywords. I.e. in our case it will
+call the ``player:tell'' verb for each item in the ``holding'' list
+and print it out.
+<P>
+</OL>
+<P>
+The ``for statement'' is a more complex one then the ``assignment''
+statement we have seen before. It can contain other statements.
+You did use some very important programming concept here:
+the iteration, i.e. doing something several times over.
+In our case we applied the <code>player:tell</code> verb several
+times, i.e. once for each item in the in the ``holding'' property.
+<P>
+Now let's try out what we have done so far: Add a few items with
+the ``add'' verb like in the transcript below and then type ``dump holder''
+to see what happens.
+<P>
+<SMALL CLASS=SMALL><PRE>&gt;add &quot;item 1&quot; to holder
+Inserted ''item 1'' to holder
+&gt;add &quot;item 2&quot; to holder
+Inserted ''item 2'' to holder
+&gt;dump holder
+item 1
+item 2</PRE></SMALL>
+<P>
+Now let's improve this program a bit.  It would be nice to add numbers
+in front of each item to be displayed for various reasons.  The
+following code will do that. An explanation of what it does is below
+and might read it first. To edit this verb again, just add the
+necessary lines in your editing buffer or edit the ``dump''
+verb again if you use an in-MOO editor.
+<P>
+<SMALL CLASS=SMALL><PRE>----------------------------------------------------------------------
+n=1;
+for item in (this.holding)
+  player:tell(n, &quot;: &quot;, item);
+  n=n+1;
+endfor;
+----------------------------------------------------------------------</PRE></SMALL>
+<P>
+Now try out again the ``dump verb'' you just programmed. If you think
+that you don't have enough information in your holder, just add a few
+items with the ``add'' verb, e.g. type: <code>'add ``new banana'' to holder'</code>.
+<P>
+In this variant of the ``dump'' verb,
+we used a classic programming construct: We added
+and displayed a counter. We also made use of a temporary variable
+``n'' that only lives as long as the verb executes.
+<P>
+This is how counters work:
+<P>
+<OL>
+<LI> a local variable acts as counter, i.e. it is holding an integer number
+that will be increased after each loop. In our case we call it ``n''.
+<LI> each time we cycle through a loop, the counter is increased by
+1. In our example we use the statement <code>n = n+1;</code>
+<LI> Last, but first the counter has to be initialized, typically
+to a value of either 1 on 0. In our example the <code>n = 1;</code> statement
+does this. Note that this statement takes place before the ``for'' statement. 
+</OL><HR><A NAME="tex2html1804" HREF="node85.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1802" HREF="node80.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1796" HREF="node83.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1806" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1807" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html1805" HREF="node85.html">The show verb</A>
+<B>Up:</B> <A NAME="tex2html1803" HREF="node80.html">8.4 MOO tutorialLevel </A>
+<B> Previous:</B> <A NAME="tex2html1797" HREF="node83.html">The first verb ``add'':</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

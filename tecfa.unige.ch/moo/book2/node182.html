@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Editing</TITLE>
+<META NAME="description" CONTENT="Editing">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="http://tecfa.unige.ch/moo/book2/tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html1" HREF="http://tecfa.unige.ch/"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/gif/icon-tecfa-unit-small.gif"  > </A> <A NAME="tex2html2858" HREF="node183.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2856" HREF="node181.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2852" HREF="node181.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2860" HREF="http://tecfa.unige.ch/moo/book2/node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <BR>
+<B> Next:</B> <A NAME="tex2html2859" HREF="node183.html">11.2 Displaying and comparing </A>
+<B>Up:</B> <A NAME="tex2html2857" HREF="node181.html">11.1 Basics</A>
+<B> Previous:</B> <A NAME="tex2html2853" HREF="node181.html">11.1 Basics</A>
+<BR> <P>
+<H2><A NAME="SECTION05111000000000000000">Editing</A></H2>
+<P>
+<A NAME="secediting">&#160;</A>
+<P>
+An important thing is to work with a MOO client suited for development
+(see section <A HREF="http://tecfa.unige.ch/moo/book2/node9.html#secClients">1.4</A>).
+Unfourtunately, not many such clients do exist.
+<P>
+Also, it is useful to have a client that can ship code for editing to
+a local full-screen editor, preferably one that supports MOO coding.
+At TECFA itself (not all of our wizards) we use the rmoo/emacs client.
+An alternative is to use various (not so good hacks) with tinyfugue or
+the new tkmoo-light client. Use an emacs client if you know emacs
+and work under Unix, else hunt down a decent client, it is worth
+the trouble! If you really can't try to learn the in-MOO editor.
+(See section <A HREF="http://tecfa.unige.ch/moo/book2/node16.html#secrmooclient">1.4.3</A> for a description of some clients and
+also watch out for Java applets that will allow local editing)
+<P>
+Important: To use a local editor, 'type @edito +l'. This will ship everything
+you edit to your editor (if your moo client allows you to do that).
+Type 'help @editoptions' for details
+At TecfaMOO with the emacs/rmoo setup we use the following setup:
+<PRE>   &gt;@edito
+   Current edit options:
+   -quiet_insert       Report line numbers on insert or append.
+   -eval_subs          Ignore .eval_subs when compiling verbs.
+   +local              Ship text to client for local editing.
+   -no_parens          include all parentheses when fetching verbs.</PRE>
+<P>
+Here is an example: 
+<PRE>   &gt;@edit #209:eat</PRE>
+<P>
+If you use the in-line moo-client you will get something like this:
+<P>
+<PRE>   Now editing #209:eat (this none none).
+   &gt;list
+     1: choice = this.kinds[random(3)];
+   __2_ player.location:announce_all(player.name, &quot; mange un &quot;, choice, &quot;.&quot;);
+   ^^^^</PRE>
+<P>
+Type 'look' to see the commands available (well some day we just might
+write a MOO editor tutorial too).
+<P>
+In the emacs client you get this in a SEPARATE window:
+<P>
+<PRE>   @program #209:eat
+   choice = this.kinds[random(3)];
+   player.location:announce_all(player.name, &quot; mange un &quot;, choice, &quot;.&quot;);
+   .</PRE>
+<P>
+To ship the code back to MOO, press ctrl-C ctrl-S, and don't change the first and the last line (e.g. the ``.'') !!
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Wed Oct 23 21:55:28 MET DST 1996</I>
+</ADDRESS>
+</BODY>
+</HTML>

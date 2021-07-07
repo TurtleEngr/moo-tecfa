@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Ken's generic classroom</TITLE>
+<META NAME="description" CONTENT="Ken's generic classroom">
+<META NAME="keywords" CONTENT="tm">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html606" HREF="node30.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/ico/navi/tex2html//next_motif.gif"></A> <A NAME="tex2html604" HREF="node27.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/ico/navi/tex2html//up_motif.gif"></A> <A NAME="tex2html598" HREF="node28.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/ico/navi/tex2html//previous_motif.gif"></A> <A NAME="tex2html608" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/ico/navi/tex2html//contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html607" HREF="node30.html">Please don't disturb!</A>
+<B>Up:</B> <A NAME="tex2html605" HREF="node27.html">Virtual Classrooms</A>
+<B> Previous:</B> <A NAME="tex2html599" HREF="node28.html">Education Tools at Diversity </A>
+<BR> <P>
+<H2><A NAME="SECTION00612000000000000000">Ken's generic classroom</A></H2>
+<P>
+<A NAME="secKensclassroom">&#160;</A>
+<P>
+Todays (April 95) probably best tested, liked and known classroom
+has been built by
+<A NAME="tex2html34" HREF="http://othmar.bvc.edu/faculty/schweller.html">Ken Schweller</A>.
+<P>
+Upon creation of a classroom a short tutorial and help is available:
+<PRE>---------------------------------------------------------------------------
+
+&gt;@tutorial
+* * * * * *   Using the GENERIC CLASSROOM : A Brief Tutorial   * * * * * * *
+     The Generic Classroom was created to give teachers greater flexibility,
+ creativity and control in conducting MOO classes.  Here are the basics of 
+classroom use. You may type 'help here' at any time for a brief summary of 
+the room commands.
+DESIGNING THE CLASSROOM:
+     You may create your own desks, tables, shelves, bulletin boards, walls
+or whatever using the @addfurniture command. Let's suppose you wished to 
+add a Lab Table to the room.  After typing '@addfurniture Lab Table' you 
+would be asked to describe the table and indicate whether it is 'sit-able'
+or not. While most furniture is 'sit-table' some things like walls and
+bulletin boards are clearly not.  Students can 'sit Lab Table', 'put
+&lt;anything&gt; on Lab Table', 'get &lt;anything&gt;', or 'look Lab Table'.  Objects on
+the Lab Table will only be seen by persons sitting there or persons who look
+at the table.  Walls, shelves, and bulletin boards are obvious places to 
+'put' things like calendars, lab equipment, or notes. To remove furniture 
+type '@rmfurniture &lt;object&gt;'. Note that each room has a built in blackboard 
+and a clock.  Just 'look blackboard' or 'look clock'.  You can write on the 
+blackboard by typing 'writeb hello class!'. 
+SETTING UP A CLASS ROSTER:
+     To set up an 'Intro to Theater' class type '@mkclass Intro to Theater'. 
+This creates a class roster for registering your students.  If you would like 
+Ken to be able to teach a different class in your room you must '@authorize 
+Ken'.  This enables Ken to use the @mkclass and other commands to create his 
+own class. You can now register your students.  Type '@setup Intro' to 
+activate Intro to Theater as the 'current' class and then type  'register 
+Bill', 'register Mary', and so on. Students registered in the 'current' class 
+can  enter the classroom even when the door is closed. To allow only 
+authorized persons to make furniture, register students or setup classes just 
+type '@restrictions on'. You may type '@status' at any time to see which class 
+is 'current', who is registered or authorized, and whether restrictions are in 
+place.
+MODERATING THE CLASS:
+     One of the main advantages of using the Generic Classroom is to moderate 
+extraneous talking and emoting.  Have the students 'sit Lab Table' or 
+wherever.  While they are seated they can only be heard by others sitting 
+with them.  This enables students to talk with each other or carry on small 
+group discussions without disturbing others.  Students who wish to be heard 
+throughout the room need only 'speakup &lt;anything&gt;', or 'stand' to be heard. 
+Emoting can be limited to tablemates only or made visible to the entire room 
+through the use of '@stifle on/off'.
+It is a good idea to type 'door close' and '@sign on' when you begin a class 
+so folks not registered in the 'current' class cannot drop in uninvited. The 
+@sign command informs others that your class is '(in session)' when they do 
+an @who listing.
+MISC:
+     There are numerous additional commands that can be used in the Generic 
+Classroom. Type 'help here' for examples of their use.
+AN INVITATION:
+     The Generic Classroom was designed to incorporate the ideas and wishes of 
+many MOO teachers.  It will continue to evolve as we all make new teaching 
+discoveries. We invite *you* to participate in the development of this 
+experimental teaching technology by bringing forward your critiques and 
+suggestions. They are most welcome!  -ken/cdr 
+&lt;end of tutorial&gt;
+
+&gt;help here
+Seminar Room (#184):
+----
+                        How To Use This Room
+     To create new tables, desks, shelves, bulletin boards etc. use the 
+'@addfurniture' command. You can 'look', 'sit', or 'put' things on most
+objects you create. While sitting you are heard only by others sitting 
+with you. If you 'stand' or 'speakup' everyone can hear you. 'Look' at
+objects to see what's on them. 
+GENERAL                     
+   look blackboard        sit Big Desk             @status
+   writeb Hi There!       stand                    put map on Bulletin
+   eraseb 4               speakup I think that..   get map
+   to Ken Hi there!       look clock               look Big Desk 
+SPECIAL
+   cleanb                   - erase entire blackboard   
+   register/unregister Ken  - add/rm Ken from *current* class
+   @addfurn/@rmfurn Desk    - add/remove a piece of describable furniture
+   door open/closed         - restrict entry to persons in *current* class
+   @mkclass/@rmclass Math   - add 'Math' to list of classes taught here
+   @setup Math              - makes 'Math' the *current* class 
+   @stifle on/off           - disable seated persons emoting to everyone
+   @sign on/off             - show 'this.session_msg' at @who command
+   @authorize/@unauth Ken   - add/rm Ken from list of authorized users 
+   @restrictions on/off     - restrict Special verbs to authorized users
+   @tutorial                - view a short tutorial on using classroom
+   @fix                     - correct seating mixups if they occur
+
+---------------------------------------------------------------------------</PRE>
+<P>
+Ken's generic classroom has been developed in tight interaction with
+teachers on DU and other MOOs.
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+vendredi, 16 février 1996, 13:41:58 MET</I>
+</ADDRESS>
+</BODY>
+</HTML>

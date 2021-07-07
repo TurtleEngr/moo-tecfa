@@ -1,0 +1,535 @@
+EduMoo administrators meeting: July-21-95@IPL
+**********************************************************************
+
+Gustavo materializes out of the ether.
+Gustavo says, "Here?"
+Nigel says, "yes, this is the conf room for the moment."
+Gustavo says, "OK."
+Nigel says, "how fast is your connection at the moment, much lag?"
+Gustavo says, "No, it's quite ok."
+Gustavo goes to get some coffee before people arrive.
+Gustavo goes idle.
+Jan materializes out of the ether.
+Jan waves to all
+Cynthia materializes out of the ether.
+Cynthia says, "hi :)"
+Jan says, "Howdy folks!"
+Gustavo is back with coffee.
+Cynthia waves.
+Nigel says, "Hello Jan and Cynthia!"
+Nigel waves.
+Cynthia sits down at Teacher's Desk. . .
+Nigel says, "how are all this day?"
+Cynthia stands up from Teacher's Desk. . .
+Cynthia says, "oops :)"
+Nigel should remove that desk... hmmmm...
+Jan [to Gustavo]: "I did actually crash the host yesterday with my reboot"
+Cynthia chuckles
+Cynthia lags a bit
+Gustavo ughs.
+Cynthia [to Jan]: "Did you read that email yet I sent you?"
+Gustavo says, "How come?"
+Jan says, "Wonder how it could've happened"
+Jan says, "The sysadmin had read some logs"
+Jan says, "he wasn't spacific as to the actual cause"
+Jan says, "Now he wants us to move to a Solaris 2.X..."
+Jan says, "what do you think about running on this platform?"
+Gustavo | think me?
+Gustavo | I don't understand that.
+Gustavo sighs.
+Jan [to Gustavo]: "yes you :)"
+Gustavo never worked with Solaris. Only heard complaints about it from Richelieu.
+Jan sighs
+Jan says, "That was what I was afraid of"
+Cynthia says, "well we knew Mohawk was on its last leg but now what?"
+Nigel seesm to remember that there was a patch for Solaris 2.x for some reason...
+Jan says, "I've read about problems with that OS on MOO-Cows too"
+Nigel [to Cynthia]: "Lingua will have to move to anew machine?"
+Cynthia [to Nigel]: "it seems so"
+Jan [to Nigel]: "yes, they're phasing out mohawk"
+Juli materializes out of the ether.
+Cynthia waves at Juli.
+Juli waves
+Jan waves at Juli.
+Nigel waves at Juli.
+Gustavo wonders whether a 'think' feature is available?
+Juli says, "aloha!"
+Gustavo [to Juli]: "hi :)"
+Juli [to Gustavo]: "Hi!  Thanks for doing all the work on teh link!!!"
+to Gustavo not as such, how is it commonly available?
+Nigel [to Gustavo]: "not as such, how is it commonly available?"
+Gustavo says, "I haven't installed the forum yet - still testing the link."
+Juli [to Gustavo]: "at your leisure, I'm just happy to be a part of it :)"
+-------------------------- Gustavo pastes: ---------------------------
+#103:"thi*nk thn*k tin*k"   any any any   rx   #1796
+ 1:  what = argstr;
+ 2:  player.location:announce_all(player:namec(1), " . o O ( ", what, " )");
+ 3:  "Last modified Mon Sep 27 17:07:07 1993 MET by Jerico (#83).";
+-------------------------------- Done --------------------------------
+Nigel [to Gustavo]: "got it, thanks."
+Gustavo hrms, seeing it's a +x verb that uses 'player'. Not quite good.
+Gustavo says, "Just a $player:thi*nk verb would do."
+---------------------------- Jan pastes: -----------------------------
+@code #95:think                                                               
+@verb #95:"think" any any any rx                                              
+@prog #95:think                                                               
+"Shorthand method to emote text in a 'think bubble'.";                        
+"Usage:  think <text>";                                                       
+"";                                                                           
+"Example: Michele types: ";                                                   
+"           >think Zzzz...";                                                  
+"         and everyone in the same room sees:";                               
+"           Michele . o O ( Zzzz... )";                                       
+"Derived from a version by Jeff@MediaMOO.";                                   
+player.location:announce_all(player:titlec(), " . o O ( ", argstr, " )");     
+-------------------------------- Done --------------------------------
+Cynthia [to Jan]: "I wrote and asked him to hold off until after the defense"
+Cynthia [to Jan]: "But I don't know if they can"
+Cynthia lags a bit
+Cynthia [to Nigel]: "Are we recording today's meeting?"
+Jan oopses see that Gustavo had already beaten him to it
+-------------------------- Gustavo pastes: ---------------------------
+@verb $player:"thi*nk thn*k tin*k" any any any
+@prog $player:thi
+player.location:announce_all(player.name, " . o O ( ", argstr, " )");
+-------------------------------- Done --------------------------------
+Nigel [to Cynthia]: "Yes, i am recording now"
+Cynthia nods at you.
+Gustavo lags.
+Jan says, "I wonder where Sky and the others are??"
+Cynthia says, "good question"
+Cynthia says, "I know Ringer can't come"
+Gustavo sees DU offline?
+Jan says, "What about Kaspar?"
+Jan says, "And the Frednet bunch?"
+Gustavo says, "Kaspar = idle 17 hours at Tecfa.."
+Jan says, "I just paged Knek@mer and told him to wake up Sky :)"
+Gustavo sees Knek active.
+Gustavo loses.
+Nigel . o O ( loses what? )
+Gustavo says, "So we're in log now?"
+Nigel nods.
+Jan claps for Nigel!
+Gustavo says, "Ok, I may start with an announcement."
+Nigel winks at Jan.
+Jan nods at Gustavo.
+Nigel nods at Gustavo.
+Juli nods at Gustavo
+Gustavo says, "Or I may bore you a bit with some GNA-Net history, as an introduction. ;)"
+Cynthia nods at Gustavo.
+Jan chuckles
+Nigel smiles.
+Jan would like to know more about GNA history
+Juli seconds that vote
+Jan says, "and the net's history"
+Gustavo won't talk about GNA history now..! :)
+Jan okays
+Gustavo says, "Anyway, short intro. When I first developed the GNA-link (between the GNA-Lab and MediaMOO), the first, natural application was the 'viewscreen'."
+Jan . o O ( widescreen? )
+Gustavo says, "An object in either side would just listen to the room and transmit to the other side. Text-based videoconferencing. :)"
+Jan nods.
+Gustavo says, "Then, using various relaying viewscreens, I created a 'proto-net', which wasn't a true network, but enabled people from various MOOs to chat in one room."
+Gustavo says, "Then I created the switchboard, which routed info dynamically through the available links..."
+Gustavo says, "...and created a very primitive 'viewscreen-through-switchboard', but never completed it..."
+Gustavo says, "Instead, the forum was the 'natural application' for the true network."
+Gustavo says, "This week I recycled all the (now useless) viewscreens, and upgraded the code."
+Gustavo says, "So now we can have viewscreens connecting any two rooms of networked MOOs."
+Gustavo drops VS2.
+Juli applauds quietly
+Jan WOWs
+@examine VS2
+VS2 (#466) is owned by Gustavo (#251).
+Aliases:  VS2
+Very much like a TV set, but has a small camera lens on one side.
+Obvious Verbs:
+  turn VS2 <anything>
+  lock/unlock VS2
+  configure VS2 <anything> <anything>
+  g*et/t*ake VS2
+  d*rop/th*row VS2
+  gi*ve/ha*nd VS2 to <anything>
+Gustavo turns VS2 on.
+[on VS2] Gustavo turns vs2 on.
+Nigel whistles softly
+[on VS2] Gustavo waves from his hut in BioMOO.
+Jan says, "by wiev screens ypou mean the forums?"
+[on VS2] Gustavo says, "Look at the vs2."
+Cynthia smiles.
+Jan . o O ( CUseeme )
+Jan says, "COOL!!"
+Cynthia says, "neat!"
+Nigel says, "wheeee!"
+Juli is impressed
+[on VS2] Gustavo grins.
+Jan says, "incredible!"
+Cynthia says, "what exactly are we looking at?"
+Cynthia says, "your room at Bio?"
+[on VS2] Gustavo says, "My home in BioMOO."
+Cynthia says, "ah!"
+Jan says, "gustavo in his bioMOO hut :)"
+Cynthia says, "cool beans!"
+[on VS2] El gato purrs.
+Cynthia chuckles
+[on VS2] Gustavo turns vs2 off.
+Gustavo says, "look at it now."
+Jan smiles.
+Cynthia shakes her head in amazement
+Gustavo says, "that's for saving bandwidth. if one side is off, it won't transmit."
+Juli spins once in her chair in salute
+Nigel [to Gustavo]: "this VS2 can hail any other viewscreen?"
+Gustavo [to Nigel]: "no, that's future development. :)"
+Gustavo . o O ( it's not yet a telephone system... )
+Gustavo says, "Viewscreens work in pairs."
+[on VS2] Gustavo turns vs2 on.
+Jan [to Gustavo]: "so the forums are obsolete now, is that what you are saying?"
+[on VS2] Ken materializes out of thin air.
+Gustavo says, "No."
+[on VS2] Gustavo [to Ken]: look at vs2
+Jan waves to ken
+[on VS2] Ken says, "hi folks"
+I don't see any Ken here.
+Nigel waves at Ken.
+[on VS2] Ken looks at vs2
+[on VS2] Ken says, "ah.."
+Gustavo says, "if the viewscreen is 'unlocked', anyone can turn it on/off"
+Gustavo says, "only owner/controller can lock/unlock, and turn on/off if locked."
+Jan nods at Gustavo.
+Gustavo says, "there's also a small configure verb for making it easier to create."
+Gustavo says, "The code is available now only in BioMOO, GNA-Lab (these for development reasons) and here at IPL (for demoing reasons ;)"
+Jan [to Gustavo]: "can any builder create her own, or would that take up to much bandwith?"
+Gustavo says, "I will upload the code to all the other MOOs shortly after the meeting."
+Gustavo has to set it +f, but yes, any builder will be able to create them.
+Nigel [to Gustavo]: "How do you establish a pair of screens between moos?"
+Jan really likes this
+Gustavo says, "To set a pair, you @create <generic> named <whatever>, and then configure <newviewscreen> dest:<otherMOO> channel:<somechannelname>"
+Gustavo says, "that's all."
+[on VS2] Ken wonders if Jan can see him..
+Jan nods.
+Gustavo says, "you have to do it at both ends, of course."
+[on VS2] Ken grins
+Jan waves at Ken in BioMOO
+Nigel says, "Wow, funky!  and they find each other at that time?"
+Gustavo says, "Ah, if you look at the vs, you see its location... you can't still see things through it."
+I don't see any "ken" on VS2.
+Gustavo invites Ken@bio to pick vs2 up..
+Gustavo says, "now look at it..."
+Nigel giggles, we get to see Ken... from the inside...
+Jan smiles.
+Juli gins widely
+[on VS2] Ken drops the vs2 (transmitting).
+Gustavo notices the programming for when someone picks a vs up isn't perfect..
+Juli isn't quite awake, that was grins
+Jan . o O ( gin this early in the morning Hawaiian time?? )
+Gustavo says, "notice the (transmitting). if off, it has no title, if holding it says (holding)."
+Juli [to Jan]: "It's just after 6:30 am"
+Jan nods.
+Gustavo . o O ( holding means - this one is on, but the other end is off )
+Cynthia has disconnected.
+The housekeeper arrives to remove Cynthia.
+Jan says, "Mohawk just dumped Cyn"
+Jan says, "lingus went down too a few mins ago"
+Jan says, "er Lingua"
+Jan [to Gustavo]: "how long have you been working on this particular implementation?"
+Gustavo says, "it took me about 4 hours to modify the code from the old prototype (through links) to the current code (through the network)"
+Jan . o O ( wow that was fast! )
+[on VS2] Ken [to Gustavo]: this is pretty cool <grin>
+Juli wows respectfully
+Gustavo was amazed at how close it was...
+Nigel hopes to be that good at programming some day.
+Juli seconds Nigels thought
+Jan smiles to itself.
+Gustavo monopolised the meeting enough - to other business?
+Juli thanks Gustavo for this work that will benefit the community
+Jan says, "This will be a very valuable addition to all the other features of the gna net"
+Jan nods.
+Nigel [to all]: "well, let me paste the agenda suggested by Cynthia in her mail..."
+--------------------------- Nigel pastes: ----------------------------
+1.  Continue to introduce new MOOs through brief presentations by
+representatives.
+2.  InterMOO newsgroup or email list (moo-ed?) as way of communicating to
+each other.
+3.  Funding for MOOs (how to attract funding).
+4.  Consortial website (meeting logs, current lists of MOOs, etc).
+5.  Research resources (resources for MOO research).
+6.  GNA consultants available to us.
+6.  New business.
+7.  Set next meeting date, place, and time.
+-------------------------------- Done --------------------------------
+Nigel says, "Since Cynthia is not with us at the moment, perhaps we shoudl start with the item of most interest?"
+Gustavo assumes we got over the 2nd 6th item? ;)
+Nigel hmmmms, two 6's...  Yes, i think we got past some of that.
+Nigel says, "Oh, and we should introduce Athemoo a bit, Juli..."
+Nigel says, "would you like to say a few words about yourself and ATHEMOO?"
+Juli says, "Aloha, and thanks for inviting me"
+Juli says, "With the help of Jan, Cynthia, Ken, Gustavo and many others, ATHEMOO was created for the Association for THeatre in Higher Education"
+Juli says, "we just opened 1 June "
+Juli says, "my goal there is to provide a learning environment and to help my colleagues inthe humanities overcome their sometimes rampant technophobia"
+Juli says, "ATHE has 2500 members, most of whom are univeristy and college educators"
+Jan nods at Juli.
+Juli says, "shall I go on, or is this enough?"
+Nigel [to Juli]: "Whatever you feel like telling us."
+Jan [to Juli]: "please go on :)"
+Gustavo says, "Do you expect to have 2500 registered members? :)"
+Cynthia materializes out of the ether.
+Jan . o O ( lag! )
+Cynthia is back :)
+Juli waves to Cyntia
+Jan waves at Cynthia.
+Jan says, "WELCOME BACK"
+Cynthia smiles.
+[on VS2] El gato has disconnected.
+Juli says, "most of our members are on e-mail systems and most have *not* ever used a moo.  To ehlp this, at the upcoming national conference I have put two computers in the exhibit hall which will be hooked up to athemoo"
+Juli says, "we have already had one international session as part of the Computers in Education conf in Perth"
+Juli says, "and the Group decided to keep meeting about Performance in Cybrspace, weekly, Tuesdays, noon Hawai'i time"
+Juli doesn't watn to take up more of our time today but wants to invite all to visit ATHE at any time, make *any* suggestions!
+Gustavo wonders whether 2 computers will be enough?
+Juli [to Gustavo]: "well, the exhibit hall is smallish :)"
+Juli says, "i would love to see a rush on the athemoo terminals"
+Jan . o O ( uhunix.uhcc.hawaii.edu 7777 )
+Jan [to Juli]: "you know I miss palms in ATHE"
+Juli [to Jan]: "thanks, sorry to leave that out"
+Juli says, "there is a palm tree on the new rooftop garden above the offices and classrooms"
+Jan smiles.
+[on VS2] Ken smiles
+Jan will try to sit under it one of these days :)
+Juli says, "I should say classroom, but more will come"
+Jan . o O ( wonder if anyone has ever made a generic palm with nuts that fall on your head? )
+Juli thinks new is an interesting term in the moo environment
+Juli smiles, will work on that Jan
+[on VS2] Ken laffs falling nuts
+Jan chuckles
+Cynthia laughs.
+Nigel smiles.
+Nigel [to Juli]: "Any other details you'd like to share?"
+Juli says, "I think only to say that I am *very* new to this and welcome any advice you may want to give"
+Cynthia smiles at Juli.
+Nigel claps for Juli and ATHEMOO.
+Cynthia cheers for Juli 
+Juli bows humbly
+Jan cheers loudly
+Ken materializes out of the ether.
+Cynthia waves at Ken.
+[on VS2] Gustavo turns vs2 off.
+Nigel waves at Ken.
+Ken waves, its me, ken
+Jan waves.
+Juli places plumeria leis on teh necks of her respected colleagues
+Cynthia smiles.
+Nigel says, "The second item on the agenda is the possibility of a list of some kind for moo folk interested in education and moos to discuss and keep in touch.  Was there any activity on this since we last met?"
+Jan [to Gustavo]: "yes could you say something about intermoo newsgroups?"
+Gustavo says, "First of all - there is a list called moo-ed. Its name is self-evident."
+Jan says, "yes yes yes :)"
+Gustavo isn't aware of the reasons not to use it.
+Nigel [to Gustavo]: "do you have the address for it on you?"
+Ken gets out his notepad..
+Gustavo says, "On InterMOO mailing lists, that's one item I haven't had time to create... <looks for address...>"
+Gustavo says, "The list itself is at moo-ed@ucet.ufl.edu, I think it's majordomo."
+Juli nods, it is
+Jan [to Gustavo]: "I don't think we can use moo-ed as a communication channel in this group since it will be seen as spam by people who are not associated with us"
+Juli blushes at teh unintended authority of that last emote
+Gustavo says, "...more than once, people told me they'd work on interMOO lists through the GNA-Net. None ever did."
+Jan [to Gustavo]: "how complicated will it be to set up such a system you think?"
+Gustavo says, "The problem is that the LambdaCore mail system is monolithic."
+Jan says, "meaning what?"
+Nigel [to all]: "is anyone here presently on moo-ed, has a feel for the list?"
+Gustavo says, "It doesn't lend itself to such modifications easily. There isn't a centralised way for getting/setting messages, etc."
+Cynthia says, "I'm on it, but haven't seen any activity lately"
+Juli has just joined
+Gustavo is in moo-ed, and knows it can be useful, isn't being used lately, the owner wants it to be used...
+Jan [to Gustavo]: "what about developing a separate system with the same interface but different implementation?"
+Gustavo says, "...and if we give it some use, and previous registrants don't like it, they can unsubscribe. They aren't using it anyway."
+Juli thinks that is a good solution
+Cynthia [to Gustavo]: "But there are lots of people on that list that use it to discuss how to use educaitonal MOOs in teaching etc...they arenot necessarily administrators of moos...so, do we need our own list I think is a good question"
+Nigel [to Jan]: "perhaps for the now, we could use moo-ed, and in the future migrate to a moo newsgroup system?"
+Jan nods at you.
+Cynthia says, "wouldn't hurt to just go for it I guess :)...see what happens :)"
+Nigel [to Gustavo]: "have you talked to the moderator about what we propose?"
+Gustavo says, "I haven't put thought on a good implementation for a net-based MOO mail system, so I don't have good answers."
+Jan nods at Gustavo.
+Loretta has arrived.
+Jan waves.
+Cynthia waves.
+Nigel says, "Hello Loretta!"
+Loretta waves back
+Loretta says, "hello all"
+Gustavo says, "From June 6th:"
+-------------------------- Gustavo pastes: ---------------------------
+As manager of the moo-ed list, I've been rather frustrated by the lack of
+activity that we've seen.  I hope that the weekend's worth of ideas gets
+moo-ed off the ground.  Please invite anyone interested in the "educational
+aspects of MOOs" to join.
+
+best
+-anthony rue
+university of florida
+-------------------------------- Done --------------------------------
+Jan says, "I guess we could use MOO-ed but we would have to air it with the list owner first"
+Juli agrees
+Cynthia says, "ah. we know true..."
+Jan says, "is true the owner??"
+Cynthia says, "and I know tari fanderclai there too"
+Cynthia says, "know of her rather"
+Cynthia says, "in fact, she explicitly asked for an invite to today's meeting and she's not here"
+Gustavo says, "So?"
+Jan nods at Cynthia.
+Juli frowns
+Cynthia says, "just an observation "
+Nigel [to all]: "then for now, shall we subscribe and commune through this moo-ed?"
+Loretta says, "am I intruding?"
+Cynthia says, "sounds fine with me"
+Jan says, "So should we just use Moo-ed as our communication channel from now on and use it to send out meeting announcements etc?"
+Nigel [to Loretta]: "No, this is a meeting of moo admins, feel free to stay and watch if you like."
+Juli agrees
+Loretta says, "thank-you"
+Jan . o O ( watch the cows go mo :) )
+Gustavo . o O ( not only watch )
+Cynthia says, "we'll first have to send an announcement to the same list I sent this meeting notice to in order to give them the information to subscribe to moo-ed if they don't already"
+Nigel [to Loretta]: "yes, jump in if you have ideas."
+Cynthia says, "then we can assume people will subscribe and start posting"
+Juli says, "if they watn action, they'll get action :)"
+Jan says, "We need to jump start the discussion I'm afraid..."
+Nigel [to all]: "Groovy.  Further discussion on moo-ed?"
+Loretta must leave now, but thanks you all
+Nigel says, "seeing none, item three is Funding for Moos"
+Juli waves to Loretta
+Nigel waves at Loretta.
+Jan says, "does anyone have any good topics that will ...yes funding..."
+Loretta goes out.
+Jan says, "what about starting a discussion on Moo-ed on that topic?"
+Nigel says, "not sure where we left this topic, strategies for getting funding?  success and horror stories?"
+Juli seconds teh notion
+Cynthia says, "someone had mentioned that DU had attracted funding..."
+Juli says, "yes, I saw that inthelog of the last meeting"
+Cynthia says, "but since they're not here we could start that discussion on the list"
+Nigel . o O ( if only we had a Jeanne.. )
+Jan says, "ok let's invite jeanne to write about how they did it in order to start the discussion"
+Gustavo guesses each MOO will have its own funding story. Not sure how much one can help the other there.
+Juli nods vigourously
+Jan [to Gustavo]: "why don't you say something about Bio's history in that respect..."
+Nigel says, "very well.  item four on the agenda is a 'consortial website' (meeting logs current lists of moos, etc)"
+Juli says, "it would help athemoo since we have no funding save the disk space allotted by the Univ"
+Jan says, "I'm sure people out there will be very happy to get ideas etc"
+Nigel says, "oops, pray continue discussion"
+Cynthia smiles at Nigel.
+Juli smiles at Nigel
+Jan stops talking
+Gustavo says, "BioMOO's history on that respect is simple. No funding."
+Jan smiles at Gustavo.
+Cynthia chuckles
+Ken grins Gustavo..
+Jan . o O ( that will be a short post )
+Juli smiles in solidarity
+Cynthia laughs.
+I don't understand that.
+Nigel smiles.
+Ken must run to lunch... bye folks.. most interesting discussion!
+Nigel says, "an IPL MOO note, IPL MOO's funding comes from out parent org, Internet Public Library..."
+Jan waves at Ken have a good one Ken
+wave ken
+Nigel waves at Ken.
+Cynthia waves at Ken.
+Ken goes home.
+Nigel says, "which is seeking funding right now.  but we've had just the loaned server so far."
+Gustavo says, "BioMOO gets full support from the sysadmin (JaimeP@Bio) and enough professorial support, but no special funding. All that I do is in extra hours."
+Jan nods.
+Jan says, "I think this is the kind of things people will be interested to hear about"
+Gustavo says, "In short, *everything* in BioMOO is voluntary work."
+Jan same in Lingua
+Nigel nods, so far everything at iplmoo has been such as well.
+Cynthia nods.
+JC has arrived.
+Nigel waves at JC.
+Nigel [to all]: "further discussion at this time about funding and such?"
+Jan thinks it will be good to continue it on moo-ed
+Juli agrees
+Cynthia agrees too
+Nigel says, "seeing none, there was talk of having a 'consortial website' for all this groups 'stuff'... meeting logs, what have you"
+Nigel says, "any action on that since last?"
+Gustavo thinks Tecfa's site is the best for that.
+Cynthia says, "well, at the time we agreed there are several excellent websites and Tecfa's is the best..."
+Cynthia nods at Gustavo.
+Cynthia says, "but we shouldn't assume Kaspar will want to do the work"
+Nigel [to Cynthia]: "Have we contacted (Kaspar?)"
+Cynthia says, "he was invited today"
+Nigel nods.
+Cynthia says, "but not contacted him specifically about this topic, no"
+Nigel says, "would someone who knows him like to send him a message asking about this?"
+Nigel says, "or her... :0"
+Jan agrees that Kaspar's work will be a good platform to work from
+Jan says, "Gustavo?"
+Gustavo just rpaged him, just in case we're in luck..
+Nigel nods.
+Jan says, "good"
+Gustavo sends him a note, ok.
+JC has disconnected.
+The housekeeper arrives to remove JC.
+Cynthia needs to go to another meeting soon...
+Nigel says, "shall we take this opportunity to set the next meeting of this group?"
+Cynthia says, "when you talk about date and time for next meeting...Ken had volunteered Collegetown at one point..."
+Jan . o O ( that ut Dallas folks killed the Lingua process )
+Juli says, "and ATHEMOO would love to offer whatever we could"
+Cynthia says, "but I don't know it he's still ok with that"
+Cynthia says, "we could go to AtheMOO and ask Ken so confirm the next one perhaps?"
+Nigel says, "having moo-ed, how soon do we want to meet again?"
+Jan says, "Well maybe we shouls all go to hawaii next :)"
+Cynthia says, "sounds good :)"
+Juli says, "weather is pretty good :)"
+Cynthia says, "I'll be out of the country until Aug 14 "
+Nigel nods to Juli, looking forward to it.
+Juli smiles
+Nigel says, "i'll be out of touch the 6th to 20thish August."
+Cynthia says, "but that's no big deal...ya'll set the date whenever"
+Juli says, "after 14 Aug would be better for me as well, since the ATHE conf is 9-12 Aug"
+Cynthia says, "maybe we can discuss the next date on the list?"
+Jan [to Gustavo]: "when it is convenient for yu?"
+Gustavo supports setting the date through the list, and does that strongly. Setting a fixed date/time and not agreeing to modify it is rather lame.
+Gustavo lags, bah.
+Juli says, "if we work through the list to set the date, who will make final decision?"
+Juli is just wondering
+Jan nods.
+Nigel [to Juli]: "You could simply decree it, as you will be hosting."
+Jan says, "if we decide to meet in ATHE you I guess :)"
+Juli nahs
+Gustavo says, "We can use the GNA method. Someone suggests something, and if there's no opposition, it's a resolution."
+Juli says, "I would want to make sure it is convenient for the rest of you and the others who were here last time"
+Nigel says, "18th August? Friday?  12:00 EDT?"
+Cynthia says, "sounds good to me"
+Jan says, "before we go, I would like to propose some loud cheering for Gustavo, after all it's his work on the GNA -net that has brought us all together here"
+Juli says, "hate to get up that early but the computers aren't too busy at this time so that would probably be good"
+Cynthia cheers for Gustavo!
+Juli cheers loudly and vigorously for Gustavo
+Jan CHEERS LOUDLY
+Cynthia smiles at Jan.
+Jan SMILEs.
+Nigel cheers as loud as he can.
+Gustavo oh wells. :)
+Juli places a maile lei on Gustavo's neck
+Cynthia says, "I will work with Juli on the list of addressed to mail this notice to about subbing to moo-ed"
+Jan . o O ( for the record :) )
+Cynthia says, "then she can post the meeting notice there"
+Juli will do
+Nigel says, "very well, i will post the rest of our agenda to moo-ed as well, as we seem to be ready to break up for today here."
+Cynthia says, "thanks for having us Nigel!"
+Nigel bows low, thank you all for coming to our humble moo.
+Gustavo says, "I'd like to suggest another item for discussion. Let's talk GMT. EDT isn't a standard time, it isn't even constant."
+Nigel says, "anyone who would like to stay and chat about stuff mooish or otherwise is welcome."
+Jan [to Nigel]: "yes thanks for the hospitality :)"
+Nigel [to Gustavo]: "Righto, GMT it is."
+Cynthia says, "I have to run..thanks everyone...good to see you Gustavo!"
+Nigel waves at Cynthia.
+Juli waves to Cynthia
+Gustavo bows.
+Cynthia waves.
+Cynthia [to Jan]: "See you back at Lingua"
+Jan waves.
+Jan says, "ok"
+Juli [to Jan]: "is Lingua back up"
+Cynthia has disconnected.
+The housekeeper arrives to remove Cynthia.
+Juli will brb
+Nigel [to Gustavo]: "Thanks once again for developing the viewscreen."
+Jan says, "should be yes"
+Jan says, "somone had killed the process :((("
+Gustavo sees Lingua offline.
+Jan says, "hmms"
+

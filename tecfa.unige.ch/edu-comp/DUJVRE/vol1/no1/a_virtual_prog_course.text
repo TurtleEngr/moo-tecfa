@@ -1,0 +1,321 @@
+=========================================================================
+Date:         Thu, 19 Jan 1995 09:58:16 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      A Virtual Programming Course using the MOO (fwd)
+
+@Copyright DUJVRE and Marcus Speh  marcus@andersen.co.uk  1994
+
+        Marcus Speh  marcus@andersen.co.uk                    21
+
+A Virtual Programming Course Using the MOO
+******************************************
+
+Marcus Speh
+Andersen, London, U.K. and
+Globewide Network Academy, Inc., Austin, TX
+
+Submitted December 3, 1994
+---------------------------
+
+ABSTRACT
+~~~~~~~~
+
+The successful running of a fully virtual programming course using
+three internet tools, World-Wide Web, Email and MOO, is reported. The
+use of the MOO for realtime interaction of students and teachers is
+particularly emphasized. Setup, running and experiences made with the
+MOO during classes are explained and investigated. In May 1994 the
+Globewide Network Academy (GNA [1]), a consortium of online schools,
+organized its first fully virtual course "Introduction to
+Object-Oriented Programming Using C++", an introductory course for the
+C++ programming language. With 80 students and 10 consultants, it was
+successfully completed by August 1994, with all interactions taking
+place on the internet. At the 1st World- Wide Web conference in May
+1994, Geneva, this course won the award for "Best Educational Service
+on the Web '94" [2].
+
+1. COURSE SETUP.
+================
+
+During the course, a global network document retrieval system called
+the World - Wide Web [3] was the central static information
+resource. Electronic mail, archived on the Web, was also used,
+allowing for remote discussion between students and teachers. However,
+the essential real-time environment to create a classroom atmosphere
+for the students was a MOO, a multi-user environment with limited
+programming capabilities using the Object-Oriented MOO language.
+
+For the first course, all online sessions were held on Diversity
+University (DU [4]), a MOO founded by Jeanne Butler McWhorter, who is
+also a director of her own classroom, "The C++ Class", with the
+visionary object-number #2000 (see fig. 1). The classroom was an
+edited version of the standard classroom on DU, written by Ken
+Schweller. For the C++ course, this room was luxuriously equipped with
+additional help commands which would guide the MOO beginners through
+their first sessions. Fig. 2 shows a list of these commands, presented
+to any user who invoked the command "classhelp".
+
+
+Marcus Speh  marcus@andersen.co.uk                            22
+
+----------------------------------------------------------------------
+
+GNA C++ Class
+
+     You see the classroom for the GNA course 'Introduction to
+     Object-Oriented Programming Using C++, Type 'look
+     blackboard','look clock' to see these items.
+     You can type 'classhelp' for a list of helpful commands in this room.
+     For info on registration matters, type 'registration'.  For
+     announcements on the Bullet Board, please type 'look bb' now.
+
+     To look at the other items here 'exam <object>' for instructions.
+
+     Exits includes [out] to computer lab and [Lib] to Library.
+     GNA Forum meetings held on Saturdays.  @go #6490 to get to GNA forum.
+     You see Teacher's Desk, Shelf, Big Table, Wall, Blackboard, and Clock.
+
+
+[Fig. 1: Description of the C++ classroom.]
+----------------------------------------------------------------------
+
+With the standard room commands "@un/authorize", all course
+consultants were added to the list of authorized classroom
+personnel. This enables them to change most of the interesting room
+properties: with the "@sign on/off" command, they could make the
+status of the class visible as "on" or "off " in the informational
+"@who" list available to all MOO users. During sessions, entrance to
+the room could be enabled/disabled through the " door open/close"
+command: with the door "closed", only registered students and
+authorized persons were allowed to enter. Unlike other rooms, failed
+attempts to enter did not send a message to all session participants,
+so class could remain undisturbed.
+
+----------------------------------------------------------------------
+******* Useful Info for the C++ Classroom *******
+
+accounts        - how to get your account if you are registered
+classhelp       - read this help
+clients         - read about available MOO client programs
+coding          - how to get an introduction to MOO coding
+getting_started - first thing to do after you received your MOO account
+guide           - MOO guide for first-timers [or: mailme #3877]
+help here       - read help about valid commands in this room
+look list       - list with information on the C++ online consultants
+map             - a map of Diversity University (we are in the Tech Complex)
+MOOhelp         - list of students who may help with MOOing
+MOOmail         - how to get started using MOOmail
+objects         - longer help on details of this room and actions
+recording       - recording class sessions
+read US-clock   - read the US clock
+registration    - if you want to register for a GNA oop/c++ course
+schedule        - see when this room is staffed with a consultant
+
+(You finish reading the C++ Class help.)
+
+
+Marcus Speh  marcus@andersen.co.uk                            23
+
+Fig. 2: Helpful commands in the C++ classroom.
+----------------------------------------------------------------------
+
+Besides the standard setup, the room was equipped with a clock showing
+local MOO time as well as GMT. In addition, a "US-clock" was made
+available with the help commands displaying a map of the USA with its
+time zones and GMT (see fig. 3). Desks and tables could be set up by
+authorized players at leisure. By default, every session was recorded
+using a MOO recorder. Recorder, tapes and clock were hidden from
+direct view by storing them in a virtual "shelf" and a virtual "wall"
+in order not to overload the room with details.  Furthermore, two
+bulletin boards, labelled "for public posting" (by everyone in the
+room) were set up in the room: one was meant for general announcements
+by course consultants, the other was for notes and announcements about
+course-related programming projects which involved only a smaller
+number of all registered students.
+
+----------------------------------------------------------------------
+
+.
+
+   .           .            .            __
+   ________.___________._______     .           /  |
+   /        .           .       \____.          /   |
+   |         .           .            |  ___  __/   /
+   |         .           .            | /   \/     |
+   |         .           .            |_|         /
+   |  06:07   .  07:07   .    08:07   .   09:07  |    14:07
+   | Pacific .  Mountain .   Central   . Eastern |   GMT/CUT
+   |         .           .             .        _/
+   |         .           .               .     |
+   \        .         .                  .   /
+   \_______.______  .             ______.   \
+   .      \_.    _     __/      .\  \
+   .        .\__/ \   /         . \  |
+   .        .      \ |          . |  |
+   .        .       \|          .  \_/
+
+
+
+[Fig. 3: Frank's "US-clock" on DU. ]
+
+----------------------------------------------------------------------
+
+
+Marcus Speh  marcus@andersen.co.uk                            24
+
+2. GETTING STARTED & RUNNING MOO CLASSES .
+===========================================
+
+To solve the problem of registration for a greater number of temporary
+users during the course duration, the "Visiting Student Player Object"
+(VSPO, object #1939 on DU) was used.  This object class gives one or
+more owners wizard-like control over a fixed set of accounts.
+Passwords, player privileges and quota can be changed at request. The
+wizards are automatically notified of changes applied to a particular
+player of the VSPO. A fixed expiration date for the whole class is
+optional. To begin with, the total of 80 player accounts was
+distributed between two managing consultants. To actually become a
+player, the students were asked to login as guest users first during
+scheduled sessions where they would receive their password and user
+identity. For this experimental course, security was not an issue,
+which is why the consultants chose a method that also included a first
+real-time interaction with new students. As their first action,
+students were asked to change their password and set their
+self-description. Besides getting informed about basic MOO commands
+through a single info page, a TV for Ken Schweller's short MOO
+programming course was set up in another room. Though the default
+student only had the privileges of a "player", many of them
+subsequently used the chance to take a deeper look into MOO
+programming and wanted to receive "builder" and even "programmer"
+privileges.
+
+Before the course, most students had not used a MOO. They usually
+logged on with the simple "telnet" command, devoid of any more
+sophisticated client. To help with this, an FTP directory of common
+clients was created [5] and other more experienced MOO players helped
+writing short descriptions for each client. One consultant, Peter
+Murray-Rust, even wrote a prototype X-based client using the tk/tcl
+meta-language and offered it to the students [6]. Lots of additional
+material could be accessed by the students and the greater public
+through the Web pages, including classroom descriptions and sample
+sessions. Parts of these texts could successfully be re-used for
+another GNA course on the use of the internet.
+
+There were no lectures in class during this course, but consultants
+were available during fixed hours. The schedule, available on the MOO
+as well as on the Web, covered up to three sessions of two hours each
+every day of the week. In addition, the consultants held a public
+meeting every Sunday to plan the following week. Transcripts of
+interesting discussions were turned into hypertext using Laura
+Pearlman's converter tool [7] and made available on the Web pages to
+become a dynamical part of the whole hypertextbook.
+
+
+
+Marcus Speh  marcus@andersen.co.uk                            25
+
+About 80% of the students used the offer to meet and question
+consultants on the MOO at least once. However, not more than 30% of
+them became regular visitors during the course.  Consequently, some
+consultants decided to switch to "sessions on demand" - if a student
+wanted advice, he or she had to notify the consultant via MOOmail or
+email to come to the classroom. Since the consultants were kept busy
+preparing the hypertextbook and Web material and carrying out various
+administrative tasks, too little time remained to further explore all
+the possibilities of the MOO for this first programming course. In
+general, the time needed to prepare students for MOO interaction and
+guide them during their first days was underestimated. Also, threaded
+email discussions were a strong competitor for the MOO sessions which
+constituted the most experimental part of this prototype course.
+
+3. SUMMARY AND OUTLOOK.
+========================
+
+In spite of many shortcomings during this first course, the overall
+opinion of most students and consultants was that the MOO is a very
+promising resource. For a programming course trying to teach a
+relatively complex language such as C++, graphical help would be
+greatly appreciated. Both WWW and a gopher slate - which, in
+principle, would have made it possible to paste short programs to the
+MOO - were available, but not much used. Linking the MOO to the Web
+would avoid duplication of material and save MOO database space, and
+ongoing work of GNA people in this area will benefit future courses
+[8]. Most certainly, it will pay to have a subgroup of the consultants
+dedicated to MOO coursework, and similarly for WWW and Email
+interaction. By the same token, one cannot expect 100% enthusiasm for
+each part of this hybrid approach to online teaching. Since the
+present diverse structure of the student audience is undoubtedly here
+to stay, we will have to be diverse in the methods we can offer as
+well. The MOO is one with a great potential that has only barely been
+scratched.  It's full capababilities can only be realised through
+using it to teach many courses to many students.
+
+Results of the course and evaluations have been written up in various
+papers by the author of the present article, Sandra Burke, Daniel
+Perron and Tina Pitt. They are (or will be) available via FTP [2].
+
+
+
+Marcus Speh  marcus@andersen.co.uk                            26
+
+5. REFERENCES.
+==============
+
+[1] See e.g. "The Times Higher Education Supplement", London (UK),
+Sept. 16, 1994, page xii. On WWW, see
+"http://uu-gna.mit.edu:8001/uu-gna/".
+
+[2]</A> On WWW, see "http://uu-gna-mit.edu:8001/uu-gna/text/cc/".  A
+HTML version of this article is available in the directory "papers/"
+below this hierarchy, as well as other publications on the course and
+Tina Pitt's final evaluation. Via FTP, these papers are available at
+"ftp.desy.de" in " pub/uu-gna/html/cc/papers/" as well.
+
+[3] See K. Hughes "Entering Cyberspace - Introduction to the
+World-Wide Web", anonymous FTP to "ftp.eit.com" in "pub/www.guide", or
+the WWW section of the GNA Online Teaching Manual (in preparation,
+contact: Cindy Bartorillo <cindy@fred.net>)
+
+[4] See A. Dinsdale's WWW pages at "http://pass.wayne.edu/DU.html".
+
+[5] This collection of MOO clients is available via anonymous FTP to
+"ftp.desy.de" in "pub/uu-gna/moo/".
+
+[6] PeterMR's GUI for MOOs, called "exMOO" is available on the Web
+from " http://www.dl.ac.uk/CBMT/exMOO/HOME.html". He can be reached
+via Email at <pmr1716@ggr.co.uk>
+
+[7] This perl script is available via anonymous FTP to "ftp.desy.de"
+as "pub/uu-gna/moo/moo2html.pl".
+
+[8] An example is the moo/www discussion list maintained by Colman
+Reilly <creilly@maths.tcd.ie> - to particpate, you can email "
+moo-www-request@maths.tcd.ie"
+
+
+
+Marcus Speh  marcus@andersen.co.uk                            27
+
+ACKNOWLEDGEMENTS.
++++++++++++++++++
+
+The GNA and the author are indebted to Ken Schweller for designing and
+frequently debugging early versions of his marvellous classroom, to
+Laura Pearlman, a consultant to the course, for her moo2html converter
+of MOO recorder transcripts into hypertext markup language [6], to
+many students and consultants for their constructive critique and to
+the wizard team of DU for making this interaction possible in the
+first place. Thanks also to Carlye Dinnell, GNA's Press Officer in the
+UK, for careful proofreading.
+
+
+----------------------------------------------------------------------
+About the author: Marcus Speh is the chairman of the board of
+directors of the GNA . In his life off the net, he works for Andersen
+in London.  On the internet, his main interest is the development of
+online courses using the Web and the MOO. More about him is available
+on the Web, at the address http://www.desy.de/www/marcus.html

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Functional Programming</TITLE>
+<META NAME="description" CONTENT="Functional Programming">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1713" HREF="node78.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1711" HREF="node73.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1705" HREF="node76.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1715" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1716" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1714" HREF="node78.html">Procedural/structural Programming</A>
+<B>Up:</B> <A NAME="tex2html1712" HREF="node73.html">8.2 Programming: the General </A>
+<B> Previous:</B> <A NAME="tex2html1706" HREF="node76.html">Object Oriented Programming</A>
+<BR> <P>
+<H2><A NAME="SECTION04124000000000000000">Functional Programming</A></H2>
+<P>
+<A NAME="secfunctionalprog">&#160;</A>
+<P>
+[more to come]
+<P>
+Functional programming means calling that functions with some
+arguments. Those functions return a value, a list of values or
+multiple values. In most programming languages, function calls
+are done in the following way:
+     function-name (argument1, argument2, ....)
+<P>
+Function calls often used in an embedded way, like
+outer-function(next-function(next-function(innermost-function(args))))
+Here is a imaginary example:
+<SMALL CLASS=SMALL><PRE>  display-nicely
+     (sort-list
+            (retrieve-all-players(player-data-base, guest-data-base)
+            :how alphabetically)
+      )</PRE></SMALL>
+<P>
+Functional programming style is useful in several situations, e.g.
+<P>
+<UL>
+<LI> When you want to implement filters, i.e. procedures that
+that transform data into temporary data-structures you need
+for some job.
+<LI> In complex ``systems'' where the application layer allows
+application programmers to specify how certain operations on
+certain objects are to be done. A good example is TECFA's WWW interface.
+E.g. a function like :htext has the task to return a list of ``good''
+html which then can be dumped back to a www client by another
+procedure. And you can define your own :htext for any MOO object
+you own.
+</UL>
+<P>
+It is possible to mix functional and procedural and object oriented
+programming style. However this is not always a good idea. Ideally
+procedures ``sold'' as functions should just return a value and NOT
+modify permanent data-structures. This way others and even you
+can use your functions and *just* expect that they will take some
+data, do something with them and return the result back to your
+procedure for for further use.
+<P>
+If functions do alter data somewhere, you have to document that
+somewhere.
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

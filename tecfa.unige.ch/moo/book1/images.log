@@ -1,0 +1,59 @@
+This is MlTeX, C Version 3.141 (C version d) (format=lplain 92.12.10)  16 FEB 1996 13:46
+**images.tex
+(images.tex
+LaTeX Version 2.09 <25 March 1992>
+
+(/unige/tex/lib/tex/inputs/standard/book.sty
+Standard Document Style `book' <14 Jan 92>.
+(/unige/tex/lib/tex/inputs/standard/bk10.sty)
+\descriptionmargin=\dimen99
+\c@part=\count82
+\c@chapter=\count83
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+\c@figure=\count89
+\c@table=\count90
+) (/unige/tex/lib/tex/inputs/standard/a4.sty
+Style option `A4' 1.2a <30 Nov 90> (NP and JLB)
+English documentation   <26 Feb 90> (JLB)
+) (/unige/tex/lib/tex/inputs/standard/psfig.sty
+\@unused=\write3
+\ps@stream=\read1
+\p@intvaluex=\dimen100
+\p@intvaluey=\dimen101
+psfig/tex 1.10-dvips
+) (/unige/tex/lib/tex/inputs/divers/html.sty)
+\@indexfile=\write4
+Writing index file images.idx 
+\lthtmlwrite=\write5
+\sizebox=\box25
+(images.aux)
+Overfull \hbox (516.00705pt too wide) in paragraph at lines 74--74
+[]\tentt You see a newspaper, Reflecting Pool, CollegeTown Flag, Clock, Map of 
+Collegetown, Buzzword Generator, Public Bulletin Board, INTERESTS DIRECTORY, BA
+NNER, and [marilyn] here.[] 
+
+\hbox(6.94444+2.22223)x397.48499
+.\hbox(0.0+0.0)x0.0
+.\tentt Y
+.\tentt o
+.\tentt u
+.\penalty 10000
+.etc.
+
+[1] (images.aux)
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+ ) 
+Here is how much of TeX's memory you used:
+ 553 strings out of 11850
+ 6124 string characters out of 86328
+ 39540 words of memory out of 262141
+ 2582 multiletter control sequences out of 9500
+ 18996 words of font info for 72 fonts, out of 100000 for 255
+ 31 hyphenation exceptions out of 607
+ 12i,4n,17p,195b,262s stack positions out of 300i,40n,60p,3000b,4000s
+
+Output written on images.dvi (1 page, 1384 bytes).

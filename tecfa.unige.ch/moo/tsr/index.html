@@ -1,0 +1,195 @@
+<HTML>
+<HEAD>
+<TITLE>Accès MOO pour la TSR (20-Sep-1996)</TITLE>
+<!-- Created by: D.K.S., 20-Sep-1996 -->
+<!-- Changed by: D.K.S., 20-Sep-1996 -->
+
+
+</HEAD>
+<BODY>
+
+<H1><A NAME="xtocid9810">Accès MOO pour la TSR</A></H1>
+
+Page préparée pour M. Schindler ("vite fait bien fait" !)
+
+<P>
+<strong>Contents</strong><p>
+<UL>
+<LI><A HREF="welcome.html#xtocid9810"><STRONG>Accès MOO pour la TSR</STRONG></A>
+<LI><A HREF="welcome.html#xtocid9811"><STRONG>Connexion à l'hôte, login etc.</STRONG></A>
+<UL>
+<LI><A HREF="welcome.html#xtocid9812"><EM>"Login"</EM></A>
+<UL>
+<LI><A HREF="welcome.html#xtocid9813">Accès avec un applet JAVA</A>
+<LI><A HREF="welcome.html#xtocid9814">Accès via le WWW</A>
+</UL>
+<LI><A HREF="welcome.html#xtocid9815"><EM>Clients suggérés</EM></A>
+</UL>
+<LI><A HREF="welcome.html#xtocid9816"><STRONG>Commandes de base</STRONG></A>
+<UL>
+<LI><A HREF="welcome.html#xtocid9817"><EM>Voir aussi:</EM></A>
+</UL>
+<LI><A HREF="welcome.html#xtocid9818"><STRONG>Pour plus d'informations:</STRONG></A>
+<UL>
+<LI><A HREF="welcome.html#xtocid9819"><EM>Quelques remarques techniques</EM></A>
+<LI><A HREF="welcome.html#xtocid98110"><EM>Pointeurs</EM></A>
+</UL>
+</UL>
+
+<hr>
+<H1><A NAME="xtocid9811">Connexion à l'hôte, login etc.</A></H1>
+
+<H2><A NAME="xtocid9812">"Login"</A></H2>
+
+Pour accéder au MOO il faut d'abord choisir un moyen d'accès (voir ci-dessous).
+Ensuite il faut se "logger" en 
+rentrant la commande suivante dans un client MOO
+(substituez "mot-de-passe" par votre mot de passe).
+<UL>
+<li>Acces "normal":
+<pre>
+    connect TSR mot-de-passe
+</pre>
+<li>Acces comme un enfant:
+<pre>
+    connect TSRKid mot-de-passe
+</pre>
+</UL>
+
+Notre MOO se trouve sur l'hôte: <STRONG>tecfamoo.unige.ch</STRONG> , porte: <STRONG>7777</STRONG>. Si jamais votre DNS est en panne voici le numéro IP: 129.194.12.39.
+
+<hr>
+<H3><A NAME="xtocid9813">Accès avec un applet JAVA</A></H3>
+
+Nécessite aucune installation de votre part (sauf avoir Netscape 2.x ou mieux).
+Il s'agit de "clients" simples, mais utilisables. Dès que vous clickez sur
+un applet ci-dessous il est téléchargé dans votre browser et la connextion
+s'établit avec notre MOO. Il suffit de rentrer les commandes dans la petite
+ligne blanche pour input. Il faut commencer une séance en tapant "connect TSR ...." (voir ci-dessus). 
+<UL>
+<li><A HREF="../clients/surfnturf/WebMOO.html">Surf'n Turf</A> (recommandé)
+
+<LI><A HREF="../clients/mudslide/telnet-tecfa.html">MudSlide</A> (si Surf'n Turf ne marche pas)
+
+<LI><A HREF="../clients/jmud/telnet-tecfa.html">JMUd</A>
+(si les autres ne marchent pas)
+
+</UL>
+
+<H3><A NAME="xtocid9814">Accès via le WWW</A></H3>
+
+L'accès via le Web permet de regarder les objets du MOO et parfois de les
+manipuler. Cet interface n'est pas utile pour communiquer !!
+<UL>
+<LI><A HREF="http://tecfamoo.unige.ch:7777/">Home page MOO-WWW</A>
+
+<LI><A HREF="http://tecfamoo.unige.ch:7777/auth">Page de login</A> (pour avoir un accès total à ses propres objets)
+
+<LI>
+
+</UL>
+
+
+<H2><A NAME="xtocid9815">Clients suggérés</A></H2>
+
+Pour Windows
+<UL>
+<LI>MUDWIN: Il s'agit d'un client simple (comme utilisé par les
+élèves de Malagnou.). Il semble avoir un problème de fontes avec Win95.
+<UL>
+<LI>Il faut telecharger les fichiers qui sont ici: <A HREF="ftp://tecfa.unige.ch/pub/software/win31/mud-clients/mudwin/">ftp://tecfa.unige.ch/pub/software/win31/mud-clients/mudwin/</A><br>
+(Ou alternativement telecharger <A HREF="ftp://tecfa.unige.ch/pub/software/win31/mud-clients/">l'archive mudwin.zip</A> si vous possédez le logiciel "WinZip".
+<li>Pour ouvrir une connection avec un MOO il faut utiliser le menu "file",
+l'option NEW (ou OPEN les prochaines fois):
+<pre>
+   HOST:   tecfamoo.unige.ch
+   PORT:   7777
+</pre>
+<li>Ensuite on rentre les commandes dans la petite fenetre blanche.
+</UL>
+<li>Si vous avez un informaticien à disposition, je suggère l'installation
+du client <A HREF="http://www.cs.cf.ac.uk/User/Andrew.Wilson/tkMOO-light/">tkMOO light</A> (environ 1 heure de travail).
+</UL>
+
+<hr>
+
+<H1><A NAME="xtocid9816">Commandes de base</A></H1>
+
+Notez que la plus part des gens apprennent à MOOer par immersion. On leur
+donne qq commandes de base et ensuite ils apprennent en "faisant" dans le MOO.
+
+<br>Commandes de base:
+<pre>
+
+say                                  - parler dans une salle -
+     say bonjour, comment ca va ?
+     "bonjour, comment ca va ?
+page                                 - parler à distance ou en secret -
+     page Kaspar on va manger ?
+emote                                - "poser", montrer des emotions -
+     emote rigole
+     :rigole
+@join                                - joindre une personne -
+     @join Kaspar
+go                                   - aller qq part -
+     go up 
+     up
+look                                 - regarder des objets -
+     look Daniel
+
+</pre>
+
+<H2><A NAME="xtocid9817">Voir aussi:</A></H2>
+<UL>
+<li><A HREF="../guides/beginners.html">Short Beginner's Guide</A> for MOO navigation and communication
+<li><A HREF="../guides/MOO-quick-reference.text">MOO Quick reference</A> (Ascii Text)
+<LI><A HREF="../tecfaman/www/TecfaMOOMan_1.html">Manuel introductif en français</A> (nécessite un "update")
+<LI><A HREF="http://tecfa.unige.ch/moo/book2/tm2.html">TecfaMOO Technical Manuel</A> (sous construction)
+</UL>
+
+<hr>
+<H1><A NAME="xtocid9818">Pour plus d'informations:</A></H1>
+
+<H2><A NAME="xtocid9819">Quelques remarques techniques</A></H2>
+Un "MOO" est un serveur de réalité virtuelle textuelle (RVT). Il s'agit d'une sorte de combinaison entre les
+forums du Télétexte (ou Compuserve) et les jeux d'aventures textuelles.
+Imaginez d'être à l'intérieur d'un livre vivant.
+Cette technologie est à nos yeux (et sur le plan
+fonctionnel) le précurseur le plus important du futur "cyberspace".
+
+Un MOO peut être caractérisé de la façon suivante (sorry for some English):
+<UL>
+<LI>Beaucoup de gens peuvent se connecter à un server (ou plus proprement
+parlé à un caractèrs ou personnage ou avatar)
+
+<LI>Le MOO possède une organisation spaciale, vous interagissez avec
+d'autres personnes ou les objets principalement dans des "salles" (rooms)
+qui sont en principe connectés entre elles par des "portes".
+
+<li>Un "monde" MOO est programmé depuis l'intérieur. Cela veut dire que
+depuis le monde entier les gens peuvent se connecter et transformer
+ce monde en y rajoutant des objets et/ou des nouvelles fonctionalités.
+
+<LI>Within a MOO, many real time communication actions exist, like "saying"
+or "emoting" things publically to the persons in a "room", paging people
+elsewhere, "whispering" messages, using a "CB" channel, etc.
+
+<LI>Asynchronous communication tools include internal e-mail, Newsgroups,
+News papers, tutorial rooms, "white boards", etc.
+
+<li>Artifacts include talking "Robots", "specially designed rooms for teaching or discussion", "transport vehicles, notes and books, and anything that can
+be imagined and programmed.
+</UL>
+
+<H2><A NAME="xtocid98110">Pointeurs</A></H2>
+
+<UL>
+<LI><A HREF="http://tecfa.unige.ch/tecfamoo.html">Home Page Projet TecfaMOO</A>
+<li><A HREF="../projects.html">Quelques projets du TECFAMOO</A> (en Anglais)
+<li><A HREF="http://tecfa.unige.ch/edu-comp/WWW-VL/eduVR-page.html">"Educational VR(MUD) page</A>. Un Indexe de ce qui se passe au niveau international
+</UL>
+
+
+<ADDRESS> <A Name=Signature HREF="http://tecfa.unige.ch/tecfa/general/tecfa-people/schneider.html">D.K.S.</A></ADDRESS>
+</BODY>
+</HTML>

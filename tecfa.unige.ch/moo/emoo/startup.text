@@ -1,0 +1,19 @@
+How e_moo starts (Uncomplete DKS - 3/01)
+
+@program $sys:server_started   this none this
+ 1:  if (callers())
+ 2:    return E_PERM;
+ 3:  endif
+ 4:  $last_restart_time = time();
+ 5:  for object in ($announce_startup)
+ 6:    fork (0)
+ 7:      object:server_started();
+ 8:    endfork
+ 9:  endfor
+10:  /* Last edited on Mon Aug 19 19:37:01 1996 GMT+1 by Gustavo (#207). */
+--
+
+>@d #0.announce_startup
+.announce_startup        Mother (#2)           r c    {#4029, #3944, #270}
+
+Basically you have to study $httpd first !

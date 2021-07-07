@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>MOO variables</TITLE>
+<META NAME="description" CONTENT="MOO variables">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2222" HREF="node119.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2220" HREF="node116.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2216" HREF="node117.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2224" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2225" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2223" HREF="node119.html">10.6 Expressionsstatements, commands, </A>
+<B>Up:</B> <A NAME="tex2html2221" HREF="node116.html">10.5 Variables and Values</A>
+<B> Previous:</B> <A NAME="tex2html2217" HREF="node117.html">Values (by Andy Bakun)</A>
+<BR> <P>
+<H2><A NAME="SECTION04352000000000000000">MOO variables</A></H2>
+<P>
+<A NAME="secmoovariables">&#160;</A>
+<A NAME=1566>&#160;</A>
+<P>
+<EM>Acknowledgement:</EM> This text is a formatted
+version of a message posted to *Teaching on WorldMOO by Andy Bakun.
+<P>
+Variables are named slots that can be used to store a value.  The
+names of variables always begin with a letter or an underscore (_),
+and can have any number of of letters, numbers, or underscores after
+that. Variable names are case insenitive, meaning the variable named
+FOO is the same as the variable named foo. We can use eval to test
+this:
+<P>
+<SMALL CLASS=SMALL><PRE>  ;;foo = &quot;bone&quot;;  return FOO
+  =&gt; &quot;bone&quot;</PRE></SMALL>
+<P>
+Variables can not be named after any of the moo keywords, namely,
+while, for, return, in, endwhile, endfor, if, endif.  Variables also
+can't be named the same as the Error values.
+<P>
+Variables are expressions that return the value they represent.  They
+can take on any value at any time.  Once a variable is created, it
+exists for the entire verb execution, but once the verb ends, the
+variable is destroyed for that execution cycle.  Variables do not keep
+their values or even existance across verb calls (exceptions exist for
+the builtin variables) or across verb invocations.  Variables can be
+operated on just like all other MOO values, but only using the rules
+of the same type with which that variable holds.
+<P>
+<SMALL CLASS=SMALL><PRE>   x = #4;
+   return x + 3;
+   =&gt; E_TYPE  (you can't add an object and a number)
+   
+   x = 4;
+   return x + 3;
+   =&gt; 7 (you can add numbers)</PRE></SMALL>
+<P>
+Variables are often used to store the result of some expression.  If
+an expression's result wasn't assigned to a variable, then the
+expression's result would be tossed on the floor and forgotten about.
+<P>
+Variables that are defined return E_VARNF (Variable not found).  This
+will cause a traceback if the verb is +d, or the variables value will
+be E_VARNF if the verb is !d.
+<P>
+<SMALL CLASS=SMALL><PRE>   foo = bar;</PRE></SMALL>
+This assigns the value of the variable bar to the variable foo.
+<P>
+<SMALL CLASS=SMALL><PRE>   foo = foo + bar;</PRE></SMALL>
+<P>
+this sets foo equal to the result of foo plus bar (what exactly foo +
+bar equals is dependant on the types)
+<P>
+foo + bar is not the same as foobar.  foobar is an entirely differnt
+variable name.
+<P>
+It's good programming practice to use descriptive variable names.
+It's much easier to understand your code 5 months after you wrote it
+and it's getting an error if you can tell what each variable if for by
+looking at it's name.
+<P>
+<SMALL CLASS=SMALL><PRE>for x in (players())</PRE></SMALL>
+<P>
+If the body of the for is big, you will find yourself wondering what x
+exactly holds.  Its much clearer to write:
+<P>
+<SMALL CLASS=SMALL><PRE>   for dude in (players())
+          or
+   for loser in (players())</PRE></SMALL>
+it makes for better readability
+<P>
+The MOO sets aside some variable names for you, that contain certain
+things about the run time enviroment of your verb.  The player
+variable holds the object number of the current player.  args is the
+arguments that were passed to your verb.  dobj and iobj hold the
+direct and indirect object specifiers on your verb, and dobjstr and
+iobjstr hold the strings that the player entered for the direct and
+indirect objects.  prep holds the entered preposition.  5 variables
+also exist to make the results of the typeof() functions easier to
+read, they are STR, NUM, LIST, OBJ, and ERR.  typeof() returns a
+number, and these variables can be used to compare, allowing greater
+readability than comparing to numbers.
+<P>
+<SMALL CLASS=SMALL><PRE>   if (typeof(1) == NUM)</PRE></SMALL>
+is more readable than
+<SMALL CLASS=SMALL><PRE>   if (typeof(1) == 0)</PRE></SMALL>
+<P>
+(note ;NUM =&gt; 0, ;STR =&gt; 2, in case you want to find out the values of
+these variables.)
+<P>
+Two other variables are this and verb, which contain the object number
+that the currently executing verb is on, and the name of the currently
+executing verb.  Any builtin variable that is empty will contain &quot;&quot; if
+it's type is a string, and $nothing (#-1) if it's type if susposed to
+be an object.
+<P>
+<HR><A NAME="tex2html2222" HREF="node119.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2220" HREF="node116.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2216" HREF="node117.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2224" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2225" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html2223" HREF="node119.html">10.6 Expressionsstatements, commands, </A>
+<B>Up:</B> <A NAME="tex2html2221" HREF="node116.html">10.5 Variables and Values</A>
+<B> Previous:</B> <A NAME="tex2html2217" HREF="node117.html">Values (by Andy Bakun)</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

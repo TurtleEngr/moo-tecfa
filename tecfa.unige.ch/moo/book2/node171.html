@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>$web: the core Woo layer</TITLE>
+<META NAME="description" CONTENT="$web: the core Woo layer">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="http://tecfa.unige.ch/moo/book2/tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html1" HREF="http://tecfa.unige.ch/"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/gif/icon-tecfa-unit-small.gif"  > </A> <A NAME="tex2html2704" HREF="node172.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2702" HREF="node169.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2696" HREF="node170.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2706" HREF="http://tecfa.unige.ch/moo/book2/node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <BR>
+<B> Next:</B> <A NAME="tex2html2705" HREF="node172.html">$web:get_htext</A>
+<B>Up:</B> <A NAME="tex2html2703" HREF="node169.html">10.1 The Low Level </A>
+<B> Previous:</B> <A NAME="tex2html2697" HREF="node170.html">What happens first to </A>
+<BR> <P>
+<H2><A NAME="SECTION04512000000000000000">$web: the core Woo layer</A></H2>
+<P>
+Now let's examine $web and its key verbs (as in TecfaMOO of Sept 95):
+<PRE>Web (#1200) [ readable ]
+  Child of Root Class (#1).
+ #1200:get_mime                 Irradiate (#226)     rxd    this none this
+ #1200:generate_error           Irradiate (#226)     rxd    this none this
+ #1200:path_to_list             Irradiate (#226)     rxd    this none this
+ #1200:log                      Irradiate (#226)      xd    this none this
+ #1200:do_login_command         Irradiate (#226)     rxd    this none this
+ #1200:headdisplay              Irradiate (#226)     rxd    this none this
+ #1200:get_htext                Irradiate (#226)     rx     this none this
+ #1200:hdisplay                 Irradiate (#226)     rxd    this none this
+ #1200:do_url                   Irradiate (#226)     rx     this none this
+ #1200:is_netscape              Irradiate (#226)     rxd    this none this</PRE>
+<P>
+So the usual calling sequence is:
+<OL>
+<LI> $web:hdisplay
+<LI> $web:get_htext (can call itself with a modified URL)
+<LI> $web:do_url
+<P>
+</OL>
+<P>
+The <EM>$web:hdisplay</EM> verbs dumps back lines of html to the www client.
+If it breaks it means that its argument has been misconstructed somewhere
+down the line. It expects the following kind of construction:
+<P>
+<PRE> args[1][1]  htext:   a list of strings (the actual html text)
+                      dumped to the www client
+     [1][2]  wooer:   the calling player #
+     [1][3]  headers: client headers
+     [1][4]  keep:    connection open bit (0 or 1)</PRE>
+<P>
+This is quite easy to understand, now let's examine the harder stuff,
+i.e. how the request is parsed by $web:get_htext.
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Wed Oct 23 21:55:28 MET DST 1996</I>
+</ADDRESS>
+</BODY>
+</HTML>

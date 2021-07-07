@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>10.2 The MOO Programming Manual and Lambda-type databases</TITLE>
+<META NAME="description" CONTENT="10.2 The MOO Programming Manual and Lambda-type databases">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2127" HREF="node111.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2125" HREF="node108.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2119" HREF="node109.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2129" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2130" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2128" HREF="node111.html">10.3 Objects and properties</A>
+<B>Up:</B> <A NAME="tex2html2126" HREF="node108.html">Elements of the MOO </A>
+<B> Previous:</B> <A NAME="tex2html2120" HREF="node109.html">10.1 Introduction to the </A>
+<BR> <P>
+<H1><A NAME="SECTION04320000000000000000">10.2 The MOO Programming Manual and Lambda-type databases</A></H1>
+<P>
+<A NAME="secTheessential">&#160;</A>
+<P>
+The most important source for MOO programmers is the
+<A NAME="tex2html202" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_toc.html">MOO Programmer's Manual</A>. Now note a few things:
+<A NAME=1325>&#160;</A>
+<P>
+<OL>
+<LI> 
+  The MOO Programmer's Manuel is not suited for total beginners. Go through
+chapter <A HREF="node70.html#chaBasicMOOProgramming">8</A> on page <A HREF="node70.html#chaBasicMOOProgramming"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A> at the same time.
+Let's quote from the Manual:
+``MOO, the programming language, is a relatively small and simple
+object-oriented language designed to be easy to learn for most
+non-programmers; most complex systems still require some significant
+programming ability to accomplish, however''.
+<LI> If you do know how
+to program in some C-like language and preferably some lisp-like language too
+all you need to worry about are things like command parsing
+(see section <A HREF="node113.html#secverbs">10.4</A>), permissions (see section <A HREF="node120.html#secpermissions">10.7</A>)
+and so on. Regarding those elements, think of the MOO as an operating
+system of a virtual reality environment.
+<LI> The MOO programmer's Manual does not contain add-ons (libraries) that are part of the data base.
+Most data bases are lambda-moo based, though many have a lot of extensions
+and modifications.
+The Lambda core user's and programmer's manuals are useful and
+can be found at <A NAME="tex2html204" HREF="ftp://ftp.parc.xerox.com/pub/MOO/contrib/docs/">in the Xerox archives</A>. Note however, that most MOOs have their
+core modified and that a few use a REALLY different core.
+At Tecfa you consult the
+<A NAME="tex2html205" HREF="http://tecfa.unige.ch/cgi-bin/info2www?(LambdaCoreManual.info)">LambdaCore User's Manual</A> and
+<A NAME="tex2html206" HREF="http://tecfa.unige.ch/cgi-bin/info2www?(LambdaProgMan.info)Top">Programmer's Manual</A> on-line,
+but they are outdated even for LambdaMOO.
+You can probably learn more by looking at objects in the MOO you work.
+Some MOOs do have WWW-based code browsing interfaces.
+At Tecfa, check out <A NAME="tex2html207" HREF="http://tecfa.unige.ch:7778/">E_WEB</A>.
+See section <A HREF="node156.html#secewebobjbrowse">16.3</A> on <A HREF="node156.html#secewebobjbrowse"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A> for details
+about this interface.
+<P>
+Below you find a few direct pointers into the 
+<A NAME="tex2html208" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_toc.html">MOO Programmer's Manual</A> on-line at our site. It's a short version of
+its <A NAME="tex2html209" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_toc.html">Table of Contents</A>.
+<P>
+</OL><H4><A NAME="SECTION04320010000000000000">Server and Database Basics:</A></H4>
+<P>
+<OL>
+<LI>
+<A NAME="tex2html210" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_1.html">Introduction</A>:
+<LI>
+<A NAME="tex2html211" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_2.html">The LambdaMOO Database</A>:
+Has information about 
+<A NAME="tex2html212" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_3.html">MOO Value Types</A>, 
+<A NAME="tex2html213" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_4.html">Objects in the MOO Database</A>
+(
+<A NAME="tex2html214" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_5.html">Fundamental Object Attributes</A> -
+<A NAME="tex2html215" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_6.html">Properties on Objects</A> -
+<A NAME="tex2html216" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_7.html">Verbs on Objects</A>
+)
+<LI> <A NAME="tex2html217" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_8.html">The Built-in Command Parser</A> is important reading since it will explain
+how the MOO parses commands entered by the user.
+<P>
+</OL><H4><A NAME="SECTION04320020000000000000">The MOO Programming Language:</A></H4>
+<P>
+<A NAME="tex2html218" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_9.html">Introduction</A>
+<P>
+<OL>
+<LI>
+<A NAME="tex2html219" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_10.html">MOO Language Expressions</A>
+<P>
+<OL>
+<LI>
+<A NAME="tex2html220" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_11.html">Errors While Evaluating Expressions</A>
+<LI>
+<A NAME="tex2html221" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_12.html">Writing Values Directly in Verbs</A>
+<LI>
+<A NAME="tex2html222" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_13.html">Naming Values Within a Verb</A>
+<LI>
+<A NAME="tex2html223" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_14.html">Arithmetic Operators</A>
+<LI>
+<A NAME="tex2html224" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_15.html">Comparing Values</A>
+<LI>
+<A NAME="tex2html225" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_16.html">Values as True and False</A>
+<LI>
+<A NAME="tex2html226" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_17.html">Indexing into Lists and Strings</A>
+<P>
+<OL>
+<LI>
+<A NAME="tex2html227" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_18.html">Extracting an Element from a List or String</A>
+<LI>
+<A NAME="tex2html228" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_19.html">Replacing an Element of a List or String</A>
+<LI>
+<A NAME="tex2html229" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_20.html">Extracting a Subsequence of a List or String</A>
+<LI>
+<A NAME="tex2html230" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_21.html">Replacing a Subsequence of a List or String</A>
+<P>
+</OL>
+<LI>
+<A NAME="tex2html231" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_22.html">Other Operations on Lists</A>
+<LI>
+<A NAME="tex2html232" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_23.html">Spreading List Elements Among Variables</A>
+<LI>
+<A NAME="tex2html233" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_24.html">Getting and Setting the Values of Properties</A>
+<LI>
+<A NAME="tex2html234" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_25.html">Calling Built-in Functions and Other Verbs</A>
+<LI>
+<A NAME="tex2html235" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_26.html">Catching Errors in Expressions</A>
+<LI>
+<A NAME="tex2html236" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_27.html">Parentheses and Operator Precedence</A>
+<P>
+</OL>
+<P>
+<A NAME=1409>&#160;</A>
+<A NAME=1410>&#160;</A>
+<A NAME=1411>&#160;</A>
+<LI>
+<A NAME="tex2html240" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_28.html">MOO Language Statements</A>
+<P>
+<OL>
+<LI>
+<A NAME="tex2html241" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_29.html">Errors While Executing Statements</A>
+<LI>
+<A NAME="tex2html242" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_30.html">Simple Statements</A>
+<LI>
+<A NAME="tex2html243" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_31.html">Statements for Testing Conditions</A>
+<LI>
+<A NAME="tex2html244" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_32.html">Statements for Looping</A>
+<LI>
+<A NAME="tex2html245" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_33.html">Terminating One or All Iterations of a Loop</A>
+<LI>
+<A NAME="tex2html246" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_34.html">Returning a Value from a Verb</A>
+<LI>
+<A NAME="tex2html247" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_35.html">Handling Errors in Statements</A>
+<LI>
+<A NAME="tex2html248" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_36.html">Cleaning Up After Errors</A>
+<LI>
+<A NAME="tex2html249" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_37.html">Executing Statements at a Later Time</A>
+<P>
+</OL>
+<LI>
+<A NAME="tex2html250" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_38.html">MOO Tasks</A>
+<LI>
+<A NAME="tex2html251" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_39.html">Built-in Functions</A>
+<P>
+<OL>
+<LI>
+<A NAME="tex2html252" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_40.html">Object-Oriented Programming</A>
+<LI>
+<A NAME="tex2html253" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_41.html">Manipulating MOO Values</A>
+<P>
+<OL>
+<LI>
+<A NAME="tex2html254" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_42.html">General Operations Applicable to all Values</A>: Read this for conditionals.
+<LI>
+<A NAME="tex2html255" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_43.html">Operations on Numbers</A>
+<LI>
+<A NAME="tex2html256" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_44.html">Operations on Strings</A>
+<LI>
+<A NAME="tex2html257" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_45.html">Operations on Lists</A>
+<P>
+</OL>
+<LI>
+<A NAME="tex2html258" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_46.html">Manipulating Objects</A>
+<P>
+<OL>
+<LI>
+<A NAME="tex2html259" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_47.html">Fundamental Operations on Objects</A>
+<LI>
+<A NAME="tex2html260" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_48.html">Object Movement</A>
+<LI>
+<A NAME="tex2html261" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_49.html">Operations on Properties</A>
+<LI>
+<A NAME="tex2html262" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_50.html">Operations on Verbs</A>
+<LI>
+<A NAME="tex2html263" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_51.html">Operations on Player Objects</A>
+<P>
+</OL>
+<LI>
+<A NAME="tex2html264" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_52.html">Operations on Network Connections</A>
+<LI>
+<A NAME="tex2html265" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_53.html">Operations Involving Times and Dates</A>
+<LI>
+<A NAME="tex2html266" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_54.html">MOO-Code Evaluation and Task Manipulation</A>
+<LI>
+<A NAME="tex2html267" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_55.html">Administrative Operations</A>
+<P>
+</OL></OL><H4><A NAME="SECTION04320030000000000000">Server Commands:</A></H4>
+<P>
+<OL>
+<LI>
+<A NAME="tex2html268" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_56.html">Server Commands and Database Assumptions</A>
+<P>
+</OL><H4><A NAME="SECTION04320040000000000000">Builtin Functions and TecfaMOO utilities:</A></H4>
+<P>
+<OL>
+<LI> <A NAME="tex2html269" HREF="http://tecfa.unige.ch:7777/help/utils">TecfaMOO utilities</A> via our not so finished MOO/WWW Gateway. Our utils are Lambda-core
+based.
+<LI> <A NAME="tex2html270" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_77.html">Function
+    Index</A>
+<P>
+</OL><HR><A NAME="tex2html2127" HREF="node111.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2125" HREF="node108.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2119" HREF="node109.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2129" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2130" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html2128" HREF="node111.html">10.3 Objects and properties</A>
+<B>Up:</B> <A NAME="tex2html2126" HREF="node108.html">Elements of the MOO </A>
+<B> Previous:</B> <A NAME="tex2html2120" HREF="node109.html">10.1 Introduction to the </A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

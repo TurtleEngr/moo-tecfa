@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Channel Selection</TITLE>
+<META NAME="description" CONTENT="Channel Selection">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1031" HREF="node30.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1029" HREF="node27.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1023" HREF="node28.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1033" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1034" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1032" HREF="node30.html">Communication over channels:</A>
+<B>Up:</B> <A NAME="tex2html1030" HREF="node27.html">2.3 [TECFAMOO] Janus' Channels </A>
+<B> Previous:</B> <A NAME="tex2html1024" HREF="node28.html">Adding the Channel System</A>
+<BR> <P>
+<H2><A NAME="SECTION02232000000000000000">Channel Selection</A></H2>
+<P>
+<A NAME="secchabasic">&#160;</A>
+<P>
+To list all open channels and some statistics, type <code>@xch'</code>
+or <code>@xchannels</code>. You will see something like:
+<SMALL CLASS=SMALL><PRE>&gt;@xch
+LT  Channel     Owners  Users  Online   LT  Channel     Owners  Users  Online
+--  ----------  ------  -----  ------   --  ----------  ------  -----  ------
+!!  Admin       ~Janus  7      3        --  Help        ~Eval   8      2     
+-!  Checkpoint  ~Janus  7      1        --  Prog        ~Eval   8      2     
+-!  Connection  ~Janus  6      2        --  Public      ~Eval   11     3</PRE></SMALL>
+<P>
+To add yourself to the listeners of a channel, type:
+<SMALL CLASS=SMALL><PRE>      @xlisten &lt;channel&gt;
+          e.g.
+      @xlisten help</PRE></SMALL>
+<P>
+To set a channel as default channel for talking, type:
+<SMALL CLASS=SMALL><PRE>       x&gt;&gt;&lt;channel&gt;
+         e.g.
+       x&gt;&gt;public</PRE></SMALL>
+<P>
+Now to remove yourself from a channel or switch default channels
+you also have the following commands, but remember at least the
+<code>@disc &lt;channel&gt;</code> command.
+<P>
+<SMALL CLASS=SMALL><PRE>@xco*nnect &lt;channel&gt;       - Quit your curr. ch., 
+                             and set your curr. ch. to &lt;channel&gt;
+@xdis*connect [&lt;channel&gt;]  - Quit listening to all channels [only &lt;channel&gt;].
+@xonly &lt;channel&gt;           - Quit all channels except &lt;channel&gt;.</PRE></SMALL>
+<P>
+To see who is listening to a channel use <code>@xwho</code>. To list all
+subscribed listeners (i.e. disconnected people) use <code>@xwho-all</code>.
+<SMALL CLASS=SMALL><PRE>   @xwho [&lt;channel&gt;]       - Shows online listeners on &lt;channel&gt;
+                            (curr ch. by default)
+   @xwho-all [&lt;channel&gt;]   - Shows all listeners on &lt;channel&gt;
+                            (curr ch. by default)</PRE></SMALL>
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

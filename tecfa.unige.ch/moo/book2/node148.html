@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>15.2 [TECFAMOO] The file_handler utils</TITLE>
+<META NAME="description" CONTENT="15.2 [TECFAMOO] The file_handler utils">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2591" HREF="node149.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2589" HREF="node146.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2585" HREF="node147.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2593" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2594" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2592" HREF="node149.html">TOOLS AND HINTS FOR </A>
+<B>Up:</B> <A NAME="tex2html2590" HREF="node146.html">The File Utilities Package</A>
+<B> Previous:</B> <A NAME="tex2html2586" HREF="node147.html">15.1 FUP server builtin </A>
+<BR> <P>
+<H1><A NAME="SECTION04820000000000000000">15.2 [<B>TECFA</B><TT>MOO</TT>] The file_handler utils</A></H1>
+<P>
+<A NAME="secfupfilehandler">&#160;</A>
+<P>
+Most MOOs that allow programmers (and not just wizards) to use the
+FUP Package use a variant of the <code>$file_handler</code> utils provided
+with the FUP distribution. At <B>TECFA</B><TT>MOO</TT> we use the more sophisticated
+version used at BioMOO that includes disk quota.
+<P>
+At <B>TECFA</B><TT>MOO</TT>, in order to use external files do the following:
+<OL>
+<LI> Enquire with a wizard who has system access at TECFA
+if he will allow you to access files.
+<LI> <code>@create $file_handler named &lt;something&gt;</code>
+<LI> Write down the number and ask a wizard with system access to create
+a directory called ``<code>handlers/#xxxx</code>'' and to give you disk quota.
+<LI> <code>'help $file_handler'</code> (or <A NAME="tex2html315" HREF="http://tecfa.unige.ch:7778/objbrowse/$file_handler">http://tecfa.unige.ch:7778/objbrowse/$file_handler</A>)
+</OL>
+<P>
+Note that you can give other programmers access to your file handler
+with the verb: <code>&lt;your file handler&gt;:allows(whom, verb-called, @arguments)</code>.
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,170 @@
+<html>
+<head>
+<title>MOO Beginner's Guide</title>
+<!-- Changed by: D.K.S., 20-Sep-1996 -->
+</head>
+<body bgcolor=#CCCCCC text=#000000 link=#0000FF vlink=#801080 alink=#FF0000 rgb=#FFFFFF>
+<H1 align="center">MOO beginner's Guide</H1>
+<P>
+[sorry this text need some formatting, it is just a copy from the 
+in-MOO 
+<A HREF="http://tecfa.unige.ch:7777/help/beginners">'help beginners'</A>]
+
+<P>
+Here is some summary information on how to do the most basic actions in a<BR>
+MOO. Note that there are lots of other commands; these are best learnt through<BR>
+practice, by observing and asking other participants.<BR>
+<P>
+<h2>1. Getting basic information</h2>
+<P>
+You can always type 'help' to get an index of help topics. To get specific<BR>
+help about communication, for example, you can type 'help <a href="http://tecfamoo.unige.ch:7777/help/communication">communication</a>'. <BR>
+<P>
+To find out what the room you're in looks like, just type 'look'. To get <BR>
+information on the objects around you, you can:<BR>
+<pre>
+          look &lt;object&gt; <BR>
+</pre>
+'examine &lt;object&gt;' to get the description, and additional information, like<BR>
+the owner of the object, and some commands to use it.<BR>
+<P>
+To know who else is connected at any time, type '@who'. You get also<BR>
+information on where they are, for how long they have been connected, and<BR>
+when they were active last. To communicate with people not in your room, you<BR>
+can 'page' them (see below). Note people may be idling and/or be away from<BR>
+their console.<BR>
+<P>
+<P>
+<h2>2. Basic Navigation</h2>
+See also: 'help <a href="http://tecfamoo.unige.ch:7777/help/movement">movement</a>')<BR>
+<P>
+Usually when you are in a location (called &quot;rooms&quot; in MOO terminology) exits<BR>
+connecting to other rooms are listed. To go there just type the exit name,<BR>
+e.g.:
+<pre>
+                 up
+</pre>
+To join a person, type:
+<pre>
+                @join &lt;name&gt;<BR>
+</pre>
+Note that is is usually polite to page a person and ask whether you can<BR>
+join her.<BR>
+<P>
+To go to a remote place, type:<BR>
+<pre>
+                @go &lt;place&gt;<BR>
+</pre>
+both @join and @go use an algorithm that will walk you there if possible, <BR>
+or teleport you directly.<BR>
+<P>
+<P>
+<h2>3. Basic Communication</h2>
+See also: 'help <a href="http://tecfamoo.unige.ch:7777/help/communication">communication</a>')<BR>
+<P>
+In the following examples, your character name is 'John'.  To communicate<BR>
+with people in the same room you're in, you can talk, emote, whisper,<BR>
+think and more:<BR>
+<P>
+3.1 Speaking<BR>
+<Pre>
+         say Hello, there.<BR>
+         &quot;Hello, there <BR>
+</Pre>
+Those are equivalent methods for speaking. Visible to everyone in the same<BR>
+room.  You see: You say, &quot;Hello, there.&quot;<BR>
+<P>
+3.2 To communicate with people not in your room, you can 'page' them:<BR>
+<Pre>
+          page Jane Do you have some free time?<BR>
+          'Jane Do you have some free time? <BR>
+</Pre>
+3.3 Emoting:<BR>
+<Pre>
+           emote smiles.<BR>
+           :smiles <BR>
+</Pre>
+Those are equivalent methods for 'emoting': expressing non-verbal<BR>
+actions. visible to everyone in the  same room. <BR>
+<Pre>
+          You see: John smiles. <BR>
+</pre>
+3.4 Whispering:<BR>
+<Pre>
+          whisper &quot;Jane, I am bored&quot; to Jane <BR>
+</Pre>
+The message is only visible to Jane, but other people will see that you're <BR>
+whispering to her.<BR>
+<Pre>
+   You see: You whisper, &quot;Hello, Jane darling&quot; to Jane. <BR>
+</pre>
+3.5 Thinking:<BR>
+<Pre>
+          think I think therefore I am. <BR>
+</Pre>
+Thinking is visible to everyone in the same room. <BR>
+<Pre>
+    You see: John . o O ( I think therefore I am ) <BR>
+</Pre>
+3.6 Directed speech:<BR>
+<P>
+Often when several people are in the same room, you may want to address a<BR>
+particular person:<BR>
+<Pre>
+          -Jane I agree with you. <BR>
+	  `Jane I agree with you.<BR>
+      You see: You say to Jane, &quot;I agree with you.&quot;<BR>
+      Jane sees: John says to you, &quot;I agree with you.&quot;<BR>
+      Others see:  John says to Jane, &quot;I agree with you.&quot;<BR>
+</Pre>
+<P>
+3.7 You can also page-emote: <BR>
+<Pre>
+           +Jane is shaking his head<BR>
+</Pre>
+   You see: &quot;Jane sees: John is shaking his head&quot;<BR>
+<P>
+<h2>4. Customizing</h2>
+<P>
+Usually when you get a character (or username) here, you will need to<BR>
+customize your &quot;look&quot;:<BR>
+<P>
+Your description describes you &quot;visually&quot;<BR>
+<Pre>
+       @describe me as &quot;A tall person with a white beard&quot;<BR>
+</Pre>
+You also should set your gender to male or female (for pronoun substitution)<BR>
+<Pre>
+       @gender male<BR>
+</Pre>
+Structured information about yourself can be entered via the Web interface.<BR>
+Just click on yourself and fill in the forms.<BR>
+<P>
+If you want to customize your office and/or build rooms and objects,<BR>
+type 'help <a href="http://tecfamoo.unige.ch:7777/help/building">building</a>', in particular 'help <a href="http://tecfamoo.unige.ch:7777/help/creation">creation</a>'.<BR>
+<P>
+<h2>5. Other</h2>
+<P>
+To change your password: <BR>
+<Pre>
+      @password &lt;old password&gt; &lt;new password&gt; <BR>
+</Pre>
+If you have trouble with text running off your screen, or if you<BR>
+receive only the beginning of the lines, you might try the following<BR>
+commands:<BR>
+<P>
+<A HREF="http://tecfamoo.unige.ch:7777/help/@wrap">@wrap</A> on          -- to make the MOO wrap the text you read<BR>
+<A HREF="http://tecfamoo.unige.ch:7777/help/@linelength">@linelength</A> XX    -- to set the length of your lines, in letters, to XX<BR>
+<A HREF="http://tecfamoo.unige.ch:7777/help/@pagelength">@pagelength</A> XX    -- to set the length of your page, in lines, to XX<BR>
+<A HREF="http://tecfamoo.unige.ch:7777/help/@more">@more</A> rest/flush  -- to read/flush suspended output<BR>
+<P>
+Finally, to logoff:  @quit<BR>
+<hr>
+<form method="GET" action="http://tecfamoo.unige.ch:7777/help/" target="_top">
+Help via TecfaMOO/WWW:
+<input name="help_topic" type=text size=30>
+<P>
+</form>
+</body>
+</html>
+

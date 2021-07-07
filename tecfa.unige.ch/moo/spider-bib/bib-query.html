@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>Spider Bibliography Database - MUD version.</title>
+<!-- Changed by: D.K.S., 25-Sep-1997 -->
+</head>
+<body>
+<h1>Spider Online Bibliography Database - MUD version.</h1>
+<p>
+The Spider Bibliography database is a collection of 
+educational technology references, formatted
+as a BibTeX database. 
+There are <STRONG>two</STRONG> search interfaces:
+<P>
+<hr>
+<STRONG>1. BibLook Interface</STRONG>:
+It will return Bibtex formatted entries, that
+can be used with the <A HREF="http://cbl.leeds.ac.uk/nikos/tex2html/doc/latex2html/latex2html.html">HTML2Latex Translator</A>
+<p>
+<hr>
+<form method=POST action="http://tecfa.unige.ch/cgi-bin/bib-query">
+  <select name=tag1>
+    <option>- none -
+    <option selected>keyword
+    <option>author
+    <option>title
+    <option>year
+  </select>
+  contains
+  <input name="val1" size=50 CONTENT="MUD"><p>
+
+  <select name="cond1">
+    <option selected>and
+    <option>or
+  </select><p>
+
+  <select name=tag2>
+    <option selected>- none -
+    <option>author
+    <option>title
+    <option>keyword
+    <option>year
+  </select>
+  contains
+  <input name="val2" size=50 CONTENT="- empty -"><p>
+
+  To begin the database search, press this button:
+  <input type=submit CONTENT="Click Me!"><p>
+</form>
+<hr>
+This interface is experimental.
+It is based upon
+<A HREF="http://http.cs.berkeley.edu/~jeffe/index.html">Jeff Erickson's</A>
+and
+<A HREF="mailto:jones@cs.usask.ca">Bill Jones'</A>
+<A HREF="http://http.cs.berkeley.edu/~jeffe/biblook.html">
+<strong>biblook and bibindex</strong></A> programs. 
+The WWW gateway is based on
+Stephen Spencer's (bibadmin@siggraph.org) code for the
+<A HREF="http://www.siggraph.org/library/bibliography/bibliography.html">
+ACM SIGGRAPH Online Bibliography Database.</A>
+<p>
+<hr>
+<STRONG>2. Bibsearch Interface</STRONG>: produces formatted output and clickable
+URLs.
+<P>
+
+<FORM ACTION="http://tecfa.unige.ch/cgi-bin/bibsearch/tecfa/general/edu-tech.html" method="POST">
+Keywords: <INPUT TYPE=TEXT VALUE="MUD" NAME="keyword" size=40>(comma separated substrings) <br>
+Authors:  <INPUT TYPE=TEXT NAME="author" SIZE=40>(full name required)<br> 
+ <INPUT TYPE=SUBMIT VALUE="Submit">
+ <INPUT TYPE=RESET>
+ <INPUT TYPE=SUBMIT NAME="help" VALUE="Help">
+</FORM>
+
+<A HREF="http://pertsserver.cs.uiuc.edu/~hull/">David Hull's</A> bibsearch performs search on html files produced with his
+<A HREF="http://pertsserver.cs.uiuc.edu/~hull/bib2html/">bib2html</A>
+filter.
+
+<hr>
+<a href="spider-bib.html">Click here</a> to return to the Spider bibliography
+page.
+<hr>
+<p><address>
+<A HREF="http://tecfa.unige.ch/">
+	<IMG SRC="http://tecfa.unige.ch/gif/icon-tecfa-small.gif" ALT="Tecfa Home Page"></a>
+- <a href="http://tecfa.unige.ch/tecfa-people/schneider.html">
+Daniel K.Schneider</a> </address>
+</body>
+</html>

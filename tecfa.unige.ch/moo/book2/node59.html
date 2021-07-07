@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Ria's multi-room</TITLE>
+<META NAME="description" CONTENT="Ria's multi-room">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1425" HREF="node60.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1423" HREF="node57.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1417" HREF="node58.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1427" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1428" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1426" HREF="node60.html">The Tutorial Room</A>
+<B>Up:</B> <A NAME="tex2html1424" HREF="node57.html">6.2 [TECFAMOO]Fancy Rooms</A>
+<B> Previous:</B> <A NAME="tex2html1418" HREF="node58.html">Ken's generic Classroom</A>
+<BR> <P>
+<H2><A NAME="SECTION03322000000000000000">Ria's multi-room</A></H2>
+<P>
+<A NAME="secroomsria">&#160;</A>
+<A NAME=577>&#160;</A>
+<P>
+Ria's multi-room is very versatile and includes several features.
+If you are a newbie builder, avoid playing around with this room
+because it is quite complex and not so easy to set up.
+Use Ken's generic classromm (<A HREF="node58.html#secroomsken">6.2.1</A>) instead for example.
+If you remove the teacher's desk, nobody will notice that it is a
+classroom.
+<P>
+Following information is more or less the same as the one you get
+by typing <A NAME="tex2html98" HREF="http://tecfamoo.unige.ch:7778/objbrowse/1862">'help #1862'</A> in the MOO.
+<P>
+Introducing The Generic Outdoor Secured Place-Oriented(seats included)
+Room With Enhanced Integrating Descriptions, Exit Matching, Security
+and Details.  Take a look...  Not only can it have seats, but it can
+also have tables, hooks, beds, hangers, boxes, bags, vases, bowls,
+etc, etc, etc...  It has 4 ways of securing the room, integrating
+descriptions (where an object blends in with the description instead
+of saying that 'You see ___ here.'  N,No,Nor,Nort and North would all
+match, unlike the Generic Room, where you must type out the full name
+or alias.  You can also add details to the room, without wasting quota
+to make an object just to 'look' at.
+<P>
+Help for Generic Secure Outdoor Place-Oriented Room with Exit
+matching, details and integrated descriptions:
+<P>
+<SMALL CLASS=SMALL><PRE>---------------------------------------------------------------------
+@add-place &lt;place&gt;            Adds a table, hook, chair (or anything else)
+                              to the room.
+@put &lt;place&gt; is &lt;message&gt;     Re-sets the message when someone puts an
+                              object in the place.
+@take &lt;place&gt; is &lt;message&gt;    Re-sets the message when someone takes an
+                              object from the place.
+@take-verb &lt;place&gt; is &lt;verb&gt;  Adds a verb that you type in order to take
+                              an object from &lt;place&gt;.
+@rmtake-verb &lt;place&gt; is &lt;verb&gt;Removes verb from those that you type in 
+                              order to take an object from &lt;place&gt;.
+@put-verb &lt;place&gt; is &lt;verb&gt;   Adds a verb that you type in order to put
+                              and object in &lt;place&gt;.
+@rmput-verb &lt;place&gt; in &lt;verb&gt; Removes verb from those that you type in
+                              order to put an object in &lt;place&gt;.
+@alias &lt;place&gt; is &lt;alias&gt;     Adds an alias to &lt;place&gt;.
+@rmalias &lt;place&gt; from &lt;alias&gt; Removes an alias from &lt;place&gt;.
+@capacity &lt;place&gt; is &lt;amount&gt; Sets the amount of objects &lt;place&gt; can hold
+@describe-place &lt;place&gt;       Allows you to change the description of
+                              &lt;place&gt;.
+@type &lt;place&gt; is &lt;type&gt;       Sets the kind of objects that may go at
+                              &lt;place&gt;  ... ie, if it's a hook, write the
+                              number for the generic plant.  If it's a 
+                              chair, use $player.
+@visible &lt;place&gt; is &lt;message&gt; Re-sets the empty-place message.  Use 0 if
+                              the place should be invisible when empty.
+@remove-place &lt;place&gt;         Deletes a place.
+@places                       Shows all places and what they can hold
+---------------------------------------------------------------------
+@integrate &lt;object&gt; is &lt;msg&gt;  Whenever &lt;object&gt; is in the room, &lt;msg&gt;
+                              is displayed.  Use &quot;%i&quot; in place of the
+                              object's name.
+@unintegrate &lt;object&gt;         Reverses effects of @integrate
+---------------------------------------------------------------------
+@secure [&lt;type&gt;]              Secures the room based on &lt;type&gt;
+                              For help, exclude the &lt;type&gt;
+@accepting player | object    Accepting depends on the player moving
+                              the object OR the object itself.
+@accept &lt;person&gt;              Adds &lt;player&gt; to the accept list.
+@deny &lt;person&gt;                Adds &lt;player&gt; to the deny list.
+@unaccept &lt;person&gt;            Removes &lt;player&gt; from the accept list.
+@undeny &lt;person&gt;              Removes &lt;player&gt; from the deny list.
+@invite &lt;person&gt;              Invites a person to enter the room for 
+                              1 hour.
+---------------------------------------------------------------------
+@detail &lt;detail&gt; as &lt;descrip&gt; Adds a detail to the room.
+@rmdetail &lt;detail&gt;            Removes a detail
+---------------------------------------------------------------------
+@summer...                    Sets the message to appear during
+@winter...                    the appropraite season.  According
+@spring...                    to the time of day.  The time may
+@fall &lt;time&gt; is &lt;message&gt;     be any of: sunrise, morning, afternoon,
+                              evening, sunset or night.
+---------------------------------------------------------------------
+@add-noise &lt;noise&gt;            Adds the noise &lt;noise&gt;.
+@rm-noise &lt;num&gt;               Removes the noise indexed by &lt;num&gt;.
+@noisiness &lt;num&gt;              Changes how noisy the place is (1-10).
+@noises                       Lists the noises defined.
+---------------------------------------------------------------------
+@roominfo/@status [&lt;place&gt;]   Shows information about the room or a
+                              specific place.</PRE></SMALL>
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

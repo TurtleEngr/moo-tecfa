@@ -1,0 +1,235 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>The show verb</TITLE>
+<META NAME="description" CONTENT="The show verb">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1816" HREF="node86.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1814" HREF="node80.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1808" HREF="node84.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1818" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1819" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1817" HREF="node86.html">Cleaning up</A>
+<B>Up:</B> <A NAME="tex2html1815" HREF="node80.html">8.4 MOO tutorialLevel </A>
+<B> Previous:</B> <A NAME="tex2html1809" HREF="node84.html">The second verb ``dump'':</A>
+<BR> <P>
+<H2><A NAME="SECTION04145000000000000000">The show verb</A></H2>
+<P>
+Now let's program a verb that allows you to display an item to the people
+in the room or everything. So we want a verb that does something like:
+<P>
+<SMALL CLASS=SMALL><PRE>   show 3 on holder</PRE></SMALL>
+<P>
+This would display item 3 in the list if it existed. If it doesn't it
+would warn the player that such an item does not exist.
+<P>
+<SMALL CLASS=SMALL><PRE>   show all on holder</PRE></SMALL>
+<P>
+should display all information in the holder. Here is the verb
+and you can grab the verb from 
+<A NAME="tex2html160" HREF="code/code-show.moo">here</A>.
+Now let's examine the code.
+Note that to list a verb in the MOO you can use the @list command as
+below. Please note, that the line numbers in front of each lines are added
+by the '@list' command for your convenience. So don't ever type them when
+you program the verb yourself!
+It is useful to display line numbers when you quickly want to list a verb
+in order to see where it broke (grin).
+<P>
+<SMALL CLASS=SMALL><PRE>&gt;@l holder:show
+#2108:&quot;show&quot;   any (on top of/on/onto/upon) this
+ 1:&quot;This verb will print out either all objects or a selected item
+   on the holding&quot;;
+ 2:&quot;property to the room. Tests are made to insure that the direct
+   object string&quot;;
+ 3:&quot;represents a number AND an number not bigger than the length of the list&quot;;
+ 4:  n_items = length(this.holding);
+ 5:  &quot; --- showing all the items ---- &quot;;
+ 6:  if (dobjstr == &quot;all&quot;)
+ 7:    player.location:announce_all(player.name, &quot; shows all the items on &quot;,
+       this.name);
+ 8:    for k in [1..n_items]
+ 9:      player.location:announce_all(k, &quot;: &quot;, this.holding[k]);
+10:    endfor
+11:  else
+12:    &quot; ---- testing bad dobjstr's ----&quot;;
+13:    NUM = tonum(dobjstr);
+14:    if (NUM == 0)
+15:      player:tell(&quot;The correct syntax for the show command is:
+         'show all on &lt;object&gt;' or show &lt;number&gt; on &lt;object&gt;&quot;);
+16:    elseif (NUM &gt; n_items)
+17:      player:tell(&quot;Sorry this list has less items then &quot;, NUM);
+18:    else
+19:      &quot; ---- displaying a single element ----&quot;;
+20:      player.location:announce_all(player.name, &quot; shows item &quot;, NUM,
+         &quot; on &quot;, this.name, &quot;: &quot;, this.holding[NUM]);
+21:    endif
+22:  endif
+--
+.</PRE></SMALL>
+<P>
+Now, please program this verb by entering the code or by copying it:
+<P>
+<OL>
+<LI> First, create the verb argument specification like this. In case your
+are working at <B>TECFA</B><TT>MOO</TT><b> skip this step</b> and go directly to the
+next step, i.e. use the @copy command (see next step)
+without defining the verb first.
+<SMALL CLASS=SMALL><PRE>     @verb holder:show any on this</PRE></SMALL>
+Note that if you don't have an idea on verb argument specification
+(the ``<code>show any on this</code>'') you now should go an read
+section <A HREF="node115.html#secverbspec">10.4.2</A> on verb argument specification
+on page <A HREF="node115.html#secverbspec"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>. This section will also teach you
+how to change arguments in case you entered a wrong specification.
+<LI> Then program the verb in the same way as you programmed your
+  other 2 verbs, i.e. type: '@edit holder:show'.  Now instead of
+  manually typing the code, you can grab it over the Net (see above)
+  and paste it into the editing buffer (or whatever technique for
+  uploading code you prefer). At <B>TECFA</B><TT>MOO</TT> you can simply
+ <code>'@copy #2108:show to &lt;your object&gt;'</code>.
+ This will copy the verb from and object
+on which it already exists to your object.
+<P>
+</OL>
+Then, play around with the verb trying out various variations to convince
+yourself that it works. This verb is not perfect and we suggest that
+make some modifications later.
+The main goal of this
+part of the tutorial is to teach you how a basic algorithm works
+and how to understand somewhat longer code. In case you don't understand
+in detail how this code works, there are 3 solutions:
+<OL>
+<LI> You try to figure out by ``hand'' what the code does, i.e. you
+try to imagine step by step what will happen when this procedure runs.
+<LI> You insert a lot of ``print'' statements in the code that will
+print out variable values. To do that, you can insert either something like:
+  <UL>
+<LI> player:tell(``variable k ='' , k);<BR> 
+This solution is not great since lists will be printed as ``list''
+<LI> player:notify(``variable k ='' , k);
+<LI> player:report(``variable k ='' , k);<BR> 
+works only in certain MOOs.
+  </UL>
+<LI> The best solution is to run TECFA's (Boris Borcic's)
+Code animator in the Xemacs client. It will in the editor buffer replace
+variables by values in the code in step by step fashion, so you can
+really see what the code does.
+<P>
+</OL>
+Now let's examine new features of the MOO language we use in this verb.
+<P>
+<OL>
+<LI> You can insert comments in your code that will be remembered by
+the server. Simply write a statement enclosed by quotes, e.g.
+<SMALL CLASS=SMALL><PRE>    &quot; ---- displaying a single element ----&quot;;</PRE></SMALL>
+<LI> In this verb we use another variant of the ``for'' loop statement.
+In the ``dump'' verb we used a ``do list'' construction, whereas here
+we use a ``do times'' construction, i.e. we don't tell the loop to run
+once over each item of a list, but we tell it to run N times (from number n1
+to number n2)
+<SMALL CLASS=SMALL><PRE>   for &lt;variable&gt; in [&lt;beginning&gt;..&lt;end&gt;]</PRE></SMALL>
+Here is an example:
+<SMALL CLASS=SMALL><PRE>   for k in [2..10]</PRE></SMALL>
+will do 2 things. (1) It will loop <code>&lt;end&gt; - \verb&lt;beginning&gt;</code> times
+, e.g 10-2 = 8 times in the above example. (2) It will assign the ``index''
+of the current loop to the counter <code>&lt;variable&gt;</code>. I.e. the loop will
+assign k=2 in the first loop and finish with k=10. Note that in the
+``show'' verb we use the iteration index ``k'' to access the nth element
+in the list hold by the ``this.holding'' property.
+<LI> Elements of lists can be accessed with the following syntax
+(see the section 
+<A NAME="tex2html161" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_17.html#SEC17">on Indexing into Lists and Strings</A>
+in the MOO Programmers Manuel for more details):
+<P>
+<SMALL CLASS=SMALL><PRE>   &lt;list&gt;[&lt;element number&gt;]
+
+Examples:
+   {0,1,2,3,4}[2]   ==&gt; will return 1
+   this.holding[3]  ==&gt; will return the 3rd element</PRE></SMALL>
+<P>
+Note that accessing lists out of range (e.g. element 5 in a list of 4 elements) will produce
+an error ! The built-in ``length()'' will tell you the length of the list and you
+can test list access like we did in the ``:show'' verb:
+<P>
+<SMALL CLASS=SMALL><PRE> 4:  n_items = length(this.holding);
+ ......
+16:    elseif (NUM &gt; n_items)
+17:      player:tell(&quot;Sorry this list has less items then &quot;, NUM);</PRE></SMALL>
+<LI> The most important new item of the MOO programming are conditional
+statements (IFs). See the section on
+<A NAME="tex2html162" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_31.html#SEC31">Statements for Testing Conditions</A>
+ in the MOO programmers Manual.
+Here we just reproduce an abstract pseudo code
+definition of what happens in the ``show verb''.
+<P>
+<SMALL CLASS=SMALL><PRE> 6:  if (``the direct object string is EQUAL to &quot;all&quot;)
+     ``do print out all statements'';
+11:  else
+14:    if (``the direct object string is not a number, e.g. 0!'')
+       ``then complain to the user'';
+16:    elseif (NUM &gt; n_items)
+       ``else if we were able to create a number BUT the number is
+        too big complain too'';
+18:    else
+       ``print a single element;
+21:    endif
+22:  endif</PRE></SMALL>
+So IFs can be nested and alternative conditions ``else'' or ``else if'' exist.
+Note that the (conditional) and the keywords ``else'' and ``elseif'' belong
+to the same statement, so no ``;'' is needed for them! Here is the same
+same structure as in the ``show verb'' even more simplified.
+<SMALL CLASS=SMALL><PRE>   if (condition1)
+     ``do something'';
+     ``do something more complex'';
+   else
+     if (condition2)
+        ``do something else'';
+     elseif (condition*)
+        ``do something else'';
+     else
+        ``do something else again''
+     endif
+   endif</PRE></SMALL>
+<LI> Conditional expressions are used for example in IF statements and
+they return a truth value, i.e. the expression on line 6:
+<SMALL CLASS=SMALL><PRE>      (dobjstr == &quot;all&quot;)</PRE></SMALL>
+is either 1 (= true) or 0 (=false). Please remember that equality tests are
+done with the ``=='' operator and NOT with a simple ``='' which is an assignment.
+<LI> The tonum() built-in function in line 13
+will translate a string to a number. 
+If conversion is not possible, the number is 0.
+Try it out by typing ';tonum(``bla'') to the MOO client.
+The length() function in line 4 returns the length of a list.
+As we explained in section <A HREF="node77.html#secfunctionalprog">8.2.4</A> functions always
+return a value. You will learn later how to build your own
+function verbs. All built-in functions are explained in the
+MOO manual or in the MOO (type 'help functions').
+<LI> An other built-in function allows displaying messages to the people
+in the same room. Each room (normally) has a ``announce_all'' verb that works
+in a similar way as player:tell. The latter only displays something to the
+player who typed the command. Each player has a location  property containing
+the room object the player is currently in. So all we need to run this
+verb is to use the following kind of statement:
+<SMALL CLASS=SMALL><PRE> 9:      player.location:announce_all(k, &quot;: &quot;, this.holding[k]);</PRE></SMALL>
+<P>
+</OL>
+<P>
+That's it ! Again: try to study this verb until you are sure how it works.
+As we said you can insert statements that print out intermediary variables
+or whatever you want to you. I.e. if you want to be sure that the counter works
+right in the for loop, insert this into the loop after line 8 or 9:
+<P>
+<SMALL CLASS=SMALL><PRE>player:tell(&quot;K= &quot;, k);</PRE></SMALL>
+<P>
+<HR><A NAME="tex2html1816" HREF="node86.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1814" HREF="node80.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1808" HREF="node84.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1818" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1819" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html1817" HREF="node86.html">Cleaning up</A>
+<B>Up:</B> <A NAME="tex2html1815" HREF="node80.html">8.4 MOO tutorialLevel </A>
+<B> Previous:</B> <A NAME="tex2html1809" HREF="node84.html">The second verb ``dump'':</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

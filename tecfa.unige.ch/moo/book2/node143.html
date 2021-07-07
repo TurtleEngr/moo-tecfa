@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Webby verbs</TITLE>
+<META NAME="description" CONTENT="Webby verbs">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2535" HREF="node144.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2533" HREF="node142.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2527" HREF="node142.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2537" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2538" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2536" HREF="node144.html">htext verbs</A>
+<B>Up:</B> <A NAME="tex2html2534" HREF="node142.html">14.3 The Basic Applications </A>
+<B> Previous:</B> <A NAME="tex2html2528" HREF="node142.html">14.3 The Basic Applications </A>
+<BR> <P>
+<H2><A NAME="SECTION04731000000000000000">Webby verbs</A></H2>
+<P>
+<A NAME="secwebbyverbs">&#160;</A>
+<P>
+See also <A NAME="tex2html308" HREF="http://spsyc.nott.ac.uk:8888/help/web-verbs/">help on web-verbs</A>
+on the webbed on-line help system at MOOtiny
+<P>
+(Copy of the moo help text @MOOtiny oct 29 /95)
+<P>
+<SMALL CLASS=SMALL><PRE>The single easiest way to let people do something through the web with
+one of your objects is to create a verb called &lt;something&gt;_web.  I 
+shall refer to these as _web verbs.
+
+_web verbs are automatically shown at the bottom of the htext of
+objects.  The verb name (without the _web) is given as a button, and 
+the verb documentation given beside it.  
+
+The verb documentation can be used to give people the opportunity to 
+enter arguments to the verb.  This is done by including ?&lt;input type&gt;?
+in the documentation.  &lt;input type&gt; can be one of:
+  txt&lt;num&gt; - produces a input text box, num long.
+  chk&lt;ref&gt; - produces a number of checkboxes, one for each of the
+             items defined in ref (see below).
+  opt&lt;ref&gt; - produces a pull-down menu, with one option for each of
+             the items defined in ref (see below).
+ref is a reference to a verb or property which returns a list.  If the
+list is of objects, then their names will be used, rather than their
+object numbers.  Two useful verbs are provided on $www_utils to aid
+this.  One is :reachable_players, and the other is :reachable_things.
+See the help on these.
+
+The values returned by the inputs included in documentation are passed
+to the _web verb in args[1].  Args[1] is a list of strings, each of
+which will begin with '/' (a URL list).  The values are given in this
+list in the order which they are taken from the documentation.
+
+NOTE:  when using chk as the input type, each checked input will be
+a separate string within the URL list.
+
+_web verbs must be +x (since they are called through the web) and may
+refer to player as the person who's using the web.  Remember, though,
+that any messages to 'player', will actually go to the person on the
+moo, and they may not necessarily be connected.  Therefore any 
+messages that you have should be printed in the html that is returned
+by them.
+
+_web verbs should return some html.  A good example of a _web verb is
+$room:emote_web.</PRE></SMALL>
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,248 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>8.5 Social verb tutorial, level 0</TITLE>
+<META NAME="description" CONTENT="8.5 Social verb tutorial, level 0">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1874" HREF="node91.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1872" HREF="node70.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1866" HREF="node89.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1876" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1877" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1875" HREF="node91.html">8.6 [TECFAMOO] ``E_WEB'' Tutorial</A>
+<B>Up:</B> <A NAME="tex2html1873" HREF="node70.html">Basic MOO Programming Tutorial</A>
+<B> Previous:</B> <A NAME="tex2html1867" HREF="node89.html">La morale de l'histoire</A>
+<BR> <P>
+<H1><A NAME="SECTION04150000000000000000">8.5 Social verb tutorial, level 0</A></H1>
+<P>
+<A NAME="secverbtutorial0">&#160;</A>
+<P>
+This section will teach you how to write simple ``social'' verbs,
+i.e. verbs that just send messages around and do not modify the
+contents of any object. Ususally that kind of verb is made available
+in social features, but before writing and propagating those, it
+is better to write a few just for your own character.&lt;
+In order to do the
+the Generic Objects and Permission Tutorial
+(see section <A HREF="node102.html#secpermtutorial">8.10</A>)
+you don't need this section. So not much ``tutoring'' is done here
+and we rely on
+you for picking up the challenge!
+Feel free to pick it up later (i.e. once you know how to make
+generic objects and feature objects).
+<P>
+<H4><A NAME="SECTION04150010000000000000">The &quot;grumble&quot; verb</A></H4>
+<P>
+Get the code from <A NAME="tex2html163" HREF="code/code-grumble.moo">here</A> if
+you want to play around with this verb.
+Then write your own social verb !
+<P>
+This verb shows a few more MOO programming tricks, all
+related to sending messages to users:
+<P>
+<OL>
+<LI> This time we use a ``any to any'' verb specification. The reason
+is the following one. We want to say something like:
+<SMALL CLASS=SMALL><PRE>   grumble ``now this is really too much'' to somebody</PRE></SMALL>
+The first ``any'' specifier means that we can type in anything (e.g.
+a string) and the second ``any'' specifier means that we do not
+operate this verb on a specific object; ``any'' in this means
+a random user name.
+<LI> When you type a command like 'grumble Daniel' the MOO will try
+to find the object associated with the string ``Daniel''.
+This only works if the named object (``Daniel'' here) is in the same
+room. If found, it will set the variable <code>iobj</code> to the <code>#object</code>.
+But if no object was found, iobj will be not
+valid and we have to work out what to do with iobstr (see below).
+<SMALL CLASS=SMALL><PRE>    8:  if (!valid(iobj))</PRE></SMALL>
+<LI> Since the MOO parser does not find the addressee for us over distance
+(players in other rooms) we have to
+use a Lambda core utility function:
+<SMALL CLASS=SMALL><PRE>    9:    addressee = $string_utils:match_player(iobjstr);</PRE></SMALL>
+The ``iobj'' builtin variable will match IF the person or an object 
+is in the same room, if not we set this variable to the player object
+ we found (if any is found).
+<LI> Contrary to the ``holder'' tutorial (see section <A HREF="node80.html#sectutorial1">8.4</A>)
+we give differentiated feedback to the player who types the command,
+to players in the same room and so forth, e.g.
+<P>
+<SMALL CLASS=SMALL><PRE>   32:    player.location:announce_all_but({addressee, player}, 
+          player.name, &quot; grumbles&quot;, mess);</PRE></SMALL>
+<LI> In order to page a person in a other room, we use the following verb:
+<SMALL CLASS=SMALL><PRE>   18:    addressee:receive_page(&quot;You hear &quot; + player.name +
+          &quot; grumbling at you over distance: &quot;, &quot;    \&quot;&quot; + dobjstr + &quot;!\&quot;&quot;);</PRE></SMALL>
+<P>
+</OL>
+<P>
+Here is the code. Please note that some lines have been broken for display
+here.
+<P>
+<SMALL CLASS=SMALL><PRE>@verb me:grumble any to any
+
+----------------------------------------------------------------------
+&gt;@l ~mooboy:grumble
+@program ~MooBoy:grumble   any at any
+ 1:  &quot;The grumble verb allows you to grumble at persons + objects
+     in the same room&quot;;
+ 2:  &quot;as well as to persons in other rooms. Players in the same room will see&quot;;
+ 3:  &quot;your message, players in the distant room will just notice a grumbling&quot;;
+ 4:  &quot;The only thing that sucks is that this is a any to any verb&quot;;
+ 5:  &quot;Try 'grumble this is a test to xxx' to see what I mean&quot;;
+ 6:  &quot;&quot;;
+ 7:  &quot; --- test if the object or person is NOT in the same room&quot;;
+ 8:  if (!valid(iobj))
+ 9:    addressee = $string_utils:match_player(iobjstr);
+10:    &quot; ------ if not, is it a player ?&quot;;
+11:    if ($command_utils:player_match_failed(addressee, iobjstr))
+12:      player:tell(&quot;This player does not exist nor is there 
+         any object of that name in this room&quot;);
+13:    else
+14:      &quot; ------ it is a player and we can try to page it&quot;;
+15:      if (addressee:is_listening())
+16:        player:tell(&quot;You grumble-page to &quot;, addressee.name, 
+           &quot; [&quot;, addressee.location.name, &quot;]: \&quot;&quot;, dobjstr, &quot;\&quot;&quot;);
+17:        addressee:receive_page(&quot;You hear &quot; + player.name +
+           &quot; grumbling at you over distance: &quot;, &quot;    \&quot;&quot; + dobjstr + &quot;!\&quot;&quot;);
+18:        addressee.location:announce_all_but({addressee}, 
+           &quot;You vaguely hear that &quot;, player.name, &quot; grumbles something at &quot;,
+            addressee.name);
+19:      else
+20:        player:tell($string_utils:pronoun_sub(&quot;No need to grumble, 
+            %s is not connected right now&quot;, addressee));
+21:      endif
+22:    endif
+23:  else
+24:    &quot;------ the thing is in the same room, grumbling face to face&quot;;
+25:    addressee = iobj;
+26:    mess = &quot; \&quot;&quot; + dobjstr + &quot;\" &quot; + prepstr + &quot; &quot; + addressee.name;
+27:    if (is_player(addressee))
+28:      player:tell(&quot;You grumble&quot;, mess);
+29:    else
+30:      player:tell(&quot;The &quot;, addressee.name,
+         &quot; is not overly impressed by your grumbling.&quot;);
+31:    endif
+32:    player.location:announce_all_but({addressee, player},
+       player.name, &quot; grumbles&quot;, mess);
+33:    addressee:tell(player.name, &quot; grumbles at you, &quot;, &quot;\&quot;&quot;, dobjstr, &quot;!\&quot;&quot;);
+34:    addressee:tell(&quot; ... maybe you should really start worrying...&quot;);
+35:  endif
+36:  /* Last edited on Tuesday, June 25, 1996 at 11:40.38 am by MooBoy (#1324). */
+----------------------------------------------------------------------</PRE></SMALL>
+<P>
+Of course, this verb is not perfect yet. One thing missing might be
+permissions. right now this verb can be used by an other person
+that is in the same rooms as shown in the following examples:
+<P>
+An other person (e.g. Daniel) that is in the same room
+as Mooboy could type:
+<SMALL CLASS=SMALL><PRE> &gt;grumble &quot;something&quot; to MooBoy
+ You grumble &quot;something&quot; to MooBoy</PRE></SMALL>
+<P>
+and MooBoy would see:
+<P>
+<SMALL CLASS=SMALL><PRE> Daniel grumbles at you, &quot;something!&quot;
+ ... maybe you should really start worrying...</PRE></SMALL>
+This works because the MOO parser will find the ``grumble'' verb on
+MOOBoy who is in the same room. Grumbling over distance would not
+work as shown in the following example. The reason is that no matching
+verb has been found either on the player typing the command, nor the room,
+nor any object that has been matched to the command typed.
+<SMALL CLASS=SMALL><PRE>&gt;grumble &quot;watch out&quot; to Thora
+I don't understand that.</PRE></SMALL>
+We will address this and other security problems in an other tutorial [DOIT!],
+but you can look at sections <A HREF="node125.html#secsecurity">11.2</A> (general) or
+<A HREF="node133.html#secmuliownprog">12.4</A> (for specific information concerning
+<B>TECFA</B><TT>MOO</TT>.)
+<P>
+Another
+problem that could be easily solved is that you can grumble at
+persons in the same room that are disconnected. No harm done, but
+one could filter that situation too.
+<P>
+<H4><A NAME="SECTION04150020000000000000">The &quot;grab&quot; verb</A></H4>
+<P>
+Now let's look at a similar social verb, it is a simpler form of the
+previous verb, but has a permission check and some randomness built-in:
+<P>
+Get the code from <A NAME="tex2html164" HREF="code/code-grab.moo">here</A> if
+you want to play around with this verb.
+Then write your own social verb !
+<P>
+<OL>
+<LI> In line 11 we set the variable messages to a list of messages, something like <code>messages={``a'', ``b'', ``c'',}</code>
+<LI> In line 12 we select a random element of this list that will we
+displayed. <code>message = messages[random(length(messages))];</code> uses
+the builtin random function to select an element of the list. Note that
+<code>random(length(&lt;list&gt;)</code> simply means select a random number between
+1 and the length of the list (messages in our case).
+<LI> In the beginning of the verb (lines 6-9) we check if the caller
+  of the verb is the same object as the object to which the verb
+  belongs (you in this case). If this is not the case we print out
+a message to the caller, i.e. the person who typed the command.
+</OL>
+<SMALL CLASS=SMALL><PRE>&gt;@l me:grab
+@program ~MooBoy:grab   any none none
+ 1:  &quot;The grab verb allows you to ``grab'' persons + objects in the same room&quot;;
+ 2:  &quot;as well as persons in other rooms&quot;;
+ 3:  &quot;All it really does is just displaying a random message to the other person&quot;;
+ 4:  &quot;&quot;;
+ 5:  &quot; ---- permission: only yourself can execute this verb&quot;;
+ 6:  if (caller != this)
+ 7:    player:tell(&quot;Sorry, you don't have permission to use this verb&quot;);
+ 8:    return;
+ 9:  endif
+10:  &quot; ---- list of messages and random generation of one --- &quot;;
+11:  messages = {&quot;.... maybe you really should start worrying a bit !&quot;,
+ &quot;You feel that this might be the start of something really dangerous&quot;,
+ &quot;You sense his virtual eyes on you!&quot;,
+ &quot;.... maybe you should disconnect&quot;,
+ &quot;Did you say good bye to your friends ?,
+ you might just want to do that before it's too late!&quot;};
+12:  message = messages[random(length(messages))];
+13:  &quot; --- test if the object or person is in the same room&quot;;
+14:  if (dobj == #-3)
+15:    addressee = $string_utils:match_player(dobjstr);
+16:    &quot; ------ if not, is it a player ?&quot;;
+17:    if ($command_utils:player_match_failed(addressee, dobjstr))
+18:      player:tell(&quot;This player does not exist nor is there
+         any object of that name in this room&quot;);
+19:    else
+20:      &quot; ------ it is a player and we can try to page it&quot;;
+21:      if (addressee:is_listening())
+22:        player:tell(&quot;You grab &quot;, addressee.name,
+            &quot;[at &quot;, addressee.location.name, &quot;] &quot;, &quot;over distance and &quot;,
+            addressee.ps, &quot; sees: \&quot;&quot;, message, &quot;\".&quot;);
+23:        addressee:receive_page(&quot;You feel &quot; + player.name
+           + &quot; grabbing you over distance!&quot;, message);
+24:      else
+25:        player:tell($string_utils:pronoun_sub(&quot;No need to grab,
+           %s is not connected right now&quot;, addressee));
+26:      endif
+27:    endif
+28:  else
+29:    &quot;------ the thing is in the same room, grumbling face to face&quot;;
+30:      addressee = dobj;
+31:    if (is_player(dobj))
+32:      player:tell(&quot;You grab &quot;, dobjstr, &quot; and &quot;, addressee.ps,
+         &quot; sees: \&quot;&quot;, message, &quot;\".&quot;);
+33:    else
+34:      player:tell(&quot;The &quot;, addressee.name,
+         &quot; is not overly impressed by your grabbing.&quot;);
+35:    endif
+36:    addressee:tell(player.name, &quot; grabs you, &quot;, dobjstr, &quot;!&quot;, message);
+37:  endif
+38:  /* Last edited on Tuesday, June 25, 1996 at 2:04.43 pm by MooBoy (#1324). */
+--</PRE></SMALL>
+<P>
+<HR><A NAME="tex2html1874" HREF="node91.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1872" HREF="node70.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1866" HREF="node89.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1876" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1877" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html1875" HREF="node91.html">8.6 [TECFAMOO] ``E_WEB'' Tutorial</A>
+<B>Up:</B> <A NAME="tex2html1873" HREF="node70.html">Basic MOO Programming Tutorial</A>
+<B> Previous:</B> <A NAME="tex2html1867" HREF="node89.html">La morale de l'histoire</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

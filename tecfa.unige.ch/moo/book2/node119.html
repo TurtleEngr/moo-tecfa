@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>10.6 Expressions, statements, commands, oh my! (by Andy Bakun)</TITLE>
+<META NAME="description" CONTENT="10.6 Expressions, statements, commands, oh my! (by Andy Bakun)">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2234" HREF="node120.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2232" HREF="node108.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2226" HREF="node118.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2236" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2237" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2235" HREF="node120.html">10.7 Permissions (by Defender)</A>
+<B>Up:</B> <A NAME="tex2html2233" HREF="node108.html">Elements of the MOO </A>
+<B> Previous:</B> <A NAME="tex2html2227" HREF="node118.html">MOO variables</A>
+<BR> <P>
+<H1><A NAME="SECTION04360000000000000000">10.6 Expressions, statements, commands, oh my! (by Andy Bakun)</A></H1>
+<P>
+<A NAME="secexpressions">&#160;</A>
+<A NAME=1578>&#160;</A>
+<A NAME=1579>&#160;</A>
+<A NAME=1580>&#160;</A>
+<P>
+<EM>Acknowledgement:</EM> This text is a formatted
+version of a message posted to *Teaching on WorldMOO by Andy Bakun.
+<P>
+MOO programs are made up of statements.  All statements end in a
+semicolon.  Statements also can include other statements, in the body
+of a MOO command.
+<P>
+<SMALL CLASS=SMALL><PRE>   return;</PRE></SMALL>
+that's one statement
+<P>
+<SMALL CLASS=SMALL><PRE>   for x in [1..10]
+     y = y + x;
+   endfor</PRE></SMALL>
+This is a statement within a statement.  The for loop is a statement, and the 'body' of the for loop contains a statement.
+<P>
+<SMALL CLASS=SMALL><PRE>   fork (0)
+     foo:bar();
+   endfork</PRE></SMALL>
+This is also a nested statement, one statement in a the body of the fork, and the fork counts as a statement.
+<P>
+Statements are made up of commands or expressions.  Commands tell the
+moo to do something.  Commands do not return values.  Commands can't
+be nested (but statements can).  Commands can take expressions as
+arguments, but commands can't be used as arguments.  Expressions
+return a value.  Expressions can take arguements, and expressions can
+be nested (expressions within expressions)
+<P>
+The moo commands include:
+while, for, if, return.
+<P>
+An expressions is anything that returns a value:  all the builtin functions, any MOO value, any operations on those values.
+<P>
+Examples of statements are:
+<P>
+<SMALL CLASS=SMALL><PRE>   0;</PRE></SMALL>
+this evaluates the expression 0, and then throws the result away.
+<P>
+<SMALL CLASS=SMALL><PRE>   1+2;</PRE></SMALL>
+this evaluates 1+2, and throws the result away.
+<P>
+<SMALL CLASS=SMALL><PRE>   foo = 1+2;</PRE></SMALL>
+<P>
+This is made up of two expressions, 1+2 and a variable assignment.
+foo is a variable name.  1+2 is evaluated, and the result is assigned
+to the variable foo.  foo is evalualated the result is thrown away.
+<P>
+<SMALL CLASS=SMALL><PRE>   foo = bar = baz = 1;</PRE></SMALL>
+<P>
+This is a nested expression, 1 is evaluated, and assigned to baz.  baz
+is evaluated and the result is assigned to bar.  bar is evaluated and
+the result is assigned to foo.  foo is evaluated and the result is
+thrown away.
+<P>
+<SMALL CLASS=SMALL><PRE>   ;</PRE></SMALL>
+This is the null statement.  It returns 0.
+<SMALL CLASS=SMALL><PRE>   while (1)
+      foo:bar();
+   endwhile</PRE></SMALL>
+<P>
+this is a statement made up of a command.  the while command takes 1
+argument, an expression that returns a number.  In this case, the
+expression is 1, which returns 1.  While does not return anything.
+It's a syntax error to assign the result of any command to anything.
+x = while (1) is invalid.
+<P>
+<HR><A NAME="tex2html2234" HREF="node120.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2232" HREF="node108.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2226" HREF="node118.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2236" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2237" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html2235" HREF="node120.html">10.7 Permissions (by Defender)</A>
+<B>Up:</B> <A NAME="tex2html2233" HREF="node108.html">Elements of the MOO </A>
+<B> Previous:</B> <A NAME="tex2html2227" HREF="node118.html">MOO variables</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

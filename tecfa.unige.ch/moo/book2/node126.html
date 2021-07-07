@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Writing Secure Verbs (by EricM)</TITLE>
+<META NAME="description" CONTENT="Writing Secure Verbs (by EricM)">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2318" HREF="node127.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2316" HREF="node125.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2312" HREF="node125.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2320" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2321" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2319" HREF="node127.html">11.3 Error handling</A>
+<B>Up:</B> <A NAME="tex2html2317" HREF="node125.html">11.2 Security</A>
+<B> Previous:</B> <A NAME="tex2html2313" HREF="node125.html">11.2 Security</A>
+<BR> <P>
+<H2><A NAME="SECTION04421000000000000000">Writing Secure Verbs (by EricM)</A></H2>
+<P>
+<A NAME="secwritingsecure">&#160;</A>
+<A NAME=1622>&#160;</A>
+<P>
+<EM>Acknowledgment:</EM> This text is a formatted
+version of a message posted to ??? on BioMOO by:
+<SMALL CLASS=SMALL><PRE>                             Copyright 1995 Eric Mercer
+                             last updated 7/11/95
+                             EricM @ BioMOO, Diversity University, others....
+                             mercer@caltech.edu</PRE></SMALL>
+<P>
+<H4><A NAME="SECTION04421010000000000000">Additional documentation:</A></H4>
+<P>
+Check out the MOO programmer's manuel, e.g. the
+<A NAME="tex2html285" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_54.html#IDX117">callers</A> function.
+<P>
+<H4><A NAME="SECTION04421020000000000000">What verbs need permissions checking?</A></H4>
+<P>
+Any verb that either
+<P>
+<OL>
+<LI> alters the state of the object in a way that only a limited number
+  of people should be able to do, or
+<LI>  provides information that only a limited number of people should
+  have access to.
+</OL><H4><A NAME="SECTION04421030000000000000">What are the main considerations in choosing a format for your security?</A></H4>
+<P>
+The main considerations are 1) is the verb +x, and 2) can the verb be
+called from the command line (ie. does it have args other than this
+ none this).  Note that these are not linked and you can have +x
+command line verbs, for instance.
+<P>
+<H4><A NAME="SECTION04421040000000000000">What is the general structure of a permissions test?</A></H4>
+<P>
+  Verbs should start with a few lines of comments (describing what they do, etc.) followed by:  
+<SMALL CLASS=SMALL><PRE>     if (perms_test_fails)
+        return failure_report;
+     endif
+     ....-&gt;rest of verb</PRE></SMALL>
+where &quot;failure_report&quot; should be 'E_PERM' for +x this none this verbs, and 'player:tell(&quot;Sorry, you don't have permission to do that.&quot;)' for -x command line verb).  For +x command line verbs, add the player:tell line before returning E_PERM.
+<P>
+Replace &quot;perms_test_fails&quot; with one of the constructs given later in this note.  
+<H4><A NAME="SECTION04421050000000000000">What are valid calls to +x, this none this verbs?</A></H4>
+<P>
+I think the following list is complete.  I've also given an example of a typical &quot;perms_test_fails&quot; line for each, but note that you'll often want to use some combination or hybrid.
+<P>
+<SMALL CLASS=SMALL><PRE>1. Calls from other verbs on the object itself.
+     type:object-based security
+     example: if (caller!=this)
+2. Wiz-permed calls
+     type: permissions-based security
+     example: if (!$perm_utils:controls(caller_perms(), this))  &lt;-preferred
+              if (!caller_perms().wizard)  &lt;- less flexible
+3. Calls from verbs owned by the same programmer
+     type: perms-based security
+     example: if (caller_perms() != $code_utils:verb_perms())
+     note: Gives a lot of power to the programmer, but sometimes useful.
+           Note that we DON'T use the object number of the programmer,
+           because this will be different if someone ports the object.
+4. Calls from verbs owned by the object owner
+     type:perms-based security
+     example: if (caller_perms() != this.owner)
+     note: rarely useful, and not at all useful on generic objects
+5. Calls from objects owned by the programmer
+     type: object-based security
+     example: if (caller.owner != $code_utils:verb_perms())
+     note: only useful in some special cases
+6. Calls from &quot;permitted&quot; objects (generally stored as a list on a property)
+     type: object-based security
+     example: if (!(caller in this.permitted_callers))
+     note: useful only in some specialized circumstances</PRE></SMALL>
+<P>
+<H4><A NAME="SECTION04421060000000000000">What is the most useful test for -x command line verbs?</A></H4>
+<P>
+<SMALL CLASS=SMALL><PRE>  if (!$perm_utils:controls(player,this))</PRE></SMALL>
+This allows the object owner, additional owners, or wizards access to the
+verb.
+<P>
+<H4><A NAME="SECTION04421070000000000000">Why is it unacceptable to test &quot;player&quot; for security on +x verbs?</A></H4>
+<P>
+I'll give an example. Loro the lazy wizard writes a +x verb that can
+recycle any object and tests permissions with &quot;if
+(!$perm_utils:controls(player,this))&quot; at the verb's beginning.
+Semli the sneaky programmer builds an object and adds a &quot;tell&quot; verb to
+it (ie. a verb that gets called any time someone in the same room
+speaks).  The &quot;tell&quot; verb calls Loro's +x verb and tells it to recycle
+all of Loro's objects.  Semli puts the object in Loro's room...and
+Loro gets a nasty surprise after connecting.  Neato eh!  Note that
+&quot;player&quot; will be the person speaking (Loro in this case), because
+&quot;player&quot; is set to whoever initiates the action, and can only be
+changed by wiz-permed verbs.  Generally, it stays the same from the
+task's start to it's finish.  Now, if Loro had tested caller_perms(),
+then Semli's call would have been caught as one that did not have
+permission to be recycling objects. Got it?
+<P>
+<H4><A NAME="SECTION04421080000000000000">What's the most secure test for +x non-command line verbs?</A></H4>
+<P>
+<SMALL CLASS=SMALL><PRE>  if (caller != this)</PRE></SMALL>
+<P>
+When in doubt, use this one.  It's the least flexible but the most secure.
+<P>
+<H4><A NAME="SECTION04421090000000000000">How do I do permissions-based security for a +x command line verb?</A></H4>
+<P>
+The problem here is that you can't test caller_perms() on a command
+line verb, since the perms will be #-1.    Note that this isn't a
+problem for object-based security, since &quot;caller&quot; for a command line
+verb will be the same as &quot;player.&quot;  To test security on a +x command
+line verb, replace &quot;player&quot; in a construct like:
+<SMALL CLASS=SMALL><PRE>     if (!$perm_utils:controls(player,this))</PRE></SMALL>
+with an expression that will handle both command line and verb calls:
+<SMALL CLASS=SMALL><PRE>     if (!$perm_utils:controls( (valid(caller_perms())?caller_perms()|player) ,this))</PRE></SMALL>
+Note that if caller_perms is #-1, then &quot;player&quot; is used, otherwise
+caller_perms is used.
+<P>
+<H4><A NAME="SECTION044210100000000000000">Why are +x verbs called using pass() a special case?</A></H4>
+<P>
+One of the great things about MOO code is that the object-oriented
+nature lets you &quot;cover&quot; verbs by adding verbs of the same name on
+child objects.  These can handle special cases, but otherwise simply
+pass(@args) down to the verb on the parent object instead.  The
+problem is that if you use only perms-based security, this call (a
+legitimate one) will fail.  Let's say you are testing with
+<P>
+<SMALL CLASS=SMALL><PRE>     if (!$perm_utils:controls(caller_perms(),this))</PRE></SMALL>
+<P>
+which is generally very reasonable.  If someone makes a new generic as
+a child of your verb, then caller_perms() will be that person, who is
+unlikely to &quot;control&quot; the object.  The solution is to use a
+combination object-based and perms-based test such as:
+<P>
+<SMALL CLASS=SMALL><PRE>if ( (caller==this) || !$perm_utils:controls(caller_perms(),this) )</PRE></SMALL>
+<P>
+<H4><A NAME="SECTION044210110000000000000">What sort of combination security tests are reasonable?</A></H4>
+<P>
+Here's an example for us to dissect:
+<SMALL CLASS=SMALL><PRE>if ( (caller!=this) &amp;&amp; !$perm_utils:controls(cp=caller_perms(),this)
+      &amp;&amp; (cp!=$code_utils:verb_perms()))</PRE></SMALL>
+<P>
+What's going on here?  First, there's a test to see if caller!=this.
+That gives access to calls from other verbs on the same object and to
+calls via pass().  Then we check with $perm_utils:controls, which
+gives access to the object's owner, any additional owners, and to
+wizards.  Finally, we test if the caller_perms are the same as the
+perms of the verb running (ie. the calling verb was written by us).
+This allows us to design objects that interact with each other.  Note
+that this is a special circumstance, but one that's not terribly
+uncommon (eg. a class of objects and a feature object that interacts
+with them).
+<P>
+<HR><A NAME="tex2html2318" HREF="node127.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2316" HREF="node125.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2312" HREF="node125.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2320" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2321" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html2319" HREF="node127.html">11.3 Error handling</A>
+<B>Up:</B> <A NAME="tex2html2317" HREF="node125.html">11.2 Security</A>
+<B> Previous:</B> <A NAME="tex2html2313" HREF="node125.html">11.2 Security</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

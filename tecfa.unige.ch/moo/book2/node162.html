@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Basic Eval (by Andy Bakun)</TITLE>
+<META NAME="description" CONTENT="Basic Eval (by Andy Bakun)">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2781" HREF="node163.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2779" HREF="node161.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2773" HREF="node161.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2783" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2784" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2782" HREF="node163.html">Eval Options (by Andy </A>
+<B>Up:</B> <A NAME="tex2html2780" HREF="node161.html">16.6 Eval</A>
+<B> Previous:</B> <A NAME="tex2html2774" HREF="node161.html">16.6 Eval</A>
+<BR> <P>
+<H2><A NAME="SECTION05161000000000000000">Basic Eval (by Andy Bakun)</A></H2>
+<P>
+<A NAME="secbasiceval">&#160;</A>
+<P>
+<EM>Acknowledgment:</EM> This text is a formatted
+version of a message posted to *Teaching on WorldMOO by Andy Bakun.
+<P>
+Eval, a command available to all programmers, is one of the most useful commands on the MOO.  What it does is take it's arguments and 'evaluates' them, and returns the result.  This has unending usefulness, from setting property values, to examining something in the database, to testing code fragments.
+<P>
+A short form of eval is the semicolon (;)
+<P>
+There are a few forms of the eval command, ;, ;;, and eval-d.
+<P>
+<DL ><DT><STRONG>;</STRONG>
+<DD> will just evaluate the first expression that it gets.  It
+  essentially sticks a return command before that expression.
+<P>
+<DT><STRONG>;;</STRONG>
+<DD> is just like ; except it takes more than one moo statement and
+  doesn't stick a return command in it.. it's return value is
+  dependent on what you chose to return.  this is usually used to
+  evaluate multi-line moo programs.
+<P>
+<DT><STRONG>eval-d and it's cousin eval-d ;</STRONG>
+<DD> runs the code with the d verb bit
+  off, so you won't get a traceback if your eval crashes.
+<P>
+ </DL>
+The best way to explain this is with some examples
+<P>
+<SMALL CLASS=SMALL><PRE>   ;2
+   =&gt; 2</PRE></SMALL>
+This just returns it's expression (the expression being 2) and is the same thing as a verb with one line of 'return 2;' 
+<SMALL CLASS=SMALL><PRE>   ;2+5
+   =&gt; 7</PRE></SMALL>
+This is just like 'return 2+5;'
+<P>
+<SMALL CLASS=SMALL><PRE>   ;;2+5
+   =&gt; 0</PRE></SMALL>
+This is just like the code '2+5;'  No return value is generated (0 is the default return value).
+<P>
+<SMALL CLASS=SMALL><PRE>   ;;return 2+5
+   =&gt; 7</PRE></SMALL>
+<P>
+This is the code 'return 2+5;'
+<P>
+<SMALL CLASS=SMALL><PRE>  ;length(1)
+  #-1:Input to EVAL, line 13:  Type mismatch</PRE></SMALL>
+<P>
+This eval is just like 'return length(1);' and since length(1) is an
+invalid expression, and returns E_TYPE, the eval tracebacks.
+<P>
+<SMALL CLASS=SMALL><PRE>   eval-d length(1)
+   =&gt; E_TYPE (Type mismatch)</PRE></SMALL>
+<P>
+This is just like 'return length(1);' but run with the d bit unset, so
+length() doesn't cause it to traceback, it just returns the error
+value
+<P>
+<SMALL CLASS=SMALL><PRE>   ;for x in (players()) if (x == #1353) return x; endif endfor
+   =&gt; #1353 (ThwartedEfforts)</PRE></SMALL>
+This is just like the verb code:
+<SMALL CLASS=SMALL><PRE>program ..:..
+for x in (players())
+  if (x == #1353)
+    return x;
+  endif
+endfor</PRE></SMALL>
+<P>
+<HR><A NAME="tex2html2781" HREF="node163.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2779" HREF="node161.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2773" HREF="node161.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2783" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2784" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html2782" HREF="node163.html">Eval Options (by Andy </A>
+<B>Up:</B> <A NAME="tex2html2780" HREF="node161.html">16.6 Eval</A>
+<B> Previous:</B> <A NAME="tex2html2774" HREF="node161.html">16.6 Eval</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

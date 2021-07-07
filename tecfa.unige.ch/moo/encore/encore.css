@@ -1,0 +1,31 @@
+/*Style sheet for the enCore web site. Created by Jan Rune Holmevik */
+
+/* Body definition */
+
+body, P, TD { color: DimGray; font-size: 12pt; font-family: Verdana, Arial, Helvetica, Sans-serif; background-color: white }
+
+body { margin-left: 10%; margin-right: 10%; text-align: justify  }
+
+
+/* Page and text elements */
+
+H1, H3 {text-align: left; }
+
+H1 { margin-left: -8%; font-size: X-large }
+
+H3 { margin-left: -5%; font-size: large; }
+
+H5 { text-align: center; font-style: normal }
+
+H6 { font-size: small }
+
+I { color: orange }
+
+TT, PRE { font-family: courier, mono-space }
+
+/* Links */
+
+A { color: blue; text-decoration: none }
+
+/* Custom style for page footers */
+P.footer { color: DimGray; font-size: 10pt; font-family: Verdana, Arial, Helvetica, Sans-serif; background-color: white; text-align: center; }

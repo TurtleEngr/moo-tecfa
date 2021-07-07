@@ -1,0 +1,3712 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 595.28 841.89 0 1 8 FMDOCUMENT
+0 0 /Times-Roman FMFONTDEFINE
+1 0 /Times-Bold FMFONTDEFINE
+2 0 /Times-BoldItalic FMFONTDEFINE
+3 0 /Times-Italic FMFONTDEFINE
+4 0 /Courier FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: A4
+%%EndPaperSize
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+ 12 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 789.37 510.24 803.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+84.21 798.37 552.21 798.37 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(.  - .) 85.04 806.88 T
+(1) 491.06 806.88 T
+1 14 Q
+(Universit\216 de Gen\217ve) 85.04 775.86 T
+(Facult\216 de Psychologie et de Sciences de l\325Education) 85.04 758.86 T
+(Unit\216 \322T) 85.04 741.86 T
+(echnologies de Formation et Appr) 136.25 741.86 T
+(entissage\323) 338.98 741.86 T
+1 30 Q
+(T) 225.7 653.2 T
+(ecfaMOO) 242.95 653.2 T
+(Manuel) 248.47 593.2 T
+1 18 Q
+(Daniel K. Schneider & friends [1]) 168.64 483.2 T
+1 14 Q
+(schneide@divsun.unige.ch) 218.78 423.2 T
+(\050Daniel et Kaspar sur T) 153.04 399.2 T
+(ecfaMOO.unige.ch 7777\051) 293.3 399.2 T
+1 18 Q
+(Janvier 1995) 248.39 339.2 T
+(\050br) 148.45 286.2 T
+(ouillon!, pr) 172.12 286.2 T
+(oduced with W) 257.82 286.2 T
+(ebmaker\051) 372.84 286.2 T
+85.04 133.69 510.24 148.67 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+94.04 146.65 238.04 146.65 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+-0.26 (1. Le TecfaMoo est un nouveau projet qui se pr\216cise au niveau international. Il a pu voir le jour sous) 113.39 127.03 P
+-0.15 (cette forme seulement gr\211ce \210 notre team de wizards, dans l\325ordre chronologique:) 113.39 115.03 P
+2 F
+-0.15 (xymox, irradiate,) 440.11 115.03 P
+-0.41 (gustavo et janus) 113.39 103.03 P
+0 F
+-0.41 (. Ces personnes venues du \322cyberspace\323 international nous ont d\325abord construit ra-) 179.25 103.03 P
+-0.46 (pidement un \322coeur\323 de haut niveau et continuent \210 nous fournir les outils essentiels dont on a besoin) 113.39 91.03 P
+0.21 (pour amorcer notre projet d\325espace virtuel pour l\325\216ducation et la recherche. Je tiens \210 les remercier) 113.39 79.03 P
+(vivement ici.) 113.39 67.03 T
+FMENDPAGE
+%%EndPage: "1" 1
+%%Page: "2" 2
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+ 12 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 789.37 510.24 803.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+84.21 798.37 552.21 798.37 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(1. Introduction - 1-1. Clients MOO \050Moo-Clients\051) 85.04 806.88 T
+(2) 491.06 806.88 T
+85.04 736.02 510.24 767.2 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 736.02 510.24 767.2 R
+7 X
+0 0 0 1 0 0 0 K
+V
+83.04 747.3 553.59 747.3 2 L
+V
+4 H
+2 Z
+0 X
+N
+0 0 595.28 841.89 C
+1 18 Q
+0 X
+0 0 0 1 0 0 0 K
+(1. Introduction) 85.04 773.2 T
+0 10 Q
+0.1 (Note for english readers: You may not understand much, but glancing at the list of commands may) 113.39 717.35 P
+(be useful \050once available\051.) 113.39 705.35 T
+0.13 (Un \322MOO\323 est un serveur de r\216alit\216 virtuelle textuelle \050RVT\051. Il s\325agit d\325une sorte de combinaison) 113.39 688.35 P
+-0.34 (entre les forums du T\216l\216texte \050ou Compuserve\051 et les jeux d\325aventures textuelles en y rajoutant toute) 113.39 676.35 P
+-0.08 (la gamme de logiciels asynchrones de t\216l\216communication dont on a habitue. Cette technologie est \210) 113.39 664.35 P
+(nos yeux \050et sur le plan fonctionnel\051 le pr\216curseur le plus important du futur \322cyberspace\323.) 113.39 652.35 T
+-0.52 (NOTE: Sur tous les MOO il existe un certain nombre de commandes standards. Las plupart des com-) 113.39 635.35 P
+-0.14 (mandes d\216crites ci-dessus fonctionner dans le TecfaMOO, les autres vont y \220tre rajout\216es. La majo-) 113.39 623.35 P
+0.59 (rit\216 des commandes sont non-standards et peuvent ou ne peuvent pas marcher sur d\325autres MOO.) 113.39 611.35 P
+(Toutefois, on s\216pare ici les commandes standards partout des extensions.) 113.39 599.35 T
+85.04 538.5 510.24 564.02 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+112.73 550.17 531.93 550.17 2 L
+1 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(1-1) 85.04 568.68 T
+(Clients MOO \050Moo-Clients\051) 113.39 568.68 T
+0 10 Q
+-0.26 (Pour travailler avec MOO, il est tr\217s fortement conseill\216 d\325utiliser un client sp\216cialis\216. Il est difficile) 113.39 518.84 P
+(de travailler avec une connexion telnet.) 113.39 506.84 T
+1 14 Q
+(1-1.1) 85.04 480.17 T
+(Sous Emacs: le client \322rmoo\323) 141.73 480.17 T
+1 10 Q
+(M-x rmoo) 85.04 458.84 T
+0 F
+-0.34 (Vous propose le choix d\325un Moo et vous interroge \216ventuellement sur votre nom + mot de passe.) 127.56 445.84 P
+(La liste des MOOs disponibles et stock\216e dans le fichier ~/.rmoo_worlds) 127.56 434.84 T
+1 F
+(c-c c-q) 85.04 419.84 T
+(Quitter une s\216ance MOO) 127.56 419.84 T
+(M-p) 85.04 403.84 T
+(R\216p\216ter \050ou plut\231t reafficher\051 la commande pr\216c\216dente) 127.56 403.84 T
+1 14 Q
+(1-1.2) 85.04 377.17 T
+(Muddweller sur MAC) 141.73 377.17 T
+0 10 Q
+(\245) 113.39 355.84 T
+(Utilisez les menus pour vous connecter) 127.56 355.84 T
+(\245) 113.39 339.84 T
+(Tapez vos commandes dans la toute petite fen\220tre en bas du client.) 127.56 339.84 T
+1 14 Q
+(1-1.3) 85.04 314.17 T
+(\050tf\051 Tinyfugue sous Unix) 141.73 314.17 T
+0 10 Q
+(\245) 113.39 292.84 T
+(Tapez \322tf <adresse> <no porte>\323) 127.56 292.84 T
+(\245) 113.39 276.84 T
+(la commande Unix \322tecfamoo\323 lance tf pour le TecfaMOO.) 127.56 276.84 T
+1 F
+(/quit) 85.04 261.84 T
+( pour d\216connecter) 127.56 261.84 T
+(/visual on) 85.04 245.84 T
+( s\216pare la ligne input du reste) 127.56 245.84 T
+(/help) 85.04 229.84 T
+(donne la liste des commandes) 127.56 229.84 T
+85.04 168.99 510.24 194.51 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+112.73 180.66 531.93 180.66 2 L
+1 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(1-2) 85.04 199.17 T
+(Connexion/D\216connexion sur un MOO) 113.39 199.17 T
+1 10 Q
+(connect) 85.04 149.33 T
+(<user-name> <mot-de-passe\051) 127.56 149.33 T
+0 F
+(Pour se connecter) 127.56 136.33 T
+3 F
+-0.24 (Notez que vous pouvez configurer la plupart des client pour faire une connexion automa-) 155.9 125.33 P
+(tique) 155.9 113.33 T
+1 F
+(@quit) 85.04 97.33 T
+(pour quitter) 127.56 97.33 T
+(@password <old password> <new password>) 85.04 81.33 T
+0 F
+(Change le mot de passe) 127.56 68.33 T
+FMENDPAGE
+%%EndPage: "2" 2
+%%Page: "3" 3
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+ 12 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 789.37 510.24 803.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+84.21 798.37 552.21 798.37 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(1. Introduction - 1-3. Aide \050Help\051) 85.04 806.88 T
+(3) 491.06 806.88 T
+85.04 745.68 510.24 771.2 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+112.73 757.35 531.93 757.35 2 L
+1 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(1-3) 85.04 775.86 T
+(Aide \050Help\051) 113.39 775.86 T
+1 10 Q
+(help) 85.04 726.02 T
+(Affiche une liste de \322topics\323) 127.56 726.02 T
+0 F
+(Arguments:) 127.56 713.02 T
+1 F
+(< topic>) 99.21 702.02 T
+( Affiche une introduction \210 un \322topic\323 / liste de commandes disponibles) 170.08 702.02 T
+0 F
+(Exemple:) 127.56 691.02 T
+3 F
+(\0501\051 help movement) 155.9 680.02 T
+0 F
+(Affiche une aide sur la navigation dans l\325espace \322MOO\323) 127.56 668.02 T
+1 F
+(<commande>) 99.21 657.02 T
+(Affiche l\325aide pour une commande) 170.08 657.02 T
+0 F
+(Exemple:) 127.56 646.02 T
+3 F
+(\0501\051 help page) 155.9 635.02 T
+0 F
+(Affiche une aide pour la commande \322page\323) 127.56 623.02 T
+3 F
+(\0502\051 help #<no objet>) 155.9 612.02 T
+0 F
+(Affiche l\325aide pour un objet \050si disponible\051) 127.56 600.02 T
+3 F
+(\0503\051help #<no objet>:<verbe>) 155.9 589.02 T
+0 F
+(Affiche l\325aide pour un verbe attach\216 \210 un objet) 127.56 577.02 T
+85.04 517.17 510.24 542.69 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+112.73 528.84 531.93 528.84 2 L
+1 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(1-4) 85.04 547.35 T
+(Configuration de votre fen\220tre terminal) 113.39 547.35 T
+1 10 Q
+(@wrap on) 85.04 497.51 T
+(t to make the MOO wrap the text you read) 129.62 497.51 T
+(@linelength XX) 85.04 481.51 T
+( to set the length of your lines, in letters, to XX) 153.51 481.51 T
+(@pagelength XX) 85.04 465.51 T
+( to set the length of your page, in lines, to XX) 157.95 465.51 T
+(@more rest/flush) 85.04 449.51 T
+( to read/flush suspended output) 159.05 449.51 T
+FMENDPAGE
+%%EndPage: "3" 3
+%%Page: "4" 4
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+ 12 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 789.37 510.24 803.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+84.21 798.37 552.21 798.37 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(2. Communication - 2-1. Communication de base) 85.04 806.88 T
+(4) 491.06 806.88 T
+85.04 736.02 510.24 767.2 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 736.02 510.24 767.2 R
+7 X
+0 0 0 1 0 0 0 K
+V
+83.04 747.3 553.59 747.3 2 L
+V
+4 H
+2 Z
+0 X
+N
+0 0 595.28 841.89 C
+1 18 Q
+0 X
+0 0 0 1 0 0 0 K
+(2. Communication) 85.04 773.2 T
+85.04 675.5 510.24 701.02 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+112.73 687.17 531.93 687.17 2 L
+1 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(2-1) 85.04 705.68 T
+(Communication de base) 113.39 705.68 T
+1 10 Q
+(Dans les exemples qui suivent vous \220tes \322John\323) 85.04 655.84 T
+(say) 85.04 639.84 T
+(Dire quelque chose \210 tout le monde dans une salle) 127.56 639.84 T
+(\322) 85.04 623.84 T
+(\050abr\216viation\051) 127.56 623.84 T
+0 F
+(Exemple:) 127.56 610.84 T
+3 F
+(\0501\051 Hello, there.) 155.9 599.84 T
+0 F
+(Vous allez voir: You say, "Hello, there.") 127.56 587.84 T
+3 F
+(\0502\051 "Hello, there) 155.9 576.84 T
+1 F
+(emote) 85.04 560.84 T
+(Expression \322non-verbales\323) 127.56 560.84 T
+(:) 85.04 544.84 T
+(\050abr\216viation\051) 127.56 544.84 T
+0 F
+(Exemple:) 127.56 531.84 T
+3 F
+(\0501\051 emote smiles.) 155.9 520.84 T
+0 F
+(Vous allez voir: John smiles.) 127.56 508.84 T
+3 F
+(\0502\051 :smiles) 155.9 497.84 T
+0 F
+(\050la m\220me chose\051) 127.56 485.84 T
+1 F
+(whisper) 85.04 470.84 T
+(communication priv\216e) 127.56 470.84 T
+0 F
+(Exemple) 127.56 457.84 T
+3 F
+(\0501\051 whisper \322Hello, Jane darling\323 to Jane) 155.9 446.84 T
+0 F
+-0.35 (Visible seulement pour Jane \050si elle se trouve dans la m\220me salle\051. Vous allez voir: You whisper,) 127.56 434.84 P
+("Hello, Jane darling" to Jane.) 127.56 423.84 T
+1 F
+(@who) 85.04 408.84 T
+(Afficher toutes les personnes connect\216es au MOO) 127.56 408.84 T
+(@who lister les gens) 99.21 395.84 T
+(@who <nom>... donne de l\325information sur une personne) 99.21 384.84 T
+(page) 85.04 369.84 T
+(Communication \210 distance) 127.56 369.84 T
+0 F
+(Exemple:) 127.56 356.84 T
+3 F
+(\0501\051 page Jane Do you have some free time?) 155.9 345.84 T
+85.04 272.99 510.24 298.51 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+112.73 284.66 531.93 284.66 2 L
+1 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(2-2) 85.04 303.17 T
+(Extensions du TecfaMOO \050et d\325autres\051) 113.39 303.17 T
+1 10 Q
+(-) 85.04 253.33 T
+(S\325adresser publiquement \210 une seule personne) 127.56 253.33 T
+(\324) 85.04 237.33 T
+(\050abr\216viation, backquote!\051) 127.56 237.33 T
+0 F
+(Exemple:) 127.56 224.33 T
+3 F
+(\0501\051 -Jane I agree with you.) 155.9 213.33 T
+0 F
+(Vous allez voir: 'John [to Jane]: I agree with you.) 127.56 201.33 T
+3 F
+(\0502\051 - \322... I agree again) 155.9 190.33 T
+0 F
+(Avec \322-\323 sans arguments on s\325adresse de nouveau \210 la m\220me personne) 127.56 178.33 T
+1 F
+(think) 85.04 163.33 T
+(\322penser\323 \050Visible pour tout le monde dans une m\220me salle\051) 127.56 163.33 T
+0 F
+(Exemple:) 127.56 150.33 T
+3 F
+(\0501\051 think I think therefore I am.) 155.9 139.33 T
+0 F
+(Vous allez voir: John . o O \050 I think therefore I am \051) 127.56 127.33 T
+1 F
+(+) 85.04 112.33 T
+(\322emote\323 \210 distance) 127.56 112.33 T
+0 F
+(Exemple:) 127.56 99.33 T
+3 F
+(\0501\051 +guest waves) 155.9 88.33 T
+0 F
+(Peut donner: Jane waves to you \050si vous \220tes \322guest\323\051.) 127.56 76.33 T
+1 F
+(=) 85.04 61.33 T
+(CB \050utilisation d\325un canal radio sur TECFAMOO et EON\051) 127.56 61.33 T
+FMENDPAGE
+%%EndPage: "4" 4
+%%Page: "5" 5
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+ 12 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 789.37 510.24 803.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+84.21 798.37 552.21 798.37 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(2. Communication - 2-3. Lien Inter-MOO \050sur TECFA, DUM, Eon, Gna-Lab, etc.!\051) 85.04 806.88 T
+(5) 491.06 806.88 T
+-0.21 (Il faut avoir la feature #122 \050@addfeature #122\051, faites help #122 pour avoir toutes les comman-) 127.56 778.53 P
+(des.) 127.56 767.53 T
+(Example:) 127.56 756.53 T
+3 F
+(\0501\051=Je suis perdu, HELP !) 155.9 745.53 T
+0 F
+(Tout le monde branch\216 sur le m\220me canal peut voir ce message, \210 utiliser avec mod\216ration) 127.56 733.53 T
+85.04 673.68 510.24 699.2 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+112.73 685.35 531.93 685.35 2 L
+1 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(2-3) 85.04 703.86 T
+(Lien Inter-MOO \050sur TECFA, DUM, Eon, Gna-Lab, etc.!\051) 113.39 703.86 T
+0 10 Q
+0.33 (Il existe un lien entre un certain nombre de MOO \216ducatifs: Pour utiliser ces fonctionalit\216s il faut:) 113.39 654.02 P
+(@addfeature #310.) 113.39 642.02 T
+(help #310 ..... pour avoir toutes les commandes) 113.39 625.02 T
+(look #307 ..... pour avoir la liste des serveurs MOO connect\216es.) 113.39 608.02 T
+1 F
+(rwho) 85.04 591.02 T
+(Lister les personnes connectes \210 un autre serveur) 127.56 591.02 T
+0 F
+(Exemple:) 127.56 578.02 T
+3 F
+(\0501\051 rwho kaspar@eon) 155.9 567.02 T
+0 F
+(Voir si Kaspar est connect\216 sur Eon) 127.56 555.02 T
+3 F
+(\0502\051 rwho @eon) 155.9 544.02 T
+0 F
+(Lister toutes les personnes connect\216es sur Eon) 127.56 532.02 T
+1 F
+(rpage) 85.04 517.02 T
+(Envoyer un message \210 une personne sur un autre MOO) 127.56 517.02 T
+0 F
+(Exemple:) 127.56 504.02 T
+3 F
+(\0501\051 rpage guest@dum \322Hi, how are you?\323) 155.9 493.02 T
+1 F
+(rep) 85.04 477.02 T
+(R\216pondre au dernier rpage re\215u) 127.56 477.02 T
+85.04 416.17 510.24 441.69 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+112.73 427.84 531.93 427.84 2 L
+1 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(2-4) 85.04 446.35 T
+(Communication asynchrone/Syst\217mes d\325information) 113.39 446.35 T
+0 10 Q
+-0.24 (La plupart des MOO ont des \322News\323, \322Poster\323, \322e-mail\323, etc. internes. Examiner ces objets pour sa-) 113.39 396.51 P
+(voir comment les utiliser. Certains MOO ont des interfaces simples \210 \322gopher\323 et \322www\323.) 113.39 384.51 T
+1 F
+(@subscribe \050Lister les Newsgroupes disponibles\051) 85.04 367.51 T
+(@mail) 85.04 351.51 T
+(Lister le contenu d\325une collection de courier) 127.56 351.51 T
+0 F
+(Exemples:) 127.56 338.51 T
+3 F
+(\0501\051 @mail) 155.9 327.51 T
+0 F
+(Liste la collection de votre courier personnel) 127.56 315.51 T
+3 F
+(\0502\051 @mail on *new) 155.9 304.51 T
+0 F
+(Liste les messages dans la collection *new) 127.56 292.51 T
+1 F
+(@read 1 on <newsgroup> \050Afficher le message 1 d\325un newsgroup\051) 85.04 277.51 T
+3 F
+(\0501\051 @read 1 on *news) 155.9 264.51 T
+1 F
+(@rn) 85.04 248.51 T
+(Lister les collections de News et de courrier ayant re\215u de nouveaux messages) 127.56 248.51 T
+(@nn \050*\051) 85.04 232.51 T
+(Lire tous les nouveaux messages dans toutes les collections abonn\216es) 127.56 232.51 T
+(@send) 85.04 216.51 T
+(Envoyer un \050moo\051email \050\210 compl\216ter!\051) 127.56 216.51 T
+3 F
+(\0501\051 @send daniel) 155.9 203.51 T
+(\322message test) 155.9 191.51 T
+(\322Comment ca va ?) 155.9 179.51 T
+(send) 155.9 167.51 T
+0 F
+0.3 (Envoye un message \210 Daniel avec sujet \322message test\323. Notez que vous devez \322parler\323 au pro-) 127.56 155.51 P
+(gramme mail et terminer avec la commande \322send\323.) 127.56 144.51 T
+1 F
+(@qsend) 85.04 129.51 T
+(quicksend mail) 127.56 129.51 T
+3 F
+(\0501\051 qsend lucy je n\325ai pas pu rester ... a la prochaine) 155.9 116.51 T
+0 F
+(Envoyer un mail \210 Lucy ...) 127.56 104.51 T
+3 F
+(\0502\051 qsend \322lucy\323 \322nina\323 subj=\323oops\323 Je n\325ai pas pu vous attendre ---- X.Y.) 155.9 93.51 T
+0 F
+-0.04 (Envoyer un message \210 lucy ET nina avec une ligne de sujet. Notez l\325utilisation des quotes. Pour) 127.56 81.51 P
+(plus de d\216tail, faire \322help me:@qsend\323.) 127.56 70.51 T
+FMENDPAGE
+%%EndPage: "5" 5
+%%Page: "6" 6
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+ 12 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 789.37 510.24 803.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+84.21 798.37 552.21 798.37 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(3. La Navigation - 2-4. Communication asynchrone/Syst\217mes d\325information) 85.04 806.88 T
+(6) 491.06 806.88 T
+85.04 736.02 510.24 767.2 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 736.02 510.24 767.2 R
+7 X
+0 0 0 1 0 0 0 K
+V
+83.04 747.3 553.59 747.3 2 L
+V
+4 H
+2 Z
+0 X
+N
+0 0 595.28 841.89 C
+1 18 Q
+0 X
+0 0 0 1 0 0 0 K
+(3. La Navigation) 85.04 773.2 T
+1 10 Q
+(go) 85.04 717.35 T
+(marcher dans une direction) 127.56 717.35 T
+0 F
+1.3 (En r\217gle g\216n\216rale il faut lire la description d\325une salle. Elle indique les sorties \050par ex \322north\323,) 113.39 700.35 P
+(\322south\323, \322out\323\051. En tapant ces directions ou \322go <direction>\323 on peut se d\216placer.) 113.39 688.35 T
+(Les commandes suivantes n\325existent que dans certains MOO:) 113.39 671.35 T
+1 F
+(@addroom) 85.04 654.35 T
+( se souvenir d\325une \322chambre\323) 133.23 654.35 T
+3 F
+(\0501\051 @addroom atrium #101) 155.9 641.35 T
+0 F
+(Tapez \322@examine here\323 pour afficher le num\216ro d\325une salle) 127.56 629.35 T
+1 F
+(@rooms) 85.04 614.35 T
+(Afficher la liste des chambres m\216moris\216es) 127.56 614.35 T
+1 14 Q
+(Extensions) 113.39 587.68 T
+1 10 Q
+(map) 85.04 570.35 T
+(afficher une \322carte\323 de la r\216gion ou du MOO \050pas tjrs disponible\051) 127.56 570.35 T
+0 F
+-0.36 (Notez que sur la plupart des MOO il existe souvent des cartes \050maps\051 qu\325il faut lire avec la comman-) 113.39 553.35 P
+(de \322read map\323) 113.39 541.35 T
+1 F
+(@go) 85.04 524.35 T
+(t\216l\216portage vers un objet) 127.56 524.35 T
+(@join) 85.04 508.35 T
+(joindre une personne \210 un endroit) 127.56 508.35 T
+3 F
+(\0501\051 @join Daniel) 155.9 495.35 T
+0 F
+(Vous joignez Daniel \210 l\325endroit o\235 il est) 127.56 483.35 T
+-0.32 (Notez qu\325il est poli de \322frapper\323 avec knock ou de faire un \322page\323 avant de joindre une personne qui) 113.39 467.35 P
+(se trouve visiblement pas dans un endroit public.) 113.39 455.35 T
+1 F
+(@knock) 85.04 438.35 T
+(frapper \322\210 la porte\323 d\325un \322room\323) 127.56 438.35 T
+3 F
+(\0502\051@kock daniel) 155.9 425.35 T
+0 F
+(Cette commande sert \210 demander si on peut @join une personne \210 un endroit donn\216.) 127.56 413.35 T
+1 F
+(@invite) 85.04 398.35 T
+(inviter une personne \210 se joindre,) 127.56 398.35 T
+0 F
+(Utilis\216 souvent pour r\216pondre \210 un \322@knock\323, \322help @knock\323 pour plus de d\216tails) 127.56 385.35 T
+(Exemple:) 127.56 374.35 T
+3 F
+(\0501\051 @invite) 155.9 363.35 T
+0 F
+(Invite la derni\217re personne qui a frapp\216e) 127.56 351.35 T
+3 F
+(\0502\051 @invite Jean) 155.9 340.35 T
+0 F
+(Invite Jean \210 se joindre) 127.56 328.35 T
+FMENDPAGE
+%%EndPage: "6" 6
+%%Page: "7" 7
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+ 12 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 789.37 510.24 803.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+84.21 798.37 552.21 798.37 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(4. Les objets du MOO \050Moo objects\051 - 4-1. Introduction) 85.04 806.88 T
+(7) 491.06 806.88 T
+85.04 736.02 510.24 767.2 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 736.02 510.24 767.2 R
+7 X
+0 0 0 1 0 0 0 K
+V
+83.04 747.3 553.59 747.3 2 L
+V
+4 H
+2 Z
+0 X
+N
+0 0 595.28 841.89 C
+1 18 Q
+0 X
+0 0 0 1 0 0 0 K
+(4. Les objets du MOO \050Moo objects\051) 85.04 773.2 T
+85.04 675.5 510.24 701.02 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+112.73 687.17 531.93 687.17 2 L
+1 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(4-1) 85.04 705.68 T
+(Introduction) 113.39 705.68 T
+0 10 Q
+-0.31 (Tout objet, personnage etc. sur un MOO est \216galement un objet au sens informatique. Il porte un nu-) 113.39 655.84 P
+0.18 (m\216ro \050cf. la commande \322examine\323\051 qui l\325identifie. Dans une m\220me salle tous les objets sont \216gale-) 113.39 643.84 P
+-0.06 (ment identifiables et manipulables par leur nom ou par un nom d\325alias. Lorsque deux objets portent) 113.39 631.84 P
+0.54 (un m\220me nom il faut utiliser un de ces autres noms \050si disponible\051 ou son num\216ro d\325objet pour le) 113.39 619.84 P
+(manipuler.) 113.39 607.84 T
+85.04 546.99 510.24 572.5 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+112.73 558.66 531.93 558.66 2 L
+1 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(4-2) 85.04 577.17 T
+(Examen et manipulation simple d\325objets) 113.39 577.17 T
+1 10 Q
+(look) 85.04 527.33 T
+(Examiner un objet \050afficher une description\051) 127.56 527.33 T
+0 F
+(Exemples:) 127.56 514.33 T
+3 F
+(\0501\051 look) 155.9 503.33 T
+0 F
+(Afficher la description de la salles) 127.56 491.33 T
+3 F
+(\0502\051 look board) 155.9 480.33 T
+0 F
+(Regarder l\325objet \322board\323) 127.56 468.33 T
+1 F
+(examine) 85.04 453.33 T
+(Examiner un objet en d\216tail \050y compris quelques infos techniques\051) 127.56 453.33 T
+0 F
+(Exemple:) 127.56 440.33 T
+3 F
+(\0501\051 examine board) 155.9 429.33 T
+1 F
+(inv) 85.04 413.33 T
+(Lister l\325inventaire des objets que vous portez) 127.56 413.33 T
+(get) 85.04 397.33 T
+(Prendre un objet \050take=synomyme\051) 127.56 397.33 T
+0 F
+(Exemples:) 127.56 384.33 T
+3 F
+(\0501\051 get boite) 155.9 373.33 T
+0 F
+(Prendre la boite qui se trouve \322par terre\323) 127.56 361.33 T
+3 F
+(\0502\051 get boite from box) 155.9 350.33 T
+0 F
+(Prendre la boite qui se trouve dans la box) 127.56 338.33 T
+1 F
+(drop<objet>) 85.04 323.33 T
+( Laisser tomber un objet par terre) 138.66 323.33 T
+(put) 85.04 307.33 T
+(Mettre un objet quelque part) 127.56 307.33 T
+0 F
+(Exemple:) 127.56 294.33 T
+3 F
+(\0501\051 put boite in box) 155.9 283.33 T
+1 F
+(give) 85.04 267.33 T
+(Donner un objet) 127.56 267.33 T
+0 F
+(Exemples:) 127.56 254.33 T
+3 F
+(\0501\051 give Pet to Daniel) 155.9 243.33 T
+0 F
+(Donner l\325objet \322pet\323 \210 l\325utilisateur Daniel) 127.56 231.33 T
+FMENDPAGE
+%%EndPage: "7" 7
+%%Page: "8" 8
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+ 12 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 789.37 510.24 803.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+84.21 798.37 552.21 798.37 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(5. Les personnages \050Players\051 - 5-1. Description du personnage) 85.04 806.88 T
+(8) 491.06 806.88 T
+85.04 736.02 510.24 767.2 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 736.02 510.24 767.2 R
+7 X
+0 0 0 1 0 0 0 K
+V
+83.04 747.3 553.59 747.3 2 L
+V
+4 H
+2 Z
+0 X
+N
+0 0 595.28 841.89 C
+1 18 Q
+0 X
+0 0 0 1 0 0 0 K
+(5. Les personnages \050Players\051) 85.04 773.2 T
+85.04 675.5 510.24 701.02 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+112.73 687.17 531.93 687.17 2 L
+1 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(5-1) 85.04 705.68 T
+(Description du personnage) 113.39 705.68 T
+0 10 Q
+(Vous pouvez modifier votre personnage avec les commandes suivantes:) 113.39 655.84 T
+1 F
+(@describe me as \322 ............ \322 \050description\051) 85.04 638.84 T
+3 F
+(\0501\051 @describe me as \322Innocent, mais capable d\325apprendre\323) 155.9 625.84 T
+1 F
+(@gender) 85.04 609.84 T
+(D\216finition du sexe) 127.56 609.84 T
+3 F
+(\0501\051 @gender male) 155.9 596.84 T
+(\0502\051 @gender female) 155.9 584.84 T
+1 F
+(@addalias) 85.04 568.84 T
+( Ajouter un alias au nom du personnage) 129.91 568.84 T
+(@rename) 85.04 552.84 T
+0 F
+(Exemples:) 127.56 539.84 T
+3 F
+(\0501\051 @rename me to Chien_mechant) 155.9 528.84 T
+0 F
+(Se renommer \322chien_mechant\323) 127.56 516.84 T
+3 F
+(\0502\051 @rename me to Fleur, Joelle) 155.9 505.84 T
+0 F
+(Se renommer comme \322Fleur\323 avec un alias \322Joelle\323.) 127.56 493.84 T
+-0.38 (Pour regarder une personne, utilisez la commande \322look\323, dans certains moo il existent les comman-) 113.39 477.84 P
+(des suivantes \050pafois sans le signe \322@\323:) 113.39 465.84 T
+1 F
+(finger) 85.04 448.84 T
+(donne de l\325information sur la prov\216nance et la connexion d\325une personne) 127.56 448.84 T
+(\050ou @finger, whois, @whois\051) 127.56 436.84 T
+0 F
+(Exemple:) 127.56 423.84 T
+3 F
+(\0501\051 finger Julie) 155.9 412.84 T
+0 F
+(Affiche des informations sur Julie \050et son \216tat de connexion\051) 127.56 400.84 T
+0.06 (Pour donner une description \210 votre personnage, faires \324@notedit me.whois_msg\325. Cf. la section 6-) 113.39 384.69 P
+(3 \322L\325\216dition de texte\323 [p. 11] pour savoir comment \216diter un texte.) 113.39 372.53 T
+(Sur certains MOO il existe en plus \050ou alternativement\051 une commande @research ou @interests.) 113.39 355.53 T
+1 F
+(@mood) 85.04 338.53 T
+(donne un \322mood\323 qui s\325affiche lorsqu\325on utilise la commande \322who\323) 127.56 338.53 T
+3 F
+(\0501\051 @mood \322occupe\323) 155.9 325.53 T
+0 F
+(... montre en principe que vous \220tes occup\216.) 127.56 313.53 T
+85.04 253.69 510.24 279.2 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+112.73 265.36 531.93 265.36 2 L
+1 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(5-2) 85.04 283.86 T
+(Les \322features\323) 113.39 283.86 T
+0 10 Q
+0.59 (En rajoutant des features \210 un objet \050par exemple un personnage\051 on y rajoute des attributs et des) 113.39 234.02 P
+-0.43 (capacit\216s. Souvent, pour pouvoir utiliser certaines commandes comme \322@join\323, think, etc. il faut ra-) 113.39 222.02 P
+-0.15 (jouter une \322feature\323. Dans chaque MOO le num\216ros des objets changent. Il faut donc demander aux) 113.39 210.02 P
+(autres le num\216ro des \322features\323 qui vous int\216ressent.) 113.39 198.02 T
+(La commande help #<no> indique \050si disponible\051 comment l\325utiliser.) 113.39 181.02 T
+(Exemples sur TECFAMOO:) 113.39 164.02 T
+3 F
+(\0501\051 @addfeature #122) 155.9 147.02 T
+0 F
+(Rajoute une capacit\216 \322CB\323, faire help #122 pour plus d\325explications) 127.56 135.02 T
+(Liste des features sur TecfaMOO \050du 22/12/94\051) 113.39 119.02 T
+(\245) 127.56 102.02 T
+(#122 xymox\325s Channel system) 141.73 102.02 T
+(\245) 127.56 90.02 T
+(#225 xy\325s improved social FO) 141.73 90.02 T
+(\245) 127.56 78.02 T
+(#227 Stage Talk FO) 141.73 78.02 T
+(\245) 127.56 66.02 T
+(#228 Programmer\325s HELP) 141.73 66.02 T
+FMENDPAGE
+%%EndPage: "8" 8
+%%Page: "9" 9
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+ 12 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 789.37 510.24 803.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+84.21 798.37 552.21 798.37 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(5. Les personnages \050Players\051 - 5-2. Les \322features\323) 85.04 806.88 T
+(9) 491.06 806.88 T
+(\245) 127.56 778.53 T
+(#229 Just for FUN FO) 141.73 778.53 T
+(\245) 127.56 766.53 T
+(#248 Not a Silly Social FO) 141.73 766.53 T
+(\245) 127.56 754.53 T
+(#310 InterMOO FO \050rpage, rwho, etc.\051) 141.73 754.53 T
+FMENDPAGE
+%%EndPage: "9" 9
+%%Page: "10" 10
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+ 12 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 789.37 510.24 803.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+84.21 798.37 552.21 798.37 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(6. La construction \050Building\051 - 6-1. Introduction) 85.04 806.88 T
+(10) 486.06 806.88 T
+85.04 736.02 510.24 767.2 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 736.02 510.24 767.2 R
+7 X
+0 0 0 1 0 0 0 K
+V
+83.04 747.3 553.59 747.3 2 L
+V
+4 H
+2 Z
+0 X
+N
+0 0 595.28 841.89 C
+1 18 Q
+0 X
+0 0 0 1 0 0 0 K
+(6. La construction \050Building\051) 85.04 773.2 T
+85.04 675.5 510.24 701.02 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+112.73 687.17 531.93 687.17 2 L
+1 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(6-1) 85.04 705.68 T
+(Introduction) 113.39 705.68 T
+0 10 Q
+0.07 (Sur la plupart des MOO, un \322player\323 \050c\325est \210 dire l\325utilisateur \322standard\323\051 poss\217de le droit de cons-) 113.39 655.84 P
+0.09 (truire un nombre limit\216 d\325objets \050souvent il s\325agit de 7\051. En r\217gle g\216n\216rale, on commence par cons-) 113.39 643.84 P
+0.26 (truire une \322salle\323 \050room\051 \050un bureau, une maison ou qc de plus fantaisiste\051, c\325est-\210-dire un lieu qui) 113.39 631.84 P
+-0.33 (sert de maison. Ce room est construit normalement dans le \322limbo\323, il est d\216connect\216 du reste et doit) 113.39 619.84 P
+(\220tre connect\216 par le propri\216taire d\325un room faisant partie du \322r\216seau MOO\323.) 113.39 607.84 T
+0.3 (Les utilisateurs poss\216dant un \322programmer bit\323 \050\210 demander \210 un wizard\051 peuvent cr\216er des objets) 113.39 590.84 P
+(plus sophistiqu\216s.) 113.39 578.84 T
+0.48 (Notez que vous pouvez d\216crire et renommer chaque objet que vous avez cr\216e! D\216crire un \322room\323) 113.39 561.84 P
+(par exemple est essentiel.) 113.39 549.84 T
+85.04 488.99 510.24 514.5 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+112.73 500.66 531.93 500.66 2 L
+1 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(6-2) 85.04 519.17 T
+(Commandes de base pour construire) 113.39 519.17 T
+1 10 Q
+(@dig) 85.04 469.33 T
+(construction d\325un \322room\323) 127.56 469.33 T
+0 F
+(Exemples:) 127.56 456.33 T
+3 F
+(\0501\051 @dig palace) 155.9 445.33 T
+0 F
+(\322Creuse\323 un \322room\323 nomm\216 \322palace) 127.56 433.33 T
+3 F
+(\0502\051 @dig n,north|s,south to \322maison \210 c\231t\216\323) 155.9 422.33 T
+0 F
+-0.56 (Cr\216e d\325abord un nouveau room \322maison \210 c\231t\216\323, puis rajoute une sortie \050\322exit\323\051 nomm\216 \322n\323 \050avec) 127.56 410.33 P
+-0.3 (l\325alias \322north\323\051 depuis le room courant vers le room nouveau, et une sortie \322s\323 depuis le nouveau) 127.56 399.33 P
+0.47 (room vers le room depuis lequel vous \322creusez\323. Cette commande est pratique pour construire) 127.56 388.33 P
+(rapidement une zone.) 127.56 377.33 T
+3 F
+(\0503\051 @dig out to #312) 155.9 366.33 T
+0 F
+-0.37 (Cr\216e une sortie vers le room poss\216dant le No. #312. Notez que vous devez poss\216der l\325objet #312.) 127.56 354.33 P
+(Sinon il faut utiliser les commandes @add-exit et @add-entrance.) 127.56 343.33 T
+1 F
+(@add-exit) 85.04 328.33 T
+0 F
+(Exemple:) 127.56 315.33 T
+3 F
+(@add-exit #315) 155.9 304.33 T
+0 F
+-0.33 (Rajoute l\325 \322exit\323 #315 comme \322sortie\323 du \322room\323 courant. Utilis\216 pour permettre \210 qq de lier vo-) 127.56 292.33 P
+(tre \322room\323 vers le sien en passant par un \322exit\323 que l\325autre personne \210 cr\216e.) 127.56 281.33 T
+1 F
+(@add-entrance) 85.04 266.33 T
+0 F
+(Exemple:) 127.56 253.33 T
+3 F
+(@add-entrance #316) 155.9 242.33 T
+0 F
+0.05 (Rajoute l\325 \322exit\323 #316 comme \322entr\216e du \322room courant. Utilis\216 pour permettre \210 qq de lier son) 127.56 230.33 P
+(\322room\323 vers le votre en passant par un exit que l\325autre personne \210 cr\216e.) 127.56 219.33 T
+1 F
+(@remove-exit) 85.04 204.33 T
+0 F
+(Exemple:) 127.56 191.33 T
+3 F
+(@remove-exit #316) 155.9 180.33 T
+0 F
+(Enl\217ve la sortie #316 de la salle courante.) 127.56 168.33 T
+1 F
+(@remove-entrance) 85.04 153.33 T
+0 F
+(Exemple:) 127.56 140.33 T
+3 F
+(@remove-entrance #316) 155.9 129.33 T
+0 F
+(Enl\217ve l\325entr\216e #316 de la salle courante.) 127.56 117.33 T
+1 F
+(@sethome) 85.04 102.33 T
+(D\216finit votre \322home\323) 129.33 102.33 T
+0 F
+(Exemple:) 127.56 89.33 T
+3 F
+(@sethome) 155.9 78.33 T
+0 F
+0.48 (D\216finit le home dans le \322room\323 courant. Notez que vous devez avoir l\325autorisation de faire un) 127.56 66.33 P
+FMENDPAGE
+%%EndPage: "10" 10
+%%Page: "11" 11
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+ 12 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 789.37 510.24 803.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+84.21 798.37 552.21 798.37 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(6. La construction \050Building\051 - 6-3. L\325\216dition de texte) 85.04 806.88 T
+(11) 486.06 806.88 T
+-0.56 (home ici par le propri\216taire du \322room\323. Il peut le faire avec la commande \322@resident <personne\323.) 127.56 778.53 P
+0.77 (On vous voit dans votre home \050asleep\051 lorsque vous \220tes d\216connect\216s. La commande \322home\323) 127.56 767.53 P
+(vous t\216l\216porte chez \322vous\323 en cas de n\216cessit\216.) 127.56 756.53 T
+1 F
+(@def) 85.04 741.53 T
+(Acc\217s au dictionnaire \050US Anglais\051 pour v\216rifier un mot, cf \322help me:@def\323) 127.56 741.53 T
+0 F
+(Exemple:) 127.56 728.53 T
+3 F
+(\0501\051 @def Rumpelstielzkin) 155.9 717.53 T
+0 F
+0.3 (Dans TecfaMOO, les sorties d\325une salle sont automatiquement affich\216es. Pour emp\220cher ce m\216ca-) 113.39 700.53 P
+-0.59 (nisme il faut utiliser la techniques suivante: \322@set <exit>.obvious is 0\323. Obtenez d\325abord le No d\325ob-) 113.39 688.53 P
+-0.4 (jet de la sortie en question \050par exemple avec la commande \322@examine <exit>, ensuite, par exemple) 113.39 676.53 P
+(@set #1001.obvious=0.) 113.39 664.53 T
+1 F
+(@describe) 85.04 647.53 T
+( D\216crire un objet) 129.89 647.53 T
+0 F
+(Exemple:) 127.56 634.53 T
+3 F
+(\0501\051 @describe here as \322A lovely park with thousands of pink flowers\323) 155.9 623.53 T
+0 F
+-0.32 (D\216crit le \322room\323 courant \050\210 condition qu\325il vous appartient\051, Avec la commande \324@notedit here\325) 127.56 611.53 P
+(vous pouvez faire la m\220me chose avec l\325\216diteur de texte interne au MOO.) 127.56 600.53 T
+1 F
+(@rename) 85.04 585.53 T
+( Donner un autre nom \210 un objet) 127.56 585.53 T
+0 F
+(Exemple:) 127.56 572.53 T
+3 F
+(\0501\051 @rename me to \322d\216butant\323) 155.9 561.53 T
+0 F
+(Vous transforme en d\216butant ...) 127.56 549.53 T
+3 F
+(\0502\051 @rename #500 to \322Porte rouge\323, sortie, exit) 155.9 538.53 T
+0 F
+(Renomme la sortie #500 \050si elle existe\051 en \322Porte rouge\323 avec 2 alias.) 127.56 526.53 T
+85.04 466.69 510.24 492.2 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+112.73 478.36 531.93 478.36 2 L
+1 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(6-3) 85.04 496.86 T
+(L\325\216dition de texte) 113.39 496.86 T
+0 10 Q
+-0.27 (L\325\216dition de textes associ\216s aux objets est plus ou moins simple suivant le client MOO que vous uti-) 113.39 447.02 P
+0.2 (lisez. La commande \324@notedit <quelque chose>\325 vous lance \050par default\051 dans l\325\216diteur interne du) 113.39 435.02 P
+0.85 (MOO. Faites \324look\325 une fois que vous \220tes dedans. Il s\325agit d\325un simple \216diteur qui vous permet) 113.39 423.02 P
+(d\325\216diter ligne par ligne.) 113.39 411.02 T
+(Quelques commandes de base:) 113.39 394.02 T
+1 F
+(list) 85.04 377.02 T
+(Afficher les lignes d\325un text) 127.56 377.02 T
+(save) 85.04 361.02 T
+(Sauvegarder les modifications) 127.56 361.02 T
+(quit) 85.04 345.02 T
+(Quitter l\325\216diteur) 127.56 345.02 T
+(\322) 85.04 329.02 T
+(Ins\216erer une ligne de texte \210 l\325endroit o\235 se trouve le pointeur) 127.56 329.02 T
+3 F
+(\0501\051 \322this is the first line) 155.9 316.02 T
+0 F
+(Ins\217re une ligne \322this is the first line\323 \050\210 l\325endroit o\235 se trouve le pointeur\051) 127.56 304.02 T
+1 F
+(ins) 85.04 289.02 T
+(Ins\216rer une nouvelle ligne) 127.56 289.02 T
+3 F
+(\0501\051 ins 3 \322this text is nice) 155.9 276.02 T
+0 F
+(Ins\217re une nouvelle ligne 3 avec le contenu \322this text is nice\323.) 127.56 264.02 T
+1 F
+(del) 85.04 249.02 T
+(D\216truire une ligne) 127.56 249.02 T
+3 F
+(\0501\051 del 3) 155.9 236.02 T
+0 F
+(d\216truit la ligne No. 3) 127.56 224.02 T
+3 F
+(\0502\051 del 4-10) 155.9 213.02 T
+0 F
+(d\216truit les lignes 4-10.) 127.56 201.02 T
+-0.26 (Pour les gens qui utilisent un client emacs, il est conseill\216 de taper \324@edito +l\325 \050une seule fois\051, dans) 113.39 185.02 P
+0.14 (la suite toute \216dition \050mail, textes, etc.\051 vous ouvre un \322buffer\323. Ne d\216truisez pas la premi\217re ligne,) 113.39 173.02 P
+-0.06 (ni le \322.\323 \210 la fin et ins\216rez votre texte entre ces lignes. Pour sauvegarder votre \216dition, tapez \322Ctrl-C) 113.39 161.02 P
+(Ctrl-S\323\051.) 113.39 149.02 T
+85.04 88.17 510.24 113.69 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+112.73 99.84 531.93 99.84 2 L
+1 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(6-4) 85.04 118.35 T
+(Gestions de ses objets) 113.39 118.35 T
+1 10 Q
+(@audit) 85.04 68.51 T
+(Lister tous les objets en possession) 127.56 68.51 T
+FMENDPAGE
+%%EndPage: "11" 11
+%%Page: "12" 12
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+ 12 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 789.37 510.24 803.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+84.21 798.37 552.21 798.37 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(6. La construction \050Building\051 - 6-5. Description plus avanc\216e de \322rooms\323 et sorties) 85.04 806.88 T
+(12) 486.06 806.88 T
+1 F
+(@quota) 85.04 778.53 T
+(Afficher les quota disponible) 127.56 778.53 T
+(@count) 85.04 762.53 T
+(Afficher le nombre d\325objets en possession) 127.56 762.53 T
+(@recycle) 85.04 746.53 T
+(D\216truire un objet \050attention!\051) 127.56 746.53 T
+0 F
+(Exemple:) 127.56 733.53 T
+3 F
+(\0501\051 @recycle #301) 155.9 722.53 T
+0 F
+(D\216truit l\325objet No.1) 127.56 710.53 T
+1 F
+(@move) 85.04 695.53 T
+(Bouger un objet) 127.56 695.53 T
+0 F
+(\050Utile par exemple pour r\216cup\216rer un objet perdu ou vol\216\051) 127.56 682.53 T
+(Exemple:) 127.56 671.53 T
+3 F
+(\0501\051 move #301 to here) 155.9 660.53 T
+0 F
+(Am\217ne l\325objet #301 dans la salle courante.) 127.56 648.53 T
+85.04 588.68 510.24 614.2 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+112.73 600.35 531.93 600.35 2 L
+1 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(6-5) 85.04 618.86 T
+(Description plus avanc\216e de \322rooms\323 et sorties) 113.39 618.86 T
+0 10 Q
+0.56 (En r\217gle g\216n\216rale, on attache un certain nombre de messages aux entr\216es et sorties pour rendre le) 113.39 569.02 P
+(passage plus int\216ressant.) 113.39 557.02 T
+1 F
+(@messages) 85.04 540.02 T
+(imprime les messages attachables \210 un objet) 135.72 540.02 T
+0 F
+(Exemple:) 127.56 527.02 T
+3 F
+(\0501\051 @messages me) 155.9 516.02 T
+0 F
+(Indique la liste des messages attach\216s \210 votre personnage) 127.56 504.02 T
+3 F
+(\0502\051 @messages <exit>) 155.9 493.02 T
+0 F
+(Indique la liste des messages attach\216s \210 un \322exit\323) 127.56 481.02 T
+1 F
+(<@message-name> <object> is <\322message .......\323>) 85.04 466.02 T
+0 F
+(Exemple:) 127.56 453.02 T
+3 F
+(\0501\051 @leave n is \322Vous vous promenez vers le nord ..... \322) 155.9 442.02 T
+0 F
+-0.14 (Ce message est vu par la personne qui emprunte une sortie. Utilis\216 \210 divers raisons, par exemple) 127.56 430.02 P
+-0.05 (pour d\216crire une marche plus longue \050par ex. \322vous prenez le bus et .....\323\051 ou encore pour rendre) 127.56 419.02 P
+(la sortie int\216ressante \050par ex \322vous \216vitez de justesse de vous cogner en sortant...\323\051.) 127.56 408.02 T
+3 F
+(\0502\051 @oleave n is \322struggles towards the north\323) 155.9 397.02 T
+0 F
+(Message destin\216 aux gens qui restent dans la m\220me salle.) 127.56 385.02 T
+1 14 Q
+(Mise en page de messages) 113.39 359.35 T
+0 10 Q
+(1.) 113.39 341.02 T
+0.17 (Tous les noms des messages commen\215ant par un \322o\323 produisent un message qui met le nom de) 127.56 341.02 P
+(l\325utilisateur au d\216but du message) 127.56 329.02 T
+(2.) 113.39 312.02 T
+0.51 (Utilisation de variables: Dans un string vous mettre des variables qui seront substitu\216s par des) 127.56 312.02 P
+-0.25 (noms d\325objets ou des promons \050en Anglais\051. Faites un \322help messages\323 pour des d\216tails, ici juste) 127.56 300.02 P
+(le r\216sum\216 en Anglais:) 127.56 288.02 T
+4 8 Q
+-0.28 (        %% => `%\325  \050just in case you actually want to talk about percentages\051.) 141.73 267.35 P
+(    Names:) 141.73 258.35 T
+(        %n => the player) 141.73 249.35 T
+(        %t => this object \050i.e., the object issuing the message,... usually\051) 141.73 240.35 T
+(        %d => the direct object from the command line) 141.73 231.35 T
+(        %i => the indirect object from the command line) 141.73 222.35 T
+(        %l => the location of the player) 141.73 213.35 T
+(    Pronouns:) 141.73 204.35 T
+(        %s => subject pronoun:          either `he\325,  `she\325, or `it\325) 141.73 195.35 T
+(        %o => object pronoun:           either `him\325, `her\325, or `it\325) 141.73 186.35 T
+(        %p => posessive pronoun \050adj\051:  either `his\325, `her\325, or `its\325) 141.73 177.35 T
+(        %q => posessive pronoun \050noun\051: either `his\325, `hers\325, or `its\325) 141.73 168.35 T
+(        %r => reflexive pronoun:  either `himself\325, `herself\325, or `itself\325) 141.73 159.35 T
+(    General properties:) 141.73 150.35 T
+(        %\050foo\051 => player.foo) 141.73 141.35 T
+(        %[tfoo], %[dfoo], %[ifoo], %[lfoo]) 141.73 132.35 T
+(               => this.foo, dobj.foo, iobj.foo, and player.location.foo) 141.73 123.35 T
+(    Object numbers:) 141.73 114.35 T
+(        %#  => player\325s object number) 141.73 105.35 T
+(        %[#t], %[#d], %[#i], %[#l]) 141.73 96.35 T
+-0.49 (            => object numbers for this, direct obj, indirect obj, and location.) 141.73 87.35 P
+(In addition there is a set of capitalized substitutions for use at the) 141.73 69.35 T
+(beginning of sentences.  These are, respectively,) 141.73 60.35 T
+FMENDPAGE
+%%EndPage: "12" 12
+%%Page: "13" 13
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+ 12 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 789.37 510.24 803.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+84.21 798.37 552.21 798.37 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(6. La construction \050Building\051 - 6-6. Cr\216ation d\325objets \210 partir d\325objets g\216n\216riques) 85.04 806.88 T
+(13) 486.06 806.88 T
+4 8 Q
+(   %N, %T, %D, %I, %L for object names,) 141.73 770.86 T
+(   %S, %O, %P, %Q, %R for pronouns, and) 141.73 761.86 T
+(   %\050Foo\051, %[dFoo] \050== %[Dfoo] == %[DFoo]\051,... for general properties) 141.73 752.86 T
+0 10 Q
+(Exemples:) 127.56 733.53 T
+3 F
+(\0501\051) 155.9 722.53 T
+85.04 661.68 510.24 687.2 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+112.73 673.35 531.93 673.35 2 L
+1 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(6-6) 85.04 691.86 T
+(Cr\216ation d\325objets \210 partir d\325objets g\216n\216riques) 113.39 691.86 T
+0 10 Q
+(\324help building\325 vous lance dans le help interne du MOO \050valable dans tous les MOO\051.) 113.39 642.02 T
+1 F
+(@create) 85.04 625.02 T
+(Cr\216ation d\325objets \050autres que \322rooms\323 et \322exits\323\051) 127.56 625.02 T
+(@create <objet-parent> named \322<noms>) 99.21 612.02 T
+0 F
+(Exemples:) 127.56 601.02 T
+3 F
+(\0501\051 @create <#xxx> named \322au hasard\323) 155.9 590.02 T
+0 F
+(Cr\216 un \322enfant\323 de l\325objet #xxx) 127.56 578.02 T
+1 F
+(@create <nom de classe> named \322<noms>\323) 99.21 567.02 T
+0 F
+(Exemples:) 127.56 556.02 T
+3 F
+(\0501\051 @create $note named \322affiche\323) 155.9 545.02 T
+0 F
+(Cr\216e un objet sur lequel on peut \216crire \050avec nom = \322affiche\323\051) 127.56 533.02 T
+1 F
+(@lock) 85.04 518.02 T
+(V\216rouiller un objet) 127.56 518.02 T
+0 F
+(Exemple:) 127.56 505.02 T
+3 F
+(\0501\051 @lock \322Grande affiche\323 with me) 155.9 494.02 T
+0 F
+(Interdit aux autres de prendre votre affiche.) 127.56 482.02 T
+85.04 422.17 510.24 447.69 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+112.73 433.84 531.93 433.84 2 L
+1 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(6-7) 85.04 452.35 T
+(Les objets g\216n\216riques du TecfaMOO) 113.39 452.35 T
+0 10 Q
+-0.56 (Sur chaque MOO il existe un certain nombre d\325objets g\216n\216riques que vous pouvez utiliser pour cons-) 113.39 402.51 P
+(truire quelque chose. Cf. par exemple la liste des objets standards avec \324@classes generics\325.) 113.39 390.51 T
+0.27 (On peut retrouver les autres objets disponibles en fouillant la liste des objets, toutefois il est plut\231t) 113.39 373.51 P
+0.24 (conseill\216 de lire les \322news\323 interne du MOO, par exemple faites \324@mail on *new*\325 \050cf . la section) 113.39 361.51 P
+-0.09 (2-4 \322Communication asynchrone/Syst\217mes d\325information\323 [p. 5]. Sinon consultez le MOOseum o\235) 113.39 349.35 P
+(on met les objets les plus int\216ressants en display.) 113.39 337.35 T
+1 14 Q
+(Le MOOseum) 113.39 310.69 T
+0 10 Q
+-0.18 (Le MOOseum \050#258\051 est un endroit o\235 on met en display les objets g\216n\216riques les plus int\216ressants.) 113.39 292.35 P
+1 14 Q
+(Quelques objets int\216ressants du TecfaMOO \050\210 faire, cf. le) 113.39 265.69 T
+(MOOseum pour le moment\051) 141.73 249.69 T
+0 10 Q
+(1.) 113.39 231.35 T
+(Les objets \210 usage p\216dagogiques) 127.56 231.35 T
+(2.) 113.39 214.35 T
+(Les \322poup\216es\323) 127.56 214.35 T
+(3.) 113.39 197.35 T
+(le \322noisy room\323) 127.56 197.35 T
+(4.) 113.39 180.35 T
+(le \322portable room\323) 127.56 180.35 T
+(5.) 113.39 163.35 T
+(le \322generic notebook\323) 127.56 163.35 T
+FMENDPAGE
+%%EndPage: "13" 13
+%%Page: "14" 14
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+ 12 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 789.37 510.24 803.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+84.21 798.37 552.21 798.37 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 595.28 841.89 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(7. Extensions WWW<->MOO - 6-7. Les objets g\216n\216riques du TecfaMOO) 85.04 806.88 T
+(14) 486.06 806.88 T
+85.04 736.02 510.24 767.2 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.04 736.02 510.24 767.2 R
+7 X
+0 0 0 1 0 0 0 K
+V
+83.04 747.3 553.59 747.3 2 L
+V
+4 H
+2 Z
+0 X
+N
+0 0 595.28 841.89 C
+1 18 Q
+0 X
+0 0 0 1 0 0 0 K
+(7. Extensions WWW<->MOO) 85.04 773.2 T
+1 14 Q
+(Le client WWW interne) 113.39 709.68 T
+0 10 Q
+(Il faut d\325abord se construire un client \210 soi que l\325on porte avec soi avec la commande:) 113.39 691.35 T
+(@create $www_slated named <\322nom que vous lui donnez\323>[<,\323alias\323\134) 113.39 674.35 T
+(Ensuite: help <\322nom de votre client\323>) 113.39 657.35 T
+(Quelques commandes \050on assume que vous avez appel\216 votre slate \322monwww\323:) 113.39 640.35 T
+3 F
+(\0501\051 goto http://tecfa.unige.ch/ 80 on monwww) 155.9 623.35 T
+0 F
+(Vous connecte sur le serveur www du tecfa) 127.56 611.35 T
+3 F
+(\0502\051 pop monwww) 155.9 600.35 T
+0 F
+(retourne vers le \322haut\323 \050un niveau, pour plus de niveaux utiliser: pop monwww for x) 127.56 588.35 T
+3 F
+(\0503\051 pick 2 on monwww) 155.9 577.35 T
+0 F
+(affiche la page no2 sur monwww) 127.56 565.35 T
+3 F
+(\0504\051 remember 3 on monwww) 155.9 554.35 T
+0 F
+(se souvent de ce noeud) 127.56 542.35 T
+3 F
+(\0505\051 show monwww to julie) 155.9 531.35 T
+0 F
+(montrer le contenu du slate a julie) 127.56 519.35 T
+1 14 Q
+(Un client WWW->MOO) 113.39 493.68 T
+0 10 Q
+0.9 (Pas disponibles \050pendant un moment encore\051 sur TecfaMOO. Il existe plusieurs prototypes, dont) 113.39 475.35 P
+(l\325interface \210 BioMOO:) 113.39 463.35 T
+(1.) 113.39 446.35 T
+(Se connecter comme guest) 127.56 446.35 T
+(2.) 113.39 429.35 T
+(@password) 127.56 429.35 T
+(3.) 113.39 412.35 T
+-0.17 (Lancer NCSA Mosaic et ouvrir http://bioinfo.weizmann.ac.il:8000/ et rentrer le mot de passe du) 127.56 412.35 P
+(MOO) 127.56 400.35 T
+(4.) 113.39 383.35 T
+(Ensuite il faut naviger dans le Web \050juste discuter dans le MOO\051) 127.56 383.35 T
+FMENDPAGE
+%%EndPage: "14" 14
+%%Trailer
+%%BoundingBox: 0 0 595.28 841.89
+%%PageOrder: Ascend
+%%Pages: 14
+%%DocumentFonts: Times-Roman
+%%+ Times-Bold
+%%+ Times-BoldItalic
+%%+ Times-Italic
+%%+ Courier
+%%EOF

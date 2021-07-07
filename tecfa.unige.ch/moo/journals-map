@@ -1,0 +1,3 @@
+H1:1::<STRONG>,</STRONG>      # Make level 1 ToC entries <STRONG>
+H2:2::<EM>,</EM>              # Make level 2 entries <EM>
+H3:3                          # Make level 3 entries as is

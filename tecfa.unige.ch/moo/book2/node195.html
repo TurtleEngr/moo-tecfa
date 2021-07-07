@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Eval Options (by Thwarted Efforts)</TITLE>
+<META NAME="description" CONTENT="Eval Options (by Thwarted Efforts)">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="http://tecfa.unige.ch/moo/book2/tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html1" HREF="http://tecfa.unige.ch/"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/gif/icon-tecfa-unit-small.gif"  > </A> <A NAME="tex2html3001" HREF="node196.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2999" HREF="node193.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2995" HREF="node194.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html3003" HREF="http://tecfa.unige.ch/moo/book2/node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <BR>
+<B> Next:</B> <A NAME="tex2html3002" HREF="node196.html">11.6 Debugging Code</A>
+<B>Up:</B> <A NAME="tex2html3000" HREF="node193.html">11.5 Eval</A>
+<B> Previous:</B> <A NAME="tex2html2996" HREF="node194.html">Basic Eval (by Thwarted </A>
+<BR> <P>
+<H2><A NAME="SECTION05152000000000000000">Eval Options (by Thwarted Efforts)</A></H2>
+<P>
+<A NAME="secevaloptions">&#160;</A>
+<P>
+<EM>Acknowledgement:</EM> This text is a formatted
+version of a message posted to *Teaching on WorldMOO by Thwarted Efforts.
+<P>
+A few options are avaiable to eval to make it easier to use and more
+informative.  By default, you can't use the variables 'me' and 'here'
+in an eval.  Before your eval is executed, the eval verb inserts the
+contents of your .eval_env prop.  $prog's .eval_env is defined as
+&quot;here=player.location;me=player&quot; so all descandants of $prog can use
+'me' and 'here' in their evals.
+<P>
+<PRE>   ;me
+   =&gt; #1353 (ThwartedEfforts)</PRE>
+<P>
+You can add more things to your .eval_env prop, , I have
+'su=$string_utils;lu=$list_utils; in my .eval_env, so I can use 'lu'
+and 'su' in my evals (which is much easier to type).  One of the
+drawbacks of this is that if your eval crashes with a traceback, the
+line number count will be off from what you entered for your eval.
+(small price to pay)
+<P>
+You can also have it tell you about how many ticks and seconds your
+eval ate up, by setting your .eval_time prop to 1.  (try ;me.eval_time
+= 1).  This will not be accurate if your eval fork()'ed or
+suspended().
+<P>
+Unfortately, if you use .eval_time and .eval_env, your tick count will
+be effected by all the ticks that are in your .eval_env.  This can be
+fixed by setting your .eval_ticks prop with the number of ticks your
+eval_env eats up.  To find out how many ticks your eval_env takes, set
+your .eval_ticks to 0, eval_time to 1 and then put your preliminary
+set up code in your .eval_env.  Then just do an empty eval:
+<P>
+<PRE>   ;
+   =&gt; 0
+   [used 23 ticks, 1 second.]</PRE>
+<P>
+and it will tell you how many ticks your empty eval took.  Use that
+value to set your .eval_ticks prop.  Above, my empty eval took 23
+ticks, so I set my .eval_ticks prop to 23.  Then an empty eval will
+take 0 ticks, as it should, since there isn't any code.  The
+usefulness of this is so that only the code that you want to evaluate
+will have the tick count, and your setup code will not be included.
+<P>
+<HR><A NAME="tex2html3001" HREF="node196.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2999" HREF="node193.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2995" HREF="node194.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html3003" HREF="http://tecfa.unige.ch/moo/book2/node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A>  <A NAME="tex2html1" HREF="http://tecfa.unige.ch/"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/gif/icon-tecfa-unit-small.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html3002" HREF="node196.html">11.6 Debugging Code</A>
+<B>Up:</B> <A NAME="tex2html3000" HREF="node193.html">11.5 Eval</A>
+<B> Previous:</B> <A NAME="tex2html2996" HREF="node194.html">Basic Eval (by Thwarted </A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Wed Oct 23 21:55:28 MET DST 1996</I>
+</ADDRESS>
+</BODY>
+</HTML>

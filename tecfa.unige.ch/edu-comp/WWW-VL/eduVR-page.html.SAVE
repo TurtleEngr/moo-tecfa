@@ -1,0 +1,1761 @@
+<HTML>
+<HEAD>
+<title>The WWW VL: Educational Technology - Educational VR (MUD) sub-page ( 2-Apr-1998)</title>
+<!-- Changed by: D.K.S.,  2-Apr-1998 -->
+</HEAD>
+
+<BODY>
+<A HREF="http://www.w3.org/hypertext/DataSources/bySubject/Overview.html"><IMG ALT="Virtual Library" SRC="http://tecfa.unige.ch/gif/Virtual_Library.gif"></A>
+<A HREF="http://tecfa.unige.ch/info-edu-comp.html"><IMG ALT="WWW VL: Educational Technology" SRC="http://tecfa.unige.ch/gif/icon-edu-tech-small.gif"></A>
+
+<h1>Educational Technology: Educational VR (MUD) sub-page</h1>
+Information categorized by subjects
+<hr>
+Maintained by <A HREF="http://tecfa.unige.ch/">TECFA</A>. Note:
+haven't been hunting actively for the last few month, but will do that
+soon. At least will add entries you send me. Also, need to reorganize
+everything. Happy scrolling ! (D.S. / Jan 96). Still true in June 97 :=)
+
+<H3><A name="Contents"></a>Table of Contents</H3>
+
+<br>
+<OL>
+<LI><a href="eduVR-page.html.SAVE#Introduction">Introduction</a>
+<LI><a href="eduVR-page.html.SAVE#Events">Events, What's new</a>
+<LI><a href="eduVR-page.html.SAVE#General">General Index &amp; Information Pages</a>
+<hr>
+<LI><a href="eduVR-page.html.SAVE#Educational">Educational MUDs List</a>
+<hr>
+<LI><a href="eduVR-page.html.SAVE#Publications">Publications (some only)</a>
+<LI><a href="eduVR-page.html.SAVE#Bibliographies">Bibliographies, document indexes &amp; Mailing lists</a>
+<LI><a href="eduVR-page.html.SAVE#Guides">MOO/MUD Guides, FAQs &amp; Manuals</a>
+<LI><a href="eduVR-page.html.SAVE#Teaching">Teaching IN Cyberspace</a>
+<LI><a href="eduVR-page.html.SAVE#Teachingabout">Teaching ABOUT Cyberspace</a>
+<hr>
+<LI><a href="eduVR-page.html.SAVE#Clients">Clients &amp; Servers</a>
+<LI><a href="eduVR-page.html.SAVE#others">2/3D multi user virtual worlds</a>
+<hr>
+<LI><a href="eduVR-page.html.SAVE#Research">MUD Research (general)</a>
+<LI><a href="eduVR-page.html.SAVE#Technical">Technical MUD Research</a>
+<LI><a href="eduVR-page.html.SAVE#Various">Various (really!)</a>
+</OL>
+
+<FORM ACTION="http://tecfa.unige.ch/cgi-bin/htgrepit/boolean=auto&amp;file=/edu-comp/WWW-VL/eduVR-page.html&amp;style=none&amp;max=250">
+You can search this page, though output is disgusting (since it just spits
+back elements found between blank lines).
+Provide a
+<a href=http://iamwww.unibe.ch/~scg/Src/Doc/search.html>boolean keyword expression</a>
+or a
+<a href=http://www.cs.cmu.edu/Web/People/rgs/pl-regex.html>Perl regular expression</a>
+as a search pattern.
+<p>
+<INPUT NAME="isindex">
+<INPUT TYPE="submit" VALUE="Submit">
+<INPUT TYPE="reset" VALUE="Reset">
+</FORM>
+
+<hr><h2><A name="Introduction"></a>Introduction
+<A HREF="eduVR-page.html.SAVE#Contents"><IMG ALIGN=BOTTOM SRC="http://tecfa.unige.ch/gif/icon-small-up.gif" ALT="(up to Contents)"></a></h2>
+
+This page is basically "MUD" oriented because (so far) that is
+how educational interactive multi-user cyberspaces have been implemented.
+That might change soon (e.g. see the section on
+<a href="eduVR-page.html.SAVE#others">2/3D multi user virtual worlds</a>).
+<P>
+MUDs used to stand for "Multi-user Dungeons", i.e.  multi-user
+interactive role-playing games on the Internet.  Today, the concept
+"MUD" refers to all primarily text-based Multi-User Dimensions.  MUD
+technology can be used for education in various ways. To connect to a
+MUD, you can use a telnet client, but better find a specialized <a href="eduVR-page.html.SAVE#Clients">Client</a> In education, MOOs (MUD, Object Oriented)
+are most popular since they have a sophisticated built-in programming
+language. See also <A HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_1.html">a definition</A> by Pavel Curtis.
+The absolut best distinction between "MUD" and "MOO" I have seen
+is in <A HREF="http://foner.www.media.mit.edu/people/foner/Julia/muds.html">this picture</A>.
+ <P>
+MUDs (and specially the MOO variant) can be be characterized by:
+
+<UL>
+<LI>Many persons can connect simultaneously to a server.
+<LI>The MUD has a spatial organization, e.g. people interact with people
+or objects primarily within "rooms".
+<LI>Within a MOO, many real time communication actions exist, like "saying"
+or "emoting" things publically to the persons in a "room", paging people
+elsewhere, "whispering" messages, using a "CB" channel, etc.
+<LI>Asynchronous communication tools include internal e-mail, Newsgroups,
+News papers, tutorial rooms, "white boards", etc.
+</UL>
+
+
+Watch out for new systems and increased functionality of 2/3D "Avatar"/Chat
+worlds and VRML interfaces to real MUDs in the next month.
+
+<hr><h2><img src="http://tecfa.unige.ch/ico/new/chili.gif" alt="HOT" width=45 height=32><A name="Events"></a>Events, What's New ?
+<A HREF="eduVR-page.html.SAVE#Contents"><IMG ALIGN=BOTTOM SRC="http://tecfa.unige.ch/gif/icon-small-up.gif" ALT="(up to Contents)"></a></h2>
+
+
+<UL>
+
+  <li>A book: High Wired: <A HREF="http://www.press.umich.edu/bookhome/highmoo/">On the Design, Use, and Theory of Educational MOOs</A>, Cynthia Haynes and Jan Rune Holmevik, Editors
+      Foreword by Sherry Turkle, Michigan Press, 1998. cloth ISBN 0-472-09665-6.  paper ISBN 0-472-06665-X
+<li><A HREF="http://lingua.utdallas.edu/hw/encore.html">EduCore BETA</A>.
+"The High Wired Project and Lingua MOO are proud to announce the BETA
+release of the first publicly available educational MOO Core Database,
+EduCore. EduCore, is a constructivist virtual reality environment designed for
+educational use. It is based on the Feb 02 1997 version of the original
+LambdaCore Database, and supplemented with a number of useful educational tools" (Comes with configuration instructions, I tested it and recommend it / D.K.S).
+<LI><A HREF="http://www.cs.cf.ac.uk/User/Andrew.Wilson/tkMOO-light/">tkMOO-light</A> for UNIX, Win and Mac - the only cool MOO client so far (besides MacMOOSE and rmoo/emacs ... well IMHO of course). If you add some stuff to your server
+you get object browsing, whiteboards, full screen editing verbs and properties, and more.
+Upgrade every few weeks !!
+<LI><A HREF="http://asb.www.media.mit.edu/people/asb/MacMOOSE/">MacMOOSE</A>
+MacMOOSE is a client program designed to make it easier to program MOOs and MOOSEs, and includes: Object browsers, WYSIWYG (editing) and more !
+<LI>nothing else ?
+</UL>
+
+Past Events:
+
+<UL>
+<li>See also: <A HREF="http://tecfa.unige.ch/guides/cspace-pointers.html">Kaspar's Cyberspace Pointers</A> (will clean out the stuff below soon / Apr/97)
+<LI><A HREF="http://www.susqu.edu/ac_depts/arts_sci/english/lharris/annencpb/mooconf.htm ">Composition in Cyberspace Conference</A> (table version) -
+<A HREF="http://www.itp.berkeley.edu/~owen/program.html">text version</A>
+Quote: "Our conference is entitled: "The Virtual Classroom: Writing Across the 
+Internet," and it will be held at U.C. Berkeley on Saturday, March 16, 1995. 
+ Our plenary speakers are Amy Bruckman (of MIT's Media Lab) and John Slatin 
+(Director, Computer Writing & Research Lab at UT Austin)"
+<LI><A HREF="http://tecfa.unige.ch/edu-comp/conferences/DU95-conference.text">2nd Diversity University Educational Conference</A>, June 22 - 25, 1995, Marist College, Poughkeepsie, NY.
+<LI>The <A HREF="http://www.io.org/~idd/icde95.html">DU session on MOOs</A>
+at <A HREF="http://gpu.srv.ualberta.ca/~tanderso/adi/deg/icde.htm">ICDE 95 On-line</A>. (Session 5 : Open House(s) at Real time Learning Environments, Format: Learning to use MUDs & MOOs)
+<LI><A HREF="http://www.missouri.edu/~cccc95/realtime.html">CCCC95 Online
+Realtime Conversations</A> (Check some of on-line MOO sessions logs !)
+<LI><A HREF="http://tecfa.unige.ch/edu-comp/flish95/workshop.html">MOO Workshop</A>
+at FLISH (Flexible Learning on the Information Superhighway), Open University,
+Milton Keynes, March 28, 1995.
+See also <A HREF="http://www.maths.tcd.ie/~creilly/workshop.html">here</A>.
+<LI><A HREF="http://www.utri.no/~jan/program.html">
+Text-Based Virtual Reality:
+What is it and how is it being used?
+</A>
+Meridian, Auditorium #246, 11 October 1994, 9:15pm - 10:15pm, Oslo Time
+</UL>
+
+
+
+<hr><h2><A name="General"></a>General Index &amp; Information Pages
+<A HREF="eduVR-page.html.SAVE#Contents"><IMG ALIGN=BOTTOM SRC="http://tecfa.unige.ch/gif/icon-small-up.gif" ALT="(up to Contents)"></a></h2>
+
+It is hard to classify index pages, so don't get angry :)
+
+<OL>
+<LI><STRONG>General</STRONG>
+
+<UL>
+<LI><A HREF="http://www.cis.upenn.edu/~lwl/mudinfo.html"><STRONG>MudInfo page</STRONG></A> by Lydia Leong (U. Penn).Very complete Index Page! Including her
+MUD FAQs.
+<LI><A HREF="http://www.itp.berkeley.edu/~thorne/MOO.html">MUDs, MOOs & MUSHs</A>
+by <A HREF="mailto:thorne@garnet.berkeley.edu">Steve Thorne</A>Good page, includes hands-on information pages for new MOO users.
+<LI><A HREF="http://www.oise.on.ca/~jnolan/mud.html">Muds, Moos &amp; Mushes:</A> Hip-Waders in the CMC Swamp
+<A HREF="http://www.oise.on.ca/~jnolan/home.html">by Jason Nolan</A>.
+<LI><A HREF="http://www.cco.caltech.edu/~mercer/htmls/GeneralMOO.html">
+BioMOO Image Archive at CalTech -- General MOO Information</A>
+<LI><A HREF="http://lucien.sims.berkeley.edu/moo.html">MOO/MU* Document Library</A> by Jerome P.McDonough. Best (IMHO) Moo documentation depository! See also
+our <a href="eduVR-page.html.SAVE#Bibliographies">Bibliographies &amp; document indexes &amp; Mailing lists</a> index below!
+<LI><A HREF="http://www.cm.cf.ac.uk/User/Andrew.Wilson/VR/">
+     Cardiff's VR Page</A>. Information on MOO ("Mud, Object-Oriented").
+     Has pointers to many interessting servers for text(MUD)-based VR,
+     also educational (good).
+<LI><A HREF="http://www.cms.dmu.ac.uk/People/cph/moos.html">"moo"</A>,
+A good index page 
+by <A HREF="http://www.cms.dmu.ac.uk/~cph/cphroot.html">Chris Hand</A>.
+See also:
+<A HREF="http://www.cms.dmu.ac.uk/People/cph/tbvr.html">Text-Based Virtual Reality</A>, 
+<LI><A HREF="http://www.ccs.neu.edu/home/thigpen/html/mud.html">Thigpen's MUD page</A> (good).
+<LI><A HREF="http://www.ccs.neu.edu/home/lpb/muddex.html">
+      The MUDdex</A> - A historically oriented page by
+     <A HREF="http://www.ccs.neu.edu/home/lpb/index.html">
+      Lauren P.Burka</A>.
+<LI>Index:
+<A HREF="http://draco.centerline.com:8080/~franl/mud.html">Fran Literio's
+Multi-User Dungeons (MUDs) Page</A>. 
+<LI>Index: <A HREF="http://www.lysator.liu.se:7500/nobw/mud/main.html">Info about Lysators MUD's, and MUD's in general.</A>.
+
+   <LI><A HREF="http://www.missouri.edu/~c594600/moo.html">Wild World MOOs and MUDs</A>
+<li>Index: <A HREF="http://www.mlink.net/~martini/moondes.html">MOOndes virtuels</A> (en français).
+</UL>
+
+<LI><STRONG>Lists of MU*s</STRONG> (there are many others!)
+
+
+<UL>
+<LI><A HREF="http://www.yahoo.com/Entertainment/Games/MUDs__MUSHes__MUSEs__MOOs__etc_">Entertainment: Games: MUDs, MUSHes, MUSEs,
+MOOs, etc.</A> at <A HREF="http://akebono.stanford.edu/yahoo/">Yahoo</A>, also points to other indexes.
+<LI><A HREF="http://www.eorbit.net/mud/mudlist.html">Doran's Mud List</A>. A large clickable list.
+
+   <LI><A HREF="http://www4.ncsu.edu/unity/users/a/asdamick/www/moo.html">BOB(c)'s MOOGate</A> The largest MOO List on the Web (by <A HREF="http://www4.ncsu.edu/unity/users/a/asdamick/www/">Andrew S. Damik</A>)
+<LI><a href="http://shsibm.shh.fi/mud/Mudlist.html">CS Mudlist</a> (based on Doran's)
+<LI>J. Norrish's <A HREF="http://www.vuw.ac.nz/who/Jamie.Norrish/mud.html">
+      Mudlist, NZ</A>
+<LI><A HREF="http://csugrad.cs.vt.edu/soc/mud_page.html">
+       Mud List</A> by Chris Jackson (game-oriented, telnet buttons for many MUD's) *dead* pointer
+</UL>
+
+
+<LI><STRONG>"What is X doing with Mu*s" oriented</STRONG>
+
+<UL>
+<LI>See the list of<a href="eduVR-page.html.SAVE#Educational">Educational MUDs</a> below.
+<LI><A HREF="http://www.cwrl.utexas.edu/moo/">CWRL MUSH &amp; MOO Page</A>. Pages dedicated to the Computer Writing Research Lab applied research projects in building Text-based Virtual Environments, otherwise known as MUCKs, MOOs, MUSHs, MUSEs... 
+</UL>
+
+<LI> <STRONG>Technical &amp; Software oriented</STRONG>
+
+
+<UL>
+   <LI><A HREF="ftp://ftp.lambda.moo.mud.org/pub/MOO">
+    FTP MOO dir of Lambda</A> (was at Xerox before). Has MOO client and
+    server software, manuals, but also some important
+    <A HREF="ftp://ftp.lambda.moo.mud.org/pub/MOO/papers">papers</A>
+    (see the
+    <A HREF="ftp://ftp.lambda.moo.mud.org/pub/MOO/papers/README">README</A>
+    file).
+    Most education/collaborative work MU*'s seem to be MOO-based.
+<LI><A HREF="http://tecfa.unige.ch/pub/documentation/MUD/">
+Locally saved things at TECFA</A> (Since our links to the US are getting really bad, I put a copy of most manuals and FAQs here... but you won't always get the lastet versions).
+<LI><A HREF="ftp://ftp.crl.com/users/ro/riche/MOO/patches/">Semi-Official MOO Patch Repository and Archive</A> 
+<LI><A HREF="ftp://ftp.math.okstate.edu:/pub/muds/">MUD FTP Archive</A>
+    at OKstate: Clients, Docs, Mud-FAQ.
+</UL>
+
+<LI><STRONG>Non-English Pages</STRONG>
+
+<UL>
+<LI><A HREF="http://www.uqam.ca/~gingras/tour/moondes.html">Les Moondes viruels</A>
+</UL>
+
+
+
+</OL>
+<hr><h2><A name="Educational"></a>Educational MUDs List
+<A HREF="eduVR-page.html.SAVE#Contents"><IMG ALIGN=BOTTOM SRC="http://tecfa.unige.ch/gif/icon-small-up.gif" ALT="(up to Contents)"></a></h2>
+
+
+<UL>
+<LI>Friends, please help me to keep this list up-to-date! Ideally, you could
+email a complete entry in html format (like in this
+<A HREF="moo-template.html">MUD entry template</A>) to <A HREF="mailto:Daniel.Schneider@tecfa.unige.ch">Daniel.Schneider@tecfa.unige.ch</A>.
+</UL>
+
+
+<OL>
+<LI><STRONG>Indexes &amp; other Summary Information:</STRONG>
+ 
+<UL>
+<LI><A HREF="http://www.pitt.edu/~jrgst7/MOOcentral.html">MOO Central</A> - Jeff Galin's Educational MOO/MUD Index.
+<LI><A HREF="http://tecfa.unige.ch/edu-comp/DUJVRE/vol1/no1/education_MOOs.text">Educational MOOs</A> (text) by "Donald",appeared in the 
+<A HREF="http://tecfa.unige.ch/edu-comp/DUJVRE/">DU Journal of Virtual Education</A> Vol1, No1.
+<li><A HREF="http://www.assiniboinec.mb.ca/user/downes/mudpage.htm">On-Line Teaching and Learning: The MUD Resource Guide</A>
+
+   <LI><A HREF="http://uu-gna.mit.edu:8001/uu-gna/schools/index.html">GNA Consortium Members</A> use several MOOs (on Feb 95 GNA is on
+7 virtual campuses). 
+Those MOOs feature shared rooms ("GNA Forums") and a inter-MOO pageing links.
+
+<LI><A HREF="http://www.musenet.org">MuseNet Home page</A>
+MuseNet, the Multi-User Science Education Network, is a system of computers in the domain
+musenet.org providing access to Educational MUSEs (Multi-User Simulated Environments), such
+as MicroMUSE and MariMUSE. It is based at Bolt Beranek and Newman and supervised by Dr.
+Barry Kort ("Moulton") with assistance from Kevin Kane ("Frnkzk").
+<LI><A HREF="http://copernicus.bbn.com:70/1/testbed/muse">
+    MUSEs in education</A> (A BBN page)
+<LI><A HREF="http://www.utep.edu/~cwc95/sites.html">Computers and Writing '95 Online</A> (pointers to writing MOOs)
+<LI><A HREF="http://tecfa.unige.ch/moo/edmoo/">Educational MOO Administrators forum</A> Representatives of Educational MOOs meet on a regular basis. Meetings are also announced on the Moo-ed mailing list
+(see below)
+</UL>
+
+
+<P>
+<LI><STRONG>Educational &amp; Reserach MOOs</STRONG>
+Note that some are "serious" MUDs with additional themes or "social" MUDs with educational and/or research activites.
+ <P>
+
+<dl>
+<DT><STRONG>AcademICK</STRONG>
+<DD>
+<UL>
+<LI><A HREF="http://www.en.utexas.edu/researchpoints/mudpage.html">WWW Information Page</A>
+<li><A HREF="telnet://auden.fac.utexas.edu:7777/">telnet://auden.fac.utexas.edu:7777/</A>
+<LI><STRONG>Organization</STRONG>: <A HREF="http://www.en.utexas.edu/">Computer Writing and Research Lab</A>, Dept. of Rhetoric and Composition, U of Texas at Austin
+<li><STRONG>Theme</STRONG>: AcademICK consists of a number of themed areas, each of which have an educational purpose, but which are also intended to be entertaining.
+Examples include an area devoted to cyberpunk, an extensive area
+devoted to recreating significant portions of various historical eras
+(including Ancient Greece and Rome) and an area devoted to the works
+of H.P. Lovecraft.
+<li><STRONG>Access</STRONG>: Areas are being worked on by staff members of the
+<A HREF="http://www.en.utexas.edu/">CWRL</A>,
+but students are also encouraged to contribute and have added some
+interesting places of their own.  Currently, AcademICK has an open
+character creation and building policy.  Anyone interested in more
+info about it should contact <A HREF="mailto:kitjer@mail.utexas.edu">Joi Chevalier</A>.
+</UL>
+
+
+<DT><STRONG>Athena University</STRONG>
+<dd>
+<UL>
+<LI><A HREF=" http://www.athena.edu/Athena-Home.html">WWW Information page</A> 
+<LI><STRONG>Theme</STRONG>: Athena University, a liberal arts university 
+sponsored by Virtual Online University (<A HREF = 
+"http://uu-gna.mit.edu:8001/uu-gna/index.html">a 
+GNA-member school</A>), offers undergraduate and graduate courses from their 
+<A HREF ="http://www.athena.edu/Catalog/cattoc.html">course catalog</A>.
+<li><STRONG>Access</STRONG>: Visitors are welcome at <A 
+HREF="telnet://athena.edu:8888">athena.edu:8888</A>. Qualified university-level instructors 
+interested in joining Athena University should contact <A HREF="mailto:billp@athena.edu"> 
+Dr. William Painter, Executive Director</A>. Student and other inquires can 
+contact <A HREF="mailto:VOU@athena.edu">VOU@Athena.edu</A>
+</UL>
+
+
+<DT><STRONG>Bay MOO</STRONG>
+<dd>
+<UL>
+<LI><A HREF="http://BayMOO.sfsu.edu:4242/">WWW Page</A>
+<LI><A HREF="telnet://BayMOO.sfsu.edu:8888/">telnet://BayMOO.sfsu.edu:8888/</A>
+<li><STRONG>Theme</STRONG>: This is mostly
+   a "cultural MOO" but it is currently (Jan 95) increasing educational
+   activities.
+</UL>
+
+
+<DT><STRONG>AussieMOO</STRONG>
+<DD>
+<UL>
+<LI><A HREF="http://silo.riv.csu.edu.au">WWW Page</A> 
+<LI><A HREF="telnet://silo.riv.csu.edu.au:7777">telnet://silo.riv.csu.edu.au:7777/</A> 
+<li><STRONG>Theme:</STRONG>AussieMOO is an open-styled, experimental and research MOO for social 
+interaction, conferencing, computer-supported cooperative work (CSCW), 
+lifelong education (beyond just K-Ph.D), experimental psychology and 
+philosophy.
+</UL>
+
+
+<DT><STRONG>BioMOO</STRONG>
+<DD>
+<UL>
+<LI><A HREF="http://bioinfo.weizmann.ac.il:70/1s/biomoo">WWW Information Page</A> 
+<LI><A HREF="telnet://bioinfo.weizmann.ac.il:8888/">telnet://bioinfo.weizmann.ac.il:8888/</A>
+<li><STRONG>Purpose:</STRONG> A virtual meeting place for biology professionals.
+<li><STRONG>WWW-Moo Interface:</STRONG>
+ First <A HREF="telnet://bioinfo.weizmann.ac.il:8888">connect via telnet</A> (at the address given above) and log in with "guest [name] [password]", using a [name] and [password] of your choice.  
+Then <A HREF="http://bioinfo.weizmann.ac.il:8000">connect to the web access system</A> (at http://bioinfo.weizmann.ac.il:8000), and enter the same name and password in the web authentication form when requested.
+<li>Also look at: <A HREF="http://www.cco.caltech.edu/~mercer/htmls/BioMOOImage.html" >BioMOO Image Archive at CalTech</A> (contains at lot of useful info).
+</UL>
+
+
+<DT><STRONG>CollegeTown</STRONG>
+<dd>
+<UL>
+<LI><A HREF="http://www.bvu.edu/ctown/">WWW Information Page</A>
+or
+<A HREF="http://galaxy.bvu.edu/~ken/cthomepagetemp">WWW Information Page</A>
+<li><A HREF="telnet://galaxy.bvu.edu:7777/">telnet://galaxy.bvu.edu:7777/</A>
+<LI><STRONG>Organization:</STRONG> <A HREF="http://www.bvu.edu/">Buena Vista University</A>.
+<LI><STRONG><A HREF="http://www.bvu.edu:7000/">WWW-MOO Interface</A></STRONG>
+<li><STRONG>Theme:</STRONG>
+"COLLEGETOWN is a text based virtual Academic Community.   Its purpose is to
+serve as a platform for the scholarly pursuits of students and faculty from
+around the world. COLLEGETOWN is a place for folks to meet, hold classes and
+seminars, do research, carry out class projects, and exchange ideas.
+Folks who share our academic vision are most welcome to apply for membership in
+our community!  The COLLEGETOWN server is located on the campus of
+Buena Vista University in Storm Lake, Iowa."
+<br>For more information on CollegeTown check out the <A HREF="http://www.bvu.edu/informationresources/CHE.html">article</A> in the Feb.9
+issue of the Chronicle of Higher Education.
+</UL>
+
+
+<dt><STRONG>Costello</STRONG>
+<dd>
+<UL>
+<LI><A HREF="http://www.n-seiryo.ac.jp
+/TEACHER/cohen/English_Costello.html">http://www.n-seiryo.ac.jp/TEACHER/cohe
+n/English_Costello.html</A>
+  <LI><A HREF="telnet://202.223.235.7:7777/">t
+elnet://202.223.235.7:7777/</A>
+  <LI><B>Organization: </B>Niigata Seiryo Wo
+men's Junior College
+  <LI><B>Theme: </B>Costello is a mud designed to give
+non-native speakers
+  of English practice and support in using their English
+, while at the same
+  time providing a traditional and exciting game-playing
+environment for
+  anyone. Emphasis is placed on non-natives being able to us
+e 'real English'
+  commands rather than traditional mud commands while aloow
+ing native speakers
+  to use the traditional command set.
+  <LI><B>Access:</B>Anyone is welcome to pop in,  but the mud is still only
+  in its infancy.
+If anyone is interested in helping (or just wants to discuss
+  the idea) ple
+ase contact <A HREF="mailto:cohen@n-seiryo.ac.jp">Adrian Cohen</A>.
+</UL>
+
+
+<DT><STRONG>Diversity University</STRONG>
+<DD>
+<UL>
+<LI><A HREF="http://www.du.org/">WWW Information Page</A>
+<LI><A HREF="http://moo.du.org:8888/">WWW Page</A> (WWW-MOO gateway)
+<LI><A HREF="telnet://moo.du.org:8888/">telnet://moo.du.org:8888/</A>
+<LI><STRONG>Organization</STRONG>: Diversity University, Inc. [ contact: <A HREF="mailto:du@du.org">DU 
+Administration</A> or <A HREF="mailto:gsswky@menudo.uh.edu">Jeanne McWhorter</A> ]
+<LI><STRONG>Articles</STRONG>: <A HREF="http://pass.wayne.edu/DUarticle.html">articles on DU</A>
+<LI><STRONG>Theme</STRONG>: Started in the late summer of 1993 this is considered to be the largest educational 
+MOO. DU features a campus-like architectural structure and 
+seeks to cater to a great diversity of groups and projects, with a big emphasis on education.
+</UL>
+
+
+<DT><STRONG>DONUT</STRONG>
+<dd>
+<UL>
+<LI><A HREF="telnet://bigbird.stark.k12.oh.us:7777/">telnet://bigbird.stark.k12.oh.us:7777/</A>. (???)
+<li><STRONG>Theme</STRONG>: A K-12 (highschool) MOO.
+</UL>
+
+
+<DT><STRONG>EON</STRONG>
+<DD>
+<UL>
+<LI> <A HREF="gopher://mcmuse.mc.maricopa.edu/11/courseinfo">Gopher Page</A>
+<LI><A HREF="telnet://mcmuse.mc.maricopa.edu:8888">telnet://mcmuse.mc.maricopa.edu:8888</A>
+</UL>
+
+
+<DT><STRONG>ExploreNet</STRONG>
+<DD>
+<UL>
+<LI><A HREF="http://longwood.cs.ucf.edu/ExploreNet">WWW Page</A>
+<LI><STRONG>Theme:</STRONG> Explorenet is a multimedia MUD environment for use between
+schools. It is part of the Virtual Academy Project at the 
+University of Central Florida and the Coalition of Essential
+Schools at Brown University.
+See also the <A HREF="http://www.dml.cs.ucf.edu/VAtools/sumr96/">Virtual Academy Tools</A> page.
+<LI>See in particular the "<A HREF="http://www.cs.ucf.edu/~ExploreNet/papers/VA.EdModel0795.html">Virtual Academy: The Educational Model</A>" paper.
+</UL>
+
+
+<DT><STRONG>French MOO</STRONG>
+<DD>
+<UL>
+<li><A HREF="telnet://moo.syr.edu:7777/">telnet://moo.syr.edu:7777/</A>.
+<LI><STRONG>Theme</STRONG>: Learning french (by conversation, games, etc.)
+</UL>
+
+
+<DT><B>Frontiers </B></DT>
+<dd>
+<UL>
+<LI><A HREF="http://frontiers.wcsu.ctstateu.edu/">http://frontiers.wcsu.ctstateu.edu/</A>
+</LI>
+<LI><A HREF="telnet://frontiers.wcsu.ctstateu.edu:4000">telnet://frontiers.wcsu.ctstateu.edu:4000</A>
+</LI>
+<LI>No WWW interface </LI>
+<LI><B>Organization:</B> Western Connecticut State University Communications
+and Theatre Arts Dept</LI>
+<LI><B>Theme:</B> Virtual Campus, and connected recreational areas</LI>
+</UL>
+
+
+<DT><STRONG>Gold Rush MOO</STRONG>
+<DD>
+<UL>
+<LI><STRONG>Theme:</STRONG> Our mission at 1848 is to construct a model of a Gold-Rush economy set in America in the 1840's, amidst the native Americans who 
+have different values from the gold diggers. The gold diggers must learn 
+to appreciate the rich, American Indian culture. We also want people to 
+educate themselves and each other with one of the first virtual political 
+systems. See <A HREF="http://tecfa.unige.ch/edu-comp/GoldRush-MOO.text">here</A> for more information.
+<li><STRONG>Access:</STRONG>: Email to: Schuyler Koch skoch@bridges.ee.usm.maine.edu.
+</UL>
+
+
+<DT><STRONG>GrassRoots MOO</STRONG>
+<DD>
+<UL>
+<LI><A HREF="http://rdz.stjohns.edu/grassroots/">WWW Information page</A> 
+<LI><A HREF="telnet://rdz.stjohns.edu:8888/">telnet://rdz.stjohns.edu:8888/</A>
+<LI><STRONG>Theme:</STRONG>
+GrassRoots is a Virtual World that has emerged from the integration of
+text-based virtual reality and the World Wide Web to harness the Information
+and Communication potential of the Internet.  GrassRoots is an experimental
+community that attracted talented people from diverse backgrounds whose
+focus was on human service and learning.
+GrassRoots provides a learning environment where K-12 children are
+creating their neighborhoods and students from four universities are
+involved in collaborative study and research.
+The Library of GrassRoots has a foundation of over 260 electronic forums
+directed to Education, Medicine, and Psychology, and Disability.
+GrassRoots contains a cultural center that features the works of Wagner,
+Eliot, and Whitman and museums dedicated to the 12th Century, Jerusalem, and
+Brooklyn.
+</UL>
+
+
+<DT><STRONG>Lingua MOO</STRONG>
+<DD>
+<UL>
+<LI><A HREF="http://lingua.utdallas.edu:7000/">WWW Information page</A> 
+<LI><A HREF="telnet://lingua.utdallas.edu:8888/">telnet://lingua.utdallas.edu:8888/</A>
+<LI>WWW interface: <A HREF="http://lingua.utdallas.edu:7000/11">http://lingua.utdallas.edu:7000/11</A>
+<LI><STRONG>Theme:</STRONG> LINGUA MOO is an educational and professional community for teachers           
+and students at <A HREF = "http://www.utdallas.edu">The University of Texas at Dallas</A>.  
+It is both a learning      
+environment and a place where faculty collaborate on various projects          
+related to teaching and research using electronic media.  It is also           
+designed to support links with other MOOs and collectives like                 
+AEE (<A HREF = "http://wwwpub.utdallas.edu/~cynthiah/aee-faq.html">Alternative Education Environments</A>) and the GNA-Net (<A HREF = "http://uu-gna.mit.edu:8001/uu-gna/index.html">Globewide Network Academy</A>). 
+</UL>
+
+
+<DT><STRONG>Little Italy</STRONG>
+<dd>
+<UL>
+<LI><A HREF="http://www.dsi.unimi.it/Users/aprile/HUG/Blurb.html">WWW Information page</A>
+<LI><A HREF="telnet://ipo.tesi.dsi.unimi.it:4444/">telnet://ipo.tesi.dsi.unimi.it:4444/</A>
+<li><STRONG>Theme</STRONG>: ???
+<li><STRONG>Special Features</STRONG>: Italian Spoken.
+</UL>
+
+
+<DT><STRONG>Meridian</STRONG>
+<DD>
+<UL>
+<LI><A HREF="telnet://sky.bellcore.com:7777/">telnet://sky.bellcore.com:7777/</A>.
+<li><STRONG>Theme</STRONG>: A virtual image of the world: geography, culture, history...
+</UL>
+
+
+<DT><STRONG>MiamiMOO</STRONG>
+<DD>
+<UL>
+<LI><A HREF="http://moo.cas.muohio.edu/~moo/">WWW Information Page</A>
+<li><a href="telnet://moo.cas.muohio.edu:7777/">telnet://moo.cas.muohio.edu:7777/</a>
+<li><STRONG>Organization</STRONG>: sponsored by Miami University's Classics and Religion departments.
+<li><STRONG>Theme:</STRONG>It is open to the public, but is intended for building virtual models of 
+important historical and religious buildings and regions.  It is 
+sponsored by Miami University's Classics and Religion departments and is 
+being built (so far) by a motley group of professors, grad students and 
+undergraduates.  The MOO is first and foremost an academic tool.
+<li><STRONG>WWW-MOO Interface</STRONG>: <A HREF="http://moo.cas.muohio.edu/~moo/">http://moo.cas.muohio.edu/~moo/</A>
+</UL>
+
+
+<DT><STRONG>MundoHispano</STRONG> 
+<DD>
+<UL>
+<LI><A HREF="http://web.syr.edu/~lmturbee/mundo.html">WWW Information Page</A>
+<LI><A HREF="telnet://io.syr.edu:8888">telnet://io.syr.edu:8888</A>
+<LI><STRONG>Theme:</STRONG>MundoHispano is a MOO being developed by <A HREF="http://web.syr.edu/~lmturbee">Lonnie Turbee</A> (aka "Colega") with the support of the department of <A HREF="http://lang.syr.edu">Languages, Literatures and Linguistics</A> and ERIC's <A HREF="http://ericir.sunsite.syr.edu/">AskERIC</A> project, both at <A HREF="http://www.syr.edu">Syracuse University</A>. <B> Most importantly</B>, however, MundoHispano is a community of native speakers of Spanish from around the world, teachers and learners of Spanish, and computer programmers, all of whom volunteer their time and talent to make this a dynamic virtual world.
+</UL>
+
+
+<DT><STRONG>OWL</STRONG>
+<dd>
+<UL>
+<LI><A HREF="http://www.en.utexas.edu/researchpoints/mudpage.html">WWW Information Page</A>
+<li><A HREF="telnet://auden.fac.utexas.edu:8888/">telnet://auden.fac.utexas.edu:8888/</A>
+<li><STRONG>Organization</STRONG>: Dept. of Rhetoric and Composition, <A HREF="http://www.utexas.edu/">U of Texas at Austin</A>
+<li><STRONG>Theme</STRONG>: OWL (Online Writing Laboratory) is
+maintained by members of the <A HREF="HTTP://www.utexas.edu/depts/uwc/.html/main.html">Undergraduate Writing Center</A> (Dept. of Rhetoric and Composition). OWL's primary
+purpose is to allow on-line consultations between UWC staff and UT
+students concerning student writing skills.  It has also become a
+meeting place for UT faculty and students and faculty from around the
+country, as well as the site of a weekly Creative Writing Workshop.
+<li><STRONG>Access</STRONG>: Anyone interested in more info
+about it should contact Susan Warshauer of the UWC at
+swan@ccwf.cc.utexas.edu.
+</UL>
+
+
+<DT><STRONG>PennMOO</STRONG>
+<dd>
+<UL>
+<LI><A HREF="telnet://ccat.sas.upenn.edu:7777">telnet://ccat.sas.upenn.edu:7777</A>
+<li><STRONG>Theme:</STRONG>Virtual Classrooms. Several Actvities, see e.g. <A HREF="http://ccat.sas.upenn.edu/jod/teachdemo/moo.html">New Tools for Teaching</A> and specially the <A HREF="http://ccat.sas.upenn.edu/jod/teachdemo/moo.html">MOO: The virtual classroom</A> by <A HREF="http://ccat.sas.upenn.edu/jod/jod.html">James J. O'Donnell</A> - e.g. 
+<A HREF="http://dept.english.upenn.edu/~afilreis/88/moo-home.html">PennMOO for English 88</A>
+</UL>
+
+
+<DT><STRONG>schMOOze University</STRONG>
+<DD>
+<UL>
+<LI><A HREF="telnet://schmooze.hunter.cuny.edu:8888/">telnet://schmooze.hunter.cuny.edu:8888/</A>
+<LI><A HREF="http://schmooze.hunter.cuny.edu:8888/">WWW Information Page</A>
+<li><STRONG>Theme</STRONG>: schMOOze is a small, friendly college known
+for its hospitality and the diversity of the student population.  It was
+established in July, 1994 as a place where people studying English as a
+second or foreign language could practice English while sharing ideas
+and experiences with other learners and practicers of English. Students
+have opportunities for one-on-one and group conversations as well as
+access to language games, an on-line dictionary, USENET feed, and gopher
+access.  Although schMOOze was founded with the ESL/EFL student in mind,
+it welcomes all people interested in cross-cultural communication.
+</UL>
+
+
+<DT><STRONG>SchoolNet MOO</STRONG>
+<dd>
+<UL>
+<LI><A HREF="http://schoolnet2.carleton.ca/english/fun.html">WWW page</A> 
+<li><STRONG>Theme:</STRONG> Canada's <A HREF="http://schoolnet.carleton.ca/">SchoolNet</A> runs its own
+K-12, bilingual (English/French) educational MOO.
+<li>Access: The MOO itself is at schoolnet.carleton.ca 7777, but does
+not allow guest connections
+<li>Example of what they do: "Last May, for example, we held a Q/A session
+between the Minister of Justice of Canada and
+students from 7 different schools from accross
+Canada. (Transcript: <A HREF="gopher://schoolnet.carleton.ca:419/00/Projects.dir/examples.dir/Soc.dir/Cairo/moo.transcript">here</A>)
+</UL>
+
+
+<DT><STRONG>SkooMOO</STRONG>
+<dd>
+<UL>
+<LI><A HREF="http://www.iti.gov.sg/et/moo/skoomain.html">WWW Information page</A> 
+<LI><A HREF="telnet://capella.iti.gov.sg:5577/">telnet://capella.iti.gov.sg:5577/</A>
+<LI><STRONG>Organization</STRONG>: <A HREF="http://www.iti.gov.sg/et/index.html">Educational
+ Technology Group</A>, <A HREF="http://www.iti.gov.sg/">Information Technology
+Institute</A> 
+<LI><STRONG>Theme</STRONG>: SkooMOO is an educational MOO meant for 7-18 year-olds, the
+first to be set up in Singapore, and one of the first Asian MOOs. It is created
+with an Asian context so that Asian and especially Singaporean students will find familiar.
+<li><STRONG>Access</STRONG>: It is open to visitors, but teachers and students who
+are interested in interacting or doing projects with their counterparts in Singapore are especially
+welcome.
+</UL>
+
+
+
+<DT><STRONG>Tapped In</STRONG>  </DT>
+<dd>
+<ul>
+<li><A HREF="http://www.tappedin.sri.com">WWW Information page</A>
+<li><A HREF="telnet://tappedin.sri.com:7777">telnet://tappedin.sri.com:7777</A>
+<li><A HREF="http://moo.tappedin.sri.com">WWW-interface</A>
+<li><STRONG>Organization:</STRONG> SRI International 
+<li><STRONG>Theme:</STRONG> The Teacher Professional Development Institute, or TAPPED 
+IN, is a shared teacher professional development (TPD) workplace 
+patterned after a real-world conference center. Teachers with diverse 
+interests, backgrounds, and skills can share experiences, engage in 
+mentoring and collaborative work, or simply meet their colleagues. TPD 
+organizations can maintain their own agendas (e.g.,institutes and 
+workshops), while enabling their teachers to benefit from a range of 
+expertise, ideas, and resources that no one organization could provideby 
+itself.  Most of all, TAPPED IN is a professional community of K-12 TPD 
+providers, schools, teachers, and researchers committed to education 
+reform. Although each organization has its own mission, all contribute to 
+the sustenance and growth of the community by committing time and 
+resources and by helping to underwrite the costs of teacher participation 
+and TAPPED IN capabilities and services. Individual teachers contribute 
+to the community by participating in activities, helping others, and 
+volunteering. 
+</ul>
+
+
+<DT><STRONG>TecfaMOO</STRONG>
+<dd>
+<UL>
+<LI><A HREF="http://tecfa.unige.ch/tecfamoo.html">WWW Information Page</A> (includes some other useful pointers)
+<LI><A HREF="telnet://tecfamoo.unige.ch:7777">telnet://tecfamoo.unige.ch:7777</A>.
+<li><A HREF="http://tecfamoo.unige.ch:7777/">The WWW-MOO Interface</A> (NEW - under development, 5/95)
+<li><STRONG>Organization</STRONG>: <A HREF="http://tecfa.unige.ch/">TECFA</A> (Technologies de Formation et Apprentissage), Faculte de Psychologie et des Sciences de
+l'Education, <A HREF="http://www.unige.ch/">University of Geneva</A>.
+<li><STRONG>Theme</STRONG>: This is our (this WWW page maintainer's) MOO. Its main
+purposes are research (in educational technology and CMC) and some education.
+<li><STRONG>Special Topics</STRONG>: See the
+<A HREF="http://tecfa.unige.ch/tecfamoo.html">TecfaMOO Project</A> page for more information (documentation, articles, student projects, etc.).
+</UL>
+
+
+<DT><STRONG>Walden Pond MOO</STRONG>
+  <dd>
+<UL>
+  <LI><A HREF="http://www.ualberta.ca/~walden/walden.html">WWW Information Page</A>
+  <li><A HREF="telnet://olympus.lang.arts.ualberta.ca:8888">telnet://olympus.lang.arts.ualberta.ca:8888</A>
+  <li><STRONG>Organization:</STRONG><A HREF="http://www.ualberta.ca/">University of Alberta</A>, Humanities Program (?)
+  <li><STRONG>Theme:</STRONG> This MOO is new (Feb 28 96), wait :)
+  </UL>
+
+
+<DT><STRONG>Virtual Online University</STRONG>
+<dd>
+<UL>
+<LI><A HREF="http://www.athena.edu/">WWW page</A>
+<li><STRONG>Theme</STRONG>: Virtual Online University, a member of the <A HREF = 
+"http://uu-gna.mit.edu:8001/uu-gna/index.html"> 
+GNA consortium</A>, sponsors two educational endeavors encompassing both secondary 
+and post-secondary education: <A HREF = "http://www.athena.edu/Athena-Home.html">Athena 
+University</A> - a classically-oriented institution of higher learning offering university 
+classes on the internet - and the <A HREF = 
+"http://www.deakin.edu.au/edu/MSEE/GENII/GENII-Home-Page.html"> GENII Lab School</A>. GENII 
+is an
+internet training resource to K-12, higher education and business professionals. A central 
+mission of GENII is to bring effectiveb and affordable internet training to everyone who 
+needs it.
+<li><STRONG>Access</STRONG>: Visit us at <A 
+HREF="telnet://athena.edu:8888">athena.edu:8888</A> or contact us at 
+<A HREF="mailto:VOU@Athena.edu">VOU@Athena.edu</A>
+</UL>
+
+
+<DT><STRONG>ZOOMoo</STRONG>
+<dd>
+<UL>
+<LI><A HREF="http://www.missouri.edu:80/~moo/">WWW page</A> -
+<A HREF="http://www.missouri.edu/~muiit/zoomoo.html">WWW page</A>
+<li>Theme: A MOO will offer [...] chances to use a social environment for educational
+purposes, a chance for teachers and students to learn by engaging in the construction of simulations.
+And since everything in a MOO is written, the thing plays to MU's commitment to improving
+student writing. It may also contribute to the university's efforts to support computer and
+information literacy. See the
+<A HREF="http://www.missouri.edu/~wleric/writery.html">Virtual place for Writers</A> WWW
+home page for details on the on-line writery.
+</UL>
+
+
+
+
+</dl>
+
+<P>
+<LI><STRONG>Other Educational &amp; Reserach M*s</STRONG> 
+<br>
+New section: All "non-MOO" MUDS (because some people I know got
+confused by the different sets of commands). Please help me correct my
+MOO bias.
+ <P>
+
+<dl>
+<DT><STRONG>MOOSE Crossing</STRONG>
+  <dd>
+<UL>
+  <LI><A HREF="http://asb.www.media.mit.edu/people/asb/moose-crossing">WWW Information Page</A>
+  <li><STRONG>Organization:</STRONG><A HREF="http://www.media.mit.edu/">MIT Media Lab</A>
+  <li><STRONG>Theme:</STRONG>
+MOOSE Crossing is a MUD designed to give kids 9-13 a meaningful
+context for reading, writing, and computer programming.  It includes a new
+programming language (MOOSE) and client interface (MacMOOSE) designed to make
+it easier for kids to learn to program.<br>
+My ideal setting is an after school program.  Use from home is fine too.
+Folks older than 13 need to apply to become rangers.
+  </UL>
+
+
+<DT><STRONG>MicroMUSE</STRONG>
+<DD>
+<UL>
+<LI><STRONG>Theme</STRONG>: See the <A HREF="http://www.musenet.org">MuseNet home page</A> (includes bibliography, documents, how to use information and more) [note: will have to dig around in there].
+<li><A HREF="telnet://musenet.bbn.com">telnet://musenet.bbn.com</A>
+</UL>
+
+
+<DT><STRONG>VCR MUSH</STRONG>
+  <dd>
+<UL>
+  <LI><A HREF="telnet://sophistry.goingv.com:6250">telnet://sophistry.goingv.com:6250</A>
+  <li><STRONG>Organization:</STRONG> University of Victoria
+  <li><STRONG>Theme:</STRONG> Language Learning
+  </UL>
+
+
+<DT><STRONG>WriteMUX</STRONG>
+<DD>
+<UL>
+<LI><A HREF="http://www.visi.com/~ronda/writemux/">WWW page</A> 
+<LI><A HREF="telnet://writemux.visi.com:6250">telnet://writemux.visi.com:6250</A>
+<LI><STRONG>Theme:</STRONG>
+WriteMUX is an evolved version of WriteMUSH, which operated as an online 
+classroom/educational environment since early 1993.  Our mission is to provide a
+friendly and useful VR resource for educators and writers.  We are open for 
+classes, writing groups, and similar activities.
+</UL>
+
+
+<DT><STRONG>Miami Christian University</STRONG>
+<dd>
+<UL>
+<LI><A HREF="http://mcu.edu">WWW Information page</A> 
+<LI><STRONG>Theme</STRONG>: Miami Christian University, a state-approved 
+theological institution, offers undergraduate and graduate courses and 
+degrees from their <A HREF ="http://mcu.edu/catalog/">course catalog</A>.
+<li><STRONG>Access</STRONG>: Visitors are welcome at our <A 
+HREF="http://mcu.edu/campus.htm">IRC Campus</A>. Information inquiries can 
+contact <A HREF="mailto:info@mcu.edu">info@mcu.edu</A>.
+</UL>
+
+
+</dl>
+
+</OL>
+
+<hr><h2><A name="Other"></a>Other interesting MUDs
+<A HREF="eduVR-page.html.SAVE#Contents"><IMG ALIGN=BOTTOM SRC="http://tecfa.unige.ch/gif/icon-small-up.gif" ALT="(up to Contents)"></a></h2>
+
+<OL>
+<LI><STRONG>Professional Communities</STRONG>
+
+<DL>
+<DT><STRONG>PMC MOO</STRONG> - <A HREF="http://jefferson.village.virginia.edu/pmc/pmc-moo.html">WWW Page</A> (includes a telnet/tinyfuge button, good idea!)
+<DD>Theme: <A HREF="http://jefferson.village.virginia.edu/pmc/contents.all.html">Postmodern Culture</A>. This page includes pointers to
+the issues of "Postmodern Culture: An Electronic Journal of Interdisciplinary Criticism" and other PMC stuff.
+<dd><A HREF="telnet://hero.village.virginia.edu:7777/">telnet://hero.village.virginia.edu:7777/</A>.
+<dd>See also: <A HREF="http://jefferson.village.virginia.edu/">
+WWW Page of the Institute for Advanced Technology in the Humanities</A>, The University of Virginia.
+(includes a telnet button for the IATH-specific MOO).
+
+<DT><STRONG>Media MOO</STRONG>
+<DD><DD><A HREF="telnet://purple-crayon.media.mit.edu:8888/">telnet://purple-crayon.media.mit.edu:8888/"</A>
+<DD><STRONG>Theme:</STRONG>Meeting Place for Media Researchers, one of the "ancient MOOs".
+
+<DT>See also:
+<dd>Some of the educational MOOs above: (BioMOO, TecfaMOO, ...)
+
+</DL>
+<LI><STRONG>Various</STRONG> 
+
+<DL>
+
+<DT><STRONG>e_moo</STRONG>
+<dd><A HREF="telnet://tecfa.unige.ch:4242/">telnet://tecfa.unige.ch:4242/</A>
+<dd><A HREF="http://tecfa.unige.ch:4243/">e_moo's WWW layer</A> entry page contains project information.
+
+<dd>Theme: MOO R&amp;D
+
+<DT><STRONG>MOOtiny</STRONG>
+<DD><A HREF="telnet://128.243.31.4:8888/">telnet://128.243.31.4:8888/</A>
+<DD><A HREF="http://spsyc.nott.ac.uk:8888/">WWW Interface</A> 
+<DD>The MOOtiny server and DB &lt;enhanced versions of the stock Lambda versions&gt; has been released publically.
+You may get them at two places now, for a good htpertext description, see <a href="http://psyc.nott.ac.uk/aigr/papers/WOOM1.0/">WOOM1.0</a>
+<DD><STRONG>Theme:</STRONG> "Social" and MOO research (see e.g. <A HREF="http://www.psyc.nott.ac.uk/aigr/papers/Living-Documents/paper.html">"Living Documents" Paper</A>
+
+<DT><STRONG>MOOsaico</STRONG>
+<dd><A HREF="telnet://moo.di.uminho.pt:7777/">telnet://moo.di.uminho.pt:7777/</A>
+<DD>Special Features: A True Multi-lingual MOO !
+
+<DT><STRONG>The ChibaMOO/WOO</STRONG> - <A HREF="http://www.picosof.com/about">WWW Page</A>. (WWW pages and telnet buttons for the Sprawl, World and WaxWeb MOOs)
+<DD>Special features:Integrates the WWW and the MOO.
+
+<DT><STRONG>Lambda MOO</STRONG> 
+<DD><A HREF="telnet://lambda.parc.xerox.com:8888/">telnet://lambda.parc.xerox.com:8888/"</A>
+<dd>Theme: Moo-Fun, cultural
+<dd>Special Features: The largest (I think) and the best known, got some exposure in the Media.
+
+<DT><STRONG>Jay's House MOO (JHM)</STRONG> - <A HREF="http://jh.ccs.neu.edu:7043/">WWW-Page</a>
+<DD>Theme:An ongoing project to investigate text-based VR.
+<dd>Special Features: Hang-out for some very good Moo programmers
+
+<DT><STRONG>PtMOOt</STRONG> (dead now)
+<dd>Theme: <A HREF="http://actlab.rtf.utexas.edu/">ActLab's</A>
+Quote "It attempts to reproduce the 'real
+world' by disallowing any sort of communication or action unless it has a
+real-life counterpart. It also has an interesting economic system
+established. To excite things a bit, there's some good ol' fashion
+conspiracy wacko and Lovecraftian elements to spice things up a bit."
+See this <A HREF="gopher://actlab.rtf.utexas.edu:70/11/MUD/MOO/PtMOOt">
+Gopher page</A> for more information.
+<dd><A HREF="telnet://actlab.rtf.utexas.edu:8888/"> dead Telnet connection</a>
+
+
+</dl>
+
+</OL>
+<hr><h2><A name="Publications"></a>Publications
+<A HREF="eduVR-page.html.SAVE#Contents"><IMG ALIGN=BOTTOM SRC="http://tecfa.unige.ch/gif/icon-small-up.gif" ALT="(up to Contents)"></a></h2>
+(Sorry this section is quite outdated)
+
+
+<UL>
+<li><STRONG>Journals</STRONG>
+
+<UL>
+<LI><A HREF="http://journal.mudsite.com/~jomr">Journal of Mud Research</A> 
+(also at: <A HREF="http://mellers1.psych.berkeley.edu/~jomr/">http://mellers1.psych.berkeley.edu/~jomr/</A>).
+</UL>
+
+<LI><STRONG>MOO as education, learning and research tools</STRONG>
+   (Also points to articles covering MOOs as part of an educational set-up)
+
+ 
+<UL>
+  <LI><A HREF="http://tecfa.unige.ch/edu-comp/DUJVRE/">DU Journal of Virtual Education</A> (File Directory)
+   <A HREF="http://tecfa.unige.ch/edu-comp/DUJVRE/vol1/no1/">
+   Available: Vol.1-No.1</A> (File Directory)
+
+  <LI><A HREF="http://uu-gna.mit.edu:8001/uu-gna/documents/papers/thes/nina_hall.html">Academy in the Ether</A> by
+    By Nina Hall, London, 
+(Appeared in: The Times Higher Education Supplement, September 16, 1994, back page [xii], here in html format) .
+  See also:
+<A HREF="http://uu-gna.mit.edu:8001/uu-gna/documents/papers/thes/lynton_mclain.html">OU sees net gain for real</A> by 
+Lynton McLain, London
+(Appeared in: The Times Higher Education Supplement, September 16, 1994, front page).
+
+ <LI><A HREF="http://pass.wayne.edu/DUarticle.html">Articles on DU</A>(html).
+
+ <LI><A HREF="http://uu-gna.mit.edu:8001/uu-gna/text/cc/papers/2nd_conf.html">
+   Learning on the WWW: A Case Study</A> by Dr Daniel Perron, Assistant Professor, Mount Allison University, Canada. This is an insider's look at the
+<A HREF="http://uu-gna.mit.edu:8001/uu-gna/text/cc/index.html"> GNA C++ course.</A>.
+ An evaluation of this course is underway.
+ See <A HREF="http://uu-gna.mit.edu:8001/uu-gna/text/cc/adm/contrib.html#misc">here</A>.
+
+<LI><A HREF="http://core.symnet.net/~VOU/conference/list.html">
+    Research and Pedagogy in Cyberspace:</A>
+ A conferencing Workshop for Teachers On Using 
+the Internet. MOO transcripts found at the
+<A HREF="http://symnet.net/~VOU/">VOU WWW</A> home page.
+<LI><A HREF="http://www.rpi.edu/~decemj/cmc/mag/1995/jan/fanderclai.html">MUDs in Education: New Environments, New Pedagoguies</A>
+By Tari Lin Fanderclai in CMC Magazine Vol 2, No 1 (Jan 1995).
+
+   <LI><A HREF="http://copernicus.bbn.com:70/0/testbed/muse/Virtual.Communities">Virtual Realities, Virtual Communities and Informal Science Education</A> by Barry Kort, BBN Labs.
+<LI>See also: <A HREF="http://www.well.com/www/hlr/vcbook/index.html">Virtual Communities</A>by Howard Rheingold.
+</UL>
+
+<LI><STRONG>Other articles</STRONG> <br>
+(should probably kill this section and leave it to others)
+
+ 
+<UL>
+  <LI>Article in html format:
+    <A HREF="http://www.lysator.liu.se:7500/users/neotron/The_Dragon_ate...html">
+   "The Dragon Ate My Homework"</A> from Wired Magazine.
+
+    <LI><A HREF="ftp://ftp.lambda.moo.mud.org/pub/MOO/papers">papers at the
+    Xerox Archive</A> (FTP dir). Several formats are available.
+
+    <LI>See for instance:
+    <A HREF="ftp://ftp.lambda.moo.mud.org/pub/MOO/papers/MUDsGrowUp.ps">
+    MUDs Grow Up: Social Reality in the Real World</A>
+    (PS Format) by Pavel Curtis and David A. Nichols
+    or
+    <A HREF="ftp://ftp.lambda.moo.mud.org/pub/MOO/papers/MOOGopher.ps">
+    Collaborative Information Retrieval: Gopher from MOO</a>
+    (PS Format) by Larry Masinter and Erik Ostrom or
+    <A HREF="ftp://ftp.lambda.moo.mud.org/pub/MOO/papers/Evard.ps">
+    Collaborative Networked Communication:
+    MUDs as Systems Tools</a> by Rémy Evard.   
+
+   <LI><A HREF="http://tecfa.unige.ch/~jermann/communicative.txt">
+BETTER LIVING THROUGH LANGUAGE, The Communicative Implications of a Text-Only Virtual Environment, or,Welcome to LambdaMOO!</A> by
+Eva-Lise Carlstrom, Grinnell College
+<LI><A HREF="ftp://parcftp.xerox.com/pub/MOO/papers/ethnography.txt">Virtual Reality: Reflections of Life, Dreams, and Technology</A>,
+An Ethnography of a Computer Society by Michael S. Rosenberg 
+
+  <LI><A HREF="http://www.ncsa.uiuc.edu/SDG/IT94/Proceedings/VR/meyer.waxweb/meyer.html">A MOO-Based Collaborative Hypermedia System for WWW</A>
+by Tom Meyer (twm@cs.brown.edu), David Blair (artist1@echonyc.com), and Suzanne
+Hader(smh@cs.brown.edu), paper presented at IT94.
+
+<LI><A HREF="http://www.gatech.edu/lcc/idt/Faculty/andreas_dieberger/Workshop.ECHT94.html">Spatial User Interface Metaphors in
+Hypermedia Systems</A>(Workshop at the European Conference on Hypermedia Technology, September 1994, Edinburgh, Scotland).
+Vaguely related to MOOs, but highly relevant for WWW-MOO projects !
+
+   <LI><A HREF="ftp://media.mit.edu/pub/asb/papers">
+     MediaMOO papers archive</A> (FTP dir).
+</UL>
+</UL>
+
+
+
+<hr><h2><A name="Bibliographies"></a>Bibliographies &amp; Document Indexes, mailing lists
+<A HREF="eduVR-page.html.SAVE#Contents"><IMG ALIGN=BOTTOM SRC="http://tecfa.unige.ch/gif/icon-small-up.gif" ALT="(up to Contents)"></a></h2>
+
+PLEASE (applies to all on-line information): 
+People should sign their pages and even more so their on-line articles!
+
+<OL>
+<LI><STRONG>Bibliographies:</STRONG>
+
+
+<UL>
+<LI>The <A HREF="http://tecfa.unige.ch/moo/spider-bib/spider-bib.html">Spider</STRONG></A> Bibliography's <STRONG><A HREF="http://tecfa.unige.ch/moo/spider-bib/bib-query.html">search engines</A></STRONG>
+<LI><A HREF="http://www.cas.usf.edu/english/walker/bibliog.html">Bibliography of Electronically Available Sources: MOOs, MUDs, MUCKs, and MUSHs</A>
+An MLA-style adaptation of the bibliography available at telnet purple.crayon.media.mit.edu 8888. Includes short abstracts.
+<LI><A HREF="http://www.usyd.edu.au/~robertvk/bib.html">Cyberspace Bibliography</A> by Robert van Krieken. <STRONG>Good</STRONG> (lots of clickable links).
+<LI><A HREF="ftp://ftp.hitl.washington.edu/pub/scivw/citations/VR-ED.html">
+Virtual Reality and Education:Information Sources</A> by Veronica S. Pantelidis. (ascii text via ftp). A (maybe old) local copy is
+<A HREF="http://tecfa.unige.ch/edu-comp/biblios/VR-Education-Bibl.html">here</A>.
+</UL>
+
+
+Also, browse through general MUD/MOO/VR/or whatever indexes below. Furthermore,
+check out the various resources on CMC, collaboration etc.,
+e.g. <A HREF="http://sunsite.unc.edu/cmc/center.html">CMC Studies Center</A> or <A HREF="http://www.uni-koeln.de/themen/cmc/">Gesellschaftliche Aspekte computervermittelter Kommunikation</A> and (Has many pointers to CMC Research and
+a large <A HREF="http://www.uni-koeln.de/themen/cmc/litlist.html">library of electronic texts</A> on CMC.)
+<LI><STRONG>On-Line Publication Indexes on MU*ing</STRONG>
+
+
+<UL>
+<LI><A HREF="http://www.clas.ufl.edu/anthro/Seeker1_s_CyberAnthro_Page.html">Seeker1's CyberAnthropology Home Page</A> (by <A HREF="http://www.clas.ufl.edu/anthro/personal.html">Seeker1</A>.
+<LI><A HREF="http://lucien.sims.berkeley.edu/moo.html">MOO/MU* Document Library</A> (the "lost library") by Jerome P.McDonough. Best archive !
+<LI><A HREF="http://www.oise.on.ca/~jnolan/about_muds.html">Academic and Other writings about Muds & Moos</A> (off <A HREF="http://www.oise.on.ca/~jnolan/mud.html">Jason Nolan's MUD Page</A>).
+<LI><A HREF="http://sunsite.unc.edu/dbarberi/comm-papers.html">Communication
+Papers at Sunsite</A> (including MuDs and MOOs) by
+<A HREF="http://sunsite.unc.edu/dbarberi/index.html">David Barberi</A>
+<LI><A HREF="ftp://ftp.lambda.moo.mud.org/pub/MOO/papers">The ftp papers archive
+at Xerox</A>
+<LI>See also: <A HREF="http://www.well.com/user/hlr/vircom/">Virtual Worlds Resources/Virtual Communities</A> by <A HREF="http://www.well.com/user/hlr/">Howard Rheingold</A>.
+<LI><A HREF="http://www.actlab.utexas.edu/~smack/MOOStuff.html">MOO-Spaces' Greatest Works</A> 
+<LI><A HREF="http://sensemedia.net/papers">The SenseMedia/Chiba MOO Papers</A> 
+<LI><A HREF="http://homepage.seas.upenn.edu/~mengwong/thesisfaq.html">Thesis Net FAQ</A>Has information extracted from Thesisnet, a mailing list devoted to criticism of works-in-progress related to all aspects of human interaction with and within cyberspace.
+<LI>You also may want to regularly scan <STRONG>various on-line journals</STRONG> of
+interest. You can start from <A HREF="http://tecfa.unige.ch/guides/journals.html">our local "interesting journals" list</A>
+</UL>
+
+<LI><STRONG>Mailing Lists (and Archives)</STRONG> 
+
+<UL>
+<LI> <A HREF="http://www.ucet.ufl.edu:80/writing/mail-archives/moo-ed/">Moo-Ed Archive</A> (education &amp; MOOs)
+To subscribe read:
+<A HREF="http://tecfa.unige.ch/pub/documentation/MUD/mlists/moo-ed-list.text">this</A> 
+<LI><A HREF="http://www.ucet.ufl.edu:80/writing/mail-archives/cbnvee/">cbnvee</A> (concerns: "educational virtual realities")
+To subscribe read:
+<A HREF="http://tecfa.unige.ch/pub/documentation/MUD/mlists/cbnvee-list.text">this</A> 
+<LI><A HREF="http://www.the-b.org/moo-cows/">MOO cows</A> (technical discussion, archive and subscription info)
+<LI><A HREF="gopher://ccat.sas.upenn.edu:70/11/journals/moo-calves/archives">MOO Calvers Newbie Wiz list</A>. To subscribe, see the 
+<A HREF="http://www.teleport.com/~rday/moo-calves.html">Moo-Calves Resource Page</A> (dead links ??)
+<LI><STRONG>Cyberspace and Society</STRONG>: To subscribe: Send a message to
+<A HREF="mailto:mailbase@mailbase.ac.uk">mailbase@mailbase.ac.uk</A>
+with the following content: join cyberspace-and-society &lt;First Name&gt; &lt;Name&gt;
+<LI><STRONG>Serious Mudding</STRONG> is a distribution list for discussions of research on 
+muds and/or using muds for "serious" purposes. To subscribe, read
+<A HREF="http://tecfa.unige.ch/pub/documentation/MUD/mlists/serious-mudding.text">this</A> 
+<LI><STRONG><A
+HREF="http://www.crg.cs.nott.ac.uk/~dns/vr/cve/">Collaborative Virtual
+Environments</A></STRONG> A Collaborative Virtual Environment (CVE) is
+one that actively supports human-human communication in addition to
+human-machine communication and which uses a Virtual Environment
+(including textually based environments such as MUDs/MOOs) as the user
+interface. To subscribe send mail to: cve-request@cs.nott.ac.uk
+with a body of: subscribe <your name> <Home page URL (optional)>
+</UL>
+
+
+</OL>
+
+<hr><h2><A name="Guides"></a>MUD/MOO Guides, FAQs &amp; Manuals
+<A HREF="eduVR-page.html.SAVE#Contents"><IMG ALIGN=BOTTOM SRC="http://tecfa.unige.ch/gif/icon-small-up.gif" ALT="(up to Contents)"></a></h2>
+<OL>
+<LI>Beginners help 
+ 
+<UL>
+ <LI><A HREF="http://info.desy.de/pub/uu-gna/html/cc/moo/guide.html">
+    A beginner's Guide to MOOing</A>. -  Consult this before you
+    log into one of the MOOs. 
+ <LI><A HREF="http://tecfa.unige.ch/moo/tecfaman/www/TecfaMOOMan_1.html">TecfaMOO Manuel</A> (In French, An English Version will follow). Useful for using the tecfamoo and of some help to non-english readers :) -
+Une version PS est <A HREF="http://tecfa.unige.ch/moo/tecfaman/moo-man.ps">ICI/HERE</A>.
+<LI><A HREF="http://fred.net/cindy/moo.html">The Complete Guide to LambdaMOO &amp; Diversity University Information</A>
+(including an html version of the Lambda help database
+and <A HREF="http://fred.net/cindy/mooquick.html">the DU MOO specific</A> quick-guide).
+<LI><A HREF="http://watarts.uwaterloo.ca:80/~camoock/mudhelp.htm">The MUD Starter Kit</A>
+by Colin Moock (C)opyright Sams Publishing, 1995 
+</UL>
+
+
+<LI>Newbie MOO owners
+
+<UL>
+<LI>NEW: <A HREF="http://www.teleport.com/~rday/moo-calves.html">The MOO-Calves Resource Page</A>. Information of newbie MOO owners and wizards. Check also its Mailing List!
+</UL>
+
+<LI>MOO Programming Tutorials
+
+<UL>
+<LI><A HREF="http://www2.ncsu.edu/unity/users/a/asdamick/pub/moo/tutorial.txt">Canton Becker's Tutorial</A> - 
+<A HREF="http://tecfa.unige.ch/pub/documentation/MUD/MOO/Becker-Tutorial.text">local copy</A>
+<LI>Many Moos have Tutorials on-line. E.g. see Irradiate's work on TecfaMOO (<A HREF="telnet://tecfamoo.unige.ch:7777">telnet://tecfamoo.unige.ch:7777</A>). (The MOOseum area and the *Tutorials list)
+<LI>Some tutorials (like the "The cows ate my brain" can be found <A HREF="http://tecfa.unige.ch/pub/documentation/MUD/MOO/">here</A> (at TECFA, maybe outdated).
+<LI>See some chapters in <A HREF="http://tecfa.unige.ch/moo/book2/tm2.html">The evolving TecfaMOO book - part II Technical Manuel</A>. Please (a) note that this under construction
+and (b) DON'T ever link to subpages.
+</UL>
+
+<LI>Programmers Manuals
+ 
+<UL>
+   <LI><A HREF="ftp://parcftp.xerox.com/pub/MOO/ProgrammersManual.texinfo_toc.html">LambdaMOO Programmer's Manual</A> - 
+   <A HREF="http://www.ccs.neu.edu/USER/ivan/moo/lm_toc.html">
+   Mirrored here</A> (at www.ccs.neu.edu).
+
+   <LI><A HREF="http://www.germany.eu.net/books/eegtti/eeg_230.html">The "MUD" entries</A> in the Big Dummy's Guide to the Internet
+
+   <LI><A HREF="http://web.mit.edu/afs/sipb/project/coldmud/doc/coldmud_toc.html">Coldmud Programmer's Reference</A> The C-like "C--" language for
+   the ColdMud server system.
+  </UL>
+
+<LI>FAQs
+  
+<UL>
+<LI><A HREF="http://www.math.okstate.edu:80/~jds/mudfaqs.html">Frequently Asked & Answered Questions for MUDs</A> by <A HREF="http://www.math.okstate.edu:80/~jds/">Jennifer Smith</A><BR>
+Ascii Files:
+<a href="file://ftp.math.okstate.edu/pub/muds/misc/mud-faq/part1">
+       MUd FAQ Part 1</a> (Basic Information about MUDs and MUDding) -
+<a href="file://ftp.math.okstate.edu/pub/muds/misc/mud-faq/part2">
+       MUD FAQ Part 2</a> (MUD clients and Servers) -
+<a href="file://ftp.math.okstate.edu/pub/muds/misc/mud-faq/part3">
+       MUD FAQ Part 3</a> (Basic Information on RWHO and <i>mudwho</i>)
+   <LI><A HREF="http://www.moo.mud.org/moo-faq/">
+MOO-Cows FAQ</A>, Ascii, DVI and postscript versions are available at:
+<A HREF="ftp://ftp.ccs.neu.edu/pub/mud/docs/faqs/">ftp://ftp.ccs.neu.edu/pub/mud/docs/faqs/</A>
+
+   <LI><A HREF="gopher://gsep.pepperdine.edu/00/gsep/technical/mud-moo/new-archwiz-faq.txt">New MOO Wiz FAQ</A> (Helps if you want to start a MOO)
+<LI><A HREF="http://www.eskimo.com/~hmcom/mud/wholedict.html">Encyclopedia of MU*s project Home Page"</A> (A Dictionary of common terms)
+  </UL>
+
+
+</OL>
+
+<hr><h2><A name="Teaching"></a>Teaching IN Cyberspace
+<A HREF="eduVR-page.html.SAVE#Contents"><IMG ALIGN=BOTTOM SRC="http://tecfa.unige.ch/gif/icon-small-up.gif" ALT="(up to Contents)"></a></h2>
+ This section needs to be further developed .... in the mean time teachers
+should go and visit and ask around.
+Most educational text-based VR seems to use MOOs. Among the wider spread
+MUD architectures MOOs are probably best suited because of the pretty
+powerful MOO programming language.
+
+<OL>
+<LI>MOO <STRONG>Tools for on-line classes &amp; tutorial rooms</STRONG>:
+ 
+<UL>
+  <LI><A HREF="http://tecfa.unige.ch/edu-comp/DUJVRE/vol1/no1/building_tools_for_education.text">
+ Building Tools for Education</A>
+ by Ken Schweller. Quote from this DUJVRE Journal (1/1) article:
+  "Over the past few years I have enjoyed building a variety of MOO
+tools which are presently being used here and about for instructional
+and educational purposes. These tools include the following Generics:
+  - video camera, tape, vcr, tv
+  - slide projector, lecture
+  - conversational robot
+  - classroom, and theater".
+<LI><A HREF="http://tecfa.unige.ch/edu-comp/DUJVRE/vol1/no1/education_MOOs.text">Education MOOs</a>. See section 5 of this pointer for tools available at DU
+ </UL>
+
+<LI>Papers &amp; home pages about <STRONG>classes held in MUD/MOO space </STRONG>
+(makes reference to a more traditional model of teaching involving a teacher
+"in front" of a class.)
+
+<UL>
+<LI><A HREF="http://www.du.org/places/du/cybercomp.html">Composition in Cyberspace</A> by Leslie D. Harris.
+Quote: "We hope this document will be your central reference point as you learn to use the resources of the Internet in your English Composition classes. This page will focus on the use of MOOs (primarily Diversity University MOO) and Internet discussion lists in English Composition teaching." .. Prospective MOO teachers, check this out!
+<LI><A HREF="http://www.techfak.uni-bielefeld.de/bcd/Faculty/Papers/vega.psb96/vega.psb96.html">Distance Education Through The Internet: The Gna-Vsns
+Biocomputing Course</A>
+<LI>See also: <A HREF="http://info.desy.de/gna/html/cc/adm/cons.html">
+   GNA C++ Consulting</A> (A Web page describing also their
+<A HREF="http://uu-gna.mit.edu:8001/uu-gna/text/cc/moo/explain.html">interactive classroom</A>).
+<li><A HREF="http://english.ttu.edu/kairos/2.1/features/andchev/index.html">Collaborative Space and Education</A> 
+<LI>More needed here ! The <A HREF="http://www.du.org">Diversity Univ</A>. Home
+page may have pointers in the future.
+</UL>
+
+<LI><STRONG>Educational MUD/MOO environments</STRONG>:
+ 
+<UL>
+<LI>The article "<A HREF="http://www.cs.ucf.edu/~ExploreNet/papers/VA.EdModel0795.html">Virtual Academy: The Educational Model</A>" paper from
+the <A HREF="http://longwood.cs.ucf.edu:80/ExploreNet/">ExploreNet(TM)</A> 
+site has good thoughts. See also other articles from this site.
+<LI> <A HREF="http://actlab.rtf.utexas.edu/~moboid/mooweb.html">Mexican/American border spaces in textual reality</A> by Heather J. Kelley, Actlab, 
+<LI>Also: check the Ohlohne village at BayMOO, Agincourt at DU, the Ticinese
+Village at TecfaMOO ... in short go to educational MOOs and ask around.
+<LI>For some motivation, read: <A HREF="http://www.rpi.edu/~decemj/cmc/mag/1995/jan/fanderclai.html">MUDs in Education: New Environments, New Pedagoguies</A>
+By Tari Lin Fanderclai in CMC Magazine Vol 2, No 1 (Jan 1995).
+  </UL>
+
+<LI><STRONG>"How to" information</STRONG>
+Note that there are tons of publications on "electronic classroom", ask your library or start with "classic" Readers.
+See for instance the reviews for the following books:
+Berge and Collins, <A HREF="http://www.helsinki.fi/science/optek/STRATE.3N2">Computer Mediated Communication and the Online Classroom (1995)</A> * Harasim (ed), 
+<A HREF="http://www.helsinki.fi/science/optek/SHADE.3N1">Global Networks: Computers And International Communication</A>
+
+<P>
+Not much about MUD/MOOs seems to available in published form. In any
+case most documents (I have seen) are somewhat minimalistic.
+
+<ul>
+<li><A HREF="http://english.ttu.edu/kairos/1.3/inbox/moo/cvr.html">Reflections Onna MOO</A> by Janet Cross and Kristian Fuglevik. Probably the best thing to start before
+using a MOO in education.
+<LI><A HREF="http://www.daedalus.com/net/MOOTIPS.html">MOO Teachers Tip sheet</A> by Traci Gardner, Daedalus Group, Inc.
+<LI>Check out larger educational MOOs for teachers' guidelines 
+<LI>One of the problems with MUD/MOO teaching is to give some basic MOO
+training to your students. Most educational MOO-WWW pages do have some materials, e.g.
+see the ones in the <A HREF="http://www.du.org/places/du/cybercomp.html">Composition in Cyberspace</A> page or look at the
+<A HREF="http://www.ucet.ufl.edu/writing/MOO/">Mooville</A> page.
+<LI>For general technical information, check out the rest of this page. E.g. consult
+the various <a href="eduVR-page.html.SAVE#Guides">MOO/MUD Guides, FAQs &amp; Manuals</a>.
+If you want to start up your own server it is best to get some experience else{MOO/MUD/etc} first.
+</UL>
+
+<LI><STRONG>Virtual communities of teachers using the MU* technology</STRONG>
+
+
+<UL>
+<LI>If you are an educational MOO administrator or involved with EduMOO management, <A HREF="http://tecfa.unige.ch/moo/edmoo/">join the club</A>! We have regular meetings on-line.
+<LI><A HREF="http://tinylondon.ucsd.edu/~cal/MUDpage.html"><STRONG>The MUDPage</STRONG></A>.
+Quote: "The purpose of this Web site is to bring together those researchers who are interested in promoting and using this technology...[]". See also:
+its <A HREF="http://tinylondon.ucsd.edu/~cal/MUDshop.html">MUDshop</A> page.
+Quote: "The MUDshops are the ARPA Workshops on MUDs and Education, which are intended to bring
+together the widely dispersed communities that are interested in the development and use of MUD
+technology for education and training".
+</UL>
+
+<LI><STRONG>Virtual communities of teachers MEETING in Cyberspace</STRONG>
+
+<UL>
+<LI><A HREF="http://www.cs.bsu.edu/homepages/siering/netoric.html">The Netoric Project</A> The goal of the Netoric Project is to bring together geographically distant colleagues to discuss
+issues related to computer-assisted writing instruction.
+<LI>In conjuction with NETEACH-L (a discussion list for ESL teachers
+who use the 'net in their teaching), Greg Younger organizes realtime discussions
+twice a month at schMOOze University (schmooze.hunter.cuny.edu 8888),
+a MOO for ESL students and teachers. The homepage for the NETEACH-L
+MOO sessions is at
+<A HREF="http://spot.colorado.edu/~youngerg/netmoo.html">http://spot.colorado.edu/~youngerg/netmoo.html</A>
+ </UL>
+
+
+<LI><STRONG>"Real Life" Courses</STRONG>:
+
+<UL>
+<LI>Tecfa (our unit) does teach <A HREF="http://tecfa.unige.ch/tecfa/teaching/cmc-overview/cmc-teaching.html">CMC in education</A> including MOOs (using and programming). Note that on-line documentation about some classes is not great (and most of the documentation is in french).
+<LI>More needed !! pointers anybody ??
+</UL>
+
+
+</OL>
+
+<hr><h2><A name="Teachingabout"></a>Teaching ABOUT Cyberspace
+<A HREF="eduVR-page.html.SAVE#Contents"><IMG ALIGN=BOTTOM SRC="http://tecfa.unige.ch/gif/icon-small-up.gif" ALT="(up to Contents)"></a></h2>
+<OL>
+<LI>Here are pointers to some course: Most have a general social science
+orientation, but nevertheless good reading for education people!
+
+<UL>
+<LI><A HREF="http://www.mit.edu:8001/people/sturkle/Identity.html">Identity and the Internet</A> (STS 065,Spring 1995) by <A HREF="http://www.mit.edu:8001/people/sturkle/">Prof Sherry Turkle</A>, Program in Science, Technology and Society, MIT.
+<LI><A HREF="http://www.bvu.edu/faculty/schweller/fallcollab/">The "Fall Collaboration Project"</A> An initiative by Prof. Ken Schweller (Buena Vista University) See in particular: <A HREF="http://www.bvu.edu/faculty/schweller/fallcollab/col_readings.html">"Suggested Readings"</A>  
+<LI><A HREF="http://alberti.mit.edu/arch/4.207/homepage.html">Digital Communities: Urban Planning and Design in Cyberspace</A>.
+This is the home page for 4.207/11.955, a graduate seminar being offered by the <a href = "http://alberti.mit.edu/dusp/dusp.html"> Department of Urban Studies and Planning </a> and the <a href = "http://alberti.mit.edu/arch/arch.html"> Department of Architecture </a> in the <a href = "http://alberti.mit.edu/ap/ap.html"> School of Architecture and Planning</a> at MIT.  The class will be offered during the fall semester of 1994.
+See also: <A HREF="http://alberti.mit.edu/arch/4.207/readings.html">The Reading List</A>.
+<LI><A HREF="http://www.rpi.edu/Internet/Guides/decemj/course/cmc.html">
+CMC Course Web Page</A> Example of a course on Computer-Mediated Communication given at the Rensselaer Polytechnic Institute.
+<LI><A HREF="http://swissnet.ai.mit.edu/6095/">6.805/STS085: Ethics and Law on the Electronic Frontier</A> An other MIT course
+<LI><A HREF="http://www.sscnet.ucla.edu/soc/csoc/syllabi.htm">Sociology 285k/197h The Sociology Of Cyberspace Spring 1993</A>, Peter Kollock &amp; Marc Smith, <A HREF="http://www.sscnet.ucla.edu/soc/csoc/">The Center for the Study of Online Community</A>, UCLA.
+<LI><A HREF="http://www.bradley.edu/las/soc/syl/391/index.html">The Sociology of Cyberspace</A> by L. Salamini and Jim Brazell, <A HREF="http://www.bradley.edu/las/soc/">Department of Sociology</A>, Bradley University.
+</UL>
+
+<LI>More needed here .... 
+</OL>
+
+<hr><h2><A name="Clients"></a>Clients &amp; Servers
+<A HREF="eduVR-page.html.SAVE#Contents"><IMG ALIGN=BOTTOM SRC="http://tecfa.unige.ch/gif/icon-small-up.gif" ALT="(up to Contents)"></a></h2>
+<OL>
+<LI>MUD/MOO Clients 
+
+<UL>
+<LI>Used at TECFA (means that that they work with our setup)
+ 
+<UL>
+ <LI><A HREF="http://www.microserve.net:80/~server/mudwin/">MudWin</A>:
+A simple Windows Client. This client works at our site with FTP Inc's TCP/IP
+software. The only DOS/Windows client which does that so far (Jan 95).
+No local editing, pretty useless for development.
+<LI>MUDDweller is simple Mac client that works will with Mac TCP/IP.
+Ftp Archives: <A HREF="ftp://rudolf.ethz.ch/pub/mud">here</A> or
+<A HREF="ftp://ftp.tcp.com/pub/mud/Clients/">here</A>.
+No local editing, pretty useless for development.
+
+ <LI><A HREF="http://thales.nmia.com/~tapia/rmoo.html">Emacs rmoo client</A> (dead link):
+Works with GNU Emacs (also with Xemacs if you adapt it).
+In our opinion the best overall
+emacs MOO client (since programming support is good). You can forget about @notedit,
+just remember to type '@edito +l' (@editoptions +local), this was not obvious to me
+when I started Mooing! 
+<LI><A HREF="ftp://ftp.math.okstate.edu/pub/muds/clients/UnixClients/mud.el">mud.el</A>. An
+other emacs client, simpler than rmoo but easier to install maybe. A number of improved
+versions seem to float around.
+<LI><A HREF="ftp://ftp.math.okstate.edu/pub/muds/clients/UnixClients/tf/tf.README">TinyFuge (tf)</A>
+(Ascii readme file). Easy (on Solaris here) to install. TF is flexible
+terminal client for Unix. For people afraid of Emacs and better suited for
+RPG Moos.
+<LI><A HREF="http://www.cs.cf.ac.uk/User/Andrew.Wilson/tkMOO-light/">tkMOO-light</A> for UNIX, Win and Mac - the only cool MOO client so far (besides MacMOOSE and rmoo/emacs ... well IMHO of course)
+</UL>
+
+<LI>Other clients rumored to be good
+
+<UL>
+<LI><A HREF="http://www.graphcomp.com/">GraphComp's</A> products:
+<A HREF="http://www.graphcomp.com/mutt/lite.html">MUTT Lite</A> is FREE and runs fine on the following Winsocks (stack/SLIP/PPP): Microsoft, 
+NetManage/Chameleon, Trumpet, Compuserve/Spry, AOL, Twinsock.
+A small(32K) and fast alternative to MudWin. See also their commercial products.
+</UL>
+
+<LI><STRONG>Java Clients:</STRONG>
+<br> Several of those beasts exist now,
+e.g. see: <A HREF="http://www.cold.org/javamud">Java MUD Interfaces</A> for
+an index.
+
+<UL>
+<LI><A HREF="http://www.du.org/java/CupOmud/">The Cup-O MUD Client</A> (free
+and well integrated with the
+<A HREF="http://bioinformatics.weizmann.ac.il/BioMOO/BioGate/">BioGate System</A>).
+<li><A HREF="http://sensemedia.net/voodo">Voodo</A> (Java/VRML technology, proprietary)
+<li><A HREF="http://tecfa.unige.ch/edu-comp/WWW-VL/www.wyndhaven.com">Wyndhaven</A> (proprietry Java/HTML)
+</UL>
+
+
+<LI>Client depositories/information:
+
+<UL>
+<LI><A HREF="http://www.rahul.net/galen/client.html">Winsock Game Clients for
+Windows</A> - (<A HREF="http://www.rahul.net/galen/client1.html">HTML 3 version</A>)
+<LI><A HREF="http://www.cm.cf.ac.uk/User/Andrew.Wilson/VR/information.html">"Related Information"</A> at the
+<A HREF="http://www.cm.cf.ac.uk/User/Andrew.Wilson/MUDlist/">
+Cardiff's MUD WWW tree</A>
+<LI><A HREF="http://www.microserve.com/~server/mudclients.html">MOO/MU** Clients</A> by <A HREF="http://www.microserve.net:80/~pmoss/">Pat Moss</A>
+<LI><A HREF="ftp://ftp.math.okstate.edu/pub/muds/clients/">Mud Clients</A>
+FTP directory of ftp.math.okstate.edu.
+<LI>See also the FAQs (e.g. <A HREF="http://www.math.okstate.edu:80/~jds/mudfaq-p2.html">FAQ:  MUD Clients and Servers</A>) and general indexes!
+<LI>If you have trouble connecting to any of the above sites, you will find (maybe outdated) clients
+in our FTP archive for <A HREF="http://tecfa.unige.ch/pub/software/unix/mud-clients/">Unix</A>,
+<A HREF="http://tecfa.unige.ch/pub/software/mac/Applications/Reseau/">Mac</A> and
+<A HREF="http://tecfa.unige.ch/pub/software/win95/reseau/">Windows</A>.
+</UL>
+
+<LI>Note: configuring a client for connecting to a specific 
+MOO is generally not very difficult:
+
+<UL>
+<LI>Just make sure you enter BOTH the Internet address (e.g. tecfamoo.unige.ch) and the Port number (e.g. 7777) in the right places.
+<LI>On Windows/Mac clients, input/output are usually in different windows.
+Often input is in a small 1-line window on top or at the bottom of the application. Type your stuff there, not in the large window!
+</UL>
+
+<LI><STRONG>MUD Client Protocols</STRONG>
+... MUD client protocols are not frequently used. Usually a Client just
+does I/O separation. On most MOOs MCP is used for local editing. More
+could be done here !
+
+<UL>
+<LI><A HREF="http://jhm.ccs.neu.edu:7043/help/subject!mcp">MOO Client Protocol 1.0</A> (MCP). (implemented in standard MOOs)
+  <li><A HREF="http://www.research.att.com/~davek/mcp2.html">MCP 2</A>
+</UL>
+
+
+</UL>
+
+<LI>MUD/MOO/VE Servers: See the various <a href="eduVR-page.html.SAVE#Guides">MOO/MUD Guides, FAQs &amp; Manuals</a> and surf through other indexes.
+<P>
+Here are a few MOO related pointers to MOO databases (note that you
+also need to install a server):
+
+<UL>
+<LI><A HREF="http://www.cmoo.com/moo/moogens.html">The Database of MOO Generics And More</A>
+<li><A HREF="http://www.psychology.nottingham.ac.uk/staff/Jenifer.Tennison/APECKS/">APECKS</A> Adaptive Presentation Environment for Collaborative Knowledge Structuring (includes a MOO core)
+<li><A HREF="http://lingua.utdallas.edu/hw/encore.html">EduCore BETA</A>. A Lambda-based educational core.
+</UL>
+
+Moo Servers (see also the <A HREF="http://www.moo.mud.org/moo-faq/">MOO FAQ</A>)
+
+<UL>
+<li><A HREF="ftp://ftp.research.att.com/dist/eostrom/MOO/">Standard (Unix) MOO server archive</A>
+<LI><A HREF="http://neon.ci.lexington.ma.us/SpamCentral/scaron/mgm.html">MacGoesMOO Home Page</A>
+<li><A HREF="http://www-personal.engin.umich.edu/~cunkel/WinMOO/winmoo-faq.html">WinMOO FAQ</A>
+</UL>
+
+</OL>
+
+
+<hr><h2><a name="others"></a>2/3D multi user virtual worlds
+<A HREF="eduVR-page.html.SAVE#Contents"><IMG ALIGN=BOTTOM SRC="http://tecfa.unige.ch/gif/icon-small-up.gif" ALT="(up to Contents)"></a></h2>
+
+THIS SECTION BADLY NEEDS UPDATING / sometimes soon - DKS Nov 96
+
+A number of 2/3D virtual worlds have come into existence lately. Some
+are extensions to VRML, some really proprietary. Judging from the time
+it takes to look at their www pages, those things will be popular enough.
+<P>
+This is a new section (Feb 1 1996), please send me pointers AND evaluations, haven't really looked at those things :)... Also have to decide
+where to put interactive webbed MUDs (Java or Serverpush based). 
+<OL>
+<LI><STRONG>Indexes</STRONG>
+
+<UL>
+<li><A HREF="http://discover-net.net/~hljmm/gmuds.html">Graphical Muds And Multiplayer Games</A> mostly a medium sized list of various graphical MUDs.
+<LI><A HREF="http://www.mlink.net/~martini/moondes/habitats2.html">Habitats</A> (in french)
+<li><A HREF="http://www.communities.com/people/crock/habitat.html">Habitats</A> by Douglas Crockford.
+</UL>
+
+<LI><STRONG>Proprietry Formats</STRONG>
+
+<UL>
+<LI><A HREF="http://www.worlds.net/products/alphaworld/">Alpha World</A> 
+Quote: "A virtual place populated by real people, AlphaWorld takes social computing to the next
+       level. By immigrating to AlphaWorld you become one of its citizens and help to shape it.
+       You acquire and develop property, assume an online persona, and interact in and with a
+       living, breathing, multiuser community. This is not some preprogrammed simulation -- it
+       is as unpredictable and unique as the individuals who help create it. Including you."
+
+<li><A HREF="http://www.donnyworld.com/">DonnyWorld</A>
+Quote: "
+Dynamic action content solution for Internet Service Providers!<br> 
+Way cooler than conventional chat systems! <br> 
+User-controlled characters interact with world objects in real time! <br> 
+Automatically synchronized, distributed world databases.<br> 
+Blazingly fast animation even over 14400 bps dial-up links! <br> 
+Easily add objects, world spaces...applications limited only by your imagination! <br> 
+Flexible, scalable client-server architecture."
+<li><A HREF="http://www.inmet.com/~moore/wynd.htm">Wyndhaven/Intermoo</A>
+Quote: "
+
+InterMOOTM technology makes Wyndhaven and its associated
+            courseware entirely user-extensible. It supports constructionist
+            pedagogy and empowers educators to develop their own lessons on the
+            computer."
+(see also: <A HREF="http://www.intermetrics.com/inteduc.htm">http://www.intermetrics.com/inteduc.htm</A>).
+<LI><A HREF="http://www.ichat.com/about.html">Ichat</A>
+Quote: "chat (pronounced I - chat) was founded to expand the functionality and uses of real-time chat
+systems on the Internet. First, through the ichat client which makes access to existing Internet chat
+systems easy by providing an integrated access tool with an easy to use graphical user interface.
+And through the ichat server, which makes it possible to run a real-time chat server and to
+integrate it with a World Wide Web site."
+<LI><A HREF="http://www.intel.com/iaweb/moondo/index.html">Moondo</A> -
+
+Quote: "Moondo is a Windows* application that lets you visit 3D
+multi-user virtual worlds and create your own virtual worlds for
+others to visit. Moondo features VRML rooms and avatars, audio chat,
+personally-created avatars, multiple views of the virtual world, and
+URL-based browsing of distributed Moondo servers world-wide".
+<LI><A HREF="http://www.thepalace.com/">The Palace</A> -
+
+Quote: "The Palace is an Internet-based multimedia chat architecture,
+kind of a cross between IRC and hypercard yet completely unique in
+many respects. You can author and run your own social online
+environment on your server, and visit other people's servers. The
+architecture is fast, extensible through a scripting language, and can
+visually look like anything you want! Because there are servers
+distributed across the Internet (like the Web), there is no single
+central authority and the load is distributed."
+
+<LI><A HREF="http://www.worldsaway.ossi.com/Worldsaway/away1.html">Worlds Away</A> -
+
+Quotes: "Combining the social dimension of chat services with the
+graphic dimension of multiplayer games, WorldsAway allows thousands of
+CompuServe members in the U.S., Europe, Japan and 150 countries
+worldwide, to meet, interact and join together in building a virtual
+community. [...]
+WorldsAway users can create and control their own on-line animated
+identities -- called avatars -- and take part in a variety of in-world
+events and activities. [...]
+WorldsAway is built on a distributed object-oriented technology which
+allows for a limitless addition of both users and WorldsAway regions. 
+<LI><A HREF="http://www.ubique.com/Sesame/Documentation/v_places.html">Virtual Places</A>
+Quotes: "
+Virtual Places is an architecture for a world-wide cyberspace. This cyberspace consists of shared
+spaces distributed over the Internet. In these shared spaces, information and people come together" ... The Virtual Places family of products transforms any Internet data server, such as the World Wide
+Web (WWW), from a static repository of information to a network of shared interactive spaces.
+This means that Web pages, and other Universal Resource Locators (URLs), become addressable,
+persistent, and inhabitable locations where people can meet, share content, and communicate in
+real time via voice or text."
+<li>Superscape's <A HREF="http://vwww.com/hub/multiuse/multiuse.htm">Hounted House</A>. Quote "
+Superscape VR plc and Black Sun Interactive are proud to
+present the Haunted House, an exciting new multi-user 3D
+world integrating Superscape's Viscape and Black Sun's
+Internet community functionality."
+</UL>
+
+<LI><STRONG>VRML based</STRONG>
+
+Please also have a look at my <A HREF="http://tecfa.unige.ch/guides/vrml/pointers.html">VRML pointers page</A>. Stuff below needs updating !
+
+<UL>
+<LI><A HREF="http://www.worlds.net/vrml/">World's Inc's Plans</A> (The makers
+of World Chat &amp; Alpha World.
+<LI><A HREF="http://vs.sony.co.jp/VS-E/works/server/what.html">cyber passage bureau</A> by Sony. Their <A HREF="http://vs.sme.co.jp/vstcl/"> browser</A> currently supports VRML behavior scripting in TCL. 
+It could be much more interesting for creating MOO worlds.
+<LI>IBM's (URL?)
+<LI>Microsoft's (URL?)
+<LI><A HREF="http://www.blacksun.com.">Black Sun Interactive</A>
+has multiuser VRML technology up and running,
+it uses VRML+ as proposed by Worlds Inc. as protocol.
+There are two browsers,
+CyberGate Client (a multi-user stand-alone 3D browser for
+Win '95) and CyberHub Client (a multi-user plug-in 3D browser for
+Netscape 3.0). The URL to download either client is
+<A HREF="http://www.blacksun.com/download/outside">http://www.blacksun.com/download/outside</A>.
+People can visit
+<A HREF="http://www.blacksun.com/vrml/plaza/homewrl.htm">http://www.blacksun.com/vrml/plaza/homewrl.htm</A> which has links to lots
+of cool worlds.
+
+<A HREF="http://www.oz-inc.com/">OZ</A>
+</UL>
+
+<LI><STRONG>VRML/MOO extensions</STRONG>:
+In order to integrate VRML &amp; MOO there
+are probably several solutions. Addresses again the lack of the "MOO to
+Client protocol" problem we have with our html and "smart" client interfaces.
+Benefits for educational MOOs might be increased attractiveness (not so important) and use of VRML data structures that profit from 3D (chemistry, cooperative castle design, teaching sculpture on-line....).
+<P>
+... got to hunt down pointers ! .. again, help me please.
+
+
+<UL>
+<LI>BioMOO's "add-on": Quote from Erice Mercer: "If you have a
+reasonably sophisticated browser (like Netscape with the WebFX
+plug-in) you can quickly switch between VRML and web views of a room.
+All VRML scenes are generated on the fly, reflecting real conditions
+in the MOO. Objects can be given VRML shapes by users, else they
+appear as simple geometric shapes.<br> This VRML system was built by
+me on top of the BioWeb system for MOOs that Gustavo Glusman, Jaime
+Prilusky, Paul Hansen and I wrote.  We're modifying it now to
+incorporate the wonderful enhancements of 1.8.0 but it should be
+available soon. Don't bother writing because we'll announce it here
+[in the MOO Cows list] first.  At that time you can figure out how it
+works for yourself by getting the package.  It's designed to be easily
+installed in any preexisting MOO."
+<LI>At some point MOOndo (see above) was supposed to that, but then it did not.
+<LI><A HREF="http://bug.village.virginia.edu/">WAX Web</A>.
+Edited Quote from <A HREF="http://tecfa.unige.ch/edu-comp/WWW-VL/%3Chttp://www.cs.brown.edu/people/twm/%3E">Tom Meyer: </A>
+I've been running a MOO [..] outputing VRML for about a
+year now (Waxweb, first web server of any
+kind to be serving up VRML), [...] but have
+not been that pleased by how suitable MOO is for VRML.
+I now generate VRML files on the fly from an http-speaking MOO server.
+Before I added in VRML support, the server worked quite well.  Since
+the VRML files are roughly ten times larger than the HTML files that
+describe the room, that caused enormous slow-downs in the MOO. [..]
+I'm very interested in combining the ideas in MOOs and VRML, but feel
+that generating VRML on the fly in an interpreted language doesn't
+scale very well, especially when the OODB that's generating it was
+designed for small, rapid (interactive) updates."
+See his home page for more details.
+</UL>
+
+<LI><STRONG>Java/MUD based</STRONG>
+
+
+<UL>
+<LI>Also, check the <A HREF="http://www.communities.com/e.html">The E Programming Language</A> by the folks
+<A HREF="http://www.communities.com/">(Electric Communities)</A>
+who programmed Lucas Habitat and Worlds Away. -
+
+Quote: "E is an extension to Java that adds message-based optimistic
+computation and capability-based security features. [....]  E defines
+a new family of objects, called E-objects, in contrast to ordinary
+Java objects. In addition to obeying all the rules of regular Java
+objects (which they ultimately are), E-objects can communicate by
+message passing. References to E-objects can be passed across the
+network."
+</UL>
+
+
+<LI><STRONG>Other stuff:</STRONG>
+
+
+<UL>
+<LI><A HREF="http://www.chaco.com/pueblo/">The Pueblo MUD Client</A> -
+
+Quote: "The Pueblo internet client is a multimedia game system which
+works with existing MUDs and media formats. We are distributing the
+beta version free. Pueblo can display 2D (GIF, JPEG, BMP) and 3D
+graphics (VRML), music (MIDI), audio (WAV), hypertext (HTML), and
+plain text.
+</UL>
+
+
+</OL>
+
+<hr><h2><A name="Research"></a>MUD Research
+<A HREF="eduVR-page.html.SAVE#Contents"><IMG ALIGN=BOTTOM SRC="http://tecfa.unige.ch/gif/icon-small-up.gif" ALT="(up to Contents)"></a></h2>
+
+Except for pointers to virtual research communities,
+this section mainly contains (or rather will contain) things
+that you can visit someMUD, i.e. creative uses of MUD topology, communication and artifacts, experimental setups, etc. See the section "<a href="eduVR-page.html.SAVE#Bibliographies">Bibliographies &amp; document indexes &amp; Mailing lists</a>" for pointers to publications on various research topics.
+<P>
+<img src="http://tecfa.unige.ch/ico/symbols/hand.gif" alt="&gt;&gt;&gt;">Please help me with this new section (2/96)
+
+<OL>
+<LI><STRONG>Virtual research communities</STRONG>
+
+
+<UL>
+<LI>Some exist within certain MOOs, e.g. visit MediaMOO
+<LI><A HREF="http://tinylondon.ucsd.edu/~cal/MUDpage.html"><STRONG>The MUDPage</STRONG></A>.
+Quote: "The purpose of this Web site is to bring together those researchers who are interested in
+promoting and using this technology; thus we include not only the server- and client-builders and
+M** administrators, but also the people who have or want to have interesting applications." See also its <A HREF="http://tinylondon.ucsd.edu/~cal/MUDshop.html">MUDshop</A> page.
+</UL>
+
+<LI><STRONG>Collaboration</STRONG>
+
+<UL>
+<LI> ... ToDO
+</UL>
+
+
+<LI><STRONG>Living Hypermedia</STRONG>
+
+<UL>
+<LI> ... ToDO
+</UL>
+
+
+</ol>
+
+<hr><h2><A name="Technical"></a>Technical MUD Research
+<A HREF="eduVR-page.html.SAVE#Contents"><IMG ALIGN=BOTTOM SRC="http://tecfa.unige.ch/gif/icon-small-up.gif" ALT="(up to Contents)"></a></h2>
+
+<ol>
+<LI><STRONG>Technical MOO related</STRONG>
+
+
+<UL>
+<LI><STRONG>e_moo</STRONG> does technical MOO research. See the
+<A HREF="http://tecfa.unige.ch:4243/">e_moo's WWW layer</A> entry page for project information.
+<LI><A HREF="http://brando.ipac.caltech.edu:8888/">AstroVR World Wide Web Link</A>. In there you might find a reference to "famous" Jupiter.
+
+   
+<LI><A HREF="http://www.ccs.neu.edu/research/labspace/">LabSpace</A>The LabSpace project integrates emerging multiuser virtual environment technology with state of the art multimedia interfaces in order to support scientific collaboration
+<LI><A HREF="http://uu-gna.mit.edu:8001/uu-gna/admin/papers/www/mud.html">
+        Links between MUDs and WWW</A>
+       (in: <A HREF="http://uu-gna.mit.edu:8001/uu-gna/admin/papers/www/index.html">
+     WWW and GNA</A>).
+
+<LI><A HREF="http://jhm.ccs.neu.edu:7043/">The JHM Project</A>
+    to investigate text-based virtual realities.
+    A lot of interesting subprojects.
+(.e.g the <A HREF=" http://jhm.ccs.neu.edu:7043/help/subject!mcp">
+        Moo Client Protocol proposal</A>)
+<LI><A HREF="ftp://lab_backup.lib.usu.edu/pub/brandon/html/EPIC_index.html">
+        EPIC Index</A> Effects Protocol for Interactive Communications
+</UL>
+
+<li><STRONG>Agents</STRONG>
+Agents in Cyberspace have various educational potential. For general information
+on all sorts of agents, see for the moment the section 'Ken's Turing Bot' in
+our <A HREF="http://tecfa.unige.ch//moo/book2/tm2.html">Technical MOO Manuel</A>
+(sorry no direct link to the section, because the manuel is a dynamic document).
+
+<LI><STRONG>WWW-MOO Interfaces</STRONG>
+
+<UL>
+<LI>Needs some more stuff, look at some of the educational MOOs for now
+<LI><A HREF="http://www.maths.tcd.ie/pub/mud/moo-www/directory.html">MOO-WWW</A>
+ by <A HREF="http://www.maths.tcd.ie/hyplan/creilly/creilly.html">Colman Reilly</A>
+<LI><A HREF="http://www.ccs.neu.edu/home/nop/mudwww.html">MUD WWW implementations</A> by <A HREF="http://www.ccs.neu.edu/home/nop/index.html">Jay Carlson</A>
+<LI><A HREF="http://www_seti.cs.utwente.nl:80/~stan/HMUD/">HyperMUD: Multi User Multi Modal Dialogue Systems</A> by
+<A HREF="http://wwwseti.cs.utwente.nl:80/~stan/">Stan P. van de Burgt</A>,
+CS Dept, University of Twente.
+
+<LI>Available webbed MOO layers:
+<UL>
+<li><A HREF="http://bioinformatics.weizmann.ac.il/BioMOO/BioGate/">BioGate System</A>). The most well known Web Interface. Available at
+  <A HREF="ftp://bioinfo.weizmann.ac.il/pub/software/MOOsupport/BioGate/">ftp://bioinfo.weizmann.ac.il/pub/software/MOOsupport/BioGate/</A>
+<LI>It is rumored that Diversity University has (or will have) a core available
+with its  (BioMOO based) <A HREF="http://moo.du.org:8888/#about_web">WWW layer.</A>
+<LI><a href="http://psyc.nott.ac.uk/aigr/papers/WOOM1.0/">WOOM1.0</a>:MOOtiny's WWW layer (e.g. used at TecfaMOO).
+<LI><A HREF="http://tecfa.unige.ch:4243/">e_moo</A>'s layer: E_moo is a MOO dedicated to
+MOO research. See this page for details.
+<LI><A HREF="http://www.bsd.uchicago.edu/Staff/Web_Notes/MOO-technical.html">
+    Technical Aspects of Web/MOO Integration</A> (<A HREF="http://http.bsd.uchicago.edu/~l-newberg/papers/#EdMedia">Postscript paper</A> available). Anybody knows
+if this really works ?
+</UL>
+</UL>
+
+<LI><STRONG>New languages</STRONG>
+
+
+<UL>
+<LI><A HREF="http://www.cold.org/">The Cold Project</A>: A potential successor for MOOs. A nice project (includes a more powerful language and better protocols).
+<li><A
+HREF="http://www.actlab.utexas.edu/~sandy/WHY-MUQ.html">MUQ</A>: An
+other potential successor: Quote: "Muq, the next-generation mudserver,
+is now publically available in early pre-beta form, together with a
+minimal basic MUD package for experimentation purposes (nicknamed
+CrashMuq). The first full beta release of Muq is set for December 26
+[1996](the fourth anniversary of the Muq Project)."
+<LI><A HREF="http://ps-www.dfki.uni-sb.de/courses/munchkins95/">Munchkins: Distributed MUDs in Oz</A>. Tired of old-fashioned C-like crippled languages ? Look
+at this.
+</UL>
+
+
+
+</OL>
+
+
+<hr><h2><A name="Various"></a>Various
+<A HREF="eduVR-page.html.SAVE#Contents"><IMG ALIGN=BOTTOM SRC="http://tecfa.unige.ch/gif/icon-small-up.gif" ALT="(up to Contents)"></a></h2>
+
+<ol>
+<LI>There might be more stuff in my <A HREF="http://tecfa.unige.ch/~schneide/bookmarks.html">exported bookmarks</A>. E.g. some good pointers on Cyberspace
+and VR.
+<LI>Conferences, Announcements, etc.
+    
+<UL>
+    <LI><A HREF="http://www.lysator.liu.se:7500/nobw/mud/wmc94/Main.html">
+         1st World Mud Conference 1994</A> (Some reports available)
+</UL>
+
+
+<LI>Need multimedia? Go for ascii art !
+
+
+<UL>
+<LI><A href="ftp://genesis.mcs.com/mcsnet.users/jorn/asciifaq.us">ASCII Art</a> (asciifaq.us) A FAQ about ASCII art, by Jorn 
+Barger 
+<LI><A href="gopher://twinbrook.cis.uab.edu/1asciiarc.70">ASCII Art Bazaar</a> collection of ASCII art and images, 12 megabytes 
+of information covering an estimated 24,000 art works from more than 3300 contributions classified under 759 subject titles 
+<LI><A href="ftp://ftp.cs.ttu.edu/pub/asciiart/">ASCII Art collection</a> a collection of files showing images, fonts, and other 
+ASCII art.
+</UL>
+
+
+<LI>Future Multimedia MOOs (other than WWW-MOOs)
+
+<UL>
+<LI><A HREF="http://www.peg.apc.org/~firehorse/mmm/mmm.html">A Rave on the Possibility of a Director Based Multimedia Client for Lambda</A> (by Dorian Dowse)
+</UL>
+
+<LI>MUDs and VR
+
+<UL>
+<LI>Real VR will be important :) - for the moment I don't have many
+pointers. See <A HREF="http://tecfa.unige.ch/info-servers.html#Virtual">
+general VR pointers</A> for the time being.
+<LI><A HREF="http://www.hitl.washington.edu/projects/education/lc/home.html">The Learning Center page</A> of the
+<A HREF="http://www.hitl.washington.edu/">Human Interface Technology Lab</A>,
+University of Washington. (see also: their ftp archive:
+<A HREF="ftp://ftp.u.washington.edu/public/virtual-worlds/">ftp://ftp.u.washington.edu/public/virtual-worlds/</A>)
+<LI><A HREF="ftp://ftp.hitl.washington.edu/pub/scivw/pubs/VR-in-Schools.txt">_VR in the Schools_</A> is published quarterly, in both print and electronic forms, by the Virtual Reality and Education Laboratory (VREL, see above). Covers
+also MUDs.
+A <a href="http://tecfa.unige.ch/pub/documentation/MUD/papers/VR-in-schools-1-2.text">local copy of Vol 1-2 is here</A> (including information on how to subscribe)
+<LI><A HREF="http://www.ccs.neu.edu/home/thigpen/docs/VR/MUDS_vs_VR.txt">How MUDs relate to VR</A> (A note by Greg Swan).
+</UL>
+
+<LI>Alternative conferencing/mud stuff:
+Note: There are *many* more of 'em now, but don't have time to look them up.
+
+<UL>
+ <LI>WWW Chat Servers, e.g. <A HREF="http://www-bprc.mps.ohio-state.edu/Chat/">Doug's WWW Chat Server</A> or <A HREF="http://www.irsociety.com/webchat/webchat.html">WebChat</A> (well combined with some "cyperspace-like" WWW Maps this technology could do a bit of the "spatial" aspects of MOOs).
+
+<LI><A HREF="http://dutifp.twi.tudelft.nl:8000/chivas/">CHIVAS</A> (prototype page for a conference, see e.g. <A HREF="http://www.twi.tudelft.nl/People/J.J.deGraaff.html">J.J.deGraaff's</A> home page (<A HREF="http://www.twi.tudelft.nl/TWI/Overview.html">TWI</A>, <A HREF="http://www.twi.tudelft.nl/TWI/IS/Overview.html">IS</A>, U Delft) for more on interactive VR.
+<LI><A HREF="http://nimbus.som.cwru.edu/~glenn/web2mush.html">WWW to TinCWRU</A>, a web2mush interface.
+</UL>
+
+<LI>Various tools:
+
+<UL>
+<LI><A HREF="ftp://ftp.desy.de/pub/uu-gna/moo/">Tools &amp; Clients at desy</A> (e.g. a Mootranscript-&gt;html converter)
+</UL>
+
+
+
+</OL>
+<hr>
+<p><address>
+<A HREF="http://tecfa.unige.ch/">
+	<IMG SRC="http://tecfa.unige.ch/gif/icon-tecfa-small.gif" ALT="Tecfa Home Page"></a>
+- <a href="http://tecfa.unige.ch/tecfa-people/schneider.html">
+Daniel K.Schneider</a> </address>
+</BODY></HTML>

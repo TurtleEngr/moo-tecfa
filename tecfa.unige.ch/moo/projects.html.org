@@ -1,0 +1,129 @@
+<HTML>
+<HEAD>
+<TITLE>TecfaMOO Projects ( 5-Mar-1996)</TITLE>
+<!-- Created by: D.K.S.,  8-May-1995 -->
+<!-- Changed by: D.K.S.,  5-Mar-1996 -->
+
+</HEAD>
+<BODY>
+
+<H1>TecfaMOO Projects</H1>
+
+We started the TecfaMOO around November 1994. At that time it wasn't
+a real project, but something like "let's have MOO and see what we can do".
+A few ideas have come up since then, i.e. see the
+<A HREF="questions.html">short information on TecfaMOO</A> (including a list research questions). Some of those ideas have turned into more
+serious projects or at least "usages".
+ <P>
+<hr>
+<H2>Spreading the News ....</H2>
+
+(Documentation, Teaching, and Technology Transfert)
+
+<H3>Documentation on MOOs and MOOing</H3>
+
+Documentation on MOOs and MOOing is sometimes hard find and certain things
+are missing. Therefore we decided to spend some effort on that.
+
+<UL>
+<LI><A HREF="book1/tm.html">The evolving TecfaMOO book - part I</A>
+This is an unfinished attempt to build a MOO resource book.
+
+<LI>Also, we decided to created educational MUD/text-base VR resource pages
+and host other information useful for the community.
+See: <A HREF="moocommunity.html">for details</A>.
+</UL>
+
+<H3>MOO Education at TECFA</H3>
+
+<UL>
+<LI>Our Diploma Students are introduced to text-based VR (MOOs) in 2 courses:
+<A HREF="http://tecfa.unige.ch/tecfa/teaching/staf14/staf14-overview.html">Staf14 </A>
+(Systèmes d'Information et Communication Médiatisés par Ordinateur) and
+<A HREF="http://tecfa.unige.ch/tecfa/teaching/staf2x/">Staf2x</A> (Atelier de programmation).
+See the <A HREF="education.html">MOO Education at Tecfa</A> page
+for details.
+
+<LI><A HREF="stu_projects.html">TecfaMOO Student Projects</A>
+(Staf-14 1994/95)
+
+In the future some student work may be associated with bigger research
+projects. Also some may evolve into master thesis or practical work
+requirement (stage).
+ <P>
+Documentation developed for our courses may be of use to others:
+See the <A HREF="builders.html">Builder's and Programmer's Information</A>page.
+</UL>
+
+<H3>Technology Transfert: Increase the popularity of MOOs</H3>
+
+E.g. "Easy" publications and conferences, as well as organization of workshops.
+
+<UL>
+<LI><A HREF="VMDL/VMDL-1.html">The VDML/MOO report</A>
+</UL>
+
+
+
+Blurbs on MOOs can be found in:
+<UL>
+ <LI><A HREF="http://tecfa.unige.ch/tecfa/tecfa-research/CMC/FLISH95/slides_1.html">The WWW in Education</a> talk(Slides for FLISH95).
+
+ <LI>See also: <A HREF="http://tecfa.unige.ch/edu-comp/flish95/workshop.html">the MOO workshop</A> at FLISH 95
+
+ <LI> <A HREF="http://tecfa.unige.ch/tecfa/tecfa-research/CMC/andrea95/andrea.html">The World-Wide Web in Education</A>
+</UL>
+
+Workshops and Tutorials:
+<UL>
+<LI> <A HREF="boston95/woo-workshop.html">WOO Workshop Proposal</A> for the 4th WWW conference in Boston. Got lost in the mail :)
+
+<LI> <A HREF="boston95/woo-tutorial2.html">Woo Tutorial Proposal</A> for the same event (got refused for the following reason: "We received many more tutorial proposals than we had slots available, so we had to select a small subset")
+</UL>
+
+<hr>
+<H2>"Real" Research Projects involving TecfaMOO</H2>
+
+<UL>
+<LI><A HREF="http://tecfa.unige.ch/tecfa/tecfa-research/cscps/cscps-overview.html">BOOTNAP: Social Grounding in Computer Supported Collaborative Problem Solving</A>.
+See the Mystery train (<A HREF="http://tecfamoo.unige.ch:7777/1647">#1647</A>) which is an experimental setup.
+A <STRONG>draft paper</STRONG>, <A HREF="http://tecfa.unige.ch/tecfa/tecfa-research/cscps/euroaied/murder-1.html">"Grounding in Multi-modal Task-Oriented Collaboration</A> is available.
+
+<LI>In planning stage: Educational Learning Environments over the MOO and
+the WOO. 
+</UL>
+
+
+<hr>
+<H2>MOO as CMC Tool for teaching and cooperation</H2>
+<UL>
+<LI>TecfaMOO is increasingly used as non-intrusive
+CMC tool for internal communication
+<LI>Since our <a href="http://tecfa.unige.ch/tecfa/tecfa-teaching/teaching-overview.html#postgrad">postgraduate "STAF"</a>diploma in educational technology is organized as
+"semi-distance curriculum", the MOO is being also increasingly used to
+communicate with our students at remote sites.
+<LI>We are hosting virtual sessions of researchers (e.g. people from
+<A HREF="http://tecfa.unige.ch/tecfa/tecfa-research/lhm/lhm-overview.html">the ESF/LHM programme</A>).
+See the
+<A HREF="VMDL/VMDL-1.html">The VDML/MOO report</A> for more details.
+
+<LI>The international Pangea project brings together kids from 3 continents
+</UL>
+Some of these uses of TecfaMOO might be turned into research projects.
+(remember that Tecfa is a unit in educational technology, so we might
+do some self-observation too).
+ <P>
+<hr>
+For more information about educational and research MOOs:
+start from TECFA's
+<A NAME=tex2html17 HREF="http://tecfa.unige.ch/edu-comp/WWW-VL/eduVR-page.html">WWW page on educational MUDs</A>.
+
+<hr>
+<A HREF="tecfamoo.html">
+<IMG ALIGN=left ALT="up" SRC="http://tecfa.unige.ch/gif/button_up.gif">UP to the TecfaMOO project page</A>
+<br clear=all>
+<hr>
+
+<ADDRESS> <A Name=Signature HREF="http://tecfa.unige.ch/tecfa/general/tecfa-people/schneider.html">D.K.S.</A></ADDRESS>
+</BODY>
+</HTML>

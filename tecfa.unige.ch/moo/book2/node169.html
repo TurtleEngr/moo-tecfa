@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>10.1 The Low Level Implementation Layer</TITLE>
+<META NAME="description" CONTENT="10.1 The Low Level Implementation Layer">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="http://tecfa.unige.ch/moo/book2/tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html1" HREF="http://tecfa.unige.ch/"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/gif/icon-tecfa-unit-small.gif"  > </A> <A NAME="tex2html2678" HREF="node170.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2676" HREF="http://tecfa.unige.ch/moo/book2/node168.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2670" HREF="http://tecfa.unige.ch/moo/book2/node168.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2680" HREF="http://tecfa.unige.ch/moo/book2/node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <BR>
+<B> Next:</B> <A NAME="tex2html2679" HREF="node170.html">What happens first to </A>
+<B>Up:</B> <A NAME="tex2html2677" HREF="http://tecfa.unige.ch/moo/book2/node168.html">The World-Wide Web Interface </A>
+<B> Previous:</B> <A NAME="tex2html2671" HREF="http://tecfa.unige.ch/moo/book2/node168.html">The World-Wide Web Interface </A>
+<BR> <P>
+<H1><A NAME="SECTION04510000000000000000">10.1 The Low Level Implementation Layer</A></H1>
+<P>
+<A NAME="secwwwimpl">&#160;</A>
+<P>
+Currently, the core WWW interface can be considered as two layers:
+<P>
+(1) It uses the ordinary telnet port of the MOO
+server and calls first the <code>#0:do_login_command</code>, i.e. the
+usual verb executed before connection.
+<P>
+(2) if a ``GET'' request is encountered the request is passed
+to the Web Core (see subsection <A HREF="node170.html#secwhathappens">10.1.1</A> below).
+<P>
+Details are given in the next subsections. Note that WOO applications
+programmers don't really need to read this. [more to insert here!!!]
+<P>
+<BR> <HR>
+<UL><A NAME="CHILD_LINKS">&#160;</A>
+<LI> <A NAME="tex2html2681" HREF="node170.html#SECTION04511000000000000000">What happens first to a &quot;GET&quot; request from a www client?</A>
+<LI> <A NAME="tex2html2682" HREF="node171.html#SECTION04512000000000000000">$web: the core Woo layer</A>
+<LI> <A NAME="tex2html2683" HREF="node172.html#SECTION04513000000000000000">$web:get_htext</A>
+<LI> <A NAME="tex2html2684" HREF="node173.html#SECTION04514000000000000000">$web:do_url</A>
+</UL>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Wed Oct 23 21:55:28 MET DST 1996</I>
+</ADDRESS>
+</BODY>
+</HTML>

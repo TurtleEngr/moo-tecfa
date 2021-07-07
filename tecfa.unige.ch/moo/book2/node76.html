@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Object Oriented Programming</TITLE>
+<META NAME="description" CONTENT="Object Oriented Programming">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1701" HREF="node77.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1699" HREF="node73.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1693" HREF="node75.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1703" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1704" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1702" HREF="node77.html">Functional Programming</A>
+<B>Up:</B> <A NAME="tex2html1700" HREF="node73.html">8.2 Programming: the General </A>
+<B> Previous:</B> <A NAME="tex2html1694" HREF="node75.html">The Elements of Programming</A>
+<BR> <P>
+<H2><A NAME="SECTION04123000000000000000">Object Oriented Programming</A></H2>
+<P>
+<A NAME="secooprogramming">&#160;</A>
+<P>
+In a loose sense, Object Oriented Programming is based on the idea
+that one deals with a community of communicating objects. ``Pure''
+OO languages are based on a quite strong ``message passing'' metaphor,
+i.e. computation is the result of sending messages between objects
+following clear protocols. From a more local point of view, OO programming
+means that each object can send, receive and handle a specific
+set of messages. Messages are handled by so-called methods which
+do look like ordinary procedures, but can only alter the internal
+state of an object or send messages to objects.
+<P>
+Now what is object oriented in LambdaMOO ?
+<P>
+<OL>
+<LI> All data is stored in objects
+<LI> Objects have single names (the #xxx number in the MOO db). Each
+Object has therefore a single identity.
+<LI> Objects maintain internal state (that is the information contained
+in the slots)
+<LI> Objects can inherit values (default property values) and methods
+(verbs) from other objects. This is in contrast to most OO Languages, 
+where inheritance is disciplined by a subclass relation between abstract 
+``classes'' that do not function as actual objects - called ``instances''. 
+Inheritance in the MOO obeys a simpler scheme, prototype inheritance,
+where chosen objects (called ``Generic Objects'' in the MOO) serve as models
+for other objects. Generic objects are almost the same as their instances.
+<LI> Inheritance is single, meaning MOO objects can only inherit from
+a single Generic Object. However, ``feature objects'' do add some
+flexibility to this scheme.
+<LI> Internal states of objects (properties) can be accesses from the outside without any special protocol
+(with restrictions, see permissions). That is not ``pure OO style'' either.
+<P>
+</OL>
+<P>
+So the MOO language is object-based but not really really object-oriented
+in the strong sense. This does no mean that one can't program relatively
+``pure'' OO style, but it certainly is not enforced.
+<P>
+[more to come]
+<P>
+<HR><A NAME="tex2html1701" HREF="node77.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1699" HREF="node73.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1693" HREF="node75.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1703" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1704" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html1702" HREF="node77.html">Functional Programming</A>
+<B>Up:</B> <A NAME="tex2html1700" HREF="node73.html">8.2 Programming: the General </A>
+<B> Previous:</B> <A NAME="tex2html1694" HREF="node75.html">The Elements of Programming</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

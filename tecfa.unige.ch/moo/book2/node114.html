@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Command parsing</TITLE>
+<META NAME="description" CONTENT="Command parsing">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2176" HREF="node115.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2174" HREF="node113.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2168" HREF="node113.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2178" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2179" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2177" HREF="node115.html">Verb argument specification</A>
+<B>Up:</B> <A NAME="tex2html2175" HREF="node113.html">10.4 Verbs and command </A>
+<B> Previous:</B> <A NAME="tex2html2169" HREF="node113.html">10.4 Verbs and command </A>
+<BR> <P>
+<H2><A NAME="SECTION04341000000000000000">Command parsing</A></H2>
+<P>
+<A NAME="secparsing">&#160;</A>
+<P>
+The MOO server will parse a command that is entered according to several
+principles. Here we will just look at the most important.
+<P>
+<OL>
+<LI> It will replace some standard abbreviations (``'''', ``:'', ``;'') by corresponding verbs.
+<LI> Next the command line is split into ``items'', i.e. every string will
+become an item and every word (separated by spaces and other separators (??)
+NOT in an explicit string will become an item.
+<A NAME="tex2html274" HREF="http://tecfa.unige.ch/moo/book2//footnode.html#1515"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//foot_motif.gif"></A>
+<LI> Next the ``sentence'' made up by those items is broken into either
+verb, direct object, preposition, indirect object or verb, direct object
+<P>
+<OL>
+<LI> The first item in the list is taken as the name of a verb
+<LI> Next, the server looks for a proposition (one out of the predefined
+set). Items between the verb and before the preposition is considered
+to represent the direct object and all items after the preposition are
+considered to represent the indirect object.
+<LI> If there was no preposition, everything that follows the first
+item (the verb) is considered to represent a direct object.
+<P>
+</OL>
+<LI> Next, the server will try to find MOO objects that could match
+direct and indirect object. Several possible cases may exist:
+<P>
+<UL>
+<LI> Empty strings (``'') are matched to $nothing (#-1)
+<LI> Ojbect strings (e.g. #127) are matched to objects (if it exists of course)
+<LI> ``me'' or ``here'' object ``descriptions'' are matched to the obvious (i.e. the player object or the room object).
+<LI> Otherwise, the server will try to match object ``descriptions'' to any object name that is either on the player or in the room.
+<P>
+</UL>
+<LI> Finally, the server then tries to find the verb on each of the following objects:
+<P>
+<OL>
+<LI> the player who typed to command
+<LI> the room the player is in
+<LI> the direct object (if it found one above)
+<LI> the indirect object (if it found one above)
+<P>
+In order to match, all the following conditions must be true:
+</OL>
+<P>
+<OL>
+<LI> the verb ``description'' found above matches one of the names for the verb on the object
+<LI> the direct and indirect object types are allowed by the corresponding argument specifiers for the verb
+<LI> the preposition string is matched
+</OL></OL><HR><A NAME="tex2html2176" HREF="node115.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2174" HREF="node113.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2168" HREF="node113.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2178" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2179" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html2177" HREF="node115.html">Verb argument specification</A>
+<B>Up:</B> <A NAME="tex2html2175" HREF="node113.html">10.4 Verbs and command </A>
+<B> Previous:</B> <A NAME="tex2html2169" HREF="node113.html">10.4 Verbs and command </A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

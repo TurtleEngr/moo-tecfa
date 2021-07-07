@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Cleaning up</TITLE>
+<META NAME="description" CONTENT="Cleaning up">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1828" HREF="node87.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1826" HREF="node80.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1820" HREF="node85.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1830" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1831" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1829" HREF="node87.html">Adding help</A>
+<B>Up:</B> <A NAME="tex2html1827" HREF="node80.html">8.4 MOO tutorialLevel </A>
+<B> Previous:</B> <A NAME="tex2html1821" HREF="node85.html">The show verb</A>
+<BR> <P>
+<H2><A NAME="SECTION04146000000000000000">Cleaning up</A></H2>
+<P>
+To make this holder object more useful we need at least the 3 following
+functionalities: (1) A verb for removing elements, (2) a verb
+for clearing all messages and (3) a help
+message attached to the object, so that 'help holder' would work.
+<P>
+A simple ``clear'' verb is really simple as you can see below.
+<P>
+<SMALL CLASS=SMALL><PRE>@verb holder:clear this
+
+&gt;@l holder:clear
+#2108:&quot;clear&quot;   this none none
+ 1:  this.holding = {};
+ 2:  player:tell(&quot;You erased all information bits from &quot;, this.name);
+--</PRE></SMALL>
+<P>
+Of course this verb is highly dangerous. People might erase all their
+information by mistake. So what we should do actually is asking 
+confirmation from the user, like in the example below. You can
+add that verb now.
+Note that we won't tell you any more ``edit the verb please and such'',
+you should know that by now from the description given below.:
+<P>
+<SMALL CLASS=SMALL><PRE>&gt;@l holder:clear
+#2108:&quot;clear&quot;   this none none
+ 1:  answer = $command_utils:yes_or_no
+     (&quot;Do you really want to erase all information bits?&quot;);
+ 2:  if (answer)
+ 3:    this.holding = {};
+ 4:    player:tell(&quot;You erased all information bits from &quot;, this.name);
+ 5:  else
+ 6:    player:tell(&quot;OK, information on&quot;, this.name,
+       &quot; was too important for erasing&quot;);
+ 7:  endif</PRE></SMALL>
+<P>
+The only new things here is are in the first 2 lines:
+<code>$command_utils:yes_or_no</code> is a Lambda Core utility function. Those functions
+are live savers, so please look at them as soon as your really start programming.
+Utility functions are verbs attached to various $objects. Type 'help utils'
+for a list of the different packages. Note that you NEED command utilities for
+interacting with users.
+<P>
+The <code>:yes_or_no verb</code> returns 1 if the persons types ``yes'' and 0
+for anything else (including ``no''). The conditional (answer) is true
+if answer is set to 1, otherwise false and the else clause will be
+executed.
+<P>
+Finally we will show you an erase verb that does not ask confirmation.
+You should add this functionality as an exercice if you wish to have it.
+<P>
+<SMALL CLASS=SMALL><PRE>@verb holder:erase any from this
+
+&gt;@l holder:erase
+#2108:&quot;erase&quot;   any (out of/from inside/from) this
+ 1:  NUM = tonum(dobjstr);
+ 2:  if (NUM == 0)
+ 3:    player:tell(&quot;The correct syntax for the show command is:
+       'erase &lt;item&gt; from &lt;object&gt;'&quot;);
+ 4:  elseif (NUM &gt; length(this.holding))
+ 5:    player:tell(&quot;Sorry this list has less items then &quot;, NUM);
+ 6:  else
+ 7:    player:tell(&quot;You erased element &quot;, NUM, &quot;: \&quot;&quot;, this.holding[NUM],
+       &quot;\" from &quot;, this.name);
+ 8:    this.holding = listdelete(this.holding, NUM);
+ 9:  endif
+--</PRE></SMALL>
+<P>
+Additional exercice:
+If you wish you could also ask the user for confirmation before you
+erase an item.
+<P>
+Now, sometimes people don't want to type in commands like 'show all on
+holder' and then type 'erase 3 from holder', but rather have all
+elements displayed and then have the program ask which elements you
+want to erase. Even better we could write a verb which also would
+let you add elements. All this in ``menu style''. We will address
+this issue in an other tutorial.
+<P>
+<HR><A NAME="tex2html1828" HREF="node87.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1826" HREF="node80.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1820" HREF="node85.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1830" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1831" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html1829" HREF="node87.html">Adding help</A>
+<B>Up:</B> <A NAME="tex2html1827" HREF="node80.html">8.4 MOO tutorialLevel </A>
+<B> Previous:</B> <A NAME="tex2html1821" HREF="node85.html">The show verb</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

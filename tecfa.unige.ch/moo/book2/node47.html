@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>4.3 Construction with @create</TITLE>
+<META NAME="description" CONTENT="4.3 Construction with @create">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1268" HREF="node48.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1266" HREF="node40.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1260" HREF="node46.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1270" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1271" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1269" HREF="node48.html">4.4 Setting messages on </A>
+<B>Up:</B> <A NAME="tex2html1267" HREF="node40.html">Introduction to Building and </A>
+<B> Previous:</B> <A NAME="tex2html1261" HREF="node46.html">Advanced building</A>
+<BR> <P>
+<H1><A NAME="SECTION03130000000000000000">4.3 Construction with @create</A></H1>
+<P>
+<A NAME="seccreate">&#160;</A>
+<P>
+The general principle for building other things than rooms is
+quite simple, you just create a ``kid'' of a generic object
+with the <code>@create</code> command. Let's have a look at this
+command as it appears when you use the internal help system:
+<P>
+<SMALL CLASS=SMALL><PRE>Syntax:  @create &lt;class-name&gt; named &quot;&lt;names&gt;&quot;
+         @create &lt;parent-object&gt; named &quot;&lt;names&gt;&quot;
+
+The main command for creating objects other than rooms and exits (for
+them, see 'help @dig'; it's much more convenient).
+
+The first argument specifies the 'parent' of the new object: loosely
+speaking, the 'kind' of object you're creating.  &lt;class-name&gt; is one
+of the four standard classes of objects: $note, $letter, $thing, or
+$container.  As time goes on, more 'standard classes' may be added.
+If the parent you have in mind for your new object isn't one of these,
+you may use the parent's name (if it's in the same room as you) or
+else its object number (e.g., #4562).
+
+You may use &quot;called&quot; instead of &quot;named&quot; in this command, if you wish.
+
+An object must be fertile to be used as a parent-class.  See help
+@chmod for details.
+
+The &lt;names&gt; are given in the same format as in the @rename command:
+        &lt;name-and-alias&gt;,&lt;alias&gt;,...,&lt;alias&gt; [preferred]
+
+See 'help @rename' for a discussion of the difference between a name
+and an alias.</PRE></SMALL>
+<P>
+Here is a simple example:
+<P>
+<SMALL CLASS=SMALL><PRE>@create $thing named &quot;A little thing&quot;,truc</PRE></SMALL>
+<P>
+This will create a child of the simple <code>$thing</code> generic object, called
+``A little thing'' with the alias ``truc''. The <code>$thing</code> object
+is not very useful for building something, but programmers often
+start with this. Go and visit the MOOseum if you are interested
+in owning fancier objects or look at the parents of objects you
+meet in the MOO and create a child for yourself:
+<P>
+<SMALL CLASS=SMALL><PRE>@parents &lt;object&gt;
+
+e.g. @parents here
+     @parents me
+     @parents #139</PRE></SMALL>
+<P>
+Usually, most
+objects have a ``help'' on them that will explain how to customize
+it. Encourage your programmer friends to write helps!
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

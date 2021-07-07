@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Properties</TITLE>
+<META NAME="description" CONTENT="Properties">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2150" HREF="node113.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2148" HREF="node111.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2144" HREF="node111.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2152" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2153" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2151" HREF="node113.html">10.4 Verbs and command </A>
+<B>Up:</B> <A NAME="tex2html2149" HREF="node111.html">10.3 Objects and properties</A>
+<B> Previous:</B> <A NAME="tex2html2145" HREF="node111.html">10.3 Objects and properties</A>
+<BR> <P>
+<H2><A NAME="SECTION04331000000000000000">Properties</A></H2>
+<P>
+<A NAME="secproperties">&#160;</A>
+<P>
+<H4><A NAME="SECTION04331010000000000000">Creation</A></H4>
+<P>
+``Properties'' are named slots in an object that can hold any kind
+of MOO Value (see section <A HREF="node117.html#secvalues">10.5.1</A>).
+<P>
+To create a property, you can '@property #obj.&lt;name&gt;' like in the
+following examples:
+<P>
+  <SMALL CLASS=SMALL><PRE>  @property dog.times 0
+  @property dog.favorites {&quot;Cats&quot;,&quot;Students&quot;, &quot;bones&quot;}
+  @property dog.color &quot;Dark white&quot;</PRE></SMALL>
+<P>
+<SMALL CLASS=SMALL><PRE>  @property &amp; &lt;object&gt;.&lt;prop-name&gt;
+  @property &amp; &lt;object&gt;.&lt;prop-name&gt; &lt;initial-value&gt;
+
+  Adds a new property named &lt;prop-name&gt; to the named object.
+  The initial value is given by the second argument, if present; it
+  defaults to 0.
+
+  Normally, a property is created with permissions 'rc' and owned by
+  whoever types the command.  However, you may also specify these
+  explicitly
+
+ @property &lt;object&gt;.&lt;prop-name&gt; &lt;initial-value&gt; &lt;permissions&gt;
+ @property &lt;object&gt;.&lt;prop-name&gt; &lt;initial-value&gt; &lt;permissions&gt; &lt;owner&gt;
+
+  Only wizards can create properties with owners other than themselves.</PRE></SMALL>
+<P>
+When you create an object, you always get always the parents properties by default.
+<P>
+<H4><A NAME="SECTION04331020000000000000">Modification:</A></H4>
+<P>
+@set #obj.property to &lt;something&gt;.
+<P>
+Note that you can also use the editor to change the contents of the property.
+If the object is a list, you can use notedit.
+<P>
+Current versions of the MOO server initialize properties as 'clear'.
+This means that if a particular object is not the object that first
+defines a prop, then the prop will return the value of it's parent,
+and its parent's parent, (etc), until you reach the object where the
+prop is first defined.  This means that if you change the value of the
+prop on an object that defines the prop, the value will change for any
+subsequent kids that have not had that value set.
+<P>
+The builtin is_clear_property() checks to see if a prop is clear,
+while the builtin clear_property() will return the prop back to it's
+cleared state.  The best way to understand this is probably to just
+try it out with a few little eval experiments.  Make a test object and
+don't describe it (doesn't matter what it's parent is).  then type
+something like the following:
+<SMALL CLASS=SMALL><PRE>   ;is_clear_property(#test, &quot;description&quot;)</PRE></SMALL>
+This should return 1
+<P>
+Give your test obj a desc, and try the same eval.  This time it should
+return a 0.
+<P>
+You can then take your test object and use 
+<SMALL CLASS=SMALL><PRE>   ;clear_property(#test,&quot;description&quot;)</PRE></SMALL>
+to reset it's desc back to it's undescribed state.
+<P>
+<H4><A NAME="SECTION04331030000000000000">Removing properties</A></H4>
+<P>
+<SMALL CLASS=SMALL><PRE>    Syntax:  @rmproperty &lt;object&gt;.&lt;prop-name&gt;</PRE></SMALL>
+<P>
+Removes the named property from the named object.  '@rmproperty' may be abbreviated as '@rmprop'.
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

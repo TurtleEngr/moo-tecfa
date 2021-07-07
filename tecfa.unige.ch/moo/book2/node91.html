@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>8.6 [TECFAMOO] ``E_WEB'' Tutorial, Level 0</TITLE>
+<META NAME="description" CONTENT="8.6 [TECFAMOO] ``E_WEB'' Tutorial, Level 0">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1886" HREF="node92.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1884" HREF="node70.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1878" HREF="node90.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1888" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1889" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1887" HREF="node92.html">8.7 A crash course </A>
+<B>Up:</B> <A NAME="tex2html1885" HREF="node70.html">Basic MOO Programming Tutorial</A>
+<B> Previous:</B> <A NAME="tex2html1879" HREF="node90.html">8.5 Social verb tutorial</A>
+<BR> <P>
+<H1><A NAME="SECTION04160000000000000000">8.6 [<B>TECFA</B><TT>MOO</TT>] ``E_WEB'' Tutorial, Level 0</A></H1>
+<P>
+<A NAME="secwebytutorial0">&#160;</A>
+<P>
+Note: most of that applies to the other
+<A NAME="tex2html165" HREF="http://tecfa.unige.ch:4243/E_WEB_registry"><B>E</B><TT>_Web</TT> MOOs</A>.
+<P>
+The <B>E</B><TT>_Web</TT> interface has a nice object browser. So the first thing
+you might want to try is simply looking at an object from the web.
+E.g. if your object is <code>#2108</code> you can look at it from a www browser
+with an URL like <A NAME="tex2html166" HREF="http://tecfa.unige.ch:7778/objbrowse/2108">http://tecfa.unige.ch:7778/objbrowse/2108</A>.
+<P>
+When you access an object via <B>E</B><TT>_Web</TT> with an URL like:
+<A NAME="tex2html167" HREF="http://tecfa.unige.ch:7778/4026/">http://tecfa.unige.ch:7778/4026/</A> the MOO will return a list of html strings produced by
+the verb <code>&lt;object&gt;:http_request</code>, in this case:
+<code>#4026:http:request</code>.
+If you want to put some simple static information on the Web there
+are two solutions:
+<P>
+<H4><A NAME="SECTION04160010000000000000">[<B>TECFA</B><TT>MOO</TT>] Make a child of of an webbed object</A></H4>
+<P>
+<UL>
+<LI> In the example above we have been using the
+<A NAME="tex2html168" HREF="http://tecfa.unige.ch:7778/objbrowse/4152">Generic E_WEBbed Thing (#4152)</A>. This object will return the standard description
+of the object, plus html that will be found in the <code>.htext</code> property
+(see below).
+<LI> A simple <A NAME="tex2html169" HREF="http://tecfa.unige.ch:7778/objbrowse/3911">Generic E_WEBbed Room (#3911)</A> is also available, it will display:
+  <UL>
+<LI> Clickable exits to all the connect rooms that also are webbed
+    (have an <code>:http_request</code> verb on themselves or a parent).
+<LI> The standard description of the room
+<LI> html that is in the <code>.htext</code> property
+</UL>
+<LI> enquire for other webbed objects or for now look
+at the <A NAME="tex2html170" HREF="http://tecfa.unige.ch:7778/&amp;eweb_room">E_WEB Room (&amp;eweb_room)</A>
+<P>
+</UL>
+<P>
+To put html in the .htext property, simply <code>@edit &lt;object&gt;.htext</code>.
+E.g. look at the <A NAME="tex2html171" HREF="http://tecfa.unige.ch:7778/4026/">http://tecfa.unige.ch:7778/4026/</A>.
+Note that all objects at TecfaMOO do have an .htext property (that is
+btw also being used by the WWW Interface). On other E_WEBbed MOOs
+such a property may or may not exist. If it does not, just write your
+own <code>:http\_request</code> verb and add a property like <code>.htext</code>
+to you object.
+<P>
+<H4><A NAME="SECTION04160020000000000000">Write a :http_request verb:</A></H4>
+<P>
+You can write a <code>:http_request</code> verb yourself that will return
+information that will be displayed to the user.
+Here is an example which we shall discuss.
+To see what it does, please have a look at
+<A NAME="tex2html172" HREF="http://tecfa.unige.ch:7778/4026/">&amp;e_thing test</A>.
+As an example, here is the code for the
+<A NAME="tex2html173" HREF="http://tecfa.unige.ch:7778/objbrowse/4152">Generic E_WEBbed Thing (&amp;_thing)</A>.
+<P>
+<SMALL CLASS=SMALL><PRE>@program &amp;e_thing:http_request   this none this
+ 1:  //      A short cut to the html utils
+ 2:  hu = $ehtml_utils;
+ 3:  //
+ 4:  //      Let's return the name of the object as title and main header
+ 5:  //
+ 6:  title = this.name;
+ 7:  lines = {hu:title(title), hu:heading1(title)};
+ 8:  //
+ 9:  //    Insert the standard description of the object in &lt;pre&gt; format
+10:  //
+11:  desc = $list_utils:listify_if_needed(this.description);
+12:  lines = {@lines, @hu:pre(desc)};
+13:  //
+14:  //    Insert the contents of the .htext property
+15:  //
+16:  if (this.htext)
+17:    lines = {@lines, @$list_utils:listify_if_needed(this.htext)};
+18:  else
+19:    lines = {@lines, &quot;No .htext available - &quot;};
+20:  endif
+21:  //
+22:  //    Insert a pointer to the object browser
+23:  //
+24:  lines = {@lines, &quot;&lt;hr&gt;&quot;, &amp;object_browser:object_anchor(this, 1), &quot;(Inspection)&quot;};
+25:  return lines;
+26:  /* Last edited on Wed Jan 15 12:36:33 1997 GMT+1 by Kaspar (#85). */
+--</PRE></SMALL>
+<P>
+Some explanations:
+<OL>
+<LI> The <A NAME="tex2html174" HREF="http://tecfa.unige.ch:7778/objbrowse/$ehtml_utils">$e_html_utils</A> contains a collection of useful verbs for
+generating html. The expression <code> hu = $ehtml_utils;</code> in line 2
+will just allow us to use a shortcut later in the code.
+<LI> Line  <code>7:  lines = {hu:title(title), hu:heading1(title)};</code>
+generates a list like:
+<SMALL CLASS=SMALL><PRE>{&quot;&lt;title&gt;e_thing Test&lt;/title&gt;&quot;, &quot;&lt;h1&gt;e_thing Test&lt;/h1&gt;&quot;}</PRE></SMALL>
+that is associated with a variable <code>lines</code> that we shall use to return
+generated html on line 25
+<LI> On lines 11 and 12 we generate html to include the 
+standard MOO description (that is stored in the <code>.description</code>
+property) of the object. The
+<A NAME="tex2html175" HREF="http://tecfa.unige.ch:7778/code/$list_utils:listify_if_needed">$list_utils:listify_if_needed</A>
+method will simply test if the argument is a list. If it is not,
+it will make a list. The expression <code>lines = {@lines, @hu:pre(desc)};</code>
+will simple append the elements of ``desc'' (a list of description strings)
+to the contents of ``lines'' and surround it with
+HTML <code>&lt;pre&gt; ...&lt;/pre&gt;</code>
+tags. It's a frequently seen pattern in MOO code.
+<LI> Lines 16 to 20 do something similar with the contents of the
+.htext property.
+<LI> Finally, in line 24 we generate a link to the object browser
+of this object, so that people can look at the code.
+<P>
+</OL>
+<P>
+As you can see you can return dynamically all sorts of information.
+As an exercice you now should create an object, e.g. with
+<P>
+<SMALL CLASS=SMALL><PRE>@create $thing named My super E_Web object, mseo</PRE></SMALL>
+<P>
+Next you can copy the 
+<A NAME="tex2html176" HREF="http://tecfa.unige.ch:7778/code/4152:http_request">:http_request</A> verb from
+the <A NAME="tex2html177" HREF="http://tecfa.unige.ch:7778/objbrowse/4152">Generic E_WEBbed Thing (#4152)</A>.
+<SMALL CLASS=SMALL><PRE>  @copy &amp;e_thing:http_request to xxx:http_request</PRE></SMALL>
+<P>
+The you can try to modify the verb, in order to display information
+differently or add things like the object's location, it's owner
+and so forth.
+<P>
+<HR><A NAME="tex2html1886" HREF="node92.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1884" HREF="node70.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1878" HREF="node90.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1888" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1889" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html1887" HREF="node92.html">8.7 A crash course </A>
+<B>Up:</B> <A NAME="tex2html1885" HREF="node70.html">Basic MOO Programming Tutorial</A>
+<B> Previous:</B> <A NAME="tex2html1879" HREF="node90.html">8.5 Social verb tutorial</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

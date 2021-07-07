@@ -1,0 +1,437 @@
+=========================================================================
+Date:         Thu, 19 Jan 1995 10:48:10 -0500
+Reply-To:     Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+Sender:       Journal of Virtual Reality In Education Complete Journal
+              <JVRE-ALL@SJUVM.STJOHNS.EDU>
+From:         Dick Banks <rbanks@SAVVY.COM>
+Subject:      Education MOOs
+
+copyright DUJVRE and Donald  idd@io.org  1994
+
+        Donald  idd@io.org                                    53
+
+
+                Education MOOs and Tools
+
+Contents:
+        1) Education MOOs
+        2) Education Tools
+        3) Education MOO list
+        4) Featured MOO: Diversity University
+        5) Education Tools: Generic objects at Diversity University
+
+1) Education MOOs
+   --------------
+This column is the first of a series of articles covering Education
+MOOs. As new moos are popping up steadily, we can only discuss a few
+typical examples now. We will try to cover as many Education MOOS as
+possible in future issues.
+
+
+
+2) Education Tools
+   ---------------
+One of our aims is to compile a comprehensive list of Educational Tools.
+Most of the Education MOOs have a 'gopher slate' but how many have a
+World Wide Web client like the 'WWW slate' developed at EON.
+
+A core set of Education Tools includes:
+* writing tools: '$note', 'MOO mail'
+* standard communications features: 'say', 'page', 'emote' and 'think'
+* exploration tools: 'look', 'read', and 'exam'
+* manipulation tools: 'get', 'grab', 'drop', 'move'
+
+Added to these, are 'generic' tools created by individual programmers,
+especially wizards. Every Education MOO needs dedicated wizards!
+
+
+
+3) Education MOO list
+   ------------------
+Apologies offered now for all errors, as we attempt to classify MOOs.
+
+
+ESTABLISHED EDUCATION MOOs: holding classes for six months or more.
+
+      * BioMOO: bioinfo.weizmann.ac.il 8888 or  132.76.55.12 8888
+                Contact Gustavo Glusman
+                Email: Gustavo@bioinformatics.weizmann.ac.il
+                Mostly for professional biologists, BioMOO's Web
+                interface development is very innovative.
+
+      * Diversity University: moo.du.org 8888 or 192.101.98.8 8888
+                Contact Jeanne McWhorter
+                Email: gsswky@menudo.uh.edu
+                The first dedicated Education MOO is branching out to
+                multiple servers.
+
+
+
+        Donald  idd@io.org                                    54
+
+      * Collegetown: next.cs.bvc.edu 7777
+                Contact Ken Schweller
+                Email: schweller@bvc.edu
+                Ken designed many existing Education Tools at various other
+                MOOs and runs this one.
+
+      * EON: mcmuse.mc.maricopa.edu 8888
+                Contact Greg Swan
+                Email: swan@mcmuse.mc.maricopa.edu
+                Shkoo and others developed the WWW slate here.
+                "MCCD must undertake serious exploration of
+                constructivism if it wishes to retain its position of
+                educational excellence in this country." Swan and Hughes.
+
+
+      * MOOville: rolfs-gw.ucet.ufl.edu 7777 or 128.227.140.215 7777
+                Contact Anthony True
+                Email true@ufl.edu
+                1500+ take English classes using a local area network
+                with 150 stations connected to a MOO. IBM is a sponsor.
+
+      * WriteMush: palmer.sacc.colostate.edu 6250 or 129.82.169.4 6250
+                Contact Maria or Jstrick
+                Email: Maria or Jstrick@netcom.com
+                Tari started holding English composition classes here
+                in Sept. 93.  This is technically a TinyMush.
+
+
+PIONEERS LIST: MOOs that played an important part with other themes.
+
+      * LambdaMOO: lambda.xerox.com 8888 or 13.2.116.36 8888
+                Contact Pavel Curtis
+                Email: pavel@parc.xerox.com
+                All current MOOs descend from this one.
+
+      * JaysHouseMOO: jhm.ccs.neu.edu 1709 or 129.10.111.77 1709
+                Contact jhm@ccs.neu.edu
+                'gopher slate', 'MOO networking', and an
+                'internal hypertext system' accessible from the
+                world wide web are early JaysHouseMOO developments.
+
+      * MediaMOO: mediamoo.media.mit.edu 8888 or 18.85.0.48 8888
+                Contact Amy Bruckman
+                Email: asb@media.mit.edu
+                "A MOO designed to be a professional community for
+                media researchers."
+
+      *GNALab: gnalab.uva.nl 7777 or 145.18.70.16 8888
+                Contact Gustavo Glusman
+                Email: Gustavo@bioinformatics.weizmann.ac.il
+                This is GNA's MOO programming testing lab.
+
+
+
+
+
+
+        Donald  idd@io.org                                    55
+
+K-12 LIST:
+
+      * Donut: bigbird.stark.k12.oh.us 7777 or 199.218.192.6 7777
+                Contact Suzie John
+                Email: john@sparc3.sparcc.ohio.gov
+                This K-12 MOO is in Stark County Ohio.
+                (See article by Suzie John in this section)
+
+      * MariMUSE Global Learning Collaboratory (No anonymous guests)
+                Contact Jim Walters and apply for character
+                Email: walters@pc2.pc.maricopa.edu
+                "A Global Learning Collaboratory serves learners
+                k through gray.  Many of the MariMUSE users are
+                elementary school students who MUSE as a part of
+                their daily learning activities.
+                All learners are welcome to join."
+                For more info, gopher pcef.pc.maricopa.edu or
+                http://pcinfo.pc.maricopa.edu/MariMUSE/MariMUSE.html
+
+      * MicroMUSE: micromuse.musenet.org 4201 or 18.43.0.102 4201
+                Contact Barry Kort
+                Email: bkort@musenet.org.
+                MicroMuse Mission Statement:"MicroMUSE is chartered as
+                an educational Multi-User Simulation Environment (MUSE)
+                and Virtual Community with preference toward educational
+                content of a scientific and cultural nature.  The
+                MicroMUSE Operations Council works towards the development
+                of MUSE technology to enhance the exchange of ideas, the
+                learning process, and the expression of creative writing
+                for individuals of all ages and backgrounds."
+                FTP: ftp.musenet.org,  Gopher or Web: web.musenet.org.
+
+
+WEB MOOs:
+
+      * BioMOO: http://bioinfo.weizmann.ac.il:8888
+                Contact Gustavo Glusman
+                Email: Gustavo@bioinformatics.weizmann.ac.il
+                Get webpass and instructions from BioMOO. Gustavo
+                Glusman runs this MOO for professional Biologists
+                and holds meetings using its WWW capabilites.
+
+      * Sprawl: http://sensemedia.net/sprawl
+                telnet://sprawl.sensemedia.net:7777/
+       WorldMOO:http://sensemedia.net/world
+                telnet://sprawl.sensemedia.net:1234/
+                Contact S. Epstein
+                Email: sle@picosof.com pr sle@sensemedia.net
+                Chiba's Sprawl is one of the earliest Web MOOs.
+                World, Tinker and Core MOOs are linked to Sprawl.
+
+
+
+
+
+        Donald  idd@io.org                                    56
+
+CULTURAL MOOs:
+
+      * Meridian: sky.bellcore.com 7777
+                Contact sky
+                Email: deanna@thumper.bellcore.com
+                The theme is understanding between countries through
+                virtual travel and cultural experiences.
+
+      * BayMOO: baymoo.sfsu.edu 8888 or 165.113.1.30 8888
+                Contact baymoo@worldbit.com
+                Their official statement is: "BayMOO is a virtual theater
+                for the creation of objects and the weaving of communities
+                and tribes. The overarching themes are the spirit of the
+                San Francisco Bay Area and the metaphor of water.
+                The only rule of conduct is: RESPECT."
+
+MOOs FEATURING LANGUAGES:
+
+      * French: logos.daedalus.com 8888
+                Contact Mark Horan
+                Email: horan@LCLARK.EDU
+                According to 'Henri': "The streets of Paris provide
+                the model for this French language MOO."
+
+      * Italian: Little Italy MOO ipo.tesi.dsi.unimi.it 4444
+                Contact brenna, carbone, aprile, riva, or veggiot
+                        @ghost.sm.dsi.unimi.it
+                Or Email: littleit@mora.usr.dsi.unimi.it
+                WWW: http://www.dsi.unimi.it/Users/aprile/HUG/LI.html
+                This is an Italian language MOO in Italy.
+
+      * Latin: MUGIT at PennMOO  ccat.sas.upenn.edu 7777
+                Contact Ellen
+                There is a Latin Club here called MUGIT.
+
+      * Multilingual: MOOsaico moo.di.uminho.pt 7777 or 193.136.20.102 7777
+                Contact  Oblivion
+                Email: pmoo@moo.di.uminho.pt
+                This is a multilingual language MOO in Portugal.
+
+      * Spanish: MundoHispanno kong.syr.edu 8888 or 128.230.1.200 8888
+                Contact  Colega or ThwartedEffort
+                Email: lmturbee@mailbox.syr.edu
+                "an academic MOO for native speakers and second language
+                learners of Spanish."
+
+      * ESL/EFL: schMOOze University arthur.rutgers.edu 8888
+                Contact Julie Falsetti
+                Email: jefhc@cunyvm.cuny.edu
+                "schMOOze U. was especially designed as a place where
+                non-native speakers of English could meet and interact."
+
+
+
+
+
+        Donald  idd@io.org                                    57
+
+NEW EDUCATION MOOs: holding classes for less than six months.
+
+      * NovaMOO: nova.edmonds.wednet.edu 8888
+                Contact Joel Thornton
+                Email: thorntoj@nova.edmonds.wednet.edu
+                This is recent startup in Edmonds school district.
+
+      * Global Village: tdg.uoguelph.ca 8888 or 131.104.228.200 8888
+                Contact Paul Graham or Greg Searle
+                Email: searle@tdg.uoguelph.ca
+                "Conspiratorium" and some Guelph classes use Global
+                for virtual classes and conferences.
+
+      * TecfaMOO: tecfamoo.unige.ch 7777
+                Contact Daniel
+                This Swiss MOO is in Geneva.
+
+      * VOU: coyote.csum.edu 7777
+                Contact Donnelly
+                Email: donnelly@coyote.csum.edu
+                Classes starting up in March 1995 have been announced.
+
+HELP WANTED:
+Pease help me to update and fill in this list! Email: idd@io.org, Thanks!
+
+
+
+4) Featured MOO: Diversity University
+   ----------------------------------
+
+NAME: Diversity University
+----
+
+ADDRESS:  moo.du.org 8888  or 192.101.98.8 8888
+-------
+
+CONTACTS: Jeanne McWhorter,  Email: gsswky@menudo.uh.edu
+--------
+
+Wizard-list: Jeanne, Richelieu, Ulf, Dr.Z, Scott and Ken.
+-----------
+
+INTERVIEW WITH ARCH WIZARD: (See article by Lunar in this section).
+--------------------------
+
+THEME:
+-----
+The Official Diversity University Mission Statement:
+"Our mission is to develop, support and maintain creative and
+innovative environments and tools for learning and research
+through the Internet and other distributed computing systems,
+and to guide and educate people in the use of these and other
+tools, to foster collaboration in a synergistic climate, and to
+explore and utilize applications of emerging technology to these
+ends in a manner friendly to people who are disabled,
+geographically isolated or technologically limited."
+
+
+
+        Donald  idd@io.org                                    58
+
+MOO DATA:
+--------
+
+* Guest Access: Yes
+
+* Guest login command: connect guest
+
+  Remark: also 'connect peasant peasant' that takes you into
+              Mogue's Agincourt simulation. One of several at DU.
+
+* Number of registered characters: 3,000+
+
+* Number of MOO objects: 12,500+
+
+* Size of MOO program in memory: 35 megabytes.
+
+* Sample Classes: ('#'numbers refer to DU MOO objects and locations)
+     DU has provided facilities for many classes including:
+     Jeanne's 'MOO 101', 'MOO classes for Teachers', and
+     'Internet for Teachers classes'.
+
+     Leslie and Cindy's 'English composition' class simultaneously
+     in Pennsylvania and Wyoming.
+
+     GNA's WWW94 award winning 'C++ class' @go #2000;
+     'Commodity Futures and Options', some notes are in #1287;
+     'Affordable Internet Course', archives are north of #8880.
+
+     'MOO Programming' sessions given by Ulf and Doppler at DU.
+     Finnegans Wake (Joyce) reading group held by Michael #7416.
+
+     Cynthia, Danford, JeanS, JoeW, Van*Faussien, and many others
+     have brought classes to DU.
+
+
+
+5) Education Tools: Generic objects at Diversity University
+   --------------------------------------------------------
+
+Some notable Educational Tools at Diversity University including
+ported ones, known affiliations do not imply development sites.
+NOTE: These lists are not complete but attempt to be accurate.
+
+* Larry and Joe@JaysHouseMOO (Grump and JoeFeedback)
+   - 'MOOGopher'(Copyright (c)1992, 1993, Larry Masinter and Erik Ostrom)
+     was implemented at JaysHouseMOO and is a useful tool found in most MOOs.
+
+* Ken or cdr (@Collegetown, @media, @DU)
+   - Media set 'TV', 'VCR', 'Camera', and 'Tape' showing text has an
+     'Editing room' to transform raw 'Tapes' into a polished product.
+   - 'Lecture note' lines can be prepared ahead of time.
+   - 'Slide shows' can display 15 lines of text at once.
+   - 'Classrooms' include 'blackboards', 'seats' and other features.
+   - Other Education objects include the 'Theatre complex',
+     a 'conversational robot' and introductory MOO Programming tapes.
+
+
+
+
+
+        Donald  idd@io.org                                    59
+
+* Michele (@JaysHouseMOO)
+   - Walk through '@Tutorial program' from JaysHouseMOO
+    is very easy to use, even for a beginner.
+
+* Gustavo (@BioMOO, @GNAlab, @DU, etc.)
+   - 'Generic Recording device' records activity in a room.
+   - 'InterMOO feature object' allows communications across MOOs.
+   - 'GNA forum' is a virtual conference room that straddles
+     BayMOO, BioMOO, CollegeTown, Diversity University, EON,
+     Global Village, GNAlab, MediaMOO, TecfaMOO and VOU
+     in five different countries.
+   - 'InterMOOwalk' moves characters from GNAlab to BioMOO or back.
+   - BioMOO/WWW interface developers include Eric Mercer, Paul Hansen,
+     Jaime Prilusky, and Gustavo Glusman.
+
+* Jeanne with programming by Richelieu(@DU)
+   - 'VSPO', the visting student character class allows teachers to
+     control class and handle some administrative work as well.
+
+* Mogue
+   - 'simulation rooms' like 'Agincourt' show 100 year war. Experience
+     history from the perspective of various period characters.
+
+* DaveM
+   - 'notice board' is an all purpose tool created to save 'quota'.
+     It finds use as a bulletin board, a note book, a variable slide
+     projector, and a tutorial and, now has its own mailing list even.
+   - 'Tutorial room' also saves quota and is easy to use.
+     Hypertext versions are in development.
+
+* Doppler
+   - 'slide show' stores presentations in a variable length format.
+
+* Richelieu
+   - 'Generic chaptered Book' (@copyright Richelieu) has chapters.
+
+* Shkoo@EON  (@BioMOO, nils@DU)
+   - 'WWW slate' is a World Wide Web text based browser. Shkoo first
+     implemented the WWW slate at EON, where the server is.
+
+
+
+PLEASE! : To 'port' the MOO programming code of any MOO object to another
+MOO, please contact and obtain permission of the original author.
+This is a courtesy that also helps the author to distribute upgrades.
+
+
+
+
+        Donald  idd@io.org                                    60
+
+NEXT ISSUE:
+-----------
+    The coming issue will contain reviews of Jupiter features.
+    Mostly a moo extension that allows moo object to generate
+    a window inside microsoft windows or X windows. The resulting
+    whiteboard allows for mouse driven events like lines to be
+    sent back to the moo and to other windows clients.
+
+    Featured MOO will be BioMOO: an active meeting place for
+    professional biologists, it has pioneered a different approach
+    to graphics using the World Wide Web. Other WWW moos will be
+    surveyed also.
+
+-------------------------------------------------------------
+
+Author: Donald
+        idd@io.org

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE> I set a prop +c that should have been !c, now what?</TITLE>
+<META NAME="description" CONTENT=" I set a prop +c that should have been !c, now what?">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="http://tecfa.unige.ch/moo/book2/tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html1" HREF="http://tecfa.unige.ch/"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/gif/icon-tecfa-unit-small.gif"  > </A> <A NAME="tex2html3046" HREF="node200.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html3044" HREF="node197.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html3038" HREF="node198.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html3048" HREF="http://tecfa.unige.ch/moo/book2/node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <BR>
+<B> Next:</B> <A NAME="tex2html3047" HREF="node200.html">My FO doesn't work</A>
+<B>Up:</B> <A NAME="tex2html3045" HREF="node197.html">A few debugging tricks/common </A>
+<B> Previous:</B> <A NAME="tex2html3039" HREF="node198.html">Strange Prop Not Found </A>
+<BR> <P>
+<H3><A NAME="SECTION05161200000000000000"> I set a prop +c that should have been !c, now what?</A></H3>
+<P>
+If the object in question doesn't have any kids, just @chmod object.prop !c
+<P>
+If the object has kids, there are several things that can help, but
+the easiest, and best way to handle it is to use a verb on $wiz_utils.
+Your fix would look something like the following:
+<P>
+<PRE>   ;$wiz_utils:set_property_flags(#object, &quot;property-name&quot;, &quot;r&quot;)</PRE>
+<P>
+Note that in the eval that you use, you DO want to have the name of
+the property and the permission bits you want, enclosed in double
+quotes as written above.  For more info on this useful verb, type:
+'help $wiz_utils:set_property_flags'.
+<P>
+(BTW, no, you don't need to be a wizard to use this!)
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Wed Oct 23 21:55:28 MET DST 1996</I>
+</ADDRESS>
+</BODY>
+</HTML>

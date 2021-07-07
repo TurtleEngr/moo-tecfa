@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Basic digging</TITLE>
+<META NAME="description" CONTENT="Basic digging">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1222" HREF="node44.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1220" HREF="node42.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1214" HREF="node42.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1224" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1225" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1223" HREF="node44.html">Dealing with exits</A>
+<B>Up:</B> <A NAME="tex2html1221" HREF="node42.html">4.2 Rooms and exits</A>
+<B> Previous:</B> <A NAME="tex2html1215" HREF="node42.html">4.2 Rooms and exits</A>
+<BR> <P>
+<H2><A NAME="SECTION03121000000000000000">Basic digging</A></H2>
+<P>
+<A NAME="secbasicdig">&#160;</A>
+<P>
+<H4><A NAME="SECTION03121010000000000000">Creating rooms and exits with @dig</A></H4>
+<P>
+There are several commands for building rooms and exits, of which
+you need to know at least <code>@dig</code>. Here is the definition from
+the help system of <B>TECFA</B><TT>MOO</TT>:
+<A NAME=454>&#160;</A>
+<P>
+<SMALL CLASS=SMALL><PRE>&gt;help @dig
+Syntax:  @dig &quot;&lt;new-room-name&gt;&quot;
+         @dig &lt;exit-spec&gt; to &quot;&lt;new-room-name&gt;&quot;
+         @dig &lt;exit-spec&gt; to &lt;old-room-object-number&gt;
+
+This is the basic building tool.  The first form of the command
+creates a new room with the given name.  The new room is not connected
+to anywhere else; it is floating in limbo.  The @dig command tells you
+its object number, though, so you can use the @move command to get
+there easily.
+
+The second form of the command not only creates the room, but one or
+two exits linking your current location to (and possibly from) the new
+room.  An &lt;exit-spec&gt; has one of the following two forms:
+
+        &lt;names&gt;
+        &lt;names&gt;|&lt;names&gt;
+
+where the first form is used when you only want to create one exit,
+from your current room to the new room, and the second form when you
+also want an exit back, from the new room to your current room.  In
+any case, the &lt;names&gt; piece is just a list of names for the exit,
+separated by commas; these are the names of the commands players can
+type to use the exit.  It is usually a good idea to include explicitly
+the standard abbreviations for direction names (e.g., 'n' for 'north',
+'se' for 'southeast', etc.).  DO NOT put spaces in the names of exits;
+they are useless in MOO.
+
+The third form of the command is just like the second form except that
+no new room is created; you instead specify by object number the other
+room to/from which the new exits will connect.
+
+NOTE: You must own the room at one end or the other of the exits you
+create.  If you own both, everything is hunky-dorey.  If you own only
+one end, then after creating the exits you should write down their
+object numbers.  You must then get the owner of the other room to use
+@add-exit and @add-entrance to link your new exits to their room.
+
+Examples:
+    @dig &quot;The Conservatory&quot;
+
+creates a new room named &quot;The Conservatory&quot; and prints out its object
+number.
+
+    @dig north,n to &quot;The North Pole&quot;
+
+creates a new room and also an exit linking the player's current
+location to the new room; players would say either 'north' or 'n' to
+get from here to the new room.  No way to get back from that room is
+created.
+
+    @dig west,w|east,e,out to &quot;The Department of Auto-Musicology&quot;
+
+creates a new room and two exits, one taking players from here to the
+new room (via the commands 'west' or 'w') and one taking them from the
+new room to here (via 'east', 'e', or 'out').
+
+    @dig up,u to #7164
+
+creates an exit leading from the player's current room to #7164, which
+must be an existing room.</PRE></SMALL>
+<P>
+<H4><A NAME="SECTION03121020000000000000">Common mistakes and hints:</A></H4>
+<P>
+Beginners often do the following: They create a a room
+like ``Snow Castle'' with a command like:
+<SMALL CLASS=SMALL><PRE>&gt;@dig enter|out to Snow Castle
+Snow Castle (#7164) created
+......</PRE></SMALL>
+Next they create another room
+<SMALL CLASS=SMALL><PRE> @dig garden|office to Lovely Garden</PRE></SMALL>
+Next they go to the second room created (``Lovely Garden'' here) and
+try to dig an exit into the first room by typing:
+<SMALL CLASS=SMALL><PRE>&gt;@dig enter|out to Snow Castle
+Snow Castle (#8545) created</PRE></SMALL>
+This will create a second room called ``Snow Castle''. If you want
+to dig into a room that <b>exists already</b>, you have to
+use room object numbers like this:
+<SMALL CLASS=SMALL><PRE>  @dig enter|out to #7164</PRE></SMALL>
+<P>
+Also, don't use exit names containing more than one single
+word because the <code>@dig</code> command AND the users will get confused if
+you don't type it right. Here is an example that demonstrates the
+principle:
+<P>
+<SMALL CLASS=SMALL><PRE>&gt;@dig drown under | &quot;swim to shore&quot; to sea
+Usage:  @dig &lt;new-room-name&gt;
+    or  @dig &lt;exit-description&gt; to &lt;new-room-name-or-old-room-object-number&gt;
+
+&gt;@dig &quot;drown under&quot; | &quot;swim to shore&quot; to sea
+Usage:  @dig &lt;new-room-name&gt;
+    or  @dig &lt;exit-description&gt; to &lt;new-room-name-or-old-room-object-number&gt;
+
+&gt;@dig &quot;drown under&quot;|&quot;swim to shore&quot; to sea
+sea (#3951) created.
+Exit from beach (#1442) to sea (#3951) via {&quot;drown under&quot;}
+ created with id #1780.
+Exit from sea (#3951) to beach (#1442) via {&quot;swim to shore&quot;}
+ created with id #4346.
+
+&gt;drown under
+I don't understand that.
+&gt;go drown under
+You can't go that way (drown).
+&gt;go &quot;drown under&quot;
+sea
+You see nothing special.
+Obvious Exits: Swim to shore (to beach).</PRE></SMALL>
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

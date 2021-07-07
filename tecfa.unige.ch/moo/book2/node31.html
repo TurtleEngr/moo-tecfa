@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>creating new channels</TITLE>
+<META NAME="description" CONTENT="creating new channels">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1053" HREF="node32.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1051" HREF="node27.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1047" HREF="node30.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1055" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1056" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1054" HREF="node32.html">2.4 Social Features</A>
+<B>Up:</B> <A NAME="tex2html1052" HREF="node27.html">2.3 [TECFAMOO] Janus' Channels </A>
+<B> Previous:</B> <A NAME="tex2html1048" HREF="node30.html">Communication over channels:</A>
+<BR> <P>
+<H2><A NAME="SECTION02234000000000000000">creating new channels</A></H2>
+<P>
+<A NAME="seccreating">&#160;</A>
+<P>
+To make your own channel, just make a kid of the channel class (i.e. the generic channel). See also the <A NAME="tex2html65" HREF="http://tecfamoo.unige.ch:7778/objbrowse/&amp;channel_class">in-MOO help</A>.
+<SMALL CLASS=SMALL><PRE>    @create &amp;channel_class named &lt;whatever you want&gt;</PRE></SMALL>
+<P>
+This also allows you to make a conference room that is also a channel,
+so that people that need to be in another room can listen or
+participate to the conference (or to more than one conference
+simultaneously). But don't <code>@chparent</code> a complex room to <code>&amp;channel_class</code>,
+you will use its features, unless you change its generic too.
+<P>
+The audience to a given channel can easily be
+restricted and so allow to make channels dedicated to some projects
+with only the members of the project being able to talk and/or listen
+to the channel.
+<P>
+To allow people/objects to use your channel through the &amp;channel_feature:
+<SMALL CLASS=SMALL><PRE>    @trust &amp;channel_feature to manage &lt;OBJ your_channel&gt;</PRE></SMALL>
+To allow people/objects to announce (talk) on your channel:
+<SMALL CLASS=SMALL><PRE>    @trust &lt;class&gt; to announce &lt;OBJ your_channel&gt;</PRE></SMALL>
+To allow people/objects to listen to your channel:
+<SMALL CLASS=SMALL><PRE>    @trust &lt;class&gt; to listen &lt;OBJ your_channel&gt;</PRE></SMALL>
+Examples:
+<P>
+a) to make a public channel named my_public_channel, 3 steps:
+<SMALL CLASS=SMALL><PRE>   1) @trust &amp;channel_feature to manage my_public_channel
+   2) @trust $everything to announce my_public_channel
+   3) @trust $everything to listen my_public_channel</PRE></SMALL>
+<P>
+b) to make a channel, named my_semi_public_channel, where all players can listen, but where guests can't talk (though guests can listen),  steps:
+<SMALL CLASS=SMALL><PRE>   1) @trust &amp;channel_feature to manage my_semi_public_channel
+   2) @trust players to announce my_semi_public_channel
+   3) @distrust $guest to announce my_semi_public_channel
+   4) @trust players to listen my_semi_public_channel</PRE></SMALL>
+<P>
+c) to make a private channel, named <code>Tims_friends</code> where only a selected few
+can talk and listen, type first <code>@trust &amp;channel_feature to manage my_public_channel</code>, then for each player do:
+<SMALL CLASS=SMALL><PRE>   1) @trust ~&lt;player&gt; to announce Tims_friends
+   2) @trust ~&lt;player&gt; to listen Tims_friends</PRE></SMALL>
+<P>
+If you can't find your channel, list all kids of <code>&amp;channel_class</code>:
+<SMALL CLASS=SMALL><PRE>   @kids &amp;channel_class</PRE></SMALL>
+<P>
+To list permission on your channel, type:
+<SMALL CLASS=SMALL><PRE>   @list-l &lt;your channel&gt;</PRE></SMALL>
+More on ownership permissions can be found in section <A HREF="node67.html#sectrust">7.2</A>.
+<P>
+There are a few parameters you can customize if you wish:
+<SMALL CLASS=SMALL><PRE>   @channel_prefix &amp;channel_class is &quot;[$perm][$title] &quot;
+   @channel_title &amp;channel_class isn't set.
+   @channel_color &amp;channel_class is &quot;%green%bold&quot;</PRE></SMALL>
+<P>
+The channel prefix is (as its name suggest it) the prefix that is put
+at the beginning of every line of text displayed by the channel to its
+listeners. The permissions of the listeners will be displayed instead
+of <code>$perms</code>
+and the title of the channel (or its name if no channel
+title is set) will be displayed instead of $title.
+<P>
+The listeners perms are:
+<UL>
+<LI>  + if the channel is the one the listeners is also currently talking
+  on.
+<LI> - if the listeners is just listening and not talking on the
+  channel.
+</UL>
+<P>
+So if you see:
+<SMALL CLASS=SMALL><PRE> [-][Public] &lt;some text&gt;</PRE></SMALL>
+you know that if you want to say something on Public you will have to
+switch to the channel first or to make a comment to that channel (with
+<code>x&gt;&gt;public &lt;test&gt; or x//public &lt;test&gt;</code>
+<P>
+The channel color is not currently used.
+<P>
+<HR><A NAME="tex2html1053" HREF="node32.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1051" HREF="node27.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1047" HREF="node30.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1055" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1056" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html1054" HREF="node32.html">2.4 Social Features</A>
+<B>Up:</B> <A NAME="tex2html1052" HREF="node27.html">2.3 [TECFAMOO] Janus' Channels </A>
+<B> Previous:</B> <A NAME="tex2html1048" HREF="node30.html">Communication over channels:</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

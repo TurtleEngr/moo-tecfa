@@ -1,0 +1,211 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Emacs clients (Unix)</TITLE>
+<META NAME="description" CONTENT="Emacs clients (Unix)">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html850" HREF="node16.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html848" HREF="node12.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html842" HREF="node14.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html852" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html853" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html851" HREF="node16.html">Muddweller (Mac)</A>
+<B>Up:</B> <A NAME="tex2html849" HREF="node12.html">1.4 SelectionInstallation and </A>
+<B> Previous:</B> <A NAME="tex2html843" HREF="node14.html">Tiny Fugue (Unix)</A>
+<BR> <P>
+<H2><A NAME="SECTION02143000000000000000">Emacs clients (Unix)</A></H2>
+<P>
+<A NAME="secEmacsclients">&#160;</A>
+<P>
+Emacs is a very powerful text editor that allows interfacing to many things
+including most programming languages, email, News, the WWW and MUDs.
+If you are unfamiliar with emacs try to talk to someone who uses it
+and see before you install it.
+Emacs extensions are written in emacs-lisp. When installing a Mud client
+you normally have to look at the README file in the distribution and
+reconfigure some of the *.el files.
+<P>
+The most popular emacs client seems to be mud.el.
+This client runs on GNU Emacs. Usable for TinyMUD-style muds, LPMUDs,
+and MOOs. Features include auto-login, macros, logging,
+cyberportals, screen mode, and it is programmable.
+Availability: at
+<A NAME="tex2html43" HREF="ftp://parcftp.xerox.com/pub/MOO/clients/">ftp://parcftp.xerox.com/pub/MOO/clients/</A>
+and at
+<A NAME="tex2html44" HREF="ftp://ftp.math.okstate.edu/pub/muds/clients/UnixClients/">ftp://ftp.math.okstate.edu/pub/muds/clients/UnixClients/</A>.
+See the 
+<A NAME="tex2html45" HREF="http://www.math.okstate.edu:80/%7Ejds/mudfaqs.html">Mud FAQ list</A> for more emacs clients.
+<P>
+At Tecfa we use Ron Tapia's rmoo client. It is not mentioned in many places
+but gives best results under X with GNU Emacs.
+<P>
+<H3><A NAME="SECTION02143100000000000000">The rmoo client</A></H3>
+<P>
+<A NAME="secrmooclient">&#160;</A>
+<P>
+Distribution: (a maybe old version) from
+<A NAME="tex2html46" HREF="http://tecfa.unige.ch/pub/software/unix/mud-clients/">TECFA's FTP server</A>. The original version seems to have disappeared from
+the Net.
+<P>
+When using this client the first thing to do in the MOO is:
+'@edito +l'. That will ship all editing to emacs. No documentation
+is available, so to get some help, type 'c-h M' in a RMOO window.
+<P>
+The RMOO client features menus for a few commands (in the original
+districtuion they only worked for GNU Emacs, i.e. NOT Xemacs). In our
+slightly modified version the most important commands work from the menu.
+<P>
+<H5><A NAME="SECTION02143101000000000000">Features</A></H5>
+<P>
+(Note that we did not test everything in detail, there is
+no good help)
+<P>
+<DL ><DT><STRONG>Ease of Use:</STRONG>
+<DD>Hard if you are unfamiliar with emacs, easy if you are (except for the lack of documentation)
+<P>
+<DT><STRONG>Copy/Paste to other applications:</STRONG>
+<DD> Works
+<P>
+<DT><STRONG>Multiple Connections:</STRONG>
+<DD> Yes
+<P>
+<DT><STRONG>Command Repetition:</STRONG>
+<DD> Yes (M-p)
+<P>
+<DT><STRONG>Local Editing:</STRONG>
+<DD> Yes
+<P>
+<DT><STRONG>Session Logs:</STRONG>
+<DD> Yes (by definition emacs is a text editor after all)
+<P>
+<DT><STRONG>Overall judgment:</STRONG>
+<DD> Very nice client, but hard for people unfamiliar
+with emacs. Note that learning emacs is a good thing if you work under Unix.
+E.g. html and latex (this manual was written with) assistants are VERY
+good.
+<P>
+ </DL><H5><A NAME="SECTION02143102000000000000">Available Commands</A></H5>
+<P>
+Here are the available commands in RMOO main mode (when just interacting
+normally with the MOO). The most important thing to do when you work
+with an emacs clients is to configure your MOO for local editing.
+On most MOOs, type:
+<SMALL CLASS=SMALL><PRE>  @edito +l</PRE></SMALL>
+<P>
+The most important commands you need to know are the following:
+<P>
+<SMALL CLASS=SMALL><PRE>Input to the MOO:
+
+RET             rmoo-send
+
+Retrieving previous commands and navigation:
+
+ESC n           rmoo-next-command
+ESC p           rmoo-previous-command
+C-a             rmoo-beginning-of-line
+
+Pasting text:
+
+C-c C-p         rmoo-@paste-kill
+                (useful for pasting text in the emacs kill/copy buffer)
+C-c C-y         rmoo-send-kill
+                (useful for uploading code in the emacs kill/copy buffer)
+
+Quick MOO Mail:
+
+C-c RET         rmoo-mail</PRE></SMALL>
+<P>
+Here is the full set of emacs bindings, you can ignore most of
+them (some won't work anythow on <B>TECFA</B><TT>MOO</TT>):
+<P>
+<SMALL CLASS=SMALL><PRE>RMOO mode:
+Major mode for talking to inferior MOO processes.
+
+Commands:
+key             binding
+---             -------
+
+menu-bar        Prefix Command
+mouse-1         jtext-select-link
+ESC             Prefix Command
+C-c             Prefix Command
+TAB             dabbrev-expand
+C-a             rmoo-beginning-of-line
+RET             rmoo-send
+
+ESC n           rmoo-next-command
+ESC p           rmoo-previous-command
+
+C-c C-p         rmoo-@paste-kill
+C-c C-f         rmoo-extras-get-prop
+C-c C-v         rmoo-extras-get-verb
+C-c C-o         Prefix Command
+C-c RET         rmoo-mail
+C-c C-w         Prefix Command
+C-c C-y         rmoo-send-kill
+C-c C-q         rmoo-quit
+
+C-c C-o C-d     rmoo-objects-delete-object-here
+C-c C-o C-s     rmoo-objects-write-objects-file
+C-c C-o C-o     rmoo-objects-download-object
+
+C-c C-w C-s     rmoo-worlds-save-worlds-to-file
+C-c C-w C-a     rmoo-worlds-add-new-moo</PRE></SMALL>
+<P>
+Below are the commands active when programming or editing:
+The most important command
+is <code>ctrl-c ctrl-s</code> which ships back a command to the MOO from an editing
+buffer. Note: be sure not to delete the ``MOO command lines'' that
+pop up when you you start an editing session.
+In the following example you edit the description of a room:
+<SMALL CLASS=SMALL><PRE>&gt;@edit here.description</PRE></SMALL>
+What you will get in the editing buffer is this:
+<P>
+<SMALL CLASS=SMALL><PRE>@set-note-text #139.description
+You see an modern office, quite standard in appearence.
+You see a blackboard on which you can leave a note ('writeb ......').
+'Out' will lead you back to the Atrium.
+.</PRE></SMALL>
+<P>
+Don't delete the <code>@set-note-text #139.description</code> line NOR the last
+line (i,e, ``.'')
+and insert all editing in between! The exactly same rule applies if
+you edit a verb, e.g. if you type: <code>@edit #xxx:my_verb</code>
+<P>
+<SMALL CLASS=SMALL><PRE>Major mode for mucking with MOO code.
+Commands:
+key             binding
+---             -------
+
+menu-bar        Prefix Command
+C-c             Prefix Command
+TAB             rmoo-code-indent-line
+
+C-c C-s         rmoo-upload-buffer-directly  &lt;--- MOST IMPORTANT !
+C-c s           rmoo-upload-buffer-directly
+C-c ;           rmoo-code-check-semi-colons
+C-c &quot;           rmoo-code-insert-quoted-end
+C-c C-a         rmoo-code-extras-map
+
+C-c C-a u       rmoo-code-uncommentify
+C-c C-a c       rmoo-code-commentify
+C-c C-a s       rmoo-code-sin
+C-c C-a r       rmoo-code-return
+C-c C-a k       rmoo-code-fork
+C-c C-a w       rmoo-code-while
+C-c C-a f       rmoo-code-for
+C-c C-a e       rmoo-code-else
+C-c C-a i       rmoo-code-if</PRE></SMALL>
+<P>
+<HR><A NAME="tex2html850" HREF="node16.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html848" HREF="node12.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html842" HREF="node14.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html852" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html853" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html851" HREF="node16.html">Muddweller (Mac)</A>
+<B>Up:</B> <A NAME="tex2html849" HREF="node12.html">1.4 SelectionInstallation and </A>
+<B> Previous:</B> <A NAME="tex2html843" HREF="node14.html">Tiny Fugue (Unix)</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

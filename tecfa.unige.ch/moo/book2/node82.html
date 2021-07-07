@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Creating a property &quot;holding&quot;</TITLE>
+<META NAME="description" CONTENT="Creating a property &quot;holding&quot;">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1780" HREF="node83.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1778" HREF="node80.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1772" HREF="node81.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1782" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1783" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1781" HREF="node83.html">The first verb ``add'':</A>
+<B>Up:</B> <A NAME="tex2html1779" HREF="node80.html">8.4 MOO tutorialLevel </A>
+<B> Previous:</B> <A NAME="tex2html1773" HREF="node81.html">Creating an object</A>
+<BR> <P>
+<H2><A NAME="SECTION04142000000000000000">Creating a property &quot;holding&quot;</A></H2>
+<P>
+Since we want to remember bits of information we now need a place to
+store them, i.e. a property (slot). Remember that all permanent
+information is stored in object slots and see section
+<A HREF="node112.html#secproperties">10.3.1</A> for more details on property creation: Now, let's
+create a property (slot) on our new object for that. We name it
+'holding' because it will hold some information 
+(this is an arbitrary decision and we could have chosen any other name).
+Type:
+<P>
+<SMALL CLASS=SMALL><PRE>   @property holder.holding {}</PRE></SMALL>
+<P>
+This created a property 'holding' with the initial value of ``{}'',
+i.e. an empty<b>list</b>. Lists are quite practical and flexible data-structures
+as you will see later. For now just take it for a fact, that we will use
+the list attached to the ``holding'' property in order to store bits
+of information.
+Type '@d holder.' if you want to be sure that you really added the
+property you wanted to the object.
+<P>
+Note, that we <EM>could</EM> have simply typed:
+<SMALL CLASS=SMALL><PRE>   @property holder.holding</PRE></SMALL>
+This would have created a property with an initial value of '0'.
+<A NAME="tex2html156" HREF="http://tecfa.unige.ch/moo/book2//footnode.html#941"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//foot_motif.gif"></A>
+But it is always preferable to initialize 
+a property with the kind of value (see section <A HREF="node117.html#secvalues">10.5.1</A>,
+page <A HREF="node117.html#secvalues"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>) you
+later want to attach to it, otherwise some verb may break, e.g. you
+couldn't possible add a number to a string.
+<P>
+In case you forgot to set as initial value as
+ the empty list ``{}'' you are not lost:
+Just set the value of the property like this:
+<P>
+<SMALL CLASS=SMALL><PRE>   @set holder.holding {}</PRE></SMALL>
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

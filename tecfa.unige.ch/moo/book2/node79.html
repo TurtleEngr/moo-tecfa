@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>8.3 MOO tutorial, Level 0 (``computer'')</TITLE>
+<META NAME="description" CONTENT="8.3 MOO tutorial, Level 0 (``computer'')">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1735" HREF="node80.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1733" HREF="node70.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1727" HREF="node78.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1737" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1738" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1736" HREF="node80.html">8.4 MOO tutorialLevel </A>
+<B>Up:</B> <A NAME="tex2html1734" HREF="node70.html">Basic MOO Programming Tutorial</A>
+<B> Previous:</B> <A NAME="tex2html1728" HREF="node78.html">Procedural/structural Programming</A>
+<BR> <P>
+<H1><A NAME="SECTION04130000000000000000">8.3 MOO tutorial, Level 0 (``computer'')</A></H1>
+<P>
+<A NAME="sectutorial0">&#160;</A>
+<A NAME=864>&#160;</A>
+<P>
+(under construction since nov 28 1996, not user tested yet)
+<P>
+Let's program a very simple object just for the fun of it.
+It will not do anything useful, but teach you a few basic things.
+You will not learn much about programming, nor about MOO objects
+and verbs but you will get the ``feel'' for doing more difficult things
+later on.
+If you don't want to do something too simple, you can instead work
+directly on the next tutorial in section <A HREF="node80.html#sectutorial1">8.4</A>
+on page <A HREF="node80.html#sectutorial1"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>.
+<P>
+<BLOCKQUOTE> Ok, let's assume that you sometimes hate something, e.g. your boss
+or your computer. Now let's program a simple objet that you can kick
+and that will help you to get rid of your frustrations.
+</BLOCKQUOTE><H4><A NAME="SECTION04130010000000000000">STEP 1 - Creating an Object:</A></H4>
+<P>
+First of all, we have to tell the MOO to create an object on which
+you can work, to do this <b>type now:</b>
+<SMALL CLASS=SMALL><PRE>&gt;@create $thing named computer</PRE></SMALL>
+The MOO now will reply with something like:
+<SMALL CLASS=SMALL><PRE>You now have computer with object number #4134
+and parent generic thing (#5).</PRE></SMALL>
+Each object you create has a unique number (which will allow you
+to find it everywhere). To make <em>really sure</em> that you indeed
+now own an object called computer, <b>type now</b>:
+<SMALL CLASS=SMALL><PRE>  @audit me</PRE></SMALL>
+You will get a listing of all objects you own (including yourself and
+rooms and exits you may have built). Also note that when you create
+an object with the <code>@create</code> command it will be ``on you'', i.e.
+in your inventory. If you don't believe this, type now: ``<code>inv</code>''.
+<P>
+<H4><A NAME="SECTION04130020000000000000">STEP 2 - Adding a description</A></H4>
+<P>
+Now look at your object, i.e. <b>type now:</b>
+<SMALL CLASS=SMALL><PRE>   look computer</PRE></SMALL>
+You will ``see nothing special'' of course. So the first thing you do
+is to add a description, <b>type now:</b>
+<SMALL CLASS=SMALL><PRE>   @describe computer as A really disgusting looking little PC.</PRE></SMALL>
+Now look at it again! Note that you can enter a different description
+of course if your machine has nice looks. Just do the <code>@describe</code>
+command again.
+<P>
+<H4><A NAME="SECTION04130030000000000000">STEP 3 - Let's add a command verb</A></H4>
+<P>
+Since you sometimes hate your computer you want to kick it sometimes, right ?
+Now kicking objects is not a standard command in a MOO unless it is
+on some social feature (see section <A HREF="node32.html#secsocialfeatures">2.4</A>). What we do
+now is add a ``kick'' verb just for this ``computer'' (more explanations
+later). For now <b>just type this:</b> (be very careful to type
+exactly this and nothing else)
+<SMALL CLASS=SMALL><PRE>@verb computer:kick this any any</PRE></SMALL>
+The MOO now should reply something like:
+<SMALL CLASS=SMALL><PRE>Verb added  #4134:&quot;kick&quot;  this any any  rd  (1)</PRE></SMALL>
+Note the object number <code>#4134</code> will not be the same since <em>your</em> computer has a different number ! In case you did something wrong (like
+forgetting the ``this any any'', type ``<code>@rmverb computer:kick</code>''.
+This will kill what you did. Note that you can also kill the whole object
+with the command ``<code>@recycle computer</code>'', but then you have
+to restart with STEP 1.
+<P>
+<b>Very important:</b> Don't use this ``<code>@verb</code>'' command more than
+once !! Else you will wind up with several verbs.
+<P>
+<H4><A NAME="SECTION04130040000000000000">STEP 4 - Let's program the command verb</A></H4>
+<P>
+Type the <b>exact</b> 3 following lines now to program the verb:
+<SMALL CLASS=SMALL><PRE>  @program #4134:kick
+  player:tell(&quot;The &quot;, this.name, &quot; yells: AIEAIE&quot;);
+  .</PRE></SMALL>
+Don't forget the dot. Actually, when you type your verb you will see
+something like this:
+<P>
+<SMALL CLASS=SMALL><PRE>  &gt;@program #4134:kick
+   Now programming #4134:&quot;kick&quot;  this any any  rd  (1)
+   [Type lines of input; use `.' at the beginning of a NEW LINE
+   to end your input or type `@abort' to abort the command.]
+  &gt;player:tell(&quot;The &quot;, this.name, &quot; yells: AIEAIE&quot;);
+  &gt;.
+   0 errors.
+   Verb programmed.</PRE></SMALL>
+In case you encounter an error, <b>just restart until it works</b>.
+In most MOO clients you can recall the previous command, edit the line
+and send it back.
+You may encounter another problem: the MOO seems to be stuck. In this
+case you forgot to enter the ``.'' on a <b>new line</b>. Do it !
+<P>
+Here is a typical error you might have done, e.g. you forgot
+a  ``<code>*&quot;</code>'' as in the following example:
+<P>
+<SMALL CLASS=SMALL><PRE>   &gt;@program #4134:kick
+   Now programming #4134:&quot;kick&quot;  this any any  rd  (1)
+   [Type lines of input; use `.' at the beginning of a NEW LINE to end your input or type `@abort' to abort the command.]
+   &gt;player:tell(&quot;The , this.name, &quot;yells: AIEAIE&quot;);
+   &gt;.
+   Line 1:  parse error
+   1 error(s).
+   Verb not programmed.</PRE></SMALL>
+The first and the third line are moo commands necessary to define a
+verb. The second line is the real program you wrote. Note that
+we use a builtin MOO function ``<code>player:tell</code>'' that will
+print out something to the person that uses a verb.
+This function must be called with a list of <em>arguments</em> that
+are printed back to the user. In our case we have 3 arguments:
+<OL>
+<LI> &quot;The &quot;
+<LI> this.name
+<LI> &quot; yells: AIEAIE&quot;
+</OL>
+The first and the third are simple <em>strings</em> that are printed to
+the user. The second one is more complex: it refers to the name
+of the objects on which the verb is programmed, i.e. your computer.
+Using a variable instead of a string ``computer'' makes your verb
+more versatile as you will see in step 5.
+<P>
+Note that when you program more complex commands than this ``1 line'' procedure
+you will use an editor to do this. (We will explain this in the
+next tutorial in section <A HREF="node83.html#level1firstverb">8.4.3</A> on page <A HREF="node83.html#level1firstverb"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>)
+<P>
+<H4><A NAME="SECTION04130050000000000000">STEP 5 - Testing</A></H4>
+<P>
+To test your ``computer'', <b>type now</b> like in the following transcript:
+<SMALL CLASS=SMALL><PRE>   &gt;kick computer
+    The computer yells: AIEAIE</PRE></SMALL>
+Hey it works ! Now, if you happen to hate your boss, just rename the object
+as in the following example:
+<P>
+<SMALL CLASS=SMALL><PRE>   &gt;@rename computer to boss
+   Name of #4134 changed to &quot;boss&quot;, with aliases {&quot;boss&quot;}.
+   &gt;kick boss
+   The boss yells: AIEAIE</PRE></SMALL>
+<P>
+How come it works ? Well, go and do the next tutorial
+(section <A HREF="node80.html#sectutorial1">8.4</A>). It will teach
+you much more. However, it will take you about 4 to 8 hours to master
+it. Ok you don't want to learn much more, but just a little bit more,
+go to STEP 6 now.
+<P>
+<H4><A NAME="SECTION04130060000000000000">STEP 6 - Counting the kicks</A></H4>
+<P>
+Ok so you really hate your boss and you think that other's hate him
+too. Now let's add a counter to count all the kicks.
+In this case you need a <b>``property''</b> on your ``boss'' object
+to count the kicks. A property is some kind of place where you
+can store information on an object.
+<P>
+Add <b>it now</b> with the following command
+(make sure you type it right):
+<SMALL CLASS=SMALL><PRE>@prop boss.kicks 0</PRE></SMALL>
+The MOO will display something like this:
+<SMALL CLASS=SMALL><PRE>Property added with value 0.</PRE></SMALL>
+<P>
+Now you have to modify the verb of course. Enter the following lines
+as below or use a MOO editor if you allready know how to do this.
+If you don't you should actually learn it <b>now</b>
+e.g. by glancing at the relevant text in
+in section <A HREF="node83.html#level1firstverb">8.4.3</A> on page <A HREF="node83.html#level1firstverb"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>):
+Before you start typing make sure that you enter ``<code>player:tell(&quot;The &quot;, this.name, &quot; having been hit allready &quot;, this.kicks, &quot; times, yells: AIEAIE&quot;);</code>'' on a <b>single</b> line !!
+<P>
+<SMALL CLASS=SMALL><PRE>   @program #4134:kick
+   player:tell(&quot;The &quot;, this.name, &quot; having been hit allready &quot;,
+this.kicks, &quot; times, yells: AIEAIE&quot;);
+   this.kicks = this.kicks + 1;
+   .</PRE></SMALL>
+The line ``<code>this.kicks = this.kicks </code> 1;'' will increase the
+kicks property on your object each time the verb is called. This
+construct is called a counter by the way. Also note that we had to
+modify the ``<code>player:tell</code>'' verb to display the kicks received
+so far.
+Now test your verb again! You should see something like:
+<SMALL CLASS=SMALL><PRE>  &gt;kick boss
+  The boss having been hit allready 6 times, yells: AIEAIE</PRE></SMALL>
+<P>
+<H4><A NAME="SECTION04130070000000000000">STEP 7 - Making sure you can do it alone</A></H4>
+<P>
+Ok so actually you <em>love</em> your boss (sometimes). Well add
+a second verb called ``hug''. Just redo step 3 to step 6
+with a different verb !
+<P>
+<HR><A NAME="tex2html1735" HREF="node80.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1733" HREF="node70.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1727" HREF="node78.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1737" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1738" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html1736" HREF="node80.html">8.4 MOO tutorialLevel </A>
+<B>Up:</B> <A NAME="tex2html1734" HREF="node70.html">Basic MOO Programming Tutorial</A>
+<B> Previous:</B> <A NAME="tex2html1728" HREF="node78.html">Procedural/structural Programming</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

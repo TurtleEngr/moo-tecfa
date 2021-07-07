@@ -1,0 +1,95 @@
+For the 'Surf&Turf' WebMOO Client to operate properly the following MOO code
+needs to be added to your MOO server.
+------------------------------------------------------------------------
+
+@prop #1.url_address "" rc
+@prop #6.sketch 0
+
+@verb #1:v*iew  this 
+@program #1:v*iew
+"Usage:   view object";
+"Example: view DoggiePicture";
+"If DoggiePicture has an associated URL address and you are using the";
+"'Surf&Turf' WebMOO Client you will be able to see the associated Web site.";
+"To associate a URL address with an object:  'connect object to urladdress'";
+if (this.url_address)
+  player:tell("You view ", this.name, "...");
+  player:tell(" <", this.url_address, ">.");
+else
+  player:tell(this.name, " does not have an associated URL Address..");
+endif
+.
+
+@verb #1:dis*play   this 
+@program #1:dis*play 
+"Usage:   display object";
+"Example: display DoggiePicture";
+"If DoggiePicture has an associated URL address and you are using the";
+"'Surf&Turf' WebMOO Client you will be able to show the associated Web site";
+"to anyone else in the room also using the S&T client.";
+"To associate a URL address with an object:  'connect object to urladdress'";
+if (this.url_address)
+  this.location:announce_all(player.name, " displays:");
+  this.location:announce_all("  <", this.url_address, ">.");
+else
+  player:tell(this.name, " does not have an associated URL Address..");
+endif
+.
+
+@verb #1:connect   this to any
+@program #1:connect
+"Usage:   connect object to <url address>";
+"Example: connect DoggiePicture to http://www.wherever.edu/doggie.html";
+"DoggiePicture is now associated with a URL address and can be viewed";
+"using the 'Surf&Turf' WebMOO client. To see the Web picture:";
+"   'view DoggiePicture'     or    'display DoggiePicture'";
+if (this.owner == player || player.wizard)
+  this.url_address = iobjstr;
+  player:tell("URL address of ", this.name, " now set to '", iobjstr, "'...");
+else
+  player:tell("Sorry, only the owner can reset the URL address...");
+endif
+.
+
+
+@verb #6:@sketch any any any
+@program #6:@sketch  
+if (caller != player)
+  return E_PERM;
+endif
+if (!args)
+  player:tell("The Surf and Turf Sketch Pad is ", player.sketch ? "active." |
+ "inactive.");
+else
+  if (args[1] == "on")
+    this:set_sketch(1);
+    player:tell("Sketchpad activated...");
+  elseif (args[1] == "off")
+    this:set_sketch(0);
+    player:tell("Sketch Pad deactivated...");
+  else
+    player:tell("Try '@sketch on' or '@sketch off'.");
+  endif
+endif
+.
+
+@verb #6:set_sketch  this none this
+@program #6:set_sketch
+if (caller == this)
+  this.sketch = tonum(args[1]);
+else
+  return E_PERM;
+endif
+.
+
+@verb #3:show_sketch  any any any
+@program #3:show_sketch
+contents = setremove(this.contents, player);
+for dude in (contents)
+  if (is_player(dude) && dude.sketch)
+    dude:tell(argstr);
+  endif
+endfor
+.
+--------------------------------------------------------------------------
+

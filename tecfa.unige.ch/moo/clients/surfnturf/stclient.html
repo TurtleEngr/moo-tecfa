@@ -1,0 +1,129 @@
+<title>'Surf_and_Turf' Web-MOO Client</title>
+<body background="http://www.bvu.edu/backgrounds/sandstone.gif">
+<center><h2>
+'Surf_and_Turf' Web-MOO Client
+</h2></center>
+<center><h4><em>"the client that lets you SURF,<BR>
+from the convenience of your own MOO TURF..."</em></h4>
+</center>
+</center>
+<h2>Welcome</h2>
+Thank you for your interest in the 'Surf_and_Turf' Web-MOO client.  This Java 
+based client was designed
+by the <a href="http://www.bvu.edu/ctown">CollegeTown</a> MOO development team at
+<a href="http://www.bvu.edu"> Buena Vista University</a>
+ to make it easy for MOO users to view and display Web
+Pages from inside their virtual communities.  MOO administrators who wish to make this 
+client available to their users may consult the
+<a href="stclient.html#instructions"> INSTALLATION INSTRUCTIONS</a> below.
+Using the S&T client you can create MOO objects and attach Web Page addresses to
+them.  You can then 'view object' to bring up the page on your own browser
+ screen or 
+'display object' to bring up the associated Web Page on the browser screens of 
+everyone else in the room. The purpose of this client is to make collaborative 
+web viewing as simple as possible. Additional moo coded objects such as
+<a href="http://www.bvu.edu/ctown/help.html"> web
+slide projectors</a> are available on <a href="http://galaxy.bvu.edu">
+CollegeTown</a> for porting if you wish.<br>
+<b>Want to Try it out?</b> Press <a href="http://www.bvu.edu/ctown/WebMOO.html">here</a> to activate the client and pay a visit to CollegeTown, Buena Vista
+University's virtual community.<br>
+ (<b>Caveat:</b> The S&T Client
+ works best when accessed through Netscape under Windows 95. It  will not
+ work as well on Macs until Netscape has fully implemented Mac Java
+ socket connectivity.)
+
+<h2>Using the S&T Client</h2>
+Using the S&T Client to create a MOO object with an associated Web Page is
+extremely simple.<br>
+
+Suppose you have a picture of your new puppy on a web page somewhere and you want 
+to look at that picture from inside the MOO. Just type:
+<pre>
+    @create $thing named ZeldaPicture
+    connect ZeldaPicture to http://www.bvu.edu/faculty/schweller/zelda.jpg
+</pre>
+Then
+<pre>
+    view ZeldaPicture
+</pre>
+and Bingo! Zelda's cute little picture pops right up on the web part of the
+screen. If you want to show Zelda's picture to everyone in the room just
+type:
+<pre>
+    drop ZeldaPicture
+    display ZeldaPicture
+</pre>
+and everyone in the room using this client will see the little pup! <br>
+You can make MOO objects and link them to all sorts of things.  Here are some ideas:
+<ul>
+  <li>  MobyDick      - linked to text of Melville's great work
+  <li>  BVU_homepage  - linked to Buena Vista University's Home Page
+  <li> AltaVista     - linked to that great web search engine
+  <li> Syllabus      - linked to your online reading list</pre>
+</ul>
+
+
+<h2>Additional Help</h2>
+The T&S Client also includes additional features to make the  online editing of notes, verbs,
+and ascii drawings much simpler.
+This is accomplished by making the MOO screen itself 'editable' so you can,
+for example, read your note, edit its contents right on the screen, and then 
+resave the edited text. 
+For full instructions on the use of the 'Surf_and_Turf' Client <a href="http://www.bvu.edu/ctown/help.html">press here</a>.
+If you would like to try out the client  you may press <a href="http://www.bvu.edu/ctown/WebMOOx.html">here</a> to visit CollegeTown. 
+</ul>
+
+<a name ="instructions">
+<h2>Installation Instructions for MOO administrators:</h2>
+</a>
+<ul>
+ <li>Connect to the anonymous ftp site at galaxy.bvu.edu/pub/SurfandTurf
+ <li>Ftp the following files in BINARY mode to a directory on your Web Server.
+   <pre>
+     stclient.html       - this file
+     README              - ftp and installation instructions 
+     WebMOO.html         - call this from web page to activate S&T client
+     top.html            - general welcome and instructions
+     bottom.html         - controls actual client activation
+     help.html           - help using client and moo commands
+     WebMOOy.class       - java code, main driver and socket code
+     InputPanely.class   - java code, controls I/O and editing
+     Sketchpady.class    - java code, multiuser white board
+     MooInputAreay.class - java code, for moo input
+     SaveDialogy.class   - java code, dialog for saving sketch pad
+     MooFramey.class     - java code, misc
+     moocode            - MOO code that must be added to your MOO server
+   </pre>
+  <li>Be sure Web Server and MOO server reside on the same machine.
+  <li>Edit the file 'bottom.html' if your MOO's port address is not 7777.
+  <li>Add the MOO code in the file 'moocode' to your MOO server. This will
+    probably require 'wiz' permission.
+  <li>Set up a button on your Web Page connected to <br>
+      http://www.wherever.edu/whatever/WebMOO.html
+</ul>
+<h2>Comments Welcome</h2>
+
+The 'Surf_and_Turf' Web-MOO client was developed by  
+<a href="http://www.bvu.edu/faculty/schweller">Ken Schweller</a>
+and the
+<a href="http://www.bvu.edu/ctown/">CollegeTown</a> Development Team of 
+ Blanchard, Goodrich, and
+Schaecher.  
+The 'Surf_and_Turf' client is still under development . Please send
+ additional ideas, comments or bug reports to
+schweller@bvu.edu
+<hr>
+
+<h3>Copyright Notice</h3>
+<pre>
+* Copyright (c) 1996-1997 Buena Vista University
+* This client is available free in executable format for non-commercial use.
+* Ken Schweller and the CollegeTown Moo development team reserve the sole
+* rights to modify and distribute this software.
+* This product is still under development and we do not guarantee it to be 
+* free of
+* bugs or to work correctly at all times. It is not designed for use in any
+* situation which is high risk or requires near fail-safe performance.
+</pre>
+
+

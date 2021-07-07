@@ -1,0 +1,125 @@
+This is MlTeX (2.01), C Version 3.1415 (C version 6.1) (format=latex 96.1.15)  21 JUN 1996 10:22
+**images.tex
+(images.tex
+LaTeX2e <1995/12/01> patch level 1
+
+(/unige/tex2e/local/lib/texmf/tex/latex2e/base/book.cls
+Document Class: book 1995/12/20 v1.3q Standard LaTeX document class
+(/unige/tex2e/local/lib/texmf/tex/latex2e/base/bk10.clo
+File: bk10.clo 1995/11/30 v1.3p Standard LaTeX file (size option)
+)
+\c@part=\count82
+\c@chapter=\count83
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+\c@figure=\count89
+\c@table=\count90
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/unige/tex2e/local/lib/texmf/tex/latex2e/base/makeidx.sty
+Package: makeidx 1995/04/19 v1.0j Standard LaTeX package
+) (/unige/tex2e/local/lib/texmf/tex/latex2e/supported/a4.sty
+Package: a4 1995/08/10 v1.2d A4 based page layout
+) (/unige/tex2e/local/lib/texmf/tex/latex2e/graphics/graphicx.sty
+Package: graphicx 1995/12/06 v0.6h Enhanced LaTeX Graphics (DPC,SPQR)
+(/unige/tex2e/local/lib/texmf/tex/latex2e/graphics/keyval.sty
+Package: keyval 1995/09/21 v1.09 key=value parser (DPC)
+) (/unige/tex2e/local/lib/texmf/tex/latex2e/graphics/graphics.sty
+Package: graphics 1995/12/06 v0.7g Standard LaTeX Graphics (DPC,SPQR)
+(/unige/tex2e/local/lib/texmf/tex/latex2e/graphics/trig.sty
+Package: trig 1994/10/16 v1.08 sin cos tan (DPC)
+) (/unige/tex2e/local/lib/texmf/tex/latex2e/graphics/graphics.cfg)
+Package graphics Info: Driver file: dvips.def on input line 82.
+(/unige/tex2e/local/lib/texmf/tex/latex2e/graphics/dvips.def
+File: dvips.def 1995/12/04 v2.14 Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+) (/unige/tex2e/local/lib/texmf/tex/latex2e/supported/changebar.sty
+Package: changebar 1995/06/27 v3.2b Indicate changes with marginal bars
+\cb@nextpoint=\count91
+\cb@currentpoint=\count92
+\cb@page=\count93
+\cb@pagecount=\count94
+\cb@odd=\dimen105
+\cb@even=\dimen106
+\changebarwidth=\skip43
+\deletebarwidth=\skip44
+\changebarsep=\skip45
+\c@changebargrey=\count95
+\cb@write=\write4
+\cb@read=\read1
+) (/home/schneide/tex/inputs/html.sty
+Package: html 1996/02/01 v1.0 hypertext commands for latex2html (nd, hs)
+\c@lpart=\count96
+\c@lchapter=\count97
+\c@lsection=\count98
+\c@lsubsection=\count99
+\c@lsubsubsection=\count100
+\c@lparagraph=\count101
+\c@lsubparagraph=\count102
+\c@lsubsubparagraph=\count103
+\c@lequation=\count104
+) (/home/schneide/tex/inputs/htmllist.sty)
+\@indexfile=\write5
+Writing index file images.idx
+\lthtmlwrite=\write6
+\sizebox=\box26
+(images.aux (/home/schneide/tecfamoo/book2/tf-local-edit.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+
+
+! LaTeX Error: Environment verbatime undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.124 \samepage \begin{verbatime}
+                                 >add "item 1" to holder
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{document} ended by \end{verbatime}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 \end{verbatime}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1
+
+
+] (images.aux) ) 
+Here is how much of TeX's memory you used:
+ 863 strings out of 10712
+ 10043 string characters out of 71821
+ 55227 words of memory out of 262141
+ 3908 multiletter control sequences out of 9500
+ 3640 words of font info for 14 fonts, out of 100000 for 255
+ 15 hyphenation exceptions out of 607
+ 25i,4n,21p,212b,130s stack positions out of 300i,100n,60p,3000b,4000s
+
+Output written on images.dvi (1 page, 348 bytes).

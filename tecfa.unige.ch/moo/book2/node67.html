@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>7.2 [TECFAMOO] Security - Trust and Distrust</TITLE>
+<META NAME="description" CONTENT="7.2 [TECFAMOO] Security - Trust and Distrust">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1519" HREF="node68.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1517" HREF="node65.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1511" HREF="node66.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1521" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1522" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1520" HREF="node68.html">7.3 [TECFAMOO] Multi-Ownership</A>
+<B>Up:</B> <A NAME="tex2html1518" HREF="node65.html">Quota and Security</A>
+<B> Previous:</B> <A NAME="tex2html1512" HREF="node66.html">7.1 [TECFAMOO]The Quota System</A>
+<BR> <P>
+<H1><A NAME="SECTION03420000000000000000">7.2 [<B>TECFA</B><TT>MOO</TT>] Security - Trust and Distrust</A></H1>
+<P>
+<A NAME="sectrust">&#160;</A>
+<P>
+(really under construction !!!)
+<P>
+The ``Trust'' system offers you more flexibility and allows collaborative work.
+The thre essential commands are:
+<SMALL CLASS=SMALL><PRE>   @trust &lt;source&gt; to &lt;event&gt; &lt;destination&gt; [for &lt;duration&gt;]
+   @distrust &lt;source&gt; to &lt;event&gt; &lt;destination&gt; [for &lt;duration&gt;]
+   @trust-list &lt;destination&gt;</PRE></SMALL>
+<P>
+First <code>@trust-list &lt;destination&gt;</code> will show you the list of
+events supported by <code>&lt;destination&gt;</code> as well as which classes are
+trusted/distrusted for each event. The term ``class'' means any
+object, or generic object, or special class (see below).
+<P>
+Example:
+<SMALL CLASS=SMALL><PRE>&gt;@trust-l me
+
+Trust -- Janus (#11) &lt;~Janus&gt;
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+build
+=====
+Classes trusted to build object can describe the object,
+set the messages, changes the name, aliases, ... of the object.
+  +Trusted   : owners
+
+mail
+====
+Classes trusted to mail the user.
+  +Trusted   : everything.
+
+move
+====
+Classes trusted to move the object.
+  +Trusted   : everything.
+
+[... and so on ...]</PRE></SMALL>
+<P>
+This means means that everyone can mail me. But that only I can describe me.
+<P>
+Now the list of trusted/distrusted classes can be changed with the
+@trust and @distrust commands.
+<SMALL CLASS=SMALL><PRE>Example:
+
+@distrust $everything to move me
+(Now no one but me can move myself.)
+
+@distrust $guest to mail me
+(Now everything but guests can send me mail.)
+
+@trust ~Charlotte to build me
+(Now Charlotte can change my description, name, ...)</PRE></SMALL>
+<P>
+As you can see a class can be various things... a generic <code>($guest)</code>, a
+special class <code>($everything)</code> or an object/player <code>(~Charlotte)</code>.
+<P>
+So far the special classes are:
+<SMALL CLASS=SMALL><PRE>$everything  =&gt; objects/generics/special classes... everything!
+admins       =&gt; administrators
+owners       =&gt; players that own &lt;destination&gt;
+programmers  =&gt; objects with a prog bit
+players      =&gt; objects with a player bit</PRE></SMALL>
+<P>
+The trust/distrust system allow you to have more controls over ``who can
+do what'' on your stuff.  Right now it offers you controls about who
+can enter your rooms, move your objects, send you mail, page you,
+build with you...
+<P>
+More to come. Adding new events is fairly easy. Please let me know
+what events you would like to be supported and what event scope you
+would like to be extended...
+<P>
+As always... comments/suggestions/... are welcome ! Janus
+<P>
+WARNING I strongly suggest you never:
+<SMALL CLASS=SMALL><PRE> @trust &lt;whoever&gt; to OWN &lt;whatever&gt; ***</PRE></SMALL>
+<P>
+The own event will be usefull for multiple ownership when the sytem
+will be open to the public... meanwhile, don't use it. If you use the
+OWN event, do it at your own risk and don't whine someone recycled
+your stuff...
+<P>
+All the other events are ok :)
+<P>
+P.S. the @refuse commands have been deleted, use @distrust instead
+(works the same, but it is easier to maintain from a programmer point
+of view).
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

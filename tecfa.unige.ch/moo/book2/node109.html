@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>10.1 Introduction to the MOO system</TITLE>
+<META NAME="description" CONTENT="10.1 Introduction to the MOO system">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2115" HREF="node110.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2113" HREF="node108.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2107" HREF="node108.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2117" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2118" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2116" HREF="node110.html">10.2 The MOO Programming </A>
+<B>Up:</B> <A NAME="tex2html2114" HREF="node108.html">Elements of the MOO </A>
+<B> Previous:</B> <A NAME="tex2html2108" HREF="node108.html">Elements of the MOO </A>
+<BR> <P>
+<H1><A NAME="SECTION04310000000000000000">10.1 Introduction to the MOO system</A></H1>
+<P>
+<A NAME="secintroMOOsys">&#160;</A>
+<P>
+Text for this section is mostly stolen from the
+<A NAME="tex2html199" HREF="http://tecfa.unige.ch/guides/MOO/ProgMan/ProgrammersManual_1.html">Introduction</A> to the MOO Programmer's Manual.
+<P>
+LambdaMOO is a network-accessible, multi-user, programmable,
+interactive system well-suited to the construction of text-based
+adventure games, conferencing systems, and other collaborative
+software.
+<P>
+Participants (users, characters) connect to LambdaMOO
+using Telnet or some other, more specialized, client program.
+(See section <A HREF="node12.html#secClients">1.4</A> on page <A HREF="node12.html#secClients"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>).
+Upon
+connection, they are usually presented with a welcome message
+explaining how to either create a new character or connect to an
+existing one.  Characters are the embodiment of players in the virtual
+reality that is LambdaMOO.
+<P>
+Having connected to a character, players then give one-line commands
+that are parsed and interpreted by LambdaMOO as appropriate. Such
+commands may cause changes in the virtual reality, such as the
+location of a character, or may simply report on the current state of
+that reality, such as the appearance of some object.
+<P>
+The job of interpreting those commands is shared between the two major
+components in the LambdaMOO system: the <b>server</b> and the <b>database</b>. The
+server is a program, written in C, that
+manages the network connections, maintains queues of commands and
+other tasks to be executed, controls all access to the database, and
+executes other programs written in the MOO programming language. The
+database contains representations of all the objects in the virtual
+reality, including the MOO programs that the server executes to give
+those objects their specific behaviors.
+<P>
+Almost every command is parsed by the server into a call on a MOO
+procedure, or verb, that actually does the work. Thus, programming in
+the MOO language is a central part of making non-trivial extensions to
+the database and thus, the virtual reality.
+<P>
+Therefore, one needs to learn three things:
+<OL>
+<LI> The MOO Programming language itself.
+<LI> Extensions to the language that are included in the database you
+are using: libraries for doing common and rather low-level things.
+<LI> How to use a core data base: A MOO without
+core is totally useless (unless you
+are an expert MOO programmer with a lot of free time), besides
+the above utilities it includes about 70 to 100 generic objects that will
+allow you to start building a virtual world, such as:
+<UL>
+<LI> Rooms and exits
+<LI> Different user classes
+<LI> The mail system
+<LI> Editing tools
+</UL>
+Most MOOs are derived from Lambda Core, but documentation is not always
+easy to obtain off-MOO. The 
+<A NAME="tex2html200" HREF="http://tecfa.unige.ch/cgi-bin/info2www?(LambdaCoreManual.info)">LambdaCore User's Manual</A> and the
+<A NAME="tex2html201" HREF="http://tecfa.unige.ch/cgi-bin/info2www?(LambdaProgMan.info)Top">Programmer's Manual</A>
+are outdated, but still might be useful.
+In most cases it is best to use the ``in-MOO'' help which is more up-to-date
+than those manuals.
+</OL><HR><A NAME="tex2html2115" HREF="node110.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2113" HREF="node108.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2107" HREF="node108.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2117" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2118" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html2116" HREF="node110.html">10.2 The MOO Programming </A>
+<B>Up:</B> <A NAME="tex2html2114" HREF="node108.html">Elements of the MOO </A>
+<B> Previous:</B> <A NAME="tex2html2108" HREF="node108.html">Elements of the MOO </A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

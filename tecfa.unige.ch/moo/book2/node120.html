@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>10.7 Permissions (by Defender)</TITLE>
+<META NAME="description" CONTENT="10.7 Permissions (by Defender)">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2244" HREF="node121.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2242" HREF="node108.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2238" HREF="node119.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2246" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2247" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2245" HREF="node121.html">More on Permissions</A>
+<B>Up:</B> <A NAME="tex2html2243" HREF="node108.html">Elements of the MOO </A>
+<B> Previous:</B> <A NAME="tex2html2239" HREF="node119.html">10.6 Expressionsstatements, commands, </A>
+<BR> <P>
+<H1><A NAME="SECTION04370000000000000000">10.7 Permissions (by Defender)</A></H1>
+<P>
+<A NAME="secpermissions">&#160;</A>
+<A NAME=1593>&#160;</A>
+<P>
+<EM>Acknowledgement:</EM> This text is a formatted
+version of a message posted to *programmers on (now defunct) Worldmoo on
+Sat Mar  4 07:50:23 1995 PST by Defender (#160)
+<OL>
+<LI> Every object, verb, and property has an owner.
+<LI> Verbs are executed with a 'set of permissions', or a flag
+  indicating which player owns the task.  Any verb you write will
+  normally run with your permissions, which means it can affect things
+  you own.  Wizards can use a built-in function called
+  set_task_perms(), documented, to change the permissions of a
+  particular verb's execution.  This doesn't change the verb
+  ownership, nor does it change permissions for other verbs.  Normally
+  you don't need to worry about that.
+<LI> A verb with the permissions of the owner of something, or a
+  wizard's permissions, can affect that something (read its value or
+  write to it).  For instance, you can create verbs and properties on
+  objects you own, because the creative verbs run with your
+  permissions.
+<LI> Everything (objects, verbs, and properties) have a set of
+  possible 'permission bits', which control access to them.  Two of
+  these potential bits are always R and W (for Readable and Writable).
+  For verbs whose permissions aren't the owner and aren't wizardly,
+  these flags are important.
+<LI> If the R bit for something is set, any set of permissions can
+  read it.  For example, if a verb you write has its R bit set,
+  anybody can read the verb code.  If it is not set, the
+  object/verb/property is said to be &quot;E_PERM'ed&quot;, referring to the
+  error code E_PERM (Permission Denied), which will be returned upon
+  attempts to read the value.  Unless you are deliberately needing to
+  hide some information, it is good practice to make things readable
+  by setting the R bit.
+<LI> If the W bit for something is set, any set of permissions can
+  write to it.  For example, if you have a property whose W bit is
+  set, anybody can set the property value to anything they want, or
+  remove it altogether.  The W bit is almost never set, and should NOT
+  be set for verbs in particular.
+<LI> What reading and writing mean depends on what you are dealing
+  with.
+</OL>
+<SMALL CLASS=SMALL><PRE>            WHAT READABILITY MEANS      WHAT WRITABILITY MEANS
+Objects:    You can use verbs() and     You can define your own verbs
+            properties() directly to    and properties on the object,
+            read the list of verbs and  which will be owned by you.
+            properties directly.
+Verbs:      You can use verb_info(),    You can change the arguments,
+            verb_args(), and            names, and program code for the
+            verb_code() on the verb,    verb in question, using @edit
+            and you can @list the code. for example.
+Properties: You can see the permissions You can change the permissions
+            and value for the property. and value for the property.</PRE></SMALL>
+<P>
+<BR> <HR>
+<UL><A NAME="CHILD_LINKS">&#160;</A>
+<LI> <A NAME="tex2html2248" HREF="node121.html#SECTION04371000000000000000">More on Permissions</A>
+</UL>
+<HR><A NAME="tex2html2244" HREF="node121.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2242" HREF="node108.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2238" HREF="node119.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2246" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2247" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html2245" HREF="node121.html">More on Permissions</A>
+<B>Up:</B> <A NAME="tex2html2243" HREF="node108.html">Elements of the MOO </A>
+<B> Previous:</B> <A NAME="tex2html2239" HREF="node119.html">10.6 Expressionsstatements, commands, </A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

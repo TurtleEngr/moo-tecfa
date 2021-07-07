@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>More on Permissions</TITLE>
+<META NAME="description" CONTENT="More on Permissions">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2255" HREF="node122.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2253" HREF="node120.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2249" HREF="node120.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2257" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2258" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2256" HREF="node122.html">Issues in MOO Programming</A>
+<B>Up:</B> <A NAME="tex2html2254" HREF="node120.html">10.7 Permissions (by Defender)</A>
+<B> Previous:</B> <A NAME="tex2html2250" HREF="node120.html">10.7 Permissions (by Defender)</A>
+<BR> <P>
+<H2><A NAME="SECTION04371000000000000000">More on Permissions</A></H2>
+<P>
+<A NAME="secmoreonpermissions">&#160;</A>
+<P>
+Brief review of permission bits:
+<P>
+<H4><A NAME="SECTION04371010000000000000">Objects - rwf</A></H4>
+<P>
+<DL ><DT><STRONG>r</STRONG>
+<DD> anyone can get a list of verbs and props on your obj.  This doesn't mean they can actually read those verbs or props.  (That is handled by the permissions of those verbs and props).
+<P>
+<DT><STRONG>f</STRONG>
+<DD> fertile
+<P>
+<DT><STRONG>w</STRONG>
+<DD> if the object is writable, this means that anyone could add or remove verbs or props from your object, even if your object is not readable.
+<P>
+ </DL><H4><A NAME="SECTION04371020000000000000">Verbs - rdxw</A></H4>
+<P>
+<DL ><DT><STRONG>r</STRONG>
+<DD> the verb is readable, anyone can @list your verb
+<P>
+<DT><STRONG>d</STRONG>
+<DD> debug bit.  This means if verb hits an error, you get a
+  traceback.
+<P>
+<DT><STRONG>x</STRONG>
+<DD> can the verb be called from other verbs (executable)
+<P>
+<DT><STRONG>w</STRONG>
+<DD> the verb is world writable.  This means that anyone can change
+  your verb code, but it still runs under the original author's
+  permissions.  This is almost always a BAD THING (tm).
+<P>
+ </DL><H4><A NAME="SECTION04371030000000000000">Properties - rcw</A></H4>
+<P>
+<DL ><DT><STRONG>r</STRONG>
+<DD> the property is world readable.
+<P>
+<DT><STRONG>w</STRONG>
+<DD> this means that anyone can write to your property (ie. change
+  the value of your prop).  Generally, w permission bits, whether on
+  objs, verbs or props, is not a great idea, though of the 3, a +w
+  prop is probably the least problematic, though I suppose it depends
+  on how much of a problem you think someone changing the value of
+  your prop might present.  ;-)
+<P>
+<DT><STRONG>c</STRONG>
+<DD> this is perhaps the trickiest, (initially) of the different
+  permission bits.  If a prop is +c, anyone who creates a @kid of your
+  object, will own the property.  This means that they can directly
+  change it, but also means that your verbs will no longer have
+  permission to change it.  So, the owner of a kid could change the
+  prop with eval, or change the prop using @set.  If you want YOUR
+  verbs to be able to change the property, then you want so set the
+  prop !c, so that you will be the owner of the prop for any kids.  If
+  anyone needs or wants any clarification on any of this.
+<P>
+ </DL><HR><A NAME="tex2html2255" HREF="node122.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2253" HREF="node120.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2249" HREF="node120.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2257" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2258" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html2256" HREF="node122.html">Issues in MOO Programming</A>
+<B>Up:</B> <A NAME="tex2html2254" HREF="node120.html">10.7 Permissions (by Defender)</A>
+<B> Previous:</B> <A NAME="tex2html2250" HREF="node120.html">10.7 Permissions (by Defender)</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

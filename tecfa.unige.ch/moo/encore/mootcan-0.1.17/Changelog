@@ -1,0 +1,34 @@
+02. December 1999
+
+	MOOtcan-0.1.17
+
+		* javadoc images are now included
+
+	
+27. October 1999
+
+	MOOtcan-0.1.16
+
+		* fixes modes to not issue a command if nothing in addition to command is
+			entered.
+
+		* first checkbox is always enabled
+
+
+30. September 1999
+
+	MOOtcan-0.1.12
+
+		* Changelog started
+		
+		* new button to allow choosing between normal / talk / emote - modes
+		
+		* inputarea: pressing page down will give a new blank line, but keep the old
+			one	in history for later usage
+
+		* users will be told when connection can't be made, due to firewalls etc
+		
+		* compability with java-1.0.2 is probably good
+
+		* Page Up / Page Down works in all browsers
+	

@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Customizing your room</TITLE>
+<META NAME="description" CONTENT="Customizing your room">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1246" HREF="node46.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1244" HREF="node42.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1238" HREF="node44.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1248" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1249" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1247" HREF="node46.html">Advanced building</A>
+<B>Up:</B> <A NAME="tex2html1245" HREF="node42.html">4.2 Rooms and exits</A>
+<B> Previous:</B> <A NAME="tex2html1239" HREF="node44.html">Dealing with exits</A>
+<BR> <P>
+<H2><A NAME="SECTION03123000000000000000">Customizing your room</A></H2>
+<P>
+<A NAME="seccustroom">&#160;</A>
+<P>
+Assume that you are the proud owner of at least one room.
+<P>
+<H4><A NAME="SECTION03123010000000000000">Declaring a home</A></H4>
+<P>
+One thing
+you may want to do right now is declaring one of those rooms as
+your ``home''. Note that you can only ``live'' in a room you own
+or in a room where its owner has added you to the list of potential
+residents.
+<P>
+<SMALL CLASS=SMALL><PRE>@sethome</PRE></SMALL>
+<P>
+will tell the MOO that the current room is your home, meaning that:
+<UL>
+<LI> 
+  you will wake up in this room once you connect
+<LI> the 'home' verb will teleport you to this place from any place
+in the room.
+<P>
+</UL><H4><A NAME="SECTION03123020000000000000">Describing your home</A></H4>
+<P>
+Next, you want to describe each room you own. You can do this in three
+ways:
+<P>
+<OL>
+<LI> If you have simple MOO client (like Muddweller, Mudwin, tf, a Java applet) beginners should use the <code>@describe command</code>. If you are in the room,
+you simply would type:
+<SMALL CLASS=SMALL><PRE>   @describe here as ......
+   
+   example: @describe here as &quot;A lovely park with thousands of pink flowers&quot;</PRE></SMALL>
+<LI> If you have a simple client, type <code>@notedit here</code> or 
+<code>@notedit #xxxx</code> (if you are not inside the room) and learn how
+to use the built-in MOO editor, e.g. type <code>'look here'</code> once 
+you are inside the MOO editor.
+<LI> If you have a serious MOO client like an (emacs mode or tkMOO lite)
+type <code>@edit here</code>, type in your description and ship back the
+result to the MOO. Read the documentation of your client and tell
+the MOO to use ``local editing'' by typing <code>'@editoptions +local'</code>.
+See sections <A HREF="node152.html#secediting">16.1.1</A> and <A HREF="node12.html#secClients">1.4</A> 
+for more details on how to edit things!
+<P>
+</OL><BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

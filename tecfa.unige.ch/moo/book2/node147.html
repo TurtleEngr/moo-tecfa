@@ -1,0 +1,391 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>15.1 FUP server builtin functions</TITLE>
+<META NAME="description" CONTENT="15.1 FUP server builtin functions">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2581" HREF="node148.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2579" HREF="node146.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2573" HREF="node146.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2583" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2584" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2582" HREF="node148.html">15.2 [TECFAMOO] The file_handler </A>
+<B>Up:</B> <A NAME="tex2html2580" HREF="node146.html">The File Utilities Package</A>
+<B> Previous:</B> <A NAME="tex2html2574" HREF="node146.html">The File Utilities Package</A>
+<BR> <P>
+<H1><A NAME="SECTION04810000000000000000">15.1 FUP server builtin functions</A></H1>
+<P>
+<A NAME="secfupprimitives">&#160;</A>
+<A NAME=1793>&#160;</A>
+<P>
+This section is a slightly modified version of
+the <A NAME="tex2html313" HREF="../FUP-doc/FUP-readme.text">README</A> file of the FUP 1.8 distribution.
+<P>
+<H4><A NAME="SECTION04810010000000000000">Security:</A></H4>
+<P>
+All the built-in functions provided in the File Utilities Package used to 
+require wizardly permissions, but since version 1.4 this is left to the 
+database. Take a look to the file_handler file for an example of the 
+implementation of permissions at the database level.
+<P>
+A simple <code>$file_handler</code> wrapper is provided. A more complex version,
+including a disk-quota system, is available too.
+Additionally, file read/write operations are allowed only over the directory
+subtree rooted at the 'base directory', called 'files' by default, and
+execute operations are allowed only from the directory called 'bin' by default.
+To achieve this, all paths are stripped of spaces, and then rejected if:
+<UL>
+<LI> the first character is a '/' or a '.'
+<LI> OR the path includes the substring '/.'.
+<P>
+</UL><H4><A NAME="SECTION04810020000000000000">List of primitives provided:</A></H4>
+<P>
+<A NAME=1800>&#160;</A>
+* denotes that the function is optional at compile time
+<DL ><DT><STRONG>A: Modify files:</STRONG>
+<DD> 
+filewrite (<A HREF="node147.html#fupfilewrite"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>),
+fileappend (<A HREF="node147.html#fupfileappend"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>),
+filedelete (<A HREF="node147.html#fupfiledelete"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>),
+filerename (<A HREF="node147.html#fupfilerename"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>),
+*filechmod (<A HREF="node147.html#fupfilechmod"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>),
+filemkdir (<A HREF="node147.html#fupfilemkdir"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>),
+filermdir (<A HREF="node147.html#fupfilermdir"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>)
+<P>
+<DT><STRONG>B: Gather information:</STRONG>
+<DD>
+fileversion (<A HREF="node147.html#fupfileversion"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>),
+fileread (<A HREF="node147.html#fupfileread"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>),
+fileexists (<A HREF="node147.html#fupfileexists"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>),
+filelength (<A HREF="node147.html#fupfilelength"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>),
+filesize (<A HREF="node147.html#fupfilesize"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>),
+filelist (<A HREF="node147.html#fupfilelist"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>),
+filegrep (<A HREF="node147.html#fupfilegrep"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>),
+fileextract (<A HREF="node147.html#fupfileextract"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>),
+fileinfo (<A HREF="node147.html#fupfileinfo"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>),
+fileerror (<A HREF="node147.html#fupfileerror"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>)
+<P>
+<DT><STRONG>C: Execute commands:</STRONG>
+<DD> 
+*filerun (<A HREF="node147.html#fupfilerun"><IMG  ALIGN=BOTTOM ALT="gif" SRC="http://tecfa.unige.ch/gif/tex2html//cross_ref_motif.gif"></A>)
+<P>
+ </DL>
+<P>
+<b>Standard return errors:</b>
+<UL>
+<LI> Any primitive called with incorrect number of arguments returns
+  E_ARGS.
+<LI> Any primitive called with arguments of the wrong type returns
+  E_INVARG.
+<LI> Any primitive called by a programmer that isn't a wizard returns
+  E_PERM.
+<LI> Any attempt to access a file outside the hierarchy returns
+  E_PERM.
+<LI> Any attempt to access a file that doesn't exist returns
+  E_INVARG. (Except for fileexists, see below.)
+<LI> Any attempt to remove a directory that doesn't exist returns
+  E_INVIND.
+</UL>
+<P>
+To make the description easier, we'll assume we have the following files:
+<SMALL CLASS=SMALL><PRE> files/notes
+            /foo.text   &lt;-- this is a text file
+            /foox.test  &lt;-- this is a text file
+            /bar        &lt;-- this is an empty subdirectory
+ files/misc</PRE></SMALL>
+<P>
+We'll also assume that foo.text reads:
+<SMALL CLASS=SMALL><PRE>+--
+|  Copyright (c) 1994 Weizmann Institute. All rights reserved.
+|  This file documents the File Utilities Package developed and written by
+|  Jaime Prilusky and Gustavo Glusman, Weizmann Institute of Science, Israel.
+|  For questions, suggestions and comments, please  send email to
+|  lsprilus@weizmann.weizmann.ac.il (Jaime Prilusky)
+|  Gustavo@bioinformatics.weizmann.ac.il (Gustavo Glusman)
++--</PRE></SMALL>
+<P>
+and foox.test reads:
+<SMALL CLASS=SMALL><PRE>+--
+| line 1
+| line 2
+| end
++--</PRE></SMALL>
+<P>
+<DL ><DT><STRONG>fileversion</STRONG>
+<DD>
+<A NAME="fupfileversion">&#160;</A>
+<code>str fileversion()</code>
+<P>
+Returns a string representing the version of the currently installed
+FUP.  The format is x.y, where x is the major release number and y is
+the minor release number.
+<SMALL CLASS=SMALL><PRE>Example: fileversion() =&gt; &quot;1.8&quot;</PRE></SMALL>
+<P>
+<DT><STRONG>fileexists</STRONG>
+<DD>
+<A NAME="fupfileexists">&#160;</A>
+<code>num fileexists(str PATH, str NAME)</code>
+<P>
+Returns 1 iff files/PATH/NAME exists, 0 otherwise.
+<P>
+<SMALL CLASS=SMALL><PRE>Examples: 
+fileexists(&quot;notes&quot;,&quot;foo.text&quot;) =&gt; 1
+fileexists(&quot;misc&quot;,&quot;foox.test&quot;) =&gt; 0</PRE></SMALL>
+<P>
+<DT><STRONG>fileerror</STRONG>
+<DD>
+<A NAME="fupfileerror">&#160;</A>
+<code>str fileerror()</code>
+<P>
+Returns a string describing the UNIX error message,
+which reports the last error encountered during a call to a system or
+library function.  
+<SMALL CLASS=SMALL><PRE>Examples: 
+fileerror() =&gt; &quot;Error 0&quot; (No error)
+fileerror() =&gt; &quot;Interrupted system call&quot; 
+fileerror() =&gt; &quot;No such file or directory&quot;</PRE></SMALL>
+<P>
+<DT><STRONG>fileinfo</STRONG>
+<DD>
+<A NAME="fupfileinfo">&#160;</A>
+<code>list fileinfo(str PATH, str NAME)</code>
+<P>
+Returns a list with assorted system
+information about the relevant file/directory.
+<P>
+<SMALL CLASS=SMALL><PRE>Examples:
+fileinfo(&quot;notes&quot;,&quot;&quot;) =&gt; {512, &quot;dir&quot;, &quot;755&quot;, &quot;lsprilus&quot;, &quot;staff&quot;,
+  788541296, 788346820, 788346820} 
+fileinfo(&quot;notes&quot;,&quot;foo.text&quot;)
+ =&gt; {376, &quot;reg&quot;, &quot;644&quot;, &quot;lsprilus&quot;, &quot;staff&quot;, 788541674, 788541674, 788541674}</PRE></SMALL>
+<P>
+The information provided is: size, type, mode, owner,
+group, file last access time, file last modify time, and file last
+change time. Check 'man stat' for more info.
+<P>
+<DT><STRONG>filechmod</STRONG>
+<DD>
+<A NAME="fupfilechmod">&#160;</A>
+<code>str filechmod(str PATH, str NAME, str MODE)</code>
+<P>
+Sets the mode of the relevant file/directory. 
+<SMALL CLASS=SMALL><PRE>Examples:
+filechmod(&quot;notes&quot;,&quot;foo.text&quot;,&quot;bleh&quot;) =&gt; &quot;644&quot; 
+   (This just returns the existing value.) 
+filechmod(&quot;notes&quot;,&quot;foo.text&quot;,&quot;640&quot;) =&gt; &quot;640&quot; 
+   (It returns the new value.)</PRE></SMALL>
+<P>
+<DT><STRONG>filelist</STRONG>
+<DD>
+<A NAME="fupfilelist">&#160;</A>
+<code>list filelist(str PATH [, str NAME])</code>
+<P>
+Returns the list of files and
+subdirectories in files/PATH, not recursively.  If NAME is provided,
+only files matching NAME as regexp will be returned.  All existing
+subdirectories will be returned in any case.  
+<SMALL CLASS=SMALL><PRE>Examples:
+filelist(&quot;&quot;) =&gt; {{},{&quot;notes&quot;,&quot;misc&quot;}} 
+filelist(&quot;notes&quot;) =&gt; {{&quot;foo.text&quot;,&quot;foox.test&quot;},{&quot;bar&quot;}} 
+filelist(&quot;notes/bar&quot;) =&gt; {{},{}}
+filelist(&quot;notes&quot;,&quot;oo.%.&quot;)   =&gt; {{&quot;foox.test&quot;},{&quot;bar&quot;}}
+filelist(&quot;misc&quot;) =&gt; {{},{}}</PRE></SMALL>
+<P>
+<DT><STRONG>filelength</STRONG>
+<DD>
+<A NAME="fupfilelength">&#160;</A>
+<code>num filelength(str PATH, str NAME)</code>
+<P>
+Returns the number of lines of files/PATH/NAME.  
+<SMALL CLASS=SMALL><PRE>Example: 
+filelength(&quot;notes&quot;,&quot;foo.text&quot;) =&gt; 6</PRE></SMALL>
+<P>
+<DT><STRONG>filesize</STRONG>
+<DD>
+<A NAME="fupfilesize">&#160;</A>
+<code>num filesize(str PATH, str NAME)</code>
+<P>
+Returns the number of characters of files/PATH/NAME.  
+<SMALL CLASS=SMALL><PRE>Example: filesize(&quot;notes&quot;,&quot;foo.text&quot;) =&gt; 388</PRE></SMALL>
+<P>
+<DT><STRONG>filedelete</STRONG>
+<DD>
+<A NAME="fupfiledelete">&#160;</A>
+<code>num filedelete(str PATH, str NAME)</code>
+<P>
+Irretrievably deletes files/PATH/NAME.  
+<SMALL CLASS=SMALL><PRE>Example: filedelete(&quot;notes&quot;,&quot;foo.text&quot;) =&gt; 1 if successful.</PRE></SMALL>
+<P>
+<DT><STRONG>filemkdir</STRONG>
+<DD>
+<A NAME="fupfilemkdir">&#160;</A>
+<code>num filemkdir(str PATH, str NAME)</code>
+<P>
+Creates a new directory:  files/PATH/NAME.  
+<SMALL CLASS=SMALL><PRE>Example: filemkdir(&quot;notes&quot;,&quot;mydir&quot;) =&gt; 1 if  successful.</PRE></SMALL>
+<P>
+<DT><STRONG>filermdir</STRONG>
+<DD>
+<A NAME="fupfilermdir">&#160;</A>
+<code>num filermdir(str PATH, str NAME)</code>
+<P>
+Removes the directory: files/PATH/NAME, if it's empty.  
+<SMALL CLASS=SMALL><PRE>Example: 
+filermdir(&quot;notes&quot;,&quot;mydir&quot;)  =&gt; 1 if successful.  
+filermdir(&quot;notes&quot;,&quot;mydir&quot;) =&gt; E_PERM if unsuccessful.</PRE></SMALL>
+<P>
+Hint: use fileerror() to find the reason for failure.
+<P>
+<DT><STRONG>filerename</STRONG>
+<DD>
+<A NAME="fupfilerename">&#160;</A>
+<code>num filerename(str PATH, str OLDNAME, str NEWNAME)</code>
+<P>
+Renames files/PATH/OLDNAME to NEWNAME.
+<P>
+<SMALL CLASS=SMALL><PRE>Example:
+  filerename(&quot;notes&quot;,&quot;foo.text&quot;,&quot;blah.blah&quot;) =&gt; 1 if successful.</PRE></SMALL>
+<P>
+<DT><STRONG>fileread</STRONG>
+<DD>
+<A NAME="fupfileread">&#160;</A>
+<code>list fileread(str PATH, str NAME [, num START [, num END]])</code>
+<P>
+Returns
+  a list of strings which represent lines read from files/PATH/NAME,
+  from START to END, which default to the beginning and the end of the
+  file respectively.
+<P>
+<SMALL CLASS=SMALL><PRE>Examples:
+fileread(&quot;notes&quot;,&quot;foox.test&quot;) =&gt; {&quot;line 1&quot;,&quot;line 2&quot;,&quot;end&quot;} 
+fileread(&quot;notes&quot;,&quot;foox.test&quot;,2) =&gt; {&quot;line 2&quot;,&quot;end&quot;}
+fileread(&quot;notes&quot;,&quot;foox.test&quot;,2,2) =&gt; {&quot;line 2&quot;}
+fileread(&quot;notes&quot;,&quot;foox.test&quot;,3,2) =&gt; {}
+fileread(&quot;notes&quot;,&quot;foox.test&quot;,5,6) =&gt; {}</PRE></SMALL>
+<P>
+<DT><STRONG>fileappend</STRONG>
+<DD>
+<A NAME="fupfileappend">&#160;</A>
+<code>num fileappend(str PATH, str NAME, list TEXT)</code>
+<P>
+Appends TEXT to
+  files/PATH/NAME.  Creates the file if it didn't exist previously.
+<SMALL CLASS=SMALL><PRE>Examples: 
+fileappend(&quot;notes&quot;,&quot;foox.test&quot;,{&quot;hehe&quot;,&quot;hoho&quot;}) =&gt; 1 if  successful.</PRE></SMALL>
+<P>
+<DT><STRONG>filewrite</STRONG>
+<DD>
+<A NAME="fupfilewrite">&#160;</A>
+<code>num filewrite(str PATH, str NAME, list TEXT [, num START [, num END]])</code>
+<P>
+Writes TEXT on files/PATH/NAME.  Creates the file if it
+  didn't exist previously.  Assuming LENGTH is the number of lines in
+  TEXT:
+  <UL>
+<LI> If neither START nor END are provided, the file is overwritten
+    with TEXT.
+<LI> If START is provided, but END isn't, LENGTH lines of
+    the file starting from START are overwritten with TEXT.  This may
+    extend the file length.
+<LI> If both START and END are provided, the
+    lines from START to END are replaced with TEXT. This may extend
+    the file length or reduce it.  If the operation succeeds, it
+    returns 1.
+</UL>
+<SMALL CLASS=SMALL><PRE>Examples: (the operations are not sequential. 
+The file starts as: {&quot;line 1&quot;,&quot;line 2&quot;,&quot;end&quot;}) 
+Operation                                      File contents  after 
+filewrite(&quot;notes&quot;,&quot;foox.test&quot;,{&quot;test&quot;})        {&quot;test&quot;}
+filewrite(&quot;notes&quot;,&quot;foox.test&quot;,{&quot;te&quot;,&quot;st&quot;},2)   {&quot;line 1&quot;,&quot;te&quot;,&quot;st&quot;}
+filewrite(&quot;notes&quot;,&quot;foox.test&quot;,{&quot;te&quot;,&quot;st&quot;},2,2) {&quot;line 1&quot;,&quot;te&quot;,&quot;st&quot;,&quot;end&quot;}
+filewrite(&quot;notes&quot;,&quot;foox.test&quot;,{&quot;test&quot;},2,3)    {&quot;line 1&quot;,&quot;test&quot;} 
+filewrite(&quot;notes&quot;,&quot;foox.test&quot;,{},2,2)          {&quot;line 1&quot;,&quot;end&quot;}</PRE></SMALL>
+<P>
+<DT><STRONG>filegrep</STRONG>
+<DD>
+<A NAME="fupfilegrep">&#160;</A>
+<code>list filegrep(str PATH, str NAME, str REGEXP [, str SWITCHES])</code>
+<P>
+Returns a list of strings and line numbers, which represent lines
+read from files/PATH/NAME, and that match REGEXP.  SWITCHES defaults
+to &quot;s&quot;.
+<UL>
+<LI> If SWITCHES includes &quot;s&quot;, the matching lines will be returned.
+<LI> If SWITCHES includes &quot;n&quot;, the numbers of the matching lines will be
+  returned.
+<LI> If SWITCHES includes &quot;v&quot;, the condition is reversed, and
+  lines not matching will be returned.
+</UL>
+<P>
+<SMALL CLASS=SMALL><PRE>Examples:
+filegrep(&quot;notes&quot;,&quot;foo.text&quot;,&quot;Weizmann&quot;)
+ =&gt; {{&quot; Copyright (c) 1994
+    Weizmann Institute. All rights reserved.&quot;, &quot; Jaime Prilusky and
+    Gustavo Glusman, Weizmann Institute of Science, Israel.&quot;, &quot;
+    lsprilus@weizmann.weizmann.ac.il (Jaime Prilusky)&quot;, &quot;
+    Gustavo@bioinformatics.weizmann.ac.il (Gustavo Glusman)&quot;},
+    {}}
+filegrep(&quot;notes&quot;,&quot;foo.text&quot;,&quot;Weizmann&quot;,&quot;n&quot;) 
+  =&gt; {{}, {1, 3, 5, 6}}
+filegrep(&quot;notes&quot;,&quot;foo.text&quot;,&quot;Weizmann&quot;,&quot;ns&quot;) 
+  =&gt; {{&quot; Copyright (c)
+      1994 Weizmann Institute. All rights reserved.&quot;, &quot; Jaime Prilusky
+      and Gustavo Glusman, Weizmann Institute of Science, Israel.&quot;, &quot;
+      lsprilus@weizmann.weizmann.ac.il (Jaime Prilusky)&quot;, &quot;
+      Gustavo@bioinformatics.weizmann.ac.il (Gustavo Glusman)&quot;},
+      {1, 3, 5, 6}}
+filegrep(&quot;notes&quot;,&quot;foo.text&quot;,&quot;Weizmann&quot;,&quot;vn&quot;) =&gt; {{},{2, 4, 7, 8}}</PRE></SMALL>
+<P>
+<DT><STRONG>fileextract</STRONG>
+<DD>
+<A NAME="fupfileextract">&#160;</A>
+<code>list fileextract(str PATH, str NAME, str REGEXP1, str REGEXP2 [, str REGEXP3])</code>
+<P>
+ Returns a list of starts and ends of sections of
+  files/PATH/NAME, that fulfill the following requirements:
+  <UL>
+<LI> the first line of the section matches REGEXP1,
+<LI> the last line of the section matches REGEXP2,
+<LI> and at least one line of the section
+    matches REGEXP3, if provided.
+<LI> If a line matches REGEXP1 and
+    REGEXP2 (and REGEXP3 if provided), it can constitute a section by
+    itself.
+</UL>
+<SMALL CLASS=SMALL><PRE>Examples: 
+fileextract(&quot;notes&quot;,&quot;foo.text&quot;,&quot;a&quot;,&quot;x&quot;) =&gt; {{}, {}} 
+     (there isn't a line with an &quot;x&quot;)
+fileextract(&quot;notes&quot;,&quot;foo.text&quot;,&quot;Copy&quot;,&quot;email&quot;) =&gt; {{1}, {4}}
+     (the  section from line 1 to line 4 fits)
+fileextract(&quot;notes&quot;,&quot;foo.text&quot;,&quot;a&quot;,&quot;b&quot;) =&gt; {{1, 3}, {2, 6}}
+     (the sections from line 1 to line 2 and from line 3 to line 6 fit)
+fileextract(&quot;notes&quot;,&quot;foo.text&quot;,&quot;a&quot;,&quot;b&quot;,&quot;est&quot;) =&gt; {{3}, {6}}
+     (of these, only the section from 3 to 6 has a line that matches &quot;est&quot;)</PRE></SMALL>
+<P>
+<DT><STRONG>filerun</STRONG>
+<DD>
+<A NAME="fupfilerun">&#160;</A>
+<code>num filerun(str EXECUTABLE [, list {str PATH1, str INFILE} [, list {str PATH2, str OUTFILE} [, str/list PARAMETER]*]])</code>
+<P>
+Checks a whole
+set of security issues, including the requirement that 'EXECUTABLE'
+be found in the 'bin' directory. If all is ok, it issues a system
+call equivalent to the Unix command: 
+<SMALL CLASS=SMALL><PRE> cat PATH1/INFILE | EXECUTABLE PARAMETER(s) &gt; PATH2/OUTFILE</PRE></SMALL>
+<SMALL CLASS=SMALL><PRE>Examples: 
+  filerun(&quot;cal&quot;)
+  filerun(&quot;grep&quot;,{},{&quot;temp&quot;,&quot;output&quot;},&quot;wizard&quot;,{&quot;notes&quot;,&quot;*&quot;})
+  filerun(&quot;lpr&quot;,{&quot;notes&quot;,&quot;info&quot;},{},&quot;-Plaser&quot;)</PRE></SMALL>
+<P>
+ </DL><HR><A NAME="tex2html2581" HREF="node148.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2579" HREF="node146.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2573" HREF="node146.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2583" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2584" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html2582" HREF="node148.html">15.2 [TECFAMOO] The file_handler </A>
+<B>Up:</B> <A NAME="tex2html2580" HREF="node146.html">The File Utilities Package</A>
+<B> Previous:</B> <A NAME="tex2html2574" HREF="node146.html">The File Utilities Package</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

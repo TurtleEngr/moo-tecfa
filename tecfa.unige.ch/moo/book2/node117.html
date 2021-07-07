@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Values (by Andy Bakun)</TITLE>
+<META NAME="description" CONTENT="Values (by Andy Bakun)">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html2212" HREF="node118.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2210" HREF="node116.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2204" HREF="node116.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2214" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2215" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html2213" HREF="node118.html">MOO variables</A>
+<B>Up:</B> <A NAME="tex2html2211" HREF="node116.html">10.5 Variables and Values</A>
+<B> Previous:</B> <A NAME="tex2html2205" HREF="node116.html">10.5 Variables and Values</A>
+<BR> <P>
+<H2><A NAME="SECTION04351000000000000000">Values (by Andy Bakun)</A></H2>
+<P>
+<A NAME="secvalues">&#160;</A>
+<P>
+<EM>Acknowledgement:</EM> This text is a formatted
+version of a message posted to *Teaching on WorldMOO by Andy Bakun.
+<P>
+There are 5 types of MOO values.  They are:
+<P>
+<SMALL CLASS=SMALL><PRE>   Type         Example         What typeof() returns
+   --------------------------------------------------
+   Number       3, 56, 1245     NUM
+   Objects      #0, #-1, #200   OBJ
+   Strings      &quot;x&quot;, &quot;foobar&quot;   STR
+   Errors       E_PERM, E_NACC  ERR
+   Lists        {1, &quot;bone&quot;, {}} LIST</PRE></SMALL>
+<P>
+<H4><A NAME="SECTION04351010000000000000">Numbers</A></H4>
+<P>
+Numbers are represented just as they are anywhere else, literally.
+MOO numbers do not have delimiters in them, such as commas (,).  An
+optional minus sign (-) can preceed the number, making it negitive.
+MOO stores numbers as 32 bit signed integers, meaning it can
+understand any number from -2147483648 to 2147483647, big enough
+(small enough) for most purposes.  These two values are stored in
+$minint and $maxint for programing convience.  Note that the
+properties of signed integers include the fact that $minint - 1 =
+$maxint, meaning it wrapps around... $maxint + 1 will wrap around to
+the negative numbers.
+<P>
+<H4><A NAME="SECTION04351020000000000000">Objects</A></H4>
+<P>
+Objects in MOO are represented by a pound sign/hash mark (#) followed
+by a literal number.  Object numbers behave the same way numbers do,
+there is a max object number that can be represented, and a minimum.
+(This is just to say that there are limits).  Object numbers represent
+a named object in the MOO database.  Not all object numbers are valid
+tho, a valid object being one that 'exists' (see help create()) in the
+database.  Object numbers can't have math operations performed on
+them.  Object numbers are not numbers, they are a constistant way to
+refer to certain sections of the database.
+<P>
+<H4><A NAME="SECTION04351030000000000000">Strings</A></H4>
+<P>
+Strings are MOO values that can contain any printable character.
+Strings are represented by their delimiting characters, the double
+quote (&quot;).  Strings can be of any length.  Certain operations can be
+performed on strings; concatenation can be performed with the addition
+operator (+). There are a number of builtin functions that handle
+strings.  To include a double quote in a string, put a backslash (<BR> )
+before it, like <BR> ", so, &quot;<BR> &quot;&quot; is a string that contains a single double
+quote, and &quot;&quot;&quot; is a syntax error.  This is called &quot;backslash escaping&quot;
+a character.  Any character can be &quot;escaped&quot; but it only makes sense
+to escape the double quote and the backslash.
+<P>
+<H4><A NAME="SECTION04351040000000000000">Errors</A></H4>
+<P>
+Errors are a MOO type that are used when an error occurs.  They are
+just like any other type and you can use them yourself in a program to
+represent errors and to pass between verbs (or whatever you want).
+Errors have both a short name, which is the actual error value, and a
+string value, which is a more descriptive form of the error.  The
+value and string are not interchangable (E_PERM != tostr(E_PERM)) A
+string containing the error description can be found by using the
+tostr() builtin.  Builtin functions return errors (how those errors
+behave is dependant on the d bit of the verb... verbs are to come
+later).  All errors have E_ before their name.  For a list of errors,
+see help errors While E_NONE means no error, it is still an error
+type.
+<P>
+<H4><A NAME="SECTION04351050000000000000">Lists</A></H4>
+<P>
+Lists are like arrays in other languages.  A list is a set MOO types
+inclosed in curly braces ().  Any MOO type can be in a list, even
+other lists.  Lists have a length, which can be found by using the
+builtin function length().  A list can have no elements in it, which
+is , and is called the empty list (sometimes called epsilon).
+length() == 0.  You can find out what a certain element in a list is
+by using a number in square brackets ([]) after the list.  1,2,3 is
+list of length three, all three elements are numbers.  4, #4, E_PERM,
+   is list of four elements, the fourth being an empty list.
+<P>
+<HR><A NAME="tex2html2212" HREF="node118.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html2210" HREF="node116.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html2204" HREF="node116.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html2214" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html2215" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A> <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A><BR>
+<B> Next:</B> <A NAME="tex2html2213" HREF="node118.html">MOO variables</A>
+<B>Up:</B> <A NAME="tex2html2211" HREF="node116.html">10.5 Variables and Values</A>
+<B> Previous:</B> <A NAME="tex2html2205" HREF="node116.html">10.5 Variables and Values</A>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

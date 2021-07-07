@@ -1,0 +1,230 @@
+
+OK, after extensive chats with Daniel and Gavin, we have a plan of attack.
+First of all, we've identified two goals for our submissions to this
+conference: both to introduce the 'normal' web people to webbed moos and to
+allow us wooers to get together and chat about where we're going and what
+we're doing.
+
+To address these two goals, we think it would be best to organise both a
+Workshop and a Tutorial, both half day affairs.
+
+The Tutorial's goal is to do a kind of outreach to people who don't know
+about webbed moos, and will therefore be mostly about applications of this
+technology.  This might be split into two main areas:  educational uses and
+organisational uses, which obviously have some overlap but have different
+emphases.  For the Tutorial, we don't care if people haven't even heard of
+MOOing before.
+
+The Workshop's goal is to discuss the various problems concerned with
+webbed moos, such as security, and the developments that are occuring, such
+as adding vrml and greater communication between moo databases.  Basically
+we want to all get around a table and start approaching these issues
+together.  I think we should set some requirements for those involved in
+the discussions, like at least having MOOed before.  The number of people
+who believe you can't have a real conversation or discussion with
+text-based communication astounds me, and I'd rather not have to deal with
+them in a Workshop, it would just hold the proceedings up.  If they wanna
+come watch, fine, but a paper telling us their interests in the technology
+would be a minimum prerequisite.
+
+Below are some of the ideas that Gavin and I have been discussing, which
+I've tried to strip down a little.
+
+>Gavin replying to Jeni:
+>
+>>Jeni replying to Gavin:
+>>
+>>>Gavin:
+>>>
+>>>Outline
+>>>woo is a rapidly developing technology, if it not to diverge into many
+>>>differing incompatable systems it needs some coherence.  Also if it is
+>>>finally to break the "you're only playing games mould" it needs to showcase
+>>>what it can do.
+>>
+>>1) I think we should use 'webbed moos' rather than woo, at least to start
+>>   with.
+>
+>agreed...
+>
+>>2) We might like to outline two ways of viewing woos:
+>>   a) as an extension of moos (in which case the 'game playing' aspect
+>>applies)
+>>   b) as a new way of having a flexible httpd server
+>>3) I completely agree about the two goals:  seeking convergence and showcasing
+>>   its present ability.
+>
+>Yes to both, with the following points
+>information servers not httpd, they may use httpd, but they are more than
+>webservers
+>
+>>>Topics
+
+Tutorial stuff:
+
+>>>Shared document environment
+>>>MOOtiny & Living documents vs sepia etc
+>>>
+>>>use as a document database etc
+>>
+>>We can explore the history of living documents e.g. Design Rationale
+>>systems, Organisational Information systems.  I have a lot on these.  The
+>>point here is that the MOO provides an object oriented structure for the
+>>storage of information as compared to the file structures used by other
+>>httpd servers.  This means that information can be structured more easily
+>>and used in a more modular way.  What's more, MOOs are a reasonable
+>>standard and flexible way to store object-oriented information:  more so
+>>than constructing a new OOdb for each domain you want to have.
+>
+>Information as navigatable structures, all my ideas about flexible
+>representations goes in about here -->
+>>
+>>>Educational
+>>>BioMOO and DUmoo GNA-UU approach
+>>>distance learning, shared resources etc
+>>
+>>I don't know a lot about this stuff.  Perhaps I could ask Daniel Schneider
+>>at Tecfa if he's interested in contributing some knowledge about this,
+>>since he's into this.
+>>
+>>I think there are three points to using WOO in education.  The first is
+>>that it offers an adaptive means of presenting information to a student on
+>>the basis of their prior knowledge.  In this way it can be used as an
+>>Intelligent Tutoring System.  Secondly, it can be used to aid communication
+>>between peers and in tutor/student relationships.  Thirdly, all this can be
+>>done over the internet, on low-level equipment:  this was something to come
+>>out of the WWW Conference last time:  distance learners typically have very
+>>small machines, so there is little point giving them fantastic graphics or
+>>whatever.  They need to have the material there, but it needs to be
+>>accessible whatever system they're on.  MOO is a better communication tool
+>>than others in this way because for them it is cheap (local phone calls to
+>>get on the internet) and doesn't require sophisticated or expensive
+>>technology (free clients are easily available, and there's no need to have
+>>a camera strapped to your computer).
+>>
+>>NOTE:  I'm very positive about this technology, some kind of balance to
+>>that would be good, showing other ways of doing this and seeking a more
+>>balanced viewpoint.
+>
+>OK for a start people need to be technially aware to be able to use a
+>computer, it is easy to get lost in vast info systems etc
+>I've got some educational hypermedia literature on this -- I'll take a look.
+>
+>>>Personal comms
+>>
+>>Meaning communication between people?  OK... we can talk here about a need
+>>for a further investigation of the utility of text based communication over
+>>others.  That moos already support the equivalent of email and newsgroups
+>>for more global and non-instantaneous/concurrent communication.
+>>Communication is made within the context of the virtual environment, thus
+>>giving more social cues and rendering communication more appropriate to the
+>>circumstances.
+>exactly...
+>
+>>
+>>>personas
+>>
+>>The modelling of user identity on the MOO is *incredibly* easy.  That's one
+>>of the things it was set up to do.  Webbed MOOs offer the ability to adapt
+>>their responses, and thus what the user sees, to the persona that the user
+>>is adopting.  This means that information is presented to the user in a way
+>>relevant to them, on the basis of their background, interests and context.
+
+Workshop stuff:
+
+>>>Technical
+>>>server protocols
+>>
+>>What do you mean by 'server protocols'?
+>
+>gopher is httpd is a protocol, we need to specify how woottpd works
+>maybe get a ietf working group on making it stable / portable / robust etc
+>>
+>>Three basic models:  the simplest uses the MOO directly as a httpd server.
+>>You can spot these 'cos they have a $login:get verb, and the url for them
+>>is http://<server>:<port number>/.  The second model is one in which a perl
+>>script of some sort is used to watch the default httpd port (port 80), and
+>>transfers that information into the MOO before returning the appropriate
+>>page.  These look neater to the web user, and lack the port number in the
+>>url.  The third model uses a regular httpd server and cgi script which
+>>accesses the moo.  Again, these appear cleaner to the user.
+>>
+>>>extensions to moo system -- vrml etc
+>>
+>>Two reasons for pursuing the more graphical outputs.  Firstly, because it's
+>>fun/beneficial (gives more social cues) to have a graphical representation
+>>of the environment.  Secondly, because the MOO is very good at doing all
+>>the necessary calculations for these kinds of things on the fly, and
+>>adjusting the output as necessary.  At the WWW Conference they pointed out
+>>that there were two major applications for vrml, the first was making
+>>virtual environments, the second was for representing complicated
+>>information (such as molecular structure) in a graphical format.  The
+>>trouble with making the virtual environments is that it takes a lot of time
+>>and technology to construct them.  With MOO, you can construct the vrml
+>>from raw data.
+>>
+>>>woo protocol
+>>
+>>WOO protocol?  Care to expand what you mean by this?
+>see above, and
+>how the mailer is implemented, how to import or seed th database,
+>integration of moomail with sendmail so that you can send internet mail
+>from within the "living document".  Imagine the equilavent of a moo based
+>hypermail system
+>
+>>>inter moo comms
+>>
+>>Sam should talk about this a lot.  He's really into it.
+>>
+>>>mcp ??
+>>
+>>Don't even know what it is :)
+>I think it is a way of uploading moocode to the server, sort of mooftp
+>>
+>>>woo vs cgi&httpd etc -- java based web clients
+>>
+>>This is complex.  Personally, I think webbed moo is better than java etc.
+>>because you don't need any customisation of the client in order to view it:
+>>every client you use can be the most basic, low-level, and it'll still
+>>work.  But equally, you can take some new development such as the java
+>>stuff, or the server push/client pull stuff, and make it work.  MOOs are
+>>infinitely flexible and expandable.  Versus cgi&httpd, I'm not so sure.  I
+>>think it's better because of the OOdb thing:  the information within a MOO
+>>is more structured and therefore easier to manage.  You can do basically
+>>the same things, but I think you can do them easier using a webbed moo.
+>
+>Java allows for one time secure customisation of the client.
+>Definitely we need to follow the www model text based clients up to forms
+>and tables and beyond all working together....
+>ie the moo should still be usable to a blind person with the text spoken to
+>him up to a fully vrml'd version using the same moodb
+>>
+>>
+>>Security
+>>
+>>This is a big issue I don't know much about.  With webbed moo, the major
+>>advantages come if we know who the person is at all times because then we
+>>can more fully adapt to them.  However, this means always having them
+>>transmitting data that identifies them, which is insecure.  We could get a
+>>lot of discussion about this...
+>
+>part of the reason why I would like to see a woo protoco evolving, it is
+>sort of doing this on mootiny at the minute.  Different people doing
+>different things, vrml security etc.
+>
+>possibly use one time authentication schemes like the ietf are designing
+>for httpd etc or pgp signed transactions
+
+
+Jeni Tennison
+Artificial Intelligence Research Group
+Department of Psychology
+University of Nottingham
+University Park
+Nottingham
+NG7 2RD
+
+tel: +44 (0) 115 9515151 x8366
+fax: +44 (0) 115 951 5361
+url: http://www.psyc.nott.ac.uk/aigr/people/jft.html
+

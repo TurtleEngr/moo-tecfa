@@ -1,0 +1,170 @@
+<HTML>
+<HEAD>
+<TITLE>Doree Duncan Selig's (12-Apr-1996)</TITLE>
+<!-- Created by: D.K.S., 12-Apr-1996 -->
+<!-- Changed by: D.K.S., 12-Apr-1996 -->
+
+
+</HEAD>
+<BODY>
+<H1>Doree Duncan Selig's</H1>
+<pre>
+Doree Duncan Seligmann
+Multimedia Communication Research Department
+Bell Labs
+doree@research.att.com
+</pre>
+<p>
+Background
+<p>
+My interest in virtual environments originates in work on 3D
+intelligent systems [IBIS, COMET, KARMA] and multimedia systems
+[Rapport, MR, N-ICE]. My current research and testbed system
+[Archways] is directed at finding new ways to make complex multimedia
+systems as transparent to use as the telephone has become.
+<p>
+Archways automatically generates a 3D virtual environment to support
+remote multimedia interaction using knowledge-based graphics
+techniques and 3D spatialzed sound. There are many reasons why people
+are able to conduct natural conversations over the telephone.  One is
+that there is little ambiguity about what is going on: you know if the
+connection is up, who is on the line, and even some indication about
+what the other person is doing. Not so with multimedia systems.
+Instead, users spend a substantial amount of time interrupting the
+natural flow of their conversations to query about the state of the
+system ("can you the video?", "who is typing into the shared
+document?", "are you still there?", etc.).
+<p>
+Archways creates the 3D environment to provide this kind of feedback.
+Some screen shots are available at:
+<A HREF="http://www.cs.columbia.edu/~doree/archways/archways.html">http://www.cs.columbia.edu/~doree/archways/archways.html</A>
+I'll add some more later with some captions.
+<p>
+The idea is that people are interacting using various media (e.g.
+text-based chat, realtime media, multiplayer games, bullentin boards,
+etc.).  Archways is notified how these media are being used (using an
+infrastructure and protocols called MR that makes this possible).  The
+type of information ranges from each keypress event into a shared
+document to a new chat group being created. Driven by these events,
+the Archways server decides what objects to create/modify/destroy,
+assigning to each, a set of characteristics and a location. The
+Archways clients/browsers (running at each endpoint) create customized
+displays for each user depicting this enviornment, showing parts of
+the real world augmented with virtual places, the people and objects
+in both, enhanced with annotation objects showing both the
+connectivity and associations between the various particpants,
+devices, and services.
+<p>
+Each of the graphical objects include methods, constraints, and
+information that is used to automate their display, geometries, and
+rendering parameters, as well as functionality; they also change
+automatically to reflect changes in the virtual contexts.  Thus, each
+object is not only a visualization, but is also a means for control as
+well as a mechanism to display content. For example, I have a set of
+little Sony video monitors on top of my computer monitor in my office.
+The environment depicts me in my office as well as those devices I can
+currently use. I can use these graphical objects to control the video.
+But at the same time, anyone in the environment can *enter* my office,
+see what devices (media) I have available, and even (permissions
+allowing) opt to view the actual video sent to those monitors or see
+how they are connected to other objects in the "real world."
+<p>
+We are currently adpating our system for a variety of applications.
+They are: multimedia conferencing and collaboration, virtual tourism,
+a virtual classroom, and live theatrical performace.
+<p>
+Here are dome issues which might be interesting topics of discussion
+which directly touch upon the system we have built.
+<p>
+1) Should virtual environments try to *hide* the real world by
+ignoring the real locations and environments of the users in them, or
+should they be environments that represent real world places along
+with virtual places and objects?  In fact, the environment which
+enables us to interact remotely or electronically *is* a virtual
+environment. If you and I are on the phone together, we are each *in*
+two places: where we are, in the real world, but also, the virtual
+place that is defined for our conversation.  Similarly, when we use
+devices to interact remotely, i.e. the cameras that capture our
+"talking heads" for a video conference; the keyboards we use to
+provide inut to shared electronic objects, those devices are also
+present with us in the virtual place.  Is this duality important or
+useful to represent? We use suqare soap bubbles hovering over the
+representation of the real world to depict these virtual places.
+<p>
+2) Representation: what level of detail is necessary?  How do we
+decide what events are important to inform other users? Is it useful
+to know, drawing, for example from your MOO, the actual time-of-day of
+each participant? What other information should be depicted or made
+available?  If someone is "looking" at me, should I know about it?
+Each view can be augmented to show such information.  For example, our
+system uses "cables" to show how video devices are connected, or which
+keyboards have control over a shared document. Similarly we use
+animation. For example, the keys on the keybaords are animated and
+letters travel through the cables to the appropriate windows. These
+mechanisms can ehighten the sense of "presence" in the virtual
+enviornment.
+<p>
+3) Is it necessary to coordinate at the endpoint (i.e. for each
+participant) of all the disparate data streams that represent whole
+entities? For example, my identity, my actions, my voice, my devices,
+etc. Is there an advatage to redundantly represent the same
+information in different ways?  In Archways, we use 3D sound to
+reinforce the 3D locations of each object and person in the environment.
+How do we decide whether to use text, graphics, sound, etc or combinations
+thereof? In previous work (COMET) a media coordinator initially tagged
+which information would be conveyed in text, graphics or both. But,
+these assignnment could fail. When the user interacted with the system,
+indicating, for example, that he still did not "understand" (by querying
+for further information), the media coordinator reassigned the information
+(with different priorities).
+<p>
+4) Should a virtual environment consist of disparite, but "equivalent"
+views?  A traditional 3D shared environment suffers many of the
+restrictions of a real environment: not every person's view is
+*ideal*. Should the objects that make up the virtual environment have
+the ability to modify themsleves for each particular participant, but
+at the same time maintain some kind of consistency (such as a fixed 3D
+location) overall?  Thus, each person may have a completely displays
+of the virtual enviornment (not only perscpective, but "look and
+feel").  Thus, each view is customized for the particular user. For
+example, objects can be senstitive to the way they are being viewed.
+For example, we represent a shared display of application windows on a
+conference table. However, this display reorientates itself so that it
+is always upright for the particluar user (as user moves around).
+Similarly, textual labels reorientate themselves and change in scale
+to remain legible. Also, each person may be interested in different
+aspects of the virtual environment. Their view can be augmented with
+additional information without disrupting the scene for the others.
+This is, of course, analogous to a person accessing supplemental
+information about the objects in a MOO.
+<p>
+5) Is it useful to provide (and coordinate) multiple views of virtual
+environment and objects?  Archways can generate different views that
+are each constrained by the type of information they are designed to
+communicate, such as, showing the other people in a virtual place or
+showing a person's local environemnt.  These views automatically
+change as the environment changes (e.g. growing to include more people
+as they join, or more devices as they are inserted). Also, eac object
+is imbedded with information so a view can be created to facilitate
+access to its control mechanisms.
+<p>
+OTHER ISSUES that could be of interest:
+<P>
+1) What are the advatages of a 3D model?
+<p>
+2) What are the tools we will have to build to allow people to design and
+customize the virtual environment?
+<p>
+3) Persistence and history. One advantage of a virtual environment is that
+we can change time. Should we make the walls talk?
+<p>
+4) When the context of a situation changes, should not the environment
+as well?  Should the notion of sessions be imposed on shared virtual
+environments allowing for disjoint activities in the same virtual places?
+For example, consider all the different types of interaction that can be
+simultaneously supported in one virtual classroom.
+<p>
+
+<ADDRESS> <A Name=Signature HREF="http://tecfa.unige.ch/tecfa/general/tecfa-people/schneider.html">D.K.S.</A></ADDRESS>
+</BODY>
+</HTML>

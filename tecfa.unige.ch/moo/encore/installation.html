@@ -1,0 +1,72 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 4">
+		<title>enCore Installation</title>
+		<meta name="authors" content="Jan Rune Holmevik and Cynthia Haynes">
+		<meta name="keywords" content="enCore, enCore Xpress, MOO, Open Source Software, Free Software">
+		<link rel="STYLESHEET" type="text/css" href="encore.css">
+	</head>
+
+	<body>
+		<h1>enCore Installation</h1>
+		<p><a href="installation.html#intro">Introduction</a> | <a href="installation.html#install">Install a new enCore MOO</a>&nbsp;| <a href="installation.html#upgrade">Upgrade to the latest version</a></p>
+		<h3><a name="intro"></a>Introduction</h3>
+		<p>Important: enCore with the new Xpress graphical user interface requires that you have a regular web server such as Apache running on the same machine as the MOO server. The reason for this is that Xpress components such as the telnet applet, icons and other images and files cannot be served by the built-in enCore web server.</p>
+		<p>If you already have a web server running on your MOO machine, you are all set to go. If not, you must install a web server on the machine before proceeding.</p>
+		<p>The installation instructions below have been tested under Sun Solaris, and should work similarly on other Unix systems such as Linux and BSD. If you are running your MOO under a non-Unix operating system such as Windows NT, you must adapt the steps below to fit your operating system requirements.</p>
+		<p>&nbsp;</p>
+		<h3><a name="install"></a>How to Install a New enCore MOO</h3>
+		<p>If you are starting a new enCore MOO follow these instructions:</p>
+		<p>1) Select or create a directory that is accessible for the web server running on your machine. This can either be in your home web directory or some other web accessible directory of your choosing. The URL pointing to this directory should look something like this:</p>
+		<p><tt>http://someserver.somesite.edu/~user/</tt></p>
+		<p>2) Download the enCore distribution archive named <i>enCore-latest.tar.Z</i> to this directory and be sure to use the binary transfer mode. Next you must uncompress the archive using a program such as <i>uncompress</i> or <i>gzip</i>. The following command should work on all Unix systems:</p>
+		<p><tt>uncompress enCore-latest.tar.Z</tt></p>
+		<p>Finally you must unpack the archive. On Unix systems the following command will unpack the archive and create proper directory substructure:</p>
+		<p><tt>tar -xvf enCore-latest.tar</tt></p>
+		<p>Do not move the new directory named /encore or any or the subdirectories or files therein.</p>
+		<p>3) After you have unpacked the enCore package, you should have a new directory named encore. You must now set file and directory permissions to readable, so before you move to the new /encore directory make it readable by typing:</p>
+		<p><tt>chmod 755 encore</tt></p>
+		<p>The new /encore directory should contain the following files and subdirectories:</p>
+		<ul>
+			<li><tt>enCore.db (the enCore database file)</tt>
+			<li><tt>gpl.html (the enCore license)</tt>
+			<li><tt>installation.html (this file)</tt>
+			<li><tt>changelog.html</tt>
+			<li><tt>readme.html</tt>
+			<li><tt>guide.html</tt>
+			<li><tt>encore.css (web page style sheet)</tt>
+			<li><tt>/mootcan</tt>
+			<li><tt>/images</tt>
+			<li><tt>/sounds</tt>
+		</ul>
+		<p>To make all files in this directory readable type:</p>
+		<p><tt>chmod a+r *.*</tt></p>
+		<p>And to make the three subdirectories, /mootcan, /images, and /sounds readable as well type:</p>
+		<p><tt>chmod 755 mootcan</tt></p>
+		<p><tt>chmod 755 images</tt></p>
+		<p><tt>chmod 755 sounds</tt></p>
+		<p>Finally you must also make all files within these three subdirectories readable, so go to each directory in turn and type:</p>
+		<p><tt>chmod a+r *.*</tt></p>
+		<p>4) Copy the file enCore.db to the directory in which you want to run your MOO, and download and compile a MOO server for your machine. See <i>High Wired: On the Design, Use, and Theory of Educational MOOs</i> pp. 107-147 for details on how to do this. Note: For security reasons we do not recommend that you run your MOO in the /encore directory. If you must, make sure the file permissions on all MOO database files are set to non-readable.</p>
+		<p>5) Start up your MOO and log in as wizard (no password is necessary). It is very important at this point that you perform the Core-setup procedure by typing @configure. You should customize all relevant settings in the configure-menu, and pay special attention to the setting called Base URL. This is where you must type a URL pointing to the new encore directory. To go with the example above, you should type something like:</p>
+		<p><tt>http://someserver.somesite.edu/~user/encore/</tt></p>
+		<p>6) For more information on how to get started with your new MOO, read the enCore Administrator's Guide which can be found in your MOO's newspaper, and see appropriate sections in <i>High Wired</i>.</p>
+		<p>&nbsp;&nbsp;</p>
+		<h3><a name="upgrade"></a>How to upgrade an existing enCore MOO to the latest version.</h3>
+		<p>If you already have an enCore-based MOO and want to upgrade to the latest version, follow these instructions:</p>
+		<p>1) If you are upgrading from enCore 1.1 to enCore 2.0, follow steps 1-3 above before continuing with step 2. Otherwise go directly to step 2 below.</p>
+		<p>2) Make a backup of your MOO database before upgrading. Store this backup under a new name such as enCore.bkup. If anything goes wrong during the upgrade, you can restart your MOO using the backup database and try again.</p>
+		<p>3) Type @version in the MOO, or click the About Icon in Xpress to review core version information. If the MOO is older than the last shipping version, see <a href="http://lingua.utdallas.edu/encore/download.html#patches">enCore release history</a>, you must first download and install the appropriate patches to bring it up to that version.</p>
+		<p>4) Download all relevant patch files from the <a href="http://lingua.utdallas.edu/encore/download.html#patches">enCore patch archive</a>. To apply the patch files, log on to your MOO as wizard (#2), then open the patch files in a text editor. Patches must be applied in ascending order starting with the oldest relevant patch. You apply the patches by copying code/properties/text from the file and pasting it into your MOO. Read any instructions in the patch files carefully and paste in only a few verbs/properties/texts at a time so you can confirm that they were installed and programmed properly. If you have made any changes to core objects and code in your MOO that might be affected by the new patch code, you must update the patch code with your original changes before applying the patch. If you fail to do this, the patch will over write your modified code and your modifications will be lost.</p>
+		<p>5) Some enCore upgrade patches come with additional files such as images, sounds or new MOOtcan versions. These patch files will be in the form of a compressed tar archive. When you have unpacked the patch archive and applied the patch code, read the installation instructions provided for information on which directories the additional files should be put in.</p>
+		<p>6) If you are upgrading from enCore 1.1 to enCore 2.0 you must now log on to your MOO and enter a Base URL as specified in step 5 under installing a new enCore MOO above. Otherwise you are finished. Enjoy your new functionality and enhancements.</p>
+		<p>Enjoy your enCore MOO!</p>
+		<h5>
+		<hr noshade size="3">
+		</h5>
+		<p class="footer">Copyright &copy; 1997-2000, Jan Rune Holmevik and Cynthia Haynes. Updated <csobj w="100" h="12" t="DateTime" format="MedDate" region="0">Sat, Mar 25, 2000</csobj>
+	</body>
+
+</html>

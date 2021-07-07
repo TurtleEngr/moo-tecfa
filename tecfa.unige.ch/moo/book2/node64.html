@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>A note on external Bots</TITLE>
+<META NAME="description" CONTENT="A note on external Bots">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html1482" HREF="node65.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html1480" HREF="node61.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html1476" HREF="node63.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html1484" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html1485" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html1483" HREF="node65.html">Quota and Security</A>
+<B>Up:</B> <A NAME="tex2html1481" HREF="node61.html">6.3 Ken's Turing Robot</A>
+<B> Previous:</B> <A NAME="tex2html1477" HREF="node63.html">Conceptual Issues</A>
+<BR> <P>
+<H2><A NAME="SECTION03333000000000000000">A note on external Bots</A></H2>
+<P>
+<A NAME="secexternalbots">&#160;</A>
+<P>
+External bots a are mot difficult to do, but have various advantages.
+There are 3 different kinds of external bots:
+<OL>
+<LI> Bots that hoock up to a user name via a telnet connection. This can be programmed quite rapidly, however then you must parse everything that happens
+on the screen.
+Sometimes when talking to Daniel at TecfaMOO you talk in fact to
+a LISP program that connects via Telnet to his character. It's a simple
+hack based on the
+<A NAME="tex2html128" HREF="ftp://mkp.com/pub/Norvig/">Eliza Example</A>
+in
+<A NAME="tex2html129" HREF="http://Literary.COM/mkp/pages/1910/index.html">Norvig's AI Programming Book</A>
+<LI> Bots that hook up to the MOO via the FUP interface or some modified
+server. You need access to the server machine to do this
+(have not tried this at <B>TECFA</B><TT>MOO</TT>).
+<LI> Bots that communicate with the MOO via a special port using a
+special MOO to client protocol,
+i.e. the technique that is used for building http servers for example
+(have not tried this at <B>TECFA</B><TT>MOO</TT>).
+<P>
+</OL>
+<P>
+Pointers:
+<UL>
+<LI> Look at the <A NAME="tex2html130" HREF="http://fuzine.mt.cs.cmu.edu/mlm/julia.html">The Julia Program</A> Julia was a program that connected to a character in a TinyMUD.
+</UL>
+<P>
+The major advantage of external bots is being able to use typical AI
+languages to build those things and the fact that (in principle) they
+would work on different MOOs without the need to port code.
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!--Converted with LaTeX2HTML 96.1-f (May 31, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>2.2 MOO Mail and Mailing Lists</TITLE>
+<META NAME="description" CONTENT="2.2 MOO Mail and Mailing Lists">
+<META NAME="keywords" CONTENT="tm2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="tm2.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html2" HREF="http://tecfa.unige.ch//moo/book2/tm2.html"> <IMG  ALIGN=BOTTOM ALT="external" SRC="http://tecfa.unige.ch/ico/navi/tex2html/top.gif"  > </A> <A NAME="tex2html991" HREF="node27.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://tecfa.unige.ch/gif/tex2html//next_motif.gif"></A> <A NAME="tex2html989" HREF="node22.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://tecfa.unige.ch/gif/tex2html//up_motif.gif"></A> <A NAME="tex2html983" HREF="node25.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://tecfa.unige.ch/gif/tex2html//previous_motif.gif"></A> <A NAME="tex2html993" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://tecfa.unige.ch/gif/tex2html//contents_motif.gif"></A> <A NAME="tex2html994" HREF="node167.html"><IMG WIDTH=43 HEIGHT=24 ALIGN=BOTTOM ALT="index" SRC="http://tecfa.unige.ch/gif/tex2html//index_motif.gif"></A><BR>
+<B> Next:</B> <A NAME="tex2html992" HREF="node27.html">2.3 [TECFAMOO] Janus' Channels </A>
+<B>Up:</B> <A NAME="tex2html990" HREF="node22.html">Communication and Navigation</A>
+<B> Previous:</B> <A NAME="tex2html984" HREF="node25.html">Basic Navigation</A>
+<BR> <P>
+<H1><A NAME="SECTION02220000000000000000">2.2 MOO Mail and Mailing Lists</A></H1>
+<P>
+<A NAME="secmoomail">&#160;</A>
+<P>
+``MOO Mail'' includes two functionalities:
+<OL>
+<LI> The MOO email system allows you to send and receive messages to and from other users.
+<LI> It allows the creation of mailing-lists. Each MOO has a set of public
+mailing lists to which may subscribe. If you are a frequent user of
+A MOO, subscribe yourself to the most important ones !
+</OL>
+<P>
+The most important commandes you should know are the following:
+<P>
+<UL>
+<LI> <code>'@nn'</code> will display all new messages (both in your personal
+mailbox and new messages on mailing lists you have subscribed.
+<LI> <code>'@send'</code> will allow you to send messages.
+<SMALL CLASS=SMALL><PRE>   @send Kaspar
+         will put you in the mailer (or pop up a local editing window if
+         you client can handle it)
+   @send *General
+         will allow you to send a message to the *general mailing list.</PRE></SMALL>
+<LI> <code>@mail</code> will list messages (default is last 20 messages)
+<SMALL CLASS=SMALL><PRE>   @mail
+        lists messages on your personal mail-box
+   @mail on *general
+        will list messages on the *general mailing list
+   @mail 1-20
+        will list the first messages 1-20 on your mail box
+   @mail 30-$ on *general
+        will list messages 30 to last on the mailing list *general</PRE></SMALL>
+</UL>
+<P>
+Help is available on the following commands:
+<P>
+<SMALL CLASS=SMALL><PRE>@mail     -- seeing a table of contents for a collection of email messages
+@read     -- reading individual messages 
+@next     -- reading the 'next'     message
+@prev     -- reading the 'previous' message
+
+@send     -- composing and sending a message to other players
+@answer   -- replying to one of the messages in a collection
+@forward  -- resending one of the messages in a collection somewhere else
+
+@rmmail   -- discarding some subset of a collection
+@unrmmail -- undoing the most recent @rmm on a collection
+@renumber -- renumbering the messages in a collection
+@keep-mail - marking messages in a collection as exempt from expiration</PRE></SMALL>
+<P>
+For viewing collections other from your own, the following commands are useful:
+<P>
+<SMALL CLASS=SMALL><PRE>@rn          -- list those collections that have new messages on them
+@subscribe   -- indicate that you want @rn to report on a given collection
+                  and add yourself to its .mail_notify list
+@skip        -- ignore any remaining new messages in a given collection
+@unsubscribe -- ignore a given collection entirely from now on
+                  and remove yourself from its .mail_notify list
+@unsubscribed-- show the mailing lists that you aren't subscribed to.
+@subscribed  -- like @rn, but shows all lists that you are subscribed to
+                even if they have no new activity</PRE></SMALL>
+<P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Daniel K. Schneider <BR>
+Thu Apr 17 12:43:52 MET DST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

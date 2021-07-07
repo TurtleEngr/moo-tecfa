@@ -1,0 +1,87 @@
+<HTML>
+<HEAD>
+<TITLE>E_Web objects @ TecfaMOO Objects (10-Jul-1997)</TITLE>
+<!-- Created by: D.K.S.,  8-Jul-1997 -->
+<!-- Changed by: D.K.S., 10-Jul-1997 -->
+
+
+</HEAD>
+<BODY>
+<H1>E_Web objects @ TecfaMOO Objects</H1>
+(this page is at http://tecfa.unige.ch/moo/emoo/main-objects.html for the moment)
+
+See also: <A HREF="http://tecfamoo.unige.ch:7778/4132/">The E_WEB Room on TecfaMOO</A>
+
+<hr>
+
+	<H2>Help</H2>
+
+
+	<UL>
+	  <LI> The E_WEB site is dead now. All I have kept is <A HREF="emoo_httpd.help">emoo_httpd.help</A>
+	</LI>
+
+	  <LI> A HREF="startup.text">startup.text</A> </LI>
+	  
+	  <LI> E_Web's main author: <A HREF="http://www.thwartedefforts.org/">http://www.thwartedefforts.org/</A> </LI>
+
+
+      </UL>
+
+<hr><H2>"Core"</H2>
+
+<A HREF="http://tecfamoo.unige.ch:7778/objbrowse/$ehttpd">E_WEB httpd</A>
+<br>
+Handles connections and routing for processing. If the URL is of type:
+http://tecfamoo.unige.ch:7778/&lt;object&gt;/.... processing is handled
+by the :http_request verb of that object. Else, see below
+
+<P>
+<A HREF="http://tecfamoo.unige.ch:7778/objbrowse/$web_objects">Webbable Objects</A>
+<br>
+Contains a list of properties that redirect a "non-object request to the right handler,
+e.g. / goes to the <A HREF="http://tecfamoo.unige.ch:7778/objbrowse/4370">E_WEB Home page</A>, /who to 
+<A HREF="http://tecfamoo.unige.ch:7778/objbrowse/4149">Generic Web Request Handler</A>. On each of those handlers the :http_request verb is called (??)
+
+
+
+<hr><H2>Important handlers/tools/objects</H2>
+
+
+<A HREF="http://tecfamoo.unige.ch:7778/objbrowse/4149">Generic Web Request Handler</A>:
+<br>
+Handles most kinds of requests, look at the methods. E.g. a verb like
+"html_who" will handle /who.
+<P>
+
+<A HREF="http://tecfamoo.unige.ch:7778/objbrowse/4155">Object Browser</A>:
+<br>
+The Object browser will handle /objbrowse URLs. Note that /code URLs are
+handled by the Generic Web Request Handler.
+
+<P>
+<A HREF="http://tecfamoo.unige.ch:7778/objbrowse/$cgi">CGI Object</A>:
+<br>
+Handles cgi-bin queries.
+
+<P>
+<A HREF="http://tecfamoo.unige.ch:7778/objbrowse/4370">E_WEB Home page</A>:
+<br>
+
+
+<hr><H2>Content Generation utils</H2>
+
+
+
+<A HREF="http://tecfamoo.unige.ch:7778/objbrowse/$ehtml_utils">EHtml utils</A>:
+<br>
+
+<A HREF="http://tecfamoo.unige.ch:7778/objbrowse/$vrml_utils">VRML utils</A>:
+<br>
+
+
+<hr>
+
+<ADDRESS> <A Name=Signature HREF="http://tecfa.unige.ch/tecfa-people/schneider.html">D.K.S.</A></ADDRESS>
+</BODY>
+</HTML>

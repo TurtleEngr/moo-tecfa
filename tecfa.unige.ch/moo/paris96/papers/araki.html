@@ -1,0 +1,116 @@
+<HTML>
+<HEAD>
+<TITLE>Araki Yoshiaki's (12-Apr-1996)</TITLE>
+<!-- Created by: D.K.S., 12-Apr-1996 -->
+<!-- Changed by: D.K.S., 12-Apr-1996 -->
+
+
+</HEAD>
+<BODY>
+<H1>Araki Yoshiaki's</H1>
+A Position paper for WWW5 conference workshop, Virtual Environments<br>
+and the WWW.<br>
+<p>
+An internet based, large scale virtual environment <br>
+<p>
+Yoshiaki Araki<br>
+SONY Music Entertainment<br>
+April 7, 1996<br>
+<p>
+Sony have been investigating a large scale, shared virtual environment<br>
+suitable for use in the Internet. The key focus of the project is an open<br>
+environment, suited to supporting large numbers of participants in a highly<br>
+interactive environment. <br>
+<p>
+Our initial development, known as CyberPassage, is based on VRML1.0 but<br>
+extended to allow interactive behaviour, and multi-participant shared<br>
+worlds. <br>
+<p>
+During the last several months we have participated in ongoing discussions<br>
+in the VRML community, contributing our experiences with CyberPassage to a<br>
+proposal for VRML2.0  co-authored with SGI and WorldMaker.<br>
+<p>
+The current release of the CyberPassage system consists of a VRML1.0<br>
+browser extended to support behaviours and shared world. The sharing is<br>
+managed by a server process and relies on an IP based protocol which<br>
+communicates browser information and updates, via the server, to other<br>
+browsers sharing the world. Lastly, we provide an authoring tool,<br>
+CyberPassage Conductor, that allows uses to quickly add video, audio and<br>
+animation to VRML files using a drag and drop authoring metaphor.<br>
+<p>
+<p>
+The CyberPassage  system has five distinguished conceptual aspects which we<br>
+feel are necessary for acheiving our goal of a highly interactive, usable<br>
+and scalable distributed VE.<br>
+<p>
+1-1) High interaction rate support<br>
+<p>
+To support high interaction rates with typical internet delays, shared<br>
+object behaviors are described by local scripts attached to objects.<br>
+Syncronization of shared object behavior are achieved using the client<br>
+server protocol (VSCP) which has been designed to minimize information<br>
+propogation and relies on 'dead reckoning' like techniques to reduce<br>
+communication.<br>
+<p>
+1-2) Scalable network architecture<br>
+<p>
+To support thousands of users in a shared world, the messages of shared<br>
+object behaviours are routed depending on the geometry of the  3D space. We<br>
+limit message traffic by defining a notion of bounded space, an Aura, which<br>
+describes the area of interest any object, including avatars have within<br>
+the space at any one time. We define visual, tactile and audiotory auras to<br>
+allow flexibility. We further reduce message traffic by defining differing<br>
+degrees of consistency requiring different message overheads.<br>
+<p>
+1-3) Dynamically alterable world<br>
+<p>
+To be practicable, any shared world must be dynamic.  In addition to the<br>
+current model of dynacism via script execution, we also support the ability<br>
+to dynamically add objects by downloading from WWW servers, or a mechanism<br>
+to dynamically attach a network remote application via the server.<br>
+<p>
+1-4) Configurable avatar<br>
+<p>
+Users are represented by avatars in the virtual space. Avatars need to be<br>
+user selectable or designable. In addition we have experimented with<br>
+dynamic avatars for experession and feel that simple avatar expression<br>
+greatly augments the online experience.<br>
+<p>
+1-5) Ownership<br>
+<p>
+The issue of ownership is currently not addressed in existing VRML2.0<br>
+proposals. Implicit ownership in single user worlds will not scale when we<br>
+share worlds. As we begin to interconnect worlds it becomes critical to<br>
+deal with ownership to allow contol over change, and to support the ability<br>
+to pass ownership between users.<br>
+<p>
+We are currently running shared servers in Japan and the US and have<br>
+regular visitors from among the 5000 or so people who have downloaded the<br>
+cyberpassage browser. Our current goal is to build a number of experimental<br>
+worlds in which we can experiment with interactive shared behaviours. There<br>
+are many areas we feel need further investigation, these include:<br>
+<p>
+2-1) Message routing strategies for shared object behaviors <br>
+<p>
+To archive distributed VEs, we need shared object behaviors among users<br>
+connecting in the same world. It is too hard to share all the information<br>
+with typical Internet delays. We need a set of smart strategies for<br>
+supporting consistency of the world. The message routing should be designed<br>
+to be configurable case by case, and be scalable to support thousands of<br>
+users in the same world. <br>
+<p>
+2-2) Highly abstracted object library in distributed network architectures<br>
+<p>
+For users to easily construct their own shared object behaviors and<br>
+interactions with object in VE, we need highly abstracted object library<br>
+like MOO database core. MOO is based on the old fashioned centeralized<br>
+network architecture. We should replace the rich concepts of MOO with a<br>
+distributed network architecture. The object constructions should be as<br>
+esay as HTML with authoring tools. The object descriptions should be<br>
+dynamically alterable as in MOO system. <br>
+<!-- body="end" -->
+<p>
+
+<ADDRESS> <A Name=Signature HREF="http://tecfa.unige.ch/tecfa/general/tecfa-people/schneider.html">D.K.S.</A></ADDRESS>
+</BODY>
+</HTML>
